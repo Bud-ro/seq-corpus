@@ -1,0 +1,202 @@
+[
+ {
+  "repo": "amr-salaaah/Auto-Test-Camera",
+  "commit": "b5989ba2a97e7c4ea0301e56495a3e759f56d805",
+  "reason": "no license file"
+ },
+ {
+  "repo": "Andraz23/TestStand",
+  "commit": "f5082814d6604ed50f4e782a65a642ffb35e118f",
+  "reason": "no license file"
+ },
+ {
+  "repo": "bdsetiawan/TestStand",
+  "commit": "a4a1b92efec44521385613076733d3640797835a",
+  "reason": "no license file"
+ },
+ {
+  "repo": "bienieck/TestStandPlugins_Presentation",
+  "commit": "28862d3ed18bd0dfa83893257e9dfea51a3e230f",
+  "reason": "no license file"
+ },
+ {
+  "repo": "cbart-dot/Test",
+  "commit": "876f9e4c293aaf096a795b512cd9866e68765b17",
+  "reason": "no license file"
+ },
+ {
+  "repo": "dfawcett/TestStandPythonAdapter",
+  "commit": "5633c58dc1c655802612df50514fde0fb9d6f62e",
+  "reason": "no license file"
+ },
+ {
+  "repo": "elijah286/TestStand-MAL-API",
+  "commit": "c01550b9549dc266cd64b0c4efe39f2eec4efd39",
+  "reason": "no license file"
+ },
+ {
+  "repo": "FloresFelipe/VS-Code-Integration-Demonstrations",
+  "commit": "0adea7643235286ae7958bcde0b907270ef7e5a7",
+  "reason": "no license file"
+ },
+ {
+  "repo": "hagaya/Teststand_UI",
+  "commit": "b1f682d97393a744690145f4a1d4301863bd2139",
+  "reason": "no license file"
+ },
+ {
+  "repo": "halsteadrideriver/TestStand_projects",
+  "commit": "c71180cfa35f1119c3279432948eefc373e62087",
+  "reason": "no license file"
+ },
+ {
+  "repo": "IronmanMark2/LabView-and-Teststand",
+  "commit": "c8bd841188d86c1f5466f7dd9ec27b3f3e759838",
+  "reason": "no license file"
+ },
+ {
+  "repo": "JavierABH/Elatch-Bench-Test",
+  "commit": "71012f41d229c2385e061521b447f8d7580c80b3",
+  "reason": "no license file"
+ },
+ {
+  "repo": "JeonghwaLee-TwinDAD/GIP-FCT",
+  "commit": "c4028272ef9137eef1ecf98c98b26bf78b666567",
+  "reason": "no license file"
+ },
+ {
+  "repo": "JeonghwaLee-TwinDAD/TestStand-Manager",
+  "commit": "a006fc8e921511c12e7558a4e5d6064681cdb142",
+  "reason": "no license file"
+ },
+ {
+  "repo": "jmcerlean/DTC-Offline-Programmmer",
+  "commit": "69972e7cb6b8f4aab4dccdc7f51a6c2a46b7c32f",
+  "reason": "no license file"
+ },
+ {
+  "repo": "joshuaprewitt/teststand-executor",
+  "commit": "690241b668927d685f2ddf4bacc95a06059f64ec",
+  "reason": "no license file"
+ },
+ {
+  "repo": "jplotzke/grpc-labview-teststand-hang",
+  "commit": "f8516ed5241a99d768edccd39b0c94e34db742e8",
+  "reason": "no license file"
+ },
+ {
+  "repo": "KMurphs/teststand-user-interfaces",
+  "commit": "3566c35ee134da142bf69b0a9227387c117b26a4",
+  "reason": "no license file"
+ },
+ {
+  "repo": "LeoDaEsp/DHA_TestStand_Seq",
+  "commit": "39449e178a3cbb06de86fbd8dbaada24fee7030f",
+  "reason": "no license file"
+ },
+ {
+  "repo": "LeonelNietoL/TestStand.Exercises",
+  "commit": "17059afa8a81c24ba7722465079f67b10a255ed9",
+  "reason": "no license file"
+ },
+ {
+  "repo": "lhb5883/LabVIEW",
+  "commit": "129c22c55a35e62310bb0143502e3ed50b1e6162",
+  "reason": "no license file"
+ },
+ {
+  "repo": "marigot/BATL-flight",
+  "commit": "8c4dc21c0c52c419ed861460bdbe4eedfaeb6808",
+  "reason": "no license file"
+ },
+ {
+  "repo": "marrob/Knv.Ethernet",
+  "commit": "c3cf85100d01f17b24c4206d70576089adbfa4ac",
+  "reason": "no license file"
+ },
+ {
+  "repo": "marrob/Knv.Instr",
+  "commit": "dc68c91e46eccca2ddc5a8ca26e6df48145db1ea",
+  "reason": "no license file"
+ },
+ {
+  "repo": "medina818/PopUp-Library",
+  "commit": "342c1cbb03241a87aa84db54e1897ef6c5244ecd",
+  "reason": "no license file"
+ },
+ {
+  "repo": "MFG-88/TS_LV_ImportValuesToVariables",
+  "commit": "8d45eaaa5ada7cd4d2111a09ecaffdac995424d8",
+  "reason": "no license file"
+ },
+ {
+  "repo": "michael-harhay-arx/CICDUtility",
+  "commit": "02c6c678012a49102febc107d962c0c54992b4ee",
+  "reason": "no license file"
+ },
+ {
+  "repo": "michalkozminski93/4FixturesTurntable",
+  "commit": "3cf99787ba6a759c579a3016230d0b64da3fea3e",
+  "reason": "no license file"
+ },
+ {
+  "repo": "NEVSTOP-LAB/TestStand-User-Interface-Messages-Demo",
+  "commit": "f4e272d4cb4ef1b47d6323b6d82baec0198e8b03",
+  "reason": "no license file"
+ },
+ {
+  "repo": "NISystemsEngineering/ni-LunchAndLearn-DesigningTestStandSequencesForReuseExamples",
+  "commit": "56fca82f0863a448178ea9dd08b66bd6d1d89815",
+  "reason": "no license file"
+ },
+ {
+  "repo": "NISystemsEngineering/ni-LunchAndLearn-SystemLinkOverviewExamples",
+  "commit": "f15c1f24654cddc11d17b9e1112dbdfaafcc3ec6",
+  "reason": "no license file"
+ },
+ {
+  "repo": "NISystemsEngineering/RF-Test_Sequencer-AI-Demo",
+  "commit": "ee6f3a50b75698cf394736e3b69157e59b487dc4",
+  "reason": "no license file"
+ },
+ {
+  "repo": "NIVeriStandAdd-Ons/TestStand-Examples-for-HIL",
+  "commit": "aa3288156eebd4f1555c4d78b1b7dca836d83749",
+  "reason": "no license file"
+ },
+ {
+  "repo": "NIVeriStandAdd-Ons/UDP-Data-Link-Custom-Device",
+  "commit": "137dcf27ea7eff36cdee0d80ee67452d4d1f6108",
+  "reason": "no license file"
+ },
+ {
+  "repo": "RETRTRE/.net-cvi-teststand",
+  "commit": "4e7f6d12e657d5cf88a15b1c7d03ca31c409de7d",
+  "reason": "no license file"
+ },
+ {
+  "repo": "robertsdy/python_labview_teststand",
+  "commit": "981d2048041933a268cb4cec4a73f06133d978c2",
+  "reason": "no license file"
+ },
+ {
+  "repo": "schieb2/Testing-Software",
+  "commit": "5d8502d1374bbd59b7bd74d2f69938c65a93f9ac",
+  "reason": "no license file"
+ },
+ {
+  "repo": "ShoutangYang/Labview-TeststandCallbackDLL",
+  "commit": "0473efc4339e0ec32e32a0a0a6ceb9ea5b30f306",
+  "reason": "no license file"
+ },
+ {
+  "repo": "yiwang-80/PMIC_ATE_DEMO",
+  "commit": "aabda531753b50fc4eac32b218461e5317166645",
+  "reason": "no license file"
+ },
+ {
+  "repo": "zhongzixingnu/Memory-Monitor",
+  "commit": "b297a60276983c6e63a1ae27aa7b6f0a1d9a1f86",
+  "reason": "no license file"
+ }
+]

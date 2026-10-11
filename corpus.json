@@ -1,0 +1,15 @@
+{
+    "keep": [
+        ".seq",
+        ".ini",
+        ".cfg",
+        ".tsw",
+        ".tpj",
+        ".vi",
+        ".ctl",
+        ".llb",
+        ".lvlib",
+        ".lvclass",
+        ".lvproj"
+    ]
+}
