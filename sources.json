@@ -118,5 +118,13 @@
   "license": "MIT",
   "files": 595,
   "bytes": 20944009
+ },
+ {
+  "name": "NI-Measurement-Plug-Ins__device-power-sequencer",
+  "repo": "NI-Measurement-Plug-Ins/device-power-sequencer",
+  "commit": "4e7cbe6992d6accae52385b9cec55518967ba7f3",
+  "license": "MIT",
+  "files": 135,
+  "bytes": 4639760
  }
 ]
