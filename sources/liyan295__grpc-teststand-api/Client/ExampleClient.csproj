@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Add.ico" />
+    <None Remove="Resources\Delete.ico" />
+    <None Remove="Resources\ExecutionAborted.ico" />
+    <None Remove="Resources\ExecutionError.ico" />
+    <None Remove="Resources\ExecutionFailed.ico" />
+    <None Remove="Resources\ExecutionPassed.ico" />
+    <None Remove="Resources\ExecutionPaused.ico" />
+    <None Remove="Resources\ExecutionRunning.ico" />
+    <None Remove="Resources\ExecutionTerminated.ico" />
+    <None Remove="Resources\ExecutionTerminating.ico" />
+    <None Remove="Resources\NotConnected.png" />
+    <None Remove="Resources\NotSecuredConnection.png" />
+    <None Remove="Resources\SecuredConnection.ico" />
+    <None Remove="Resources\SecuredConnection.png" />
+    <None Remove="Resources\StatusConnected.png" />
+    <None Remove="Resources\StatusDisconnected.png" />
+    <None Remove="Resources\UnsecuredConnection.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.Net.Client" Version="2.40.0" />
+	<PackageReference Include="Grpc.AspNetCore" Version="2.39.0" />
+	<PackageReference Include="NationalInstruments.TestStand.Grpc.Client" Version="0.5.0-*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Add.ico" />
+    <EmbeddedResource Include="Resources\Delete.ico" />
+    <EmbeddedResource Include="Resources\ExecutionAborted.ico" />
+    <EmbeddedResource Include="Resources\ExecutionError.ico" />
+    <EmbeddedResource Include="Resources\ExecutionFailed.ico" />
+    <EmbeddedResource Include="Resources\ExecutionPassed.ico" />
+    <EmbeddedResource Include="Resources\ExecutionPaused.ico" />
+    <EmbeddedResource Include="Resources\ExecutionRunning.ico" />
+    <EmbeddedResource Include="Resources\ExecutionTerminated.ico" />
+    <EmbeddedResource Include="Resources\ExecutionTerminating.ico" />
+    <EmbeddedResource Include="Resources\NotConnected.png" />
+    <EmbeddedResource Include="Resources\NotSecuredConnection.png" />
+    <EmbeddedResource Include="Resources\SecuredConnection.png" />
+    <EmbeddedResource Include="Resources\StatusConnected.png" />
+    <EmbeddedResource Include="Resources\StatusDisconnected.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Grpc.Utilities\Grpc.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="client_config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy /I /Y certs $(OutDir)\certs" />
+  </Target>
+</Project>

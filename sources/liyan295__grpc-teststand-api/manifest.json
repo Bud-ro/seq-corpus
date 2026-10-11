@@ -1,0 +1,522 @@
+{
+ "repo": "liyan295/grpc-teststand-api",
+ "url": "https://github.com/liyan295/grpc-teststand-api",
+ "commit": "b7da03175e2500ef454871d54232d8741d817e48",
+ "license": "MIT",
+ "licenseFile": "LICENSE",
+ "fetched": "2026-10-11",
+ "files": [
+  {
+   "path": "Server/ExampleFiles/LoadError.seq",
+   "bytes": 148925,
+   "sha256": "6d5fdb018dcbc64f34a3b87c636080f87698525ac488585a4ad9f7f5224a57c6",
+   "via": "extension"
+  },
+  {
+   "path": "Server/ExampleFiles/LoopForever.seq",
+   "bytes": 392637,
+   "sha256": "386f8a947193d2d71202c882e5298f5707d1c6af8889c533aa8d902d39a9481b",
+   "via": "extension"
+  },
+  {
+   "path": "Server/ExampleFiles/RunTimeError.seq",
+   "bytes": 148916,
+   "sha256": "c93ffb485cc85ad5d963b9b9254c94d723b04fd791419a3f3d0f6ed6b0aa7315",
+   "via": "extension"
+  },
+  {
+   "path": "Server/ExampleFiles/StepResults.seq",
+   "bytes": 157929,
+   "sha256": "2673f25194c9748362fea0e70f8fe23489488afec6f1ab5caf4eae346ec183c6",
+   "via": "extension"
+  },
+  {
+   "path": "Server/ExampleFiles/Test.seq",
+   "bytes": 262320,
+   "sha256": "8efd3da5b2f9eab0cf70b25320ab58beabba2cce94d98bebaf88eb7cf6b5113c",
+   "via": "extension"
+  },
+  {
+   "path": "Server/ExampleFiles/TraceExecution.seq",
+   "bytes": 928472,
+   "sha256": "a01df42bbd707d3e00f04e99fa6e41f644d0d55fa35a75bedb39570faffb39a4",
+   "via": "extension"
+  },
+  {
+   "path": "CONTRIBUTING.md",
+   "bytes": 2601,
+   "sha256": "fb7490e633e897f7272794e4188f6ea85349101ca912acf803703dd4d35ecb24",
+   "via": "tree"
+  },
+  {
+   "path": "Client/ClientConfigurationParser.cs",
+   "bytes": 2416,
+   "sha256": "1c18677d91bafe883538478780f974adb908ab7ad499fab06ec64f1f030620ef",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Clients.cs",
+   "bytes": 3810,
+   "sha256": "a08ba25311340a14b22e6585d0e3f0f0d45f6d935d73f9190fefdbde432d6a09",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Constants.cs",
+   "bytes": 1932,
+   "sha256": "1cb3a4c4f1163f576979101bdaff9a5896d2f59c5dddaaf4eb1b749072204d38",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Example.Designer.cs",
+   "bytes": 39954,
+   "sha256": "34600ebe57032c9eb3322f4e561af1caf3a6cf01ef2d84b83c9daef5fc22a3d7",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Example.cs",
+   "bytes": 93145,
+   "sha256": "5af2fd44240865bd51fb823124ae97bab9db9a6de3b371581a21742b72f73a30",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Example.resx",
+   "bytes": 3420,
+   "sha256": "b4ebb52374c5606889913cf3a629998d87aeb0fb3678c62c07a16b9abb653435",
+   "via": "tree"
+  },
+  {
+   "path": "Client/ExampleClient.csproj",
+   "bytes": 2838,
+   "sha256": "57b8df8d911cbd34ce45aed9022748706d54fff49aeb659d75d4b5c85827dc9f",
+   "via": "tree"
+  },
+  {
+   "path": "Client/ExampleClient.sln",
+   "bytes": 1630,
+   "sha256": "50b76d7e2ad46e404eb57be18cccc51e3c57caa9d3d585d23b458732d19eb6f0",
+   "via": "tree"
+  },
+  {
+   "path": "Client/ExecutionInfo.cs",
+   "bytes": 939,
+   "sha256": "c093b9dc51417a973e5a896d4724f1eb87be901deb87610d064cfa0f4f682d32",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Line.cs",
+   "bytes": 1331,
+   "sha256": "35889ef653b652c663e80aa538506b6f6cd48d1bdb70605fa55fd966e8cfcda9",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Program.cs",
+   "bytes": 1362,
+   "sha256": "b801d5149af37e003732ebeeb7ba2e4b50544b39e7bfac58cf1a0de19cc29faa",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Readme.md",
+   "bytes": 1751,
+   "sha256": "b1773561e568e79f5fd34b0f69eb3b733716369484c222cd793933d9789ca0d7",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Resources/Add.ico",
+   "bytes": 1150,
+   "sha256": "e6976a514304b6167517461039f8b27596535781cd21c51e4826473bc0017c7b",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Resources/Delete.ico",
+   "bytes": 1150,
+   "sha256": "1f4d8429fc86489cbcb791f35d712b537a6134c8d87e1fcdf97ea516b71a05c7",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Resources/ExecutionAborted.ico",
+   "bytes": 1150,
+   "sha256": "503fe6c00b3e7fd55a2f9a61ccfbf97f4d64c48ecf752e31e0c67a6bd645e2a9",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Resources/ExecutionError.ico",
+   "bytes": 1150,
+   "sha256": "3d32a30f71f83425fa752a396c61db5a756bbfa697a0981797fa45f76812b7cb",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Resources/ExecutionFailed.ico",
+   "bytes": 1150,
+   "sha256": "aadd17714a2d049329ae25c8737cf74f3a0e0e695c64ec6a57a51bdefd984a12",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Resources/ExecutionPassed.ico",
+   "bytes": 1150,
+   "sha256": "c25dd8e87cfc88c7ee28e6e4972ff631d07fd29ad4f6e2ac63b414ae5dfbedd5",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Resources/ExecutionPaused.ico",
+   "bytes": 1150,
+   "sha256": "1c6514538276f5f43ac96bb6d3862139408c5e0430834bee553f23c77ce3b09f",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Resources/ExecutionRunning.ico",
+   "bytes": 1150,
+   "sha256": "e8f6d159ed4cdeffa195825a613f196d6ffcf2dba12a3c0d6fa6a3439d3883d4",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Resources/ExecutionTerminated.ico",
+   "bytes": 1150,
+   "sha256": "503fe6c00b3e7fd55a2f9a61ccfbf97f4d64c48ecf752e31e0c67a6bd645e2a9",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Resources/ExecutionTerminating.ico",
+   "bytes": 1150,
+   "sha256": "f76caab1d00dde9913744fb7accf1ffaad813660cd87126df0142522a525e33a",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Resources/NotConnected.png",
+   "bytes": 300,
+   "sha256": "3dfc3aa1a9f1d7cfdc1a3bc42f27fabd72f2313db2e1bba03d6a100fab7a8ed2",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Resources/NotSecuredConnection.png",
+   "bytes": 282,
+   "sha256": "86ba6b8d63148118502a03a3e91a3ea9a93023aa6b8b1c3bb650733202446f70",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Resources/SecuredConnection.png",
+   "bytes": 288,
+   "sha256": "963ef5c64d2d1ceb0ad82e2600f561bc84b37a4b5f14ec014411c48b07429580",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Resources/StatusConnected.png",
+   "bytes": 245,
+   "sha256": "b8a6ab89b0d60c406c0723537d519ca9268cd17664b82b590162768e768497bc",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Resources/StatusDisconnected.png",
+   "bytes": 343,
+   "sha256": "adee5e9631ec32c93900847a642f7a39d9fe56c6c7b46560f850d913ab951465",
+   "via": "tree"
+  },
+  {
+   "path": "Client/ToolTipEx.cs",
+   "bytes": 2816,
+   "sha256": "73f61a3364e35fcc53f370357eccf5f2e0e796af1a0e094690ca0836155caefc",
+   "via": "tree"
+  },
+  {
+   "path": "Client/Win32Interop.cs",
+   "bytes": 2385,
+   "sha256": "2b759a6f4ace883c4558ff011ee3d8a70613c636c1f8084c429f20582ad94514",
+   "via": "tree"
+  },
+  {
+   "path": "Client/certs/client.pfx",
+   "bytes": 5902,
+   "sha256": "5decbc32cb636a0b98dfaba8726fd4eeeda97469a0b96ed7097a3a6aa711b608",
+   "via": "tree"
+  },
+  {
+   "path": "Client/certs/client_privatekey.pem",
+   "bytes": 3320,
+   "sha256": "73977264ae7749f7aa0f48727b7f842df47810a8de8589966d8be9fcc855c1d6",
+   "via": "tree"
+  },
+  {
+   "path": "Client/certs/client_self_signed_crt.pem",
+   "bytes": 1946,
+   "sha256": "995f1a12359afdaa2e4f07627a81bc61d48a03326fa73a39f86e03fc1d196d9a",
+   "via": "tree"
+  },
+  {
+   "path": "Client/certs/server_self_signed_crt.pem",
+   "bytes": 2070,
+   "sha256": "9a65eecef0bb64c90ecc397ad1c2547ba6c0e0bbcc53ca3bba426ea4191438f8",
+   "via": "tree"
+  },
+  {
+   "path": "Client/client_config.json",
+   "bytes": 384,
+   "sha256": "3c38c0c1cd1e99919cdc58d2e8c8009b4cd2931333e7dd90ca11148e5414684e",
+   "via": "tree"
+  },
+  {
+   "path": "Docs/APIMapping.md",
+   "bytes": 14629,
+   "sha256": "2e08195b75a09539cd62bd901a4fccee7e742310a9c687fe81d7919b8877cbca",
+   "via": "tree"
+  },
+  {
+   "path": "Docs/Encrypt_Connection.md",
+   "bytes": 6933,
+   "sha256": "b1356961f199282c72589c5344f16410af51d9d5db89f8f6271103691db7a6ed",
+   "via": "tree"
+  },
+  {
+   "path": "Docs/ObjectLifetime.md",
+   "bytes": 2324,
+   "sha256": "8c937dd52e8f016238a21c6d8f535a0931c7b5a346d569cd8dda749c8d3303d5",
+   "via": "tree"
+  },
+  {
+   "path": "Grpc.Utilities/ClientConfiguration.cs",
+   "bytes": 5194,
+   "sha256": "1b85704c2b2826fe79ce9e5632134d0dbc4dd1bc1335ebcbea7bc8ce87cb893d",
+   "via": "tree"
+  },
+  {
+   "path": "Grpc.Utilities/CreateChannelHelper.cs",
+   "bytes": 9343,
+   "sha256": "6c4c8775e8003f94e117b7de596164d4409c9455c41b22826cb202fb97316a79",
+   "via": "tree"
+  },
+  {
+   "path": "Grpc.Utilities/Grpc.Utilities.csproj",
+   "bytes": 698,
+   "sha256": "b8733a7eccffd3419f87367b6dcf1a3a61884c968a50a903b5d6094e333e2802",
+   "via": "tree"
+  },
+  {
+   "path": "Grpc.Utilities/GrpcServer.cs",
+   "bytes": 14716,
+   "sha256": "8af42a438abdc8d841deac3149f155a0d1f463a83cb3fe954539200fbe960af6",
+   "via": "tree"
+  },
+  {
+   "path": "Grpc.Utilities/ServerConfiguration.cs",
+   "bytes": 5759,
+   "sha256": "bf38e8b931f5acdb5bc48d06d6fc189f7d189b6369741e119e91e072d5009207",
+   "via": "tree"
+  },
+  {
+   "path": "Grpc.Utilities/ValidateGrpcChannelEventArgs.cs",
+   "bytes": 545,
+   "sha256": "94b576d0f28cc594fa232c20653cb650c881da172dfc18411c0c99fd3bcc73de",
+   "via": "tree"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1091,
+   "sha256": "16f05777125b5662a206c2ce068bdf3771f6dedb3ecb8b73a767ae6fe0a4f9ab",
+   "via": "tree"
+  },
+  {
+   "path": "README.md",
+   "bytes": 9129,
+   "sha256": "84e54bebb5131d0b567dd62371314bdbd2124d0de9b3aac843875794c773ba6f",
+   "via": "tree"
+  },
+  {
+   "path": "SelfSignedServerCertificates/GenerateSelfSignedServerAndClientCertificates.bat",
+   "bytes": 2900,
+   "sha256": "22d8e9f415b83f0e2332c7d5ba95a5dea7ff5594035e9ad0671d33fe257bd9cc",
+   "via": "tree"
+  },
+  {
+   "path": "SelfSignedServerCertificates/extensions.conf",
+   "bytes": 44,
+   "sha256": "1fb5a0a099c461b049fc5c7fc4b35f678784d439075387f21a829930a0b46498",
+   "via": "tree"
+  },
+  {
+   "path": "Server/CommonFiles/GrpcServerBase.cs",
+   "bytes": 16292,
+   "sha256": "0f16e491542519fbb6d559673f9cd52a47fc8e20f24b49beda11b0f422e897a1",
+   "via": "tree"
+  },
+  {
+   "path": "Server/CommonFiles/certs/client_self_signed_crt.pem",
+   "bytes": 1946,
+   "sha256": "995f1a12359afdaa2e4f07627a81bc61d48a03326fa73a39f86e03fc1d196d9a",
+   "via": "tree"
+  },
+  {
+   "path": "Server/CommonFiles/certs/server.pfx",
+   "bytes": 5982,
+   "sha256": "b45434338351127d6bd6a1688af01b292b667f4c6ca5d841df79b137a0f61f7b",
+   "via": "tree"
+  },
+  {
+   "path": "Server/CommonFiles/certs/server_privatekey.pem",
+   "bytes": 3324,
+   "sha256": "08d5c12b982a1965c6049745edc84f6200b35e09dcdb52996041eaf7d725254e",
+   "via": "tree"
+  },
+  {
+   "path": "Server/CommonFiles/certs/server_self_signed_crt.pem",
+   "bytes": 2070,
+   "sha256": "9a65eecef0bb64c90ecc397ad1c2547ba6c0e0bbcc53ca3bba426ea4191438f8",
+   "via": "tree"
+  },
+  {
+   "path": "Server/CommonFiles/server_config.json",
+   "bytes": 310,
+   "sha256": "a805104b9e01d3a457b5cb3d0c75101bcb8ffff7b7ad32a98e8cdd2958af8c59",
+   "via": "tree"
+  },
+  {
+   "path": "Server/UI/App.ico",
+   "bytes": 79846,
+   "sha256": "e3aafe077f0e08bff382a0b6c5c9f0a6afbe6296aa556dc6b3f63d7ea580fb73",
+   "via": "tree"
+  },
+  {
+   "path": "Server/UI/AssemblyInfo.cs",
+   "bytes": 2658,
+   "sha256": "4930dddfc8fc272febb229167f0fc173621817aa44d765653ae093804d1b2b10",
+   "via": "tree"
+  },
+  {
+   "path": "Server/UI/GrpcServer.cs",
+   "bytes": 1143,
+   "sha256": "e4c8a5a4c799ec80e09c08aedb5222972676d0443a6ce3e6ae274c9d4f596651",
+   "via": "tree"
+  },
+  {
+   "path": "Server/UI/MainForm.cs",
+   "bytes": 45188,
+   "sha256": "b9b58e7aa5cb61e48df896210b41dcf99f0abdbaa15f9ed82a5decf396dd56a8",
+   "via": "tree"
+  },
+  {
+   "path": "Server/UI/MainForm.resx",
+   "bytes": 17272,
+   "sha256": "f94da6609cb84c8eba92d847baccb0f657487df8b159a3563d6d793f14fc69aa",
+   "via": "tree"
+  },
+  {
+   "path": "Server/UI/Properties/Resources.Designer.cs",
+   "bytes": 3236,
+   "sha256": "7d213cc19d14b75fd191a7c79b6d21cdf9513689c9a4c9ff71fd032c169dbc4e",
+   "via": "tree"
+  },
+  {
+   "path": "Server/UI/Properties/Resources.resx",
+   "bytes": 6181,
+   "sha256": "f80165af12cb3668d95f9cdd711418b0b2e68d1fa97f611b12d4268eb0b59ed5",
+   "via": "tree"
+  },
+  {
+   "path": "Server/UI/Readme.md",
+   "bytes": 1605,
+   "sha256": "36d57a94bd02adec6c354c46552a27edf31911241a836879bfc9512f4b4813d2",
+   "via": "tree"
+  },
+  {
+   "path": "Server/UI/TestExecServer.csproj",
+   "bytes": 7505,
+   "sha256": "8d4535340eac9ecaaa1642615d55e37a70412541b0964193bec7d3fdaa8694d9",
+   "via": "tree"
+  },
+  {
+   "path": "Server/UI/TestExecServer.exe.manifest",
+   "bytes": 1007,
+   "sha256": "0aaf876217fc72ad9e827a86c6e9576602d2d93a74a515a06077d53fab945a6f",
+   "via": "tree"
+  },
+  {
+   "path": "Server/UI/TestExecServer.sln",
+   "bytes": 2289,
+   "sha256": "a1ea0e6d857a7b56dedf57a208116fad2ed9f1f7a6017c4abf2da6677ad5784c",
+   "via": "tree"
+  },
+  {
+   "path": "Server/WindowsService/App.ico",
+   "bytes": 79846,
+   "sha256": "e3aafe077f0e08bff382a0b6c5c9f0a6afbe6296aa556dc6b3f63d7ea580fb73",
+   "via": "tree"
+  },
+  {
+   "path": "Server/WindowsService/AssemblyInfo.cs",
+   "bytes": 2666,
+   "sha256": "4a8c21c7d6a14e03612a5e4ea2af0e4a0cb3c438cced89f89c5bbdca4e32ed1b",
+   "via": "tree"
+  },
+  {
+   "path": "Server/WindowsService/GrpcService.cs",
+   "bytes": 1379,
+   "sha256": "3ca35223359ed7272fa501c2ff27105624b21ba564a36c98efb2f54fc4ec07db",
+   "via": "tree"
+  },
+  {
+   "path": "Server/WindowsService/MainForm.cs",
+   "bytes": 19115,
+   "sha256": "bd4306aff3fe3a0afc10c3297d97185d38557ace68331b0c44d40cd57c7dbc65",
+   "via": "tree"
+  },
+  {
+   "path": "Server/WindowsService/MainForm.resx",
+   "bytes": 10475,
+   "sha256": "48524dfcb82e344fb818fb6a2af878ef848dcf784990112c608649f42eefe9ce",
+   "via": "tree"
+  },
+  {
+   "path": "Server/WindowsService/Program.cs",
+   "bytes": 232,
+   "sha256": "f2fcd40a66350679dff6f031d91d167798893d2ebe1b209660d44d693aae22f1",
+   "via": "tree"
+  },
+  {
+   "path": "Server/WindowsService/Properties/PublishProfiles/gRPCService.pubxml",
+   "bytes": 554,
+   "sha256": "676d625321d502a8c688f041f64866ef31b07bb2c4a274a6c2e985ff663c68a3",
+   "via": "tree"
+  },
+  {
+   "path": "Server/WindowsService/Properties/Resources.Designer.cs",
+   "bytes": 3250,
+   "sha256": "11f013b601a172c015f433f947bf3a0ce65f5ab2ad9e389a8b0dbbe290f0889e",
+   "via": "tree"
+  },
+  {
+   "path": "Server/WindowsService/Properties/Resources.resx",
+   "bytes": 6181,
+   "sha256": "f80165af12cb3668d95f9cdd711418b0b2e68d1fa97f611b12d4268eb0b59ed5",
+   "via": "tree"
+  },
+  {
+   "path": "Server/WindowsService/Readme.md",
+   "bytes": 3272,
+   "sha256": "42e7bbeab85a69feccebddb6e514d00607e8740417844ddd18699049aad3f3b2",
+   "via": "tree"
+  },
+  {
+   "path": "Server/WindowsService/TestExecServerService.exe.manifest",
+   "bytes": 1007,
+   "sha256": "0aaf876217fc72ad9e827a86c6e9576602d2d93a74a515a06077d53fab945a6f",
+   "via": "tree"
+  },
+  {
+   "path": "Server/WindowsService/TestExecWindowsService.csproj",
+   "bytes": 4020,
+   "sha256": "c6b1fa9657a565915a4fbce26db2c97925d3daf7ff9f50d0be81472617d8551f",
+   "via": "tree"
+  },
+  {
+   "path": "Server/WindowsService/TestExecWindowsService.sln",
+   "bytes": 1651,
+   "sha256": "e3159e0261c139218466d6323981c2a6aeeada8c84e2279151546c448a8f302e",
+   "via": "tree"
+  },
+  {
+   "path": "Server/WindowsService/WindowsService.cs",
+   "bytes": 2810,
+   "sha256": "5b45a97a84860219ac66cf61f694a2510f873ae52fc61d943286768f5a177fba",
+   "via": "tree"
+  }
+ ],
+ "skipped": [],
+ "external": []
+}
