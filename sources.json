@@ -150,5 +150,13 @@
   "license": "Apache-2.0",
   "files": 187,
   "bytes": 1826586
+ },
+ {
+  "name": "NISystemsEngineering__rfic-reference-design-libraries-labview",
+  "repo": "NISystemsEngineering/rfic-reference-design-libraries-labview",
+  "commit": "d63e58ba90c3af0c27fbe6ccc9365d9b1b1492af",
+  "license": "Apache-2.0",
+  "files": 237,
+  "bytes": 10110618
  }
 ]
