@@ -1,0 +1,2724 @@
+﻿<Solution xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/NationalInstruments.PackageBuilder.Engine">
+    <Name>TS_CSV_DOCGEN_TOOL</Name>
+    <SourceItems>
+        <SourceItem z:Id="i2">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\COMMIT_EDITMSG</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i3">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\config</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i4">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\description</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i5">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\FETCH_HEAD</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i6">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\HEAD</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i7">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\hooks\applypatch-msg.sample</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i8">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\hooks\commit-msg.sample</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i9">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\hooks\fsmonitor-watchman.sample</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i10">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\hooks\post-update.sample</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i11">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\hooks\pre-applypatch.sample</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i12">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\hooks\pre-commit.sample</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i13">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\hooks\pre-merge-commit.sample</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i14">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\hooks\prepare-commit-msg.sample</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i15">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\hooks\pre-push.sample</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i16">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\hooks\pre-rebase.sample</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i17">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\hooks\pre-receive.sample</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i18">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\hooks\push-to-checkout.sample</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i19">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\hooks\sendemail-validate.sample</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i20">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\hooks\update.sample</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i21">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\index</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i22">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\info\exclude</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i23">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\logs\HEAD</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i24">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\logs\refs\heads\main</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i25">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\03\bd060178c76a30e9ef4c7acbb6a2f90352c8bf</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i26">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\05\1fdf2d96c01f3569838b9e32ad9807b43eb9c8</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i27">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\06\2da949911be1f8a7c40a95b55238e7aa314db8</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i28">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\06\f31c36c60082b1ad163f72a200bd86b1187eee</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i29">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\08\054bd7a6780e9a727bd5033aeb999037c7870f</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i30">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\0a\9da7b5a04ba9084266c5565c9811e2ce54b83d</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i31">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\0c\498735fb0e37f646dd5c19b4b426e3241c9ba5</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i32">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\0d\a4b676ecc10d2f616d2481f67c21611a9dfe94</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i33">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\0f\0346aeb88af1e3ccbe68300b321799aee814aa</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i34">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\18\745e88839a69789b86d6cd124f282a4b333bd8</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i35">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\1c\a44611a8a241949ba6b9133e3d4cec3350d5c8</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i36">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\29\5b125f417b952b92f5a4e9ca682c871bbc5c19</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i37">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\29\84a3dd370e26f8b1cdceb4cbd823c2edd5c05b</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i38">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\29\a677e446125928092b97c61705566a2708fecd</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i39">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\2f\b67da83623531bd151ae2d6c6dc18d781ef828</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i40">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\33\9455108c7b5b754f44c6f468f2e086a62f92c5</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i41">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\35\330533f46483e8fbaf33a703b799176fcee0b6</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i42">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\38\959b01c86b6d688b61c12d1db7c2561a94a3e5</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i43">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\39\2d723247e23a97fc78862a26c4f3c7eadf914f</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i44">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\3f\53a95501aec3c446a84ee8876d60b38dd263bb</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i45">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\44\466c15dacfea3d9a9324dc2b9530c641991df5</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i46">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\44\6652da207e80563c54077bb2f48a2b906f94d7</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i47">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\44\d078e601ccee576c9c677362e6f100923bdbcd</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i48">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\45\e10d89a5bb354132a8068d45f7312e8086f2c3</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i49">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\47\c0570d5d60de02c35348e4d080be1973056025</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i50">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\48\f0d6596cda6d985632ba6fb46a7fa78317f488</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i51">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\49\72fc09fb3792db0678d820b610a1c45dabf34d</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i52">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\4a\227343ef1fd11b3895272cc8941f45b49937a0</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i53">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\50\eacafabfb06da7745e0233774a6ead8e6c6b3c</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i54">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\55\2fe75aa8fed7fc6c0781daf2b3e59612b4c038</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i55">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\55\c3b70dd5c7f566cf8ea4fb1003e3a919cd7f8f</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i56">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\59\3f4708db84ac8fd0f5cc47c634f38c013fe9e4</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i57">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\5a\04924d043c0ab553af6ed520c902e75c51be4d</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i58">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\62\207dc6275e540f85564ac6052f6c638c775bcf</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i59">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\64\d03d4685f5f4786ff203cb04e184448d4571d5</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i60">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\65\4141d22795312636376c91e03921d74267a4fd</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i61">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\65\7c5e7c96151e7d128f6708249882ca4f0ff82b</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i62">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\66\c87c032a1aef4942090ec43aa363b5ce014f86</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i63">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\69\1d09568a284768ba5d31ffd3b0c06bd36ca9cf</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i64">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\6c\1ac5856e63eeebef82c75409769a8a22dc456b</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i65">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\70\69ad5201be0f5c92c59c7e2dc401c44f77a2a4</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i66">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\70\8192035d3a767cb159ed96552159a3c1dee2d4</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i67">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\70\a8d5ebde9f0236089167634b3e01e6491ec519</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i68">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\76\81976a135ab96ad69dd4f62d304e7ef59fe34d</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i69">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\7b\9671c38d5ef2c7477bfd6e6932055c11a7b3e6</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i70">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\7b\dd9e79cb2838b311a93c783d89440138e8e43b</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i71">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\7f\4d46ce917f09ad8efc12cfdb3cea95daf64019</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i72">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\7f\978058d1188e368f414b12f7a2d1475e046562</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i73">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\80\3801e082302aa159e9ecef014f23565a18f4eb</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i74">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\80\643643360bfd59ec83184cf1e3647fe348d368</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i75">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\82\e00ca08814bfcdf1522dc994a87ab48fd02b8e</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i76">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\84\d9fa4e5465fac69ef7a760ba55d495fe13e2d2</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i77">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\8a\e1077f38042b1e604ce8931a4b15d0f87e47f7</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i78">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\8c\b6e24805a1b64320603b4580d4dcec3e9f196a</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i79">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\8e\e985a3b12db0c977a096fb5f236d9b0f123b2a</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i80">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\94\5605b4fc6a49ec2d8ca027be7f91e6b6ef6155</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i81">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\98\a23d0eb688dc65f50bc6a4438d07e7fccd95c2</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i82">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\9a\0f80f649d40f665482a362d314173ca5c3742c</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i83">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\a2\677aa987ceaa9286d5d892fe14a11752f770e0</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i84">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\a3\11185aabebc373e600c49b7e80a0d9b357c1cc</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i85">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\a4\2cc7644fd22b4f4cd5b5643a9e48c8fc62df8d</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i86">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\aa\82bccbd9459f8a53ddcc7f82dd49b7894bec19</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i87">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\af\801c179165c9ef955ac7cc51df3eeb87b90075</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i88">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\b3\154b8980c1230b6b0c659d4764fcf24969eeae</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i89">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\b6\747e45182bb83b1f3e6c5c72e9ffe66751cdd7</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i90">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\b6\dd5af450a5d992f21b4d89cbe67820322c3884</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i91">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\b7\bdc73a56020e97670b8a9bb69c571854ebf901</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i92">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\b8\34ee0b3062549a432bdd62a634bb5da1ce0e52</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i93">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\ba\8c82f79cb1f6679a872554fd288b03d0ec4c91</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i94">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\ba\f4518e053bc5637ba9ee9dc4d6fc8f9234099b</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i95">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\bb\da204c8507f05f2ee89fe6782ce5ddf30e90f9</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i96">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\c0\f9c103dee42982cae2088a6f3c027a5ce45cf5</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i97">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\c3\c1a9551d5e575cf52e3b82e84ac9d02fda0efe</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i98">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\c5\8b5341fd78a0c52b61c15f933291691ff7aa48</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i99">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\c6\0e4af4f3e4694e251eff19cfc06e8a76a6ef33</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i100">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\c6\370ea1b400f22f566c2a2bc920abf13664acc7</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i101">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\c8\4d4208e35c50502ed981139f30496cd6ee55d2</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i102">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\cc\2796aac4ff3007913a9b0442e7b8ccfe45280a</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i103">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\cf\fd6c127480ef90d2bd35cfae17cba8403e290c</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i104">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\d0\bcb59094f915521aeaf1119b06b26401015802</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i105">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\d0\d9f1819f8c4966b9434a2ce5066485d8c4bdc8</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i106">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\d1\92a3755652b186085d59667d1f8c086ceb5ee5</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i107">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\d3\0c8b5e2b82ed231b52423223dacfac78fc6bc6</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i108">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\d7\4c826874400c2a82532abdd1dce2764a150480</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i109">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\db\2b65418c7eb1891cd96c4cea2170eb22f9f1db</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i110">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\db\45a3a1e379496523169c660cc053ceb16a0259</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i111">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\db\79a7b4b016f992c92aad148028a38e053f8242</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i112">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\dc\b88919613efa4588aed6aa594cbb388c63505d</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i113">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\de\c6ce6fb553e3dbdc0a91b474469c0305f51a63</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i114">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\df\5b378153fcc1f9e54e7db158457720ba87d85b</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i115">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\df\d809a6b9f1c977b7142e20e77f8e893bdb3797</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i116">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\e3\6fbd49273ca2b9e6beae557815f0f39a3b4b67</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i117">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\e6\9de29bb2d1d6434b8b29ae775ad8c2e48c5391</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i118">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\ea\469f0516d7fb4de5c8037db5a90b8b7a8eab3b</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i119">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\eb\4b57ae79eba2087e34a7cd1bd85b9de6640e5f</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i120">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\eb\55531d42915c17c2eac839f2ba1e4b42fc2524</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i121">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\ec\aa02334680fa1e1e92ab773f3570469008e35c</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i122">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\f3\1336bc31ad7af819b167886dfc32b638685c4a</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i123">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\f6\d44dc68d58286c70e6b7ea7a23b9d95c9b9bc9</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i124">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\f9\e0aa968d5bebff70eeb3e82709936ce815bc65</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i125">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\fb\1503f250bc1987ae626335cb7af4080efe4908</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i126">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\fe\2f4df868787219868671530cbd9a674fe0dc37</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i127">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\ff\bdb5d9920ab4a8a872eea27b66fba3ad01bfe2</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i128">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\info</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i129">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\pack</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i130">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\refs\heads\main</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i131">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\refs\tags</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i132">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.gitignore</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i133">
+            <PluginConfigurationOptions />
+            <RelativePath>..\docs\img\added_menu_item.png</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i134">
+            <PluginConfigurationOptions />
+            <RelativePath>..\docs\img\excel_output.gif</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i135">
+            <PluginConfigurationOptions />
+            <RelativePath>..\docs\img\tool_dialog.png</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i136">
+            <PluginConfigurationOptions />
+            <RelativePath>..\docs\img\vscode_output.gif</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i137">
+            <PluginConfigurationOptions />
+            <RelativePath>..\docs\README.md</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i138">
+            <PluginConfigurationOptions />
+            <RelativePath>..\LICENSE</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i139">
+            <PluginConfigurationOptions />
+            <RelativePath>..\README.md</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i140">
+            <PluginConfigurationOptions />
+            <RelativePath>..\resources\CSV_DocGen_Menu.ini</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i141">
+            <PluginConfigurationOptions />
+            <RelativePath>..\resources\CSV_DocGen_Strings.ini</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i142">
+            <PluginConfigurationOptions />
+            <RelativePath>..\resources\ini_handler.bat</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i143">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\BuildStep.bat</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i144">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\CallCC.bat</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i145">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\CallClang.bat</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i146">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\CallLink.bat</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i147">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\CallMidl.bat</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i148">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\CallPreLink.bat</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i149">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\CallRC.bat</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i150">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\CC_no_dep_options.txt</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i151">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\CC_options.txt</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i152">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\Clang_no_dep_options.txt</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i153">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\Clang_options.txt</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i154">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\dependencies.lnk.in</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i155">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\dlldependencies.txt</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i156">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\doc.c.declinfo</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i157">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\doc.c.declinfo.out</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i158">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\doc.h.declinfo</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i159">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\doc.h.declinfo.out</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i160">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\doc.h.hmacros</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i161">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\doc.h.hmacros.out</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i162">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\doc.obj</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i163">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\doc.obj.cvidefprots</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i164">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\DocSupport.dll</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i165">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\DocSupport.lib</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i166">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\easytab.obj</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i167">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\easytab.obj.cvidefprots</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i168">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\Jamfile</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i169">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\Jamfile_instr</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i170">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\link_list.txt</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i171">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\link_options.txt</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i172">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\linkerlicensing.txt</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i173">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\linkersummary.txt</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i174">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\manifest.xml</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i175">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\midl.out</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i176">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\moduledependencies.txt</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i177">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\PreLink.out</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i178">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\prelink_options.txt</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i179">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\resources.in.rc</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i180">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\resources.out.rc</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i181">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\resources.res</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i182">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\template.odl</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i183">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\typelib.odl</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i184">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64\typelib.odl.tlb</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i185">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\doc.c</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i186">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\doc.fp</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i187">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\doc.h</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i188">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\docdlgs.h</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i189">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\docdlgs.uir</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i190">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\DocSupport.cws</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i191">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\DocSupport.prj</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i192">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\x64\DocSupport.dll</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i193">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\x64\DocSupport.lib</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i194">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\x64\msvc64\DocSupport.lib</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i195">
+            <PluginConfigurationOptions />
+            <RelativePath>CSV_DOCGEN_TOOL_TS2023_Q4.pbs</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i196">
+            <PluginConfigurationOptions />
+            <RelativePath>CSV_DOCGEN_TOOL_TS2025_Q3 .pbs</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i197">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Components\Language\English\CSV_DocGen_Strings.ini</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i198">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Components\Tools\CSVDocGen\doc.c</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i199">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Components\Tools\CSVDocGen\doc.fp</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i200">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Components\Tools\CSVDocGen\doc.h</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i201">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Components\Tools\CSVDocGen\docdlgs.h</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i202">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Components\Tools\CSVDocGen\docdlgs.uir</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i203">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Components\Tools\CSVDocGen\DocSupport.cws</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i204">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Components\Tools\CSVDocGen\DocSupport.prj</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i205">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Components\Tools\CSVDocGen\support\ini_handler.bat</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i206">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Components\Tools\CSVDocGen\x64\DocSupport.dll</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i207">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Setup\ToolMenusToInstall\CSV_DocGen_Menu.ini</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i208">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\info</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i22" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i209">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\logs\refs\heads</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i24" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i210">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\03</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i25" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i211">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\05</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i26" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i212">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\08</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i29" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i213">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\0a</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i30" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i214">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\0c</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i31" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i215">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\0d</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i32" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i216">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\0f</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i33" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i217">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\18</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i34" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i218">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\1c</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i35" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i219">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\2f</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i39" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i220">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\33</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i40" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i221">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\35</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i41" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i222">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\38</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i42" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i223">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\39</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i43" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i224">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\3f</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i44" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i225">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\45</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i48" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i226">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\47</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i49" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i227">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\48</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i50" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i228">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\49</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i51" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i229">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\4a</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i52" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i230">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\50</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i53" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i231">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\59</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i56" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i232">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\5a</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i57" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i233">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\62</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i58" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i234">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\64</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i59" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i235">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\66</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i62" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i236">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\69</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i63" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i237">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\6c</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i64" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i238">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\76</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i68" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i239">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\82</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i75" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i240">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\84</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i76" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i241">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\8a</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i77" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i242">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\8c</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i78" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i243">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\8e</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i79" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i244">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\94</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i80" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i245">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\98</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i81" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i246">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\9a</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i82" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i247">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\a2</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i83" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i248">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\a3</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i84" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i249">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\a4</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i85" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i250">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\aa</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i86" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i251">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\af</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i87" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i252">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\b3</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i88" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i253">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\b7</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i91" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i254">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\b8</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i92" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i255">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\bb</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i95" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i256">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\c0</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i96" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i257">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\c3</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i97" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i258">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\c5</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i98" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i259">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\c8</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i101" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i260">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\cc</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i102" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i261">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\cf</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i103" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i262">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\d1</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i106" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i263">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\d3</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i107" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i264">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\d7</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i108" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i265">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\dc</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i112" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i266">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\de</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i113" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i267">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\e3</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i116" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i268">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\e6</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i117" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i269">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\ea</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i118" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i270">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\ec</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i121" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i271">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\f3</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i122" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i272">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\f6</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i123" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i273">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\f9</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i124" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i274">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\fb</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i125" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i275">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\fe</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i126" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i276">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\ff</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i127" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i277">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\refs\heads</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i130" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i278">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\docgen.seq</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i192" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i279">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\docgen_csv.seq</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i192" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i280">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\docgen_html.seq</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i192" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i281">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\docgen_txt.seq</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i192" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i282">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\x64\msvc64</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i194" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i283">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Components\Language\English</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i197" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i284">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Components\Tools\CSVDocGen\docgen.seq</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i206" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i285">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Components\Tools\CSVDocGen\docgen_csv.seq</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i206" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i286">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Components\Tools\CSVDocGen\docgen_html.seq</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i206" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i287">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Components\Tools\CSVDocGen\docgen_txt.seq</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i206" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i288">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Components\Tools\CSVDocGen\support</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i205" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i289">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Components\Tools\CSVDocGen\x64</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i206" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i290">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Setup\ToolMenusToInstall</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i207" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i291">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\06</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i27" />
+                <SourceItem z:Ref="i28" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i292">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\55</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i54" />
+                <SourceItem z:Ref="i55" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i293">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\65</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i60" />
+                <SourceItem z:Ref="i61" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i294">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\7b</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i69" />
+                <SourceItem z:Ref="i70" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i295">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\7f</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i71" />
+                <SourceItem z:Ref="i72" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i296">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\80</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i74" />
+                <SourceItem z:Ref="i73" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i297">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\b6</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i89" />
+                <SourceItem z:Ref="i90" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i298">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\ba</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i94" />
+                <SourceItem z:Ref="i93" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i299">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\c6</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i99" />
+                <SourceItem z:Ref="i100" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i300">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\d0</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i105" />
+                <SourceItem z:Ref="i104" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i301">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\df</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i114" />
+                <SourceItem z:Ref="i115" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i302">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\eb</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i119" />
+                <SourceItem z:Ref="i120" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i303">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\29</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i36" />
+                <SourceItem z:Ref="i37" />
+                <SourceItem z:Ref="i38" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i304">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\44</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i45" />
+                <SourceItem z:Ref="i46" />
+                <SourceItem z:Ref="i47" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i305">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\70</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i65" />
+                <SourceItem z:Ref="i66" />
+                <SourceItem z:Ref="i67" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i306">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects\db</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i109" />
+                <SourceItem z:Ref="i110" />
+                <SourceItem z:Ref="i111" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i307">
+            <PluginConfigurationOptions />
+            <RelativePath>..\resources</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i140" />
+                <SourceItem z:Ref="i141" />
+                <SourceItem z:Ref="i142" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i308">
+            <PluginConfigurationOptions />
+            <RelativePath>..\docs\img</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i133" />
+                <SourceItem z:Ref="i134" />
+                <SourceItem z:Ref="i135" />
+                <SourceItem z:Ref="i136" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i309">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\hooks</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i7" />
+                <SourceItem z:Ref="i8" />
+                <SourceItem z:Ref="i9" />
+                <SourceItem z:Ref="i10" />
+                <SourceItem z:Ref="i11" />
+                <SourceItem z:Ref="i12" />
+                <SourceItem z:Ref="i13" />
+                <SourceItem z:Ref="i15" />
+                <SourceItem z:Ref="i16" />
+                <SourceItem z:Ref="i17" />
+                <SourceItem z:Ref="i14" />
+                <SourceItem z:Ref="i18" />
+                <SourceItem z:Ref="i19" />
+                <SourceItem z:Ref="i20" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i310">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport\Release64</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i143" />
+                <SourceItem z:Ref="i144" />
+                <SourceItem z:Ref="i145" />
+                <SourceItem z:Ref="i146" />
+                <SourceItem z:Ref="i147" />
+                <SourceItem z:Ref="i148" />
+                <SourceItem z:Ref="i149" />
+                <SourceItem z:Ref="i150" />
+                <SourceItem z:Ref="i151" />
+                <SourceItem z:Ref="i152" />
+                <SourceItem z:Ref="i153" />
+                <SourceItem z:Ref="i154" />
+                <SourceItem z:Ref="i155" />
+                <SourceItem z:Ref="i156" />
+                <SourceItem z:Ref="i157" />
+                <SourceItem z:Ref="i158" />
+                <SourceItem z:Ref="i159" />
+                <SourceItem z:Ref="i160" />
+                <SourceItem z:Ref="i161" />
+                <SourceItem z:Ref="i162" />
+                <SourceItem z:Ref="i163" />
+                <SourceItem z:Ref="i164" />
+                <SourceItem z:Ref="i165" />
+                <SourceItem z:Ref="i166" />
+                <SourceItem z:Ref="i167" />
+                <SourceItem z:Ref="i168" />
+                <SourceItem z:Ref="i169" />
+                <SourceItem z:Ref="i172" />
+                <SourceItem z:Ref="i173" />
+                <SourceItem z:Ref="i170" />
+                <SourceItem z:Ref="i171" />
+                <SourceItem z:Ref="i174" />
+                <SourceItem z:Ref="i175" />
+                <SourceItem z:Ref="i176" />
+                <SourceItem z:Ref="i177" />
+                <SourceItem z:Ref="i178" />
+                <SourceItem z:Ref="i179" />
+                <SourceItem z:Ref="i180" />
+                <SourceItem z:Ref="i181" />
+                <SourceItem z:Ref="i182" />
+                <SourceItem z:Ref="i183" />
+                <SourceItem z:Ref="i184" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i311">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\logs\refs</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i209" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i312">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\cvibuild.DocSupport</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i310" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i313">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Components\Language</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i283" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i314">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Setup</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i290" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i315">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\refs</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i277" />
+                <SourceItem z:Ref="i131" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i316">
+            <PluginConfigurationOptions />
+            <RelativePath>..\docs</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i137" />
+                <SourceItem z:Ref="i308" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i317">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\x64</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i193" />
+                <SourceItem z:Ref="i282" />
+                <SourceItem z:Ref="i192" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i318">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Components\Tools\CSVDocGen</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i198" />
+                <SourceItem z:Ref="i199" />
+                <SourceItem z:Ref="i200" />
+                <SourceItem z:Ref="i201" />
+                <SourceItem z:Ref="i202" />
+                <SourceItem z:Ref="i284" />
+                <SourceItem z:Ref="i285" />
+                <SourceItem z:Ref="i286" />
+                <SourceItem z:Ref="i287" />
+                <SourceItem z:Ref="i203" />
+                <SourceItem z:Ref="i204" />
+                <SourceItem z:Ref="i288" />
+                <SourceItem z:Ref="i289" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i319">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\objects</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i210" />
+                <SourceItem z:Ref="i211" />
+                <SourceItem z:Ref="i291" />
+                <SourceItem z:Ref="i213" />
+                <SourceItem z:Ref="i216" />
+                <SourceItem z:Ref="i217" />
+                <SourceItem z:Ref="i218" />
+                <SourceItem z:Ref="i303" />
+                <SourceItem z:Ref="i219" />
+                <SourceItem z:Ref="i220" />
+                <SourceItem z:Ref="i222" />
+                <SourceItem z:Ref="i223" />
+                <SourceItem z:Ref="i224" />
+                <SourceItem z:Ref="i304" />
+                <SourceItem z:Ref="i225" />
+                <SourceItem z:Ref="i227" />
+                <SourceItem z:Ref="i228" />
+                <SourceItem z:Ref="i229" />
+                <SourceItem z:Ref="i231" />
+                <SourceItem z:Ref="i232" />
+                <SourceItem z:Ref="i233" />
+                <SourceItem z:Ref="i234" />
+                <SourceItem z:Ref="i293" />
+                <SourceItem z:Ref="i235" />
+                <SourceItem z:Ref="i236" />
+                <SourceItem z:Ref="i237" />
+                <SourceItem z:Ref="i305" />
+                <SourceItem z:Ref="i238" />
+                <SourceItem z:Ref="i294" />
+                <SourceItem z:Ref="i295" />
+                <SourceItem z:Ref="i296" />
+                <SourceItem z:Ref="i239" />
+                <SourceItem z:Ref="i240" />
+                <SourceItem z:Ref="i241" />
+                <SourceItem z:Ref="i242" />
+                <SourceItem z:Ref="i245" />
+                <SourceItem z:Ref="i246" />
+                <SourceItem z:Ref="i247" />
+                <SourceItem z:Ref="i248" />
+                <SourceItem z:Ref="i249" />
+                <SourceItem z:Ref="i251" />
+                <SourceItem z:Ref="i252" />
+                <SourceItem z:Ref="i297" />
+                <SourceItem z:Ref="i253" />
+                <SourceItem z:Ref="i254" />
+                <SourceItem z:Ref="i298" />
+                <SourceItem z:Ref="i255" />
+                <SourceItem z:Ref="i257" />
+                <SourceItem z:Ref="i258" />
+                <SourceItem z:Ref="i299" />
+                <SourceItem z:Ref="i259" />
+                <SourceItem z:Ref="i261" />
+                <SourceItem z:Ref="i300" />
+                <SourceItem z:Ref="i262" />
+                <SourceItem z:Ref="i263" />
+                <SourceItem z:Ref="i264" />
+                <SourceItem z:Ref="i306" />
+                <SourceItem z:Ref="i265" />
+                <SourceItem z:Ref="i266" />
+                <SourceItem z:Ref="i301" />
+                <SourceItem z:Ref="i268" />
+                <SourceItem z:Ref="i270" />
+                <SourceItem z:Ref="i271" />
+                <SourceItem z:Ref="i272" />
+                <SourceItem z:Ref="i275" />
+                <SourceItem z:Ref="i276" />
+                <SourceItem z:Ref="i128" />
+                <SourceItem z:Ref="i129" />
+                <SourceItem z:Ref="i212" />
+                <SourceItem z:Ref="i214" />
+                <SourceItem z:Ref="i215" />
+                <SourceItem z:Ref="i221" />
+                <SourceItem z:Ref="i226" />
+                <SourceItem z:Ref="i230" />
+                <SourceItem z:Ref="i292" />
+                <SourceItem z:Ref="i243" />
+                <SourceItem z:Ref="i244" />
+                <SourceItem z:Ref="i250" />
+                <SourceItem z:Ref="i256" />
+                <SourceItem z:Ref="i260" />
+                <SourceItem z:Ref="i267" />
+                <SourceItem z:Ref="i269" />
+                <SourceItem z:Ref="i302" />
+                <SourceItem z:Ref="i273" />
+                <SourceItem z:Ref="i274" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i320">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Components\Tools</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i318" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i321">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git\logs</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i23" />
+                <SourceItem z:Ref="i311" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i322">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i185" />
+                <SourceItem z:Ref="i186" />
+                <SourceItem z:Ref="i187" />
+                <SourceItem z:Ref="i188" />
+                <SourceItem z:Ref="i189" />
+                <SourceItem z:Ref="i278" />
+                <SourceItem z:Ref="i279" />
+                <SourceItem z:Ref="i280" />
+                <SourceItem z:Ref="i281" />
+                <SourceItem z:Ref="i190" />
+                <SourceItem z:Ref="i191" />
+                <SourceItem z:Ref="i312" />
+                <SourceItem z:Ref="i317" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i323">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)\Components</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i313" />
+                <SourceItem z:Ref="i320" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i324">
+            <PluginConfigurationOptions />
+            <RelativePath>..\.git</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i2" />
+                <SourceItem z:Ref="i3" />
+                <SourceItem z:Ref="i4" />
+                <SourceItem z:Ref="i5" />
+                <SourceItem z:Ref="i6" />
+                <SourceItem z:Ref="i21" />
+                <SourceItem z:Ref="i309" />
+                <SourceItem z:Ref="i208" />
+                <SourceItem z:Ref="i321" />
+                <SourceItem z:Ref="i319" />
+                <SourceItem z:Ref="i315" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i325">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments\TestStand 2025 (64-bit)</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i323" />
+                <SourceItem z:Ref="i314" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i326">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents\National Instruments</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i325" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i327">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage\Documents</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i326" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i328">
+            <PluginConfigurationOptions />
+            <RelativePath>ProcessingStage</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i327" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i329">
+            <PluginConfigurationOptions />
+            <RelativePath>..\distribution</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i195" />
+                <SourceItem z:Ref="i196" />
+                <SourceItem z:Ref="i328" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i330">
+            <PluginConfigurationOptions />
+            <RelativePath>..\..\csv-docgen-tool-teststand</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i324" />
+                <SourceItem z:Ref="i329" />
+                <SourceItem z:Ref="i316" />
+                <SourceItem z:Ref="i307" />
+                <SourceItem z:Ref="i322" />
+                <SourceItem z:Ref="i132" />
+                <SourceItem z:Ref="i138" />
+                <SourceItem z:Ref="i139" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+    </SourceItems>
+    <InputSourceItems>
+        <SourceItem z:Ref="i330" />
+    </InputSourceItems>
+    <Distributions>
+        <Distribution z:Id="i331" i:type="Package">
+            <DistributionItems>
+                <DistributionItem z:Id="i332" i:type="DistributionDirectoryItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Setup</DestinationRelativePath>
+                    <Name>Setup</Name>
+                    <SourceItem i:nil="true" />
+                </DistributionItem>
+                <DistributionItem z:Id="i333" i:type="DistributionDirectoryItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Setup\ToolMenusToInstall</DestinationRelativePath>
+                    <Name>ToolMenusToInstall</Name>
+                    <SourceItem i:nil="true" />
+                </DistributionItem>
+                <DistributionItem z:Id="i334" i:type="DistributionDirectoryItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Components</DestinationRelativePath>
+                    <Name>Components</Name>
+                    <SourceItem i:nil="true" />
+                </DistributionItem>
+                <DistributionItem z:Id="i335" i:type="DistributionDirectoryItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Components\Tools</DestinationRelativePath>
+                    <Name>Tools</Name>
+                    <SourceItem i:nil="true" />
+                </DistributionItem>
+                <DistributionItem z:Id="i336" i:type="DistributionDirectoryItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Components\Language</DestinationRelativePath>
+                    <Name>Language</Name>
+                    <SourceItem i:nil="true" />
+                </DistributionItem>
+                <DistributionItem z:Id="i337" i:type="DistributionDirectoryItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Components\Language\English</DestinationRelativePath>
+                    <Name>English</Name>
+                    <SourceItem i:nil="true" />
+                </DistributionItem>
+                <DistributionItem z:Id="i338" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Setup\ToolMenusToInstall\CSV_DocGen_Menu.ini</DestinationRelativePath>
+                    <Name>CSV_DocGen_Menu.ini</Name>
+                    <SourceItem z:Ref="i140" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i339" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Components\Language\English\CSV_DocGen_Strings.ini</DestinationRelativePath>
+                    <Name>CSV_DocGen_Strings.ini</Name>
+                    <SourceItem z:Ref="i141" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i340" i:type="DistributionDirectoryItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Components\Tools\CSVDocGen</DestinationRelativePath>
+                    <Name>CSVDocGen</Name>
+                    <SourceItem i:nil="true" />
+                </DistributionItem>
+                <DistributionItem z:Id="i341" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Components\Tools\CSVDocGen\x64\DocSupport.dll</DestinationRelativePath>
+                    <Name>DocSupport.dll</Name>
+                    <SourceItem z:Ref="i192" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i342" i:type="DistributionDirectoryItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Components\Tools\CSVDocGen\x64</DestinationRelativePath>
+                    <Name>x64</Name>
+                    <SourceItem i:nil="true" />
+                </DistributionItem>
+                <DistributionItem z:Id="i343" i:type="DistributionDirectoryItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Components\Tools\CSVDocGen\support</DestinationRelativePath>
+                    <Name>support</Name>
+                    <SourceItem i:nil="true" />
+                </DistributionItem>
+                <DistributionItem z:Id="i344" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Components\Tools\CSVDocGen\support\ini_handler.bat</DestinationRelativePath>
+                    <Name>ini_handler.bat</Name>
+                    <SourceItem z:Ref="i142" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i345" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Components\Tools\CSVDocGen\doc.c</DestinationRelativePath>
+                    <Name>doc.c</Name>
+                    <SourceItem z:Ref="i185" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i346" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Components\Tools\CSVDocGen\doc.fp</DestinationRelativePath>
+                    <Name>doc.fp</Name>
+                    <SourceItem z:Ref="i186" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i347" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Components\Tools\CSVDocGen\doc.h</DestinationRelativePath>
+                    <Name>doc.h</Name>
+                    <SourceItem z:Ref="i187" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i348" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Components\Tools\CSVDocGen\docdlgs.h</DestinationRelativePath>
+                    <Name>docdlgs.h</Name>
+                    <SourceItem z:Ref="i188" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i349" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Components\Tools\CSVDocGen\docdlgs.uir</DestinationRelativePath>
+                    <Name>docdlgs.uir</Name>
+                    <SourceItem z:Ref="i189" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i350" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Components\Tools\CSVDocGen\docgen.seq</DestinationRelativePath>
+                    <Name>docgen.seq</Name>
+                    <SourceItem z:Ref="i278" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i351" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Components\Tools\CSVDocGen\docgen_csv.seq</DestinationRelativePath>
+                    <Name>docgen_csv.seq</Name>
+                    <SourceItem z:Ref="i279" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i352" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Components\Tools\CSVDocGen\docgen_html.seq</DestinationRelativePath>
+                    <Name>docgen_html.seq</Name>
+                    <SourceItem z:Ref="i280" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i353" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Components\Tools\CSVDocGen\docgen_txt.seq</DestinationRelativePath>
+                    <Name>docgen_txt.seq</Name>
+                    <SourceItem z:Ref="i281" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i354" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Components\Tools\CSVDocGen\DocSupport.cws</DestinationRelativePath>
+                    <Name>DocSupport.cws</Name>
+                    <SourceItem z:Ref="i190" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i355" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Public Documents]\Components\Tools\CSVDocGen\DocSupport.prj</DestinationRelativePath>
+                    <Name>DocSupport.prj</Name>
+                    <SourceItem z:Ref="i191" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+            </DistributionItems>
+            <Name>Sequence File Documentation Tool (CSV Support - PoC) - TestStand 2023 Q4 (64-bit)</Name>
+            <OutputDirectory>..\..\..\..\..\..\..\Temp\Packages</OutputDirectory>
+            <PluginConfigurationOptions />
+            <PrebuildAnalysisEnabled>true</PrebuildAnalysisEnabled>
+            <Architecture>windows_x64</Architecture>
+            <AutoIncrementVersion>Build</AutoIncrementVersion>
+            <BuildStatus z:Id="i356">
+                <BuildEverSuccessful>true</BuildEverSuccessful>
+                <FileName>seqfile-documentation-tool-csv-teststand-2023-q4-x64_1.0.0.0_windows_x64.nipkg</FileName>
+                <Version>1.0.0.0</Version>
+            </BuildStatus>
+            <CompanyName>MyCompany</CompanyName>
+            <CustomExecutes>
+                <CustomExecute z:Id="i357">
+                    <Arguments>uninstall</Arguments>
+                    <ExeName>Components\Tools\CSVDocGen\support\ini_handler.bat</ExeName>
+                    <HideConsoleWindow>true</HideConsoleWindow>
+                    <IgnoreErrors>false</IgnoreErrors>
+                    <RootLogicalName>[TestStand Public Documents]</RootLogicalName>
+                    <Schedule>Pre</Schedule>
+                    <Step>Uninstall</Step>
+                    <Wait>true</Wait>
+                </CustomExecute>
+                <CustomExecute z:Id="i358">
+                    <Arguments>install</Arguments>
+                    <ExeName>Components\Tools\CSVDocGen\support\ini_handler.bat</ExeName>
+                    <HideConsoleWindow>true</HideConsoleWindow>
+                    <IgnoreErrors>false</IgnoreErrors>
+                    <RootLogicalName>[TestStand Public Documents]</RootLogicalName>
+                    <Schedule>Post</Schedule>
+                    <Step>Install</Step>
+                    <Wait>true</Wait>
+                </CustomExecute>
+            </CustomExecutes>
+            <Description>Sequence file documentation tool with support for CSV (tab-delimited)</Description>
+            <DisplayName>Sequence File Documentation Tool (CSV Support - PoC) - TestStand 2023 Q4 (64-bit)</DisplayName>
+            <FileName>seqfile-documentation-tool-csv-teststand-2023-q4-x64_1.0.0.1_windows_x64.nipkg</FileName>
+            <Homepage>www.ni.com</Homepage>
+            <MaintainerEmail>felipe.flores@emerson.com</MaintainerEmail>
+            <MaintainerName>Emerson T&amp;M | NI</MaintainerName>
+            <Messages xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+            <PackageName>seqfile-documentation-tool-csv-teststand-2023-q4-x64</PackageName>
+            <PackageRelationships>
+                <PackageRelationship z:Id="i359">
+                    <Constraint>LaterOrEqual</Constraint>
+                    <DisplayName>TestStand (64-bit)</DisplayName>
+                    <PackageName>ni-teststand-2023</PackageName>
+                    <Relation>Depends</Relation>
+                    <Version>23.8.0.49453-0+f301</Version>
+                    <VersionType>AutoUpdate</VersionType>
+                </PackageRelationship>
+            </PackageRelationships>
+            <ProductName>MyProduct</ProductName>
+            <ReleaseNotes>This modified version of the Sequence File Documentation Tool adds support for creating a CSV file with tab-delimited strings.</ReleaseNotes>
+            <Section>Add-Ons</Section>
+            <Synopsis>sequence-file-doc-tool-with-csv</Synopsis>
+            <Version>1.0.0.1</Version>
+        </Distribution>
+    </Distributions>
+    <Feeds />
+    <DistributionGroups>
+        <DistributionGroup z:Id="i360">
+            <Distributions>
+                <Distribution z:Ref="i331" />
+            </Distributions>
+            <Name>Distribution Group</Name>
+            <PrebuildAnalysisEnabled>true</PrebuildAnalysisEnabled>
+            <StageDirectory>ProcessingStage</StageDirectory>
+        </DistributionGroup>
+    </DistributionGroups>
+    <TestStandMode>true</TestStandMode>
+    <PluginConfigurationOptions>
+        <ConfigurationOption z:Id="i361">
+            <Definition z:Id="i362">
+                <Description i:nil="true" />
+                <Name>TestStand Options</Name>
+            </Definition>
+            <HasDefaultValues>true</HasDefaultValues>
+            <Value z:Id="i363" i:type="DialogConfigurationOptionValue">
+                <Values>
+                    <ConfigurationOptionValue z:Id="i364" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i365" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i366" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i367" i:type="StringConfigurationOptionValue">
+                        <Value />
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i368" i:type="StringConfigurationOptionValue">
+                        <Value>SupportVIs</Value>
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i369" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i370" i:type="StringConfigurationOptionValue">
+                        <Value />
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i371" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i372" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i373" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i374" i:type="BooleanConfigurationOptionValue">
+                        <Value>true</Value>
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i375" i:type="BooleanConfigurationOptionValue">
+                        <Value>true</Value>
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i376" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i377" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i378" i:type="PathConfigurationOptionValue">
+                        <RelativePath />
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i379" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i380" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i381" i:type="StringConfigurationOptionValue">
+                        <Value>[BootVolume]</Value>
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i382" i:type="StringConfigurationOptionValue">
+                        <Value />
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i383" i:type="StringConfigurationOptionValue">
+                        <Value />
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i384" i:type="StringConfigurationOptionValue">
+                        <Value />
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i385" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i386" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i387" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i388" i:type="BooleanConfigurationOptionValue" />
+                </Values>
+            </Value>
+        </ConfigurationOption>
+    </PluginConfigurationOptions>
+</Solution>

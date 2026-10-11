@@ -1,0 +1,156 @@
+{
+ "repo": "FloresFelipe/csv-doc-gen-tool-teststand",
+ "url": "https://github.com/FloresFelipe/csv-doc-gen-tool-teststand",
+ "commit": "3ff57d60638466437d1aa13ebe8084f82de2bcb0",
+ "license": "MIT",
+ "licenseFile": "LICENSE",
+ "fetched": "2026-10-11",
+ "files": [
+  {
+   "path": "resources/CSV_DocGen_Menu.ini",
+   "bytes": 316,
+   "sha256": "6858e6256d05aac295b9b9d1bf2ab3f30ffb1270ac491a4effd7ae6547e41e74",
+   "via": "extension"
+  },
+  {
+   "path": "resources/CSV_DocGen_Strings.ini",
+   "bytes": 123,
+   "sha256": "e2cd22de3f642b5cb0a01139c0ec07eda58a7105f292d9cfc7f353b390cb754e",
+   "via": "extension"
+  },
+  {
+   "path": "src/docgen.seq",
+   "bytes": 4858,
+   "sha256": "8d5f93de652c9ed188eba737e4ffb1791260a8e8ef898389d8f905624995bc68",
+   "via": "extension"
+  },
+  {
+   "path": "src/docgen_csv.seq",
+   "bytes": 12430,
+   "sha256": "1179d9dbfc4eac544acdbdf769656b1712e4f5d0375875b68e95da139f0b1463",
+   "via": "extension"
+  },
+  {
+   "path": "src/docgen_html.seq",
+   "bytes": 24147,
+   "sha256": "e7ace6d1c27d2f10441b6d3b32a503f50335ffb808d02b03f04d58a84604f45b",
+   "via": "extension"
+  },
+  {
+   "path": "src/docgen_txt.seq",
+   "bytes": 23961,
+   "sha256": "1933f0e22029dbe50fc009d4ecce2e4bd1bb07091f522bb70bff9a7bcaaefc8d",
+   "via": "extension"
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 491,
+   "sha256": "605919daa1da68ac33eff196dad01071093424b0bec7c8729b7d0d3f2164c139",
+   "via": "tree"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1066,
+   "sha256": "34805af10a6f84c16926ddf009bc6f053570b1d24df03bd19f9e4fe91bde5a07",
+   "via": "tree"
+  },
+  {
+   "path": "README.md",
+   "bytes": 825,
+   "sha256": "52336a5005bb3e2125df670444bd86f7090e9d0e11000f24c8d20f064280b1f5",
+   "via": "tree"
+  },
+  {
+   "path": "distribution/CSV_DOCGEN_TOOL_TS2023_Q4_X64.pbs",
+   "bytes": 122965,
+   "sha256": "5fcad493b361f3ed5fa560b4d11da352241048eed3a45681dac610c74fba3678",
+   "via": "tree"
+  },
+  {
+   "path": "distribution/CSV_DOCGEN_TOOL_TS2025_Q3_X64 .pbs",
+   "bytes": 112239,
+   "sha256": "e84ebefed5e8067167ad51c80211ce87db6c25cb3a270f6d39ac09cf0f0d2c6b",
+   "via": "tree"
+  },
+  {
+   "path": "docs/README.md",
+   "bytes": 10835,
+   "sha256": "1a266370d529f86716985ff15a957517e9cea2e6e1f9ad7892e7a5f372d80fae",
+   "via": "tree"
+  },
+  {
+   "path": "docs/img/added_menu_item.png",
+   "bytes": 25039,
+   "sha256": "b22ceed9d5c5008db445b82a322da004a75ce1f0f22bcdbc76d3a8ce63931eb5",
+   "via": "tree"
+  },
+  {
+   "path": "docs/img/sample_output.png",
+   "bytes": 94112,
+   "sha256": "0d6a62f083ba8d2809ce69dd2a05055d52b08421a855de04d6ea0998745ec4cb",
+   "via": "tree"
+  },
+  {
+   "path": "docs/img/tool_dialog.png",
+   "bytes": 28599,
+   "sha256": "6d1ca6c8fd6f8e48b4c999a2e65a62b120cbe9652dc20602006484cb1e543f2e",
+   "via": "tree"
+  },
+  {
+   "path": "docs/img/vscode_output.gif",
+   "bytes": 363129,
+   "sha256": "fff84ee90f27c6c50a5c84e00c6fb53f1dcb0ab5b32987a6d4965fb417d45396",
+   "via": "tree"
+  },
+  {
+   "path": "resources/ini_handler.bat",
+   "bytes": 874,
+   "sha256": "ccbcd78c3d5fb0ef3057d7506eb42845a2a59f1142e9ee2166a05931b6f087df",
+   "via": "tree"
+  },
+  {
+   "path": "src/DocSupport.cws",
+   "bytes": 7471,
+   "sha256": "db88db9a970f71b270a9f4b3e62c75b8c0660cdfcd24d10fb41dc2aa84ab28e5",
+   "via": "tree"
+  },
+  {
+   "path": "src/DocSupport.prj",
+   "bytes": 19770,
+   "sha256": "5124c4eee951838ecb5af5e832c54fbb0b187ff92832938473efbe5ba48b52c0",
+   "via": "tree"
+  },
+  {
+   "path": "src/doc.c",
+   "bytes": 50703,
+   "sha256": "01141a714c78b71b754f7da4f79d18e15099df097e7b9fa37003f7b1e7e47f47",
+   "via": "tree"
+  },
+  {
+   "path": "src/doc.fp",
+   "bytes": 5030,
+   "sha256": "4d6b422d86f382f281670b2ab2fde0a4899eb0c25c9890c79b68dfc32cedd99d",
+   "via": "tree"
+  },
+  {
+   "path": "src/doc.h",
+   "bytes": 66,
+   "sha256": "79138ee979145ec4b1c8da2008a5bb8ef671ab3a96aa794e70d5f1cae6fc5125",
+   "via": "tree"
+  },
+  {
+   "path": "src/docdlgs.h",
+   "bytes": 4599,
+   "sha256": "5314c6d0cd329c659aadeca27f126e1fabfe8895e1aab9f9b0c1f188dfdcfe61",
+   "via": "tree"
+  },
+  {
+   "path": "src/docdlgs.uir",
+   "bytes": 11445,
+   "sha256": "3e03b68afd01417102ddd059f6c31de7579787438f1d6ca204e0f946bd8a3e23",
+   "via": "tree"
+  }
+ ],
+ "skipped": [],
+ "external": []
+}

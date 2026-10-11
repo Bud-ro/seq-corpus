@@ -1,0 +1,50 @@
+# NI package Builder Staging Folder
+distribution/ProcessingStage/   
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE and editor settings
+*.swp
+*.swo
+*.user
+*.workspace
+*.cws
+*.cvibuild*
+
+# Build artifacts
+*.obj
+*.dll
+*.exe
+*.lib
+*.pdb
+*.idb
+*.ilk
+*.o
+*.so
+*.a
+*.out
+
+# CVI specific
+cvibuild*/
+*.fp
+*.uir
+
+# TestStand specific
+*.seq.backup
+*.seq.__
+*.tsbackup
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# Distribution packages
+*.zip
+*.tar.gz
+
+# VSCode and other editor folders
+.vscode/
+.idea/
