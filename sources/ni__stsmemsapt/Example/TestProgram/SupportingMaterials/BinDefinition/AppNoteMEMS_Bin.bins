@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BinDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.2" xmlns="http://www.ni.com/TestStand/SemiconductorModule/BinDefinitions">
+  <HardwareBins>
+    <Bin name="Pass" number="1" type="Pass" />
+    <Bin name="Error" number="2" type="Other" />
+    <Bin name="Continuity" number="10" type="Fail" />
+    <Bin name="Leakage" number="20" type="Fail" />
+    <Bin name="Offset" number="40" type="Fail" />
+    <Bin name="Capacitance" number="50" type="Fail" />
+    <Bin name="Resonance" number="60" type="Fail" />
+    <Bin name="Default" number="3" type="Fail" />
+    <Bin name="Resistance" number="30" type="Fail" />
+  </HardwareBins>
+  <SoftwareBins errorBin="2" defaultFailBin="3" defaultPassBin="1" alarmBin="11">
+    <Bin name="Pass" number="1" hardwareBin="1" />
+    <Bin name="Error" number="2" hardwareBin="2" />
+    <Bin name="ContinuityResistance" number="11" hardwareBin="10" />
+    <Bin name="ContinuityDiodeGND" number="12" hardwareBin="10" />
+    <Bin name="Leakage" number="20" hardwareBin="20" />
+    <Bin name="OffsetStatic" number="41" hardwareBin="40" />
+    <Bin name="OffsetDynamic" number="42" hardwareBin="40" />
+    <Bin name="CapacitanceRamp" number="51" hardwareBin="50" />
+    <Bin name="CapacitanceIS" number="52" hardwareBin="50" />
+    <Bin name="FrequencyIS" number="53" hardwareBin="50" />
+    <Bin name="ResonanceAmplitude" number="61" hardwareBin="60" />
+    <Bin name="Default" number="3" hardwareBin="3" />
+    <Bin name="ContinuityDiodeVDD" number="13" hardwareBin="10" />
+    <Bin name="Resistance" number="30" hardwareBin="30" />
+    <Bin name="ResonanceFrequency" number="62" hardwareBin="60" />
+    <Bin name="ResonancePhase" number="63" hardwareBin="60" />
+  </SoftwareBins>
+</BinDefinitions>
