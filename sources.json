@@ -6,5 +6,13 @@
   "license": "MIT",
   "files": 12,
   "bytes": 634279
+ },
+ {
+  "name": "425J__SeqEditQuickDrop",
+  "repo": "425J/SeqEditQuickDrop",
+  "commit": "94cdf5f7cc0b7b87d9cab369d0461f48e50aba53",
+  "license": "MIT",
+  "files": 63,
+  "bytes": 1783721
  }
 ]
