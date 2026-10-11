@@ -1,0 +1,2762 @@
+{
+ "repo": "ni/semi-test-library-dotnet",
+ "url": "https://github.com/ni/semi-test-library-dotnet",
+ "commit": "1bffd0d77c98c7898e73f5e39262749a701170c5",
+ "license": "MIT",
+ "licenseFile": "LICENSE.txt",
+ "fetched": "2026-10-11",
+ "files": [
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/source/APIs/CloseFPGA.vi",
+   "bytes": 17325,
+   "sha256": "d79fd70d5cf9788a61db8579fb342f1836f61aba2ab3e6f307259cb69a6618e4",
+   "via": "extension"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/source/APIs/EnableLoopBack.vi",
+   "bytes": 20182,
+   "sha256": "fb2d362e6c536dd5d0f039d3b95c947d431d036719d3a7175dba5a8afef869da",
+   "via": "extension"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/source/APIs/OpenFPGA.vi",
+   "bytes": 16004,
+   "sha256": "de9bc5e64dcea632ba56c4318e7ed48c2e2e3e07e706efa0c733f78f8b3c395f",
+   "via": "extension"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/source/APIs/ReadData.vi",
+   "bytes": 28252,
+   "sha256": "5e6a838b55e389429b27e1b1d848ba467ef1d4d768df63090146891315dbddbc",
+   "via": "extension"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/source/APIs/Utility/NumToRefnum.vi",
+   "bytes": 15995,
+   "sha256": "dbb29e3d6e3a989c532deac7def42649da904f72df51a892b7646c551f9c187a",
+   "via": "extension"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/source/APIs/Utility/RefnumToNum.vi",
+   "bytes": 16079,
+   "sha256": "bcce9ba29a13ff4b42f74441dde324f5634ac0e31ae1b4b93969af7eb8312777",
+   "via": "extension"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/source/APIs/WriteData.vi",
+   "bytes": 27813,
+   "sha256": "febea4c5786d8ba9c6330380357bcb3c4c5f2f631f0ed21976dffeffade86415",
+   "via": "extension"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/source/Debug C API.vi",
+   "bytes": 18783,
+   "sha256": "230e4e99aa530bc44869471ab8efc00c68410dcaee6dfa4a05b3ebd0160334a9",
+   "via": "extension"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/source/Debug LV API.vi",
+   "bytes": 29968,
+   "sha256": "97c6898be5fe952db1b98e8d9b0be57ca7e8c05cfcec19824ef01343cf4642d9",
+   "via": "extension"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/source/FPGACode_ReadWriteDigitalPorts.vi",
+   "bytes": 32058,
+   "sha256": "7884349263f96719ebb082eeab4ee5992a83da4b1113e3c625b0cfa3d459334f",
+   "via": "extension"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/source/RSeries7822RDriverAPI.lvproj",
+   "bytes": 49400,
+   "sha256": "b361c8796aca86143a3603a2920356d89aa9744a8d9abb0408eee305dc39c263",
+   "via": "extension"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/STLExample.CustomInstrument.RSeries.seq",
+   "bytes": 13373,
+   "sha256": "56e475bd596c003d4ebc529c7681be6468540ce5159b92b39e03af538c60eb98",
+   "via": "extension"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument/STLExample.CustomInstrument.seq",
+   "bytes": 13432,
+   "sha256": "0d66cd33e10a12e0bf9e76d1ff6a52e7f5c34c974c17298c9ccf833ed46c4bb8",
+   "via": "extension"
+  },
+  {
+   "path": "Examples/source/Sequence/MultiplexedConnection/STLExample.MultiplexedConnection.seq",
+   "bytes": 11512,
+   "sha256": "9d1fd5a82a30b5cd41b81bfde37caffdf3bafb8e6a7555a535468eeb891089d4",
+   "via": "extension"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUGangPinGroup/STLExample.SMUGangPinGroup.seq",
+   "bytes": 15535,
+   "sha256": "53e9b583ed9866cde523c9ff28146e085a8d85fb137dd35ae8439b1576f729a7",
+   "via": "extension"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUHardwareLevelSequence/STLExample.SMUHardwareLevelSequence.seq",
+   "bytes": 14174,
+   "sha256": "989b7d50371665c9ddd7a8207e6e8bdc4d652d49f85f7eb08d4213d016e4c640",
+   "via": "extension"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUMergePinGroup/STLExample.SMUMergePinGroup.seq",
+   "bytes": 15821,
+   "sha256": "22325689a5d7ba41c81e0923278c44d3c1e07e9b4e1aa7fea602f54241dc5efd",
+   "via": "extension"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Accelerometer.STSSoftware24.5Compatible.seq",
+   "bytes": 19503,
+   "sha256": "c3b2a18354798c83f5946797cbea85d739a5c01b6bf9998c4acbccc1801c9ae7",
+   "via": "extension"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Accelerometer.seq",
+   "bytes": 19590,
+   "sha256": "31cc79a024e48eecf51fe8aec463639cea1f2c4fbe0fa8bcb73810d5aec9819e",
+   "via": "extension"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/TestProgramDefinition.ini",
+   "bytes": 477,
+   "sha256": "9ba767e0bbcbd69270dda329d10b3061815ac4387742d8872fbe9705c1650f9f",
+   "via": "extension"
+  },
+  {
+   "path": ".github/CODEOWNERS",
+   "bytes": 41,
+   "sha256": "1773f8eade94a5a840f6b228fadd02c03840d39e222b4b55fef18535088d9c2f",
+   "via": "tree"
+  },
+  {
+   "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+   "bytes": 919,
+   "sha256": "92a02ab394d00e53d936c4a0a80b33d7f171b6a0ff3cacc8b76b6263d429fb26",
+   "via": "tree"
+  },
+  {
+   "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+   "bytes": 642,
+   "sha256": "1c07a2d4f27951f48538383b4a1190e99c5e26714b656a25ddf22797d42720e0",
+   "via": "tree"
+  },
+  {
+   "path": ".github/ISSUE_TEMPLATE/support_request.md",
+   "bytes": 1133,
+   "sha256": "f1125bbccfb32735c9892c40b5b53517b45d96c646da2c37e797579cb56f7bd8",
+   "via": "tree"
+  },
+  {
+   "path": ".github/PULL_REQUEST_TEMPLATE.md",
+   "bytes": 352,
+   "sha256": "0139209365b5c76e6c9126a902a4f4280708f8bdf686d37685a3fa503f3b0907",
+   "via": "tree"
+  },
+  {
+   "path": ".github/workflows/auto-comment-closed-wi.yml",
+   "bytes": 6267,
+   "sha256": "a682200c9b66ccf228cdf0b6df09ee1a4f13dce7640225952877699320eecf51",
+   "via": "tree"
+  },
+  {
+   "path": ".github/workflows/auto-comment-fixed-issues.yml",
+   "bytes": 3122,
+   "sha256": "1cd4f5affbfcb81c4762e435de2e4ec0db2634ae992cb13fc6c52f27e5be5689",
+   "via": "tree"
+  },
+  {
+   "path": ".github/workflows/ci.yml",
+   "bytes": 3324,
+   "sha256": "1469c50f21c60d76c1fa0f08372dc1c2358c24452d201ae820242be7f17edf6a",
+   "via": "tree"
+  },
+  {
+   "path": ".github/workflows/deploy-gh-pages.yml",
+   "bytes": 6271,
+   "sha256": "7a69efa52072d6c61ca4846c9f7d258e759f8765f0dee4d031bee06d1e65285e",
+   "via": "tree"
+  },
+  {
+   "path": ".github/workflows/draft-release-notes.yml",
+   "bytes": 7634,
+   "sha256": "0613b87225140bd730c0f8beee3ae8bf82468c735f58d32e754f47d3628bd61b",
+   "via": "tree"
+  },
+  {
+   "path": ".github/workflows/gh-issues-to-azdo.yml",
+   "bytes": 11223,
+   "sha256": "5271c7f4574271a718c3bcf0caaa973d7f650e6b22603b157522cf83c58d477d",
+   "via": "tree"
+  },
+  {
+   "path": ".github/workflows/gh-pages-deploy.yml",
+   "bytes": 1406,
+   "sha256": "06c49ec13e8adcca440860e36c3e251a9179a37d5bbd9af8bfcbe6cde6c2310d",
+   "via": "tree"
+  },
+  {
+   "path": ".github/workflows/pr-build.yml",
+   "bytes": 4490,
+   "sha256": "acb9704c3e4af3dbb83b2e1d5c014c5d1d965464437e7a4fd7662fd437b69256",
+   "via": "tree"
+  },
+  {
+   "path": ".github/workflows/pr-intake.yml",
+   "bytes": 14777,
+   "sha256": "4b925b50d0117ea1a74089b769e0c8233b93879942f8ea25f1ad6928d46f0441",
+   "via": "tree"
+  },
+  {
+   "path": ".github/workflows/pr-test.yml",
+   "bytes": 4399,
+   "sha256": "7689f935b70b900652832710b728a57cf777f6e4931fa5903506c5424b32ac74",
+   "via": "tree"
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 7319,
+   "sha256": "b4a245535b1b3fe83e9120a95505a7388944c806b2a0f51cd1b4d973f0d48b42",
+   "via": "tree"
+  },
+  {
+   "path": "CHANGELOG.md",
+   "bytes": 51334,
+   "sha256": "72ce237aa63b0744d731a63ca5e5d5ec6a7f328d9427d2a04d8ce5e47a1da0eb",
+   "via": "tree"
+  },
+  {
+   "path": "CONTRIBUTING.md",
+   "bytes": 4469,
+   "sha256": "a5fa477665e3d551184e827da35fdcfe0977bf46c3f6c7ee5259ef058707d7c1",
+   "via": "tree"
+  },
+  {
+   "path": "CodeAnalysisDictionary.xml",
+   "bytes": 1183,
+   "sha256": "17a2408fb9eefd9ec3d0d33a653703ba62df218c06dd3f75cb72745ab060717c",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/DataAbstraction/PinSiteDataExamples.cs",
+   "bytes": 19705,
+   "sha256": "543e7ec1688e40f0918c42fbaae6887138265a94c45d01893e07ac7a45923feb",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/DataAbstraction/SharingDataBetweenCodeModules.cs",
+   "bytes": 1992,
+   "sha256": "84ad2c363cb261872444b5c5965138de62eb11a697ef6fc88e69ca0c31df36c0",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/DataAbstraction/SiteDataExamples.cs",
+   "bytes": 11061,
+   "sha256": "3876923c4c9262778ca8b78635c44c529353bbf96581dee68183406437aa87df",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/GlobalSuppressions.cs",
+   "bytes": 1216,
+   "sha256": "0089e83a167156ada66bd3d6e18f75cf65819057a2816f3cbba648b21634ed61",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/InstrumentAbstraction/AnalogOutputDAQmx.cs",
+   "bytes": 5501,
+   "sha256": "a2ef8245adc3a2020d794b3e344b5c6d5c246e576c2d6619ba7c4cc08aa3598f",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/InstrumentAbstraction/BurstPattern.cs",
+   "bytes": 4964,
+   "sha256": "4c8694735ef37e570fb5cf4422dafedb679a4b9ccba7c2f860740947d6475dbb",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/InstrumentAbstraction/ConfigureSMUAdvancedSequencesAndInitiate.cs",
+   "bytes": 9243,
+   "sha256": "8955a137520dfe19af610350454be9c70d57bda67a5e1d5befe9700816f3bcb6",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/InstrumentAbstraction/ForceVoltagePPMU.cs",
+   "bytes": 7931,
+   "sha256": "7d0ea06cfdd1e0451812166aab52c877073d7125c3810eb521f46ef4590791e1",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/InstrumentAbstraction/ForceVoltageSMU.cs",
+   "bytes": 7180,
+   "sha256": "59ad401f10d9f54602e2de3791f5127690b2bfdd8b163db59e15ccbb64a0a353",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/InstrumentAbstraction/ForceVoltageSequence.cs",
+   "bytes": 6414,
+   "sha256": "1bc7e21c3066e1e555b6179381c39329a882325713fbc1af72d068e140209fd5",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/InstrumentAbstraction/InitializeAndClose.cs",
+   "bytes": 4881,
+   "sha256": "8ceb8d99156177a678c41f6a822b32d91f65c36514b4ab955534086ac621702f",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/InstrumentAbstraction/MeasureCurrentPPMU.cs",
+   "bytes": 3685,
+   "sha256": "3056e793955454c08fe270dc057e399a4a0ca211d38f8dc6aec194ab0f4f3ea2",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/InstrumentAbstraction/MeasureCurrentSMU.cs",
+   "bytes": 3675,
+   "sha256": "52c212a8b117283149d0bfdd592a69def9b97f342ba3cd03200c8a21890a27d1",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/InstrumentAbstraction/MeasureDMM.cs",
+   "bytes": 10677,
+   "sha256": "43350123b732043624ace60dd70897a51160b4d7bc89b7f1052534900b4f2be1",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/InstrumentAbstraction/MeasurePeriodTMU.cs",
+   "bytes": 3992,
+   "sha256": "7e3362fe5a353987c8a77be4e69b4981c8473797112da6827df59511fba3172c",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/InstrumentAbstraction/MeasureVoltageMixed.cs",
+   "bytes": 4058,
+   "sha256": "f18de502bb94112c67931c33c431ae3d60b07ef3cdbe59e7e6db2a194e63331d",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/PatternTriggeredInstrumentControl/GenerateTrigger.digipatsrc",
+   "bytes": 348,
+   "sha256": "a7098ce22e9dfe89ad1d8729c2bfe09820f8961a0dd8d95724b3630f567ac86a",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/PatternTriggeredInstrumentControl/PatternTriggeredDmmMeasurement.cs",
+   "bytes": 9661,
+   "sha256": "d28e46d8f9dc8c9040720d6bb0efaa3a2dc3fefc1450d8842b8ac0985f722f80",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/PatternTriggeredInstrumentControl/PatternTriggeredSmuMeasurement.cs",
+   "bytes": 4105,
+   "sha256": "88b7f84ead44c243c50acf7908f50416fb4b86d7c41181459b8fe38f8e932c3e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/PublishingExamples.cs",
+   "bytes": 2646,
+   "sha256": "fabb9e7d21dd90f9cf2b5c83b7e9fbb638bf1691fc6bcfe924650a8916c3490d",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/README.md",
+   "bytes": 767,
+   "sha256": "a6766d99f561732ea54e93ad2de344397bcba91881694c9ab7db1a97b48c8ac4",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/STLExample.CodeSnippets.csproj",
+   "bytes": 3770,
+   "sha256": "b316cbc002539cf9014db300761e748a1c33fe5af639ae2463c15b0d75b5e6e8",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/WorkflowExamples.cs",
+   "bytes": 8540,
+   "sha256": "cb7191fc09c0fe53c19d72f5af9a42f7355d4c8215ee5b983147fe51f7d6f82c",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/README.md",
+   "bytes": 2951,
+   "sha256": "2d5b9f942e31c62f1ef43416c185652b7450c4b854134609e13183fdd841af96",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Common/Utilities.cs",
+   "bytes": 1748,
+   "sha256": "44bbb5df89afe4532a9c75b1270fd7f2b046c7ddb839689422df38ae5ea44d0b",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/RSeries7822RDriverAPI.dll",
+   "bytes": 167936,
+   "sha256": "9cd5012b808692a0015a9811a7a23739f5d781bb555608c04222240b95897222",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/RSeries7822RDriverAPI.h",
+   "bytes": 988,
+   "sha256": "14d419e7a1e517cacd0173e404a602b4c5fb20245364e659e7d0f13260f513f7",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/RSeries7822RCustomInstrument/HighLevelDriverOperations.cs",
+   "bytes": 3556,
+   "sha256": "59f7d18d0feb822dd7314f1c3b2e5ade69eca9059843e3f27929d1c9724fe3ba",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/RSeries7822RCustomInstrument/InvalidPinMapDefinitionException.cs",
+   "bytes": 1759,
+   "sha256": "16e40eb83e7453bf07ac873c90d36c5ee473103b85a5db0f82e9c6ed64f09942",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/RSeries7822RCustomInstrument/RSeries7822R.cs",
+   "bytes": 15858,
+   "sha256": "fa330ca175f63637f3847c8685dce498320fd551586f8f5e550f50ab448389a6",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/RSeries7822RCustomInstrument/RSeries7822RDriverAPI.cs",
+   "bytes": 2041,
+   "sha256": "a0163aad9edaf906b33b1d3a97c7e46e4f497c6ab2de28e6d995d57904054744",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/RSeries7822RCustomInstrument/RSeries7822RDriverAPIException.cs",
+   "bytes": 1788,
+   "sha256": "1a9e1fce5628b06c981d6c637e78ad431c999a95bb6c4c810da4b7f535b813cc",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/RSeries7822RCustomInstrument/RSeries7822RFactory.cs",
+   "bytes": 3929,
+   "sha256": "84492f8d362c0e12d643deef8e5a541c71a86d2afc5bf60a7977054f86ae8ba7",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/RSeries7822RCustomInstrument/Types.cs",
+   "bytes": 2878,
+   "sha256": "b43d8adc78794a8804f1070e45c42b3a88cca07db6bf422fee6813060aba149b",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/STLExample.CustomInstrument.RSeries.csproj",
+   "bytes": 2466,
+   "sha256": "b8bba65f7f78a15a6a8db1a3f924ad30c87427a633f1df02d74153bf222332ca",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/STLExample.CustomInstrument.RSeries.sln",
+   "bytes": 1150,
+   "sha256": "2d6d142fb02fdf501480266a226ef85f8ae5957ab2a964f315185a8b8d54cb0f",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/SetupAndCleanupSteps.cs",
+   "bytes": 2969,
+   "sha256": "9bd1714b6ea38b24254d662f0bd576c8ffc856f828ee4549fef94de5eb027b98",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/TestStep.cs",
+   "bytes": 10016,
+   "sha256": "fc955001f198a66ab1e328789e3ffbdaa8fc7db51860827483257d02e32af771",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/README.md",
+   "bytes": 8102,
+   "sha256": "918e67e7cb5b717c336fc4edcd77dd1d3a9333ead5e4af272be2c303c6e607ec",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument.RSeries/STLExample.CustomInstrument.RSeries.pinmap",
+   "bytes": 13544,
+   "sha256": "408858af9a651cd5f7d6041dcef1848ed69a85303df25f7a620918f3b4c3531e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument/Code Modules/Imports/MyCustomInstrumentDriverAPI/MyCustomInstrumentDriverAPI.dll",
+   "bytes": 5632,
+   "sha256": "ae391a61cf1e99ab19d25ca20b8054d939798f7480288cf9974b637bbf0ab778",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument/Code Modules/Imports/MyCustomInstrumentDriverAPI/MyCustomInstrumentDriverAPI.xml",
+   "bytes": 2790,
+   "sha256": "fb0e28cb72c3a0e327727a7f641f7e82817b90b9787a14f3e1149fa1937dabc7",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument/Code Modules/Imports/MyCustomInstrumentDriverAPI/source/CustomInstrumentDriver.cs",
+   "bytes": 3067,
+   "sha256": "518f1e270c850d5ffc6534a74b9e885e019afc3a09aa680c96b977ad83a878c6",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument/Code Modules/Imports/MyCustomInstrumentDriverAPI/source/MyCustomInstrumentDriverAPI.csproj",
+   "bytes": 1225,
+   "sha256": "25f3c4a8a3daa297e6ad2d39576ccaf21b6b6be5a26e69ab51ba455f51c42bd5",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument/Code Modules/Imports/MyCustomInstrumentDriverAPI/source/SimulatedInstrument.cs",
+   "bytes": 1032,
+   "sha256": "6fa26d9e82966f5bdec443482967f5b3c58ece21ce2284f6fb8096a8e3fb564e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument/Code Modules/Imports/MyCustomInstrumentDriverAPI/source/Simulation.cs",
+   "bytes": 2248,
+   "sha256": "05c2308addde7ba29695818f098e1624a7a8b8af5fa4ff0c8bb0105c28ac31d8",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument/Code Modules/MyCustomInstrument/HighLevelDriverOperations.cs",
+   "bytes": 4949,
+   "sha256": "29f1c6b5797521cbee4a78e9091ad4f20af1739039b7719d824ef6127f078629",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument/Code Modules/MyCustomInstrument/InvalidCustomInstrumentPinMapDefinitionException.cs",
+   "bytes": 1869,
+   "sha256": "4a75c50bc5b9ed249402c71d9bf4ec12ecbc84a41db1bccd8fcf28666b5aa0e4",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument/Code Modules/MyCustomInstrument/MyCustomInstrument.cs",
+   "bytes": 3902,
+   "sha256": "2451703c8939838c14afc591f5cc56328035470f8c79dd13ae3dc5c39891e420",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument/Code Modules/MyCustomInstrument/MyCustomInstrumentFactory.cs",
+   "bytes": 6030,
+   "sha256": "20560b78615ee2704ddaf0393c98e21448c4df99828b2920f6daf1660e1e40e8",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument/Code Modules/STLExample.CustomInstrument.csproj",
+   "bytes": 2110,
+   "sha256": "90ef3340a2490204859ae7cc31685f43825c02e6c22d73075eb35f9e18628ae0",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument/Code Modules/STLExample.CustomInstrument.sln",
+   "bytes": 1134,
+   "sha256": "ef6cef9c015f7dc7e2a81002b99d8987b7ca68732515396695754ae1b06f591d",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument/Code Modules/SetupAndCleanupSteps.cs",
+   "bytes": 3881,
+   "sha256": "a495f256f5ad252073bd573c45a5cf3ebe7db153928f4a47f3e081055d30edb6",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument/Code Modules/TestStep.cs",
+   "bytes": 3451,
+   "sha256": "d3b7770488fe06b880ceead648d46559f026eab630eb25d301eab4118fdb5aff",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument/README.md",
+   "bytes": 2955,
+   "sha256": "1dad5624e7afc9b8bfcdab12c2b8e8c2f2556f2409ce068fc0a94faf3d142b0f",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/CustomInstrument/STLExample.CustomInstrument.pinmap",
+   "bytes": 3318,
+   "sha256": "c14bae35994cb5c2cd30b6822a19ab6c9e5b35e83a7c2d60c38e0375f662a5df",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/MultiplexedConnection/Code Modules/STLExample.MultiplexedConnection.csproj",
+   "bytes": 2176,
+   "sha256": "c9d5a70a2bcfbe4b7cb55237e198148d70534fa53793314bb85384626ac5892f",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/MultiplexedConnection/Code Modules/STLExample.MultiplexedConnection.sln",
+   "bytes": 1715,
+   "sha256": "6f8157549afc48aba03dfb2945711a5f648879c490475eeee69c060e90a2e9a9",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/MultiplexedConnection/Code Modules/SetupAndCleanupSteps/SetupAndCleanupSteps.cs",
+   "bytes": 3269,
+   "sha256": "2fc95b3c5fa453bdb352810b5115e6b3e3d231d5469d37474881733a3b8b336e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/MultiplexedConnection/Code Modules/TestSteps/TestStep.cs",
+   "bytes": 3368,
+   "sha256": "f4e52b08281a4f60b7434359472f74f765e571145f53b2a8f04263f9458e50f9",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/MultiplexedConnection/README.md",
+   "bytes": 5776,
+   "sha256": "bac5acecd66882d3580291154b58770072507961314a1f190154bd851cf6f4e4",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/MultiplexedConnection/STLExample.MultiplexedConnection.offlinecfg",
+   "bytes": 511,
+   "sha256": "7e4cb360720b45f2ee9ea649a91fac5000954bf5ef46033a2fe8d0f85faf64d4",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/MultiplexedConnection/STLExample.MultiplexedConnection.pinmap",
+   "bytes": 3382,
+   "sha256": "aa6b64a97b74fda87a103548c43b420fd7505aee1b7b4eadfdf9181de8dc2919",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/README.md",
+   "bytes": 1029,
+   "sha256": "01806e68445550a5c999e3b392db858b5294415f59fb645e756b2751d1fd9ae5",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUGangPinGroup/Code Modules/STLExample.SMUGangPinGroup.csproj",
+   "bytes": 1993,
+   "sha256": "e37aef851953b3f9273b5ddfc32712518c6ba54148541c3edeca68a44b4ab0b9",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUGangPinGroup/Code Modules/STLExample.SMUGangPinGroup.sln",
+   "bytes": 1706,
+   "sha256": "c0c468011af1471ab68cac5b8d4cda0bb801f35568a0df9659cac13667aee978",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUGangPinGroup/Code Modules/TestSteps/SMUForceVoltageMeasureCurrent.cs",
+   "bytes": 3917,
+   "sha256": "ecc45ecdc18c480b13516ed654336cee6229338ccc2c2c9289c2d754a957c80e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUGangPinGroup/Code Modules/TestSteps/SMUGangPinGroup.cs",
+   "bytes": 3616,
+   "sha256": "0e430ed71e77fca1a800af281d33c45a55a7c994bfa620f53a16e80742444073",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUGangPinGroup/Code Modules/TestSteps/SMUGangPinGroupFIMVThenUngang.cs",
+   "bytes": 5341,
+   "sha256": "efb0bd882f62545f4dfdbcc78a5c11e0d0d4801d0f7c155180d2b13f7206da11",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUGangPinGroup/Code Modules/TestSteps/SMUPowerDownAndUngangPinGroup.cs",
+   "bytes": 3567,
+   "sha256": "fc8fb65a5402249e954459bd29d38da56f67d5a93fe9c9488c7e4d3f4d1e2bb5",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUGangPinGroup/README.md",
+   "bytes": 6334,
+   "sha256": "ef1211bb26a4e962eeec66b70194e7de1db8bd50b62c83928094568ce552e754",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUGangPinGroup/STLExample.SMUGangPinGroup.offlinecfg",
+   "bytes": 1644,
+   "sha256": "0d7455cc229fade0bd1f6e87ab728261a8df01d2225b519620b8cb7160da6860",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUGangPinGroup/STLExample.SMUGangPinGroup.pinmap",
+   "bytes": 4892,
+   "sha256": "3a167fb250d1e70f50497daffd4ad7049b865d26f66798a2b4b2b327f8614610",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUHardwareLevelSequence/Code Modules/STLExample.SMUHardwareLevelSequence.csproj",
+   "bytes": 2082,
+   "sha256": "2fea6d2cc81ed9c53537cafa4d6cf0a44e0023ff519177e9de8792daa19d4237",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUHardwareLevelSequence/Code Modules/STLExample.SMUHardwareLevelSequence.sln",
+   "bytes": 1725,
+   "sha256": "fa98014fd9b533b5dd0a1c5227fe6a2dd28dafcf0eeaf79518bb1c16ca674fb3",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUHardwareLevelSequence/Code Modules/TestSteps/ConfigureSMUAdvancedSequence.cs",
+   "bytes": 3457,
+   "sha256": "9432b7f8139fa66940e3b56099a1bb5fc56e63fc48a071514926130fa43f88a8",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUHardwareLevelSequence/Code Modules/TestSteps/ConfigureVoltageRampInitiateAndMeasureCurrent.cs",
+   "bytes": 4511,
+   "sha256": "99912e95b0fb766422a9a59b8f179bdd5c3beef5973b6bf8a326d2825b877e5a",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUHardwareLevelSequence/Code Modules/TestSteps/ForceSynchronizedVoltageRamp.cs",
+   "bytes": 2253,
+   "sha256": "5fa30a1652af2e85a7a340b2736970dfd64614446a11506ae58a5600e7f41f53",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUHardwareLevelSequence/Code Modules/TestSteps/ForceVoltageRamp.cs",
+   "bytes": 1847,
+   "sha256": "19960d74685f5501bf8a79a305169a54f1caf95dd8e69116d45078e5e1367ad8",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUHardwareLevelSequence/Code Modules/TestSteps/InitiateSMUAdvancedSequence.cs",
+   "bytes": 1771,
+   "sha256": "827eba504a37a1bac81021f5dea07abb8abbf2866505be97fd5a75bf033ce329",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUHardwareLevelSequence/README.md",
+   "bytes": 7907,
+   "sha256": "1892bb724397a894721feadc1e776ee24c35c78cf0c7805e393bfb46b50bab85",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUHardwareLevelSequence/STLExample.SMUHardwareLevelSequence.offlinecfg",
+   "bytes": 411,
+   "sha256": "691c177cf69b1a1074be3f5387002b9a650dd66306a907ad71be9d92df882931",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUHardwareLevelSequence/STLExample.SMUHardwareLevelSequence.pinmap",
+   "bytes": 924,
+   "sha256": "7440f337626741660def9382c4d096a91e23a533608e20be6eb04de8c34b51b2",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUMergePinGroup/Code Modules/STLExample.SMUMergePinGroup.csproj",
+   "bytes": 1995,
+   "sha256": "d9fbb1e6199b405bf37d36a869e26ba2161744418ff333daab5f89dca5f5f667",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUMergePinGroup/Code Modules/STLExample.SMUMergePinGroup.sln",
+   "bytes": 1709,
+   "sha256": "bfeca63b3da187947a4d9445ae26a5c79913f15c42fde193bd3c3e78be4c8f16",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUMergePinGroup/Code Modules/TestSteps/SMUForceVoltageMeasureCurrent.cs",
+   "bytes": 2890,
+   "sha256": "b152a8affe7e74e6a12f7ef94f4e83d8237b260c2653b8d04f7b64e142a31a0c",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUMergePinGroup/Code Modules/TestSteps/SMUMergePinGroup.cs",
+   "bytes": 3746,
+   "sha256": "6e8b035b4b4fc2774c36ead001931454467e65a1d36ccde8d1d182c5f4ea48e7",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUMergePinGroup/Code Modules/TestSteps/SMUMergePinGroupFIMVThenUnmerge.cs",
+   "bytes": 5399,
+   "sha256": "79bc95edf5f1cf4fe68bea4b88ef1f0673d47dfb7a4dd8e832dff212fd03b9cb",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUMergePinGroup/Code Modules/TestSteps/SMUPowerDownAndUnmergePinGroup.cs",
+   "bytes": 3638,
+   "sha256": "dc825340b73b63eb08bdfe2309287b403766a900f1f2814bc889278237fba35a",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUMergePinGroup/README.md",
+   "bytes": 6492,
+   "sha256": "caf507cba9204ed8d4e3f0dae1702d295c8921eb5f4c2e9755583f12ed8d6aff",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUMergePinGroup/STLExample.SMUMergePinGroup.offlinecfg",
+   "bytes": 662,
+   "sha256": "4d2777c2f20f03a284c5dd89f1d339dc063806127a45a8ae8b24e250322bf9af",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/SMUMergePinGroup/STLExample.SMUMergePinGroup.pinmap",
+   "bytes": 2713,
+   "sha256": "8eb16cfb7cd747410807c94ba878b07f0c4b42769a9f7d39a04751010aa8cbb1",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Standalone/README.md",
+   "bytes": 646,
+   "sha256": "c35992c234e9691707c7d93b0281f513cfb07c0eb9a8a783f5830965ce20f987",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/Accelerometer.csproj",
+   "bytes": 5292,
+   "sha256": "cd93652140ec7c5115e9dd1dc53513048fbfba530be498c1d685ee1fe0f05541",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/Accelerometer.sln",
+   "bytes": 1106,
+   "sha256": "73e6165ae199a79b8756dae44a42fd1fe1e12bda6eb030454b2d373f6386dd2f",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/Common/Constants.cs",
+   "bytes": 882,
+   "sha256": "6c14541f4cde54f69e1bacbd730c3bb14a36840a225af475796e9d4df8375f86",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/Common/SimulatedTemperatureController.cs",
+   "bytes": 2137,
+   "sha256": "081b871fd85c83a60181dfb0fae2e56ee752624a18cc50f2eda1588fd0107cff",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/GlobalSuppressions.cs",
+   "bytes": 7667,
+   "sha256": "208e36591cc9b8a2c1a2314357e2e87d9b6f54ee731c0216b4b9593b2bdad76d",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/NuGet.config",
+   "bytes": 1417,
+   "sha256": "b5ab2b6e9da68e02897ae3da25b00ba2561486b8865e2fdcb6795f5e21e7d530",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/BurstPattern.cs",
+   "bytes": 1452,
+   "sha256": "05f8f19a8e83445266618455ece1d7c76e90fc9e07cdd46e267727e9d12db540",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/CheckPartNumberRegisterWithMultipleVccValues.cs",
+   "bytes": 2602,
+   "sha256": "63dbec49eaa61573befee499fd4521cc9c6d8a7c73a8bacdf2918060c62eadcc",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/ConfigureTemperatureController.cs",
+   "bytes": 1547,
+   "sha256": "5cb53fc4b9e4a4dd57aaf2074bdaae6a57f1bb3d2f7f3201a0943ff2f21e090f",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/ConnectVRefPin.cs",
+   "bytes": 1588,
+   "sha256": "5faa1f93ef3fc5e60098a96e258c9519e6294c1bf1f578ca5e4e116a6cb2361f",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/DisableInstrumentOutputs.cs",
+   "bytes": 1967,
+   "sha256": "0fb3a7936b3bbe64a3fcbe59a25c505bc63f68d82446173dd2ea130900e62200",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/MeasureVref.cs",
+   "bytes": 3006,
+   "sha256": "29e8cb788c4b4d17d547ddfa040ce2778a17d03d45b73636cdee3fbc16dffa59",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/PowerToggle.cs",
+   "bytes": 1689,
+   "sha256": "72cf0aca042a1aa28c8abad09215af044401b736df0edc9dce48c95c6282f351",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/ResetAndCloseTemperatureController.cs",
+   "bytes": 1602,
+   "sha256": "2edbfdd9e612751753a37ec690973a9abf164fa4076fa1954302db51b4da8fd7",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/ResetDUTAndSetMode.cs",
+   "bytes": 2504,
+   "sha256": "9d2e696b571a7a39eb2db42b667d0c0c282372537c62bca5b5ece65e2419224f",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/ResetPowerSupplyToVccTypical.cs",
+   "bytes": 1755,
+   "sha256": "9a5653bed0337377bbf8bc8df8aa0165161c0012c6bee4cff151447f0627d25f",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/SetupNIScopeForVref.cs",
+   "bytes": 2072,
+   "sha256": "1f4aeb403262c830d148f3ae569157aa16b7cbc6c46562e08f37ee9c3b132d87",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/SetupVcc.cs",
+   "bytes": 3130,
+   "sha256": "9bf6d5e32aa88014619dbcab9da4c7d302fc98003660c6d8ee659b954560cbd9",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/TemplateTestStep.cs",
+   "bytes": 1763,
+   "sha256": "026ae3baa695911df0699a04c4c4c42ae21f8123834b9430dfb0d0199d7aba31",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/TestContinuity.cs",
+   "bytes": 5757,
+   "sha256": "062e4e31cb40a99a18e799bb62fc12e8fe99fa2bd4edf446b418886056e5b60a",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/TestIdlePowerConsumption.cs",
+   "bytes": 1496,
+   "sha256": "149bf7856d60d6c6288084a0be0842c3202bc76d2bc5d4ff2c41e045f6c69285",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/TestLeakage.cs",
+   "bytes": 3345,
+   "sha256": "e32203d11bbff839d9e098bf02735449bc0322edf8eeb24796e6c11f6cc6ae6e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/TrimVrefValue.cs",
+   "bytes": 3934,
+   "sha256": "c5c7b39aa2d19567eed964d80e156a931ca7a32fae87c552d3ff85db0e41fc62",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/TurnOnPowerToDUT.cs",
+   "bytes": 1810,
+   "sha256": "7668b6cb6ee9d36e93c6a45bf57a63d2f2a94b69ae8ba73f33bd47ec8f6fa61f",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/WaitForTemperature.cs",
+   "bytes": 1872,
+   "sha256": "fccb65c7bdbd510dfc6cb7909248924c1b7c0e94340017f661d08d4a9f4a121a",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/bin/Accelerometer.dll",
+   "bytes": 18944,
+   "sha256": "316ea570ac93e68ae3a9534f179cc973c968dc3a3d46a6eb97a3e22e96bf631a",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/bin/Accelerometer.xml",
+   "bytes": 21375,
+   "sha256": "e2459688b74e6133ea99ca686b5de703fa0fc4bd9a4bccd35ae52d3c74b83549",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/bin/NationalInstruments.SemiconductorTestLibrary.Abstractions.dll",
+   "bytes": 138808,
+   "sha256": "61a00d9df2965fdf1332d104f19eace9139ee9d2bc51c942144b17e7a97bdd94",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/bin/NationalInstruments.SemiconductorTestLibrary.Extensions.dll",
+   "bytes": 136248,
+   "sha256": "5d7804e136f9d8cb4659597dae6aff97ef91174fc90dac9e4f6a75f2308b304d",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/packages/NationalInstruments.SemiconductorTestLibrary.25.0.0.nupkg",
+   "bytes": 226188,
+   "sha256": "d401811950f38fc90e0485f1be230e1ee775f9b47f6bb2642afd469b97b794fc",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Limits/Production Limits.txt",
+   "bytes": 1816,
+   "sha256": "43cd31590fe0b68fd5700b085b14ae2552a40d4c91a213149211b75b2054dbae",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Limits/Quality Limits (Hot).txt",
+   "bytes": 1809,
+   "sha256": "c5c28483936613d9ddf1536b28639a4dac3754a228b6d49202c1e26885f7e570",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Limits/Quality Limits.txt",
+   "bytes": 1824,
+   "sha256": "591748afe3e432a813f43fe34b6b6c7ad6afa81b9ddd735ea636892cb827bd36",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/README.md",
+   "bytes": 11262,
+   "sha256": "e09ea6a6165f3cfe604fc83d41161057ea65acd969f5afe4b473e9d8f9be2337",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Accelerometer.digiproj",
+   "bytes": 4491,
+   "sha256": "50cd8f447f3e5820ebef9c923326cd4b27b1a56861305c28c2819d2d8be70ac6",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Bin Definitions/Accelerometer.bins",
+   "bytes": 1177,
+   "sha256": "ffb9b60c1a6d04add51aeecc7827c92f2bef712911ded7546b5dc7e812279b35",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Digital/Capture Waveforms/Get Vref Value Waveform.digicapture",
+   "bytes": 859,
+   "sha256": "81ffabe30373c6f73a2444e0020d98ee95b27ff40d3998660fa19f8a247a3559",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Digital/Compiled Patterns/SPI - Read Part Number.digipat",
+   "bytes": 4491,
+   "sha256": "42f2b35a3f001d5d41864f8ecd42622cec1e4c7522642cd51311e90b52ec5b34",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Digital/Compiled Patterns/SPI - Set Test Mode.digipat",
+   "bytes": 8476,
+   "sha256": "ce4efea646ee1a4315e2ae0b0889b33ece3b94a16488e636d34a7e3bed72720a",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Digital/Compiled Patterns/SPI - Set Vref Value.digipat",
+   "bytes": 5206,
+   "sha256": "3a85fe8a33c4b7bbbf754b62bcbb528c8b523e74ca77e879cace8a1b78a6533e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Digital/Levels/Accelerometer.digilevels",
+   "bytes": 1358,
+   "sha256": "eb0d50aff0dc897ffba594b902f49772ec414639eba022e27500502af20b04e0",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Digital/Source Waveforms/Set Vref Value Waveform.tdms",
+   "bytes": 970,
+   "sha256": "4f010bebe7bf477ea17722d4061feba6a17937e524e8f6a17ef504fc7a9d651e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Digital/Timing/Accelerometer.digitiming",
+   "bytes": 2648,
+   "sha256": "d53878b56c51aef40b987e4320e79e3c5edd338bf392e4e8d292404a6b86d07a",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Offline Mode Configurations/Accelerometer.offlinecfg",
+   "bytes": 739,
+   "sha256": "ce79581eb5103c9e061f9fdea31c6af22c15e00d755539ee6ea0dc2fcdc09aa5",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Pin Maps/Accelerometer.pinmap",
+   "bytes": 7233,
+   "sha256": "829b05ee0e8215241bdfa9ae15fae04cb169c81e02b6f2b78c95eefdf34e0e71",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Specifications/Accelerometer.specs",
+   "bytes": 2279,
+   "sha256": "c17d214e8eb889c10306061455d94ec11f3367a4d60fa1d2715bbbbbc465cc4c",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/TestPrograms/README.md",
+   "bytes": 445,
+   "sha256": "242f5e8b61fd500e1c218027768118f53d543034ee4d2b8f1d6bdd01b405fc8f",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/tests/GlobalSuppressions.cs",
+   "bytes": 599,
+   "sha256": "882c62f01b380377d85f58c005086c090ee35819abac98e7027c32a1d653f5ed",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/tests/Integration/InstrumentAbstractionTests.cs",
+   "bytes": 2516,
+   "sha256": "26ff41a12254b3df3c91a2b5c5a36f97a50bddda5a0d4b45c380cda02b0d3c47",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/tests/Integration/MeasurePeriodTMUTests.cs",
+   "bytes": 1092,
+   "sha256": "aa18b68ae15be773abeae8cdab75688f1d546ea532edc3fc2dad2ab8a5fb5e3b",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/tests/Integration/PatternTriggeredInstrumentControl.cs",
+   "bytes": 2807,
+   "sha256": "4ede2ac3e0dac32f4a3f61d5ca9a8d349c7c68fe82d41909288cee922907231d",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/tests/Properties/AssemblyInfo.cs",
+   "bytes": 1398,
+   "sha256": "53a4f0e52b6893e90f1f2b31df69c0e1af3ca008c3d735a0162c6c33cbe724df",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/tests/Tests.SemiconductorTestLibrary.Examples.csproj",
+   "bytes": 3193,
+   "sha256": "aa0d827552228f68050561a8917e6aa76562656cb9a285cb921a95756e6c4290",
+   "via": "tree"
+  },
+  {
+   "path": "LICENSE.txt",
+   "bytes": 1071,
+   "sha256": "aec0d06ce4db329f3bd53ca76527d3b98b2924777d596c470bdd49c6838b8663",
+   "via": "tree"
+  },
+  {
+   "path": "README.md",
+   "bytes": 3102,
+   "sha256": "414d3f875323ab29f094054eb794f25fab7453a57a4d530768decbd96523d072",
+   "via": "tree"
+  },
+  {
+   "path": "SECURITY.md",
+   "bytes": 1311,
+   "sha256": "a49dcd1f205fc87ca643e533a92089833113be136fa8dbba2b62136a43ce1847",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Abstractions/NationalInstruments.SemiconductorTestLibrary.Abstractions.dll",
+   "bytes": 235264,
+   "sha256": "9bceb80f24b3f859faf4dd8d88890bd406c87bd873ddc6b390881d0a6d835bd9",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Abstractions/NationalInstruments.SemiconductorTestLibrary.Abstractions.xml",
+   "bytes": 481141,
+   "sha256": "44363292361305457e2e9ebee7ac0fbd338ba66c83ce8da18d3ba43bfa147441",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/Common/HelperMethods.cs",
+   "bytes": 9322,
+   "sha256": "fb462404537662e1b00ca744a37c3bd743333f49274da10e98f3c4ec0ba1a9bd",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/Common/Types.cs",
+   "bytes": 386,
+   "sha256": "f92486ea016f26cbeac0fa08c1daa51d1f0e9a1eca9947bf04dd330bb2aaa685",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/GlobalSuppressions.cs",
+   "bytes": 1166,
+   "sha256": "756dc319db281a6fc4fb474caaa129b3190518f03919ea26e20e11de2ece7b81",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DAQmx/AnalogInput.cs",
+   "bytes": 3982,
+   "sha256": "8c53fb00dcf695e21c4217308e6f24bb17240d5621505c7c3fb0cea0ab9a9d38",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DAQmx/AnalogOutput.cs",
+   "bytes": 5486,
+   "sha256": "ee2677c5d302ddca3984b51b7b41cee51ae4e099e17272eb718b549f5d2a3698",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DAQmx/AnalogOutputFunctionGeneration.cs",
+   "bytes": 5984,
+   "sha256": "b63ef7cdab088598c79eeae898d5019627b2c0b9da65d161bd772fa85ab1f5b8",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DAQmx/Configure.cs",
+   "bytes": 7540,
+   "sha256": "2b8303ccd3c839be156d8cad39abf76df965e3b0b02e4241a81a339862e6a799",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DAQmx/DigitalInput.cs",
+   "bytes": 5155,
+   "sha256": "ce195152ffe1d8cb983769fc97b0657414da8b747d79a81182aa1391970aeb94",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DAQmx/DigitalOutput.cs",
+   "bytes": 5580,
+   "sha256": "9078b73a3e4b139e28cc12087d332ce44573b157b6f2e7ce63257668f7daade5",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DAQmx/TaskControl.cs",
+   "bytes": 6753,
+   "sha256": "bd705237f1f660e9fee9bfad42bbb27523ee0518189ffb730f3cc75d9163fb4f",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DAQmx/TriggersAndEvents.cs",
+   "bytes": 4476,
+   "sha256": "b1673cc5a1d5da43cc04747032f2fca2638c6f4ad0076763988c7f728b397ab9",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DAQmx/Types.cs",
+   "bytes": 6322,
+   "sha256": "9a92df957cbfdc6e346d9f8b1dba76a901af1674f19d4feca7fcb703f5ca75f3",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DAQmx/Utilities.cs",
+   "bytes": 1268,
+   "sha256": "634aa7fb81feb6caca866d2eb2bcf83bc039aa4723b3ea7d3a6d62afca309e3e",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DCPower/Control.cs",
+   "bytes": 6234,
+   "sha256": "12cd81758b2498923dd0a72e917ffa7dbd10a3af5665011b2dcc7ba644fd296f",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DCPower/Measure.cs",
+   "bytes": 43534,
+   "sha256": "215cf3ac0c74a5b50395b6d0d3f34fff4b5617b7e2d772fce1eb3c268a5d0933",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DCPower/Source.cs",
+   "bytes": 184821,
+   "sha256": "a6b0d96aed3d7aefd3f69329c06853ce630d49f696021b5f061bca2976b84c58",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DCPower/TriggersAndEvents.cs",
+   "bytes": 19485,
+   "sha256": "876beeb2a61c03415ccba1cccaaec3d06ed43d206eacb36fb17c37ee00063af0",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DMM/Measurement.cs",
+   "bytes": 6595,
+   "sha256": "3ceaefae93ce5e95059316aed3349bef8657a92b4dc2c70cbb3284d8a9fc0c5d",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DMM/PropertiesConfiguration.cs",
+   "bytes": 9640,
+   "sha256": "767c9c1da3e4dd8b51db336b4d7dc92fafeaefbf677eced0c3c4281912dac2a6",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Digital/FrequencyCounter.cs",
+   "bytes": 1753,
+   "sha256": "3e341535b9e69bb4c377449ba2b024bc2e5f4846ad1e71e23dcf46c30340b602",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Digital/HistoryRAM.cs",
+   "bytes": 15585,
+   "sha256": "9f9855ab0bd9af35766b93176f36d5a938a9a55b62f490c01419f6506e52558c",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Digital/LevelsAndTiming.cs",
+   "bytes": 44292,
+   "sha256": "b14cb0947dc11a5dabd07a3a72114e770e6da08c2652ef864a91df7be23fe309",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Digital/PPMU.cs",
+   "bytes": 32580,
+   "sha256": "fe9e904473db657b924ba613d5ba431b41a78bc90dce5fa788dc1792dc3f395b",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Digital/Pattern.cs",
+   "bytes": 7453,
+   "sha256": "e5bffd295fe6e1b6fd88cfc6e3bbf8c4e20783a8e8e4098e7244f32333b6e7eb",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Digital/SequencerFlagsAndRegisters.cs",
+   "bytes": 7422,
+   "sha256": "044f553bf834b1e904f1ed60538c942a465dd90ff99ff4f945ed5251d733f77a",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Digital/SourceAndCapture.cs",
+   "bytes": 14225,
+   "sha256": "61e82b9af6ecfb3530b26e3cd4d0c01dd1af499074c6f76e9c84280cd4bfa50b",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Digital/StaticState.cs",
+   "bytes": 3246,
+   "sha256": "9157173e3756b612698262b3864d44eb5fc7fc8428a42a6b8c69d6cf8fec52ca",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Digital/TMU/TmuExtensions.cs",
+   "bytes": 35584,
+   "sha256": "087edae227a4b00a0c183d912ef9ed56feb0e00bf2fb0248de2a2f2bd971d120",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Digital/TriggersAndEvents.cs",
+   "bytes": 9292,
+   "sha256": "4371af7f9ecebf1cda2ef3339897fe8ff3e87c4610567e7ab5067bfdc9f3392d",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Relay/Control.cs",
+   "bytes": 4023,
+   "sha256": "953d80f659c023e04c16490309ae3b29f9b06abae814f651636f78001b9edea8",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/Properties/AssemblyInfo.cs",
+   "bytes": 1937,
+   "sha256": "0f2807eafce9a692eeb04f7cc4afb60be6fd3be98fd78ccf210fa5dc9a1f0192",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/ResourceStrings.Designer.cs",
+   "bytes": 11518,
+   "sha256": "a8e694d3e1831b71cc50afdef24333ffb745635e92314c6c8c02abeed6c18e2c",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/ResourceStrings.resx",
+   "bytes": 9927,
+   "sha256": "b1bf955297ba8a3a2a5669410dd0edee6f85b5438b1ddc51e0e404c84314efbb",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/SemiconductorTestLibrary.Extensions.csproj",
+   "bytes": 2977,
+   "sha256": "ff088e2b4478090a215ce3deab5fed60300f7859848bbc48b393b75513f227a1",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Common/HelperMethodsTests.cs",
+   "bytes": 6313,
+   "sha256": "a5aa14a781343bae511db4ddf3aa1b15312845893a2d9db4b75d95c800e8a617",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/GlobalSuppressions.cs",
+   "bytes": 975,
+   "sha256": "fcf9634afeaea3cbb1c51388ac133a846712b517ca98505369dc944cad9e90c6",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Properties/AssemblyInfo.cs",
+   "bytes": 1400,
+   "sha256": "d96b8306035edabe61ed3bb5ffd8960ff508ea00a99a80f76be9b8d70efb669b",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Tests.SemiconductorTestLibrary.Extensions.csproj",
+   "bytes": 3555,
+   "sha256": "4cff236c03801c711e36bc8b7ced3adc478bcdfd645b235d3f9253674efb8920",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DAQmx/AnalogInputTests.cs",
+   "bytes": 13286,
+   "sha256": "6fcf5e7bf895d2093d60a3dc6d521c85c27945e0bf5aafee8bbc1ef00e8acfe2",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DAQmx/AnalogOutputFunctionGenerationTests.cs",
+   "bytes": 2660,
+   "sha256": "2337c7f7ce16b18ffd05847f769adce4dffb49c6e9536b603739944250aed057",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DAQmx/AnalogOutputTests.cs",
+   "bytes": 7114,
+   "sha256": "bbc07961f5d4e4c9667d3ad61c1dfa7e22bbf56e853e72928cfd587b49ebd2af",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DAQmx/ConfigureTests.cs",
+   "bytes": 5182,
+   "sha256": "9499f656bbe3dc1b8925b4db193499d49e5a2cc49f2ff200df65a3f43759554b",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DAQmx/DigitalInputTests.cs",
+   "bytes": 4138,
+   "sha256": "2e1feb7fb09fe74007a5405c94802346b12a606a5cab506a1a9a48225c9fce84",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DAQmx/DigitalOutputTests.cs",
+   "bytes": 3947,
+   "sha256": "e337d53f37d0f0fbc150774b29df97a0b8d0a763b5c8fa616e0e47a42eb82029",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DAQmx/TriggersAndEventsTests.cs",
+   "bytes": 5224,
+   "sha256": "5880b4a608bbfd26bdbb8ec17dfc88c2f7e374470f4715d1475f4781ed4632d8",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DCPower/ControlTests.cs",
+   "bytes": 11570,
+   "sha256": "d6eb55d23985071aba831ccdbdb67fcb53a90760b4d837c50a7651853a61307e",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DCPower/MeasureTests.cs",
+   "bytes": 65297,
+   "sha256": "cd20f22fd8089e69e4e27b31639beabfed90dc7402054d89db27c4cd5c5b11cb",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DCPower/SourceTests.cs",
+   "bytes": 311563,
+   "sha256": "668306d3e22774fb88a6f07c1bcfc5270a5fae5bbde09800ed84ed4cd37c210b",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DCPower/TriggersAndEventsTests.cs",
+   "bytes": 33619,
+   "sha256": "27e9f50ddf39ef870dc849389fe699e61eb14a830fe2aeb7621db44df37ff267",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DMM/MeasurementTests.cs",
+   "bytes": 4736,
+   "sha256": "6ad9fad03525ee9cde426cbecae850f8713469204688bd821e84c256475a1a1a",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DMM/PropertiesConfigurationTests.cs",
+   "bytes": 11031,
+   "sha256": "f77f24ed895aadd601dc35bb4130c535d62131429e2a08d6674e3b886859ace5",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Digital/FrequencyCounterTests.cs",
+   "bytes": 2038,
+   "sha256": "f2837e76c7e2c5b2070ebecfad65c696e466721c1c9f9fcc80cec9d482568b09",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Digital/HistoryRAMTests.cs",
+   "bytes": 5095,
+   "sha256": "02d16fc48517e40de0af9758cdb9fdccc90497737734155f466c80242365c89b",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Digital/LevelsAndTimingTests.cs",
+   "bytes": 92209,
+   "sha256": "88e34c8e69769e7e7ca840c1078a2ec58e3bf78c23787b169fb7bb07f73472b1",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Digital/PPMUTests.cs",
+   "bytes": 51739,
+   "sha256": "c85cb076418c1d9e755904f8e10175757901ad01b6a8243ecf99a18e5369fe97",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Digital/PatternTests.cs",
+   "bytes": 12068,
+   "sha256": "ebaf9d08f2cdb771729ccd74abaf1cbf3c475119a97c3d9d1ad8c50f5976989e",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Digital/SequencerFlagsAndRegistersTests.cs",
+   "bytes": 5524,
+   "sha256": "467ddecb9c1f5975d2c7004c3ddd14721dbbf706c0281baa7c90021f26409f13",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Digital/SourceAndCaptureTests.cs",
+   "bytes": 13633,
+   "sha256": "7e23d7534ea2c3f955db4a04ef3bed2389f394411eb70f27c253674bebfdca29",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Digital/StaticStateTests.cs",
+   "bytes": 5826,
+   "sha256": "b0826df73aeee20996af66cb2ae50bf6b46e5ed21f25873e752054a99a23b90a",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Digital/TMU/TmuExtensionsTests.cs",
+   "bytes": 10082,
+   "sha256": "705e11e2c93497342cfa16664a902e4941e8b232609523f5e3d7370ee384c5b0",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Digital/TriggersAndEventsTests.cs",
+   "bytes": 18798,
+   "sha256": "56a2e76a696b19f6fb6b14137ac0d08a8c39ba43d4dafea81154725a13fd2384",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Relay/ControlTests.cs",
+   "bytes": 2404,
+   "sha256": "c4b4fe2072ac00349a768a08679368c35f2d146ea78dd98d08bb63eb5a9887ea",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Utilities/Utilities.cs",
+   "bytes": 2150,
+   "sha256": "2fa8e7af2ea70c689c271db54cfb8c68e1f54c4c342acba3a4fd7102fc897af9",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/AcquireAnalogInputWaveforms.cs",
+   "bytes": 2651,
+   "sha256": "7e79775cec0fc8d471e31f392500406b2867ff1b44ea569a96662d35bfe38686",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/BurstPattern.cs",
+   "bytes": 1682,
+   "sha256": "000e33591f8e3efd6b9069c0ee3e6a0d5f5a3ef95cba49007993f7aa224dbd59",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/CleanupInstrumentation.cs",
+   "bytes": 8185,
+   "sha256": "dd5d80dd030690b47dd5c7376d2b9babadc180448ce3174179d63a8c12071c16",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/ContinuityTest.cs",
+   "bytes": 13287,
+   "sha256": "10e911aa5889f65fb3c87386011fd2ef92afdd9c79397ea30d17b6e1393a8ff0",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/DutPowerDown.cs",
+   "bytes": 11252,
+   "sha256": "4d9f54e139530bf20879d16f7387fa1cc3b4c9a5dadbb43fb5b8203d00fe9787",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/DutPowerUp.cs",
+   "bytes": 7853,
+   "sha256": "c99d9073d831701c241fb02412d1cf02f9c0c5ace60c22516cfc1fb45a10bd3a",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/ForceCurrentMeasureVoltage.cs",
+   "bytes": 5314,
+   "sha256": "9544de698a231c3b66a51babd27510b7bacca2d618174312244e9a3ea8da676e",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/ForceDcCurrent.cs",
+   "bytes": 3966,
+   "sha256": "af886cd82c4b2da0d001c51f6837748e0827d8d1d329d81cf3ca503bcd717a2a",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/ForceDcVoltage.cs",
+   "bytes": 3156,
+   "sha256": "1f461ac0673e9cb1ef98448f8e58b38a82a96009adc0c3980d20c1cb82430e9a",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/ForceVoltageMeasureCurrent.cs",
+   "bytes": 4373,
+   "sha256": "8053f94c50176c0f1853b23360aa0e670520070a078ad3a148aa8ca17cde15fa",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/GlobalSuppressions.cs",
+   "bytes": 614,
+   "sha256": "e3fab26a41fe0965d293e562112777b463aa8c8327f899e8817f6e7fbd5a3cb1",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/LeakageTest.cs",
+   "bytes": 8746,
+   "sha256": "f23dcffe846d2aec6aa073d0212ccd6a9c9e7480e2d4cffeae4201be13080214",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/Properties/AssemblyInfo.cs",
+   "bytes": 1752,
+   "sha256": "be39041bbbfcb197ee1c06e6920b9e148a89f4a64710ae0f4063473a8eb23c14",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/ResetInstrumentation.cs",
+   "bytes": 6411,
+   "sha256": "1b46231e877d93f0fcd1639d2c84c7bd9ac7cb281d8e5edcbf300f64f07fc573",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/ResourceStrings.Designer.cs",
+   "bytes": 3596,
+   "sha256": "a55c6bc765fc106d290964c1ad3168fff9f071e814998ee4933f3ed42bb1ddee",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/ResourceStrings.resx",
+   "bytes": 5976,
+   "sha256": "2efe3910bd0c9f359ee8e3c386cd1d3d822574184bef717c4d5133891c2efdd0",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/SemiconductorTestLibrary.TestStandSteps.csproj",
+   "bytes": 2874,
+   "sha256": "055fd66775403e2ecc95dee5ef909a87393fee041aa07664d9950c2f187ba5d1",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNIDAQmxAIVoltageTask.cs",
+   "bytes": 1844,
+   "sha256": "022b40b4be909ed8b030a7fd93865bcec65ef19d7eb482862f8688d117726d27",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNIDAQmxAOFGenVoltageTask.cs",
+   "bytes": 2294,
+   "sha256": "058ad4534f350cdb7a3099c3aa216716bd3de627b9be648adc94baec6d6bdb8c",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNIDAQmxAOVoltageTask.cs",
+   "bytes": 1850,
+   "sha256": "35c8c3c87d2e0557a5ef818c7958105770cb547c7ca333fc84fd8ebf18eea9cd",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNIDAQmxDITask.cs",
+   "bytes": 1569,
+   "sha256": "61ee13538483c27a22033c93ca08824ae6bd360e4dd718a63f4697d2017b3305",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNIDAQmxDOTask.cs",
+   "bytes": 1571,
+   "sha256": "babe23b8e120d87d1077fe0f1ba01e32eefa01ee5371240f74b638b5b9ac1cbe",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNIDCPowerInstrumentation.cs",
+   "bytes": 4434,
+   "sha256": "0a4580def40cf3e12a1e91aaaa1606a68ff1d236ad2bce58d9006274233341e5",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNIDMMInstrumentation.cs",
+   "bytes": 5156,
+   "sha256": "8eed18487a93f4861276d370908bfe162ff4519905a134645876f6be80861511",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNIDigitalPatternInstrumentation.cs",
+   "bytes": 5496,
+   "sha256": "1c0bd1eb44c0382a341fc37e264a12491fbd7e66e2d30a8643a2a16f065022d2",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNIFGenInstrumentation.cs",
+   "bytes": 1235,
+   "sha256": "a3800415ddc8959abee2bba61c6d37a223c6d3e3ef2905e2b8b0769a6e25d4eb",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNIRelayModules.cs",
+   "bytes": 2362,
+   "sha256": "d1e1114bddad1e5ab241b066365e541f86f237ac8d3ca9b2a29498b0e2b74735",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNIScopeInstrumentation.cs",
+   "bytes": 1198,
+   "sha256": "fc5e13f1c7acd1b43cc4eee2e0e4592c98338bc34a94c86f05fb3bb2257338db",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNISyncInstrumentation.cs",
+   "bytes": 1239,
+   "sha256": "cbd35c55a5e46478dedcc01f2e5270551cc5cb72bc8b01430deb057f4a60ad52",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/source/Shared.cs",
+   "bytes": 2028,
+   "sha256": "ead6cbe1f6a3f79e3754392f3ff9ff17ec9e08f7180b92de3cbdf035a56c1f5b",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/tests/GlobalSuppressions.cs",
+   "bytes": 464,
+   "sha256": "859064f0566e90a5123b18290e1f43ce7f326ca34798621caea20be34f1a8fa2",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/tests/Integration/AcquireAnalogInputWaveformsTests.cs",
+   "bytes": 3257,
+   "sha256": "9c5ce54bc5cb01713052a7a1bb00043f201274dbb62b56b5b290472976aa0cf1",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/tests/Integration/BurstPatternTests.cs",
+   "bytes": 2434,
+   "sha256": "4f9c7df96ee75f296e96fa8f6e1f9db0c4b4ee0b282b953bdecf2d71b4317509",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/tests/Integration/ContinuityTestTests.cs",
+   "bytes": 2815,
+   "sha256": "2efcf0990ba8d4f7882c310597de16d1c7932f5deee29136606f6002b39288a9",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/tests/Integration/DutPowerDownTests.cs",
+   "bytes": 2404,
+   "sha256": "7f0c66c2b62812e63d1409ff374c8c612639a1ebcb66a1edd813527994d55317",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/tests/Integration/ForceCurrentMeasureVoltageTests.cs",
+   "bytes": 17334,
+   "sha256": "986b09bbc68a46e473a095f8f30eee21b325ec3b1d79dda9f9144685ff2a6a8b",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/tests/Integration/ForceDcCurrentTests.cs",
+   "bytes": 7278,
+   "sha256": "36d9b12aed1af0c39fbe6615374ff248589ccec27c66450475bdd12e8603d3e3",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/tests/Integration/ForceVoltageMeasureCurrentTests.cs",
+   "bytes": 3348,
+   "sha256": "ade21d0588978c8950fb3816f382d5ebb1d43d072d621269142ff1ccc5fd0294",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/tests/Integration/LeakageTestTests.cs",
+   "bytes": 5526,
+   "sha256": "3148c05ebd500846ac8b3475d3d74e68d9b530af3daa8600611fefe6d9e9a07b",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/tests/Properties/AssemblyInfo.cs",
+   "bytes": 1404,
+   "sha256": "b18aff37724bdd513d52397f5267ce48e6313945b6afa275150959ad5e571b40",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/tests/SignatureCheck/CommonStepsSignatureTests.cs",
+   "bytes": 14378,
+   "sha256": "05be1063c0497f82eb1b577d0aba23136a49e4998e854f392496639979db6236",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/tests/SignatureCheck/SetupAndCleanupStepsSignatureTests.cs",
+   "bytes": 24783,
+   "sha256": "e9c16cb71d25f27f2a98d86dac04e540919ce24268b9a13e412f0440bc893dd3",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/tests/Tests.SemiconductorTestLibrary.TestStandSteps.csproj",
+   "bytes": 3160,
+   "sha256": "af5eb12ad2e22e3200454189953029ed769cc14b674aa64b86ffc8b7a3f10e97",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.TestStandSteps/tests/Utilities/Utilities.cs",
+   "bytes": 4676,
+   "sha256": "d840072a641e8610a9be48ce731670487a9950621f07065a571f4b40171e6258",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.sln",
+   "bytes": 4560,
+   "sha256": "544ffe875c42f68c9c7180ddced90cfe76cf5edd9b0a035c23a9c6bad2dd84ed",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Digital/Capture Waveforms/New_Waveform.digicapture",
+   "bytes": 800,
+   "sha256": "8c9653c02ac7aab45201773a044209be7542a44eb94686ae4e2452f5a86e0945",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Digital/Compiled Patterns/CaptureWaveform.digipat",
+   "bytes": 4777,
+   "sha256": "f617629b398ae768d136956154ff1d0d99e6e0042dad5c34f7c5209905cdd21e",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Digital/Compiled Patterns/GenerateTrigger.digipat",
+   "bytes": 4805,
+   "sha256": "5d7af8ebd3026ebecec2d66000f986ead716079a29e755e11229e0e4300b17fe",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Digital/Compiled Patterns/KeepAlivePattern.digipat",
+   "bytes": 3993,
+   "sha256": "c66572fb514a874f055fcdc6489a9850ecc23c87b7503ad1a2a971911bcced9c",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Digital/Compiled Patterns/LongRunningPattern.digipat",
+   "bytes": 4627,
+   "sha256": "26fbbb49763e6f33749e2fb46046e6ac3c97bfa20b8dbe597c294cebe138e379",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Digital/Compiled Patterns/StartKeepAlive.digipat",
+   "bytes": 4089,
+   "sha256": "c28ca32b532cca3d280718bec4d5ff4aaf489470989512dd5af94929e16ed812",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Digital/Compiled Patterns/TX_50_Duty_Cycle.digipat",
+   "bytes": 4363,
+   "sha256": "a1fb4d516a660c6c76d10001d4396c3ad4ea1d9ba435c097e96eda53b037364f",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Digital/Compiled Patterns/TX_RF.digipat",
+   "bytes": 4119,
+   "sha256": "30f326dabe7917ea82bdb0e33cf91ca3b46dc5ac62e9fb22440345743a5a9b3f",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Digital/Compiled Patterns/Write_LTE_HB_FDD.digipat",
+   "bytes": 5763,
+   "sha256": "ebff0d6bc33818e840d191d36ddb8fa085b6c9b693e02315031d40b3da64b5d2",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Digital/Compiled Patterns/Write_NR_HB_FDD.digipat",
+   "bytes": 6371,
+   "sha256": "8a621a46f75172b0504b90edd34fc2fc11dc46c8b6366c8d285257c535a7cee3",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Digital/Levels/Levels_MixedSignal.digilevels",
+   "bytes": 1402,
+   "sha256": "31a2aaf36c669b52d649d9f1c61b1d0bcb87a7c951a8ee11008097e8ae19fb1f",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Digital/Levels/Levels_TMU.digilevels",
+   "bytes": 1247,
+   "sha256": "6f2c5db80659794944fec304573070756c6f70b8a542e344a7d67f72758399da",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Digital/Timing/Timing_MixedSignal.digitiming",
+   "bytes": 1238,
+   "sha256": "8f16c0ab3fa72a8ff8ced8640d660f7309aaa09011dc60818a4c18cddf60722c",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Digital/Timing/Timing_TMU.digitiming",
+   "bytes": 1213,
+   "sha256": "222ac8d95250976f5bbb5e7dfeb9f7617911ab2d6115db109e3ad2e2c0a91e86",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/DigitalPinWithThreeIndividualSitesAndTwoPins.digiproj",
+   "bytes": 2665,
+   "sha256": "d41767436c423eb288098eb1f90a14cf713f83239f8a3676e57b5fb85a3b46b4",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Mixed Signal Tests.digiproj",
+   "bytes": 4229,
+   "sha256": "4baa54e8a5f11818cdfd3a8051a083e163499dfff5fdc0fff82076b8e5dea941",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/NIDigitalTMUTest.digiproj",
+   "bytes": 2979,
+   "sha256": "99c27d4151f57edea8d60cd5ab877371c3575983cf3ab1cf6cbe57481b212b17",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Offline Config/MixedSignal.offlinecfg",
+   "bytes": 9049,
+   "sha256": "e42681aaac6ec988a4972347844bc3c797364308f1d38acc792fb4f629a72d3b",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/OneDeviceWorksForOnePinOnTwoSites.digiproj",
+   "bytes": 4934,
+   "sha256": "ec733c77608ef12fd2610a8ef4a674c5447abcaf062acc0798af0ef67d5a5314",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/PatternTriggeredInstrumentControl.digiproj",
+   "bytes": 3802,
+   "sha256": "fd682493618ac43e3ea5c8640e7fbf61f0a9985cef966a4606f23687842d7552",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/CascadedPinGroupTest_SessionPerChannel.pinmap",
+   "bytes": 2208,
+   "sha256": "c11dae4a921fd2e36c13fe9574483198461a4f92d869cf4ed88599fd4edb9e2c",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/CascadedPinGroupTest_SessionPerChannelGroupOfMultipleInstruments.pinmap",
+   "bytes": 1834,
+   "sha256": "e8ce4be6ee6e05976b0488b89dff20ffa3d887d1656dea9561e95b7e563c45cb",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/CascadedPinGroupTest_SessionPerInstrument.pinmap",
+   "bytes": 1838,
+   "sha256": "7bf821da81b7df7c64e4101e4b3a338d8f183a79e095d2463f4a116c53f9f1a0",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/CascadedPinGroupTest_Site0SessionPerChannel_Site1SessionPerInstrument.pinmap",
+   "bytes": 2042,
+   "sha256": "29406eb8aa8f1357bf89d4f64fb05615450e0af5b3e48727e2a943aa8ed90ff2",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/CustomInstrumentsSharedPin.pinmap",
+   "bytes": 3998,
+   "sha256": "c2979a6cc33d05ecdb7be91698ffbfb72c2824bdbeab991ba51c2fab3a7a8f11",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/DAQmxChannelListOrderTests.pinmap",
+   "bytes": 2766,
+   "sha256": "c826b6795871e28f2d526cb6b7ed94f9c00e12d2761c72bcb1ee37fc85f29ace",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/DAQmxMultiChannelTests.pinmap",
+   "bytes": 1114,
+   "sha256": "9d7a73c22d668285c6b544f8afbff74820fad12753add7b76e76fb02af1c2bc9",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/DAQmxSharedPin.pinmap",
+   "bytes": 2450,
+   "sha256": "ba834cd766e6e1e65940c4dec6e6b1f22ad1e609c279b3ca94aead49b03e8574",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/DAQmxSingleChannelTests.pinmap",
+   "bytes": 2346,
+   "sha256": "a036e28c0ac0e1fcc9a19eaaa49b256d133f96bbf4f3dbd0dc33f8eca017596f",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/DAQmxTests.pinmap",
+   "bytes": 3242,
+   "sha256": "88eefccf167b98c28f90d6172f754437f9948556a82dbe056c0e7c331574a576",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/DMMTests.pinmap",
+   "bytes": 805,
+   "sha256": "6813a09f863e7a4f010aee60d717131968ca16cdcbf8c1257e1de341af94d582",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/DMMTestsWith4081.pinmap",
+   "bytes": 1302,
+   "sha256": "6bfb031aead63e2b4ff715d5f33b31df3ff6e51116b4974364ee3f30c3477d9d",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/DifferentModelScopeDevicesInOneGroup.pinmap",
+   "bytes": 742,
+   "sha256": "60a662c053be7d7f05f2039027d506389209d2f1b91efa7fdb5b98a0e764d7cd",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/DifferentSMUDevices.pinmap",
+   "bytes": 3968,
+   "sha256": "879fd2fd030dd65ae0b5a1b17167dcaaeee967c7d012c858ac0d8ebc7c56e14a",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/DifferentSMUDevicesForEachSiteSeperateChannelGroupPerCh.pinmap",
+   "bytes": 5120,
+   "sha256": "5e23baf5a649c4610c5d18d1fab603e1b04257a917e9aadd3b68c0d8c1b5de7b",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/DifferentSMUDevicesForEachSiteSeperateChannelGroupPerInstr.pinmap",
+   "bytes": 4121,
+   "sha256": "56779652b33ee7041ab7d7a34a2dc20d989dedfaa4d029b613bbb4bc31d40e72",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/DifferentSMUDevicesForEachSiteSharedChannelGroup.pinmap",
+   "bytes": 3935,
+   "sha256": "b5bc94c721b84d1f11502cb740e4a613c3d9241b090a2e6aa199f2deeae0b545",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/DifferentSMUDevicesOfSameModelSharedChannelGroup.pinmap",
+   "bytes": 1364,
+   "sha256": "4005aea484bd354753bcfb81513f604256b0cbdcb9050beb12e2295ce16be6e2",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/DifferentSMUDevicesWithChannelGroup.pinmap",
+   "bytes": 2673,
+   "sha256": "0bb43cf2f01e94f4cf35ba2c5bcb6722b5f1146ab7921bb493b4296ebe5e6c10",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/DigitalPinWithThreeIndividualSitesAndTwoPins.pinmap",
+   "bytes": 1202,
+   "sha256": "e2b159e89fa0a9e0a938da41fa6be4bdba28a1bb3538e04bf1b83e62d8c69805",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/FgenTests.pinmap",
+   "bytes": 1712,
+   "sha256": "8de95c48996852b49dd65dc080e965049cf40231f89bb05301668fbec3cd915f",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/Ganged_4137.pinmap",
+   "bytes": 2689,
+   "sha256": "3cde687a32442c55a696861a290d7c6d34e62abbe4c3556a0530cb8432f475a3",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/Ganged_4137_4139.pinmap",
+   "bytes": 2689,
+   "sha256": "ecf6111f882405afe63c5e7840e9b376b47e1767677708f82c2325907195f19b",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/Ganged_4137_4163.pinmap",
+   "bytes": 2253,
+   "sha256": "b7ed1f04a15b39983b089bee1e41df24f5260b6bc89c1d11a5696a04836a6aa8",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/Ganged_4139.pinmap",
+   "bytes": 1747,
+   "sha256": "2c2b65599df2e5ce5a7f32b0d4cad75649ba022aa3fb3d69c14b5eedaa678371",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/Ganged_4139_4147.pinmap",
+   "bytes": 2252,
+   "sha256": "031007ffcddad8d388a98753aadc8765cfd852f99c10f9ebe41c16ae6c4dab41",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/Ganged_4139_4162.pinmap",
+   "bytes": 2253,
+   "sha256": "e1945113d0e4f64dcc8a5b11d4d717afd2c9b2132e6d646aef7ba83b57d32aad",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/Ganged_4147.pinmap",
+   "bytes": 1814,
+   "sha256": "baf408e352b001ced70012ccbb6ad12bb773b30ee52027c8db58c843e08d98d8",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/Ganged_4147_4162.pinmap",
+   "bytes": 1815,
+   "sha256": "bb22be99842696d3797f1f337a30fb29e06bc872e5ee05350483eb43509f73fc",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/Ganged_4147_4163.pinmap",
+   "bytes": 1815,
+   "sha256": "e54f85e157de0b1581c03971c31e762de38045fdb9f45bbfcc491c8b2d0c9e9f",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/Ganged_4151.pinmap",
+   "bytes": 2689,
+   "sha256": "ac05870037008b2aca002de16819820f3f604eb594b4953704da3d6a2fac1ea2",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/Ganged_4162_4163.pinmap",
+   "bytes": 1816,
+   "sha256": "7d7a3d7d3deb9c960bdac7152a7d613f12ee32f7eb097c96bb469f08253e6f87",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/MergedPinGroupTest_InvalidConnectionForMergeConfiguration.pinmap",
+   "bytes": 2860,
+   "sha256": "509f25ffef96d44aa352c8efbf5fb27a2b38a13d003c80d4fb1db301264eb267",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/MergedPinGroupTest_SessionPerChannel.pinmap",
+   "bytes": 2381,
+   "sha256": "701e31d905a1abefce499e6437829fd13d410fb58377fdc8605147be02d0029c",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/MergedPinGroupTest_SessionPerChannelGroupOfMultipleInstruments.pinmap",
+   "bytes": 2007,
+   "sha256": "b2c230847c05256d4298fae210394b6d7a4191a394e754e65fc88029bb98bb4f",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/MergedPinGroupTest_SessionPerInstrument.pinmap",
+   "bytes": 2011,
+   "sha256": "b2cf033455ad05aff7e21be8d0c6becb8e1be1240d7c138cd45f11918e3cbe38",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/MergedPinGroupTest_Site0SessionPerChannel_Site1SessionPerInstrument.pinmap",
+   "bytes": 2215,
+   "sha256": "e2f84e3c024fd3e965bf3fd9dd9c52cf62504bbd22b1937804bf16d8f89a1686",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/Merged_4147.pinmap",
+   "bytes": 1289,
+   "sha256": "d6da97bfa1f3497879fe0742ed30068683b6729540d62afba50da9dff2655f84",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/Merged_4162.pinmap",
+   "bytes": 2008,
+   "sha256": "d1764bf19f1bcd5f4d9ce9d961da34c407111ae42283e524b733033499cf6b02",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/Merged_4163.pinmap",
+   "bytes": 3812,
+   "sha256": "74cb388454a03bce35a173bc4e4ff8434e4949e599fb5c884ea267611ab77636",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/Mixed Signal Tests Common Session.pinmap",
+   "bytes": 3613,
+   "sha256": "e3cb571bd5bc4c219e23684644ba77d75f5e03bdd5117b9190aa1391b26eac07",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/Mixed Signal Tests Without SMU Channel Group.pinmap",
+   "bytes": 3395,
+   "sha256": "15df44eadf22f798b57f9e1ba52e93d0086b93c5e3bdbe26c557a67035777796",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/Mixed Signal Tests.pinmap",
+   "bytes": 3987,
+   "sha256": "9410ead456deb67c2f8bddd8df2adfbc161ac6b257381b223bf72533810ec2c1",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/MultipleSMUDevices.pinmap",
+   "bytes": 4034,
+   "sha256": "eab7acda57ac794289c6e50a3732ef4233ed0984912210219004d8c4fdd10a8f",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/NIDigitalTMUTest.pinmap",
+   "bytes": 1108,
+   "sha256": "bad09ba2e20ec02e97e83d7d1d10657c0d81230201abc1b5e6ef76cc06a14a5d",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/OneDeviceWorksForOnePinOnTwoSites.pinmap",
+   "bytes": 3007,
+   "sha256": "da1a3bf1a574ba5d2aa09919fcefa921c660251a87a0816bce5248beab3b5d11",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/PatternTriggeredInstrumentControl.pinmap",
+   "bytes": 1942,
+   "sha256": "f5b3498ca3833f16aca50a4e03f6b53ec4f2b99ecc78f8a6866d1fec5acafdbc",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/PowerSupplyDevices.pinmap",
+   "bytes": 3191,
+   "sha256": "2cf58b9207ac2e446682b19baac6916e1dbec7afc4de42dfa9a9fd689baee8f6",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/RelayTests.pinmap",
+   "bytes": 1492,
+   "sha256": "167064c61358803c5167ce4f3a0f8208e4be4fa260095d591ae7240053a2c456",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/SMUGangPinGroup_SessionPerChannel.pinmap",
+   "bytes": 2944,
+   "sha256": "355bbc8881fce11ff70716a96de8717d1c3fbb4b0da7234980b0db7da5b4bab6",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/SMUGangPinGroup_UnsupportedSMUSessionPerChannel.pinmap",
+   "bytes": 1470,
+   "sha256": "526ed1bb39d1a8ff5dbfa02307b8f88d854ac79a382f59d3dd2f5dca637ed880",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/SMUsSupportingPulsing.pinmap",
+   "bytes": 2585,
+   "sha256": "50fe3f02c90e5e4b831dddb53d1b4221810513c8777002f8fc4f4b04c86799cf",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/ScopeDevicesFromDifferentChassisInOneGroup.pinmap",
+   "bytes": 1172,
+   "sha256": "eb8b5064d18651fa9b81e32a17cd686b04269d60788c4bcfddbee05c8d2b6e55",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/ScopeTests.pinmap",
+   "bytes": 1510,
+   "sha256": "6ee24ad8f6344e18ad602407c05cf7a9030d52f57a3223fdd7efa9bc5a6e0e6b",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/Session per Channel Group With Multiple Instrument Type Ids.pinmap",
+   "bytes": 2703,
+   "sha256": "069dd59814d4261ae5caa942f40e01517e325b70549cfab377656321275793ab",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/Session per Channel Group.pinmap",
+   "bytes": 2701,
+   "sha256": "57585eb6c861c961902cf5b414a294ace268c0c22a118543c1b728881cd011b7",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/Session per Channel.pinmap",
+   "bytes": 2487,
+   "sha256": "67d4fcd863e0a1091b67ad4e2fc88092c4816c723fd16f8d351799582a139c79",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/Session per Instrument.pinmap",
+   "bytes": 2545,
+   "sha256": "895dfa0c17e642fcbd6d1c14d2af62379fcfa28d787232cff16242c86d32708c",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/SharedPinTests.pinmap",
+   "bytes": 4976,
+   "sha256": "fec90ea1cfd2ed3a284e81e79f929a11237d8f5a80855f250b92f32ab189e796",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/SharedPinTests_MultiSite.pinmap",
+   "bytes": 1311,
+   "sha256": "c5e0a1af0f1cf26f4d396681ea6524e2bbf7fcf103e047389378964d32906924",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/SharedPins_DAQmx_Analog.pinmap",
+   "bytes": 1197,
+   "sha256": "6887af4a95be19143ad2018c03c95645534c292111564f7ce0234b6168fda03c",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/SharedPins_DAQmx_Digital.pinmap",
+   "bytes": 881,
+   "sha256": "d6f946c76bf5cd5ab9ca52b1f63093ac950f3b52bd699cb2c0d6cc0add63db67",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/SharedPins_Digital_DMM.pinmap",
+   "bytes": 918,
+   "sha256": "89a5b834779dc9c88ff8c866cfe879c2b898d61d058527466fde5846be0f2c1b",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/SharedPins_InvalidGang.pinmap",
+   "bytes": 2659,
+   "sha256": "f4c3fd5adf66390b830031e40907acb7d5583bc51487cfb4edec7756426f1979",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/SharedPins_SMU4137.pinmap",
+   "bytes": 2757,
+   "sha256": "93c05f388c8140bbaf4e23424580482faf5a9d0b48cc1b2aec2da50ceb23bbf0",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/SharedPins_SMU4139.pinmap",
+   "bytes": 1782,
+   "sha256": "f0f50bf1238a06415ea18976bc46b27d0c600c524bad0d686e48235f676f7ad4",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/SharedPins_SMU4162.pinmap",
+   "bytes": 1345,
+   "sha256": "15702b3c4079e5d0cc63b1232e3eaaa06c5bfa4fee5e7f08d8ce4559b3d1f743",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/SharedPins_SMU4163.pinmap",
+   "bytes": 1344,
+   "sha256": "5c9b7236a482e55dec2318c55bca794588a68b4fb2b93e06c94439d349939a89",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/SyncTests.pinmap",
+   "bytes": 892,
+   "sha256": "82237486ba74dfb33e9f1d69109306878441c6d9546dc2b6896cd408ab56df16",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/TwoDevicesWorkForTwoSitesSeparately.pinmap",
+   "bytes": 3209,
+   "sha256": "7966b161775a2a0b4fef313a392594e4836023496edfe5c1c0eded0f1ce71169",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/ReadMe.md",
+   "bytes": 473,
+   "sha256": "e235a8bf62f9a199b9732aa8be3cc27d8548ea620e09773e779bcb4b3abb3fcc",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/SharedPinTests.digiproj",
+   "bytes": 4993,
+   "sha256": "651e5e25a31c220c3017f0c6b89b1988d01c2c684772641fe6621e2490d0e6c4",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Specifications/Specifications_MixedSignal.specs",
+   "bytes": 801,
+   "sha256": "581e42d2681dc2c6b12eb6e0459c7f04a0a11ff394f7fc03e0b4a12c471affb1",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/TwoDevicesWorkForTwoSitesSeparately.digiproj",
+   "bytes": 4763,
+   "sha256": "3571d9e1b4496a86f8e852bc09182a15b448fa05377a159124441813a1c16a93",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Tests.SemiconductorTestLibrary.Utilities/GlobalSuppressions.cs",
+   "bytes": 723,
+   "sha256": "1270df8686201ef2f7900460d7470c21d01e8f71ed9e1c53e040a6d31260c13f",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Tests.SemiconductorTestLibrary.Utilities/InstrumentAbstraction/FgenTests.cs",
+   "bytes": 1236,
+   "sha256": "3e923e0e60ae5f5ece6b570f940cf26368a66938cc57377d17595646441e7780",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Tests.SemiconductorTestLibrary.Utilities/InstrumentAbstraction/ScopeTests.cs",
+   "bytes": 1238,
+   "sha256": "ed7f39fdad08c5a963e2c5cc54d225610a932f664a01b791674b3b50bfb34874",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Tests.SemiconductorTestLibrary.Utilities/InstrumentAbstraction/SyncTests.cs",
+   "bytes": 1236,
+   "sha256": "d0a7501a420096c029433882860299428ecede8de46ade5f8e03f9328672e1b8",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Tests.SemiconductorTestLibrary.Utilities/PathManagement.cs",
+   "bytes": 1827,
+   "sha256": "0d9ea942c2e704d30b7993411cd529ffafebfd8bbccefe524fe95e517b48b27e",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Tests.SemiconductorTestLibrary.Utilities/Properties/AssemblyInfo.cs",
+   "bytes": 1362,
+   "sha256": "25faf5571432a603d984b67a1fa6042befe700345fb79677524a174002252f3b",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Tests.SemiconductorTestLibrary.Utilities/TSMContext.cs",
+   "bytes": 1527,
+   "sha256": "625f051b9c4bf299cfe19e376612dea7a7d17b744acdf654bf8b323e6df1f788",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Tests.SemiconductorTestLibrary.Utilities/TestFilters.cs",
+   "bytes": 362,
+   "sha256": "fa6a2441cd23e23a9d95ffbedbfe052d150a0aaa8aae33539216ebc0997b8737",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Tests.SemiconductorTestLibrary.Utilities/Tests.SemiconductorTestLibrary.Utilities.csproj",
+   "bytes": 1575,
+   "sha256": "0c878d24b8299e9fdabcc72a4c78b6b9d3da7488527efe44b42b8267bf8390f9",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/AddingUsingDirectives.md",
+   "bytes": 1564,
+   "sha256": "61005d7ee0d08d9dac28b8b4b851ec2baa76bf602b66535d2c6dfa9383d5cfb1",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/CommonUtilityMethods.md",
+   "bytes": 1198,
+   "sha256": "0022776d25392deba3df60dfcbe81f33c4acf6c9489ede8c7f1b64184ce12143",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/ConfiguringInstrumentSessions.md",
+   "bytes": 4936,
+   "sha256": "d4e0e7ac3cfcf59afebe997052222a2585dfe957712cf502252b6fb54dbec952",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/CustomInstrumentSupport.md",
+   "bytes": 18844,
+   "sha256": "dc491f039607fa1ffd88b4cbbacf738a0701558cf2f7447f8d307ac14e27b709",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/DataAbstraction.md",
+   "bytes": 3812,
+   "sha256": "7b18e69dee1604c648a428ad0801cbef41ca8d374d7ef5e9dc6cfd649a04fabb",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/ExceptionHandling.md",
+   "bytes": 2347,
+   "sha256": "80146bcc3e049e05dccb065870401f62c15f16335a1c1514f8cc4af24ef2ddbd",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/InstrumentAbstraction.md",
+   "bytes": 12797,
+   "sha256": "db7cce5b89e890527cb0259a48a1c225876605b6fb288285ef5dccfd1543c375",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/LocatingExamples.md",
+   "bytes": 3931,
+   "sha256": "0d07bd325beea9e639ba070cdfcc3bb4a2aa99ce8e7630cb92c2b2d3192e3669",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/MathOperations/ExceptionConditionsForMathOperations.md",
+   "bytes": 2191,
+   "sha256": "f05d86a1b37208d4c4caea642b93f565cb3f3ad2e14de9cbb30f90b116e8a95a",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/MathOperations/MathOperationsWithPinSiteData.md",
+   "bytes": 19670,
+   "sha256": "6f5b85e43e289dde6ca6dbbcc4dfb8e99c7eddf0f7ed0a6de6c09deef29158e1",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/MathOperations/MathOperationsWithSiteData.md",
+   "bytes": 16203,
+   "sha256": "31fb53eff03e5accb3ce1034951025c94acd9a4d09e0e6ce9c8e742d02939a2e",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/NuGetPackageManagementForSTSProjects.md",
+   "bytes": 9926,
+   "sha256": "5246f070d0abedde9684116787edbb16c417965eee3d33a6c1503fd0571b7187",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/Overview.md",
+   "bytes": 5244,
+   "sha256": "24f1fb062872e0efe03e546f7920d6eea5e21e5b678d0941b871aef1a0eacef4",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/PublishingResults.md",
+   "bytes": 937,
+   "sha256": "7cb45bfd4b770ea9f3024c14c610c040a6a07907724570e86e21337d3e8c0484",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/SMUGangPinGroup.md",
+   "bytes": 15139,
+   "sha256": "70d7efca80520035d66f9c7bf0367c0c4edf79a75138787c76baa9896566e40c",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/SMUMergePinGroup.md",
+   "bytes": 10408,
+   "sha256": "9ac797858683f999eaf73a119f3bff06562cce4cbc7cc4acc6d9c2ed732ee85c",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/SupportedInstrumentTypes.md",
+   "bytes": 2621,
+   "sha256": "8859567fe0e2174bee1b4839748018ad9e97713fcd9f61f31b033f1c1c378a6d",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/UsingTestStandSteps.md",
+   "bytes": 4437,
+   "sha256": "5261958d2519f402fb524da31fe4aa5f20433173ee2a69dc5687397b75c13661",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/WorkingWithMultiplexedConnections.md",
+   "bytes": 14174,
+   "sha256": "da16784ea26b299193da3e5e33e66c0bef033a0b890d490f9d4bcfe854474eed",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/WritingTestCode.md",
+   "bytes": 2994,
+   "sha256": "f1bcbc7a01f76a9fbe57a028642a2003bfae16a69e588892b81ffd0f4e82a91a",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/advanced/BestPracticesForWritingExtensionMethodsInSTL.md",
+   "bytes": 28652,
+   "sha256": "855db8288b96e93e4dcdc865c1e7429602f803e7861827fc70080c6b8d8b0aff",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/advanced/ConcurrentCodeExecution.md",
+   "bytes": 2387,
+   "sha256": "6d13f638f3a6396cca4c90e3dfca811a87f8a06fbfa59ed55d664736171ec990",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/advanced/CustomizingTestStandSteps.md",
+   "bytes": 2389,
+   "sha256": "2e37eee0f764cacc1770113c6c208c91c8cf31a7319d73c0118926dadaf1c025",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/advanced/ExtendingTheSemiconductorTestLibrary.md",
+   "bytes": 3756,
+   "sha256": "a8176bac8fe3f4e01ebf0430c6d850ea983008e90c2ed99097f3984a58c1f3bd",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/advanced/MakingLowLevelDriverCalls.md",
+   "bytes": 2482,
+   "sha256": "136fcae4223e79acfd5d220cd4fab99383d09d239f6f209222161802b9ed70ec",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/advanced/ParallelizationMethods.md",
+   "bytes": 1214,
+   "sha256": "e0966da0930ea59455c5b1b0d4dfa1c397847f08fa6989fb0f3e95492f97940f",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/advanced/SharingPinSiteDataBetweenCodeModules.md",
+   "bytes": 5130,
+   "sha256": "8ef98b23a11b1489d9112a11bfecc1468ae2da016941d79ec89f5c446cbdb777",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/advanced/UsingMeasurementStudioAnalysisLibraryWithPinSiteData.md",
+   "bytes": 7291,
+   "sha256": "83f92f4f8084b242cb84a071e183bc69b43ec2cbec19a512e04e5293b16e5a07",
+   "via": "tree"
+  },
+  {
+   "path": "docs/UserGuide/toc.yml",
+   "bytes": 2595,
+   "sha256": "a48f7f0b1920d14b9cdc969be681446ebb56b56aab67786ea456a62463da89ae",
+   "via": "tree"
+  },
+  {
+   "path": "docs/docfx.json",
+   "bytes": 1686,
+   "sha256": "aa0a7ee38cac37be407842507e436910c0713082ef69fb615e1edc80cbebdcd4",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/CustomInstrument/Cleanup.png",
+   "bytes": 122347,
+   "sha256": "022b1813189c44bb7efe6c0847f1c24ad5340109094072bcb3b127f2028adbe5",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/CustomInstrument/DriverOperation.png",
+   "bytes": 51204,
+   "sha256": "8f7672010e117cb89a4074d3c83d3109263fd66b2c429a7f7eba0d66bf2d8be8",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/CustomInstrument/PinmapEditor.png",
+   "bytes": 50408,
+   "sha256": "bcf99d40202251f5a05c7cc5c7fcda17a0b1968361f10d959bf0a5149ab624d4",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/CustomInstrument/Setup.png",
+   "bytes": 132815,
+   "sha256": "77bf8284edbf9170eff8f261b951ac81e2ba3b71d3bae82ebf01e067ec53bd6e",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/CustomizingTestStandSteps-1.png",
+   "bytes": 224250,
+   "sha256": "64b83439fef8903f40b2e4d782be3dd6f64cb69c17ed57fc69d71dcb129a833d",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/ExampleOfDebuggingPinSiteDataInVisualStudio.png",
+   "bytes": 916424,
+   "sha256": "dd8bf24507d20708a570ced0951b0a8c5a6542072b48bc9e1dd397a8d217296f",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/ExampleOfDebuggingSiteDataInVisualStudio.png",
+   "bytes": 497374,
+   "sha256": "9cded934adc9e7474a1a065897b3ee802f578f48974b3dd805df62786953af98",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/SMUGangPinGroup/MeasureAndPublishMethodCall.png",
+   "bytes": 283588,
+   "sha256": "c6602a2491c6df4afa5a884ad4ddd3543cc7f82fa40d7cedfa4784a7a9501b78",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/SMUGangPinGroup/PinSiteData.png",
+   "bytes": 313432,
+   "sha256": "ea0df4cef43e4d901b649a5f0d53f440ba98763c1d6de8486366c4ff5e4dbf31",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/SMUGangPinGroup/SMUGangPinGroupSetup.png",
+   "bytes": 65361,
+   "sha256": "58a630847e0e889d7478da81e67698fa1ef1db476525133b669058a904b7c830",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/SMUGangPinGroup/TestsTabLeaderPinEdittime.png",
+   "bytes": 105638,
+   "sha256": "8d7b90bccb932cfdb39d5cd2730611a7c8a043382df1a3af32a6b546c5000c68",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/SMUGangPinGroup/TestsTabLeaderPinRuntime.png",
+   "bytes": 519770,
+   "sha256": "b6eadc6c397d38d50df0a126fd052bcd36ca77fbe9c6ef91137e94652ba63d97",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/SMUGangPinGroup/TestsTabNoPinEdittime.png",
+   "bytes": 86503,
+   "sha256": "7f8f9a64ab23fe74dde62fde24cc27fec49b4d0b1f76782ad7d0c892fbdac227",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/SMUMergePinGroup/MeasureAndPublishMethodCall.png",
+   "bytes": 354126,
+   "sha256": "5131e9789631f63615210692bddccc21bd37350d8277076f6ab5a689aa71c8c0",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/SMUMergePinGroup/PinSiteData.png",
+   "bytes": 356288,
+   "sha256": "f3fa6744f64d4633c7a6e03209f7a888aac9210711a3ff1c37aa3394c22ef8aa",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/SMUMergePinGroup/SMUMergePinGroupSetup.png",
+   "bytes": 61428,
+   "sha256": "248860085bb54b216471c5d097b0f8867c1bc7ba5304c05b39c85a2770bbd5d4",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/SMUMergePinGroup/TestsTabNoPinEdittime.png",
+   "bytes": 55511,
+   "sha256": "9af9e58a774008206f511f029de63bf4a3299dbdfaf5450ad2b01d143dcb1ecf",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/SMUMergePinGroup/TestsTabPrimaryPinEdittime.png",
+   "bytes": 88849,
+   "sha256": "41b866dcfacbf2d9d5dc56d6fcd3d87c0a49c60b4e4852fb7ee07ca46d5f5129",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/SMUMergePinGroup/TestsTabPrimaryPinRuntime.png",
+   "bytes": 102832,
+   "sha256": "1ffbcbb6c2b7e1059d77a130a47909dd94ccf2b36e391b5c0b4c4fb3f999b71e",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/favicon.ico",
+   "bytes": 1108,
+   "sha256": "a9ab5a82e5ab69bd3f6b7662ac2691415a9d07399f141143204a4cd00b00f31a",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/logo.png",
+   "bytes": 5100,
+   "sha256": "3c8537adf5e9ec4e564c8454bcc1f2810e74a7b5565979f95c83a85331096618",
+   "via": "tree"
+  },
+  {
+   "path": "docs/index.md",
+   "bytes": 2206,
+   "sha256": "7f7f68f6856e3c4033438e5ed7e089a773633768fb2cfa6da591a995e4d65713",
+   "via": "tree"
+  },
+  {
+   "path": "docs/toc.yml",
+   "bytes": 166,
+   "sha256": "99e4f6a047c819a843c130a3415d247e0239bb131dedb6dc8219f9c3bd0c3a0c",
+   "via": "tree"
+  },
+  {
+   "path": "nuget.config",
+   "bytes": 351,
+   "sha256": "ea4f8e8f247ff054755a3a800b8978594c36330076e06cd46134c8ffb98a58d6",
+   "via": "tree"
+  },
+  {
+   "path": "packages/NationalInstruments.SemiconductorTestLibrary.Analyzers.1.0.0.nupkg",
+   "bytes": 12142,
+   "sha256": "83f93601afca81e7346d67dd44703d1c6dc7d29a17fb30f70bbe996b15af0edb",
+   "via": "tree"
+  }
+ ],
+ "skipped": [],
+ "external": [
+  "<vilib>\\FPGAPlugInAG\\Dynamic\\niLvFpga_Close_Dynamic.vi",
+  "<vilib>\\Utility\\error.llb\\Error Cluster From Error Code.vi",
+  "<vilib>\\eio\\EIONode\\EIONode.xnode",
+  "<vilib>\\rvi\\Emulation\\niFpgaCriticalErrorInLSC.vi",
+  "<vilib>\\rvi\\Emulation\\niFpgaEmulationReportErrorSimple.vi",
+  "<vilib>\\rvi\\Emulation\\niFpgaGetClockAttributes.vi",
+  "<vilib>\\rvi\\Emulation\\niFpgaSctlEmulationGetInTimedLoop.vi",
+  "<vilib>\\rvi\\eio\\common\\nirviEmuTemplateMethod_errors.vi",
+  "<vilib>\\rvi\\errors\\niLvFpgaAdjustHostInterfaceError.vi",
+  "<vilib>\\rvi\\interface\\Simulation\\niFpgaSimulationCallBeginRW.vi",
+  "<vilib>\\rvi\\interface\\nirviCloseFPGA\\nirviCloseFPGA.xnode",
+  "<vilib>\\rvi\\interface\\nirviReadWriteControl\\nirviReadWriteControl.xnode",
+  "C:\\Users\\Administrator\\Desktop\\RSeriesExample\\Code Modules\\Imports\\RSeries7822RDriverAPI\\RSeries7822R_ReadWriteDigitalPorts_CAPI.dll"
+ ]
+}

@@ -294,5 +294,13 @@
   "license": "MIT",
   "files": 105,
   "bytes": 603130
+ },
+ {
+  "name": "ni__semi-test-library-dotnet",
+  "repo": "ni/semi-test-library-dotnet",
+  "commit": "1bffd0d77c98c7898e73f5e39262749a701170c5",
+  "license": "MIT",
+  "files": 456,
+  "bytes": 8813026
  }
 ]
