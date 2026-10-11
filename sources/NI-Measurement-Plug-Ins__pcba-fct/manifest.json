@@ -1,0 +1,1027 @@
+{
+ "repo": "NI-Measurement-Plug-Ins/pcba-fct",
+ "url": "https://github.com/NI-Measurement-Plug-Ins/pcba-fct",
+ "commit": "7fd522ffbe6b363dbf5ee4ff5e577fc70f5b0671",
+ "license": "MIT",
+ "licenseFile": "LICENSE",
+ "fetched": "2026-10-11",
+ "files": [
+  {
+   "path": "src/NIDCPowerPPS/NIDCPowerPPS.lvproj",
+   "bytes": 19431,
+   "sha256": "c05a5b8988b2563608d5f7041e6cd346117ee1464c4a27dc67698c16f90802cb",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDCPowerPPS/NIDCPowerPPS/Advanced/Build Assets/Post-Build Action.vi",
+   "bytes": 10329,
+   "sha256": "1c032a01248748176532976439f4e4919e51a992c30d950f826344f78bd6eb3f",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDCPowerPPS/NIDCPowerPPS/Advanced/Get Plugin Paths.vi",
+   "bytes": 19916,
+   "sha256": "7c40c78428d0f5d78443a0f42526ba9beba37d3700a7cbb40af2944ecdf50be0",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDCPowerPPS/NIDCPowerPPS/Advanced/Measurement Plugin.lvclass",
+   "bytes": 19040,
+   "sha256": "116f4b16202c101419f7a2cb301eed2fb9e967e7ed115716154005263f581a81",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDCPowerPPS/NIDCPowerPPS/Advanced/Pack for gRPC.vi",
+   "bytes": 75105,
+   "sha256": "8aead9b0208c014927dfb19143e541ffec9de441b2be459601a5ec2b0f739ca0",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDCPowerPPS/NIDCPowerPPS/Advanced/Unpack for gRPC.vi",
+   "bytes": 74575,
+   "sha256": "865adec26e3a03ed22b06f5d7d388f229538217f3810e29bee62459b673d3571",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDCPowerPPS/NIDCPowerPPS/Get Measurement Details.vi",
+   "bytes": 18103,
+   "sha256": "7f5f4a7083e520009132ebc597529cab3c625a7d7080dfe386ca77aa833c0ddf",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDCPowerPPS/NIDCPowerPPS/Get Type Specializations.vi",
+   "bytes": 19892,
+   "sha256": "ecca6c71a9d556c601d2e5a8584d805efec1fecf074a5cb0b78c905f89b264c3",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDCPowerPPS/NIDCPowerPPS/Get UI Details.vi",
+   "bytes": 18854,
+   "sha256": "32a2dbab2be5ae610d1807e1245784992ed552ecb304299b9a90b2d5fe9c09b2",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDCPowerPPS/NIDCPowerPPS/Measurement Configuration.ctl",
+   "bytes": 12410,
+   "sha256": "d18d1745d5254b27f8d86ce365241dd0c5f9a392792b8915a61ab6d4756b02c2",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDCPowerPPS/NIDCPowerPPS/Measurement Logic.vi",
+   "bytes": 24737,
+   "sha256": "2c13c49800223859a9513ab3a3c36007792f71a68bc1dd174f8bace0b1dca66e",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDCPowerPPS/NIDCPowerPPS/Measurement Results.ctl",
+   "bytes": 11868,
+   "sha256": "add8d135fac913277463912da0161913588954c9917b2775e11805f49af6eeb2",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDCPowerPPS/NIDCPowerPPS/Measurement UI.vi",
+   "bytes": 27810,
+   "sha256": "7873dc3e33f3538b84566b903e27b5d884e431af6a05b2e35251088f2a5a4430",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDCPowerPPS/NIDCPowerPPS/NIDCPowerPPS.lvlib",
+   "bytes": 2593,
+   "sha256": "cca1e972862d6f3757bac600057424425bb9f0d40b57dd805ba96b6a61d7de70",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDCPowerPPS/NIDCPowerPPS/Run Service.vi",
+   "bytes": 13739,
+   "sha256": "ec1868d5ca864b64ec50ae891c657e2e2d5f28db53ec8258d1a162219adc8b47",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDCPowerPPS/NIDCPowerPPS/TestStand Code Modules/Initialize and Register Sessions.vi",
+   "bytes": 20716,
+   "sha256": "16b78378e99f1c65b381370e7c24444a4d78185feb40dd76a1daa05b41f96f16",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDCPowerPPS/NIDCPowerPPS/TestStand Code Modules/Unregister and Close Sessions.vi",
+   "bytes": 18161,
+   "sha256": "fd0e6f796ca176802613d3108020af5bfe687c94f6fca41132866a35a42662c7",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDCPowerPPS/NIDCPowerPPS/subVIs/DC Source Core Logic.vi",
+   "bytes": 30068,
+   "sha256": "ef544625f60a263151f1a8a7f0aa711e738f00cac799a38018c37cdb70b64677",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDmmDCRmsMeasurement/NIDmmDCRmsMeasurement.lvproj",
+   "bytes": 18241,
+   "sha256": "4b95ea33c6261f4b8168c90cbe8ad4ea4e0c231b25397a34728ddf44ad914a50",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDmmDCRmsMeasurement/NIDmmDCRmsMeasurement/Advanced/Build Assets/Post-Build Action.vi",
+   "bytes": 10385,
+   "sha256": "f9d9b29adec2bfb689320269fac4ef3bc8832b78c992c44b89166e48e8d2b848",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDmmDCRmsMeasurement/NIDmmDCRmsMeasurement/Advanced/Get Plugin Paths.vi",
+   "bytes": 19984,
+   "sha256": "85235636a69345baa2c3b87a23cc3c4ba9181858022a80d80f2caca55c86d003",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDmmDCRmsMeasurement/NIDmmDCRmsMeasurement/Advanced/Measurement Plugin.lvclass",
+   "bytes": 18865,
+   "sha256": "6f35dfc2afd0e15692b6a152da860e0b9a3108f33209641ff66903a2fc077c90",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDmmDCRmsMeasurement/NIDmmDCRmsMeasurement/Advanced/Pack for gRPC.vi",
+   "bytes": 77693,
+   "sha256": "57031d4da53c23cf123d9ecc4f406221b63f9240ac84a36a6230dab6ff73e5ba",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDmmDCRmsMeasurement/NIDmmDCRmsMeasurement/Advanced/Unpack for gRPC.vi",
+   "bytes": 77275,
+   "sha256": "9bf6945de7eee89bdc1137e9218964dbd70368d99b82583e1ad6ef3de74b3eb7",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDmmDCRmsMeasurement/NIDmmDCRmsMeasurement/Get Measurement Details.vi",
+   "bytes": 17467,
+   "sha256": "650d7732715213a048c247a44c76b87ed54e3c0b192c0938dc678913022a5c3b",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDmmDCRmsMeasurement/NIDmmDCRmsMeasurement/Get Type Specializations.vi",
+   "bytes": 19920,
+   "sha256": "60815978819813c3e34f3b0ed8691bfb3b4ea78967db9800f1dcdb7b2c292173",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDmmDCRmsMeasurement/NIDmmDCRmsMeasurement/Get UI Details.vi",
+   "bytes": 18878,
+   "sha256": "5511a7aae8f09ecaeca4d8e04979a7c4517550b1304a3f12096370a32e5a2e90",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDmmDCRmsMeasurement/NIDmmDCRmsMeasurement/Measurement Configuration.ctl",
+   "bytes": 5318,
+   "sha256": "a32a5fe222348ec6117e466f7956627959dad639bc51b5946137af999cf9b52d",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDmmDCRmsMeasurement/NIDmmDCRmsMeasurement/Measurement Logic.vi",
+   "bytes": 27405,
+   "sha256": "a30a6f19298ba1c9f3ba305188f14d41523c64c08a9ec9d05d5156ee3d0265ee",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDmmDCRmsMeasurement/NIDmmDCRmsMeasurement/Measurement Results.ctl",
+   "bytes": 6027,
+   "sha256": "e44ac4b0ce4df390bfeee392188f4845040204073136f1efb7b9e4ba2b539248",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDmmDCRmsMeasurement/NIDmmDCRmsMeasurement/Measurement UI.vi",
+   "bytes": 50454,
+   "sha256": "7b9bcf757771efc0734b2e02d9a586779dfd91f1cd9e9f7a18e1f48c555b3ba9",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDmmDCRmsMeasurement/NIDmmDCRmsMeasurement/NIDmmDCRmsMeasurement.lvlib",
+   "bytes": 2457,
+   "sha256": "66e83efee4e5c7297291882d20967779d25d7a049497141d59eef4afb14a518a",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDmmDCRmsMeasurement/NIDmmDCRmsMeasurement/Run Service.vi",
+   "bytes": 13775,
+   "sha256": "e664616e3fb67fffb75011c610bb90e8d4272b9a9ec14e49a7d655ed4a696c7e",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDmmDCRmsMeasurement/NIDmmDCRmsMeasurement/TestStand Code Modules/Initialize and Register Sessions.vi",
+   "bytes": 20844,
+   "sha256": "2c703ac504ff4100d5a00201c9e8bd09476834b70acd8ddbc8fc6e91a3599dd8",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIDmmDCRmsMeasurement/NIDmmDCRmsMeasurement/TestStand Code Modules/Unregister and Close Sessions.vi",
+   "bytes": 18277,
+   "sha256": "6e04789d041294c039f992d697f59c8469955be945aefe137e2653dfe02adaba",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration.lvproj",
+   "bytes": 18659,
+   "sha256": "f6d5c72ffd126fc3ddd2bc82b708af1b7dc7904616eab59e8b2fafd08313191c",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration/Advanced/Build Assets/Post-Build Action.vi",
+   "bytes": 10437,
+   "sha256": "e5cf2efa3203ede73dc0eb5ae6a166ca40b028293a87ea950122499b85132d0c",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration/Advanced/Get Plugin Paths.vi",
+   "bytes": 20060,
+   "sha256": "8d2f4bfba8112547230e02dfa39991b6db6fc4576551a978800146d0f359020e",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration/Advanced/Measurement Plugin.lvclass",
+   "bytes": 19260,
+   "sha256": "ddf393b7d365a808b4fc26d45eb820f2d5f2f46cf2b9a4dcade6b107d86660b3",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration/Advanced/Pack for gRPC.vi",
+   "bytes": 75461,
+   "sha256": "f6f9340012827063899d69229acb8452ec3abedf96d2852523e6715f5f9850ab",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration/Advanced/Unpack for gRPC.vi",
+   "bytes": 74963,
+   "sha256": "76076f7a6c92c6b87e04f343a2cef7081ea18429a6fa11cb6491197784269394",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration/Get Measurement Details.vi",
+   "bytes": 17503,
+   "sha256": "dc5a911e723803e6d7b03ffa1074f4d147138a95571ecd7e18bb270e0ee27305",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration/Get Type Specializations.vi",
+   "bytes": 19928,
+   "sha256": "a2e9885d9387a20ceac9654764005eab1f188026b735f461991b39347e0a5518",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration/Get UI Details.vi",
+   "bytes": 19230,
+   "sha256": "a48133dca2eb5e68ced7dcfdf43fbd12b0b4fb336c9fe004539b9f12a27781ca",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration/Measurement Configuration.ctl",
+   "bytes": 12786,
+   "sha256": "c6c4003e4d3810591daf48a3cc50511670037e8c8879d513bdd1d1feca538b9c",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration/Measurement Logic.vi",
+   "bytes": 35805,
+   "sha256": "447e8fdfaa787c7139dc337347925d67013113e3a74b4abf5b73821608ca4a10",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration/Measurement Results.ctl",
+   "bytes": 11824,
+   "sha256": "4287633cbe291703215f277e3e9a430397471c6e776d802028f4461d08d79b09",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration/Measurement UI.vi",
+   "bytes": 38622,
+   "sha256": "2fb0f7716678c4303e9eeea8c73721ef2858d14d6e64010c34e288db17339534",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration.lvlib",
+   "bytes": 2609,
+   "sha256": "b1c88f8a8a521bf76239cd9ad864d8ce9ddad157bb450784439cad3ff36a9ee3",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration/Run Service.vi",
+   "bytes": 13847,
+   "sha256": "692566e6e69c5e15bf14013bc46f8ec514ece8c74aabb5a37428419b5318c0f2",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration/TestStand Code Modules/Initialize and Register Sessions.vi",
+   "bytes": 23020,
+   "sha256": "8360962780c450c64f5e8939f207a9e337e47b5df8c78e7b2cc236c09de05a70",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration/TestStand Code Modules/Unregister and Close Sessions.vi",
+   "bytes": 20029,
+   "sha256": "e538bad1af1e28db657a6c2fd7359f0be0a7a380fc2e07a88d199a5b0cbb9119",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration/subVIs/Wait For Generation Complete.vi",
+   "bytes": 22396,
+   "sha256": "c5a2f5f32981a871a8d3b77826fa986a76932943df37318ba6b42981c018c723",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeDigitalMeasurement/NIScopeDigitalMeasurement.lvproj",
+   "bytes": 25742,
+   "sha256": "15a66a558f089b5f2b0a7ae2d0560d1602cab5ceb8fd5de1dea2321afe993e2e",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeDigitalMeasurement/NIScopeDigitalMeasurement/Advanced/Build Assets/Post-Build Action.vi",
+   "bytes": 10201,
+   "sha256": "41ebedf1e566cd713f57c19490e2b4cff8983eb7ddac812d22756c23d461b9c0",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeDigitalMeasurement/NIScopeDigitalMeasurement/Advanced/Get Plugin Paths.vi",
+   "bytes": 19332,
+   "sha256": "6ac62ec2bf11122ad064aba565efd0b7422311974141bd2c7e37819018d68696",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeDigitalMeasurement/NIScopeDigitalMeasurement/Advanced/Measurement Plugin.lvclass",
+   "bytes": 19793,
+   "sha256": "51f5c79427da2be82f5bfc8daf57e721ab303a88d1573990a7da791de68ddf26",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeDigitalMeasurement/NIScopeDigitalMeasurement/Advanced/Pack for gRPC.vi",
+   "bytes": 77485,
+   "sha256": "ed9dc500a5d3d03c9599f260dfd1082ec5893be4e414222b25e81ca92dcb11f1",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeDigitalMeasurement/NIScopeDigitalMeasurement/Advanced/Unpack for gRPC.vi",
+   "bytes": 77259,
+   "sha256": "35de9270d1c192be87ed850b5159b0ee7c8b9e7a5fb70a9a7a2d9bdf8c8ef15f",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeDigitalMeasurement/NIScopeDigitalMeasurement/Get Measurement Details.vi",
+   "bytes": 17595,
+   "sha256": "5f33d8292da2e5c4f6c3b1219d748ae95c693f83d8378a1ca0c5fce4d991fa68",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeDigitalMeasurement/NIScopeDigitalMeasurement/Get Type Specializations.vi",
+   "bytes": 19908,
+   "sha256": "6276aa9b4e5b38b9ac9cfc2cc40d5c35739f158481ec408efe9f4341a7f71934",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeDigitalMeasurement/NIScopeDigitalMeasurement/Get UI Details.vi",
+   "bytes": 18878,
+   "sha256": "a6fb8dfc5a075706b5b89a040a7dfc719a95c280262b54522236a8acb60ce19e",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeDigitalMeasurement/NIScopeDigitalMeasurement/Measurement Configuration.ctl",
+   "bytes": 13294,
+   "sha256": "9e663962771fc125acf4da712aee8fc5ad8cf2a3968abb2c74ad4281e3d9b653",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeDigitalMeasurement/NIScopeDigitalMeasurement/Measurement Logic.vi",
+   "bytes": 39313,
+   "sha256": "02db58aad89abc5f4872d491083b5fee02e05a8ec00e4a4046204bfc77a9ab42",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeDigitalMeasurement/NIScopeDigitalMeasurement/Measurement Results.ctl",
+   "bytes": 13592,
+   "sha256": "6040a0f378c098f3340c14b01968c08e4ab119784fcf6f777b60e4e873d50be4",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeDigitalMeasurement/NIScopeDigitalMeasurement/Measurement UI.vi",
+   "bytes": 40190,
+   "sha256": "d7e538191ab7e1d60e96dba1bd704d8597af5431997e7448f400129c014dd85d",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeDigitalMeasurement/NIScopeDigitalMeasurement/NIScopeDigitalMeasurement.lvlib",
+   "bytes": 2457,
+   "sha256": "66e83efee4e5c7297291882d20967779d25d7a049497141d59eef4afb14a518a",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeDigitalMeasurement/NIScopeDigitalMeasurement/Run Service.vi",
+   "bytes": 13543,
+   "sha256": "4f3e15870d9116d53ca01f205fa2d8a86e13aa4d51614c09ce5db7c5b8888bdc",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeDigitalMeasurement/NIScopeDigitalMeasurement/TestStand Code Modules/Initialize and Register Sessions.vi",
+   "bytes": 23032,
+   "sha256": "abbe298b43b197576ff1a44183e6d105edc40c69ce1661723c10b7c1de207ecb",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeDigitalMeasurement/NIScopeDigitalMeasurement/TestStand Code Modules/Unregister and Close Sessions.vi",
+   "bytes": 20053,
+   "sha256": "008784f9d9017c644fde5999786d2165ba2879678e24a93b48212512d0bca6a4",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeFrequencyDomain/NIScopeFrequencyDomain.lvproj",
+   "bytes": 24159,
+   "sha256": "5530a35173f20110a84f35e3b84e42173cb0b82524e118f2c252318ca881a2a4",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeFrequencyDomain/NIScopeFrequencyDomain/Advanced/Build Assets/Post-Build Action.vi",
+   "bytes": 10401,
+   "sha256": "0e44b4254ee183cc94392719ab6b91875f14be4333b60ba4082e17c5dd95a492",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeFrequencyDomain/NIScopeFrequencyDomain/Advanced/Get Plugin Paths.vi",
+   "bytes": 20016,
+   "sha256": "ce9280ef8658f47710d3ca114eaac141eb5a4a18c5065e4cf0a9523239d2e99a",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeFrequencyDomain/NIScopeFrequencyDomain/Advanced/Measurement Plugin.lvclass",
+   "bytes": 19050,
+   "sha256": "5a3e4db6d08c16f60a591655e2d14341bff4961bbea02b35800bcba95bd5bb68",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeFrequencyDomain/NIScopeFrequencyDomain/Advanced/Pack for gRPC.vi",
+   "bytes": 80445,
+   "sha256": "6d832e77c96126103fdd13e01dc05be3b86210cb083eb844a99b75ca48abbd0b",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeFrequencyDomain/NIScopeFrequencyDomain/Advanced/Unpack for gRPC.vi",
+   "bytes": 80931,
+   "sha256": "802f8f04d8f36af1d6bfdb3967f3f3b2f51165cbe6e14b8c9d7892debd894809",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeFrequencyDomain/NIScopeFrequencyDomain/Get Measurement Details.vi",
+   "bytes": 18143,
+   "sha256": "ffeaf099f7cce609e4f9a6e34700f918bc3a0458718d0ba2b3319cbbd8194092",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeFrequencyDomain/NIScopeFrequencyDomain/Get Type Specializations.vi",
+   "bytes": 19932,
+   "sha256": "60cee246cacdb39edd750ea9e5794ee5d98a56696d519971c2af132b2cfd4950",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeFrequencyDomain/NIScopeFrequencyDomain/Get UI Details.vi",
+   "bytes": 18878,
+   "sha256": "5a7478f760dbad1c313d17bc310d9eca6fbc048844cbefca58e86f6964031973",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeFrequencyDomain/NIScopeFrequencyDomain/Measurement Configuration.ctl",
+   "bytes": 13198,
+   "sha256": "1b9ed244d4585ba55cd8ce07ecf7c50f5a64276f0bada1b1b86da8d01c9ad55f",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeFrequencyDomain/NIScopeFrequencyDomain/Measurement Logic.vi",
+   "bytes": 38289,
+   "sha256": "6edd326662cc1de178c689a451e2a056cf9e48c161dbe943a00ef47e202c6373",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeFrequencyDomain/NIScopeFrequencyDomain/Measurement Results.ctl",
+   "bytes": 15168,
+   "sha256": "9b642e9fe645214911575d4225eef52162bd1ddfb2999d79d442866dd623628a",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeFrequencyDomain/NIScopeFrequencyDomain/Measurement UI.vi",
+   "bytes": 55154,
+   "sha256": "5c5021652a5d9bc5615bf237db12b7911d1055956d4330dbc430d8c53334e9e9",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeFrequencyDomain/NIScopeFrequencyDomain/NIScopeFrequencyDomain.lvlib",
+   "bytes": 2682,
+   "sha256": "d9936ce757d7d948011ba33da794e4355fcc682987b880570bc2267709f4ae6a",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeFrequencyDomain/NIScopeFrequencyDomain/Run Service.vi",
+   "bytes": 13811,
+   "sha256": "83b3077d8c5927bef7986e0f0c0dbc310a69b1782700f2441e60ca41e5b222ce",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeFrequencyDomain/NIScopeFrequencyDomain/SubVIs/Magnitudes Measurement.vi",
+   "bytes": 24210,
+   "sha256": "925a3b4081ee1ee6a98770b2205bec906473faeccdd3aef87642bac0642fd648",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeFrequencyDomain/NIScopeFrequencyDomain/SubVIs/Tones Measurement.vi",
+   "bytes": 22273,
+   "sha256": "674c5541948cb632ad3ed0689b41d391cefeb088295739535be8d1c68fd970fc",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeFrequencyDomain/NIScopeFrequencyDomain/TestStand Code Modules/Initialize and Register Sessions.vi",
+   "bytes": 23028,
+   "sha256": "3f09d02b5a49321cf1126f3687b006f01b1c8e41fb1ce3075f958c786356bd94",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeFrequencyDomain/NIScopeFrequencyDomain/TestStand Code Modules/Unregister and Close Sessions.vi",
+   "bytes": 20049,
+   "sha256": "78a7a489956d91b88c609210a5c6c6835e74a49d0fbcab0bcb6c2b3cb56bc757",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeTimeDomain/NIScopeTimeDomain.lvproj",
+   "bytes": 25379,
+   "sha256": "f73894e54c18fc868fffec71ff56239952548e857ebb6f5b394ea3a61822add0",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeTimeDomain/NIScopeTimeDomain/Advanced/Build Assets/Post-Build Action.vi",
+   "bytes": 10361,
+   "sha256": "7f06a9a2ea106ce442e61652198dd2704514a40498d7a1fe9add10efa2576164",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeTimeDomain/NIScopeTimeDomain/Advanced/Get Plugin Paths.vi",
+   "bytes": 19964,
+   "sha256": "ce24ef391865645a9aa800ec838c362779e9f016dff3f8b90aa0cb16e7c2c164",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeTimeDomain/NIScopeTimeDomain/Advanced/Measurement Plugin.lvclass",
+   "bytes": 19099,
+   "sha256": "919da86817f64e6d58735f078c9b5fe78edc5020ce49496931d991687675e7dd",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeTimeDomain/NIScopeTimeDomain/Advanced/Pack for gRPC.vi",
+   "bytes": 75797,
+   "sha256": "e59b0af397c70da7d441d3a8324f60e1742afe27715f8f09ec9a9288df47e150",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeTimeDomain/NIScopeTimeDomain/Advanced/Unpack for gRPC.vi",
+   "bytes": 75707,
+   "sha256": "0b92de3dfd64293ef65878d6018fa07846f2e0310f7b76545a1c657d5b46617e",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeTimeDomain/NIScopeTimeDomain/Get Measurement Details.vi",
+   "bytes": 17491,
+   "sha256": "dcef713bbf812b595b3e389ca4cec29c8b1443364bdee506838e79c416f1484d",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeTimeDomain/NIScopeTimeDomain/Get Type Specializations.vi",
+   "bytes": 19880,
+   "sha256": "63107f138603c36c7a686515767708c11195144933af4a34a9fe8aa0e7905e0f",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeTimeDomain/NIScopeTimeDomain/Get UI Details.vi",
+   "bytes": 18862,
+   "sha256": "9438f9a833b8c723aa57ca1d592688b8a8f6185867f8d1f9cf90d9dab41cd427",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeTimeDomain/NIScopeTimeDomain/Measurement Configuration.ctl",
+   "bytes": 13102,
+   "sha256": "58bca4d3f1cc40d975594aa77e2a96b4ae715c16cf50acc0ab64523a0626ddab",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeTimeDomain/NIScopeTimeDomain/Measurement Logic.vi",
+   "bytes": 38933,
+   "sha256": "d93e980cce9ffaf931bc3bf16a5b8fc0023b72dfe196096e9b57702ad4bf7652",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeTimeDomain/NIScopeTimeDomain/Measurement Results.ctl",
+   "bytes": 13592,
+   "sha256": "b2266b9b3d0550002b9f1b3763a86e7e97c69bd510e8db6d09510d9224cb61b2",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeTimeDomain/NIScopeTimeDomain/Measurement UI.vi",
+   "bytes": 40018,
+   "sha256": "c4ec720aec911d3d01828f813c1f1a5f47c452f1de27acf55b9d9fb8c874b8a6",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeTimeDomain/NIScopeTimeDomain/NIScopeTimeDomain.lvlib",
+   "bytes": 2457,
+   "sha256": "66e83efee4e5c7297291882d20967779d25d7a049497141d59eef4afb14a518a",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeTimeDomain/NIScopeTimeDomain/Run Service.vi",
+   "bytes": 13767,
+   "sha256": "7120f4a58da23ef700b669a0185ae47e2c3c025e02d3d44974ff32a0a5b7e710",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeTimeDomain/NIScopeTimeDomain/TestStand Code Modules/Initialize and Register Sessions.vi",
+   "bytes": 20688,
+   "sha256": "3058f547b1c78f6c757a34aa803080d4180e9be5e894365e567463a36c3636f0",
+   "via": "extension"
+  },
+  {
+   "path": "src/NIScopeTimeDomain/NIScopeTimeDomain/TestStand Code Modules/Unregister and Close Sessions.vi",
+   "bytes": 18145,
+   "sha256": "c26d876856454a3732e31b9263be3414d89246b34bb4710b6c8970df8c3d724e",
+   "via": "extension"
+  },
+  {
+   "path": "test/TestStand/NIDCPowerPPS/NIDCPowerPPS.seq",
+   "bytes": 243182,
+   "sha256": "614986c6c4113e4298dea0d532f861d928f4828eea3428817dd57181cca9796f",
+   "via": "extension"
+  },
+  {
+   "path": "test/TestStand/NIDmmDCRmsMeasurement/NIDmmDCRmsMeasurement.seq",
+   "bytes": 7497,
+   "sha256": "bb87be38dcadbdc82b60552d938b193d5934f2c85daf1e933e408fe3816b73a0",
+   "via": "extension"
+  },
+  {
+   "path": "test/TestStand/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration.seq",
+   "bytes": 7534,
+   "sha256": "66455739f758580c7de8d6a30ee55e7b20581796b447f71045bb68e67cc559ff",
+   "via": "extension"
+  },
+  {
+   "path": "test/TestStand/NIScopeDigitalMeasurement/NIScopeDigitalMeasurement.seq",
+   "bytes": 7704,
+   "sha256": "9a0414340ac3a182d1b7d1e1105e926738e346437f2443963f72a8ebcde62984",
+   "via": "extension"
+  },
+  {
+   "path": "test/TestStand/NIScopeFrequencyDomain/NIScopeFrequencyDomain.seq",
+   "bytes": 7718,
+   "sha256": "4525d72944846c6ae50f439039ab2e0bc22b14356b1cd2cedc92955fba4aa8f6",
+   "via": "extension"
+  },
+  {
+   "path": "test/TestStand/NIScopeTimeDomain/NIScopeTimeDomain.seq",
+   "bytes": 7721,
+   "sha256": "6b5192198273eecfcb21370e21a84c2d5f3fe68209f946049a57b24103c1f6ee",
+   "via": "extension"
+  },
+  {
+   "path": ".github/CODEOWNERS",
+   "bytes": 74,
+   "sha256": "2765bd0bd2fd09f3928ee545d100113c4f9fe52dee9778bc133a2e99839e5625",
+   "via": "tree"
+  },
+  {
+   "path": ".github/PULL_REQUEST_TEMPLATE.md",
+   "bytes": 352,
+   "sha256": "0139209365b5c76e6c9126a902a4f4280708f8bdf686d37685a3fa503f3b0907",
+   "via": "tree"
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 3269,
+   "sha256": "28c555b5b64f8c69cf627a37a52eb075878640a1c6c4120f191fba1b9064a850",
+   "via": "tree"
+  },
+  {
+   "path": "CONTRIBUTING.md",
+   "bytes": 2853,
+   "sha256": "e933790203c181342ed7fd26c79b42853e0d5b5648757235c441d8660a38947e",
+   "via": "tree"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1081,
+   "sha256": "8fffc815ff024ae0f7d07e453fa14d8b5dbc0fd6a156abe5fd486d0af96d7810",
+   "via": "tree"
+  },
+  {
+   "path": "README.md",
+   "bytes": 4388,
+   "sha256": "0d63a21fd47d65516f13fcf552aac2f0bf4a952b33187b0e6fb3c18ab5e26e81",
+   "via": "tree"
+  },
+  {
+   "path": "SECURITY.md",
+   "bytes": 1312,
+   "sha256": "c3c34cacd2f1f76e9c299372d8b9cf3fbe6da13340cc1eb9721762a521c80a69",
+   "via": "tree"
+  },
+  {
+   "path": "package/README.md",
+   "bytes": 1026,
+   "sha256": "d437fe52d8ee7a8bbd5cfd8198e5adebd1c3167efe82aec116895b84aad9bd5b",
+   "via": "tree"
+  },
+  {
+   "path": "package/pcba-measurements.pbs",
+   "bytes": 7222,
+   "sha256": "264bb9e7d160015dea129072822f2982d95d15c2156298ae3dcd2c4f0eb0fdeb",
+   "via": "tree"
+  },
+  {
+   "path": "src/NIDCPowerPPS/NIDCPowerPPS.pinmap",
+   "bytes": 604,
+   "sha256": "7051fe1456870eeebd3986914ae5eb6f521a9c3b0f30bc12133774dcadc4b8c4",
+   "via": "tree"
+  },
+  {
+   "path": "src/NIDCPowerPPS/README.md",
+   "bytes": 1885,
+   "sha256": "9ff4fdb109c725fb2a49c158c0f207cb9373dd7bf59ff64744181404f858dbbb",
+   "via": "tree"
+  },
+  {
+   "path": "src/NIDmmDCRmsMeasurement/NIDmmDCRmsMeasurement.pinmap",
+   "bytes": 482,
+   "sha256": "1dc96488e913a11e4aa1bda13c8ef766451906c2766e33e0a22383028c63be65",
+   "via": "tree"
+  },
+  {
+   "path": "src/NIDmmDCRmsMeasurement/README.md",
+   "bytes": 1942,
+   "sha256": "0768291d6a8f4aff38489c7665198bd23f56b48d486efee7a856353a8ae3e22e",
+   "via": "tree"
+  },
+  {
+   "path": "src/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration.pinmap",
+   "bytes": 506,
+   "sha256": "7f5b683f2d950ed6034d3f6871931a7cd483d17bee7db29c32c860f81a01fe6f",
+   "via": "tree"
+  },
+  {
+   "path": "src/NIFgenSignalVoltageGeneration/README.md",
+   "bytes": 1817,
+   "sha256": "4bcabc20d916e0188aea8e603756cc0c27a2adb3be906cd1fc2d17bda6441dc2",
+   "via": "tree"
+  },
+  {
+   "path": "src/NIScopeDigitalMeasurement/NIScopeDigitalMeasurement.pinmap",
+   "bytes": 523,
+   "sha256": "1f08f4bd3099567ea55e6b24be6bf7db5153d20c0e314731d63014e45c5520c1",
+   "via": "tree"
+  },
+  {
+   "path": "src/NIScopeDigitalMeasurement/README.md",
+   "bytes": 2064,
+   "sha256": "34ebcd3f729922e613f15bd6f40f097c486a7fd8923281b014f4a726665b5266",
+   "via": "tree"
+  },
+  {
+   "path": "src/NIScopeFrequencyDomain/NIScopeFrequencyDomain.pinmap",
+   "bytes": 523,
+   "sha256": "acb94408b15b3e1d704cb178179e6f9bbeeaffc9b208a736581a3136fb214375",
+   "via": "tree"
+  },
+  {
+   "path": "src/NIScopeFrequencyDomain/README.md",
+   "bytes": 2021,
+   "sha256": "218b00dc05708b6ea68c3f7fb4358e7ca67359b79b7bea18ecb434f44d9a6f2e",
+   "via": "tree"
+  },
+  {
+   "path": "src/NIScopeTimeDomain/NIScopeTimeDomain.pinmap",
+   "bytes": 523,
+   "sha256": "acb94408b15b3e1d704cb178179e6f9bbeeaffc9b208a736581a3136fb214375",
+   "via": "tree"
+  },
+  {
+   "path": "src/NIScopeTimeDomain/README.md",
+   "bytes": 2008,
+   "sha256": "c82203ebc4468a7cc5599b57cbf2a04727f6aeea4308585ddbc23a182b97bf4e",
+   "via": "tree"
+  },
+  {
+   "path": "test/Manual Tests/NIDCPowerPPS/NIDCPowerPPS.instudioproj",
+   "bytes": 2007,
+   "sha256": "21d93a24f8d24733a4f613f7cbbdd09aea638589b3ccc32a9c56e360565f66ec",
+   "via": "tree"
+  },
+  {
+   "path": "test/Manual Tests/NIDCPowerPPS/NIDCPowerPPS.sfp",
+   "bytes": 4662,
+   "sha256": "4fb4bd60296583023c965fe475ccdd686ce67c4c0666c6e8da01728dfad345c4",
+   "via": "tree"
+  },
+  {
+   "path": "test/Manual Tests/NIDmmDCRmsMeasurement/NIDmmDCRmsMeasurement.instudioproj",
+   "bytes": 2052,
+   "sha256": "667ae57096065b2c070dfcee3840cc96e70ff92d6516d926824e852940423634",
+   "via": "tree"
+  },
+  {
+   "path": "test/Manual Tests/NIDmmDCRmsMeasurement/NIDmmDCRmsMeasurement.sfp",
+   "bytes": 4572,
+   "sha256": "37191da005b42d6b454d3be8edac67ec6b699bb44a65b95e920b1ea912703eae",
+   "via": "tree"
+  },
+  {
+   "path": "test/Manual Tests/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration.instudioproj",
+   "bytes": 2092,
+   "sha256": "50c15c2474fc3477867ecedfb0d52f41949fe6dae806b8a8d24e3782bb4540ca",
+   "via": "tree"
+  },
+  {
+   "path": "test/Manual Tests/NIFgenSignalVoltageGeneration/NIFgenSignalVoltageGeneration.sfp",
+   "bytes": 4705,
+   "sha256": "58a88c9e4fee107ec664bde8c005cc94eaca9844770c734141093f6f95af7949",
+   "via": "tree"
+  },
+  {
+   "path": "test/Manual Tests/NIScopeDigitalMeasurement/NIScopeDigitalMeasurement.instudioproj",
+   "bytes": 2072,
+   "sha256": "6407e24f60b8ebe9d04dc9fc1cc85e04e84ef8c5f2c9b21335d2689e1e14f8cf",
+   "via": "tree"
+  },
+  {
+   "path": "test/Manual Tests/NIScopeDigitalMeasurement/NIScopeDigitalMeasurement.sfp",
+   "bytes": 4761,
+   "sha256": "092e80e002edff4b89e8675d3ca6a31435e43c910ba8799ccaf0a80e2fa42b8b",
+   "via": "tree"
+  },
+  {
+   "path": "test/Manual Tests/NIScopeFrequencyDomain/NIScopeFrequencyDomain.instudioproj",
+   "bytes": 2057,
+   "sha256": "01d847acce66896ce2aab452df07ffa8b6b24caf00170a099c43726d392f5a6d",
+   "via": "tree"
+  },
+  {
+   "path": "test/Manual Tests/NIScopeFrequencyDomain/NIScopeFrequencyDomain.sfp",
+   "bytes": 4739,
+   "sha256": "3ba8cbd8faa93b91556a9a72dc091b2f2ac500ff9d56ba50449e88eb55fa199d",
+   "via": "tree"
+  },
+  {
+   "path": "test/Manual Tests/NIScopeTimeDomain/NIScopeTimeDomain.instudioproj",
+   "bytes": 2031,
+   "sha256": "15ed251a669ced5a5c4d51a2879e2d31aad33881b156334e006c61d2d591065d",
+   "via": "tree"
+  },
+  {
+   "path": "test/Manual Tests/NIScopeTimeDomain/NIScopeTimeDomain.sfp",
+   "bytes": 4804,
+   "sha256": "038d6eb7307818b9f24232e1a61d8da95e8583e945a216f888cebcea3c90db23",
+   "via": "tree"
+  },
+  {
+   "path": "test/Manual Tests/README.md",
+   "bytes": 176,
+   "sha256": "030f01f5e6d5561caf58e2373ff00e301e33ed83ee3ce5480d0534edd9fdccf7",
+   "via": "tree"
+  },
+  {
+   "path": "test/README.md",
+   "bytes": 152,
+   "sha256": "c4373d89033d6bb96c15d35e844c6c6e31dc4a598acb7353f131ae31795fd280",
+   "via": "tree"
+  },
+  {
+   "path": "test/TestStand/README.md",
+   "bytes": 139,
+   "sha256": "61f147783f45ed6f4dba75450cc403aeb790d17237592bce55caeeb38820a9c4",
+   "via": "tree"
+  }
+ ],
+ "skipped": [],
+ "external": [
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Abort With Channels.vi",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Configure Current Limit Range.vi",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Configure Current Limit.vi",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Configure Output Function.vi",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Configure Source Mode With Channels.vi",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Configure Voltage Level Range.vi",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Configure Voltage Level.vi",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Initiate With Channels.vi",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Measure.vi",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Measurement Type.ctl",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Output Function.ctl",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Query In Compliance.vi",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Reset With Channels.vi",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Source Mode.ctl",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Wait For Event - Event.ctl",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Wait For Event With Channels.vi",
+  "<instrlib>\\niDMM\\nidmm.llb\\niDMM Configure Waveform Acquisition.vi",
+  "<instrlib>\\niDMM\\nidmm.llb\\niDMM Read Waveform (waveform data).vi",
+  "<instrlib>\\niDMM\\nidmm.llb\\niDMM Read Waveform.vi",
+  "<instrlib>\\niDMM\\nidmm.llb\\niDMM Reset.vi",
+  "<instrlib>\\niFgen\\niFgen.llb\\niFgen Abort Generation.vi",
+  "<instrlib>\\niFgen\\niFgen.llb\\niFgen Configure Output Mode.vi",
+  "<instrlib>\\niFgen\\niFgen.llb\\niFgen Configure Standard Waveform.vi",
+  "<instrlib>\\niFgen\\niFgen.llb\\niFgen Initiate Generation.vi",
+  "<instrlib>\\niFgen\\niFgen.llb\\niFgen Is Done.vi",
+  "<instrlib>\\niFgen\\niFgen.llb\\niFgen Output Enable.vi",
+  "<instrlib>\\niFgen\\niFgen.llb\\niFgen Output Mode.ctl",
+  "<instrlib>\\niFgen\\niFgen.llb\\niFgen Reset.vi",
+  "<instrlib>\\niFgen\\niFgen.llb\\niFgen Util Create Waveform Data.vi",
+  "<instrlib>\\niFgen\\niFgen.llb\\niFgen Waveform Type.ctl",
+  "<instrlib>\\niScope\\Acquire\\Fetch\\niScope Fetch (poly).vi",
+  "<instrlib>\\niScope\\Acquire\\Fetch\\niScope Fetch WDT.vi",
+  "<instrlib>\\niScope\\Acquire\\Fetch\\niScope Initiate Acquisition.vi",
+  "<instrlib>\\niScope\\Configure\\Horizontal\\niScope Configure Horizontal Timing.vi",
+  "<instrlib>\\niScope\\Configure\\Horizontal\\niScope Sample Rate.vi",
+  "<instrlib>\\niScope\\Configure\\Trigger\\niScope Configure Trigger (poly).vi",
+  "<instrlib>\\niScope\\Configure\\Trigger\\niScope Configure Trigger Edge.vi",
+  "<instrlib>\\niScope\\Configure\\Vertical\\niScope Configure Chan Characteristics.vi",
+  "<instrlib>\\niScope\\Configure\\Vertical\\niScope Configure Vertical.vi",
+  "<instrlib>\\niScope\\Controls\\niScope scalar measurement.ctl",
+  "<instrlib>\\niScope\\Measurements\\niScope Fetch Measurement (poly).vi",
+  "<instrlib>\\niScope\\Measurements\\niScope Fetch Measurement Stats.vi",
+  "<instrlib>\\niScope\\Utility\\niScope Reset.vi",
+  "<vilib>\\AdvancedString\\1D String Array to Delimited String.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink Measurement Server\\Build Assets\\Post-Build Action.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink Measurement Server\\Helpers\\Create Basic Measurement Annotations.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink Measurement Server\\Helpers\\TypeDefs\\Measurement Annotation.ctl",
+  "<vilib>\\MeasurementLink\\MeasurementLink Measurement Server\\Helpers\\TypeDefs\\Measurement Details.ctl",
+  "<vilib>\\MeasurementLink\\MeasurementLink Measurement Server\\Helpers\\TypeDefs\\Parameter Type Specialization.ctl",
+  "<vilib>\\MeasurementLink\\MeasurementLink Measurement Server\\Helpers\\TypeDefs\\Type Specialization Key.ctl",
+  "<vilib>\\MeasurementLink\\MeasurementLink Measurement Server\\Helpers\\TypeDefs\\Type Specialization.ctl",
+  "<vilib>\\MeasurementLink\\MeasurementLink Measurement Server\\Helpers\\TypeDefs\\User Interface Information.ctl",
+  "<vilib>\\MeasurementLink\\MeasurementLink Measurement Server\\Measure Call Context\\Accessor\\Is Canceled.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink Measurement Server\\Measure Call Context\\Measure Call Context.lvclass",
+  "<vilib>\\MeasurementLink\\MeasurementLink Measurement Server\\Measure Call Context\\Reserve Sessions - 1Pin.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink Measurement Server\\Measure Call Context\\Reserve Sessions.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink Measurement Server\\Measurement Plugin Service\\Accessors\\Get gRPC ID.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink Measurement Server\\Measurement Plugin Service\\Measurement Plugin Service.lvclass",
+  "<vilib>\\MeasurementLink\\MeasurementLink Measurement Server\\Measurement Plugin Service\\Plugin Paths.ctl",
+  "<vilib>\\MeasurementLink\\MeasurementLink Measurement Server\\MeasurementLink Measurement Server.lvlib",
+  "<vilib>\\MeasurementLink\\MeasurementLink Measurement Server\\Run Service.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink Session Management Client\\MeasurementLink Session Management Client.lvlib",
+  "<vilib>\\MeasurementLink\\MeasurementLink Session Management Client\\RPC Messages\\ni_measurementlink_PinMapContext.ctl",
+  "<vilib>\\MeasurementLink\\MeasurementLink Session Management V1\\Session Reservation\\Close Sessions.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink Session Management V1\\Session Reservation\\Initialize and Close Session Behavior.ctl",
+  "<vilib>\\MeasurementLink\\MeasurementLink Session Management V1\\Session Reservation\\Register Sessions.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink Session Management V1\\Session Reservation\\Reserve Registered Sessions.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink Session Management V1\\Session Reservation\\Reserve Sessions.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink Session Management V1\\Session Reservation\\Session Reservation.lvclass",
+  "<vilib>\\MeasurementLink\\MeasurementLink Session Management V1\\Session Reservation\\Unregister Sessions.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink Session Management V1\\Session Reservation\\Unreserve Sessions.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink TestStand Integration\\Get Pin Map ID for Sequence.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink TestStand Integration\\MeasurementLink TestStand Integration.lvlib",
+  "<vilib>\\MeasurementLink\\MeasurementLink niDCPower\\Get Connections - 1Pin 1Conn.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink niDCPower\\Get Connections.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink niDCPower\\Initialize Sessions - 1Sess.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink niDCPower\\Initialize Sessions - NSess.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink niDCPower\\Initialize Sessions.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink niDCPower\\Instrument Type ID.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink niDCPower\\MeasurementLink niDCPower.lvlib",
+  "<vilib>\\MeasurementLink\\MeasurementLink niDMM\\Initialize Sessions - 1Sess.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink niDMM\\Initialize Sessions - NSess.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink niDMM\\Initialize Sessions.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink niDMM\\Instrument Type ID.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink niDMM\\MeasurementLink niDMM.lvlib",
+  "<vilib>\\MeasurementLink\\MeasurementLink niFGEN\\Initialize Sessions - 1Sess.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink niFGEN\\Initialize Sessions - NSess.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink niFGEN\\Initialize Sessions.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink niFGEN\\Instrument Type ID.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink niFGEN\\MeasurementLink niFGEN.lvlib",
+  "<vilib>\\MeasurementLink\\MeasurementLink niScope\\Get Connections - 1Pin 1Conn.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink niScope\\Get Connections.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink niScope\\Initialize Sessions - 1Sess.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink niScope\\Initialize Sessions - NSess.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink niScope\\Initialize Sessions.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink niScope\\Instrument Type ID.vi",
+  "<vilib>\\MeasurementLink\\MeasurementLink niScope\\MeasurementLink niScope.lvlib",
+  "<vilib>\\Utility\\High Resolution Relative Seconds.vi",
+  "<vilib>\\gRPC\\Generated APIs\\ni\\protobuf\\types\\RPC Messages\\ni_protobuf_types_DoubleXYData.ctl",
+  "<vilib>\\gRPC\\Generated APIs\\ni\\protobuf\\types\\ni.protobuf.types.lvlib",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\Message Requests\\PackToAny.vim",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\Message Requests\\UnpackFromAny.vim",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\Server\\Get Server DLL Path.vi",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\Translate Protobuf Error.vi",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Shared\\Any.ctl",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Shared\\grpcId.ctl",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\grpc-lvsupport-release.lvlib",
+  "<vilib>\\measure\\NI_MAPro.lvlib",
+  "<vilib>\\measure\\madcrms.llb\\Basic Averaged DC-RMS for 1 Chan.vi",
+  "<vilib>\\measure\\madcrms.llb\\Basic Averaged DC-RMS.vi",
+  "<vilib>\\measure\\mascope.llb\\Amplitude and Levels 1 chan.vi",
+  "<vilib>\\measure\\mascope.llb\\Amplitude and Levels.vi",
+  "<vilib>\\measure\\maspectr.llb\\FFT Spectrum (Mag-Phase) for 1 Chan.vi",
+  "<vilib>\\measure\\maspectr.llb\\FFT Spectrum (Mag-Phase).vi",
+  "<vilib>\\measure\\matone.llb\\Extract Multiple Tone Information 1 Chan.vi",
+  "<vilib>\\measure\\matone.llb\\Extract Multiple Tone Information.vi",
+  "C:\\Code\\pcba-fct\\src\\NI-SCOPE Time Domain\\NIScopeTimeDomain\\Advanced\\Measurement Plugin.lvclass",
+  "C:\\Jay\\git\\pcba-fct\\src\\NIScopeFrequencyDomain\\NIScopeFrequencyDomain\\Advanced\\Measurement Plugin.lvclass",
+  "C:\\Program Files\\National Instruments\\LabVIEW 2024\\vi.lib\\MeasurementLink\\MeasurementLink Measurement Server\\Measurement Plugin Service\\Measurement Plugin Service.lvclass",
+  "C:\\Users\\Carol Su\\Dev\\pcba-fct\\src\\NI-DMM DC RMS\\NIDmmDcRms\\Advanced\\Measurement Plugin.lvclass",
+  "C:\\Users\\Carol Su\\Dev\\pcba-fct\\src\\NIDmmDCRmsMeasurement\\NIDmmDCRmsMeasurement\\Advanced\\Measurement Plugin.lvclass",
+  "C:\\Users\\Carol Su\\Dev\\pcba-fct\\src\\NIScopeDigitalMeasurement\\NIScopeDigitalPWMMeasurement\\Advanced\\Measurement Plugin.lvclass",
+  "C:\\dev\\pcba-fct\\src\\NIDCPowerPPS\\NIDCPowerPPS\\Advanced\\Measurement Plugin.lvclass",
+  "C:\\dev\\pcba-fct\\src\\NIFgenSignalVoltageGeneration\\NIFgenSignalVoltageGeneration\\Advanced\\Measurement Plugin.lvclass",
+  "\\\\\\\\10.1.133.57\\measurement-services-labview\\Source\\Measurement Service Template_lv\\MeasurementLink Measurement Server\\RPC Service\\MeasurementService\\Get Plugin Paths.vi",
+  "\\\\\\\\10.1.133.57\\measurement-services-labview\\Source\\Measurement Service Template_lv\\MeasurementLink Measurement Server\\RPC Service\\MeasurementService\\Get Type Specializations.vi"
+ ]
+}
