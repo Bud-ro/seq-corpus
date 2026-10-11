@@ -1,0 +1,577 @@
+{
+ "repo": "JMETestSolutions/VideoBlog",
+ "url": "https://github.com/JMETestSolutions/VideoBlog",
+ "commit": "a2e4024f29b0c02ca2f96f904e327d5fe5401526",
+ "license": "AGPL-3.0",
+ "licenseFile": "LICENSE",
+ "fetched": "2026-10-11",
+ "files": [
+  {
+   "path": "Building a PPL Example/Common Dialogs/Common Dialogs.lvlib",
+   "bytes": 1332,
+   "sha256": "f45cc287d9173bc653dabfc42cca1fef6f075e18892c38b055bc815e24703bb0",
+   "via": "extension"
+  },
+  {
+   "path": "Building a PPL Example/Common Dialogs/Common Dialogs.lvproj",
+   "bytes": 8215,
+   "sha256": "87a50b6cca032a096f2f89f9b35f315e32cbfd63c954e616dacc49a29c28c717",
+   "via": "extension"
+  },
+  {
+   "path": "Building a PPL Example/Common Dialogs/Operator Login Dialog.vi",
+   "bytes": 31801,
+   "sha256": "c801590066befce51bf553356fb6f43f01c2c57059fa346c1efc6f2348f9fb93",
+   "via": "extension"
+  },
+  {
+   "path": "Building a PPL Example/Common Dialogs/PreUUT Dialog.vi",
+   "bytes": 40969,
+   "sha256": "41d2967ea91c2106621ec258229b56255419a1fd18ae8874528cecfe0eaf40fa",
+   "via": "extension"
+  },
+  {
+   "path": "FTDI Serial Port Finder/FTDI Finder.lvlib",
+   "bytes": 1357,
+   "sha256": "6691e7e4a4541b2f18af93853371f4e95d3fce6e14d18bc3db4dd240d1bf445c",
+   "via": "extension"
+  },
+  {
+   "path": "FTDI Serial Port Finder/FTDI Finder.lvproj",
+   "bytes": 3818,
+   "sha256": "2fef1bd33e28bd45fdb2e9cc15d897e7b756c750d329b09ec00d4464ab399713",
+   "via": "extension"
+  },
+  {
+   "path": "FTDI Serial Port Finder/Find FTDI Device.vi",
+   "bytes": 52220,
+   "sha256": "6373223990b86974fb55470bbfe76fb73f0733d84a2043cacac7f5186c31970f",
+   "via": "extension"
+  },
+  {
+   "path": "FTDI Serial Port Finder/Search 1D String Array.vi",
+   "bytes": 32238,
+   "sha256": "522c9fa28b4a4caa6ba6649bb1c8fe4ef801629a0f2e6bd467722e795d0f5200",
+   "via": "extension"
+  },
+  {
+   "path": "Front End Callback Example/FrontEnd/FrontEndCallbacks.seq",
+   "bytes": 12687,
+   "sha256": "b6ca79f7b32327f578f8198fdb00f7597e168ac6c7173a2f831932e88f9e9e71",
+   "via": "extension"
+  },
+  {
+   "path": "Front End Callback Example/Login Dialog/Login Dialogs.lvlib",
+   "bytes": 1262,
+   "sha256": "d3e44d9dd364b5ef82d64455612891d9af497297f9695845afa58ba0aaa94265",
+   "via": "extension"
+  },
+  {
+   "path": "Front End Callback Example/Login Dialog/Login Dialogs.lvproj",
+   "bytes": 8111,
+   "sha256": "be6126d5be8d66a259f9958bb62e4035ad27d96a2d77f3f3360351dceddf95bd",
+   "via": "extension"
+  },
+  {
+   "path": "Front End Callback Example/Login Dialog/Operator Login Dialog.vi",
+   "bytes": 32305,
+   "sha256": "78e386b9a298112563c3b277eb352ddad7656268d974b9fc6eb104edf062ca95",
+   "via": "extension"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME Base Instrument Class/Common/Typdefs/Named Instrument.ctl",
+   "bytes": 10133,
+   "sha256": "d242ee301edc559f3051de15053a55649586829c32329ff1c237591aca0398fb",
+   "via": "extension"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME Base Instrument Class/JMETestSolutions.Instrument.lvlib",
+   "bytes": 1433,
+   "sha256": "b3fc2e3a05aa8987a58821eb8c9468d8a40223f2b4384fbe32ef30af775f9c48",
+   "via": "extension"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME Base Instrument Class/JMETestSolutions.Instrument.lvproj",
+   "bytes": 8727,
+   "sha256": "c222a50b86de8feef9cfb186f801c70234a8362a693462508780150f71a356ac",
+   "via": "extension"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME Base Instrument Class/JMETestSolutions.Instrument/Build Class Path.vi",
+   "bytes": 32856,
+   "sha256": "a9ed40eadd07d4d6f934a8012536f26b3dbcd0ba30d22fdb05a66c841ed56b5a",
+   "via": "extension"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME Base Instrument Class/JMETestSolutions.Instrument/Class Factory.vi",
+   "bytes": 20809,
+   "sha256": "213b6890e82a45f2f09c438268e01af6b993159e4e16e2374002d1c9e4ffece2",
+   "via": "extension"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME Base Instrument Class/JMETestSolutions.Instrument/Close.vi",
+   "bytes": 17321,
+   "sha256": "0a3ad21b462c265dfd5d4dfa6cfc4aef14f24bff9126d78764f6d8390e4784b7",
+   "via": "extension"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME Base Instrument Class/JMETestSolutions.Instrument/Initialize.vi",
+   "bytes": 17926,
+   "sha256": "41c66bacb130f17c54d5847a56a08386ce79d7d5988903ea661680a7238e710b",
+   "via": "extension"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME Base Instrument Class/JMETestSolutions.Instrument/JMETestSolutions.Instrument.lvclass",
+   "bytes": 23041,
+   "sha256": "97bf12d4db26908b1f97cd97a8b34e1d5d08ea7d2745dbc15556a60a8fec821c",
+   "via": "extension"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME Base Instrument Class/JMETestSolutions.Instrument/Load Config File.vi",
+   "bytes": 20176,
+   "sha256": "13620caa872d2a38388a2281f062fcea6925b58d0186070a02eda9242d56ae38",
+   "via": "extension"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME Base Instrument Class/JMETestSolutions.Instrument/Log Message.vi",
+   "bytes": 17995,
+   "sha256": "3b0dd6793d7674cca23fd20e120b620deb828624356542bcd1a1a32ad10804c2",
+   "via": "extension"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME Base Instrument Class/JMETestSolutions.Instrument/Parse Config Header.vi",
+   "bytes": 17383,
+   "sha256": "a6df35c1ab95c5592e421ee3b7cce340f540536a1e91dd52a566deb166ec7bf7",
+   "via": "extension"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME Base Instrument Class/JMETestSolutions.Instrument/Reset.vi",
+   "bytes": 17869,
+   "sha256": "16e71e72a7eb7ae9e3d472f7a448432d071faf4c2977c57edf2d016092209525",
+   "via": "extension"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME Base Instrument Class/JMETestSolutions.Instrument/Soft Panel.vi",
+   "bytes": 20598,
+   "sha256": "21a5ca7c9dfbfe3dbd98fa77cd76865d54a6b66b8a534700fc1012bfd4ff6dc7",
+   "via": "extension"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME Base Instrument Class/JMETestSolutions.Instrument/_New.vi",
+   "bytes": 27276,
+   "sha256": "e275a8a4e9ccd0af6012942c4569e181e5edf9d12d979dafa83c011f31c4e086",
+   "via": "extension"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME Base Instrument Class/JMETestSolutions.Instrument/deleteme.vi",
+   "bytes": 4808,
+   "sha256": "62bb28d9d1cbefec046b9d4e9908230ce9f0c1922fc06847f09bfb8935c4848c",
+   "via": "extension"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME Base Instrument Class/Launch Soft Panel.vi",
+   "bytes": 32641,
+   "sha256": "b3b1aa4048785701a6611b3bd256857076780bccaf024d24820a45a3972cb480",
+   "via": "extension"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME DMM/JMETestSolutions.Instrument.DMM.lvproj",
+   "bytes": 11082,
+   "sha256": "91ac677815d6beb81e46fc3f7119426a8b74f08feaaa3521e3abb29f50ded355",
+   "via": "extension"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME DMM/JMETestSolutions.Instrument.DMM/JMETestSolutions.Instrument.DMM.lvlib",
+   "bytes": 1354,
+   "sha256": "480a0f1d089d14e3f7a0f064f7205b49fff9a072df07261eb8bb9be16b000855",
+   "via": "extension"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME DMM/JMETestSolutions.Instrument.DMM/JMETestSolutions.Instrument.DMM/JMETestSolutions.Instrument.DMM.lvclass",
+   "bytes": 24134,
+   "sha256": "1a194cbc71801c6fc36a4fd641ae4b33440d0e9e75a62d4b7631b21fe75412d6",
+   "via": "extension"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME DMM/JMETestSolutions.Instrument.DMM/JMETestSolutions.Instrument.DMM/Soft Panel.vi",
+   "bytes": 20150,
+   "sha256": "edf1a641166bc0dac1496f2cedf2e9e64f749c2d842c5c935113e1ee33dc6800",
+   "via": "extension"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME DMM/JMETestSolutions.Instrument.DMM/JMETestSolutions.Instrument.DMM/_New.vi",
+   "bytes": 15000,
+   "sha256": "b310729cfe55b4a48b21d4529b327a8b4debbce5c88b1b6b8e405b6fff5f4bf5",
+   "via": "extension"
+  },
+  {
+   "path": "Operator Login Dialog/Operator Login Dialog.vi",
+   "bytes": 29773,
+   "sha256": "3885667bb3fb6ca440de48693a6863f49a4290bd3696961a27280323e34668f0",
+   "via": "extension"
+  },
+  {
+   "path": "Patching Process Models/Outputs/CustomATESequentialModel.seq",
+   "bytes": 22665,
+   "sha256": "ec2855f9fb7aa6d6c113832f4156997365715b055d3f6d1688b2e494bcd8df08",
+   "via": "extension"
+  },
+  {
+   "path": "Patching Process Models/Sequence File Patcher.seq",
+   "bytes": 7330,
+   "sha256": "8c7a8a19d9bf41f9b5c55964978bd519b39dff14c4401c1068094e5416308b6e",
+   "via": "extension"
+  },
+  {
+   "path": "Patching Process Models/SequentialModel Patches.seq",
+   "bytes": 9371,
+   "sha256": "2dd79e263f1555dad45003a01c493fc32b3fe140bf5f845fe0132892217d5262",
+   "via": "extension"
+  },
+  {
+   "path": "Patching Process Models/SequentialModel.seq",
+   "bytes": 22329,
+   "sha256": "0aa8f09bd0762991b26a22fe301b14a7b21fd6ee2b8d124bde961c7e4ae15aef",
+   "via": "extension"
+  },
+  {
+   "path": "PreUUT Dialog/PreUUT Dialog.vi",
+   "bytes": 40841,
+   "sha256": "a27ef2023f9c21e3867b0b8213e6638722987ded8991e6a24f15dd46894cdc09",
+   "via": "extension"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Example Requirements Sequence File.seq",
+   "bytes": 5261,
+   "sha256": "d939c0912e5871782935f7891545efa52d85d217c12531784f1547337d1dfed1",
+   "via": "extension"
+  },
+  {
+   "path": "VISA Device Simulator/Get Response.vi",
+   "bytes": 33360,
+   "sha256": "27abcce24a77d53f4b0d98d63ba4b717d0a3b0209694729ed87456b676ba6c7c",
+   "via": "extension"
+  },
+  {
+   "path": "VISA Device Simulator/JME Test Solutions Visa Device Simulator.lvproj",
+   "bytes": 5238,
+   "sha256": "dd47099537697a25cb33743f399008513e0834e0f2801e48a6dce73e71b27153",
+   "via": "extension"
+  },
+  {
+   "path": "VISA Device Simulator/JME Test Solutions Visa Device Simulator.vi",
+   "bytes": 35464,
+   "sha256": "717015c2bea2bf7e03a54652fbbe4310b99ef0f4e33b2426e1462c911e8396df",
+   "via": "extension"
+  },
+  {
+   "path": "Building a PPL Example/Common Dialogs/Common Dialogs.aliases",
+   "bytes": 42,
+   "sha256": "18e6c9d23881516748ea904e8e791f07ee3017de61fe3303a73aaf523289592a",
+   "via": "tree"
+  },
+  {
+   "path": "Building a PPL Example/Common Dialogs/Common Dialogs.lvlps",
+   "bytes": 483,
+   "sha256": "205d3bec4b78bb5e43d852971c521e7caf1fad84b278fc44f8c6dfcbc705cfad",
+   "via": "tree"
+  },
+  {
+   "path": "FTDI Serial Port Finder/FTDI Finder.aliases",
+   "bytes": 42,
+   "sha256": "18e6c9d23881516748ea904e8e791f07ee3017de61fe3303a73aaf523289592a",
+   "via": "tree"
+  },
+  {
+   "path": "FTDI Serial Port Finder/FTDI Finder.lvlps",
+   "bytes": 83,
+   "sha256": "ae317087cf9ee5b05044d06e1de624546b5848d3711b7fa269d598ae02545593",
+   "via": "tree"
+  },
+  {
+   "path": "Front End Callback Example/FrontEnd/Login Library.lvlibp",
+   "bytes": 427008,
+   "sha256": "d3ed0fd053933f29ce51ff889cacf3af03eb9b85f48cc705dd3eb15d8b3983ec",
+   "via": "tree"
+  },
+  {
+   "path": "Front End Callback Example/Login Dialog/Login Dialogs.aliases",
+   "bytes": 42,
+   "sha256": "18e6c9d23881516748ea904e8e791f07ee3017de61fe3303a73aaf523289592a",
+   "via": "tree"
+  },
+  {
+   "path": "Front End Callback Example/Login Dialog/Login Dialogs.lvlps",
+   "bytes": 485,
+   "sha256": "a720735b2e823aa51ddeede6316e408963a7a47df35353806ebe186d138a065f",
+   "via": "tree"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME Base Instrument Class/Config Files/Example Instrument Limits File.json",
+   "bytes": 296,
+   "sha256": "87e8989958584190afd6161d950133fc7082a7d5cf7b62e08ef5164fecc6dc5d",
+   "via": "tree"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME Base Instrument Class/JMETestSolutions.Instrument.aliases",
+   "bytes": 42,
+   "sha256": "18e6c9d23881516748ea904e8e791f07ee3017de61fe3303a73aaf523289592a",
+   "via": "tree"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME Base Instrument Class/JMETestSolutions.Instrument.lvlps",
+   "bytes": 485,
+   "sha256": "e2103cefb3c15cf72b491010dd84b7129b50484656abbd2eb2ee4685e9a1b1d9",
+   "via": "tree"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME DMM/JMETestSolutions.Instrument.DMM.aliases",
+   "bytes": 42,
+   "sha256": "18e6c9d23881516748ea904e8e791f07ee3017de61fe3303a73aaf523289592a",
+   "via": "tree"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME DMM/JMETestSolutions.Instrument.DMM.lvlps",
+   "bytes": 485,
+   "sha256": "66694568c6ed92e78c182668738c5ebd55c2910beb54c168862d494249aaac0c",
+   "via": "tree"
+  },
+  {
+   "path": "Hardware Abstraction Layer/JME DMM/JMETestSolutions.Instrument.DMM/Config File/Example DMM Instrument Config File.json",
+   "bytes": 255,
+   "sha256": "534b21ca28a196a9b3cac9722fee47dbcdc6844a361ae410cf1c0d1ff270bd52",
+   "via": "tree"
+  },
+  {
+   "path": "Hardware Abstraction Layer/builds/JMETestSolutions.Instrument.DMM.lvlibp",
+   "bytes": 19456,
+   "sha256": "50435c59c60466f2156a29603613ff480e411f18418376b10ead2a7f34bbcad1",
+   "via": "tree"
+  },
+  {
+   "path": "Hardware Abstraction Layer/builds/JMETestSolutions.Instrument.lvlibp",
+   "bytes": 593408,
+   "sha256": "4ea64255e6643cc57a9c4478dcbad4007d3f2ef6fced185308aa4f1044677b79",
+   "via": "tree"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 34523,
+   "sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef",
+   "via": "tree"
+  },
+  {
+   "path": "README.md",
+   "bytes": 152,
+   "sha256": "a77cef77d7b470fd28d6d3f9385c9f3bfcd09edc837b83773f9a3062df087fc6",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Example Sequence Analyzer Report.xml",
+   "bytes": 87337,
+   "sha256": "ae8109ecc7a574e13d9fabbae6e8932827fedc8c8a3531e1fafe055fd25ecfd4",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/JMETestSolutionsRequirementsRules.tsarules",
+   "bytes": 10143,
+   "sha256": "53beeed93166412ae4f5c5e08ac1f6d4312f9389b2d743c34c15e3784c2f35b6",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements.sln",
+   "bytes": 1116,
+   "sha256": "be0d84ee232c09babb7f27994a499a3b3aae91ca3c79c6c6d2896800556b9c37",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/Properties/AssemblyInfo.cs",
+   "bytes": 1395,
+   "sha256": "5f3078e2ee305ce4a93c749fe8765433e7c2dc2af8f427dacedea50792925e19",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/Requirements.csproj",
+   "bytes": 2934,
+   "sha256": "39252d9f00bb47c5403db39a2092fd10dabccbd3090345356dd6c4fd76472996",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/RequirementsRule.cs",
+   "bytes": 8499,
+   "sha256": "57d1c35acd28bd3266eba6dda998bceed88499ac2f868b44e9c8ac46ed1d96b6",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/RequirementsRuleConfiguration Dialog.Designer.cs",
+   "bytes": 4318,
+   "sha256": "7cbff628c0ffa0a44430d2085a20fb79b8fd7c1460709eeadc8d1c088873a7f9",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/RequirementsRuleConfiguration Dialog.cs",
+   "bytes": 998,
+   "sha256": "6578b3e84b4fbd8501706f27d158f444338996787238bf2d3ffaf2f03d5fe623",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/RequirementsRuleConfiguration Dialog.resx",
+   "bytes": 5698,
+   "sha256": "4d3ee9059f5b98ab1806f6916ebea2a8c56023f8c63ddfd80b7378d27d1aa0f6",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/bin/Debug/Requirements.dll",
+   "bytes": 6656,
+   "sha256": "79050418a56d8dc29b8927419069973a6abbb197843bbcd0671479b4cc7b17e2",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/bin/Release/Requirements.dll",
+   "bytes": 6144,
+   "sha256": "b0af1149c4adec0cc4608525617ae882a6c93873d707a151db21d4d95bb65fa1",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttributes.cs",
+   "bytes": 204,
+   "sha256": "4f64d266d9c8fcee5cba9b1a0eaf3ec6a72d64fa110de62ee3d387ee50d5a63c",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/obj/Debug/DesignTimeResolveAssemblyReferences.cache",
+   "bytes": 819,
+   "sha256": "a9b9dcc524848aabce90a7757bbacb5e8bb40ed78aec50cf3cd822a09292140a",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache",
+   "bytes": 7063,
+   "sha256": "051ad9dc6425357043b57418b0a66be92578cfa9f74d4a4b9b68b0da438a1e72",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/obj/Debug/JMETestSolutions.SequenceAnalyzerRules.RequirementsRuleConfiguration_Dialog.resources",
+   "bytes": 180,
+   "sha256": "e13ed2c59366d0eea74863fd71a81f0cb977cce1edfde304fc538690a4f6ac89",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/obj/Debug/Requirements.csproj.CoreCompileInputs.cache",
+   "bytes": 41,
+   "sha256": "a4b22c486c73637e0cef7994c95aa47c92475cafcc4a5cb17a449c4c9ef407e8",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/obj/Debug/Requirements.csproj.FileListAbsolute.txt",
+   "bytes": 713,
+   "sha256": "dc7bf4006830476b30f764c565f02c2141404f3c58e191fd9761ba6df59fcf2d",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/obj/Debug/Requirements.csproj.GenerateResource.cache",
+   "bytes": 970,
+   "sha256": "fe1ca09f77dd7b671e6f442cdf16000c6f831d9ed576e3f9235ccf5a442af566",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/obj/Debug/Requirements.csprojAssemblyReference.cache",
+   "bytes": 10288,
+   "sha256": "2ecb189c5476e9e30a36eb7933f8cf85103b2fa0f05fec326eb6d695133c4476",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/obj/Debug/Requirements.dll",
+   "bytes": 6656,
+   "sha256": "79050418a56d8dc29b8927419069973a6abbb197843bbcd0671479b4cc7b17e2",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/obj/Release/.NETFramework,Version=v4.0.AssemblyAttributes.cs",
+   "bytes": 204,
+   "sha256": "4f64d266d9c8fcee5cba9b1a0eaf3ec6a72d64fa110de62ee3d387ee50d5a63c",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/obj/Release/DesignTimeResolveAssemblyReferencesInput.cache",
+   "bytes": 7067,
+   "sha256": "61fc461e67959e2a0a8705a83accf5ad3241ba82321e174e20568985c795879f",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/obj/Release/Requirements.csproj.CoreCompileInputs.cache",
+   "bytes": 41,
+   "sha256": "2544d4588003b43ae31c730de269128270f7fde900acc3f47f973e3f7fd18360",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/obj/Release/Requirements.csproj.FileListAbsolute.txt",
+   "bytes": 725,
+   "sha256": "a30fae37e21fa322d751346d49da31710922d9821ee7853db677ce847f7ebcfb",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/obj/Release/Requirements.csprojAssemblyReference.cache",
+   "bytes": 10056,
+   "sha256": "e6eb65fc2043889639dc349c307405b4d7d31db7a695b7d05ec487560f21daf8",
+   "via": "tree"
+  },
+  {
+   "path": "SequenceAnalyzerRules/Requirements/Requirements/obj/Release/Requirements.dll",
+   "bytes": 6144,
+   "sha256": "b0af1149c4adec0cc4608525617ae882a6c93873d707a151db21d4d95bb65fa1",
+   "via": "tree"
+  },
+  {
+   "path": "Teststand Environment/Environment.tsenv",
+   "bytes": 99,
+   "sha256": "d86aeb4344b37ac827b93fb4fb81aa4f24963efdd84ec4605b99377b6e422b41",
+   "via": "tree"
+  },
+  {
+   "path": "Teststand Environment/Launch ATE Environment 1.bat",
+   "bytes": 313,
+   "sha256": "49eb55b6c315e5e19dda0aae155943b9052b29b153495be20fb81a74cd25f45b",
+   "via": "tree"
+  },
+  {
+   "path": "VISA Device Simulator/Example Responses File.txt",
+   "bytes": 116,
+   "sha256": "58d897e32269cc001e663db623f369e2d53c4fff9fbff969a852df5662d9c836",
+   "via": "tree"
+  },
+  {
+   "path": "VISA Device Simulator/JME Test Solutions Visa Device Simulator.aliases",
+   "bytes": 40,
+   "sha256": "6dacbbb26341435a96ae22fccd7a0724bd062617f70bd5f18a6f2927a38bd385",
+   "via": "tree"
+  },
+  {
+   "path": "VISA Device Simulator/JME Test Solutions Visa Device Simulator.lvlps",
+   "bytes": 81,
+   "sha256": "568e2c39b64d26d45223c838eb7df78d921e7df0aabe7f828d7e4ea9c6d58933",
+   "via": "tree"
+  }
+ ],
+ "skipped": [],
+ "external": [
+  "<vilib>\\Instr\\_visa.llb\\VISA Find Search Mode.ctl",
+  "<vilib>\\Utility\\LVClass\\Get LV Class Default Value.vi",
+  "<vilib>\\Utility\\LVLibp\\Get Exported File List.vi",
+  "<vilib>\\Utility\\LVLibp\\NI_PackedLibraryUtility.lvlib",
+  "<vilib>\\Utility\\error.llb\\Clear Errors.vi",
+  "<vilib>\\Utility\\error.llb\\Simple Error Handler.vi",
+  "<vilib>\\Utility\\error.llb\\Trim Whitespace.vi",
+  "<vilib>\\Utility\\libraryn.llb\\Check if File or Folder Exists.vi",
+  "<vilib>\\Utility\\libraryn.llb\\Get File Extension.vi",
+  "<vilib>\\Utility\\tcp.llb\\TCP Listen.vi",
+  "<vilib>\\regexp\\Match Regular Expression.xnode",
+  "<vilib>\\registry\\registry.llb\\Close Registry Key.vi",
+  "<vilib>\\registry\\registry.llb\\Enum Registry Keys.vi",
+  "<vilib>\\registry\\registry.llb\\Open Registry Key.vi",
+  "<vilib>\\registry\\registry.llb\\Query Registry Key Info.vi",
+  "<vilib>\\registry\\registry.llb\\Read Registry Value Simple STR.vi",
+  "<vilib>\\registry\\registry.llb\\Read Registry Value Simple.vi",
+  "<vilib>\\registry\\registry.llb\\Registry SAM.ctl"
+ ]
+}
