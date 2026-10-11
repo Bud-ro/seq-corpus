@@ -1,0 +1,25 @@
+name: Publish Package to PyPI
+
+on: workflow_dispatch
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.x"
+
+    - name: Build package
+      uses: ./.github/actions/build
+
+    - name: Publish package
+      uses: pypa/gh-action-pypi-publish@release/v1

@@ -1,0 +1,60 @@
+
+trigger:
+- main
+
+pr:
+  branches:
+    include:
+    - main
+
+jobs:
+- job: CI
+  workspace:
+    clean: all
+    
+  pool:
+    name: nitsm-python-test
+
+  steps:
+  - script: |
+      python -m pip install --upgrade pip
+    displayName: 'Upgrade pip'
+
+  - script: |
+      python -m pip install --upgrade "tox<4" "virtualenv<20.22"
+    displayName: 'Install or upgrade tox'
+
+  - task: PowerShell@2
+    displayName: 'Switch to old TestStand/TSM'
+    inputs:
+      targetType: filePath
+      filePath: 'C:\Activate_TSVersion.ps1'
+      arguments: '-VersionToActivate old'
+
+  - script: |
+      python -m tox -- older
+    displayName: 'Run python unit tests with older version of TestStand/TSM'
+
+  - task: PowerShell@2
+    displayName: 'Switch to new TestStand/TSM'
+    inputs:
+      targetType: filePath
+      filePath: 'C:\Activate_TSVersion.ps1'
+      arguments: '-VersionToActivate new'
+
+  - script: |
+      python -m tox -- newer
+    displayName: 'Run python unit tests with newer version of TestStand/TSM'
+
+  - task: PublishTestResults@2
+    condition: succeededOrFailed()
+    inputs:
+      testResultsFiles: '**/*-results.xml'
+      testRunTitle: 'Publish test results'
+    displayName: 'Display test results'
+
+  - task: PublishCodeCoverageResults@1
+    inputs:
+      codeCoverageTool: Cobertura
+      summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
+    displayName: 'Display code coverage results'
