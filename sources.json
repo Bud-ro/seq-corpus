@@ -102,5 +102,13 @@
   "license": "MIT",
   "files": 31,
   "bytes": 78466
+ },
+ {
+  "name": "NI-Measurement-Plug-Ins__abstraction-layer-python",
+  "repo": "NI-Measurement-Plug-Ins/abstraction-layer-python",
+  "commit": "b1e30c9310bd89fbd60d6a28541790e8ab458dfe",
+  "license": "MIT",
+  "files": 65,
+  "bytes": 984547
  }
 ]
