@@ -1,0 +1,1134 @@
+﻿<Solution xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/NationalInstruments.PackageBuilder.Engine">
+    <Name>Computer Motherboard Demo</Name>
+    <SourceItems>
+        <SourceItem z:Id="i2">
+            <PluginConfigurationOptions />
+            <RelativePath>..\..\teststand-simple-oi\Builds\Operator Interface App\Executable\TestExec.aliases</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i3">
+            <PluginConfigurationOptions />
+            <RelativePath>..\..\teststand-simple-oi\Builds\Operator Interface App\Executable\TestExec.exe</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i4">
+            <PluginConfigurationOptions />
+            <RelativePath>..\..\teststand-simple-oi\Builds\Operator Interface App\Executable\TestExec.ini</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i5">
+            <PluginConfigurationOptions />
+            <RelativePath>..\Computer Motherboard Demo.tso</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i6">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\Cache Diagnostics.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i7">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\Cache Test.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i8">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\Computer Sequence Simulation Dialog.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i9">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\FPU Diagnostics.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i10">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\FPU Test.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i11">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\Instruction Set Diagnostics.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i12">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\Instruction Set Test.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i13">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\Keyboard Diagnostics.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i14">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\Keyboard Test.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i15">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\Powerup Diagnostics.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i16">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\Powerup Test.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i17">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\RAM Diagnostics.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i18">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\RAM Test.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i19">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\Register Diagnostics.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i20">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\Register Test.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i21">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\ROM Diagnostics.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i22">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\ROM Test.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i23">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\SupportVIs\TestStand - Close Termination Monitor.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i24">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\SupportVIs\TestStand - Get Termination Monitor Status.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i25">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\SupportVIs\TestStand - Initialize Termination Monitor.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i26">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\SupportVIs\TestStand - Status Monitor.ctl</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i27">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\Vacuum Off.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i28">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\Vacuum On.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i29">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\Video Diagnostics.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i30">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\Video Test.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i31">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\Cache Diagnostics.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i32">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\Cache Test.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i33">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\Computer Sequence Simulation Dialog.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i34">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\Computer_Motherboard_Test_Source.ver</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i35">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\ComputerMotherboardTest.lvlps</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i36">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\ComputerMotherboardTest.lvproj</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i37">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\FPU Diagnostics.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i38">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\FPU Test.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i39">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\Instruction Set Diagnostics.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i40">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\Instruction Set Test.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i41">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\Keyboard Diagnostics.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i42">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\Keyboard Test.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i43">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\Powerup Diagnostics.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i44">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\Powerup Test.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i45">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\RAM Diagnostics.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i46">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\RAM Test.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i47">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\Register Diagnostics.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i48">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\Register Test.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i49">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\ROM Diagnostics.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i50">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\ROM Test.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i51">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\Vacuum Off.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i52">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\Vacuum On.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i53">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\Video Diagnostics.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i54">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Source\Video Test.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i55">
+            <PluginConfigurationOptions />
+            <RelativePath>[TestStand Cfg]\Adapters.cfg</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i56">
+            <PluginConfigurationOptions />
+            <RelativePath>[TestStand Cfg]\Analyzer.ini</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i57">
+            <PluginConfigurationOptions />
+            <RelativePath>[TestStand Cfg]\CustomRules.tsarules</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i58">
+            <PluginConfigurationOptions />
+            <RelativePath>[TestStand Cfg]\GeneralEngine.cfg</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i59">
+            <PluginConfigurationOptions />
+            <RelativePath>[TestStand Cfg]\GitIntegration\DiffMergeToolMapping.json</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i60">
+            <PluginConfigurationOptions />
+            <RelativePath>[TestStand Cfg]\GitIntegration\GitSettings.json</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i61">
+            <PluginConfigurationOptions />
+            <RelativePath>[TestStand Cfg]\ModelPlugins\ResultProcessing.cfg</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i62">
+            <PluginConfigurationOptions />
+            <RelativePath>[TestStand Cfg]\ModelPlugins\ResultProcessing.cfg.sources</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i63">
+            <PluginConfigurationOptions />
+            <RelativePath>[TestStand Cfg]\SearchDirectories.cfg</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i64">
+            <PluginConfigurationOptions />
+            <RelativePath>[TestStand Cfg]\SeqEdit</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i65">
+            <PluginConfigurationOptions />
+            <RelativePath>[TestStand Cfg]\StartupCfg.ini</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i66">
+            <PluginConfigurationOptions />
+            <RelativePath>[TestStand Cfg]\StationGlobals.ini</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i67">
+            <PluginConfigurationOptions />
+            <RelativePath>[TestStand Cfg]\Templates.ini</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i68">
+            <PluginConfigurationOptions />
+            <RelativePath>[TestStand Cfg]\ToolMenu.ini</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i69">
+            <PluginConfigurationOptions />
+            <RelativePath>[TestStand Cfg]\TypePalettes.cfg</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i70">
+            <PluginConfigurationOptions />
+            <RelativePath>[TestStand Cfg]\UISettings.json</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i71">
+            <PluginConfigurationOptions />
+            <RelativePath>[TestStand Cfg]\Users.ini</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i72">
+            <PluginConfigurationOptions />
+            <RelativePath>[TestStand Cfg]\GitIntegration</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i59" />
+                <SourceItem z:Ref="i60" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i73">
+            <PluginConfigurationOptions />
+            <RelativePath>[TestStand Cfg]\ModelPlugins</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i61" />
+                <SourceItem z:Ref="i62" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i74">
+            <PluginConfigurationOptions />
+            <RelativePath>..\..\teststand-simple-oi\Builds\Operator Interface App\Executable</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i2" />
+                <SourceItem z:Ref="i3" />
+                <SourceItem z:Ref="i4" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i75">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules\SupportVIs</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i23" />
+                <SourceItem z:Ref="i24" />
+                <SourceItem z:Ref="i25" />
+                <SourceItem z:Ref="i26" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i76">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Computer Motherboard Test Sequence.seq</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i8" />
+                <SourceItem z:Ref="i28" />
+                <SourceItem z:Ref="i16" />
+                <SourceItem z:Ref="i22" />
+                <SourceItem z:Ref="i18" />
+                <SourceItem z:Ref="i30" />
+                <SourceItem z:Ref="i14" />
+                <SourceItem z:Ref="i21" />
+                <SourceItem z:Ref="i17" />
+                <SourceItem z:Ref="i29" />
+                <SourceItem z:Ref="i13" />
+                <SourceItem z:Ref="i15" />
+                <SourceItem z:Ref="i27" />
+                <SourceItem z:Ref="i20" />
+                <SourceItem z:Ref="i12" />
+                <SourceItem z:Ref="i7" />
+                <SourceItem z:Ref="i10" />
+                <SourceItem z:Ref="i19" />
+                <SourceItem z:Ref="i11" />
+                <SourceItem z:Ref="i6" />
+                <SourceItem z:Ref="i9" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i77">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\TestStand Project\Modules Source</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i31" />
+                <SourceItem z:Ref="i32" />
+                <SourceItem z:Ref="i33" />
+                <SourceItem z:Ref="i35" />
+                <SourceItem z:Ref="i36" />
+                <SourceItem z:Ref="i34" />
+                <SourceItem z:Ref="i37" />
+                <SourceItem z:Ref="i38" />
+                <SourceItem z:Ref="i39" />
+                <SourceItem z:Ref="i40" />
+                <SourceItem z:Ref="i41" />
+                <SourceItem z:Ref="i42" />
+                <SourceItem z:Ref="i43" />
+                <SourceItem z:Ref="i44" />
+                <SourceItem z:Ref="i45" />
+                <SourceItem z:Ref="i46" />
+                <SourceItem z:Ref="i47" />
+                <SourceItem z:Ref="i48" />
+                <SourceItem z:Ref="i49" />
+                <SourceItem z:Ref="i50" />
+                <SourceItem z:Ref="i51" />
+                <SourceItem z:Ref="i52" />
+                <SourceItem z:Ref="i53" />
+                <SourceItem z:Ref="i54" />
+            </DependentItems>
+            <IsVirtual>true</IsVirtual>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i78">
+            <PluginConfigurationOptions />
+            <RelativePath>..\..\teststand-simple-oi\Builds\Operator Interface App</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i74" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i79">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Computer Motherboard.tpj\TestStand Project</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i76" />
+                <SourceItem z:Ref="i77" />
+            </DependentItems>
+            <IsVirtual>true</IsVirtual>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i80">
+            <PluginConfigurationOptions />
+            <RelativePath>[TestStand Cfg]</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i55" />
+                <SourceItem z:Ref="i56" />
+                <SourceItem z:Ref="i57" />
+                <SourceItem z:Ref="i58" />
+                <SourceItem z:Ref="i63" />
+                <SourceItem z:Ref="i65" />
+                <SourceItem z:Ref="i66" />
+                <SourceItem z:Ref="i67" />
+                <SourceItem z:Ref="i68" />
+                <SourceItem z:Ref="i69" />
+                <SourceItem z:Ref="i70" />
+                <SourceItem z:Ref="i71" />
+                <SourceItem z:Ref="i72" />
+                <SourceItem z:Ref="i73" />
+                <SourceItem z:Ref="i64" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i81">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Modules</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i6" />
+                <SourceItem z:Ref="i7" />
+                <SourceItem z:Ref="i8" />
+                <SourceItem z:Ref="i9" />
+                <SourceItem z:Ref="i10" />
+                <SourceItem z:Ref="i11" />
+                <SourceItem z:Ref="i12" />
+                <SourceItem z:Ref="i13" />
+                <SourceItem z:Ref="i14" />
+                <SourceItem z:Ref="i15" />
+                <SourceItem z:Ref="i16" />
+                <SourceItem z:Ref="i17" />
+                <SourceItem z:Ref="i18" />
+                <SourceItem z:Ref="i19" />
+                <SourceItem z:Ref="i20" />
+                <SourceItem z:Ref="i21" />
+                <SourceItem z:Ref="i22" />
+                <SourceItem z:Ref="i27" />
+                <SourceItem z:Ref="i28" />
+                <SourceItem z:Ref="i29" />
+                <SourceItem z:Ref="i30" />
+                <SourceItem z:Ref="i75" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i82">
+            <PluginConfigurationOptions />
+            <RelativePath>..\TestStand Project\Computer Motherboard.tpj</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i79" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i83">
+            <PluginConfigurationOptions />
+            <RelativePath>..\Computer Motherboard Demo.tsw</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i82" />
+                <SourceItem z:Ref="i5" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+    </SourceItems>
+    <InputSourceItems>
+        <SourceItem z:Ref="i83" />
+        <SourceItem z:Ref="i78" />
+        <SourceItem z:Ref="i81" />
+        <SourceItem z:Ref="i80" />
+    </InputSourceItems>
+    <Distributions>
+        <Distribution z:Id="i84" i:type="Package">
+            <DistributionItems>
+                <DistributionItem z:Id="i85" i:type="DistributionDirectoryItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc</DestinationRelativePath>
+                    <Name>ACME Inc</Name>
+                    <SourceItem i:nil="true" />
+                </DistributionItem>
+                <DistributionItem z:Id="i86" i:type="DistributionDirectoryItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Applications</DestinationRelativePath>
+                    <Name>Applications</Name>
+                    <SourceItem i:nil="true" />
+                </DistributionItem>
+                <DistributionItem z:Id="i87" i:type="DistributionDirectoryItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs</DestinationRelativePath>
+                    <Name>Test Programs</Name>
+                    <SourceItem i:nil="true" />
+                </DistributionItem>
+                <DistributionItem z:Id="i88" i:type="DistributionDirectoryItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Applications\Operator Interface</DestinationRelativePath>
+                    <Name>Operator Interface</Name>
+                    <SourceItem i:nil="true" />
+                </DistributionItem>
+                <DistributionItem z:Id="i89" i:type="DistributionDirectoryItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test</DestinationRelativePath>
+                    <Name>Computer Motherboard Test</Name>
+                    <SourceItem i:nil="true" />
+                </DistributionItem>
+                <DistributionItem z:Id="i90" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Computer Motherboard Test Sequence.seq</DestinationRelativePath>
+                    <Name>Computer Motherboard Test Sequence.seq</Name>
+                    <SourceItem z:Ref="i76" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i91" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\Computer Sequence Simulation Dialog.vi</DestinationRelativePath>
+                    <Name>Computer Sequence Simulation Dialog.vi</Name>
+                    <SourceItem z:Ref="i8" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i92" i:type="DistributionDirectoryItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules</DestinationRelativePath>
+                    <Name>Modules</Name>
+                    <SourceItem i:nil="true" />
+                </DistributionItem>
+                <DistributionItem z:Id="i93" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\Vacuum On.vi</DestinationRelativePath>
+                    <Name>Vacuum On.vi</Name>
+                    <SourceItem z:Ref="i28" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i94" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\Powerup Test.vi</DestinationRelativePath>
+                    <Name>Powerup Test.vi</Name>
+                    <SourceItem z:Ref="i16" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i95" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\ROM Test.vi</DestinationRelativePath>
+                    <Name>ROM Test.vi</Name>
+                    <SourceItem z:Ref="i22" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i96" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\RAM Test.vi</DestinationRelativePath>
+                    <Name>RAM Test.vi</Name>
+                    <SourceItem z:Ref="i18" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i97" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\Video Test.vi</DestinationRelativePath>
+                    <Name>Video Test.vi</Name>
+                    <SourceItem z:Ref="i30" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i98" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\Keyboard Test.vi</DestinationRelativePath>
+                    <Name>Keyboard Test.vi</Name>
+                    <SourceItem z:Ref="i14" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i99" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\ROM Diagnostics.vi</DestinationRelativePath>
+                    <Name>ROM Diagnostics.vi</Name>
+                    <SourceItem z:Ref="i21" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i100" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\RAM Diagnostics.vi</DestinationRelativePath>
+                    <Name>RAM Diagnostics.vi</Name>
+                    <SourceItem z:Ref="i17" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i101" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\Video Diagnostics.vi</DestinationRelativePath>
+                    <Name>Video Diagnostics.vi</Name>
+                    <SourceItem z:Ref="i29" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i102" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\Keyboard Diagnostics.vi</DestinationRelativePath>
+                    <Name>Keyboard Diagnostics.vi</Name>
+                    <SourceItem z:Ref="i13" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i103" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\Powerup Diagnostics.vi</DestinationRelativePath>
+                    <Name>Powerup Diagnostics.vi</Name>
+                    <SourceItem z:Ref="i15" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i104" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\Vacuum Off.vi</DestinationRelativePath>
+                    <Name>Vacuum Off.vi</Name>
+                    <SourceItem z:Ref="i27" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i105" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\Register Test.vi</DestinationRelativePath>
+                    <Name>Register Test.vi</Name>
+                    <SourceItem z:Ref="i20" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i106" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\Instruction Set Test.vi</DestinationRelativePath>
+                    <Name>Instruction Set Test.vi</Name>
+                    <SourceItem z:Ref="i12" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i107" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\Cache Test.vi</DestinationRelativePath>
+                    <Name>Cache Test.vi</Name>
+                    <SourceItem z:Ref="i7" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i108" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\FPU Test.vi</DestinationRelativePath>
+                    <Name>FPU Test.vi</Name>
+                    <SourceItem z:Ref="i10" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i109" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\Register Diagnostics.vi</DestinationRelativePath>
+                    <Name>Register Diagnostics.vi</Name>
+                    <SourceItem z:Ref="i19" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i110" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\Instruction Set Diagnostics.vi</DestinationRelativePath>
+                    <Name>Instruction Set Diagnostics.vi</Name>
+                    <SourceItem z:Ref="i11" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i111" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\Cache Diagnostics.vi</DestinationRelativePath>
+                    <Name>Cache Diagnostics.vi</Name>
+                    <SourceItem z:Ref="i6" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i112" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\FPU Diagnostics.vi</DestinationRelativePath>
+                    <Name>FPU Diagnostics.vi</Name>
+                    <SourceItem z:Ref="i9" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i113" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Applications\Operator Interface\TestExec.aliases</DestinationRelativePath>
+                    <Name>TestExec.aliases</Name>
+                    <SourceItem z:Ref="i2" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i114" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Applications\Operator Interface\TestExec.exe</DestinationRelativePath>
+                    <Name>TestExec.exe</Name>
+                    <SourceItem z:Ref="i3" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i115" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Applications\Operator Interface\TestExec.ini</DestinationRelativePath>
+                    <Name>TestExec.ini</Name>
+                    <SourceItem z:Ref="i4" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i116" i:type="DistributionShortcutItem">
+                    <DestinationRelativePath>[Desktop]\ACME Tester.lnk</DestinationRelativePath>
+                    <Name>ACME Tester.lnk</Name>
+                    <SourceItem i:nil="true" />
+                    <Target z:Ref="i114" />
+                </DistributionItem>
+                <DistributionItem z:Id="i117" i:type="DistributionDirectoryItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\SupportVIs</DestinationRelativePath>
+                    <Name>SupportVIs</Name>
+                    <SourceItem i:nil="true" />
+                </DistributionItem>
+                <DistributionItem z:Id="i118" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\SupportVIs\TestStand - Close Termination Monitor.vi</DestinationRelativePath>
+                    <Name>TestStand - Close Termination Monitor.vi</Name>
+                    <SourceItem z:Ref="i23" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i119" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\SupportVIs\TestStand - Get Termination Monitor Status.vi</DestinationRelativePath>
+                    <Name>TestStand - Get Termination Monitor Status.vi</Name>
+                    <SourceItem z:Ref="i24" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i120" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\SupportVIs\TestStand - Initialize Termination Monitor.vi</DestinationRelativePath>
+                    <Name>TestStand - Initialize Termination Monitor.vi</Name>
+                    <SourceItem z:Ref="i25" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i121" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[Program Files (64-bit)]\ACME Inc\Test Programs\Computer Motherboard Test\Modules\SupportVIs\TestStand - Status Monitor.ctl</DestinationRelativePath>
+                    <Name>TestStand - Status Monitor.ctl</Name>
+                    <SourceItem z:Ref="i26" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>false</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i122" i:type="DistributionDirectoryItem">
+                    <DestinationRelativePath>[TestStand Application Data]\Cfg</DestinationRelativePath>
+                    <Name>Cfg</Name>
+                    <SourceItem i:nil="true" />
+                </DistributionItem>
+                <DistributionItem z:Id="i123" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Application Data]\Cfg\Adapters.cfg</DestinationRelativePath>
+                    <Name>Adapters.cfg</Name>
+                    <SourceItem z:Ref="i55" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i124" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Application Data]\Cfg\Analyzer.ini</DestinationRelativePath>
+                    <Name>Analyzer.ini</Name>
+                    <SourceItem z:Ref="i56" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i125" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Application Data]\Cfg\CustomRules.tsarules</DestinationRelativePath>
+                    <Name>CustomRules.tsarules</Name>
+                    <SourceItem z:Ref="i57" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i126" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Application Data]\Cfg\GeneralEngine.cfg</DestinationRelativePath>
+                    <Name>GeneralEngine.cfg</Name>
+                    <SourceItem z:Ref="i58" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i127" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Application Data]\Cfg\SearchDirectories.cfg</DestinationRelativePath>
+                    <Name>SearchDirectories.cfg</Name>
+                    <SourceItem z:Ref="i63" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i128" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Application Data]\Cfg\StartupCfg.ini</DestinationRelativePath>
+                    <Name>StartupCfg.ini</Name>
+                    <SourceItem z:Ref="i65" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i129" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Application Data]\Cfg\StationGlobals.ini</DestinationRelativePath>
+                    <Name>StationGlobals.ini</Name>
+                    <SourceItem z:Ref="i66" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i130" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Application Data]\Cfg\Templates.ini</DestinationRelativePath>
+                    <Name>Templates.ini</Name>
+                    <SourceItem z:Ref="i67" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i131" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Application Data]\Cfg\ToolMenu.ini</DestinationRelativePath>
+                    <Name>ToolMenu.ini</Name>
+                    <SourceItem z:Ref="i68" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i132" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Application Data]\Cfg\TypePalettes.cfg</DestinationRelativePath>
+                    <Name>TypePalettes.cfg</Name>
+                    <SourceItem z:Ref="i69" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i133" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Application Data]\Cfg\UISettings.json</DestinationRelativePath>
+                    <Name>UISettings.json</Name>
+                    <SourceItem z:Ref="i70" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i134" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Application Data]\Cfg\Users.ini</DestinationRelativePath>
+                    <Name>Users.ini</Name>
+                    <SourceItem z:Ref="i71" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i135" i:type="DistributionDirectoryItem">
+                    <DestinationRelativePath>[TestStand Application Data]\Cfg\GitIntegration</DestinationRelativePath>
+                    <Name>GitIntegration</Name>
+                    <SourceItem i:nil="true" />
+                </DistributionItem>
+                <DistributionItem z:Id="i136" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Application Data]\Cfg\GitIntegration\DiffMergeToolMapping.json</DestinationRelativePath>
+                    <Name>DiffMergeToolMapping.json</Name>
+                    <SourceItem z:Ref="i59" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i137" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Application Data]\Cfg\GitIntegration\GitSettings.json</DestinationRelativePath>
+                    <Name>GitSettings.json</Name>
+                    <SourceItem z:Ref="i60" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i138" i:type="DistributionDirectoryItem">
+                    <DestinationRelativePath>[TestStand Application Data]\Cfg\ModelPlugins</DestinationRelativePath>
+                    <Name>ModelPlugins</Name>
+                    <SourceItem i:nil="true" />
+                </DistributionItem>
+                <DistributionItem z:Id="i139" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Application Data]\Cfg\ModelPlugins\ResultProcessing.cfg</DestinationRelativePath>
+                    <Name>ResultProcessing.cfg</Name>
+                    <SourceItem z:Ref="i61" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i140" i:type="DistributionFileItem">
+                    <DestinationRelativePath>[TestStand Application Data]\Cfg\ModelPlugins\ResultProcessing.cfg.sources</DestinationRelativePath>
+                    <Name>ResultProcessing.cfg.sources</Name>
+                    <SourceItem z:Ref="i62" />
+                    <PluginConfigurationOptions />
+                    <ProcessDuringStaging>true</ProcessDuringStaging>
+                </DistributionItem>
+                <DistributionItem z:Id="i141" i:type="DistributionDirectoryItem">
+                    <DestinationRelativePath>[TestStand Application Data]\Cfg\SeqEdit</DestinationRelativePath>
+                    <Name>SeqEdit</Name>
+                    <SourceItem i:nil="true" />
+                </DistributionItem>
+            </DistributionItems>
+            <Name>Computer Motherboard Test Program</Name>
+            <OutputDirectory>..\..\..\..\Packages</OutputDirectory>
+            <PluginConfigurationOptions />
+            <PrebuildAnalysisEnabled>true</PrebuildAnalysisEnabled>
+            <Architecture>windows_x64</Architecture>
+            <AutoIncrementVersion>Build</AutoIncrementVersion>
+            <BuildStatus z:Id="i142">
+                <FileName />
+                <Version>none</Version>
+            </BuildStatus>
+            <CompanyName>MyCompany</CompanyName>
+            <CustomExecutes />
+            <Description>Contains the necessary files for testing Computer Motherboards</Description>
+            <DisplayName>Computer Motherboard Test Program</DisplayName>
+            <FileName>comptuer-motherboard-test_1.0.0.0_windows_x64.nipkg</FileName>
+            <MaintainerEmail>felipe.flores@emerson.com</MaintainerEmail>
+            <MaintainerName>Emerson T&amp;M | NI</MaintainerName>
+            <Messages xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+            <PackageName>comptuer-motherboard-test</PackageName>
+            <PackageRelationships>
+                <PackageRelationship z:Id="i143">
+                    <Constraint>LaterOrEqual</Constraint>
+                    <DisplayName>LabVIEW Runtime (64-bit)</DisplayName>
+                    <PackageName>ni-labview-2025-runtime-engine</PackageName>
+                    <Relation>Depends</Relation>
+                    <Version>25.3.2.49164-0+f12</Version>
+                    <VersionType>AutoUpdate</VersionType>
+                </PackageRelationship>
+                <PackageRelationship z:Id="i144">
+                    <Constraint>LaterOrEqual</Constraint>
+                    <DisplayName>NI SystemLink Client</DisplayName>
+                    <PackageName>ni-systemlink-client</PackageName>
+                    <Relation>Depends</Relation>
+                    <Version>26.3.0.49225-0+f73</Version>
+                    <VersionType>AutoUpdate</VersionType>
+                </PackageRelationship>
+                <PackageRelationship z:Id="i145">
+                    <Constraint>LaterOrEqual</Constraint>
+                    <DisplayName>NI SystemLink Test Monitor Support for TestStand 2023 and later</DisplayName>
+                    <PackageName>ni-systemlink-test-monitor-teststand-support</PackageName>
+                    <Relation>Depends</Relation>
+                    <Version>26.3.0.49225-0+f73</Version>
+                    <VersionType>AutoUpdate</VersionType>
+                </PackageRelationship>
+                <PackageRelationship z:Id="i146">
+                    <Constraint>LaterOrEqual</Constraint>
+                    <DisplayName>TestStand Runtime (64-bit)</DisplayName>
+                    <PackageName>ni-teststand-2026-runtime-support</PackageName>
+                    <Relation>Depends</Relation>
+                    <Version>26.0.0.49300-0+f148</Version>
+                    <VersionType>AutoUpdate</VersionType>
+                </PackageRelationship>
+                <PackageRelationship z:Id="i147">
+                    <Constraint>LaterOrEqual</Constraint>
+                    <DisplayName>TestStand Process Models Runtime (64-bit)</DisplayName>
+                    <PackageName>ni-teststand-2026-process-models-runtime</PackageName>
+                    <Relation>Depends</Relation>
+                    <Version>26.0.0.49299-0+f147</Version>
+                    <VersionType>AutoUpdate</VersionType>
+                </PackageRelationship>
+            </PackageRelationships>
+            <ProductName>MyProduct-1</ProductName>
+            <Section>Application Software</Section>
+            <StoreProduct>true</StoreProduct>
+            <Synopsis>computer motherboard test files</Synopsis>
+            <Version>1.0.0.0</Version>
+        </Distribution>
+    </Distributions>
+    <Feeds />
+    <DistributionGroups>
+        <DistributionGroup z:Id="i148">
+            <Distributions>
+                <Distribution z:Ref="i84" />
+            </Distributions>
+            <Name>Distribution Group</Name>
+            <PrebuildAnalysisEnabled>true</PrebuildAnalysisEnabled>
+            <StageDirectory>ProcessingStage</StageDirectory>
+        </DistributionGroup>
+    </DistributionGroups>
+    <TestStandMode>true</TestStandMode>
+    <PluginConfigurationOptions>
+        <ConfigurationOption z:Id="i149">
+            <Definition z:Id="i150">
+                <Description i:nil="true" />
+                <Name>TestStand Options</Name>
+            </Definition>
+            <HasDefaultValues>true</HasDefaultValues>
+            <Value z:Id="i151" i:type="DialogConfigurationOptionValue">
+                <Values>
+                    <ConfigurationOptionValue z:Id="i152" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i153" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i154" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i155" i:type="StringConfigurationOptionValue">
+                        <Value />
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i156" i:type="StringConfigurationOptionValue">
+                        <Value>SupportVIs</Value>
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i157" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i158" i:type="StringConfigurationOptionValue">
+                        <Value />
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i159" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i160" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i161" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i162" i:type="BooleanConfigurationOptionValue">
+                        <Value>true</Value>
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i163" i:type="BooleanConfigurationOptionValue">
+                        <Value>true</Value>
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i164" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i165" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i166" i:type="PathConfigurationOptionValue">
+                        <RelativePath />
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i167" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i168" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i169" i:type="StringConfigurationOptionValue">
+                        <Value>[BootVolume]</Value>
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i170" i:type="StringConfigurationOptionValue">
+                        <Value />
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i171" i:type="StringConfigurationOptionValue">
+                        <Value />
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i172" i:type="StringConfigurationOptionValue">
+                        <Value />
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i173" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i174" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i175" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i176" i:type="BooleanConfigurationOptionValue" />
+                </Values>
+            </Value>
+        </ConfigurationOption>
+    </PluginConfigurationOptions>
+</Solution>
