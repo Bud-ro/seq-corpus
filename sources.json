@@ -158,5 +158,13 @@
   "license": "Apache-2.0",
   "files": 237,
   "bytes": 10110618
+ },
+ {
+  "name": "NIVeriStandAdd-Ons__ECU-HIL-Demo",
+  "repo": "NIVeriStandAdd-Ons/ECU-HIL-Demo",
+  "commit": "520b957f00e4f93ee06d301b9ebbb78046da84f8",
+  "license": "BSD-2-Clause",
+  "files": 179,
+  "bytes": 11257657
  }
 ]
