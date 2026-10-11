@@ -1,0 +1,53 @@
+name: Check NIMG
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  check_nimg:
+    name: Check NIMG
+    env:
+      oldest-python-version: '3.10'
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+        python-version: ['3.10', 3.14]
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        # Set the working-directory for all steps in this job.
+        working-directory: ./packages/generator
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: ni/python-actions/setup-python@a2554c7e5680982d3355677b2290e48b60678744 # v0.8.0
+        id: setup-python
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Set up Poetry
+        uses: ni/python-actions/setup-poetry@a2554c7e5680982d3355677b2290e48b60678744 # v0.8.0
+      - name: Analyze generator
+        uses: ni/python-actions/analyze-project@a2554c7e5680982d3355677b2290e48b60678744 # v0.8.0
+        with:
+          project-directory: packages/generator
+      - name: Bandit security checks (ni-measurement-plugin-sdk-generator, example_renders)
+        run:  poetry run bandit -c pyproject.toml -r ni_measurement_plugin_sdk_generator tests/test_assets/example_renders
+      - name: Generate gRPC stubs
+        if: matrix.python-version == env.oldest-python-version
+        run: |
+          find tests/utilities/measurements/non_streaming_data_measurement/_stubs -name \*_pb2.py\* -o -name \*_pb2_grpc.py\* -delete
+          poetry run python scripts/generate_grpc_stubs.py
+      - name: Check for out-of-date gRPC stubs
+        if: matrix.python-version == env.oldest-python-version
+        run:  git diff --exit-code
+      - name: Revert gRPC stubs
+        if: matrix.python-version == env.oldest-python-version
+        run: |
+          git clean -dfx tests/utilities/measurements/non_streaming_data_measurement/_stubs
+          git restore tests/utilities/measurements/non_streaming_data_measurement/_stubs

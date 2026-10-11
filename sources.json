@@ -262,5 +262,13 @@
   "license": "MIT",
   "files": 2004,
   "bytes": 58746414
+ },
+ {
+  "name": "ni__measurement-plugin-python",
+  "repo": "ni/measurement-plugin-python",
+  "commit": "145feccdee6e7163f6527af3c4d4d79f23857ad4",
+  "license": "MIT",
+  "files": 579,
+  "bytes": 4316957
  }
 ]

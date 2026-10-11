@@ -1,0 +1,82 @@
+name: Check examples
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  check_examples:
+    name: Check examples
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: ni/python-actions/setup-python@a2554c7e5680982d3355677b2290e48b60678744 # v0.8.0
+        id: setup-python
+      - name: Set up Poetry
+        uses: ni/python-actions/setup-poetry@a2554c7e5680982d3355677b2290e48b60678744 # v0.8.0
+      # Updating poetry.lock for all of the examples takes over 6 minutes, so it's worth caching.
+      - name: Cache poetry.lock
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+        id: cache-poetry-lock
+        with:
+          path: 'examples/**/poetry.lock'
+          # Include the main project's poetry.lock in the hash to detect upstream dependency updates.
+          key: examples-poetry-lock-${{ runner.os }}-py${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('examples/**/pyproject.toml', 'packages/service/poetry.lock') }}
+      - name: Lock examples
+        if: steps.cache-poetry-lock.outputs.cache-hit != 'true'
+        run: |
+          for example in examples/*/; do
+            echo "::group::$example"
+            pushd $example
+            poetry lock
+            popd
+            echo "::endgroup::"
+          done
+      - name: Cache virtualenvs
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+        id: cache-venv
+        with:
+          path: 'examples/**/.venv'
+          key: examples-venv-${{ runner.os }}-py${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('examples/**/poetry.lock') }}
+      - name: Install examples
+        run: |
+          for example in examples/*/; do
+            echo "::group::$example"
+            pushd $example
+            poetry install -v
+            popd
+            echo "::endgroup::"
+          done
+      - name: Lint examples
+        run: |
+          for example in examples/*/; do
+            echo "::group::$example"
+            pushd $example
+            poetry run ni-python-styleguide lint
+            popd
+            echo "::endgroup::"
+          done
+      - name: Mypy static analysis (examples, Linux)
+        run: |
+          for example in examples/*/; do
+            echo "::group::$example"
+            pushd $example
+            poetry run mypy .
+            popd
+            echo "::endgroup::"
+          done
+      - name: Mypy static analysis (examples, Windows)
+        run: |
+          for example in examples/*/; do
+            echo "::group::$example"
+            pushd $example
+            poetry run mypy . --platform win32
+            popd
+            echo "::endgroup::"
+          done

@@ -1,0 +1,36 @@
+name: Check NIMS Docs
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  check_nims:
+    name: Check NIMS Docs
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        # Set the working-directory for all steps in this job.
+        working-directory: ./packages/service
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          submodules: true
+          persist-credentials: false
+      - name: Set up Python
+        uses: ni/python-actions/setup-python@a2554c7e5680982d3355677b2290e48b60678744 # v0.8.0
+        id: setup-python
+      - name: Set up Poetry
+        uses: ni/python-actions/setup-poetry@a2554c7e5680982d3355677b2290e48b60678744 # v0.8.0
+      - name: Install ni-measurement-plugin-sdk-service (all extras, docs)
+        run: poetry install -v --all-extras --with docs
+      - name: Build docs and check for errors/warnings
+        run: |
+          rm -rf docs
+          mkdir -p docs   
+          poetry run sphinx-build _docs_source docs -b html -W
+      - name: Revert docs
+        run:  rm -rf docs
