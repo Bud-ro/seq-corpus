@@ -174,5 +174,13 @@
   "license": "BSD-2-Clause",
   "files": 238,
   "bytes": 9701082
+ },
+ {
+  "name": "NIVeriStandAdd-Ons__VeriStand-steps-for-TestStand",
+  "repo": "NIVeriStandAdd-Ons/VeriStand-steps-for-TestStand",
+  "commit": "5e2d8d85ef39d059eae043ba559d653e0c4f0523",
+  "license": "Apache-2.0",
+  "files": 221,
+  "bytes": 7994027
  }
 ]

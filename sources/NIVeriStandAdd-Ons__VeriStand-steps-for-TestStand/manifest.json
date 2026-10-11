@@ -1,0 +1,1486 @@
+{
+ "repo": "NIVeriStandAdd-Ons/VeriStand-steps-for-TestStand",
+ "url": "https://github.com/NIVeriStandAdd-Ons/VeriStand-steps-for-TestStand",
+ "commit": "5e2d8d85ef39d059eae043ba559d653e0c4f0523",
+ "license": "Apache-2.0",
+ "licenseFile": "LICENSE.txt",
+ "fetched": "2026-10-11",
+ "files": [
+  {
+   "path": "Documentation/Examples/Asynchronous Tasks/Monitor Engine Temp.seq",
+   "bytes": 20218,
+   "sha256": "27b49efbd28967d322f40d37d1b5126ee545b5f7900f18990393465a52a153f9",
+   "via": "extension"
+  },
+  {
+   "path": "Documentation/Examples/NIVS Engine Demo.seq",
+   "bytes": 14009,
+   "sha256": "e2c362526f1fc7cfa95f56e88804f17be1db5d954a7f925d6a7173fae15b78db",
+   "via": "extension"
+  },
+  {
+   "path": "Documentation/Examples/References and Subsequences/Child Sequence.seq",
+   "bytes": 9261,
+   "sha256": "320f88bdf6851fdf1b8cc63ec5fd7b404e4b43b9425249111cf38a9d30f29b10",
+   "via": "extension"
+  },
+  {
+   "path": "Documentation/Examples/References and Subsequences/Parent Sequence.seq",
+   "bytes": 12019,
+   "sha256": "b6edf5b2dff8cc72807612e0abbedc0c668d248a1254a4881ff631f86085a56d",
+   "via": "extension"
+  },
+  {
+   "path": "Source/CustomPaletteFile/NI_VeristandTypes.ini",
+   "bytes": 5059874,
+   "sha256": "0dc3cdd2239979dde5beb8288265fe4431b552d52d4133871b4562bdc61a0d40",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/Build/UpdateProjectFiles.vi",
+   "bytes": 35530,
+   "sha256": "49e531ba993019f9edbb461a8215c3d4ccf2a07ec0d2c02a3fcece34384a2ff6",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/Build/subCreateStagingPaths.vi",
+   "bytes": 42861,
+   "sha256": "4666de4148db002c865099bb1db2df1625bed75dd0c67d8ee72064f71e05d62c",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/Build/subFormDestinationPaths.vi",
+   "bytes": 34147,
+   "sha256": "4f85367a236a8a844e7502b535a75356fc1e318e3497e0dfca238e640b4cd4f2",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/Build/subFormSourcePaths.vi",
+   "bytes": 20722,
+   "sha256": "9b1351c52458cf9affd21adb120beb5682cc517e47f396261ed1374e07ab6d67",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/Build/subGetAssemblyHintPaths.vi",
+   "bytes": 26779,
+   "sha256": "82f1f46255b50e56bbe7518469e9244208e39499a24030ffdbd30e9f73606c5e",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/Build/subGetTestStandVersionStringArray.vi",
+   "bytes": 24089,
+   "sha256": "1dc44f68346457f765c407f59c6b3b017d91dc65cad428f1e7ce138fecd9ad92",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/Build/subReadVersionFile.vi",
+   "bytes": 24406,
+   "sha256": "73fed59ba1d896181edde2325792c35c7bc09867a7ea05901a171d3c176fbdad",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/Build/subUpdateCSharpProjectFile.vi",
+   "bytes": 43438,
+   "sha256": "61f08d9fe634fc38e563d43d1a762ce6c0c5921426095736236fc8522bcd0701",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/Build/subUpdateInstallPath.vi",
+   "bytes": 23108,
+   "sha256": "e892dbcfab3dbb913f1760ac9b41b385d597bde1d24da35b399b975ee4f381ad",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/Build/subUpdateTypePaletteFile.vi",
+   "bytes": 45948,
+   "sha256": "e01124248b3eea2c87a457cf61d893551c3ba1af17909be7fa5a71363d39ecfa",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/Build/veristand-steps-build-tools.lvlib",
+   "bytes": 1989,
+   "sha256": "e73e85f4f141feada8ec5c83cf2169af610914ce8770593d05db53ab18d13b9e",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/Build/veristand-steps-build-tools.lvproj",
+   "bytes": 5878,
+   "sha256": "f03e2c4188b0b12cd5f911d98034a04bc99273d08b0f5ff170f2ddbe0661f9c9",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/Installer/Actions/Installer Post-Install Action.vi",
+   "bytes": 16541,
+   "sha256": "46cc2098a2b05d48cad86e7a8ab8e7b60d4d62aa0e64101a80f76c3105fd22ee",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/Installer/Actions/Installer Pre-Uninstall Action.vi",
+   "bytes": 13438,
+   "sha256": "c8e65de13bf8aba4bd4e8958c2108c577a3ef0883fb9526862590175f413fc9f",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/Installer/BuildVIs/BuildVIs.lvlib",
+   "bytes": 1273,
+   "sha256": "fbdb9123c063d8f7d6b5230d0483c67a8ff4178cd7d7608370ecde64bc749b26",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/Installer/BuildVIs/Post-Build Action.vi",
+   "bytes": 12697,
+   "sha256": "db574c1231925f14766e57b675510c4e34df7262162300f1a99d9f5ed2b70a04",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/Installer/Types/Components Directory Install Files String Array.ctl",
+   "bytes": 4984,
+   "sha256": "59f0772f5a6a4a599725a7300f86f263c490d43d4612ae4123f1b8f80835d7a2",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/Installer/VeriStand Steps Installer.lvproj",
+   "bytes": 39700,
+   "sha256": "21d19e76bd99a7cdfb1e2d2372695004d6138a9a0a375066d01efc85d75e2691",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/RTsequences/Run RT Sequence.vi",
+   "bytes": 53775,
+   "sha256": "80f4e0bad487ebfafd12045b93d8a880a4551faf76bba1b84c826ce0cb032232",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/RTsequences/Run Stimulus Profile.vi",
+   "bytes": 22944,
+   "sha256": "f0ee35cf98f92be3b3d6cd0d7ff6513417a0d068d29b009f74674f4d6f040b8c",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/RTsequences/subVIs/Build Parameter Assignment Array.vi",
+   "bytes": 56988,
+   "sha256": "bacd752376f5d7b3c4b9b08cd12e50593cf3155148f70ddf105baebd8a0e14df",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/RTsequences/subVIs/Expression Array String to Expression Array.vi",
+   "bytes": 11691,
+   "sha256": "016bc11635d0e0b7c902e56aa510c599a0bbe826230787b6956d4734e4a7297f",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/RTsequences/subVIs/Remove First and Last Characters.vi",
+   "bytes": 8260,
+   "sha256": "69032a5e273939fa0ee29890fa2dd37f140b59f109654d32d98978eb77709dce",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/VeriStand Steps RunTime Library.lvproj",
+   "bytes": 10529,
+   "sha256": "cf9c355c7550bb6b933fd35cb45e7798ece22ff1b107036f60115b36cf4318e3",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/alarms/AlarmGetList.vi",
+   "bytes": 15404,
+   "sha256": "55bfff223ba54172a7ca7dae107453344a37e81d9819e62022ab755c755880db",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/alarms/AlarmGetState.vi",
+   "bytes": 19513,
+   "sha256": "b030a5939bf450b6fba5072c8d2d77bc7aff28595f0dee31541f49e1656718bd",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/alarms/AlarmSetState.vi",
+   "bytes": 20729,
+   "sha256": "72c2d79ad9158bab8b27449e8a9a5166b8e93724cb02e42132ae6ec9f9b877af",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/application/VeristandInitialize.vi",
+   "bytes": 23147,
+   "sha256": "8380deb119d78d7ae2c45ef96e37b376e667977de7e8aef2f480a67fa1eb4e13",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/application/VeristandStart.vi",
+   "bytes": 41254,
+   "sha256": "0610d85bf0fc6a581bf8a54a805fa2727ff5f24a7eaa18caa0ad7db719246000",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/application/VeristandStop.vi",
+   "bytes": 37473,
+   "sha256": "5344687836bb7ed4642da18db699fac6f3ac1efe644611c9f5003d236e671b16",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/build/Post-Build Action.vi",
+   "bytes": 14901,
+   "sha256": "15296acb5a000c3fa5faf851aa9d77c9d1818c3d22df22e49c11f6e5a2bb100d",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/channels/ChannelsGetValues.vi",
+   "bytes": 26549,
+   "sha256": "2429b64f6993af36ac20c95a4a99bd5013be46db409e24c403ec68cbfa584404",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/channels/ChannelsSetValues.vi",
+   "bytes": 32933,
+   "sha256": "6d233679a26bc7f763d4e6e7556187158420f9b809203c9fb7eecf86d37e69d8",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/controls/VeriStand dotNet References.ctl",
+   "bytes": 12804,
+   "sha256": "03cdbaf79a84284fd0a219c0ee706cea8dceb7c569f4eaea93908b36614b3bb9",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/errors/ResolveError.vi",
+   "bytes": 8988,
+   "sha256": "e2a29c504e063f4b830d2ce459f00e40cfc328341327c70cb44d2066fdbe66ad",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/faults/FaultClear.vi",
+   "bytes": 15526,
+   "sha256": "c155c841051c52ca9bccf36ccaef81fbeed3a45ad962924ba395527555ecd65d",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/faults/FaultClearAll.vi",
+   "bytes": 14681,
+   "sha256": "9474c1c952cd862cb020865d00525f317438c304879a0f1c0a3f7c7279a1ac10",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/faults/FaultGetValue.vi",
+   "bytes": 16385,
+   "sha256": "22e1609c4aff735c05457bd285596d5afe37b405d0a75c20f3067bb5a102aed8",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/faults/FaultSetValue.vi",
+   "bytes": 16237,
+   "sha256": "b974137da139e7e0a80d758acfdf49a709edd33d5a2445a34b26b3201d1b99b0",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/logging/Start logging.vi",
+   "bytes": 48649,
+   "sha256": "b19eae0802fab846a31b27f29f6d4d88f9d591245d7ec24ccecc3d610fbc0989",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/logging/Stop Logging.vi",
+   "bytes": 15760,
+   "sha256": "9bd7c0f326639098bce3fa635c1d881ea063fbcbd08aac2015712058e1d5e5fc",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/models/ModelParameterValueGet.vi",
+   "bytes": 17246,
+   "sha256": "bb6f1d0bf6a290c6fbde07236abb50c8f577833acb7922edd7f4581a583eaa90",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/models/ModelParameterValueSet.vi",
+   "bytes": 17574,
+   "sha256": "c94de9796fce019c61176a33298260bd244d843d02c3bb2c9ab56f5b7ad61fd2",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/models/ModelParameterValueUpdateFromFile.vi",
+   "bytes": 21209,
+   "sha256": "d28902c272f50907a6ff5824f768dc7db012d1d5f73278d24d776c0ac7017d6e",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/ni-veristand-steps-runtime-lib.lvlib",
+   "bytes": 5622,
+   "sha256": "af2abbe71ba56b2df2eaa3d7d14fabc3e7d2c576e2b4577e4d8767a58931b545",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/project/ProjectClose.vi",
+   "bytes": 17220,
+   "sha256": "b42e6b7dab54ac03ed8aef3f8294f41ec73f1278e920fbc2b6335aa683cc3b2a",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/project/ProjectConnect.vi",
+   "bytes": 18250,
+   "sha256": "c2b41f9b6ba7847cb7ee84bfe58455e9c3e208d2f5b1f6d7e5b11e25388813c8",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/project/ProjectDeploy.vi",
+   "bytes": 16373,
+   "sha256": "248258d7ade49627e7d9fc40a4a8c6f56db8eefb98e64d4ea860d4384a0b22cd",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/project/ProjectDisconnect.vi",
+   "bytes": 16325,
+   "sha256": "356d09e510f72d5fbe28fd4942428a4ecdbd264a9f8257556bb53429daca1407",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/project/ProjectOpen.vi",
+   "bytes": 21131,
+   "sha256": "725a5a88cf5b4ddaf9a0a362df0094ea7f0339174e3b714ba46fd4666cd5d40e",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/project/ProjectOpenReferences.vi",
+   "bytes": 31649,
+   "sha256": "cf46aa12081496c626a82efe04fb6d7607a2a71ca74cb19edee74ccca2afab91",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/project/ProjectRun.vi",
+   "bytes": 16318,
+   "sha256": "8e951e42915aea1fe226cb26d0d99c7cfff12e3d90bc9fb62dcd720382e1393c",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/project/ProjectSilentConnect.vi",
+   "bytes": 19404,
+   "sha256": "86f3a0c89c93536a9a0059942082381f7e07800dd72039cedd3b5d43ede49cf2",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/project/ProjectSilentDisconnect.vi",
+   "bytes": 17103,
+   "sha256": "e684e53773d564e08333916bc4dc9ec86fdb454656bb4a02d1a94448529cf239",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/project/ProjectUndeploy.vi",
+   "bytes": 18211,
+   "sha256": "e101745c2fed44eabac57c311bd7098f94d173ea7c44f1778a82d1e3936f2cac",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/references/FileGlobalsCreate.vi",
+   "bytes": 27333,
+   "sha256": "3987c4837e6c4d2e251d4e2a76d7876819e7cabc2a5c662a010443249ec4ca4b",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/references/ReferencesFGV.vi",
+   "bytes": 21013,
+   "sha256": "3947be929cd25ccc2e9efb393133a3da8e06f5daecf3c6bee29d117ba5eb1197",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/subVIs/64BitOSCheck.vi",
+   "bytes": 16260,
+   "sha256": "b2cf756ffb352192a7a8b48775e6292c11a4a9e3954b590b19ad5c2c71c42454",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/subVIs/Configuration File Get VeriStand Application Path.vi",
+   "bytes": 25657,
+   "sha256": "ca20958572898cd94fdf0c6207453bcc1ac4c75b194f2fa49984f36cc72f8f11",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/subVIs/Get Default VeriStand Application Path.vi",
+   "bytes": 19862,
+   "sha256": "0a906aa17627554aaeef44046c8558332588a73e1411ce39fc8f5295bfdadf5b",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/tests/Test - Is VeriStand Running.vi",
+   "bytes": 26079,
+   "sha256": "58c395226a2bc184cdc66666ee8e1cbbccb30da3513b1a172f9df6aac0b346a1",
+   "via": "extension"
+  },
+  {
+   "path": "Source/LV/RunTime/workspace/WorkspaceOpenClose.vi",
+   "bytes": 16590,
+   "sha256": "3eabc1ad4a69f4c824e9f7358ceb2c4e8f4ec2c3dfb81e2101de0da3986ad2cd",
+   "via": "extension"
+  },
+  {
+   "path": "Tests/Sequences/Looping Test Get Channel Timing.seq",
+   "bytes": 11724,
+   "sha256": "c1ecf82598918532a4b74677f5f9e57c245dfde8661a8097451ee0469a91a202",
+   "via": "extension"
+  },
+  {
+   "path": "Tests/Sequences/Looping Test RT Sequence Extended.seq",
+   "bytes": 11175,
+   "sha256": "894439fa7d03013a93916a030afbfa1681e6604dd421225d1c6b81f2c0c1b161",
+   "via": "extension"
+  },
+  {
+   "path": "Tests/Sequences/Looping Test Set Channel Timing.seq",
+   "bytes": 11324,
+   "sha256": "ae0e353491134eaace5dbf1afcb847811365b6b26e2745613f626344f44a4610",
+   "via": "extension"
+  },
+  {
+   "path": "Tests/Sequences/Main.seq",
+   "bytes": 31503,
+   "sha256": "7e8d68b095dbe67dcba8a9bec3b3b31e3df84594bdb3d504934b5dab4f82bf47",
+   "via": "extension"
+  },
+  {
+   "path": "Tests/Sequences/MainSub.seq",
+   "bytes": 23597,
+   "sha256": "e7311111163cead0e31ec3e3e8ac91fc6c1a11a234ffb187e750fa243b3861c0",
+   "via": "extension"
+  },
+  {
+   "path": "Tests/Sequences/Subtest Logging.seq",
+   "bytes": 11011,
+   "sha256": "c89f65c9997e8472ff6948e615bebaa151335faa4686738a266935f4d8febd21",
+   "via": "extension"
+  },
+  {
+   "path": "Tests/Sequences/Subtest Project Control.seq",
+   "bytes": 10918,
+   "sha256": "4fc2d8442148eb5503770a3f5a4b96b3cbeb58b8786f14a697f4f4c60c0a132e",
+   "via": "extension"
+  },
+  {
+   "path": "Tests/Sequences/Subtest RT Sequence Parameter & Return Test.seq",
+   "bytes": 9639,
+   "sha256": "439da35ffc90a446f6c9b2269809c2e9360066994221247769f1bc71a9b5691b",
+   "via": "extension"
+  },
+  {
+   "path": "Tests/Sequences/Subtest RT Sequence without Timeout Property (for legacy).seq",
+   "bytes": 10381,
+   "sha256": "a9b4e79ddf5aefc25e1641ff5fdd3dcf39825469a04480532c11928a0b15b2c5",
+   "via": "extension"
+  },
+  {
+   "path": "Tests/Sequences/Subtest Set Channel Timeout.seq",
+   "bytes": 10464,
+   "sha256": "8f68d36eea32c87a306b6804b0c9313edfb3dbe364ce0754f635091c37f04316",
+   "via": "extension"
+  },
+  {
+   "path": "Tests/Sequences/Subtest Silent Disconnect.seq",
+   "bytes": 11310,
+   "sha256": "78cfebae6fbce9e6616873308a228d21725e2b90deb3480ab618e6b2b763d511",
+   "via": "extension"
+  },
+  {
+   "path": "Source/CustomPaletteFile/Veristand_icon_vista.ico",
+   "bytes": 290182,
+   "sha256": "8cb9bb8767dc4aaaf4b9697166c1bf0ec5cf0a9385d4d7a926cf59f87cb32ae2",
+   "via": "ref:Source/CustomPaletteFile/NI_VeristandTypes.ini"
+  },
+  {
+   "path": "Source/CSharp/AddRemoveGACUtils/InstallToGAC.exe",
+   "bytes": 5120,
+   "sha256": "7522cf160719860cd2df27fefc879655f3936a0ef8deb0d14c4479d971c9d3bb",
+   "via": "ref:Source/LV/Build/subCreateStagingPaths.vi"
+  },
+  {
+   "path": "Source/CSharp/AddRemoveGACUtils/RemoveFromGAC.exe",
+   "bytes": 5120,
+   "sha256": "c2c8b78205f4cedad41cfbc5286d14c6dc20bb0de67214f500d87c1421b17055",
+   "via": "ref:Source/LV/Build/subCreateStagingPaths.vi"
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 1128,
+   "sha256": "c943f36dce08a03e3e153387a192dc80bf889f6da82bb5f7a30c72d83b7fcdca",
+   "via": "tree"
+  },
+  {
+   "path": "Documentation/Example Configuration File/Using the VeriStand Steps Configuration File.txt",
+   "bytes": 655,
+   "sha256": "31ce6bb7d2c91249c1be31b391d4ba5e1550999b1a3c8cf385ead0d93dbb4ee6",
+   "via": "tree"
+  },
+  {
+   "path": "Documentation/Example Configuration File/ni-veristand-steps-configuration.conf",
+   "bytes": 112,
+   "sha256": "0866058be0321c499b96c10df8d1eadcf8802f183d46173930c311413f8c9301",
+   "via": "tree"
+  },
+  {
+   "path": "Documentation/Examples/Get Rise Time.nivsseq",
+   "bytes": 3741,
+   "sha256": "ca590ff5c5f2818bc834ec6d9c848e1b81da37232a3ed4b7c0858f88f3fc345d",
+   "via": "tree"
+  },
+  {
+   "path": "Jenkinsfile",
+   "bytes": 225,
+   "sha256": "0357bb35adae84ad26bb5b1f726ad9ad2bd1330100b98bb3b63474952ac189dd",
+   "via": "tree"
+  },
+  {
+   "path": "LICENSE.txt",
+   "bytes": 560,
+   "sha256": "8e3604009ceb2433d9d29ff08c57c184ebd4a073578b0a5a3310f0ce52c8019c",
+   "via": "tree"
+  },
+  {
+   "path": "README.md",
+   "bytes": 6121,
+   "sha256": "d26c8d37a5c2ce88062afc3257e03b236c196e2ee41ca25994bb9988f234e6c5",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/DialogTester/DialogTester.csproj",
+   "bytes": 3357,
+   "sha256": "a18beaae7a144a9865feaa6eba40c7b9a522ae606daeeb84e804b9365334093e",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/DialogTester/Program.cs",
+   "bytes": 643,
+   "sha256": "85c734fa3de310ed5addb065f0c5ef1017e3bd969c60a85586579479197f4445",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/DialogTester/Properties/AssemblyInfo.cs",
+   "bytes": 1404,
+   "sha256": "e8acc5830edcb68c8d72f2f13c09ce6b07f04ad34b49864c50c161fa0ac88aa0",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/NI VeriStand Custom TestStand Steps.sln",
+   "bytes": 1364,
+   "sha256": "0147b97f41a2caec9a0853c27d999966fc1c62502a23302f6f9ce289f37e2b9b",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/AdvancedLoggingProperties.Designer.cs",
+   "bytes": 10848,
+   "sha256": "f52295febda92d5d6be30e34f8cd234a6607903fb5d819d7ba7134709e3492ec",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/AdvancedLoggingProperties.cs",
+   "bytes": 5176,
+   "sha256": "7d80853e8882e9d786a38c6c4d9fc99af7b0664cbf3ab612491b24d1ca344072",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/AdvancedLoggingProperties.resx",
+   "bytes": 7332,
+   "sha256": "27a4203f50ecc22a90b4c2ff4f13f87060ceff7ddfb224c625a3f0c5d8b95dd8",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ChannelSelectionDialog.Designer.cs",
+   "bytes": 11667,
+   "sha256": "437e4c7b4f8865db76ce6a6d9251a0312a600a6f0eeda853f66ba1ea66e2caf4",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ChannelSelectionDialog.cs",
+   "bytes": 8803,
+   "sha256": "3d75f4fc7e30015d8094df078237bab3e427ea56b5ea80b4d1df106cb19ed5d1",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ChannelSelectionDialog.resx",
+   "bytes": 5698,
+   "sha256": "4d3ee9059f5b98ab1806f6916ebea2a8c56023f8c63ddfd80b7378d27d1aa0f6",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureAlarm.Designer.cs",
+   "bytes": 9126,
+   "sha256": "b37947eba0abd8c049f6ceecd88ad909bbab70d10aaca9d0292366ac3cf0f514",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureAlarm.cs",
+   "bytes": 6368,
+   "sha256": "823c781025ea810569b6751fbb0b1d00c0cca60e5aa0ed1c0d9cb64c84be9043",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureAlarm.resx",
+   "bytes": 9719,
+   "sha256": "063afa5747954a4f1861c2c101ea546df566542850aebed109cc1c119d291034",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureGateway.Designer.cs",
+   "bytes": 13139,
+   "sha256": "d390fa8b625b6b58827b709334096df64dd3d3193a499c6347b7a70cad12eda3",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureGateway.cs",
+   "bytes": 11123,
+   "sha256": "f847643c5af3b5a68810df46ed400a5d9879b8e59102a5d6035d1784bcaccd19",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureGateway.resx",
+   "bytes": 25794,
+   "sha256": "fa04d37cc0e3d4772053f1818e3d314ad3f69871ad4de165ae5d476717a5987e",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureLegacyStimulusProfile.Designer.cs",
+   "bytes": 8726,
+   "sha256": "71bd28a912f9e72f269532dc3f6d64bbb3b8c1f03abebced64af9489561442ac",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureLegacyStimulusProfile.cs",
+   "bytes": 4573,
+   "sha256": "4e5c825f6894a70e75ca79fbf6d85b26520cd6c5da7596da488b7c96af157f67",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureLegacyStimulusProfile.resx",
+   "bytes": 5698,
+   "sha256": "4d3ee9059f5b98ab1806f6916ebea2a8c56023f8c63ddfd80b7378d27d1aa0f6",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureLoggingFile.Designer.cs",
+   "bytes": 15732,
+   "sha256": "7ec498d19d829cfca4465c68e938bfb748c108ebad1ea41b803a4482e8cc4b6b",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureLoggingFile.cs",
+   "bytes": 12435,
+   "sha256": "4a4c43880d4cfc10d6a6f478f28fa7c17f22b50b43417d7818f7b911ad24d435",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureLoggingFile.resx",
+   "bytes": 10093,
+   "sha256": "f1968635da8507b2c5328bf21a2ad84c85f304bfbeb211f9928c079e1df9c842",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureRTSequence.Designer.cs",
+   "bytes": 16730,
+   "sha256": "1bcc7015437673a67969f49622be2842c16f0190ce83bcb340170db66467c642",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureRTSequence.cs",
+   "bytes": 17670,
+   "sha256": "9e9301d949c526baa46e500455a8f8a0237fd1886a7d6725c8751c1f207829f8",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureRTSequence.resx",
+   "bytes": 6463,
+   "sha256": "b6758e09361830f7269a221d87f9209082321377d2dffdba323f2d2901443e5c",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureRTSequenceNative.Designer.cs",
+   "bytes": 38140,
+   "sha256": "7e1e3cf448ffb722d56e6a31d134db344518859af97c30fd3e3eeb4ea9ffa2c9",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureRTSequenceNative.cs",
+   "bytes": 19095,
+   "sha256": "36df5d288bf26e96c77f69c43c371d2a3f5b0c90963b86f3c3b68b5962740731",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureRTSequenceNative.resx",
+   "bytes": 33629,
+   "sha256": "e04bbb746dddf8d3c9e9635d868eda51da825082ccd3ae6e3d4ec2a81709d1a7",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureRTSequenceNative.yo-NG.resx",
+   "bytes": 6869,
+   "sha256": "0fbf95f9cabb78d885a3009036eae5fc91667b15c61b766167ba8827551bc096",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureRTSequenceNumericLimitTest.Designer.cs",
+   "bytes": 39384,
+   "sha256": "fc4189992ccb1f417df4e7e438678708571882c25736aee65211c16d6089be91",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureRTSequenceNumericLimitTest.cs",
+   "bytes": 17335,
+   "sha256": "83f97c0d81b501b5f15e13aa30039e59f2a1327e9cd3f6ea8f9363b8a065f7ca",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureRTSequenceNumericLimitTest.resx",
+   "bytes": 36043,
+   "sha256": "8c4ca5af95a437ac40037ea1672181eb54a7eb6041ba0835849d0b01ec6329eb",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureRTSequenceNumericLimitTest.yo-NG.resx",
+   "bytes": 6869,
+   "sha256": "0fbf95f9cabb78d885a3009036eae5fc91667b15c61b766167ba8827551bc096",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureSequenceName.Designer.cs",
+   "bytes": 6988,
+   "sha256": "54a3c4075b697a76788a0103b0597a26f2447f1d7fa395f9eae5e3806e14075b",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureSequenceName.cs",
+   "bytes": 6740,
+   "sha256": "d5289e8c4b6dfd3b67d889a4be0ba35de8eab2bab9555324a4685475d72a3d64",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureSequenceName.resx",
+   "bytes": 5698,
+   "sha256": "4d3ee9059f5b98ab1806f6916ebea2a8c56023f8c63ddfd80b7378d27d1aa0f6",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureSystemDefinition.Designer.cs",
+   "bytes": 8390,
+   "sha256": "9308956650321f3dbe06a3cc751a77260564b63ee3d20f8ccac4ff3e123850a8",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureSystemDefinition.cs",
+   "bytes": 5920,
+   "sha256": "d9b9bb1ef86b40ead5a62b948f71371d546f9fd8a953e5dcc52709182ce7ec8f",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ConfigureSystemDefinition.resx",
+   "bytes": 13740,
+   "sha256": "dbb067a2539726f18e75d47f6c9b26bf3cd320cf0145176168a17dee773cbc56",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/GetChannelsDialog.Designer.cs",
+   "bytes": 6391,
+   "sha256": "4c8e3da755b12a3c7a3abe329e62028888ce8a15eecd491d082f91797f127741",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/GetChannelsDialog.cs",
+   "bytes": 9552,
+   "sha256": "1783a481381d66e2d419badc416c59da4371ecfa4afe9907aa86ff268edfd9e5",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/GetChannelsDialog.resx",
+   "bytes": 5698,
+   "sha256": "4d3ee9059f5b98ab1806f6916ebea2a8c56023f8c63ddfd80b7378d27d1aa0f6",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ModelParametersFromFile.Designer.cs",
+   "bytes": 8663,
+   "sha256": "11267e0986858e8ea0fcaf6984ff24a3db3cd820e2d3db0af25a8e9140ffa659",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ModelParametersFromFile.cs",
+   "bytes": 3685,
+   "sha256": "b68b3f3fb4b8731946e03c633233cca8c0e0fe334b0c2d513a97c27e6376adee",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/ModelParametersFromFile.resx",
+   "bytes": 13751,
+   "sha256": "d302ddade7140d57abef88bab6dd8c66b11aa8608eb6a6e288993382a009cfa4",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/NativeChannelSelectionDialog.Designer.cs",
+   "bytes": 7635,
+   "sha256": "29133417eae5558d3cb72ea782c8be1dfb1e777a9acd8d9165a31c44006febf2",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/NativeChannelSelectionDialog.cs",
+   "bytes": 9397,
+   "sha256": "cfef3471e01cd08c285cf8541debcd261ae1c4e0b9e66b3d506108d0917dea7b",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/NativeChannelSelectionDialog.resx",
+   "bytes": 9704,
+   "sha256": "a3d19816a25d02c2310014aa9d30e61193846840befb8322af68b45edb824181",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/Properties/AssemblyInfo.cs",
+   "bytes": 1408,
+   "sha256": "6a46d373577d0f6d7eeade61b951a216c81ad1d514508edb74d8e4361f9b447d",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/Properties/Resources.Designer.cs",
+   "bytes": 2803,
+   "sha256": "6d2dbec9361410818fda1f6d5b0c5dace3c1646802de41d8d19fc63c9a391a6a",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/Properties/Resources.resx",
+   "bytes": 5698,
+   "sha256": "4d3ee9059f5b98ab1806f6916ebea2a8c56023f8c63ddfd80b7378d27d1aa0f6",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/Properties/Settings.Designer.cs",
+   "bytes": 1076,
+   "sha256": "5dfc8ec8ffc4350b765596d848ecfb3b595c3ee613f7f8d9e8b7799f0bb9352b",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/Properties/Settings.settings",
+   "bytes": 242,
+   "sha256": "baba99193fc1787141063b135424b476ff4151beb833883fcb594631f17c0147",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/RunStimulusProfile.xaml",
+   "bytes": 1995,
+   "sha256": "6359cd0c5d3751975b7fb3aee8731f749a9a71511feeffed759980af87f5657a",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/RunStimulusProfile.xaml.cs",
+   "bytes": 648,
+   "sha256": "67c2cf1308460fb8c5423edc542a7158e04d4ef124a4b7b7f424d50e76a0330e",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/SelectChannelsDialog.Designer.cs",
+   "bytes": 6403,
+   "sha256": "207b5e36d12b50c01cd2db91c813e931a46da824d728a125aa549989aadde36e",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/SelectChannelsDialog.cs",
+   "bytes": 7508,
+   "sha256": "10cc6a681f090e936f15b1edecb18a4306c717bf145937fbd1fc4ade82da1400",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/SelectChannelsDialog.resx",
+   "bytes": 5698,
+   "sha256": "4d3ee9059f5b98ab1806f6916ebea2a8c56023f8c63ddfd80b7378d27d1aa0f6",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/SelectSingleChannelPanel.Designer.cs",
+   "bytes": 3029,
+   "sha256": "ddce997b5396e4334148e935e4f8329850263fc2127f8ea9ac7d06fa27ceb721",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/SelectSingleChannelPanel.cs",
+   "bytes": 2548,
+   "sha256": "7177d7c610e93a0bd35cd54456f9b79fc78996c4a2a9a0b0c068e885ce2737ee",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/SelectSingleChannelPanel.resx",
+   "bytes": 5868,
+   "sha256": "cd1b50f401dccb787c4bfb3e30118d39fb571aa7f053a2691e59fca12688e24c",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/SelectSingleChannelPanelNumLimit.Designer.cs",
+   "bytes": 3037,
+   "sha256": "966e4dc5444ebf679bcf6fcd1d5e67f536bd107abe066aea7ad18fc33be7eaf2",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/SelectSingleChannelPanelNumLimit.cs",
+   "bytes": 2439,
+   "sha256": "435b3cef0aaf5838ac6df5af516bea5a96a6c6e127beddb923ebc44d52724cbb",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/SelectSingleChannelPanelNumLimit.resx",
+   "bytes": 5868,
+   "sha256": "cd1b50f401dccb787c4bfb3e30118d39fb571aa7f053a2691e59fca12688e24c",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/SelectTargetDialog.Designer.cs",
+   "bytes": 5997,
+   "sha256": "84b7ed826c62a35d9f57947b5b61e27d30cc185088b77ad19e70631a61bfade8",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/SelectTargetDialog.cs",
+   "bytes": 4133,
+   "sha256": "ef403f3f63b1ff21e839abf505307d757bfac0fa7bbf2f489094b97dccd92015",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/SelectTargetDialog.resx",
+   "bytes": 5698,
+   "sha256": "4d3ee9059f5b98ab1806f6916ebea2a8c56023f8c63ddfd80b7378d27d1aa0f6",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/SetMultipleChannelsDialogDGV.Designer.cs",
+   "bytes": 12919,
+   "sha256": "373e8678375a60c5ea04b14a88b68ee7b5aad8cc67edaae047103befb653ba1a",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/SetMultipleChannelsDialogDGV.cs",
+   "bytes": 8204,
+   "sha256": "9c99a5c2a6670f26085f3e39b6854a4e3e42f64af946a1a7e6695aedfc6ff82f",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/SetMultipleChannelsDialogDGV.resx",
+   "bytes": 6069,
+   "sha256": "d17a69d36545a291a251cae41d35091f7827827018bf09c1b89ec829988bfc8c",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/StimulusProfileDialog.Designer.cs",
+   "bytes": 9692,
+   "sha256": "0c4657434c18251966066559a3e73ac163ef690d2b35e49ac79d815e009e69dc",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/StimulusProfileDialog.cs",
+   "bytes": 5235,
+   "sha256": "0ab369602bdf099ef534be0b337d1451bf86f9b7d4b4a0c087be71e8ccf4e9a0",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/StimulusProfileDialog.resx",
+   "bytes": 17768,
+   "sha256": "9afaf5fe3fb5b4941765e9866cc2e5fee5779b899dcf88628ded3b34913e1a4e",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/StringUtilities.cs",
+   "bytes": 3335,
+   "sha256": "ec9a8a8b0bb64ae0bd148343bbfccf5a256e9be8795bcfe8f276ef02e6071f53",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/VSChannelBrowserTest.Designer.cs",
+   "bytes": 2409,
+   "sha256": "f6ea4bc7d75545323d74a4d4453694f6e6fce8d9b2722ae3eb8811466607dc94",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/VSChannelBrowserTest.cs",
+   "bytes": 1044,
+   "sha256": "2f26b99f9cc019b24703a1f1927b5ec1f9f12d98629a46bb3fba28517dab8aaf",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/VSChannelBrowserTest.resx",
+   "bytes": 5698,
+   "sha256": "4d3ee9059f5b98ab1806f6916ebea2a8c56023f8c63ddfd80b7378d27d1aa0f6",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/VSDialogs.cs",
+   "bytes": 24899,
+   "sha256": "f29f53a673e6692c5809bb43773b22b331203195e5268c511b471fc1a9c62a1f",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/VeristandSteps.csproj",
+   "bytes": 21185,
+   "sha256": "a8b6d1a98ded783bb472fa0c33dc5bf4a629768f18fd7a54b58a2b58d0c5db61",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/VeristandSteps.csproj.user",
+   "bytes": 688,
+   "sha256": "8c567bb669b1a732f9c0634d49110094e7023f2e527a265d47ae0bdd5c6295e2",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/VeristandStepsKey.snk",
+   "bytes": 596,
+   "sha256": "7733afd4ebe991e307a1b3aa536ce89c9a0101b833716d5ab2706011a1fa9936",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/WarningForm.Designer.cs",
+   "bytes": 2980,
+   "sha256": "349bd702be3405cdc10365e99e79f45a945573860f6e239c6bfc551581eecc71",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/WarningForm.cs",
+   "bytes": 530,
+   "sha256": "6ca075c2fcc0ad14539f1f0918877de0d5074169e6ea7bfbc7e1fd6fd13a0cb6",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/OpenWorkspaceDialog/WarningForm.resx",
+   "bytes": 5698,
+   "sha256": "4d3ee9059f5b98ab1806f6916ebea2a8c56023f8c63ddfd80b7378d27d1aa0f6",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/RemoveOldInsertionPaletteItems/Program.cs",
+   "bytes": 7748,
+   "sha256": "ad65bc1df0c9fc91c58a6f90497d349986a6c6ac4b2e8353cb0fd66796c238b6",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/RemoveOldInsertionPaletteItems/Properties/AssemblyInfo.cs",
+   "bytes": 1436,
+   "sha256": "66a341b7cc517e83b68241db7c0ee5dcdd838f940b3430c580ed7053e31dadf7",
+   "via": "tree"
+  },
+  {
+   "path": "Source/CSharp/VeristandStepsAssembly/RemoveOldInsertionPaletteItems/RemoveOldInsertionPaletteItems.csproj",
+   "bytes": 3852,
+   "sha256": "392e8d087518e8717ce0b512ed2dc883312f879276c0db8f508b6062657b587f",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Documentation/Engine Demo.png",
+   "bytes": 1587,
+   "sha256": "4aa4f2bb6f677486bcbdc265a7c1c0949f2e3b20500d8e9eee713d076f458cb8",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Engine Demo Screen.nivsscr",
+   "bytes": 11551,
+   "sha256": "3e0aca970a0da2e0633a759c64dd1b1844bf666bf83faac6961cf7560c3efe29",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Engine Demo.nivscf",
+   "bytes": 287,
+   "sha256": "78c162b19cac97afb50d44a69fd4219fc0fd86c06c7dee630206d6380ea3d554",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Engine Demo.nivsprj",
+   "bytes": 4158,
+   "sha256": "df7c91549c07d41d06046967acf87fef9e9aefff70cce48b6398e83e02af8d05",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Engine Demo.nivsprjcache",
+   "bytes": 12941,
+   "sha256": "07d9e5f101fc8a55a0edffd53669d5288eb18df271a24f4853ecb152246e02d3",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Engine Demo.nivsproj",
+   "bytes": 20129,
+   "sha256": "87a66514fc8bdc89b6620c65d0bfa3b6b6503d6cdaf1d9ca817954792e8cbe31",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Engine Demo.nivsscreen",
+   "bytes": 15339,
+   "sha256": "c79e39dec47d44a19ae1fbe6ec1ed77c44f54bdc544c2820e1db12262e445d2a",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Engine Demo.nivssdf",
+   "bytes": 73848,
+   "sha256": "1e59bb46a180acc61425f8d0095f5b78513e3f0b2223b62744239ca72cbeee01",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Logging Specification - Engine Demo.nivslspec",
+   "bytes": 5311,
+   "sha256": "6b6f3e1f305ea4bc8827ac8819ece32bd724f9065e47360b9bf2b533eb0f350e",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Model/Engine Demo.dll",
+   "bytes": 26928,
+   "sha256": "2b0cf7fbe8146003255e20ac88976301a62d951b9f78f52fd9b0423a7293b09e",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Model/Engine Demo.out",
+   "bytes": 20570,
+   "sha256": "5efc91b28444867cd79e9ecccaa76f0d44b9a5fbb48c48ffe92d3f417f7ca5a4",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/RT Sequences/Engine Demo Basic with Numeric Return Value.nivsseq",
+   "bytes": 2772,
+   "sha256": "82323a81dbfdd57e2378570d7a04a183e1fff6676a9c7257c784334275ac4a93",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/RT Sequences/bool_parameter_with_bool_return.nivsseq",
+   "bytes": 2856,
+   "sha256": "6740dd10874680b6a2040a486a80156676f6564904e9c1bf5dfbb23a1093fe9c",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/RT Sequences/dbl_parameter_with_dbl_return.nivsseq",
+   "bytes": 3027,
+   "sha256": "2d206e28323a9d4b9622c6ba1481df241eea55cec1f8e82384a49e848d7549db",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/RT Sequences/int32_parameter_with_int32_return.nivsseq",
+   "bytes": 3027,
+   "sha256": "21ea3530dccf01d1ba7036ce872955655c0a393e6de76d7b506a678329720db3",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/RT Sequences/int64_parameter_with_int64_return.nivsseq",
+   "bytes": 3027,
+   "sha256": "dc7784fc1ec3bd064ceda9b825565e896b7302019ad8f681bf1d104c80355858",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/RT Sequences/uint32_parameter_with_uint32_return.nivsseq",
+   "bytes": 3027,
+   "sha256": "b02d71e397ac2f85fa0b253f54645f04bcd885f385ce9b2853cfdf6258275475",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/RT Sequences/uint64_parameter_with_uint64_return.nivsseq",
+   "bytes": 3027,
+   "sha256": "27f0a0bc7ae25f3ee2b7d3dfc544f3255df32e8dd76b5a8543d235dd1cb55973",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Basic Engine Demo/Engine Demo Basic.nivsseq",
+   "bytes": 2601,
+   "sha256": "0dddad11e91413bbd30631be0cd82ac1c3b0ca244d53878c268dc68b84b87735",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Basic Engine Demo/Engine Demo Basics.nivsstimprof",
+   "bytes": 1358,
+   "sha256": "1bbb8ca87cf18f815e99b81afe69b540f4f5c905935efcd5aae84a38140d41d1",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Engine Demo Advanced & Return Value/Engine Demo Advanced & Return Value.nivsseq",
+   "bytes": 6787,
+   "sha256": "24ede4c14340592a675ed913610418e274df1ce37f29b10ace587cab6299dcf2",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Engine Demo Advanced & Return Value/Engine Demo Advanced & Return Value.nivsstimprof",
+   "bytes": 2886,
+   "sha256": "c4f94ea5a82ad4af7548c2d66f4d337eaed754b463d3e1c58d6a9f414508d1ff",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Engine Demo Advanced/Engine Demo Advanced.nivsseq",
+   "bytes": 5946,
+   "sha256": "a4899836df0d6228593a74a6012fb240e71616cbb9b60763073667b5c117764b",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Engine Demo Advanced/Engine Demo Advanced.nivsstimprof",
+   "bytes": 4562,
+   "sha256": "a2ecad314025be967d86f1a6c0dfd914692e940d62ebe8b9a257c6ce6580a756",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Engine Demo Advanced/Test Results/0/Engine Demo Advanced Test Result.xml",
+   "bytes": 9957,
+   "sha256": "39418ed21cbf9d4532d62457a905ac6b1514c396792c9307f04ec005e3f663f4",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Engine Demo CSV File Replay/Engine Demo CSV File Replay.nivsstimprof",
+   "bytes": 3083,
+   "sha256": "c9b3034d730911889bc987b99ef0dbf46d9332e299073b1b76262a064fd6ee11",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Engine Demo CSV File Replay/WarmUp Phase 1.csv",
+   "bytes": 68,
+   "sha256": "ea121d629d4c5e2c9e08ee6c0499f1a1445e65c66980dc28e31f138bb9a73185",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Engine Demo CSV File Replay/WarmUp Phase 2.csv",
+   "bytes": 146,
+   "sha256": "899905fa5b4e91656fb23167a4190c1b3d27c8753116d9d6a9f092012971ab3f",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Engine Demo Channel References/Measure Set Point Response.nivsseq",
+   "bytes": 3899,
+   "sha256": "1ed1eca3ff73beb8b3f2d4b808909ece0e507eb23cf3ce451cf65265df94e336",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Engine Demo Channel References/Set Engine Power.nivsseq",
+   "bytes": 1415,
+   "sha256": "d1858dc243e46a22be2f611e996676a528b10fd75fd4976aaafc1eff2f9f2d78",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Engine Demo Channel References/Test Engine Set Points.nivsstimprof",
+   "bytes": 3989,
+   "sha256": "7a1bf662a4a3f1891c4761b853bc5e660e375fead1334a33de373bcf88f2eab1",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Engine Demo Logging/Engine Demo Logging.nivsseq",
+   "bytes": 2245,
+   "sha256": "6c5124388a546235a9a2736390f03be3486bef1cd705aa648558a3e0b2b213e8",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Engine Demo Logging/Engine Demo Logging.nivsstimprof",
+   "bytes": 2674,
+   "sha256": "71d659826903e6e24f272f8941421f0831e926ad52099de282bff2221708c302",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Engine Demo Macro Player/Engine Demo Macro Player.nivsstimprof",
+   "bytes": 627,
+   "sha256": "c730d420e149a2eceac11f294b0a31039655f381b9c4f32a3c67ddf56383ef02",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Engine Demo Macro Player/Engine Demo Macro.nivsmacro",
+   "bytes": 3373,
+   "sha256": "a646c3036af7aa047c8151ab9f9bc2c5b2f980ae4bad62b287df03aef490cf3e",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Update Model Parameters/Engine Demo Update Model Parameters.nivsstimprof",
+   "bytes": 7690,
+   "sha256": "c04d773cf8ec29a0e3256d8e15e78213380a6d9fc51a0a62c187b6ec78b7bab3",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Update Model Parameters/OriginalParameterValues.txt",
+   "bytes": 76,
+   "sha256": "1eb6cce59fd38dc692bf808fa512b39642873fb1e84ef03728a26ea0c42e144b",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Update Model Parameters/ParameterUpdate1.m",
+   "bytes": 56,
+   "sha256": "07254c124274297166081c0906b40fba39594ab713d519be5cfe9e37edf85903",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Update Model Parameters/ParameterUpdate1.txt",
+   "bytes": 56,
+   "sha256": "07254c124274297166081c0906b40fba39594ab713d519be5cfe9e37edf85903",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Update Model Parameters/ParameterUpdate2.m",
+   "bytes": 102,
+   "sha256": "18f56c8ad844108dc12d9bef2f4a03797ca53397d7c68d76f2ebd9dc96dd56ce",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Update Model Parameters/ParameterUpdate2.txt",
+   "bytes": 102,
+   "sha256": "18f56c8ad844108dc12d9bef2f4a03797ca53397d7c68d76f2ebd9dc96dd56ce",
+   "via": "tree"
+  },
+  {
+   "path": "Tests/Engine Demo/Stimulus Profiles/Update Model Parameters/subfile.txt",
+   "bytes": 43,
+   "sha256": "33be3894f3128772b6b2d7a83d30abf5cfa721096560c2bfe90b78c974666f52",
+   "via": "tree"
+  },
+  {
+   "path": "build.toml",
+   "bytes": 1445,
+   "sha256": "167098fa8c5660457b692b0194e6fea6d28f31de7abb5e1a544105979051772b",
+   "via": "tree"
+  },
+  {
+   "path": "control",
+   "bytes": 1362,
+   "sha256": "edb1f8830aed357df73883d82524fc7b9ed1ae5f5bd0a681cdbfb50f6ca1a8a4",
+   "via": "tree"
+  },
+  {
+   "path": "instructions",
+   "bytes": 447,
+   "sha256": "538a3bca1785e0e791a82a0d8c80bf168e34ac1ede1503ef4ba3f45fa089f91b",
+   "via": "tree"
+  },
+  {
+   "path": "version",
+   "bytes": 74,
+   "sha256": "c2edf76de4de808d561db192eb4609ea6b8850c60afd0a482a989209eb192eef",
+   "via": "tree"
+  }
+ ],
+ "skipped": [],
+ "external": [
+  "<helpdir>\\lvexpress.chm",
+  "<resource>\\objmgr\\DOMUserDefRef.rc",
+  "<vilib>\\ErrorRing\\Error Ring.xnode",
+  "<vilib>\\NI Veristand\\Execution\\AlarmManager\\AlarmManagerAPI.ctl",
+  "<vilib>\\NI Veristand\\Execution\\AlarmManager\\NI VeriStand - Get Alarm List.vi",
+  "<vilib>\\NI Veristand\\Execution\\AlarmManager\\NI VeriStand - Open Alarm Manager Reference.vi",
+  "<vilib>\\NI Veristand\\Execution\\AlarmManager\\NI_VS AlarmManager ExecutionAPI.lvlib",
+  "<vilib>\\NI Veristand\\Execution\\Alarm\\NI VeriStand - Close Alarm.vi",
+  "<vilib>\\NI Veristand\\Execution\\Alarm\\NI VeriStand - Get Alarm Data.vi",
+  "<vilib>\\NI Veristand\\Execution\\Alarm\\NI VeriStand - Open Alarm.vi",
+  "<vilib>\\NI Veristand\\Execution\\Alarm\\NI VeriStand - Set Alarm Data2.vi",
+  "<vilib>\\NI Veristand\\Execution\\Alarm\\NI_VS Alarm ExecutionAPI.lvlib",
+  "<vilib>\\NI Veristand\\Execution\\ChannelFaultManager\\ChannelFaultAPI.ctl",
+  "<vilib>\\NI Veristand\\Execution\\ChannelFaultManager\\NI VeriStand - Clear All Faults.vi",
+  "<vilib>\\NI Veristand\\Execution\\ChannelFaultManager\\NI VeriStand - Clear Fault.vi",
+  "<vilib>\\NI Veristand\\Execution\\ChannelFaultManager\\NI VeriStand - Get Fault Value.vi",
+  "<vilib>\\NI Veristand\\Execution\\ChannelFaultManager\\NI VeriStand - Open Fault Manager Reference.vi",
+  "<vilib>\\NI Veristand\\Execution\\ChannelFaultManager\\NI VeriStand - Set Fault Value.vi",
+  "<vilib>\\NI Veristand\\Execution\\ChannelFaultManager\\NI_VS ChannelFault ExecutionAPI.lvlib",
+  "<vilib>\\NI Veristand\\Execution\\DataLogging\\Close Data Logging Manager Reference.vi",
+  "<vilib>\\NI Veristand\\Execution\\DataLogging\\File Conflict Operation.ctl",
+  "<vilib>\\NI Veristand\\Execution\\DataLogging\\NI_VS Data Logging API.lvlib",
+  "<vilib>\\NI Veristand\\Execution\\DataLogging\\New Data Logging Specification (TDMS).vi",
+  "<vilib>\\NI Veristand\\Execution\\DataLogging\\New Data Logging Specification.vi",
+  "<vilib>\\NI Veristand\\Execution\\DataLogging\\Open Data Logging Manager Reference.vi",
+  "<vilib>\\NI Veristand\\Execution\\DataLogging\\Set Data Logging Rate (Custom Rate).vi",
+  "<vilib>\\NI Veristand\\Execution\\DataLogging\\Set Data Logging Rate (Target Rate).vi",
+  "<vilib>\\NI Veristand\\Execution\\DataLogging\\Set Data Logging Rate.vi",
+  "<vilib>\\NI Veristand\\Execution\\DataLogging\\Set Segmenting Specification (Footprint).vi",
+  "<vilib>\\NI Veristand\\Execution\\DataLogging\\Set Segmenting Specification.vi",
+  "<vilib>\\NI Veristand\\Execution\\DataLogging\\Start Data Logging Session.vi",
+  "<vilib>\\NI Veristand\\Execution\\DataLogging\\Stop Data Logging Session.vi",
+  "<vilib>\\NI Veristand\\Execution\\DataLogging\\TDMS Channel Group.ctl",
+  "<vilib>\\NI Veristand\\Execution\\DataLogging\\TDMS Channel.ctl",
+  "<vilib>\\NI Veristand\\Execution\\DataLogging\\TDMS Property.ctl",
+  "<vilib>\\NI Veristand\\Execution\\DataLogging\\Time Channel Options.ctl",
+  "<vilib>\\NI Veristand\\Execution\\ModelManager\\ModelManagerAPI.ctl",
+  "<vilib>\\NI Veristand\\Execution\\ModelManager\\NI VeriStand - Get Parameter Value.vi",
+  "<vilib>\\NI Veristand\\Execution\\ModelManager\\NI VeriStand - Get Single Parameter Value.vi",
+  "<vilib>\\NI Veristand\\Execution\\ModelManager\\NI VeriStand - Open Model Manager Reference.vi",
+  "<vilib>\\NI Veristand\\Execution\\ModelManager\\NI VeriStand - Set Parameter Value.vi",
+  "<vilib>\\NI Veristand\\Execution\\ModelManager\\NI VeriStand - Set Single Parameter Value.vi",
+  "<vilib>\\NI Veristand\\Execution\\ModelManager\\NI_VS ModelManager ExecutionAPI.lvlib",
+  "<vilib>\\NI Veristand\\Execution\\Project\\NI VeriStand - Close Project Reference.vi",
+  "<vilib>\\NI Veristand\\Execution\\Project\\NI VeriStand - Close Project.vi",
+  "<vilib>\\NI Veristand\\Execution\\Project\\NI VeriStand - Close Workspace Window.vi",
+  "<vilib>\\NI Veristand\\Execution\\Project\\NI VeriStand - Connect Project.vi",
+  "<vilib>\\NI Veristand\\Execution\\Project\\NI VeriStand - Deploy Project.vi",
+  "<vilib>\\NI Veristand\\Execution\\Project\\NI VeriStand - Disconnect Project.vi",
+  "<vilib>\\NI Veristand\\Execution\\Project\\NI VeriStand - Open Project Reference.vi",
+  "<vilib>\\NI Veristand\\Execution\\Project\\NI VeriStand - Open Workspace Window.vi",
+  "<vilib>\\NI Veristand\\Execution\\Project\\NI VeriStand - Quit Application.vi",
+  "<vilib>\\NI Veristand\\Execution\\Project\\NI VeriStand - Run Project.vi",
+  "<vilib>\\NI Veristand\\Execution\\Project\\NI VeriStand - Undeploy Project.vi",
+  "<vilib>\\NI Veristand\\Execution\\Project\\NI_VS Project ExecutionAPI.lvlib",
+  "<vilib>\\NI Veristand\\Execution\\Project\\Project Ref.ctl",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Create Sequence Call.vi",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Create Sequence Parameter Assignment (Boolean Array).vi",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Create Sequence Parameter Assignment (Boolean).vi",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Create Sequence Parameter Assignment (Channel).vi",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Create Sequence Parameter Assignment (Double Array).vi",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Create Sequence Parameter Assignment (Double).vi",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Create Sequence Parameter Assignment (I32 Array).vi",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Create Sequence Parameter Assignment (I32).vi",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Create Sequence Parameter Assignment (I64 Array).vi",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Create Sequence Parameter Assignment (I64).vi",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Create Sequence Parameter Assignment (U32 Array).vi",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Create Sequence Parameter Assignment (U32).vi",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Create Sequence Parameter Assignment (U64 Array).vi",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Create Sequence Parameter Assignment (U64).vi",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Create Sequence Parameter Assignment.vi",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Deploy Stimulus Profile Session.vi",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Get All Sequence Names.vi",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Get Sequence Return Value.vi",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Get Sequence State.vi",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\NI_VS Sequence Execution Interface.lvlib",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Open Stimulus Profile Session.vi",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Register for Sequence Complete Event.vi",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Run Stimulus Profile Session.vi",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Sequence Execution State.ctl",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Sequence Input Assignment Ref.ctl",
+  "<vilib>\\NI Veristand\\Execution\\SequenceExecutionInterface\\Undeploy Stimulus Profile Session.vi",
+  "<vilib>\\NI Veristand\\Execution\\Workspace\\NI VeriStand - Close Workspace Manager Reference.vi",
+  "<vilib>\\NI Veristand\\Execution\\Workspace\\NI VeriStand - Connect to System.vi",
+  "<vilib>\\NI Veristand\\Execution\\Workspace\\NI VeriStand - Disconnect from System.vi",
+  "<vilib>\\NI Veristand\\Execution\\Workspace\\NI VeriStand - Get Channel Value.vi",
+  "<vilib>\\NI Veristand\\Execution\\Workspace\\NI VeriStand - Get Multiple Channel Values.vi",
+  "<vilib>\\NI Veristand\\Execution\\Workspace\\NI VeriStand - Get Multiple System Nodes Data.vi",
+  "<vilib>\\NI Veristand\\Execution\\Workspace\\NI VeriStand - Open Workspace Manager Reference.vi",
+  "<vilib>\\NI Veristand\\Execution\\Workspace\\NI VeriStand - Set Channel Value.vi",
+  "<vilib>\\NI Veristand\\Execution\\Workspace\\NI VeriStand - Set Multiple Channel Values.vi",
+  "<vilib>\\NI Veristand\\Execution\\Workspace\\NI_VS Workspace ExecutionAPI.lvlib",
+  "<vilib>\\NI Veristand\\Execution\\Workspace\\WorkspaceAPI.ctl",
+  "<vilib>\\NI\\Simple XML\\Save Pretty Print.vi",
+  "<vilib>\\Platform\\system.llb\\System Exec.vi",
+  "<vilib>\\Utility\\config.llb\\Close Config Data.vi",
+  "<vilib>\\Utility\\config.llb\\NI_LVConfig.lvlib",
+  "<vilib>\\Utility\\config.llb\\Open Config Data.vi",
+  "<vilib>\\Utility\\config.llb\\Read Key (String).vi",
+  "<vilib>\\Utility\\config.llb\\Read Key.vi",
+  "<vilib>\\Utility\\error.llb\\Clear Errors.vi",
+  "<vilib>\\Utility\\error.llb\\Error Cluster From Error Code.vi",
+  "<vilib>\\Utility\\file.llb\\Application Directory.vi",
+  "<vilib>\\Utility\\libraryn.llb\\Check if File or Folder Exists.vi",
+  "<vilib>\\Utility\\sysdir.llb\\Get System Directory.vi",
+  "<vilib>\\Utility\\sysdir.llb\\System Directory Type.ctl",
+  "<vilib>\\Wiresmith Technology\\LabVIEW CLI\\CLI Class\\CLI.lvclass",
+  "<vilib>\\Wiresmith Technology\\LabVIEW CLI\\CLI Class\\Exit with Code.vi",
+  "<vilib>\\Wiresmith Technology\\LabVIEW CLI\\CLI Class\\Start CLI Interface.vi",
+  "<vilib>\\addons\\TestStand\\_TSLegacy.llb\\LabVIEW Test - Sequence Context.ctl",
+  "<vilib>\\addons\\TestStand\\_TSUtility.llb\\TestStand - Close Termination Monitor.vi",
+  "<vilib>\\addons\\TestStand\\_TSUtility.llb\\TestStand - Get Termination Monitor Status.vi",
+  "<vilib>\\addons\\TestStand\\_TSUtility.llb\\TestStand - Initialize Termination Monitor.vi",
+  "<vilib>\\dlg_ctls.llb\\Space Constant.vi",
+  "<vilib>\\express\\rvi\\timing\\nirviWait.vi",
+  "<vilib>\\express\\rvi\\timingcommon\\nirviCommon.vi",
+  "<vilib>\\ni\\Simple XML\\Create Tag.vi",
+  "<vilib>\\ni\\Simple XML\\Save Pretty Print.vi",
+  "<vilib>\\ni\\Simple XML\\Simple XML.lvlib",
+  "<vilib>\\ni\\Simple XML\\_polymorphics\\Create Tag - Child with Text.vi",
+  "<vilib>\\xml\\Close Reference(NNMap).vi",
+  "<vilib>\\xml\\Close Reference(Node).vi",
+  "<vilib>\\xml\\Close.vi",
+  "<vilib>\\xml\\Load XML File.vi",
+  "<vilib>\\xml\\Load.vi",
+  "<vilib>\\xml\\NI_XML.lvlib",
+  "<vilib>\\xml\\XPath\\Get All Matched Nodes.vi",
+  "<vilib>\\xml\\XPath\\Get First Matched Node.vi",
+  "C:\\Users\\admin\\Documents\\github\\NIVeristandAdd-ons\\VeriStand-steps-for-TestStand\\Source\\Built\\ProgramFiles_32\\VeriStand Steps for TestStand",
+  "C:\\Users\\admin\\Documents\\github\\NIVeristandAdd-ons\\VeriStand-steps-for-TestStand\\Source\\Built\\documents\\National Instruments\\TestStand 2014 (32-bit)\\Components\\Icons",
+  "C:\\Users\\admin\\Documents\\github\\NIVeristandAdd-ons\\VeriStand-steps-for-TestStand\\Source\\Built\\documents\\National Instruments\\TestStand 2014 (32-bit)\\Components\\TypePalettes",
+  "C:\\Users\\admin\\Documents\\github\\NIVeristandAdd-ons\\VeriStand-steps-for-TestStand\\Source\\Built\\documents\\National Instruments\\TestStand 2014 (64-bit)\\Components\\Icons",
+  "C:\\Users\\admin\\Documents\\github\\NIVeristandAdd-ons\\VeriStand-steps-for-TestStand\\Source\\Built\\documents\\National Instruments\\TestStand 2014 (64-bit)\\Components\\TypePalettes",
+  "C:\\Users\\admin\\Documents\\github\\NIVeristandAdd-ons\\VeriStand-steps-for-TestStand\\Source\\Built\\documents\\National Instruments\\TestStand 2016 (32-bit)\\Components\\Icons",
+  "C:\\Users\\admin\\Documents\\github\\NIVeristandAdd-ons\\VeriStand-steps-for-TestStand\\Source\\Built\\documents\\National Instruments\\TestStand 2016 (32-bit)\\Components\\TypePalettes",
+  "C:\\Users\\admin\\Documents\\github\\NIVeristandAdd-ons\\VeriStand-steps-for-TestStand\\Source\\Built\\documents\\National Instruments\\TestStand 2016 (64-bit)\\Components\\Icons",
+  "C:\\Users\\admin\\Documents\\github\\NIVeristandAdd-ons\\VeriStand-steps-for-TestStand\\Source\\Built\\documents\\National Instruments\\TestStand 2016 (64-bit)\\Components\\TypePalettes",
+  "C:\\Users\\admin\\Documents\\github\\NIVeristandAdd-ons\\VeriStand-steps-for-TestStand\\Source\\Built\\documents\\National Instruments\\TestStand 2017 (32-bit)\\Components\\Icons",
+  "C:\\Users\\admin\\Documents\\github\\NIVeristandAdd-ons\\VeriStand-steps-for-TestStand\\Source\\Built\\documents\\National Instruments\\TestStand 2017 (32-bit)\\Components\\TypePalettes",
+  "C:\\Users\\admin\\Documents\\github\\NIVeristandAdd-ons\\VeriStand-steps-for-TestStand\\Source\\Built\\documents\\National Instruments\\TestStand 2017 (64-bit)\\Components\\Icons",
+  "C:\\Users\\admin\\Documents\\github\\NIVeristandAdd-ons\\VeriStand-steps-for-TestStand\\Source\\Built\\documents\\National Instruments\\TestStand 2017 (64-bit)\\Components\\TypePalettes",
+  "C:\\Users\\admin\\Documents\\github\\NIVeristandAdd-ons\\VeriStand-steps-for-TestStand\\Source\\Source\\CSharp\\AddRemoveGACUtils\\InstallToGAC.exe",
+  "C:\\Users\\admin\\Documents\\github\\NIVeristandAdd-ons\\VeriStand-steps-for-TestStand\\Source\\Source\\CSharp\\AddRemoveGACUtils\\RemoveFromGAC.exe",
+  "C:\\Users\\admin\\Documents\\github\\NIVeristandAdd-ons\\VeriStand-steps-for-TestStand\\Source\\Source\\CSharp\\VeristandStepsAssembly\\OpenWorkspaceDialog\\VeristandSteps.csproj",
+  "C:\\Users\\admin\\Documents\\github\\NIVeristandAdd-ons\\VeriStand-steps-for-TestStand\\Source\\Source\\CustomPaletteFile\\NI_VeristandTypes.ini",
+  "C:\\Users\\admin\\Documents\\github\\NIVeristandAdd-ons\\VeriStand-steps-for-TestStand\\Source\\Source\\CustomPaletteFile\\Veristand_icon_vista.ico",
+  "C:\\Users\\aheim\\Desktop\\test.tdms"
+ ]
+}

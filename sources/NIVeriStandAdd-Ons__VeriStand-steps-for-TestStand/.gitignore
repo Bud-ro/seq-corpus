@@ -1,0 +1,22 @@
+Source/LabVIEW Code/Assembly Redirection/XML Assembly Redirection Project.aliases
+Source/LabVIEW Code/Assembly Redirection/XML Assembly Redirection Project.lvlps
+Source/LabVIEW Code/Assembly Redirection/builds/RedirectRemovePaletteItemsProjectXML/RedirectRemovePaletteItemsProjectXMLApp.aliases
+Source/LabVIEW Code/Assembly Redirection/builds/RedirectTestStandPaletteFile/RedirectTestStandPaletteFileApp.aliases
+Source/LabVIEW Code/Assembly Redirection/builds/RedirectVeriStandsStepsProjectXML/RedirectVeriStandsStepsProjectXML.aliases
+Source/LabVIEW Code/Misc/MiscHelperVIs.aliases
+Source/LabVIEW Code/Misc/MiscHelperVIs.lvlps
+Source/LabVIEW Code/RT Sequence/RTSequenceVIs.aliases
+Source/LabVIEW Code/RT Sequence/RTSequenceVIs.lvlps
+Source/LabVIEW Code/Set Channels/Set Channels.aliases
+Source/LabVIEW Code/Set Channels/Set Channels.lvlps
+Source/LabVIEW Code/TS VS Logger/TS VS Logger.aliases
+Source/LabVIEW Code/TS VS Logger/TS VS Logger.lvlps
+Source/LabVIEW Code/VeriStand Silent Start/SilentVS.aliases
+Source/LabVIEW Code/VeriStand Silent Start/SilentVS.lvlps
+*.cache
+*.manifest
+*.aliases
+*.lvlps
+*.lvlibp
+*.suo
+Tests/Tests
