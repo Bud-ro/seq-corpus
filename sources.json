@@ -270,5 +270,13 @@
   "license": "MIT",
   "files": 579,
   "bytes": 4316957
+ },
+ {
+  "name": "ni__measurement-plugin-service-extension-example",
+  "repo": "ni/measurement-plugin-service-extension-example",
+  "commit": "2d62999804db66787ee7fca0e752c77336ebd628",
+  "license": "MIT",
+  "files": 95,
+  "bytes": 1721945
  }
 ]
