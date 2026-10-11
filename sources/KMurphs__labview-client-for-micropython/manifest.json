@@ -1,0 +1,138 @@
+{
+ "repo": "KMurphs/labview-client-for-micropython",
+ "url": "https://github.com/KMurphs/labview-client-for-micropython",
+ "commit": "73ed86a936033d373e97269290990a6ac748dbb3",
+ "license": "Apache-2.0",
+ "licenseFile": "LICENSE",
+ "fetched": "2026-10-11",
+ "files": [
+  {
+   "path": "Examples/TestStand/Micropython.seq",
+   "bytes": 7980,
+   "sha256": "b89d1bf16d01806f70e1d3a460cdcaa1a07e038984e760ef5b2d5d21e0a9ad78",
+   "via": "extension"
+  },
+  {
+   "path": "MicroPythonClient.lvlib",
+   "bytes": 14975,
+   "sha256": "fa104fdc5fc3545ac8c3764194e0f4e94e2a6e36cc833d8324227b58e2766fc5",
+   "via": "extension"
+  },
+  {
+   "path": "MicroPythonClient/Private/TxRx.vi",
+   "bytes": 25844,
+   "sha256": "c3dca5edbf56ae0b80e96193acad068eed769403def10a97fec3094d2c24adf9",
+   "via": "extension"
+  },
+  {
+   "path": "MicroPythonClient/Public/Close.vi",
+   "bytes": 16973,
+   "sha256": "6672f06ae21aa6add8a76bdab5386bf626684604eb64627326525cc4a8bfd1e8",
+   "via": "extension"
+  },
+  {
+   "path": "MicroPythonClient/Public/Initialize.vi",
+   "bytes": 30670,
+   "sha256": "d751b1511a8d42769b444b3e540aa2f6a5da402540e2649d03dafdcbae2f8485",
+   "via": "extension"
+  },
+  {
+   "path": "MicroPythonClient/Public/SendCommand.vi",
+   "bytes": 37611,
+   "sha256": "9d0714ed8e3bca2ea9aaaecdd385f790de798feab179a0a6b41fea0c3d116345",
+   "via": "extension"
+  },
+  {
+   "path": "MicroPythonClient/Public/UploadScript.vi",
+   "bytes": 78040,
+   "sha256": "1293e2b408268847b1f73fdcda482cf72d2c8fc45fa82dbb240c504a8fe5d811",
+   "via": "extension"
+  },
+  {
+   "path": "MicroPythonClient/Public/sample.script.py",
+   "bytes": 62,
+   "sha256": "d1eb2fa81975a0af9a155119c293788f4d242e6b94e92dda7f2576bcac7d6509",
+   "via": "ref:MicroPythonClient/Public/UploadScript.vi"
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 150,
+   "sha256": "8f7268d22d6bf29ff0f07a2cd256d4de1c13fae0e746b5f8f6527e55fef3b294",
+   "via": "tree"
+  },
+  {
+   "path": "Docs/Images/Close.png",
+   "bytes": 15726,
+   "sha256": "ccd35b36fe88f63705c9bedd016a26eba15ab130c05f2ee8017ffa7996269b97",
+   "via": "tree"
+  },
+  {
+   "path": "Docs/Images/Initialize.png",
+   "bytes": 34302,
+   "sha256": "bfe17a64ab513c6992c8dfa2928d49c41afdd1ef4b5375b06e3bedacffff29a3",
+   "via": "tree"
+  },
+  {
+   "path": "Docs/Images/Putty.png",
+   "bytes": 22516,
+   "sha256": "ff49de85348b86b4639a04b6b4d156f17dddc1dcb3cf1b31664c7d3b698af2b1",
+   "via": "tree"
+  },
+  {
+   "path": "Docs/Images/SendCommand.png",
+   "bytes": 53326,
+   "sha256": "42e67b8a467946274f6d29329de6a0b6b77e306be14f999ec1549b5c661efd6c",
+   "via": "tree"
+  },
+  {
+   "path": "Docs/Images/TestStand Sample.png",
+   "bytes": 60766,
+   "sha256": "79483c248f6e56dcecbfef661d74edf7cd2c7a0cbe999acc2d5946be8df5dc2c",
+   "via": "tree"
+  },
+  {
+   "path": "Docs/Images/TxRx.png",
+   "bytes": 113450,
+   "sha256": "6508ed4800f457b55b13aa4f1aabd0f37cdca873d0472323bd08f0f6cfba19fd",
+   "via": "tree"
+  },
+  {
+   "path": "Docs/Images/UploadScript.png",
+   "bytes": 171301,
+   "sha256": "aba3e907a05d252084442741c3a45b0817155f412db274b9ed3301439bfcfcd7",
+   "via": "tree"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 11357,
+   "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+   "via": "tree"
+  },
+  {
+   "path": "MicroPythonClient/Public/esp32.sample.script.py",
+   "bytes": 390,
+   "sha256": "6a27e3ee6d20aade1bcd7e85701433876188f2bd4d283d6fa0e286fc5dd1312c",
+   "via": "tree"
+  },
+  {
+   "path": "README.md",
+   "bytes": 6606,
+   "sha256": "4a5a94d03bccfa3030c025c1b885c20f6f0a34ef2ffca39800aaf41445845075",
+   "via": "tree"
+  }
+ ],
+ "skipped": [],
+ "external": [
+  "<helpdir>\\glang.chm",
+  "<resource>\\visarc",
+  "<vilib>\\Instr\\_visa.llb\\VISA Configure Serial Port",
+  "<vilib>\\Instr\\_visa.llb\\VISA Configure Serial Port (Instr).vi",
+  "<vilib>\\Utility\\error.llb\\Clear Errors.vi",
+  "<vilib>\\Utility\\libraryn.llb\\Check if File or Folder Exists.vi",
+  "<vilib>\\express\\express input\\FileDialogBlock.llb\\File Dialog Source.vi",
+  "<vilib>\\express\\express input\\FileDialogBlock.llb\\subFile Dialog.vi",
+  "<vilib>\\express\\express input\\FileDialogConfig.llb\\Configure File Dialog.vi",
+  "<vilib>\\regexp\\Match Regular Expression.xnode",
+  "C:\\Tester\\d-level-common\\hardware-abstraction-layer\\Generic\\SerialTxRx\\SerialTxRx\\Public\\TxRx.vim"
+ ]
+}
