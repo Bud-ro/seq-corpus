@@ -126,5 +126,13 @@
   "license": "MIT",
   "files": 135,
   "bytes": 4639760
+ },
+ {
+  "name": "NI-Measurement-Plug-Ins__digital-microphone",
+  "repo": "NI-Measurement-Plug-Ins/digital-microphone",
+  "commit": "bd2adb82877dcb9a04b62cc748573f7d3dc04247",
+  "license": "MIT",
+  "files": 194,
+  "bytes": 6459033
  }
 ]

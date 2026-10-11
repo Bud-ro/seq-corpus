@@ -1,0 +1,1437 @@
+{
+ "repo": "NI-Measurement-Plug-Ins/digital-microphone",
+ "url": "https://github.com/NI-Measurement-Plug-Ins/digital-microphone",
+ "commit": "bd2adb82877dcb9a04b62cc748573f7d3dc04247",
+ "license": "MIT",
+ "licenseFile": "LICENSE",
+ "fetched": "2026-10-11",
+ "files": [
+  {
+   "path": "autobuild/Autobuild Main.vi",
+   "bytes": 13526,
+   "sha256": "d0b6802c71f32b51f977339e5049c10723dee183fdc5f542817c41804e925678",
+   "via": "extension"
+  },
+  {
+   "path": "autobuild/Autobuild.lvproj",
+   "bytes": 6147,
+   "sha256": "dc7c45315ba5f7363d078a4e158dfa4c41e1259ba451f39ec6ea457ca9277383",
+   "via": "extension"
+  },
+  {
+   "path": "autobuild/subVIs/Build All of Type.vi",
+   "bytes": 12517,
+   "sha256": "a575c7ea47bff7a430251f4abca08ef098f689903ee503efafd20e533f989cb9",
+   "via": "extension"
+  },
+  {
+   "path": "autobuild/subVIs/Build Spec-Type.vi",
+   "bytes": 13411,
+   "sha256": "ce9c89dfd6dc858156b16c32ebd0065b5d398f2914f1bd5cdce1c63035e5dd75",
+   "via": "extension"
+  },
+  {
+   "path": "autobuild/subVIs/Delete CHM Files.vi",
+   "bytes": 10868,
+   "sha256": "9015aa5e619af235acab61026fb8770e936361aa5b89c61dbe2ff940c90d0954",
+   "via": "extension"
+  },
+  {
+   "path": "autobuild/subVIs/Package Builder API/Build.vi",
+   "bytes": 16745,
+   "sha256": "e42bb594c4ece295fc1d68d69aa62734c0e3f991fd5c5cddc4498ad92cb72631",
+   "via": "extension"
+  },
+  {
+   "path": "autobuild/subVIs/Package Builder API/Call NIPB CLI.vi",
+   "bytes": 20141,
+   "sha256": "39e3c17493a650ba2ecbc7707f77b6fbec06fb96589e66df5cb1e42ba8bb1ec5",
+   "via": "extension"
+  },
+  {
+   "path": "autobuild/subVIs/Package Builder API/Clean.vi",
+   "bytes": 15265,
+   "sha256": "17d477ef41f9a59776b5b8b6b7041e17111ad98bb627f65a785706f8940963c4",
+   "via": "extension"
+  },
+  {
+   "path": "autobuild/subVIs/Package Builder API/NI Package Builder API.lvlib",
+   "bytes": 26520,
+   "sha256": "307f6101016a1eede3793c5f94ed77017ec507ec2058fde22a8376f676fc07e2",
+   "via": "extension"
+  },
+  {
+   "path": "autobuild/subVIs/Package Builder API/build type.ctl",
+   "bytes": 8411,
+   "sha256": "fd10a1a7554454a75cd70cecc8fca14ef095556172390cf70c720cdde6034f59",
+   "via": "extension"
+  },
+  {
+   "path": "demo/TestStand/Digital-Mic-Validation.seq",
+   "bytes": 19508,
+   "sha256": "66838e65934ae82e070e6795cf170b47c90e39eb09e3a9b40d91912715d2a3ce",
+   "via": "extension"
+  },
+  {
+   "path": "source/calibrate acoustic output/Calibrate Acoustic Output Level UI/Calibrate Acoustic Output Level UI.lvlib",
+   "bytes": 1264,
+   "sha256": "1dec40ab517ffe859c56743758811644ef3995b36634ba46c3da972b67a22c1c",
+   "via": "extension"
+  },
+  {
+   "path": "source/calibrate acoustic output/Calibrate Acoustic Output Level UI/Measurement UI.vi",
+   "bytes": 35142,
+   "sha256": "9f16aaca44f4f1ee24d81285c87c71f59bc429d652d498f0aae28d777c92f0c6",
+   "via": "extension"
+  },
+  {
+   "path": "source/calibrate acoustic output/Calibrate Acoustic Output Level/Advanced/Build Assets/Post-Build Action.vi",
+   "bytes": 10421,
+   "sha256": "757fd30ded4d461e20b635c8f4dc27be4e8a16894930bfa339b9324f4ec50d27",
+   "via": "extension"
+  },
+  {
+   "path": "source/calibrate acoustic output/Calibrate Acoustic Output Level/Advanced/Get Plugin Paths.vi",
+   "bytes": 19948,
+   "sha256": "73d486d27c0684677524ccf0d9302531f255942b92028547370d33a094a69d54",
+   "via": "extension"
+  },
+  {
+   "path": "source/calibrate acoustic output/Calibrate Acoustic Output Level/Advanced/Measurement Plugin.lvclass",
+   "bytes": 20417,
+   "sha256": "98de924fc6c5c623a421c527874dd67b02d7d2f95a6d0cc72053273fa3f0b024",
+   "via": "extension"
+  },
+  {
+   "path": "source/calibrate acoustic output/Calibrate Acoustic Output Level/Advanced/Pack for gRPC.vi",
+   "bytes": 75033,
+   "sha256": "d91d66a0f472eea49d25296389e126c2787c7de9ab40715f897b6ad6c7ddb705",
+   "via": "extension"
+  },
+  {
+   "path": "source/calibrate acoustic output/Calibrate Acoustic Output Level/Advanced/Unpack for gRPC.vi",
+   "bytes": 74603,
+   "sha256": "75db9e714bd32701b90aa66a8cf51108561e9b82c4d6b488f8e18a9dd0ff2b52",
+   "via": "extension"
+  },
+  {
+   "path": "source/calibrate acoustic output/Calibrate Acoustic Output Level/Calibrate Acoustic Output Level.lvlib",
+   "bytes": 2067,
+   "sha256": "c6594d11dc3ebceff0c2a28a4418d2968be89d47689fb700b0839d107dad6754",
+   "via": "extension"
+  },
+  {
+   "path": "source/calibrate acoustic output/Calibrate Acoustic Output Level/Get Service Descriptor.vi",
+   "bytes": 21290,
+   "sha256": "bac51408ea4538c2536dc4bc2e68facaba135f73f8bf1509c10eb1cb77c10f8b",
+   "via": "extension"
+  },
+  {
+   "path": "source/calibrate acoustic output/Calibrate Acoustic Output Level/Get Type Specializations.vi",
+   "bytes": 19544,
+   "sha256": "9121976f792999abce0ed1822e0557885693c57c4aaeebaae748e6026efe0e9c",
+   "via": "extension"
+  },
+  {
+   "path": "source/calibrate acoustic output/Calibrate Acoustic Output Level/Get UI Details.vi",
+   "bytes": 19610,
+   "sha256": "7fc871591887f34d9a7b3fcd44397448d36faa70cc022753ec8b6304f08f4863",
+   "via": "extension"
+  },
+  {
+   "path": "source/calibrate acoustic output/Calibrate Acoustic Output Level/Measurement Configuration.ctl",
+   "bytes": 12182,
+   "sha256": "bd5ab7d54b53fe97240d1eb43cf7ee639301e68c778992add92ddb1a22a77c53",
+   "via": "extension"
+  },
+  {
+   "path": "source/calibrate acoustic output/Calibrate Acoustic Output Level/Measurement Logic.vi",
+   "bytes": 119961,
+   "sha256": "8abfaeb306858947cb81b3a48bef981c95d9dc207bd788c031e2ae15da0a77de",
+   "via": "extension"
+  },
+  {
+   "path": "source/calibrate acoustic output/Calibrate Acoustic Output Level/Measurement Results.ctl",
+   "bytes": 12460,
+   "sha256": "69798eee945e3869b96b39d552a0a09d25db21ee62c7f87ba30e110c77029079",
+   "via": "extension"
+  },
+  {
+   "path": "source/calibrate acoustic output/Calibrate Acoustic Output Level/Run Service.vi",
+   "bytes": 13831,
+   "sha256": "28cd5604ba5cce2679559aaeedeb1e4e1b884f383d4dcbe32459e649f1735e6f",
+   "via": "extension"
+  },
+  {
+   "path": "source/calibrate acoustic output/Calibrate Acoustic Output.lvproj",
+   "bytes": 64622,
+   "sha256": "4905a851e96993e47f001ee0d4227b20528c1353c0384f252284a4481ca95e66",
+   "via": "extension"
+  },
+  {
+   "path": "source/frequency response/Frequency Response UI/Frequency Response UI.lvlib",
+   "bytes": 1412,
+   "sha256": "183f69dbab968069ba967001f96969e76c2e313c183380079831e8bf3844f98d",
+   "via": "extension"
+  },
+  {
+   "path": "source/frequency response/Frequency Response UI/Measurement UI.vi",
+   "bytes": 78738,
+   "sha256": "811170831afdc932039e21b61d2dc03db7e50d412ca8676cf5d8a3e07c666bbe",
+   "via": "extension"
+  },
+  {
+   "path": "source/frequency response/Frequency Response UI/UI State.ctl",
+   "bytes": 10645,
+   "sha256": "c5b5f0c31ad0b1f9cfc32a474186fbf7c8fd0cf6ca2d540bbb791d64d9d5896e",
+   "via": "extension"
+  },
+  {
+   "path": "source/frequency response/Frequency Response UI/Y axis data selection.ctl",
+   "bytes": 8550,
+   "sha256": "103f3aa8f5175660076a142e6566e590d79a3361db9728d439ed9898a1b06a0d",
+   "via": "extension"
+  },
+  {
+   "path": "source/frequency response/Frequency Response.lvproj",
+   "bytes": 148666,
+   "sha256": "9398bc4de2235dc3a24440997344df0fd804c1c0af895c06f0aee6c513e373d7",
+   "via": "extension"
+  },
+  {
+   "path": "source/frequency response/Frequency Response/Advanced/Build Assets/Post-Build Action.vi",
+   "bytes": 10345,
+   "sha256": "36f6dd467372922f99e4eb8926cdbd596b232f663a74181ad9cac2448ca809e1",
+   "via": "extension"
+  },
+  {
+   "path": "source/frequency response/Frequency Response/Advanced/Get Plugin Paths.vi",
+   "bytes": 19844,
+   "sha256": "5817f9dab66e5a170846ec1ffc69319f3f3505dc255b40c1f4638997be01d406",
+   "via": "extension"
+  },
+  {
+   "path": "source/frequency response/Frequency Response/Advanced/Measurement Plugin.lvclass",
+   "bytes": 20206,
+   "sha256": "9c97ba46bb7a289a42eba7034221045bc65b59531ed943f1899f8d106096ca4b",
+   "via": "extension"
+  },
+  {
+   "path": "source/frequency response/Frequency Response/Advanced/Pack for gRPC.vi",
+   "bytes": 78713,
+   "sha256": "da670720571b281f3940ddf90f597429b085266e50dccdd85460ac8b355d44e9",
+   "via": "extension"
+  },
+  {
+   "path": "source/frequency response/Frequency Response/Advanced/Unpack for gRPC.vi",
+   "bytes": 79459,
+   "sha256": "45fc081e9fcf3ebb4f818ca0d8e09b8d437fe35a870ac174f37a9d1320399540",
+   "via": "extension"
+  },
+  {
+   "path": "source/frequency response/Frequency Response/Frequency Response.lvlib",
+   "bytes": 2067,
+   "sha256": "c6594d11dc3ebceff0c2a28a4418d2968be89d47689fb700b0839d107dad6754",
+   "via": "extension"
+  },
+  {
+   "path": "source/frequency response/Frequency Response/Get Service Descriptor.vi",
+   "bytes": 21258,
+   "sha256": "b1cf655f459ce507778724653f2dccb843ba625c89d8f827e2fb05debf7baf24",
+   "via": "extension"
+  },
+  {
+   "path": "source/frequency response/Frequency Response/Get Type Specializations.vi",
+   "bytes": 19516,
+   "sha256": "4115fc48ed38497deb8afdf8a69b622e3425737c4fcd2b7d7faad0bc05fa8228",
+   "via": "extension"
+  },
+  {
+   "path": "source/frequency response/Frequency Response/Get UI Details.vi",
+   "bytes": 19634,
+   "sha256": "3298a4d16bea83b3d05840303dc45f1a884f0b03c2d49b8e2cc72a718364daab",
+   "via": "extension"
+  },
+  {
+   "path": "source/frequency response/Frequency Response/Measurement Configuration.ctl",
+   "bytes": 14102,
+   "sha256": "ac9773485bcd957851bb878f882456007fb1b436465ae6086ec544588a17897b",
+   "via": "extension"
+  },
+  {
+   "path": "source/frequency response/Frequency Response/Measurement Logic.vi",
+   "bytes": 890301,
+   "sha256": "8bd2032432378f01e5a624f402503776487a2331635cabe14bde4eef41c4234b",
+   "via": "extension"
+  },
+  {
+   "path": "source/frequency response/Frequency Response/Measurement Results.ctl",
+   "bytes": 13416,
+   "sha256": "acfb21c799bad921ffb038467396c90bc94dcc00498979fed5a48ba861d5d448",
+   "via": "extension"
+  },
+  {
+   "path": "source/frequency response/Frequency Response/Run Service.vi",
+   "bytes": 13751,
+   "sha256": "d4216717182d7ed3f65ff7f96ad1db86674073f7ae5bf38b68babb578203157c",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/Add Timestamp to Waveforms.vi",
+   "bytes": 23730,
+   "sha256": "fb7863dbf4fc09b3283fc50cb4ba619e824333b3a9c526bcc85dfeb13502dda5",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/Apply EQ Correction.vi",
+   "bytes": 13091,
+   "sha256": "e14684eeabd71c5a7f3920cca419ac9bd595cb6625b2ca73ce0132507e33ac4d",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/Array to Spectra (N Ch).vi",
+   "bytes": 15203,
+   "sha256": "65ab222ae80022c7dba6102f405eaa56170b588996d858a1c666c5d9e2ead5bb",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/Array to Wfm (N Ch).vi",
+   "bytes": 19115,
+   "sha256": "7c7cf34e67c021e2d3f35e57bb13f4fa538af8d7273728b4a2051ca8622a7389",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/Array to XY (N Ch).vi",
+   "bytes": 15342,
+   "sha256": "a4858f30922ce5bba946078098094590ec52ae59836e1096e010e349db6791e0",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/Calculate Microphone Sensitivity.vi",
+   "bytes": 11284,
+   "sha256": "73e7d45e4dcc0054342db7206f4d2f9946f90e99b5ccefeccc22432fc6791233",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/Check for Target Crossing.vi",
+   "bytes": 8049,
+   "sha256": "fc4cc5290e353956e125b6d198cad2f6fbe1bd1f977e2eeef64367fb545dbedd",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/Convert Pa to dBSPL.vi",
+   "bytes": 8039,
+   "sha256": "ffa5d51946173c2dfb278ed1c4607dacddb513be0c060fcc05ba8e44e461ad4c",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/Convert dBSPL to Pa.vi",
+   "bytes": 8395,
+   "sha256": "277c80ac0ecc57d2a09fa194af1c6032bdc1ca5359fa49ef939baf15f660db52",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/Make Waveforms Same Length.vi",
+   "bytes": 23078,
+   "sha256": "167868876a2e3b5f03a18cf01bc7f58d47578ba5e84639b5700fe8fa907c75eb",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/Read EQ data.vi",
+   "bytes": 18976,
+   "sha256": "a413e61967b8aee916a2fe30435fec535fc82b11863317ddba9dd098435ce90c",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/Stop Variable Action.ctl",
+   "bytes": 3737,
+   "sha256": "93ce001bec8eac80e74f03e91b2da5d01e36193847cc22ec3d478d1fe0008d48",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/Stop Variable.vi",
+   "bytes": 13469,
+   "sha256": "a1dcd80574f118d901f31076d6d8efca5f185637bc7167f96a19e518d8ff9993",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/Write EQ data.vi",
+   "bytes": 18833,
+   "sha256": "64e2d3379e451f504f1a795008fc5e9eec81fbf15fd1d59d815c25c4a39d25af",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/combined digital api/Clear.vi",
+   "bytes": 20953,
+   "sha256": "f2abd54da1a5cee355898acf8a00e4b2536ef81b17d6048ce5a79fb1c868e75b",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/combined digital api/Combo Digital Audio API.lvlib",
+   "bytes": 25967,
+   "sha256": "d6a4d464e3c7b0d4deaebfc5f69fdca92fa867ea4c0a17a2a605410f1e0de504",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/combined digital api/Configure from File.vi",
+   "bytes": 53039,
+   "sha256": "e800e69887eb643954a9e3009a36e91b2581de9086f5102e41fe0d02a68b08fe",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/combined digital api/Read Waveform Data.vi",
+   "bytes": 27782,
+   "sha256": "5e7c5a7406bbd7ffd99184dbfde13434cf06f5c95580071cfe24b20a603d43b0",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/combined digital api/task.ctl",
+   "bytes": 9397,
+   "sha256": "822da308da96b47e216f8d01d55f71f0d27e84d2d6373cfef848dceb6be25892",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/configuration dialogs/Config Dialog.lvlib",
+   "bytes": 14761,
+   "sha256": "5da1bc92d19cd2c9286c9746dff3fd509a1c612cf41fc413bc91c33a9e171830",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/configuration dialogs/Digital Serial Acq Cfg Popup.vi",
+   "bytes": 83232,
+   "sha256": "5d42d95d548e35dc8d9a25fd1954d20b36c31ae3a461ec8531fa1823060a18f0",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/configuration dialogs/Get Audio Settings File Path.vi",
+   "bytes": 19800,
+   "sha256": "fd6b199e2f5a0cde57da8f5c38ba3bb122136afc186b28c5897ea5352cb5c96b",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/configuration dialogs/Get Audio Settings.vi",
+   "bytes": 23894,
+   "sha256": "8109ba22d7255b261ecffc83ebac47e2f78a552505207f750157d57cc408e0c4",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/configuration dialogs/Get Display Name for Cfg file.vi",
+   "bytes": 14549,
+   "sha256": "29cb07f563aea6f8a7b2ede91c00d0429ee81bddf3c118421dd00f1626bc285b",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/configuration dialogs/PDM Acq Cfg Popup.vi",
+   "bytes": 68505,
+   "sha256": "e7cfc1a861f9a5e25b92cb41e2509ae0ff356e0e5f474e9124736d8d4308bcc9",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/configuration dialogs/Popup Template.vi",
+   "bytes": 17026,
+   "sha256": "b5a344594a5c4203b1484b87f57ba469133600b99f2254bb5d8fc664dc1a0f87",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/configuration dialogs/Set Input Configuration File Path.vi",
+   "bytes": 27513,
+   "sha256": "3f78a44b90c8631839eaeae7439d7af7df2b15e86211d3ae834b340cee373150",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/configuration dialogs/audio settings.ctl",
+   "bytes": 8619,
+   "sha256": "c4676f7a69b05abb90f19b5f1839fa41746de56fc37fd65c244756a5881120c7",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/controls/PDM/PDM input settings.ctl",
+   "bytes": 6195,
+   "sha256": "0abaef44180d5059b2b4e433be0f089bdd312a2262d26fedf3bc2015f92fb979",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/controls/PDM/PDM input settings_json.ctl",
+   "bytes": 4512,
+   "sha256": "11c305473c1e80a76f45de3b034a232ccd4400c3a66a4e9d594ed01f55ea6c65",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/controls/bit clock direction.ctl",
+   "bytes": 4360,
+   "sha256": "27b213a214619288e5ee43eaa8da9dfd4bc814141afa3221ccd42d64ec642cf0",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/controls/data justification.ctl",
+   "bytes": 4403,
+   "sha256": "3597eb406cadc9a21520050ea4ac6fd855c63318ffc195b54df94ac4bcdec6ef",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/controls/digital edge.ctl",
+   "bytes": 4373,
+   "sha256": "593c0b73c2a3937a2bcb2e8b47706350fd7be49721adafd629c1615a513ca2cc",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/controls/digital serial audio/digital serial input settings.ctl",
+   "bytes": 8758,
+   "sha256": "a7e493f5ac2f8f034068179dadce64638479bc2bd5ea7e2cae3cf53cd0ae64bb",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/controls/digital serial audio/digital serial input settings_json.ctl",
+   "bytes": 13903,
+   "sha256": "7e8ff33809b1997189ff45f113beac9bfa78bd79111c00b5bb625250b1fab5f0",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/controls/endianness.ctl",
+   "bytes": 4367,
+   "sha256": "175d13c68a64eb47115a53a235032837a083a392736a6e94ed93aa2e89ab3e93",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/controls/input type.ctl",
+   "bytes": 4347,
+   "sha256": "e223c09e4753ab1bf0562228d8c57ca8daa4876b90453078f931c84a3d598bb6",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/controls/logic level.ctl",
+   "bytes": 4304,
+   "sha256": "32184c61c7263cd7d8a4d75137a42a60d56450dc04bfb3ebe81d4c62b03bc09c",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/controls/master clock source.ctl",
+   "bytes": 4356,
+   "sha256": "a7ebd27d0bec264a3ef5eea290ed68818fe4797b084a3678fbb131ab74d71f36",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/controls/sweep profile.ctl",
+   "bytes": 4386,
+   "sha256": "56b442d8b573cbdd817ca3070eaf7852e245e08ebc9476225e176265d7004880",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/input configuration file/Add Input Type to JSON.vi",
+   "bytes": 15414,
+   "sha256": "9d369f554c90a520ce2dc854c86f5caed83415721a435c90db8fa8056169971c",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/input configuration file/PDM/Convert From JSON Comp Format.vi",
+   "bytes": 24477,
+   "sha256": "168b68aa7955d40b58c26640198547038b9efbf01adda9c8b167b75dd9f6ac09",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/input configuration file/PDM/Convert To JSON Comp Format.vi",
+   "bytes": 21679,
+   "sha256": "62870c4a554298d77c34f9422b79f6756375ea2021ae21e9e22c17e0f5f3a023",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/input configuration file/PDM/PDM input cfg file.lvlib",
+   "bytes": 37275,
+   "sha256": "15cb029cdbb8be6cb60538f3c567ae050562bfed8e5af6167cce3c23eeac6e86",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/input configuration file/PDM/Read From String.vi",
+   "bytes": 28680,
+   "sha256": "b78cfa969cb3b440432e91e7c6eead0c5038f839b1e4dbb97e22873240117002",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/input configuration file/Read From File.vi",
+   "bytes": 28922,
+   "sha256": "7fb81e03da986ab61e8e5aff5421280e511064ddde822d0e908ca082d1e26742",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/input configuration file/Save To File (Digital Serial).vi",
+   "bytes": 34045,
+   "sha256": "fa45365a7ec9d178685e9cc498f4e5dc225e07207bf75551db12e762f145ab35",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/input configuration file/Save To File (PDM).vi",
+   "bytes": 32266,
+   "sha256": "4d590459d69b154341bb72144b7018982e2add95c782228bbe274cba6eab9e37",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/input configuration file/digital serial/Convert From JSON Comp Format.vi",
+   "bytes": 30697,
+   "sha256": "ff15321cc9ef87fbca3a691f823af3b8cbf04fe1dbdff395e0a1365a2df0222e",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/input configuration file/digital serial/Convert To JSON Comp Format.vi",
+   "bytes": 26595,
+   "sha256": "681c874b6a18aab4ab991b2ba27be30acdfbc851bb8b684e70e96592bccfe7b2",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/input configuration file/digital serial/Convert to DAAG Frame Sync Clock config.vi",
+   "bytes": 22243,
+   "sha256": "67ecd84150b3e25caeb84e98a4d8d8027fae0fa29247f7b1febf00b84607e577",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/input configuration file/digital serial/Convert to DAAG PCM data config.vi",
+   "bytes": 22935,
+   "sha256": "9051e72d8b136601def851045da600d3873cdc812238d95ce5a56085c5ef57a7",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/input configuration file/digital serial/Read From String.vi",
+   "bytes": 31076,
+   "sha256": "b8b4765eab470c41fce009dcf917742940b18d862e5c8c22a931ff662f251836",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/input configuration file/digital serial/digital serial input cfg file.lvlib",
+   "bytes": 25547,
+   "sha256": "53550c1e797670df01a47c7dfb6b9bab2e1500dda70262199efbe135384e0cd1",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/input configuration file/input cfg file.lvlib",
+   "bytes": 25409,
+   "sha256": "2aabbe7ff00cbb03c4a2ce20dcd07de6849c2f2065ea7e103fc095aed7ca596f",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/measurements/Audio Filtering (Time Domain).vi",
+   "bytes": 35057,
+   "sha256": "70d9fd6227ca64c1ddd2938ade26384e0a6523fe32eb7f907fb40f77e7b7757e",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/measurements/Convert Units - Ratios.vi",
+   "bytes": 9906,
+   "sha256": "6a0ff50926f3c45d2014511835e2b6fe76fdf11b321b4e5b99571198ebdcb8e9",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/measurements/Frequency Response Reference to Frequency.vi",
+   "bytes": 19325,
+   "sha256": "0055638286b84c6099021daea93599a3bebc75c287a9ff22c23ac69262436f8c",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/measurements/Single Tone Microphone Measurements (N Ch).vi",
+   "bytes": 47846,
+   "sha256": "38aec34efb311be51e175475d731459176a1724b25b1032d68fdc708f4cb2250",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/measurements/controls/audio filter settings.ctl",
+   "bytes": 5730,
+   "sha256": "c69f13701c34772a991aac2023ad3b2c2d318be5ebc675ce5dda6229137038f7",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/measurements/controls/highpass filter.ctl",
+   "bytes": 3684,
+   "sha256": "7fa9495b7bfd3bfabe981f8032d47ce34ac1a17fd8e641b171e2acb49c7657e5",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/measurements/controls/lowpass filter.ctl",
+   "bytes": 3723,
+   "sha256": "844d864a6b8ed23c02c8364d9667ef3de5f53a4b508afd68ec761d69a492da87",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/measurements/controls/measurement units.ctl",
+   "bytes": 9022,
+   "sha256": "7658442df6bfcb6451ccc5360524104c05735dcd325a7bda3948007f176b05eb",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/measurements/controls/single tone microphone measurement settings.ctl",
+   "bytes": 5012,
+   "sha256": "92bc2ce15dad1c27f5262aafff911042f5c78eed18c486146f10d070b8c7a262",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/measurements/controls/single tone microphone measurements.ctl",
+   "bytes": 5932,
+   "sha256": "1c22b3f44448f12103c51a3c143b56a311949817f9d3bcaae2632823c7a031fe",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/measurements/controls/units settings - mic.ctl",
+   "bytes": 9901,
+   "sha256": "40ac345490b53abf87adfa9dc55e13be3fc2e175c4e59d10ed0e0052968bb4f8",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/measurements/controls/weighting filter.ctl",
+   "bytes": 3717,
+   "sha256": "cbdcf9228ae6f32bfa4a413f34aa16c739ae45e65bba2b871478989172223e13",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/measurements/sound and vibration/Align Waveforms by Leading Sync Pulse.vi",
+   "bytes": 36637,
+   "sha256": "d6d5e05c8e0ce46f1cd90e85b9d8cc68b61e9f826b99e54a2ae34d94ba655d14",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/measurements/sound and vibration/Measure Delay for Active and Idle Channels.vi",
+   "bytes": 30798,
+   "sha256": "ce9509e1c9a92db67009d50033eab16fc1617a156b842113ba5f6626d87732da",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/measurements/sound and vibration/Prepare Acquired Waveforms for Parsing.vi",
+   "bytes": 37678,
+   "sha256": "bca8495184206b380a410e92c6655527cec930fbf4e086e871feb23feb704d94",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/task conversion/DAAG task conversion.lvlib",
+   "bytes": 1603,
+   "sha256": "6bf1ff616bac74657ee2846002f84bd4460b92e6a8b24ee4fc2ee3d9a243969e",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/task conversion/From Input Task.vi",
+   "bytes": 7999,
+   "sha256": "6b24a259bced1ea88b278605734678207f93188723d4324f6cd72f83e6ca1a14",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/task conversion/From PCM task.vi",
+   "bytes": 8825,
+   "sha256": "14847baa0a5e8d0869ab5c8069e95c992d8bac00d52dce50763b5772bc91cc14",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/task conversion/From PDM task.vi",
+   "bytes": 8341,
+   "sha256": "68a5e361ddfa73fda19f609e2eef95ae0895806c38371ff3bc0778eb8eed6de3",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/task conversion/To Input Task.vi",
+   "bytes": 7985,
+   "sha256": "563bec92d97ec710b3389698804dcdc9ff54c166e896447a6aaa042fab007979",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/task conversion/To PCM task.vi",
+   "bytes": 10023,
+   "sha256": "df69dc185d8cc2d437af7fef7919bc7a491067738e7205f6a381dbe45a0820a8",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/task conversion/To PDM task.vi",
+   "bytes": 8787,
+   "sha256": "ee6f7a444df761ab93f996e2a038e27452f8cbde74ab4b67e01232869dd73184",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/ui/Autosize Columns (Table).vi",
+   "bytes": 40208,
+   "sha256": "aa6d0275658ed81f6f6ab1dd8854098ef86af0778e86f02aec37a7b75ac0be79",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/ui/Check if Click in Graph Legend.vi",
+   "bytes": 19498,
+   "sha256": "60f09d38a7eb42a3dca022956a15239e1ead31737b042d4e0bcf16322a89529d",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/ui/Position Graph Legend Button.vi",
+   "bytes": 22132,
+   "sha256": "499d829eede8bc68db8d54116df468a683cad016b9c5491843fad9b29f8a26cf",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/ui/Set Visible Plot.vi",
+   "bytes": 21680,
+   "sha256": "17bc446ebc873ea4b03dfe2e571ddc9bfa438788bf67b387278f8f5af442b450",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/ui/Show Hide Plot Legend.vi",
+   "bytes": 18877,
+   "sha256": "63e97cbf96bd6bd9aaab7cc50f79546d8e61af6f4873790a769e34b0ecdc25a4",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/ui/UI Helpers.lvlib",
+   "bytes": 14456,
+   "sha256": "1973344d96d8bd25bbc3a9e0a23585caab19a26b974183f1e75bbaa7b7992e79",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/ui/controls/add.ctl",
+   "bytes": 4848,
+   "sha256": "37140d1b5efae213dac741e233399bcb4b3b700381af4960df52ddd3f6aa3a48",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/ui/controls/down.ctl",
+   "bytes": 5133,
+   "sha256": "6b19ae8c6f317349ca6b224b45b49f4f7e17cb90e162819d88e70aa6b409dd82",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/ui/controls/error.ctl",
+   "bytes": 4978,
+   "sha256": "7085daa92f713682d76b742abba96cf6c63354a302173790fe592c39e7291d0a",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/ui/controls/gear.ctl",
+   "bytes": 5553,
+   "sha256": "85d5083dc1b78110d2fb24bd486e2248ac7011eec85d3651b2516c3ff3bd42a5",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/ui/controls/info.ctl",
+   "bytes": 5405,
+   "sha256": "f4384345cee9a47a01198eb23cc7aad48836ffd38ea12cb2c5c0168cb91671c1",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/ui/controls/subtract.ctl",
+   "bytes": 4809,
+   "sha256": "93bdb1f45c52bbeb1f7533d7820f23234557b89ac597e92bf99f92394df55dc6",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/ui/controls/three dots.ctl",
+   "bytes": 5595,
+   "sha256": "75d5bd212ecf0261b942c82ffef0bd715a1f0c83d778a9daf2f151c95d9a9173",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/ui/controls/up.ctl",
+   "bytes": 5111,
+   "sha256": "071169c9b8f95d956a1ba9130c5da824c2a7da566654312d7bad336dbe955cc8",
+   "via": "extension"
+  },
+  {
+   "path": "source/shared/ui/controls/view.ctl",
+   "bytes": 13173,
+   "sha256": "f3c51c6596d274ff715cce8b3b4bb778c264fec557ea9847ddb9dcacbbe3aef9",
+   "via": "extension"
+  },
+  {
+   "path": "source/single tone/Single Tone - Digital Mic UI/Measurement UI.vi",
+   "bytes": 121098,
+   "sha256": "db56ca39e872f959aa58a5b3c102bec3ad2e293ec609cc2515055bca84fa240a",
+   "via": "extension"
+  },
+  {
+   "path": "source/single tone/Single Tone - Digital Mic UI/Single Tone - Digital Mic UI.lvlib",
+   "bytes": 1325,
+   "sha256": "0efb04bb3f584b6e1ab09f6f589241ed27bde3cdd10630801d0573d4436fefa6",
+   "via": "extension"
+  },
+  {
+   "path": "source/single tone/Single Tone - Digital Mic UI/UI State.ctl",
+   "bytes": 11961,
+   "sha256": "879c15cd4a6a2682073bb5cb811200f868cb2bb3a3389eae9b3d874a406ff378",
+   "via": "extension"
+  },
+  {
+   "path": "source/single tone/Single Tone - Digital Mic/Advanced/Build Assets/Post-Build Action.vi",
+   "bytes": 10377,
+   "sha256": "8d16fd168bda62f4af15c50fb56ad314061e212c66d7ab17b7711e411e2a6abf",
+   "via": "extension"
+  },
+  {
+   "path": "source/single tone/Single Tone - Digital Mic/Advanced/Get Plugin Paths.vi",
+   "bytes": 19908,
+   "sha256": "8479ffb85003ad36fabd402a00e4ae1d615104901c00d3683c001a39a636f01c",
+   "via": "extension"
+  },
+  {
+   "path": "source/single tone/Single Tone - Digital Mic/Advanced/Measurement Plugin.lvclass",
+   "bytes": 20524,
+   "sha256": "c567f25b4d6da70073ff395295e36129cc55d0c1f951694bf7d70f6cd10a8727",
+   "via": "extension"
+  },
+  {
+   "path": "source/single tone/Single Tone - Digital Mic/Advanced/Pack for gRPC.vi",
+   "bytes": 82865,
+   "sha256": "83bef93ad64a4e8dd8f5ccf17a1255297dd8a749d4446566859571d95d5651f6",
+   "via": "extension"
+  },
+  {
+   "path": "source/single tone/Single Tone - Digital Mic/Advanced/Unpack for gRPC.vi",
+   "bytes": 84499,
+   "sha256": "084322bab83cdeebb0af54dff849f03866aa9555fd71694bbfeb869eef0241f2",
+   "via": "extension"
+  },
+  {
+   "path": "source/single tone/Single Tone - Digital Mic/Get Service Descriptor.vi",
+   "bytes": 21230,
+   "sha256": "5b7978a4b422500fe3fb235f03d0a10fcae87d8d9d9a97aa031c60fd983f5f2e",
+   "via": "extension"
+  },
+  {
+   "path": "source/single tone/Single Tone - Digital Mic/Get Type Specializations.vi",
+   "bytes": 19528,
+   "sha256": "eec6a28595afbeb6925905fbab0f58f7792f8ab230be8f1f15ca6218f01196a6",
+   "via": "extension"
+  },
+  {
+   "path": "source/single tone/Single Tone - Digital Mic/Get UI Details.vi",
+   "bytes": 19602,
+   "sha256": "2862adee07c08c0f8504294cf92dae9131471698dbb7c41e597e85c5bf1480db",
+   "via": "extension"
+  },
+  {
+   "path": "source/single tone/Single Tone - Digital Mic/Measurement Configuration.ctl",
+   "bytes": 15602,
+   "sha256": "bdc72ffa84b858d8a715cc33dd203305c6fbfcd1f480bf603a25c4516b1f798b",
+   "via": "extension"
+  },
+  {
+   "path": "source/single tone/Single Tone - Digital Mic/Measurement Logic.vi",
+   "bytes": 62133,
+   "sha256": "182f8f32a60c6620ec3610ff6c6c72ba38c86ab0683c0a260f31f9edc4f74d8c",
+   "via": "extension"
+  },
+  {
+   "path": "source/single tone/Single Tone - Digital Mic/Measurement Results.ctl",
+   "bytes": 13648,
+   "sha256": "e6c36fe2778668780f739dafe13b22d48d538b9399df6af0c60c1effdff52ce7",
+   "via": "extension"
+  },
+  {
+   "path": "source/single tone/Single Tone - Digital Mic/Run Service.vi",
+   "bytes": 13787,
+   "sha256": "0faf071aa092464804707c01c020534fafac262d9666fd20a1bae7310d929342",
+   "via": "extension"
+  },
+  {
+   "path": "source/single tone/Single Tone - Digital Mic/Single Tone - Digital Mic.lvlib",
+   "bytes": 2067,
+   "sha256": "c6594d11dc3ebceff0c2a28a4418d2968be89d47689fb700b0839d107dad6754",
+   "via": "extension"
+  },
+  {
+   "path": "source/single tone/Single Tone.lvproj",
+   "bytes": 104978,
+   "sha256": "a0b478f27c6f814cc8d5df57673b6ae458701e7a610a56a3cf56c6bc4fc34679",
+   "via": "extension"
+  },
+  {
+   "path": "test/Calibrate Acoustic Output Level.vi",
+   "bytes": 107587,
+   "sha256": "8477cb37ad2d11bdb668f5f6afc1362542750db5f45d3c2b1b6272e321a65361",
+   "via": "extension"
+  },
+  {
+   "path": "test/Frequency Response - Digital Mic.vi",
+   "bytes": 404788,
+   "sha256": "848d53a67ac7a59f2c029dfc6d636fe2ab07c0e99c75bff453c4722a6a9700e9",
+   "via": "extension"
+  },
+  {
+   "path": "test/Generate Sound - SFP.vi",
+   "bytes": 23464,
+   "sha256": "916e8dca936e7d54d43a5f994f914ac1711929b4095bfa00ebd6501d8002a752",
+   "via": "extension"
+  },
+  {
+   "path": "test/Measure Acoustic Frequency Response.vi",
+   "bytes": 383587,
+   "sha256": "19ed9f74b9b7027731d6231144b505eab8d5c2495a5e50db7eb06f63458b619b",
+   "via": "extension"
+  },
+  {
+   "path": "test/Measure Sound from Digital Mic - I2S.vi",
+   "bytes": 59520,
+   "sha256": "ea9a682aa394d2b86e96a6efaec4365885ea3c17c65e4be361c3b33c0699673a",
+   "via": "extension"
+  },
+  {
+   "path": "test/Measure Sound from Digital Mic - PDM and I2S.vi",
+   "bytes": 45760,
+   "sha256": "cfa1e8f503e0f4aed794cd565aca77bc156ef067be76e6cb5784c5ae7d701b29",
+   "via": "extension"
+  },
+  {
+   "path": "test/Measure Sound from Digital Mic - PDM.vi",
+   "bytes": 54216,
+   "sha256": "6de056afc7f16c1ec38d16b1d567fde9ed262591e6f6608593232a6e1e0a19de",
+   "via": "extension"
+  },
+  {
+   "path": "test/Measure Sound from Reference Mic.vi",
+   "bytes": 49692,
+   "sha256": "ac93ec0ec2111cfce193c2c89208a69d7e75fc15aa6119fea2d1d999434bd6a0",
+   "via": "extension"
+  },
+  {
+   "path": "test/Single Tone Measurements.vi",
+   "bytes": 75196,
+   "sha256": "b222213966ef9129ab744e7c9e434a3b1f6819f0027408281513ee7c2f51d264",
+   "via": "extension"
+  },
+  {
+   "path": "test/Writing Input Configuration File.vi",
+   "bytes": 18416,
+   "sha256": "2ee6e44cc876c29ae45f189b936f923af9cf4dfbe0d2e80012589f31651ec05f",
+   "via": "extension"
+  },
+  {
+   "path": "test/EQ_test.csv",
+   "bytes": 660,
+   "sha256": "252dc40efe6ff7341cfa3c2f1fc617a27e75e829f1fa86dfe1942ec8af58333a",
+   "via": "ref:test/Measure Acoustic Frequency Response.vi"
+  },
+  {
+   "path": ".github/CODEOWNERS",
+   "bytes": 72,
+   "sha256": "94b1f23f72346194a02c01a6de7d7aec2e85e19331703bd9e0048446df21a362",
+   "via": "tree"
+  },
+  {
+   "path": ".github/PULL_REQUEST_TEMPLATE.md",
+   "bytes": 352,
+   "sha256": "0139209365b5c76e6c9126a902a4f4280708f8bdf686d37685a3fa503f3b0907",
+   "via": "tree"
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 225,
+   "sha256": "5b4fa0e03d6f54050c4f16768cd22cdf232a2c953941b7003a5d29f45a750636",
+   "via": "tree"
+  },
+  {
+   "path": "CONTRIBUTING.md",
+   "bytes": 2600,
+   "sha256": "d6ee40f85a238822c87c5125d28c56b1c83cb6f10f82ba025235c04b5836acae",
+   "via": "tree"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1071,
+   "sha256": "b97f1b89ab386a24388eac18238af18f70b997f06a8f8652a2e70cad892c4147",
+   "via": "tree"
+  },
+  {
+   "path": "README.md",
+   "bytes": 1855,
+   "sha256": "afeedcc1ecff108e8cc64db54a063ff520efae196128e378d4b2cdb0bedeed58",
+   "via": "tree"
+  },
+  {
+   "path": "SECURITY.md",
+   "bytes": 1312,
+   "sha256": "c3c34cacd2f1f76e9c299372d8b9cf3fbe6da13340cc1eb9721762a521c80a69",
+   "via": "tree"
+  },
+  {
+   "path": "demo/InstrStudio/Digital Mic Demo/Calibrate Acoustic Level.sfp",
+   "bytes": 4702,
+   "sha256": "bafbf3be8b6a3bc78eaefd0a1a9155e92a042735d6ccfa038598a9adadadebfc",
+   "via": "tree"
+  },
+  {
+   "path": "demo/InstrStudio/Digital Mic Demo/Digital Mic Demo.instudioproj",
+   "bytes": 2815,
+   "sha256": "5583df8149b72f1262335980f6a4796f3a40b02a3601ffd4ae269a3fc9372329",
+   "via": "tree"
+  },
+  {
+   "path": "demo/InstrStudio/Digital Mic Demo/FreqResponse-PDM.sfp",
+   "bytes": 5028,
+   "sha256": "e426f247cc7ab3d9c18b19191c177db6cfdad86bea22ee12cff64bddd4004b78",
+   "via": "tree"
+  },
+  {
+   "path": "demo/InstrStudio/Digital Mic Demo/Power.sfp",
+   "bytes": 41547,
+   "sha256": "d2d2b49f9a0e2fa3efb476642c616af54d5c12ba3fd0de03e337c21d6ad5b762",
+   "via": "tree"
+  },
+  {
+   "path": "demo/InstrStudio/Digital Mic Demo/Single Tone-I2S.sfp",
+   "bytes": 5190,
+   "sha256": "7c5664d345fa718ce7993dee276038cb33087d1bdbb49b9b69cde60b63cff0e7",
+   "via": "tree"
+  },
+  {
+   "path": "demo/InstrStudio/Digital Mic Demo/Single Tone-PDM.sfp",
+   "bytes": 5196,
+   "sha256": "ad159189b3c17b64c053241907cf86b220b649b69fff828bc116af6ad85e0395",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/hw-system-diagram.png",
+   "bytes": 44663,
+   "sha256": "86e41773023cda192d13b2c2d1ebe67c6a2205bad421eb502bcd2ab276635d57",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/uncheck-option-buildspec.png",
+   "bytes": 9213,
+   "sha256": "7ab2e1078dece04aee486fb25ec0318cc2f56113b93f78c14e95bce83f43b946",
+   "via": "tree"
+  },
+  {
+   "path": "docs/measurements/calibrate-acoustic-output.md",
+   "bytes": 969,
+   "sha256": "84232bce51f6e142343d1de11dd9b74d4a04dd47dfd32ea0f14304b2c8aa8b62",
+   "via": "tree"
+  },
+  {
+   "path": "docs/measurements/frequency-reponse.md",
+   "bytes": 656,
+   "sha256": "eaf8fb84a7274f21b23070964376f967b7901f42dbcb12b388ba8e35b66a6d66",
+   "via": "tree"
+  },
+  {
+   "path": "docs/measurements/meas-images/calibrate-output-level.png",
+   "bytes": 234423,
+   "sha256": "f44a13975a2f2b3179abff32d69937efcab60f8459fca930d7ceb7d92c613c55",
+   "via": "tree"
+  },
+  {
+   "path": "docs/measurements/meas-images/freq-response.png",
+   "bytes": 185891,
+   "sha256": "44a0b003e48c074a8e69ab96cdd6604ff83c382858a788019573f663aa4772eb",
+   "via": "tree"
+  },
+  {
+   "path": "docs/measurements/meas-images/single-tone.png",
+   "bytes": 230426,
+   "sha256": "7e0c9be58816ee2481ed9db11c5158c4ef18749c2974149a395d01ed1e9d96ea",
+   "via": "tree"
+  },
+  {
+   "path": "docs/measurements/single-tone.md",
+   "bytes": 834,
+   "sha256": "e9eaea13c1893a15f16a7db28fc62e6cfcf5a00db18f2094ef9573880dc7cc08",
+   "via": "tree"
+  },
+  {
+   "path": "docs/sw-dev.md",
+   "bytes": 1607,
+   "sha256": "0cbbaac8028987d4fd4689aad3f794a68b53d23400522e33dca4301fd1707e82",
+   "via": "tree"
+  },
+  {
+   "path": "package/DigitalMicrophone.pbs",
+   "bytes": 61853,
+   "sha256": "d9608e42a20e8bc317fadb9cc569bfdc19598b5bc02edc69a72fb01dde790e27",
+   "via": "tree"
+  },
+  {
+   "path": "source/calibrate acoustic output/Calibrate Acoustic Output Level/BuiltUI/Calibrate Acoustic Output Level UI.lvlibp",
+   "bytes": 30720,
+   "sha256": "dbc5ad46f402aa6fc790bd6d44899e5b312cc4d7b59f624e4485593babda1693",
+   "via": "tree"
+  },
+  {
+   "path": "source/placeholder.txt",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "via": "tree"
+  },
+  {
+   "path": "source/shared/ui/custom runtime menu/xy graph.rtm",
+   "bytes": 1203,
+   "sha256": "2a134dbc72a93647ef18d55c344a73e6905289acb4b7be3321f8f552f68ba79f",
+   "via": "tree"
+  },
+  {
+   "path": "test/test-I2S.inputcfg",
+   "bytes": 374,
+   "sha256": "d5f57646e6048eb9cd9ed27570b250c05d8510970f2dbafe88609043d647761e",
+   "via": "tree"
+  },
+  {
+   "path": "test/test-PDM.inputcfg",
+   "bytes": 126,
+   "sha256": "64befdd860c99c8ff2b128d2b0e7edf4ceddc8c20e06b8e9083a432c20399827",
+   "via": "tree"
+  },
+  {
+   "path": "test/test2-PDM.inputcfg",
+   "bytes": 126,
+   "sha256": "64befdd860c99c8ff2b128d2b0e7edf4ceddc8c20e06b8e9083a432c20399827",
+   "via": "tree"
+  }
+ ],
+ "skipped": [],
+ "external": [
+  "<helpdir>\\lvexpress.chm",
+  "<resource>\\lvanlys.dll",
+  "<resource>\\objmgr\\daqmx.rc",
+  "<vilib>\\AdvancedString\\1D String Array to Delimited String.vi",
+  "<vilib>\\Analysis\\0measdsp.llb\\Scaled Time Domain Window (DBL).vi",
+  "<vilib>\\Analysis\\0measdsp.llb\\Scaled Time Domain Window.vi",
+  "<vilib>\\Analysis\\1siggen.llb\\Ramp Pattern by Samples.vi",
+  "<vilib>\\Analysis\\1siggen.llb\\Ramp Pattern.vi",
+  "<vilib>\\Analysis\\2dsp.llb\\1D Cross Correlation (DBL).vi",
+  "<vilib>\\Analysis\\2dsp.llb\\CrossCorrelation.vi",
+  "<vilib>\\Analysis\\4window.llb\\Exponential Window (DBL).vi",
+  "<vilib>\\Analysis\\4window.llb\\Exponential Window.vi",
+  "<vilib>\\Analysis\\4window.llb\\Force Window (DBL).vi",
+  "<vilib>\\Analysis\\4window.llb\\Force Window.vi",
+  "<vilib>\\Analysis\\4window.llb\\Window Properties by Name.vi",
+  "<vilib>\\Analysis\\4window.llb\\Window Properties.vi",
+  "<vilib>\\Analysis\\4window.llb\\window parameters.vi",
+  "<vilib>\\Analysis\\NI_AALBase.lvlib",
+  "<vilib>\\Analysis\\_algsub.llb\\Real Vector Norm.vi",
+  "<vilib>\\Analysis\\_algsub.llb\\Vector Norm.vi",
+  "<vilib>\\Analysis\\baseanly.llb\\Mean (DBL).vi",
+  "<vilib>\\Analysis\\baseanly.llb\\Mean.vi",
+  "<vilib>\\Analysis\\baseanly.llb\\Std Deviation and Variance.vi",
+  "<vilib>\\AppBuilder\\AB_API_Simple\\Build (path).vi",
+  "<vilib>\\AppBuilder\\AB_API_Simple\\Build.vi",
+  "<vilib>\\AppBuilder\\AB_API_Simple\\Clean.vi",
+  "<vilib>\\AppBuilder\\AB_API_Simple\\NI_App_Builder_API.lvlib",
+  "<vilib>\\DAQmx\\configure\\events\\hardwareSignals.llb\\DAQmx Export Signal (Most Signals).vi",
+  "<vilib>\\DAQmx\\configure\\events\\hardwareSignals.llb\\DAQmx Export Signal.vi",
+  "<vilib>\\DAQmx\\configure\\task.llb\\DAQmx Clear Task.vi",
+  "<vilib>\\DAQmx\\configure\\task.llb\\DAQmx Control Task.vi",
+  "<vilib>\\DAQmx\\configure\\task.llb\\DAQmx Start Task.vi",
+  "<vilib>\\DAQmx\\configure\\task.llb\\DAQmx Stop Task.vi",
+  "<vilib>\\DAQmx\\configure\\task.llb\\DAQmx Wait Until Done.vi",
+  "<vilib>\\DAQmx\\configure\\timing.llb\\DAQmx Timing (Sample Clock).vi",
+  "<vilib>\\DAQmx\\configure\\timing.llb\\DAQmx Timing.vi",
+  "<vilib>\\DAQmx\\configure\\trigger.llb\\DAQmx Start Trigger (Digital Edge).vi",
+  "<vilib>\\DAQmx\\configure\\trigger.llb\\DAQmx Trigger.vi",
+  "<vilib>\\DAQmx\\create\\channels.llb\\DAQmx Create Channel (AI-Sound Pressure-Microphone).vi",
+  "<vilib>\\DAQmx\\create\\channels.llb\\DAQmx Create Channel (AO-Voltage-Basic).vi",
+  "<vilib>\\DAQmx\\create\\channels.llb\\DAQmx Create Virtual Channel.vi",
+  "<vilib>\\DAQmx\\miscellaneous.llb\\DAQmx Fill In Error Info.vi",
+  "<vilib>\\DAQmx\\read.llb\\DAQmx Read (Analog 1D Wfm NChan NSamp).vi",
+  "<vilib>\\DAQmx\\read.llb\\DAQmx Read (Analog Wfm 1Chan NSamp).vi",
+  "<vilib>\\DAQmx\\read.llb\\DAQmx Read.vi",
+  "<vilib>\\DAQmx\\write.llb\\DAQmx Write (Analog Wfm 1Chan NSamp).vi",
+  "<vilib>\\DAQmx\\write.llb\\DAQmx Write.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Controls\\PDM Digital Start Trigger Cluster.ctl",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\PDM Acquisition Toolkit.lvlib",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Clear\\Clear PCM Input Task.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Clear\\Clear PDM Input Task.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Clear\\Clear Task.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Configure\\PDM Channel\\Configure Microphone Sensitivity DBFS - PCM Input Task.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Configure\\PDM Channel\\Configure Microphone Sensitivity DBFS.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Configure\\PDM Channel\\Configure Microphone Sensitivity.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Configure\\Timing\\Configure Timing - PCM Input Master.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Configure\\Timing\\Configure Timing - PDM Input.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Configure\\Timing\\Configure Timing.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Configure\\Triggering\\Configure PCM Input Trigger (Digital Edge).vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Configure\\Triggering\\Configure PDM Trigger (Digital Edge).vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Configure\\Triggering\\Configure Trigger.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Create Tasks\\Create PCM Input Task.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Create Tasks\\Create PDM Input Task.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Create Tasks\\Create Task.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Read\\Read PCM Input Waveform.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Read\\Read PCM Waveform.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Read\\Read PDM and PCM Waveform.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Start\\Start PCM Input Task.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Start\\Start PDM Task.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Start\\Start Task.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Stop\\Stop PCM Input Task.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Stop\\Stop PDM Task.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\API\\Public\\Stop\\Stop Task.vi",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\Classes\\Session\\Controls\\Logic Levels.ctl",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\Classes\\Session\\DecoderSession.lvclass",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\Classes\\Tasks\\PCM Input\\Controls\\DVR PCM Input Task.ctl",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\Classes\\Tasks\\PCM Input\\PCM Input Task.lvclass",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\Classes\\Tasks\\PDM Tasks\\Controls\\Acquisition Mode.ctl",
+  "<vilib>\\PDM Acquisition Toolkit\\host\\Classes\\Tasks\\PDM Tasks\\PDM Task.lvclass",
+  "<vilib>\\PDM Acquisition Toolkit\\shared\\PDM Shared.lvlib",
+  "<vilib>\\PDM Acquisition Toolkit\\shared\\controls\\Digital Edge.ctl",
+  "<vilib>\\PDM Acquisition Toolkit\\shared\\controls\\PCM Bit Endianness.ctl",
+  "<vilib>\\PDM Acquisition Toolkit\\shared\\controls\\PCM Data Format Configuration.ctl",
+  "<vilib>\\PDM Acquisition Toolkit\\shared\\controls\\PCM Data Justification.ctl",
+  "<vilib>\\PDM Acquisition Toolkit\\shared\\controls\\PCM Frame Sync Control.ctl",
+  "<vilib>\\PDM Acquisition Toolkit\\shared\\controls\\PXI trigger lines.ctl",
+  "<vilib>\\PDM Acquisition Toolkit\\shared\\controls\\clock mode.ctl",
+  "<vilib>\\PDM Acquisition Toolkit\\shared\\controls\\decimation order.ctl",
+  "<vilib>\\PDM Acquisition Toolkit\\shared\\controls\\trigger polarity.ctl",
+  "<vilib>\\Platform\\system.llb\\System Exec.vi",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Build Assets\\Post-Build Action.vi",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\Create Basic Measurement Annotations.vi",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\TypeDefs\\Measurement Annotation.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\TypeDefs\\Measurement Details.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\TypeDefs\\Parameter Type Specialization.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\TypeDefs\\Service Descriptor.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\TypeDefs\\Type Specialization Key.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\TypeDefs\\Type Specialization.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\TypeDefs\\User Interface Information.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Measure Call Context\\Measure Call Context.lvclass",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Measure Call Context\\Update Results.vi",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Measurement Plugin Service\\Accessors\\Get gRPC ID.vi",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Measurement Plugin Service\\Measurement Plugin Service.lvclass",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Measurement Plugin Service\\Plugin Paths.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\NI Measurement Plug-In SDK.lvlib",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Run Service.vi",
+  "<vilib>\\Utility\\High Resolution Polling Wait.vi",
+  "<vilib>\\Utility\\error.llb\\Clear Errors.vi",
+  "<vilib>\\Utility\\error.llb\\Error Cluster From Error Code.vi",
+  "<vilib>\\Utility\\error.llb\\Simple Error Handler.vi",
+  "<vilib>\\Utility\\error.llb\\Trim Whitespace.vi",
+  "<vilib>\\Utility\\file.llb\\Read Delimited Spreadsheet (DBL).vi",
+  "<vilib>\\Utility\\file.llb\\Read Delimited Spreadsheet.vi",
+  "<vilib>\\Utility\\libraryn.llb\\Check if File or Folder Exists.vi",
+  "<vilib>\\Utility\\libraryn.llb\\Create File and Containing Folders.vi",
+  "<vilib>\\Utility\\libraryn.llb\\Get File Extension.vi",
+  "<vilib>\\Utility\\miscctls.llb\\LVBoundsTypeDef.ctl",
+  "<vilib>\\Utility\\miscctls.llb\\LVPoint32TypeDef.ctl",
+  "<vilib>\\Utility\\miscctls.llb\\LVPointTypeDef.ctl",
+  "<vilib>\\Utility\\miscctls.llb\\LVRowAndColumnTypeDef.ctl",
+  "<vilib>\\Utility\\sysdir.llb\\Get System Directory.vi",
+  "<vilib>\\Utility\\sysdir.llb\\System Directory Type.ctl",
+  "<vilib>\\Waveform\\TSOps.llb\\Timestamp Subtract.vi",
+  "<vilib>\\Waveform\\WDTOps.llb\\Get Waveform Subset.vi",
+  "<vilib>\\Waveform\\WDTOps.llb\\WDT Get Waveform Subset DBL.vi",
+  "<vilib>\\Waveform\\WDTOps.llb\\WDT Waveform Duration DBL.vi",
+  "<vilib>\\Waveform\\WDTOps.llb\\Waveform Duration.vi",
+  "<vilib>\\addons\\Sound and Vibration\\svt_Calibration\\SV Measure Delay and Polarity and Coherence (Nx1).vi",
+  "<vilib>\\addons\\Sound and Vibration\\svt_Calibration\\SV Measure Delay and Polarity and Coherence.vi",
+  "<vilib>\\addons\\Sound and Vibration\\svt_Calibration\\SoundVib_Calibration.lvlib",
+  "<vilib>\\addons\\Sound and Vibration\\svt_Distortion\\SVT SNR without Harmonics (Time) (1 Ch).vi",
+  "<vilib>\\addons\\Sound and Vibration\\svt_Distortion\\SVT SNR without Harmonics.vi",
+  "<vilib>\\addons\\Sound and Vibration\\svt_Distortion\\SoundVib_Distortion.lvlib",
+  "<vilib>\\addons\\Sound and Vibration\\svt_Distortion\\subVIs\\sv_Log View for Ratio (1 Ch).vi",
+  "<vilib>\\addons\\Sound and Vibration\\svt_Level\\SVL AC & DC Level (Time) (1 Ch).vi",
+  "<vilib>\\addons\\Sound and Vibration\\svt_Level\\SVL AC & DC Level (Time) (N Ch).vi",
+  "<vilib>\\addons\\Sound and Vibration\\svt_Level\\SVL AC & DC Level.vi",
+  "<vilib>\\addons\\Sound and Vibration\\svt_Level\\SVL Leq Sound Level (1 Ch).vi",
+  "<vilib>\\addons\\Sound and Vibration\\svt_Level\\SVL Leq Sound Level.vi",
+  "<vilib>\\addons\\Sound and Vibration\\svt_Level\\SoundVib_SoundLevel.lvlib",
+  "<vilib>\\addons\\Sound and Vibration\\svt_Weighting\\SVT Audio Filter (N Ch).vi",
+  "<vilib>\\addons\\Sound and Vibration\\svt_Weighting\\SVT Audio Filter.vi",
+  "<vilib>\\addons\\Sound and Vibration\\svt_Weighting\\SVT Weighting Filter (1 Ch).vi",
+  "<vilib>\\addons\\Sound and Vibration\\svt_Weighting\\SVT Weighting Filter (N Ch).vi",
+  "<vilib>\\addons\\Sound and Vibration\\svt_Weighting\\SVT Weighting Filter.vi",
+  "<vilib>\\addons\\Sound and Vibration\\svt_Weighting\\SoundVib_ABCWeighting.lvlib",
+  "<vilib>\\addons\\Sound and Vibration\\svt_Weighting\\SoundVib_AudioFilter.lvlib",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Discrete Sweep\\Configure Frequency Sweep at Constant Amplitude.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Discrete Sweep\\Read All Frequencies and Amplitudes.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Discrete Sweep\\Read Frequencies and Amplitudes.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Discrete Sweep\\SV Discrete Sweep.lvclass",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Discrete Sweep\\SV Discrete Sweep.lvclass\\SV Discrete Sweep.ctl",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Function\\Write Measurement Cycles.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Function\\Write Pre-Measurement Settling Cycles.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\Calculate Number of Remaining Samples.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\Read Generation State.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\Read Leading Synchronization Pulse Enable.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\Read Sample Rate.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\Read Synchronization Pulse Waveform.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\Read System Timing Model.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\Read Total Samples.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\Read Trailing Synchronization Pulse Enable.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\SV Configure Generator.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\SV Signal.lvclass",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\SV Signal.lvclass\\SV Signal.ctl",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\Write Leading Synchronization Pulse Enable.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\Write Measurement Duration.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\Write Pre-Measurement Settling Duration.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\Write Ramp Parameters.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\Write Sample Rate.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\Write Synchronization Pulse Duration.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\Write Synchronization Pulse Level.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\Write Synchronization Pulse Type.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\Write System Timing Model.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\sv_System Timing Model.ctl",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Sinusoid\\Configure Sine.vi",
+  "<vilib>\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Sinusoid\\SV Sinusoid.lvclass",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\SV Get Data Subset.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\SV Remove Delays (1,N) from Waveforms (N Ch) (DBL).vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\SV Remove Delays from Waveforms.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\SVL Set dB Reference (1 Ch).vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\SVL Set dB Reference (N Ch - 1 Ref).vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\SVL Set dB Reference (variant).vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\SVL Set dB Reference.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\sv_Get NI Property Name String.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\svc_Caller VI Returned in Error Source.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\svc_Check dt for Equal Sample Rates.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\svc_Check for Waveform Parameter Continuity (N Ch).vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\svc_Check for Waveform Parameter Continuity (no state).vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\svc_Coerce Index and Length.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\svc_Complex Datatype Defaults.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\svc_Conditional Merge Error.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\svc_Convert Spectrum Array to dB.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\svc_Engineering Units to Unit Label.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\svc_Fit Quadratic to Max Three Points in Array.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\svc_Format Value (DBL).vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\svc_Get Array Subset (Index).vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\svc_Get SV Channel Info.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\svc_Get Weighting Enum and Labels.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\svc_Get Window Info.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\svc_Log View for Spectrum (1Ch).vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\svc_Spectrum Units.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\svc_Surround NonAlpha String with Parentheses.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\svc_Unit Label Lexical Class.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\svc_Unit Label to Engineering Units.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\svc_Unwrap Phase.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Common\\svc_Window Parameters.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Controls\\svc_Window.ctl",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Data Objects\\Waveforms (DBL)\\Read from Buffer.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Data Objects\\Waveforms (DBL)\\SV Read Newest Data.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Data Objects\\Waveforms (DBL)\\SV Read Next Measurement Data.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Data Objects\\Waveforms (DBL)\\Waveforms (N Ch).lvclass",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Data Objects\\Waveforms (DBL)\\Write to Buffer.vi",
+  "<vilib>\\addons\\_NISVFA\\_Shared subVIs\\Windowing\\svfa_Scaled Time Domain Window (Array).vi",
+  "<vilib>\\addons\\_NISVFA\\_Spectrum Processing\\SVFA Extract Single Tone Information (Complex) (1 Ch).vi",
+  "<vilib>\\addons\\_NISVFA\\_Spectrum Processing\\SVFA Extract Single Tone Information (Waveform) (1 Ch).vi",
+  "<vilib>\\addons\\_NISVFA\\_Spectrum Processing\\SVFA Extract Tone Information.vi",
+  "<vilib>\\addons\\_NISVFA\\_Spectrum Processing\\SVFA Unit Conversion (1 Ch).vi",
+  "<vilib>\\addons\\_NISVFA\\_Spectrum Processing\\SVFA Unit Conversion (Complex) (1 Ch).vi",
+  "<vilib>\\addons\\_NISVFA\\_Spectrum Processing\\SVFA Unit Conversion.vi",
+  "<vilib>\\addons\\_NISVFA\\_Spectrum Processing\\subVIs\\svfa_Conversion Utility (spectrum info).vi",
+  "<vilib>\\addons\\_NISVFA\\_Spectrum Processing\\subVIs\\svfa_Linear to dB.vi",
+  "<vilib>\\addons\\_NISVFA\\_Spectrum Processing\\subVIs\\svfa_Mag to Mag2.vi",
+  "<vilib>\\addons\\_NISVFA\\_Spectrum Processing\\subVIs\\svfa_Peak to RMS to Peak2Peak.vi",
+  "<vilib>\\addons\\_NISVFA\\_Spectrum Processing\\subVIs\\svfa_Spectrum Info Window to windowTd Type Def.vi",
+  "<vilib>\\addons\\_NISVFA\\_Spectrum Processing\\subVIs\\svfa_Spectrum to Spectral Density.vi",
+  "<vilib>\\addons\\_NISVFA\\_Spectrum Processing\\subVIs\\svfa_dBrefA to dBrefB.vi",
+  "<vilib>\\dlg_ctls.llb\\Space Constant.vi",
+  "<vilib>\\express\\express output\\DisplayMessageBlock.llb\\Ex_Inst_Display Message to User.vi",
+  "<vilib>\\express\\express output\\DisplayMessageBlock.llb\\subDisplayMessage.vi",
+  "<vilib>\\express\\express output\\DisplayMessageConfig.llb\\Configure Display Message to User.vi",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\Message Requests\\PackToAny.vim",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\Message Requests\\UnpackFromAny.vim",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\Server\\Get Server DLL Path.vi",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\Translate Protobuf Error.vi",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Shared\\Any.ctl",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Shared\\grpcId.ctl",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\grpc-lvsupport-release.lvlib",
+  "<vilib>\\gmath\\NI_Gmath.lvlib",
+  "<vilib>\\gmath\\interp.llb\\Interpolate 1D.vi",
+  "<vilib>\\measure\\maresamp.llb\\Resample Waveform (single shot).vi",
+  "<vilib>\\measure\\maresamp.llb\\Resample Waveforms (single shot).vi",
+  "<vilib>\\picture\\picture.llb\\Get Text Rect.vi",
+  "C:\\Program Files\\NI\\LVAddons\\nisvt\\1\\vi.lib\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Discrete Sweep\\SV Discrete Sweep.lvclass",
+  "C:\\Program Files\\NI\\LVAddons\\nisvt\\1\\vi.lib\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Function\\SV Function.lvclass",
+  "C:\\Program Files\\NI\\LVAddons\\nisvt\\1\\vi.lib\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\SV Signal.lvclass",
+  "C:\\Program Files\\NI\\LVAddons\\nisvt\\1\\vi.lib\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Sinusoid\\SV Sinusoid.lvclass",
+  "C:\\Program Files\\National Instruments\\LabVIEW 2022\\vi.lib\\Plug-In SDKs\\Measurements\\Measurement Plugin Service\\Measurement Plugin Service.lvclass",
+  "C:\\Program Files\\National Instruments\\LabVIEW 2022\\vi.lib\\addons\\_NISVFA\\_Generation\\Signal Generation\\SV Signal\\SV Signal.lvclass",
+  "C:\\dev\\digital-microphone\\package\\DigitalMicrophone.pbs",
+  "C:\\dev\\digital-microphone\\source\\calibrate acoustic output\\Calibrate Acoustic Output Level\\Advanced\\Measurement Plugin.lvclass",
+  "C:\\dev\\digital-microphone\\source\\calibrate acoustic output\\Calibrate Acoustic Output.lvproj",
+  "C:\\dev\\digital-microphone\\source\\frequency response\\Frequency Response.lvproj",
+  "C:\\dev\\digital-microphone\\source\\frequency response\\Frequency Response\\Advanced\\Measurement Plugin.lvclass",
+  "C:\\dev\\digital-microphone\\source\\single tone\\Single Tone - Digital Mic\\Advanced\\Measurement Plugin.lvclass",
+  "C:\\dev\\digital-microphone\\source\\single tone\\Single Tone.lvproj",
+  "C:\\dev\\digital-microphone\\test\\EQ_test.csv",
+  "C:\\dev\\digital-microphone\\test\\test-I2S.inputcfg",
+  "\\\\\\\\10.1.133.57\\measurement-services-labview\\Source\\Measurement Service Template_lv\\MeasurementLink Measurement Server\\RPC Service\\MeasurementService\\Get Plugin Paths.vi",
+  "\\\\\\\\10.1.133.57\\measurement-services-labview\\Source\\Measurement Service Template_lv\\MeasurementLink Measurement Server\\RPC Service\\MeasurementService\\Get Type Specializations.vi"
+ ]
+}
