@@ -1,0 +1,21 @@
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+
+# Metadata
+*.aliases
+*.lvlps
+.cache/
+.vs/
+
+# Build output
+*.xml
+builds/
+
+# Others
+*.config
