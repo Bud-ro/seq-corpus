@@ -198,5 +198,13 @@
   "license": "MIT",
   "files": 118,
   "bytes": 3703963
+ },
+ {
+  "name": "bihackercs__BUDLUG2025",
+  "repo": "bihackercs/BUDLUG2025",
+  "commit": "1ef6cd056cd84be798e7241b01bad6b92f5edf7b",
+  "license": "MIT",
+  "files": 3,
+  "bytes": 9562
  }
 ]

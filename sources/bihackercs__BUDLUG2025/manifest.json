@@ -1,0 +1,30 @@
+{
+ "repo": "bihackercs/BUDLUG2025",
+ "url": "https://github.com/bihackercs/BUDLUG2025",
+ "commit": "1ef6cd056cd84be798e7241b01bad6b92f5edf7b",
+ "license": "MIT",
+ "licenseFile": "LICENSE",
+ "fetched": "2026-10-11",
+ "files": [
+  {
+   "path": "BUDLUG.seq",
+   "bytes": 8411,
+   "sha256": "4f4639bf500d29b9e2f87e4f492c7f08cbed7ad3ed1722ace7be011b80bfd173",
+   "via": "extension"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1067,
+   "sha256": "7336dd65babf95694a4c4ba2bdc8ed8da1948c4681fb52fb6275810c9e9c810f",
+   "via": "tree"
+  },
+  {
+   "path": "README.md",
+   "bytes": 84,
+   "sha256": "116f39ef399903830763602b371de083c3894febedc355d72511c27a2effb040",
+   "via": "tree"
+  }
+ ],
+ "skipped": [],
+ "external": []
+}
