@@ -110,5 +110,13 @@
   "license": "MIT",
   "files": 65,
   "bytes": 984547
+ },
+ {
+  "name": "NI-Measurement-Plug-Ins__class-d-amplifier",
+  "repo": "NI-Measurement-Plug-Ins/class-d-amplifier",
+  "commit": "d86360ab766049f33a3c22e0085d8c053ba8d3ea",
+  "license": "MIT",
+  "files": 595,
+  "bytes": 20944009
  }
 ]
