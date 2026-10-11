@@ -254,5 +254,13 @@
   "license": "MIT",
   "files": 87,
   "bytes": 2582341
+ },
+ {
+  "name": "ni__measurement-plugin-labview",
+  "repo": "ni/measurement-plugin-labview",
+  "commit": "8229e64d0375c5b22bab7a5a74f1311af7698146",
+  "license": "MIT",
+  "files": 2004,
+  "bytes": 58746414
  }
 ]
