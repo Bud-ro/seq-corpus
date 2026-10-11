@@ -1,0 +1,1134 @@
+{
+ "repo": "NISystemsEngineering/rfic-reference-design-libraries-csharp",
+ "url": "https://github.com/NISystemsEngineering/rfic-reference-design-libraries-csharp",
+ "commit": "5e318280860f781d6c6f351abb56c684df6e428a",
+ "license": "Apache-2.0",
+ "licenseFile": "LICENSE",
+ "fetched": "2026-10-11",
+ "files": [
+  {
+   "path": "Automation/TestStand_5GNR_DPD_AMPM_EVM_ACP_DL/TestStand_5GNR_DPD_AMPM_EVM_ACP_DL.seq",
+   "bytes": 26002,
+   "sha256": "be19091f92888af60a9be83358a2d4fd84ce1fa978490742da9f3944b0720118",
+   "via": "extension"
+  },
+  {
+   "path": "Automation/TestStand_5GNR_DPD_AMPM_EVM_ACP_UL/TestStand_5GNR_DPD_AMPM_EVM_ACP_UL.seq",
+   "bytes": 26051,
+   "sha256": "924f2cd5e857b1a1b51c0e4ee41eaa6aab15a37c562c8836b2d5e7bc9d3dcd50",
+   "via": "extension"
+  },
+  {
+   "path": "Automation/TestStand_LTE_DPD_AMPM_EVM_ACP_DL/TestStand_LTE_DPD_AMPM_EVM_ACP_DL.seq",
+   "bytes": 25559,
+   "sha256": "ecea4efeef830337af711e4085667a5aaf47a906e31279c5fd7d9be53c5e5a92",
+   "via": "extension"
+  },
+  {
+   "path": "Automation/TestStand_LTE_DPD_AMPM_EVM_ACP_UL/TestStand_LTE_DPD_AMPM_EVM_ACP_UL.seq",
+   "bytes": 25771,
+   "sha256": "da01fe3229b9b3106c785492a2e54f4d4b2766b4fbb9d67cd19229cb1a24492b",
+   "via": "extension"
+  },
+  {
+   "path": "Automation/TestStand_SPECAN_TXP_LOADPULL/TestStand_SPECAN_TXP_LOADPULL.seq",
+   "bytes": 22149,
+   "sha256": "cc015e4ea7f792e7a695046dfd84e6c5d7d73a7b23284ae86bc41d56a9d2ecf3",
+   "via": "extension"
+  },
+  {
+   "path": "Automation/TestStand_WLAN_AMPM_DEVM_SEM/TestStand_WLAN_AMPM_DEVM_SEM.seq",
+   "bytes": 23127,
+   "sha256": "cf5ecf69b8ab7c8785d985514d333e38b19b0e8374a9a9b60b294259eed2322e",
+   "via": "extension"
+  },
+  {
+   "path": "Automation/TestStand_WLAN_DPD_AMPM_EVM_SEM/TestStand_WLAN_DPD_AMPM_EVM_SEM.seq",
+   "bytes": 24930,
+   "sha256": "f0685e82f60ad06e70a082007ea079c122d8ed5aa9a4932547b4f09bb864d377",
+   "via": "extension"
+  },
+  {
+   "path": "build-tools/Unit Tests/SGTests/Support Files/BT No Burst.ini",
+   "bytes": 29,
+   "sha256": "88f66f520ef53661a9b624efe1a497766c7eccc4c8978e74c51923c46fd56d45",
+   "via": "extension"
+  },
+  {
+   "path": "build-tools/Unit Tests/SGTests/Support Files/LTE_TDD_1.0.ini",
+   "bytes": 28,
+   "sha256": "7307698236c8ba01e97d3e32585c625b3fc30aab1e42245d543427fb55e5f6b9",
+   "via": "extension"
+  },
+  {
+   "path": "build-tools/Unit Tests/SGTests/Support Files/LTE_TDD_2.0.ini",
+   "bytes": 28,
+   "sha256": "7307698236c8ba01e97d3e32585c625b3fc30aab1e42245d543427fb55e5f6b9",
+   "via": "extension"
+  },
+  {
+   "path": "build-tools/Unit Tests/SGTests/Support Files/WLAN_No_Burst_2.0.ini",
+   "bytes": 29,
+   "sha256": "88f66f520ef53661a9b624efe1a497766c7eccc4c8978e74c51923c46fd56d45",
+   "via": "extension"
+  },
+  {
+   "path": "build-tools/Unit Tests/SGTests/Support Files/WLAN_Single_Burst_1.0.ini",
+   "bytes": 28,
+   "sha256": "7307698236c8ba01e97d3e32585c625b3fc30aab1e42245d543427fb55e5f6b9",
+   "via": "extension"
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 5659,
+   "sha256": "6f7ddfbdbcb486670e15b4fdca606e44245aceda62eaabfb6edd3f634a498454",
+   "via": "tree"
+  },
+  {
+   "path": "Builds/PLACEHOLDER.txt",
+   "bytes": 301,
+   "sha256": "983b4d040eb7893324fae3c3a062bce105098505a5baac5af5a7e9f729987877",
+   "via": "tree"
+  },
+  {
+   "path": "CONTRIBUTING.md",
+   "bytes": 7488,
+   "sha256": "37461e069ea834a93bdd4d276251b8bae719dcbeef23bde379d195c855609391",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/5GNR_DPD_AMPM_EVM_ACP_DL/5GNR_DPD_AMPM_EVM_ACP_DL.cs",
+   "bytes": 12158,
+   "sha256": "e97a58277de897257b7b959f58ca9f2ba617e190ebc63a7351f720d89d825ef6",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/5GNR_DPD_AMPM_EVM_ACP_DL/5GNR_DPD_AMPM_EVM_ACP_DL.csproj",
+   "bytes": 4995,
+   "sha256": "bacd5a1e266d328b5ec127f913d4b1b31114f5e40915d2e0d1c5ae8af54335d3",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/5GNR_DPD_AMPM_EVM_ACP_DL/5GNR_DPD_AMPM_EVM_ACP_DL.sln",
+   "bytes": 4959,
+   "sha256": "bd0e9168f64021f3675ceec26f5d93f811b11c0e2e343a4675ab3481bbdf9e6e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/5GNR_DPD_AMPM_EVM_ACP_DL/App.config",
+   "bytes": 178,
+   "sha256": "a4ecb205cc1e5cc94d0782a67f8bf57b3865e411f9153f1df70fada0e71dc43e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/5GNR_DPD_AMPM_EVM_ACP_DL/Program.cs",
+   "bytes": 1180,
+   "sha256": "95e115e2506d9b9f0701d39f2c0fbe27a6fd3d4de0976d3ddfa65d7e5ffac2d5",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/5GNR_DPD_AMPM_EVM_ACP_DL/Properties/AssemblyInfo.cs",
+   "bytes": 1415,
+   "sha256": "f0247a370a9f9a3786d3db5c008ceb94c29e3002bf012b309e2f468f727ea7ee",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/5GNR_DPD_AMPM_EVM_ACP_UL/5GNR_DPD_AMPM_EVM_ACP_UL.cs",
+   "bytes": 12049,
+   "sha256": "6a09a49ac38a586863fb3217e7055e8253e798f264ca7190159573d35bab8bf1",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/5GNR_DPD_AMPM_EVM_ACP_UL/5GNR_DPD_AMPM_EVM_ACP_UL.csproj",
+   "bytes": 4995,
+   "sha256": "935a1ef830ce9f08ec48eb9b29e41fd1c0c70f5d7e820b10ce160a522cee6d06",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/5GNR_DPD_AMPM_EVM_ACP_UL/5GNR_DPD_AMPM_EVM_ACP_UL.sln",
+   "bytes": 4959,
+   "sha256": "a3fb03552dfed93b119216aed92ddadb319eed5950d5c4c9761ca49de20e3210",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/5GNR_DPD_AMPM_EVM_ACP_UL/App.config",
+   "bytes": 178,
+   "sha256": "a4ecb205cc1e5cc94d0782a67f8bf57b3865e411f9153f1df70fada0e71dc43e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/5GNR_DPD_AMPM_EVM_ACP_UL/Program.cs",
+   "bytes": 1178,
+   "sha256": "30f16c36f73e8ec0028d6977a9baf102650f3ceb7640ec8ed84de26495bd4eb6",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/5GNR_DPD_AMPM_EVM_ACP_UL/Properties/AssemblyInfo.cs",
+   "bytes": 1415,
+   "sha256": "f0247a370a9f9a3786d3db5c008ceb94c29e3002bf012b309e2f468f727ea7ee",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/5GNR_Example/5GNR_Example.csproj",
+   "bytes": 3176,
+   "sha256": "06d32905c8e9672414721e167bceaf7d2df607b7f5cb3efeae2c67c8e781b7e9",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/5GNR_Example/5GNR_Example.sln",
+   "bytes": 3002,
+   "sha256": "968fe6c1cd6bf4b8703dfab92659c1d23549790254429f472ddc2cbdc4df78ac",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/5GNR_Example/App.config",
+   "bytes": 178,
+   "sha256": "a4ecb205cc1e5cc94d0782a67f8bf57b3865e411f9153f1df70fada0e71dc43e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/5GNR_Example/Program.cs",
+   "bytes": 4391,
+   "sha256": "69bc958513a780f794ea9b083502dde061b78ae8e2e5d92f0462b50a723f5826",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/5GNR_Example/Properties/AssemblyInfo.cs",
+   "bytes": 1415,
+   "sha256": "e134fab8d99a3ef3b8008ac99e8bb613b6cf3607e1a750aa35457f0433ec284c",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/ET_Example/App.config",
+   "bytes": 178,
+   "sha256": "a4ecb205cc1e5cc94d0782a67f8bf57b3865e411f9153f1df70fada0e71dc43e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/ET_Example/ET_Example.csproj",
+   "bytes": 2942,
+   "sha256": "d0adfb93bcc498fcc1ff055daf16d646a3f68fed1e7b37cb205ba33e69a2bfdd",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/ET_Example/ET_Example.sln",
+   "bytes": 3010,
+   "sha256": "986519d0fe952d53f81dba754c63b868da78763d62177111a7e159dab24ac3a2",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/ET_Example/Program.cs",
+   "bytes": 3675,
+   "sha256": "5c79b01477b7a36940a91469e0c5e0abd25899200f8e00acc45fb159ba9ad679",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/ET_Example/Properties/AssemblyInfo.cs",
+   "bytes": 1417,
+   "sha256": "4011edb3fa57e305c75f21bc2bfa113f0b88da66f32e2b21e0715e655ce103da",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/LTE_DPD_AMPM_EVM_ACP_DL/App.config",
+   "bytes": 178,
+   "sha256": "a4ecb205cc1e5cc94d0782a67f8bf57b3865e411f9153f1df70fada0e71dc43e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/LTE_DPD_AMPM_EVM_ACP_DL/LTE_DPD_AMPM_EVM_ACP_DL.cs",
+   "bytes": 12635,
+   "sha256": "202123e8c8d1f456fc549fc4e59fe63cef335c84b0c6012ec2f4421c28b099b3",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/LTE_DPD_AMPM_EVM_ACP_DL/LTE_DPD_AMPM_EVM_ACP_DL.csproj",
+   "bytes": 4996,
+   "sha256": "0798a801507a5aea438f0ae29cfb3e1f2a478b585e9613563abf08d931b4315a",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/LTE_DPD_AMPM_EVM_ACP_DL/LTE_DPD_AMPM_EVM_ACP_DL.sln",
+   "bytes": 4878,
+   "sha256": "142210c1eaaf576261ce542b6df4610ee6a7d39a592a94b9521e669a42732b87",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/LTE_DPD_AMPM_EVM_ACP_DL/Program.cs",
+   "bytes": 1168,
+   "sha256": "819755b5900a2a598ef13789d802ae372e43c18620f784e05474db837728d088",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/LTE_DPD_AMPM_EVM_ACP_DL/Properties/AssemblyInfo.cs",
+   "bytes": 1417,
+   "sha256": "c90198e77b0ebbd113e7a4d21be431b40edbf4bdab9e8b2122bc623d87dc93cf",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/LTE_DPD_AMPM_EVM_ACP_UL/App.config",
+   "bytes": 178,
+   "sha256": "a4ecb205cc1e5cc94d0782a67f8bf57b3865e411f9153f1df70fada0e71dc43e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/LTE_DPD_AMPM_EVM_ACP_UL/LTE_DPD_AMPM_EVM_ACP_UL.cs",
+   "bytes": 12374,
+   "sha256": "da40321dc271bddb8812cf3716f1e39b868943719b7499e6d32cc475519776b4",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/LTE_DPD_AMPM_EVM_ACP_UL/LTE_DPD_AMPM_EVM_ACP_UL.csproj",
+   "bytes": 4996,
+   "sha256": "85935e7ac93bfbf5f137b64196ca3b37ce9f8a8b5b2b97a4684168eae67f3c12",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/LTE_DPD_AMPM_EVM_ACP_UL/LTE_DPD_AMPM_EVM_ACP_UL.sln",
+   "bytes": 4878,
+   "sha256": "e1d7a439954fd12d8d509726881abd35ab9fe5ce0b8584991d9e2ebfe2985f7d",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/LTE_DPD_AMPM_EVM_ACP_UL/Program.cs",
+   "bytes": 1166,
+   "sha256": "8f39b3483c4ead83249caf8bb6a63e9c05e79feb706e27e55b08d7fcb3b0726c",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/LTE_DPD_AMPM_EVM_ACP_UL/Properties/AssemblyInfo.cs",
+   "bytes": 1417,
+   "sha256": "b64fc47003f5311180ad2e5cd7096f3c32a45a6663dcdcd4e1fcabc190369d39",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/LTE_Example/App.config",
+   "bytes": 178,
+   "sha256": "a4ecb205cc1e5cc94d0782a67f8bf57b3865e411f9153f1df70fada0e71dc43e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/LTE_Example/LTE Example.csproj",
+   "bytes": 3142,
+   "sha256": "fd56bee4867ed83e94d53dc0b7020ba488d495b544a3ec1f2baacf8fecd50998",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/LTE_Example/LTE Example.sln",
+   "bytes": 3003,
+   "sha256": "07dbbcf844b852de8661dab5eeda71715bbfdd56ebb8ad1c534b55b3c7315472",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/LTE_Example/Program.cs",
+   "bytes": 4480,
+   "sha256": "e93e52fd416fda1bb669b9af400d48f6ffb00739d3d18624421c7936da6eeab7",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/LTE_Example/Properties/AssemblyInfo.cs",
+   "bytes": 1415,
+   "sha256": "e134fab8d99a3ef3b8008ac99e8bb613b6cf3607e1a750aa35457f0433ec284c",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SG_Example/App.config",
+   "bytes": 178,
+   "sha256": "a4ecb205cc1e5cc94d0782a67f8bf57b3865e411f9153f1df70fada0e71dc43e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SG_Example/Program.cs",
+   "bytes": 2533,
+   "sha256": "5ed763d70e491797dd15f2e5b3714a1664e66aeedf776b7b87964836b9490a31",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SG_Example/Properties/AssemblyInfo.cs",
+   "bytes": 1405,
+   "sha256": "05b80a71046fcd6780c422d5d023908a47b3275a584704ae9867b99812b99859",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SG_Example/SG_Example.csproj",
+   "bytes": 2793,
+   "sha256": "27d0b3db929d884b7ae8fffcca977033ffd280dfe0772a4690c46ebccaf02f44",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SG_Example/SG_Example.sln",
+   "bytes": 2409,
+   "sha256": "6d439fdbaac85ff8c6ddabfd85e6778a67d80dd709407718211c78b6fafa1348",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SG_PowerMeter_Servoing/App.config",
+   "bytes": 182,
+   "sha256": "3db4221c53a287dbb3dd13efbec4ad88f29cb2edcf13cfe0c829f6406532c9fe",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SG_PowerMeter_Servoing/Program.cs",
+   "bytes": 887,
+   "sha256": "c01a0b91e53a8f22d106f157ac63e1081aa58f263a8f0de96bf3edf8dd897ac4",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SG_PowerMeter_Servoing/Properties/AssemblyInfo.cs",
+   "bytes": 1433,
+   "sha256": "e35d2e69307999fcb7ff807a953a090b923173146833fc2f3b1a71956144a45d",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SG_PowerMeter_Servoing/SG_PowerMeter_Servoing.cs",
+   "bytes": 4396,
+   "sha256": "140dec9e2bd9a44f080ce706c2a3cc0ab34e16522b22276a478d93c6d7b89d02",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SG_PowerMeter_Servoing/SG_PowerMeter_Servoing.csproj",
+   "bytes": 3687,
+   "sha256": "88bd05a7f3d213b2e4ca712e1deff1a1baba29c8d0efb01198c1ba89941a446a",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SG_PowerMeter_Servoing/SG_PowerMeter_Servoing.sln",
+   "bytes": 2560,
+   "sha256": "5bc508c115b4570171493eb921ba5e1be1a210e1a95c9b713022cbc1ccbb5b2c",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SPECAN_DPD_AMPM_ACP_TXP/App.config",
+   "bytes": 178,
+   "sha256": "a4ecb205cc1e5cc94d0782a67f8bf57b3865e411f9153f1df70fada0e71dc43e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SPECAN_DPD_AMPM_ACP_TXP/Program.cs",
+   "bytes": 1183,
+   "sha256": "e1213a2f60254466f5290847ee49a064588d7ac1cb2b8ff37313ca018334f102",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SPECAN_DPD_AMPM_ACP_TXP/Properties/AssemblyInfo.cs",
+   "bytes": 1417,
+   "sha256": "981d8213639a30e60868b0d9c77b4dbe54181b287e8035cb165366e19237accd",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SPECAN_DPD_AMPM_ACP_TXP/SPECAN_DPD_AMPM_ACP_TXP.cs",
+   "bytes": 13026,
+   "sha256": "e1500d6bec9e96cd6b79fa31d8bffe685eec65744d9bc09a225dc43eb7354a8e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SPECAN_DPD_AMPM_ACP_TXP/SPECAN_DPD_AMPM_ACP_TXP.csproj",
+   "bytes": 4931,
+   "sha256": "8d711f88a5d381448946f7bad5ad2d51a1e1ff01c841f23f646c7505061bc922",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SPECAN_DPD_AMPM_ACP_TXP/SPECAN_DPD_AMPM_ACP_TXP.sln",
+   "bytes": 4392,
+   "sha256": "deabd1579b9cc1fd20c9cd254bf0c303af68ac2499c00b499d01b159af592d79",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SPECAN_TXP_LOADPULL/App.config",
+   "bytes": 178,
+   "sha256": "a4ecb205cc1e5cc94d0782a67f8bf57b3865e411f9153f1df70fada0e71dc43e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SPECAN_TXP_LOADPULL/Program.cs",
+   "bytes": 1074,
+   "sha256": "9630af64e3788702ce9dbc32af05d7992f4fafcfe263527cfb8fe7b6df8a7978",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SPECAN_TXP_LOADPULL/Properties/AssemblyInfo.cs",
+   "bytes": 1409,
+   "sha256": "05d33afb186d6a25e03ef2976d4a5876b943f12f0c01ff8edf3de788346c4a68",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SPECAN_TXP_LOADPULL/SPECAN_TXP_LOADPULL.cs",
+   "bytes": 7359,
+   "sha256": "9cd2f4c744468c7d54302edb03d95ca1db7c6d1479ea08498db621b004f7464a",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SPECAN_TXP_LOADPULL/SPECAN_TXP_LOADPULL.csproj",
+   "bytes": 4503,
+   "sha256": "e1cdf22d46d2cc535c8c9aae3caa5f77d36cf57b195862dac500a5638f184704",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/SPECAN_TXP_LOADPULL/SPECAN_TXP_LOADPULL.sln",
+   "bytes": 4150,
+   "sha256": "328ea51a34dc72d5ab9d0a7ef97ff4e00cfb296bc38f5800bc720202b7a33c5c",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/Supply_Example/App.config",
+   "bytes": 178,
+   "sha256": "a4ecb205cc1e5cc94d0782a67f8bf57b3865e411f9153f1df70fada0e71dc43e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/Supply_Example/Program.cs",
+   "bytes": 2075,
+   "sha256": "7631c1ee63c0062b6b851f96bb4aa6c5409fdb9b6217f7773f6e1f6f03266b6b",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/Supply_Example/Properties/AssemblyInfo.cs",
+   "bytes": 1423,
+   "sha256": "9f74c0a09c1f74ef3d51b2fa078c14186aee4c6435ce2c4be4cf4d24e0887cc5",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/Supply_Example/Supply_Example.csproj",
+   "bytes": 2499,
+   "sha256": "9ac6677159ee2e0f23297278a6bc2877fa5af7891745212412ac2f7c707c4613",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/Supply_Example/Supply_Example.sln",
+   "bytes": 1868,
+   "sha256": "d7891b68525e54c318aacc04bda8fd646f5eff557e6a5402dcf81257c89822dd",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/WLAN_AMPM_DEVM_SEM/App.config",
+   "bytes": 161,
+   "sha256": "5962331034c57140f60cafa1f6f8c072c33f537d201e89aff71c5c30bb9a8007",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/WLAN_AMPM_DEVM_SEM/Program.cs",
+   "bytes": 1060,
+   "sha256": "2380cea54e42133d6a5c1575dc843e23baf2946c89dbd78e6ea8dc85672a4f19",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/WLAN_AMPM_DEVM_SEM/Properties/AssemblyInfo.cs",
+   "bytes": 1420,
+   "sha256": "7296b067370325fadb9ee8b6e3af1025a1d7704852268eb5a0511d27d456b2f8",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/WLAN_AMPM_DEVM_SEM/WLAN_AMPM_DEVM_SEM.cs",
+   "bytes": 9644,
+   "sha256": "7a8c00a6e3f174a2ced85ed6a1bccca82ae732d412df22ed75f51d02725129b6",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/WLAN_AMPM_DEVM_SEM/WLAN_AMPM_DEVM_SEM.csproj",
+   "bytes": 4661,
+   "sha256": "0269f4b62f07664126ae9588da4f937b6c39b26e7fa08211da1be3534a1a8402",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/WLAN_AMPM_DEVM_SEM/WLAN_AMPM_DEVM_SEM.sln",
+   "bytes": 4147,
+   "sha256": "5e835be241dc4e16ffc59e7480e29c5ac249e09d55cfa345d76eb55f5b567c7b",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/WLAN_DPD_AMPM_EVM_SEM/App.config",
+   "bytes": 161,
+   "sha256": "5962331034c57140f60cafa1f6f8c072c33f537d201e89aff71c5c30bb9a8007",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/WLAN_DPD_AMPM_EVM_SEM/Program.cs",
+   "bytes": 1140,
+   "sha256": "b1f544396cd09d7f72ae96fdf35aa29fe6de69fa2ffdeb2648c9dfa27b176b5f",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/WLAN_DPD_AMPM_EVM_SEM/Properties/AssemblyInfo.cs",
+   "bytes": 1426,
+   "sha256": "77202e747994b9d664857487a19d861445aef325c12f1e7c0800b096274f0b4a",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/WLAN_DPD_AMPM_EVM_SEM/WLAN_DPD_AMPM_EVM_SEM.cs",
+   "bytes": 11993,
+   "sha256": "f08f448af3fe7a1b7bdfe91b31d50ae5e769d5a34efe090ebe66dccc6241775f",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/WLAN_DPD_AMPM_EVM_SEM/WLAN_DPD_AMPM_EVM_SEM.csproj",
+   "bytes": 4862,
+   "sha256": "ec1bf2267a7292ea10063eaae7f92ea7b76cfc06c302046cff6543b571b4a8f4",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/WLAN_DPD_AMPM_EVM_SEM/WLAN_DPD_AMPM_EVM_SEM.sln",
+   "bytes": 4725,
+   "sha256": "de901db22afa5af378e8927df5133fcfae04b5ebc30f38b7518eefd064cdc69d",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/WLAN_Example/App.config",
+   "bytes": 178,
+   "sha256": "a4ecb205cc1e5cc94d0782a67f8bf57b3865e411f9153f1df70fada0e71dc43e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/WLAN_Example/Program.cs",
+   "bytes": 3493,
+   "sha256": "f4896705289f7214f707eb8297359a20d2a5f96bd9edfabe01b551ee00aaa69f",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/WLAN_Example/Properties/AssemblyInfo.cs",
+   "bytes": 1415,
+   "sha256": "e134fab8d99a3ef3b8008ac99e8bb613b6cf3607e1a750aa35457f0433ec284c",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/WLAN_Example/WLAN_Example.csproj",
+   "bytes": 3281,
+   "sha256": "ac4e6b4654490e486edc61b51708ace52ea6f403c564beb96370f08792692a21",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/WLAN_Example/WLAN_Example.sln",
+   "bytes": 3008,
+   "sha256": "9e85949eaab7218c7d3ae867d25fafee128bc2d8f74bd955c41117e4ff1719c9",
+   "via": "tree"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 11357,
+   "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+   "via": "tree"
+  },
+  {
+   "path": "README.md",
+   "bytes": 3615,
+   "sha256": "b3e87913dea2f0a5f3685d6b97e9e580cf4f4421a8baaf81c9776e5557f08aa2",
+   "via": "tree"
+  },
+  {
+   "path": "SETUP.md",
+   "bytes": 7816,
+   "sha256": "926eb7faac65fd1fc433bd817327729e8251bc34198e4701a5a86c19ebe5929c",
+   "via": "tree"
+  },
+  {
+   "path": "Source/Common/Common.cs",
+   "bytes": 6381,
+   "sha256": "64b92af82b6f96f1ace11a12143c0055cd6d63bd26589e9f2b67fc225e950f2a",
+   "via": "tree"
+  },
+  {
+   "path": "Source/Common/Common.csproj",
+   "bytes": 2364,
+   "sha256": "558b2d45c70a6d205a89629770a098206b313e76d4a9cf3bdca345b2cf6d6c4c",
+   "via": "tree"
+  },
+  {
+   "path": "Source/Common/Properties/AssemblyInfo.cs",
+   "bytes": 878,
+   "sha256": "68312e3ca104e209682735c2ef6a5a60b2cf831f9776a82acdb39c2e448caa30",
+   "via": "tree"
+  },
+  {
+   "path": "Source/Digital/Digital.cs",
+   "bytes": 7619,
+   "sha256": "21747c7e992ce201ee790fb47c9adc67a3ab4623df813d64aa3916e905a5844d",
+   "via": "tree"
+  },
+  {
+   "path": "Source/Digital/Digital.csproj",
+   "bytes": 2878,
+   "sha256": "53355ffef93294b35fe131ca22bf97d2f057dd8d90bb1fbc7124d196cbe17a28",
+   "via": "tree"
+  },
+  {
+   "path": "Source/Digital/Properties/AssemblyInfo.cs",
+   "bytes": 870,
+   "sha256": "531e67bb2fc82ec7d9e00b5c5c70d84601260c94343ce6c010772e2d6fbc01a5",
+   "via": "tree"
+  },
+  {
+   "path": "Source/FocusTuner/FocusITunerBroker.cs",
+   "bytes": 29253,
+   "sha256": "e5b12d06edc6d39d4d920a7ef3455a5e85dfbe2e67a43343c469140ba0a8b583",
+   "via": "tree"
+  },
+  {
+   "path": "Source/FocusTuner/FocusTuner.cs",
+   "bytes": 7865,
+   "sha256": "31bbab6fcaaaa90cf54601c7e996c8c626d83640077a711e1b86693ea45bdaa1",
+   "via": "tree"
+  },
+  {
+   "path": "Source/FocusTuner/FocusTuner.csproj",
+   "bytes": 2414,
+   "sha256": "4b24f5b2309807af4af010b231a5f3ef42c262ff17330c1da4a59c4dc29d4580",
+   "via": "tree"
+  },
+  {
+   "path": "Source/FocusTuner/Properties/AssemblyInfo.cs",
+   "bytes": 875,
+   "sha256": "6f6236503c6cbe8f827d4f588ff7c005e9db684339d96d8975404e2f7860d1d2",
+   "via": "tree"
+  },
+  {
+   "path": "Source/Methods/Envelope Tracking/Envelope Tracking.csproj",
+   "bytes": 3881,
+   "sha256": "b4b38c746ef39635066a56a11afcf5191739c5aaa697fc188722dd880323bd6b",
+   "via": "tree"
+  },
+  {
+   "path": "Source/Methods/Envelope Tracking/EnvelopeTracking.cs",
+   "bytes": 22325,
+   "sha256": "c60a77ad52bfcc9ec57cf34a019ccdf8a3c838fe3ace1f9267ed4aa691cb575b",
+   "via": "tree"
+  },
+  {
+   "path": "Source/Methods/Envelope Tracking/Properties/AssemblyInfo.cs",
+   "bytes": 1280,
+   "sha256": "85c27fdf9eb895b6a355a2cc02848e45e75cbab80e9d36741e2256a2c7188963",
+   "via": "tree"
+  },
+  {
+   "path": "Source/Methods/RFmxDPD/Properties/AssemblyInfo.cs",
+   "bytes": 1220,
+   "sha256": "31be460e3c60e78d1052276ae46c7484aa20f13173afd2789ab4d17f4362e5ed",
+   "via": "tree"
+  },
+  {
+   "path": "Source/Methods/RFmxDPD/RFmxDPD.cs",
+   "bytes": 36827,
+   "sha256": "55874b45087875f45904a43e6af7a226fd67045035cd0ae8259705cf11215f85",
+   "via": "tree"
+  },
+  {
+   "path": "Source/Methods/RFmxDPD/RFmxDPD.csproj",
+   "bytes": 3220,
+   "sha256": "054d0e4efeb404feff4cea6713a2bb2319e5d3fd0816a70b2939eb4feaf0d308",
+   "via": "tree"
+  },
+  {
+   "path": "Source/PowerMeter/PowerMeter.cs",
+   "bytes": 5285,
+   "sha256": "018ec7876647eab012101cdf895804e4292b3882197a14904c7cc81ef6764eb6",
+   "via": "tree"
+  },
+  {
+   "path": "Source/PowerMeter/PowerMeter.csproj",
+   "bytes": 2106,
+   "sha256": "7a9d08379a00a18a57b6b94d6e139762a38fbc837c8602252b9c223303d4088d",
+   "via": "tree"
+  },
+  {
+   "path": "Source/PowerMeter/Properties/AssemblyInfo.cs",
+   "bytes": 1222,
+   "sha256": "a72399cee79db5e30bfc2e1196217681d108bd7c8e7acbce025d3ec46a664ed8",
+   "via": "tree"
+  },
+  {
+   "path": "Source/PowerMeter/ni568x.cs",
+   "bytes": 244488,
+   "sha256": "ff2a66bf064f5c9991dc7c80c929c976dd0bbbd3e0aad9cde43afc308c9737f5",
+   "via": "tree"
+  },
+  {
+   "path": "Source/Reference Design Libraries.sln",
+   "bytes": 9389,
+   "sha256": "89ee138c7cc785fec82b1e60a96fc9c0bdcf43538a5b63c647f53be35f9c8c22",
+   "via": "tree"
+  },
+  {
+   "path": "Source/SA/RFmx Instr/Properties/AssemblyInfo.cs",
+   "bytes": 875,
+   "sha256": "7fc8be404532ca88f30c3934b22d0623671f58a3c54c9602d4abde7a1f5123b0",
+   "via": "tree"
+  },
+  {
+   "path": "Source/SA/RFmx Instr/RFmxInstr.cs",
+   "bytes": 2764,
+   "sha256": "379f900bfbeb5400834fd631af77cd0019635080daf413641c057c323b2fbfbe",
+   "via": "tree"
+  },
+  {
+   "path": "Source/SA/RFmx Instr/RFmxInstr.csproj",
+   "bytes": 2546,
+   "sha256": "3aaf760499a77ced7a0d2e044f97b4208fc024e9cb68e319b25022a9ee3c4085",
+   "via": "tree"
+  },
+  {
+   "path": "Source/SA/RFmx LTE/Properties/AssemblyInfo.cs",
+   "bytes": 1260,
+   "sha256": "7f5bd242c507d950ce9c56bbf28a0b9597fa4eda02c2a361d1458736bf8ef623",
+   "via": "tree"
+  },
+  {
+   "path": "Source/SA/RFmx LTE/RFmxLTE.cs",
+   "bytes": 31100,
+   "sha256": "de87ea72abf4cb5311a9d46a198ca1c1994fa17433a7d227b73cabfff1a8b0e1",
+   "via": "tree"
+  },
+  {
+   "path": "Source/SA/RFmx LTE/RFmxLTE.csproj",
+   "bytes": 2951,
+   "sha256": "56ce98edf8dc68d41bc21f9b79b3778559ce5f9bd0a40e33401b051ccc5d0559",
+   "via": "tree"
+  },
+  {
+   "path": "Source/SA/RFmx NR/Properties/AssemblyInfo.cs",
+   "bytes": 1226,
+   "sha256": "2d614e7372f20124779d1333128d0baa1f3e525548703a093aa43cdc5b0bda18",
+   "via": "tree"
+  },
+  {
+   "path": "Source/SA/RFmx NR/RFmxNR.cs",
+   "bytes": 39528,
+   "sha256": "f9d8558c7aa7fcea206cc905a4d4e81da19a2d27c282f1f9a5c017694094afca",
+   "via": "tree"
+  },
+  {
+   "path": "Source/SA/RFmx NR/RFmxNR.csproj",
+   "bytes": 2905,
+   "sha256": "579c3f106de696be8153966ec5cba2d06b015c4305dc384ca140da5fdb10fc3d",
+   "via": "tree"
+  },
+  {
+   "path": "Source/SA/RFmx SpecAn/Properties/AssemblyInfo.cs",
+   "bytes": 877,
+   "sha256": "5762b61617245658b4ebd474d45642dbd5308eeadd68237a2702939eabc8a2dd",
+   "via": "tree"
+  },
+  {
+   "path": "Source/SA/RFmx SpecAn/RFmxSpecAn.cs",
+   "bytes": 36828,
+   "sha256": "b7df6a0996263dbccd276970fc5b2ae00b8309263be7c317d0806df85d5dbc06",
+   "via": "tree"
+  },
+  {
+   "path": "Source/SA/RFmx SpecAn/RFmxSpecAn.csproj",
+   "bytes": 3017,
+   "sha256": "b3e2ff03184ab70a59ab0c4ff068bd6684c29a97413ad0a4f748d06b7a58dfad",
+   "via": "tree"
+  },
+  {
+   "path": "Source/SA/RFmx WLAN/Properties/AssemblyInfo.cs",
+   "bytes": 870,
+   "sha256": "0bd87bdc58db8c1978acc58f6567f4a3b206929434d9a23ab4f0b8faf0d5b6fe",
+   "via": "tree"
+  },
+  {
+   "path": "Source/SA/RFmx WLAN/RFmxWLAN.cs",
+   "bytes": 32371,
+   "sha256": "7ca19d10f566af05e7d85f846720ae4c9971cb7b08602eac86eb1fe67238e1e8",
+   "via": "tree"
+  },
+  {
+   "path": "Source/SA/RFmx WLAN/RFmxWLAN.csproj",
+   "bytes": 3404,
+   "sha256": "0837b6390d7948891543c6067b841ec119ae450be7d0cd899a7a9002fcb3732c",
+   "via": "tree"
+  },
+  {
+   "path": "Source/SG/Properties/AssemblyInfo.cs",
+   "bytes": 859,
+   "sha256": "0ac1d37deeab963efd7b5589ec52a8cf3decf2bd6cd0c1a751c9e088001fd22a",
+   "via": "tree"
+  },
+  {
+   "path": "Source/SG/SG.cs",
+   "bytes": 38246,
+   "sha256": "6852352ad8bc36df4f3fd26ae8c9c7562643478ee6688ebb40bfb7d2106c8ab1",
+   "via": "tree"
+  },
+  {
+   "path": "Source/SG/SG.csproj",
+   "bytes": 3307,
+   "sha256": "bede2185e35f9f18787e796ac10e92f5ad17b441cc6a916df74251bb3abad6c3",
+   "via": "tree"
+  },
+  {
+   "path": "Source/Scope/Properties/AssemblyInfo.cs",
+   "bytes": 864,
+   "sha256": "91cbeabe767fa0bfa05b173ad438706977661c511806d5b71d8b77401331a067",
+   "via": "tree"
+  },
+  {
+   "path": "Source/Scope/Scope.cs",
+   "bytes": 5164,
+   "sha256": "464547e53299463fdb5d08fd2de5c98666fe6247b3aab9a1c79e0fb6f02e49ac",
+   "via": "tree"
+  },
+  {
+   "path": "Source/Scope/Scope.csproj",
+   "bytes": 2538,
+   "sha256": "5d9d78072c834963f1fa11818b02ebf3725f37e99eb971d4d218f6efe28a6d79",
+   "via": "tree"
+  },
+  {
+   "path": "Source/SolutionInfo.cs",
+   "bytes": 592,
+   "sha256": "e1d225ede833cbaf56000425bc7ed28539e1493dd3b169ba6c06a5d5227111b5",
+   "via": "tree"
+  },
+  {
+   "path": "Source/Supply/Properties/AssemblyInfo.cs",
+   "bytes": 866,
+   "sha256": "5d8120b8faaa4e3b7a0d838f2d193dea6f0322c17cf022257943b7a549e12f9b",
+   "via": "tree"
+  },
+  {
+   "path": "Source/Supply/Supply.cs",
+   "bytes": 14745,
+   "sha256": "2fdb5cfe1ccfe0e1aaf426f6b8e1b6fc232ae9524083fd6f73c70790172a4cca",
+   "via": "tree"
+  },
+  {
+   "path": "Source/Supply/Supply.csproj",
+   "bytes": 2605,
+   "sha256": "1feefaf517e91d85cd7ba1ed48f38b87c3fb97096eb969d7e703257eaa161ba0",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Automation Sequence Analysis.tsaproj",
+   "bytes": 79813,
+   "sha256": "263cd9910a2982bdc678964e04c2861fc5c0364cf777e44afb18ef538106c36d",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Code Report/Code Report.sln",
+   "bytes": 1114,
+   "sha256": "c4f913ee726573c33f1e30032c2869cf3b933fe2bc910ab4f76edc84e5844d60",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Code Report/Code Report/Code Report.csproj",
+   "bytes": 834,
+   "sha256": "b3c3cf0527b7efa02840f474237f46a15b52084673bc98ea1da4dceaa6188fda",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Code Report/Code Report/Program.cs",
+   "bytes": 15688,
+   "sha256": "e8b137381e803c64c6dd8ac9b35c278ffe2a35f762594f13b27d50123c1929e6",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Dependencies/iTunerX.ocx",
+   "bytes": 282624,
+   "sha256": "a8a0984deb59ad891943d9b5d4daeaf8ee2927fa8a701ad8b52f7508c9002b5a",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/MatchFileText.ps1",
+   "bytes": 5911,
+   "sha256": "77f458d94cc5360c974269dbe3d869416146d18e0271efd39d06c92b5b4d8427",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/RunConformityChecks.ps1",
+   "bytes": 2472,
+   "sha256": "5b335bda57202c5634f5f523d90e356a2a298ca2a46fb70ac96f10f4e921b5f9",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/EnvelopeTrackingTests/EnvelopeTrackingTests.cs",
+   "bytes": 2178,
+   "sha256": "cbb670772b31257650fd9f032cf1a9c646296638d32bc2090f1dafdfcb79c62e",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/EnvelopeTrackingTests/EnvelopeTrackingTests.csproj",
+   "bytes": 6058,
+   "sha256": "50a9ee61a0f53e979d5b3a70a01e80aa553d542a0cf0c1d7317df8eaea388d0b",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/EnvelopeTrackingTests/Properties/AssemblyInfo.cs",
+   "bytes": 663,
+   "sha256": "c060d6eb4269a0ce3d05711190f4e98a646f61e4d4a3559c75a64e806cbf4b30",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/EnvelopeTrackingTests/app.config",
+   "bytes": 517,
+   "sha256": "9c9462fbe06ab745e630097dc0a4c0d7bec4f77ec237c402236170bcb381608d",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/EnvelopeTrackingTests/packages.config",
+   "bytes": 381,
+   "sha256": "da0e74ecc9b91cd62f0e45f46e67a3ae03b2e52ecb8d7ac6b9d48ccd4a8f076d",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/LTETests/LTETests.cs",
+   "bytes": 2311,
+   "sha256": "ec8bd58f2e388f467ef0fea8b0306f9d8c1a6f84be45281b5cd68e56a0ffac2c",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/LTETests/LTETests.csproj",
+   "bytes": 4552,
+   "sha256": "cf68698f68cd767b2905d5a25df3d0df67111ede7b301c0d6c56a82ba6fb9e1b",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/LTETests/Properties/AssemblyInfo.cs",
+   "bytes": 617,
+   "sha256": "75e9422948b068650100d0a6e077bf35c42f78d7982cf5eb21ef17f1e2b8ce64",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/LTETests/app.config",
+   "bytes": 527,
+   "sha256": "d16cb970ff16050b377e67f6d6465dd381f5cdc6a10549f92e48df390322a42a",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/RDLUnitTests.sln",
+   "bytes": 7291,
+   "sha256": "6b690fde751db9ba92a5d796a09cb609b5b636141fde17735e4114341770ffbc",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/SGTests/Properties/AssemblyInfo.cs",
+   "bytes": 1392,
+   "sha256": "4ad219e9f08e1d94ea0c3c013ec3d563276c9c2e63c3dbe68b4a0c9f39a5ce38",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/SGTests/SGTests.cs",
+   "bytes": 7781,
+   "sha256": "db9fa5c441f908714509d4fd3ee0e95cfdf062e57adf528095ca96ef38cac19f",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/SGTests/SGTests.csproj",
+   "bytes": 7466,
+   "sha256": "bf1e8138aa1d5f4a4f14aeae38ff85c43bbd9c22d102f925e330a9db25605168",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/SGTests/Support Files/BT No Burst.tdms",
+   "bytes": 171333,
+   "sha256": "ca392bff2d6a6e763b9f7939eb3e42c56bb89df7b9e5eca012ea02657e3d2b24",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/SGTests/app.config",
+   "bytes": 527,
+   "sha256": "d16cb970ff16050b377e67f6d6465dd381f5cdc6a10549f92e48df390322a42a",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/SG_SA_IntegrationTests/Properties/AssemblyInfo.cs",
+   "bytes": 665,
+   "sha256": "6a492d6d9db4936457b835ad973433d69440e3ec1e8acc417aa8f3be01014816",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/SG_SA_IntegrationTests/SG_SA_IntegrationTests.cs",
+   "bytes": 12761,
+   "sha256": "49af144b77619d587d4649f632669d811539197c1e67563c8cdc5beb35338dcb",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/SG_SA_IntegrationTests/SG_SA_IntegrationTests.csproj",
+   "bytes": 7176,
+   "sha256": "f78317c96a78dd008ba7fa80071db1732e0387b4ad96544902355df6f9562fa3",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/SG_SA_IntegrationTests/app.config",
+   "bytes": 517,
+   "sha256": "9c9462fbe06ab745e630097dc0a4c0d7bec4f77ec237c402236170bcb381608d",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/SG_SA_IntegrationTests/packages.config",
+   "bytes": 303,
+   "sha256": "d26d60721ee320771a9f6b39aaf29008e560dbd15f06be241f358d8b293edd01",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/ScopeTests/Properties/AssemblyInfo.cs",
+   "bytes": 1396,
+   "sha256": "8fe1fb2078934a3d7985f409cdac6ee682b61c9e4f051492b6d7cc014bf0d913",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/ScopeTests/ScopeTests.cs",
+   "bytes": 2840,
+   "sha256": "eef7bb84ce23d8374fd1db558e5a4fe507fe100d939f5c8b84033ea798cd7bc7",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/ScopeTests/ScopeTests.csproj",
+   "bytes": 5445,
+   "sha256": "4708e92e73030862387bc3e23a9e9ed66ea274cb3b543e789c66100f52dfb10a",
+   "via": "tree"
+  },
+  {
+   "path": "build-tools/Unit Tests/ScopeTests/app.config",
+   "bytes": 527,
+   "sha256": "d16cb970ff16050b377e67f6d6465dd381f5cdc6a10549f92e48df390322a42a",
+   "via": "tree"
+  },
+  {
+   "path": "images/README/rdl_code.png",
+   "bytes": 44930,
+   "sha256": "fe351a956df07f691b264b8cec04e2865d2baf69572793932b046bfcb6bef1c5",
+   "via": "tree"
+  },
+  {
+   "path": "images/README/standard_example_code.png",
+   "bytes": 18668,
+   "sha256": "388fae2ff2af64a3addcdb3e5d02e89ec3a7b276cac55db49ce0b492fceb3c77",
+   "via": "tree"
+  },
+  {
+   "path": "images/SETUP/master.png",
+   "bytes": 748,
+   "sha256": "7b28a6b9854a0932030065207ed669246fa9e6e04f9d898f1e308a8dba2ef75f",
+   "via": "tree"
+  },
+  {
+   "path": "images/SETUP/origin-master.png",
+   "bytes": 924,
+   "sha256": "df75b49928f3f0927089606276a51151043813c81750c2c3a83b28a639496404",
+   "via": "tree"
+  },
+  {
+   "path": "images/SETUP/public-origin-master.png",
+   "bytes": 1074,
+   "sha256": "c2683686dc05751ac956cc0ccf074bf69d062e928e92c26c4b5795daadcd3053",
+   "via": "tree"
+  },
+  {
+   "path": "images/SETUP/push_to_public.png",
+   "bytes": 13793,
+   "sha256": "0ea9ea79afd33ab5f8d6cc058578c8158165b595e21bc19b6d6c3d85421ff8e8",
+   "via": "tree"
+  },
+  {
+   "path": "images/SETUP/remote_view.png",
+   "bytes": 2317,
+   "sha256": "f371651897c3727a0c3f683c4e5ed3b5eaf7c5f137b291ce88026b59358399ec",
+   "via": "tree"
+  },
+  {
+   "path": "images/SETUP/sync_remote.png",
+   "bytes": 8914,
+   "sha256": "a13b60c51852d05d3474c0f860e19cfec6af4ccbfa010ef76b1656ae0c3727bb",
+   "via": "tree"
+  }
+ ],
+ "skipped": [],
+ "external": []
+}

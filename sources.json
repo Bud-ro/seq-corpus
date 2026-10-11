@@ -142,5 +142,13 @@
   "license": "MIT",
   "files": 148,
   "bytes": 3090629
+ },
+ {
+  "name": "NISystemsEngineering__rfic-reference-design-libraries-csharp",
+  "repo": "NISystemsEngineering/rfic-reference-design-libraries-csharp",
+  "commit": "5e318280860f781d6c6f351abb56c684df6e428a",
+  "license": "Apache-2.0",
+  "files": 187,
+  "bytes": 1826586
  }
 ]
