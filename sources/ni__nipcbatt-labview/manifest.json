@@ -1,0 +1,2419 @@
+{
+ "repo": "ni/nipcbatt-labview",
+ "url": "https://github.com/ni/nipcbatt-labview",
+ "commit": "9f5e339104d64a374ccf46c4c8caf805d6c23148",
+ "license": "MIT",
+ "licenseFile": "LICENSE",
+ "fetched": "2026-10-11",
+ "files": [
+  {
+   "path": "source/Automation/Action Button Tests/Action Button Test.seq",
+   "bytes": 13612,
+   "sha256": "7aa0000e0fc3ef2211a8aeaaae96492b0cc01fa1df36b0160362b628a57ec680",
+   "via": "extension"
+  },
+  {
+   "path": "source/Automation/Audio Tests/Audio Test.seq",
+   "bytes": 16820,
+   "sha256": "68f42732af564d1565b1590842af0b99c63f1f3301299f293ec2b6bdc29c9a2a",
+   "via": "extension"
+  },
+  {
+   "path": "source/Automation/Automation Sequence.tpj",
+   "bytes": 1742,
+   "sha256": "259db94efd03b3ae9573c4313af2b6de4a0af7cc036eae357739bf65fbfdb797",
+   "via": "extension"
+  },
+  {
+   "path": "source/Automation/Communication Tests/Communication Test.seq",
+   "bytes": 12877,
+   "sha256": "aae9cfa4c817abc63d9d149ef2051f182475ecbfb52565e6b8c7f8a8693d8ca4",
+   "via": "extension"
+  },
+  {
+   "path": "source/Automation/Digital IO Tests/Digital IO Tests.seq",
+   "bytes": 25639,
+   "sha256": "42b7bb6e594f460e2ddb203962faba799e47b3e2b952ae0d195f076995e36630",
+   "via": "extension"
+  },
+  {
+   "path": "source/Automation/Hardware Config.ini",
+   "bytes": 9795,
+   "sha256": "263fc188bc20b5b83527c256eec522365e37c4a1e25427cfed6bdf80eb45d984",
+   "via": "extension"
+  },
+  {
+   "path": "source/Automation/LEDs Tests/LEDs Tests.seq",
+   "bytes": 15384,
+   "sha256": "21a0231e4bfb4d0a72de0c9160789239d64cc40f33c8fce3f9b80b3407e7d7f1",
+   "via": "extension"
+  },
+  {
+   "path": "source/Automation/Microphone Tests/Microphone Test.seq",
+   "bytes": 14583,
+   "sha256": "7649bc224820928b1c4ba62535fe59e9008f24d96fe8ddf72d1c0a38d4b9c426",
+   "via": "extension"
+  },
+  {
+   "path": "source/Automation/Power Supply Tests/Power Supply Test.seq",
+   "bytes": 19096,
+   "sha256": "73c47d86dd23a68cad64a32e206ecda94de788c06ca2ddbabfb18c40d74ca661",
+   "via": "extension"
+  },
+  {
+   "path": "source/Automation/Sensor Tests/Sensor Test.seq",
+   "bytes": 20171,
+   "sha256": "2b56f0b7959eaf419979747020472b960222e6322d49ba9148b55151f0655969",
+   "via": "extension"
+  },
+  {
+   "path": "source/Automation/Synchronization Example/Synchronization Example.seq",
+   "bytes": 23601,
+   "sha256": "482c57fb260ad56019be8faa11f7d4d495376a57066f8b2703db6a46942e603a",
+   "via": "extension"
+  },
+  {
+   "path": "source/Automation/_Common/SubVIs/Digital Ramp Pattern Generator.vi",
+   "bytes": 23722,
+   "sha256": "5f24f1ad6f4cd63e464562c947d0d30b27c523cc133cbf57581d5ca26af81b06",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Common/Calculate Acquisition Time.vi",
+   "bytes": 15010,
+   "sha256": "d74e47a632f76f3b5eb368f7bf4dd09e3de5d474d34721e779c92c1bad3e3eb0",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Common/Error Builder.vi",
+   "bytes": 17245,
+   "sha256": "b0bc4f70e203b3bd8eb1fc93ad1ee6e48c6524cb2a1a45d7a08f82dd0faf2605",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Common/Import Hardware Config.vi",
+   "bytes": 19362,
+   "sha256": "0b1527d31588f4495f920ab670d73c33399ee476d9c11778b30eec21a2720e7b",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Common/Typedefs/Execution Options - Measure.ctl",
+   "bytes": 17448,
+   "sha256": "5cd39464603d66cba4c002eb0ffb63499e06f765ea4aa51be2efc171da5cc11c",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Common/Verify if the Global Ch Exist.vi",
+   "bytes": 25701,
+   "sha256": "9ee96fa1500c17d25a1ac757a6ca6ed33fe9e9d8abf6a8b80df468ec3b073adb",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Communication/845x/845x_I2C Read.vi",
+   "bytes": 36209,
+   "sha256": "327d58118b9b66db3608cf1788cdfe2c1c36d12d09df5a1d60de2f635a0488da",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Communication/845x/845x_I2C Write.vi",
+   "bytes": 36166,
+   "sha256": "3f91fd11bd0d7abb82a7e05d60e68fce085dcfccb9979a04d067611e109471b9",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Communication/845x/845x_SPI Read.vi",
+   "bytes": 34053,
+   "sha256": "c82e7b3275d1ea3d2004239a5313c32ec8c229f3e9c8dc9abc7125f4189d38a3",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Communication/845x/845x_SPI Write.vi",
+   "bytes": 36770,
+   "sha256": "9a764fdfd19827f8208a224ceec97f7d7abfbd1aeae60d1bad877a63957b37de",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Communication/845x/SubVIs/CreateWriteCluster.vi",
+   "bytes": 10486,
+   "sha256": "5a57e38e43990ffdaee9c5dde1011faae675483f94bfb9a25b98aff53d351dd5",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Communication/Communication.lvlib",
+   "bytes": 14936,
+   "sha256": "0a9627329391e67e610058f7249fb043468f80aa846dbbc6a0690e6e406d138a",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Communication/Serial/Typedefs/Serial - Settings.ctl",
+   "bytes": 24754,
+   "sha256": "6191f1686ae6d351ad88812cfb3ab99c07481b87911215076031f9df2d632b63",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Communication/Serial/VISA_Simple Serial.vi",
+   "bytes": 41114,
+   "sha256": "de86649608c4cb0c10706599fb8881b5be35bae9260fce34c85738a02d7b1e29",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC Voltage Generation/DAQ_DC Voltage Gen Close.vi",
+   "bytes": 22544,
+   "sha256": "e3fff2ea2f32293d709fd55449bef36164705c4b41dde3e884752d816c0c14fc",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC Voltage Generation/DAQ_DC Voltage Gen Configure and Generate.vi",
+   "bytes": 30485,
+   "sha256": "a4ad84b8de9a35aeab939fee5d811585840ae7b95f7cdc96a3c348c3fe178d08",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC Voltage Generation/DAQ_DC Voltage Gen Initialize.vi",
+   "bytes": 30425,
+   "sha256": "74a1ad4b9db46c70bbee25f3f18e4bf349a507b1e18efede82ce77a28b40ed9a",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC Voltage Generation/DAQ_DC Voltage Generation.lvlib",
+   "bytes": 27184,
+   "sha256": "ae3d7efb6462bcb97f7593a6ae65b5467911fec0c989deced4b0bbf8074fba80",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC Voltage Generation/Typedefs/Range Settings.ctl",
+   "bytes": 19727,
+   "sha256": "537151bcc856cdf612b6bec2243ca33e9716842a6edec4a9f45470a0974815b3",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC Voltage Generation/Typedefs/Timing & Trigger Settings.ctl",
+   "bytes": 27214,
+   "sha256": "54d07744234dd8a9796f418068dade5855fcf6f89b5a29707a580ad57b5d04ec",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC Voltage Generation/Typedefs/Timing Settings.ctl",
+   "bytes": 16792,
+   "sha256": "01942feb5f3b1e14f7b1f41237d409bcec11813607cd3cceffb757605f0677ff",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC Voltage Generation/Typedefs/Trigger Settings.ctl",
+   "bytes": 19257,
+   "sha256": "e55d7316d71c2c1e4c08dd1a777086f9e92637a17eee56940ad624beea14cbe4",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Current Measurement/DAQ_DC-RMS Current Meas Close.vi",
+   "bytes": 22733,
+   "sha256": "52f9b206e1060e608dbf18cb2902396027c49502683fa35f147559e769e818d0",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Current Measurement/DAQ_DC-RMS Current Meas Configure and Measure.vi",
+   "bytes": 87701,
+   "sha256": "bb9de7b183dc96a9437eee18ea3822dc0042a63d29dc63f140e96c90e24281fa",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Current Measurement/DAQ_DC-RMS Current Meas Initialize.vi",
+   "bytes": 31350,
+   "sha256": "47af641adfc99973d7ceec69cb7e293110fb8b7ccbf49bdebce2477c2d60a045",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Current Measurement/DAQ_DC-RMS Current Measurement.lvlib",
+   "bytes": 27902,
+   "sha256": "b140d0be1b182b926cfc51b87513bf6aa14ba3116fa9af33f841c2e136c3fd53",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Current Measurement/SubVIs/DCCM Analyze DC Current Measurements.vi",
+   "bytes": 30156,
+   "sha256": "7a9f9f03553d8afce5bedc2c670139012a0f1c01e65d5df4a13e9df760791249",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Current Measurement/SubVIs/DCCM Configure Range and Terminal Settings.vi",
+   "bytes": 43634,
+   "sha256": "08fcfd9a5f854fdd6f36c0db6fd513d4b4bf463d2aaa3a662f40d6e831ac35b1",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Current Measurement/Typedefs/DC and RMS Current Measurements.ctl",
+   "bytes": 17600,
+   "sha256": "0e594fe2a0863e43afbb2bec3482d4f93000aba4c884e3a6a44b9d22add4aca5",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Current Measurement/Typedefs/Execution Settings.ctl",
+   "bytes": 21971,
+   "sha256": "19cef47facff6978fceb7cdbdce66e5ad4c2e9ad31ce5bf2704f84083693195d",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Current Measurement/Typedefs/Range and Terminal Settings.ctl",
+   "bytes": 36012,
+   "sha256": "db4b9d1381a4163bc14c4de0b2256b50ca19215b60f59560a66c58f9e99ca732",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Current Measurement/Typedefs/Specific Channel Settings.ctl",
+   "bytes": 22862,
+   "sha256": "1bf4ae729b35e77a67d4509cc64c09bf2c9ed2423f2fbcb44a5607247b143992",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Current Measurement/Typedefs/Timing & Trigger Settings.ctl",
+   "bytes": 31590,
+   "sha256": "69f3453e2ed11187715bbeedbf5fa9bb239170ab3ca05498b363296ea3f67b87",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Current Measurement/Typedefs/Timing Settings.ctl",
+   "bytes": 21176,
+   "sha256": "ab21cfc9323be913ddb2cab2c13e8fde52b5de75e4f13be1c81911a27c180def",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Current Measurement/Typedefs/Trigger Settings.ctl",
+   "bytes": 19357,
+   "sha256": "61dfc18139962fb5f291db6fed2f107996594a34b4cdd2a9e7c9eb89de4fb177",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Voltage Measurement/DAQ_DC-RMS Voltage Meas Close.vi",
+   "bytes": 22701,
+   "sha256": "0eb357979521e5e7922905a49234a9b4709456064aa2ed5729a83b5076f84e94",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Voltage Measurement/DAQ_DC-RMS Voltage Meas Configure and Measure.vi",
+   "bytes": 83981,
+   "sha256": "e5bc4288b05a20fe8a4bb211b374379329cd6832f4855e8cf7c450bb1c935508",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Voltage Measurement/DAQ_DC-RMS Voltage Meas Initialize.vi",
+   "bytes": 30674,
+   "sha256": "4d90d3f183235b7b617dba1fb79a52e7bf958579b59f065545fe268f463245c6",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Voltage Measurement/DAQ_DC-RMS Voltage Measurement.lvlib",
+   "bytes": 27847,
+   "sha256": "7db2fd4e7529962f35fb7970a1a1f938e584b2519111331abdfe5a45f0181b9b",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Voltage Measurement/SubVIs/DCVM Analyze DC Voltage Measurements.vi",
+   "bytes": 30356,
+   "sha256": "576159a665f7bc32c4ab59489279b37db4f20438ad1ffea22a05c38b8069d640",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Voltage Measurement/SubVIs/DCVM Configure Range and Terminal Settings.vi",
+   "bytes": 34390,
+   "sha256": "7f26ef134980f26fa1e0104fd02b005a82147ef05e44712565fb5dc36a6359cf",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Voltage Measurement/Typedefs/DC and RMS Voltage Measurements.ctl",
+   "bytes": 17588,
+   "sha256": "e2b147c4476e069e22a3d3f96ca35f8af56d1083c339ec245dfea3a986b5565d",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Voltage Measurement/Typedefs/Execution Settings.ctl",
+   "bytes": 21987,
+   "sha256": "b68f0b646d0f75f5f9c6a510527eba92a44c44275f0f9baf58d2cd1864d0b736",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Voltage Measurement/Typedefs/Range and Terminal Settings.ctl",
+   "bytes": 31952,
+   "sha256": "64cfa81e327f4f4605dfaefb9b5754af7cb0ba08f6f6059baf1c42e4c67f2187",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Voltage Measurement/Typedefs/Specific Channel Settings.ctl",
+   "bytes": 20802,
+   "sha256": "fd48c4a62588f3c8678206725fc691b3a9c2a3f7bce5a81b80016d57eac3262f",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Voltage Measurement/Typedefs/Timing & Trigger Settings.ctl",
+   "bytes": 31698,
+   "sha256": "fe2683eacbf5e8bd0d76ad6babbba5d75ff462ed27c2235abd7170780e2db25d",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Voltage Measurement/Typedefs/Timing Settings.ctl",
+   "bytes": 21172,
+   "sha256": "9998db31994adb28e3cc249a388e547000648d7c50cff5d77e15675c8a65d1f2",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DC-RMS Voltage Measurement/Typedefs/Trigger Settings.ctl",
+   "bytes": 19001,
+   "sha256": "169f65ef71e6a1a103ce6d1a7500709b3b85fc2f5f6960110cc20264bf8032ce",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Examples/Channel Topology Mapping Tester Tool.vi",
+   "bytes": 22804,
+   "sha256": "bb79f15a41f3ca166d7f36959b4df80ef35f702c7d544fb0406392f32a3e0139",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Examples/DMM DCCM Configure and Measure Only in a Loop.vi",
+   "bytes": 47945,
+   "sha256": "5c27f4a1a99dfbfa882680ba8560e8b1f6e913c04b2fe59c1f18e5f78192ee14",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Examples/DMM DCVM Configure and Measure Only in a Loop.vi",
+   "bytes": 48025,
+   "sha256": "7adb237fa8220f92d5eb354b652a41b05d41ccbd01b0586dd38f003507ecc3c8",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Examples/DMM DCVM Immediate Trigger Delay.vi",
+   "bytes": 64660,
+   "sha256": "ee9b41aad6061cf969df34a808b8a1c52b72bc4b615132e935fbb165c8e371f0",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Examples/DMM DCVM TTL0 PXI HW Trigger Delay.vi",
+   "bytes": 76778,
+   "sha256": "adf5727df365e508cc03c710bdc0fad78a6e1b0d577c25f9868aa650efcdfe79",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Examples/DMM FDVM Frequency_Period Individual.vi",
+   "bytes": 61620,
+   "sha256": "d6d62d4f62166a97047050e9d8e1bf02da9a182fdafe37a4bd5783cdf2c3759b",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Examples/DMM RM Resistance 2W_4W Individual.vi",
+   "bytes": 47942,
+   "sha256": "6497e908d7909ca13c56569d26aed83a8a6450240e3842e390534339ff29471a",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Examples/DMM Simple Mixed Measurement.vi",
+   "bytes": 45196,
+   "sha256": "7e0ba995a345d214db8970db4f9da23e8b9fc1f23b02e73b7918590592c94388",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Examples/Full DMM SCAN PMPS 16V-15C - 2 SCANs.vi",
+   "bytes": 90648,
+   "sha256": "2f895fae7cc10fff03d8c3bbda03006ebbc086826431b7cd00b54ff0abb27ab7",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Examples/Full DMM Scan DER - 2 SCANs.vi",
+   "bytes": 76035,
+   "sha256": "1807640a9c3c2b2c683bbb5f0c0a8456f5d46ca09b110c1cf9c06dc8be54e679",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Examples/Full DMM Scan PRD 32 - 2 SCANs.vi",
+   "bytes": 82342,
+   "sha256": "e6612b295b6713abf1b0e7013cdba9516c14e7a01c1219570bb504cf458350b1",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Examples/SWITCH Digital Path Generation Cases Individual.vi",
+   "bytes": 33079,
+   "sha256": "5c2c9dd83e41d2006c1a0ae29b6e750173e306c57a319f901cc94aed68a11f56",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Examples/Simple DMM SCAN DER - Loop.vi",
+   "bytes": 32810,
+   "sha256": "187264cbde5afc1d2e5022e58307cdda919e9bdf6cb0a49506b571efeec4d844",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Examples/Simple DMM SCAN PMPS 16V-15C - Loop.vi",
+   "bytes": 33743,
+   "sha256": "e6c23f6e396ebc9b9360b6ac350928be229108876943e57c75a4e139d231366f",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Examples/Simple DMM Scan PRD 32 - Loop.vi",
+   "bytes": 32633,
+   "sha256": "e4b7d95081c3a3a552769d2b5013c10536c3965b7a2375fdda981acee32b5001",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Mixed Measurements/DMM Mixed Meas SubVIs/DMM Mixed Meas Format Function Range.vi",
+   "bytes": 63836,
+   "sha256": "bebdd578d0ef77732aea9e13196d944de00f2c125906f5016a1e736472e7a824",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Mixed Measurements/DMM Mixed Meas SubVIs/DMM Mixed Meas Format Measurement.vi",
+   "bytes": 38789,
+   "sha256": "efdbcf28b47342c4b69f9804c05ddb7d35ce10b31129a79f4345a5f67a4d67be",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Mixed Measurements/DMM Mixed Meas Typedefs/DMM Execution Settings.ctl",
+   "bytes": 20679,
+   "sha256": "d2990ca77b87711d74527bc14e3d9698e5e60a79fda373ec93d8b8ceca5c74bb",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Mixed Measurements/DMM Mixed Meas Typedefs/Function Settings.ctl",
+   "bytes": 13734,
+   "sha256": "4ac7c8c21deae73282ebe65c3beefc2f9c421234df9abe9ae6493f7c913356a4",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Mixed Measurements/DMM Mixed Meas Typedefs/Measurement.ctl",
+   "bytes": 11916,
+   "sha256": "d4ed37b3112bb9f0a64e7545201af1603e177299b56c8799647f1bb6a27dd574",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Mixed Measurements/DMM Mixed Meas Typedefs/Timing & Trigger Settings.ctl",
+   "bytes": 25966,
+   "sha256": "590762d8a68770ab341c388c197628b65af1d49dfea9244e2517eecca0041fac",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Mixed Measurements/DMM_Mixed Meas Close.vi",
+   "bytes": 21496,
+   "sha256": "44cc4f3c9255b32b7dd5334267f866930aa3c448a7e15ec0c8cc211457e311e7",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Mixed Measurements/DMM_Mixed Meas Configure and Measure.vi",
+   "bytes": 79812,
+   "sha256": "48a41648d2ecdcf56ee990dd3aea5d191a4e83915f882d1ef1be8a63088b7e7e",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Mixed Measurements/DMM_Mixed Meas Initialize.vi",
+   "bytes": 38093,
+   "sha256": "63ffab4cc323f41ca4e727a04e39e9936917731e93a0f3cea111bfc738555df0",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM Mixed Measurements/DMM_Mixed Measurement.lvlib",
+   "bytes": 2700,
+   "sha256": "8bc7794add11f07693af93f91e27055b383e51235049cb1cdbafe155ed657430",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN DER/DMM_Scan DAQ Ext RLY.lvlib",
+   "bytes": 4896,
+   "sha256": "da520ba96e66ed78be6698ab064ce40afe58e1cdedf8816ddbda50388f2598a9",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN DER/DMM_Scan DER Close.vi",
+   "bytes": 34594,
+   "sha256": "2d535421844c567de6022241068f087223acceeebcc9cad933046a10f72d6332",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN DER/DMM_Scan DER Configure and Measure.vi",
+   "bytes": 91158,
+   "sha256": "f5baca35f31469133f033a3f0c8ab9d53007240b0ff0ec1c7bc9b66a0b858540",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN DER/DMM_Scan DER Initialize.vi",
+   "bytes": 71927,
+   "sha256": "1bf37ddf9654a96802156c476969781d573cb235f9ef7eca2b9c1508d8d57f55",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN DER/SubVIs/Current Channels Array.vi",
+   "bytes": 32694,
+   "sha256": "d0f7504ff99f93343db6d342a00e885ffbd18d676b35343427d13ad11bd46c59",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN DER/SubVIs/Voltage Channels Array.vi",
+   "bytes": 22766,
+   "sha256": "f2152bcb62afd1dca0537dbb136676e178469c3aa2289d04a2e2939a170b1e17",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN DER/SubVIs/Wait For Debounce External Relays.vi",
+   "bytes": 22277,
+   "sha256": "ff0eb7bf33805c6b08076911527549662bc56ad7ac2c038e86a3b0c96df31a22",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN DER/Typedefs/Formatted measurement.ctl",
+   "bytes": 14794,
+   "sha256": "8f4feb1f085445f238bb49de58f968079153c2bfdb2af5b3d9c3e612dda2b565",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN DER/Typedefs/Measurement values.ctl",
+   "bytes": 14823,
+   "sha256": "968642bde3215994fc1e636a1051c3fc6f3555dca4cc67724e0fe62d6c0b2dc0",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN DER/Typedefs/Scan Resource Handles In.ctl",
+   "bytes": 21653,
+   "sha256": "2421bfd38f9516ce68ecedf520d101fdec53bb370841a913b299cd672fdd2024",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN DER/Typedefs/Scan Resource Handles Out.ctl",
+   "bytes": 21650,
+   "sha256": "55a85216a8cc68cc0644ef6a0a8b04391f46cce73346f7806bfb6742600ffa5c",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN DER/Typedefs/Scan Resource Names.ctl",
+   "bytes": 15612,
+   "sha256": "ae29309bd9f3f26af8b97c390ab0cb841f2ca972708eac80810f7a981ac6bc06",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN DER/Typedefs/Scan configuration.ctl",
+   "bytes": 17639,
+   "sha256": "4fe81ebe0e0e1daf0f7e72083563316903101568b5d3e3d82491a650d51f696e",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PMPS 16V-15C/DMM_Scan PMPS 16V-15C Close.vi",
+   "bytes": 24343,
+   "sha256": "e0e2762fcf2cecd04fa5934449da94585d6f81a912ae19708439cc97a2e7072d",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PMPS 16V-15C/DMM_Scan PMPS 16V-15C Configure and Measure.vi",
+   "bytes": 90835,
+   "sha256": "9c1e20c798f4a5092009000fd2007121fc0abc860cc5e2901e742385534812b6",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PMPS 16V-15C/DMM_Scan PMPS 16V-15C Initialize.vi",
+   "bytes": 123604,
+   "sha256": "57b1a67576365abbbd0641901fc8765e364ee52b4c38da01cdf33502c7d0c56f",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PMPS 16V-15C/DMM_Scan PXI Mux PXI Shunt 16V-15C.lvlib",
+   "bytes": 4287,
+   "sha256": "18769acca9ea0a9c99301e31a9c60f7d4cac649a843ae029a322a4c705e769a3",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PMPS 16V-15C/Scan Resources Names.ctl",
+   "bytes": 12461,
+   "sha256": "982e30cccb53d0cab379d70f4217bb78e92112692e4cd93c2c6ebd478708d138",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PMPS 16V-15C/SubVIs/Close All Current Shunts.vi",
+   "bytes": 43272,
+   "sha256": "ec80f7d3afda8ed0d8e16ce62e7b93a73517a0b938408caabd22e82d0e19f89a",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PMPS 16V-15C/SubVIs/Current Channels Array.vi",
+   "bytes": 20122,
+   "sha256": "37cc46982618b1c70c82a80208cf8975583ece2bc312b913fb72710c24a4f78e",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PMPS 16V-15C/Typedefs/Formatted measurement.ctl",
+   "bytes": 14898,
+   "sha256": "0d193714062bb4de921104fe702751d12da5bf644759a5f4e47a413d306870e3",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PMPS 16V-15C/Typedefs/Measurement values.ctl",
+   "bytes": 14939,
+   "sha256": "5ab37d25cfb36790c120814ac4ec0b44c237a368cd82e0232185b4bc564d3e5f",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PMPS 16V-15C/Typedefs/Scan Resource Handles In.ctl",
+   "bytes": 15453,
+   "sha256": "caaac042300f2f4e7dd829fef1f825ac2408fb09099148b4d0a64b0c6c31015a",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PMPS 16V-15C/Typedefs/Scan Resource Handles Out.ctl",
+   "bytes": 15462,
+   "sha256": "d47df1fc16d5bbec0c85e41fb4557d65570267d40d9fd376ec0d190cc5665a70",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PMPS 16V-15C/Typedefs/Scan Resource Names.ctl",
+   "bytes": 19544,
+   "sha256": "740e04f60bd5508f9ebd5328d495e85576e848069ffbb031037c14303613abc1",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PMPS 16V-15C/Typedefs/Scan configuration.ctl",
+   "bytes": 17755,
+   "sha256": "f2d85ea5e272b45603f29b26c8b718aa31d0b4286fa949241ad3b7b46109ed26",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PMPS 16V-15C/Typedefs/Switches Characteristics.ctl",
+   "bytes": 28533,
+   "sha256": "c7bfe6babe974a7d9af5c35a03212897a6005e52ffec7534c45078a45a806e3c",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PMPS 16V-15C/Typedefs/Topology.ctl",
+   "bytes": 14277,
+   "sha256": "59d9c5329a21f3cde907370eacab46d07a926aa52357fda740a405e65153ecd7",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PRD 32V-16C/DMM_Scan PRD 32V-16C Close.vi",
+   "bytes": 28558,
+   "sha256": "481932e81ce6eeed4df26d305ebce62788a22700a5c7f1882b9142a5431c839b",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PRD 32V-16C/DMM_Scan PRD 32V-16C Configure and Measure.vi",
+   "bytes": 94110,
+   "sha256": "8aac7aa6177cfb47f3091b941c3a794eb920b979e0de62174e2bbcc4a10c5adf",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PRD 32V-16C/DMM_Scan PRD 32V-16C Initialize.vi",
+   "bytes": 149731,
+   "sha256": "d4e1d0fb3a0f5ce2f32cbdbdfb5e374e1f2a5714dbbc06db00808998558ffcc0",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PRD 32V-16C/DMM_Scan PXI RLY Driver 32V-16C.lvlib",
+   "bytes": 4755,
+   "sha256": "ae2968fbe48455955601124f2a82018e6782bbfcc4ca75d3fc7a469b089fc693",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PRD 32V-16C/SubVIs/Close All Current Shunts.vi",
+   "bytes": 39940,
+   "sha256": "1c4be05eedc283e94c4d8c455a7ff6726f1374dbee139a22e6d4cb12c60eb83d",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PRD 32V-16C/SubVIs/Current Channels Array.vi",
+   "bytes": 24234,
+   "sha256": "050c67903077a7295c51fbf37ec4640edccbb62627c6e8e556023b1c8e7f71e9",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PRD 32V-16C/SubVIs/Wait For Debounce External Relays.vi",
+   "bytes": 22277,
+   "sha256": "27695ab2ba8ceabc78376167610b9ab59b53ce8eb14e0f5cfcfa36e0ee8affd3",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PRD 32V-16C/Typedefs/Formatted measurement.ctl",
+   "bytes": 14858,
+   "sha256": "df6ac469412160a35f09502e39c079686727925b7b0c5ab9188c7bb2d8ade31e",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PRD 32V-16C/Typedefs/Measurement values.ctl",
+   "bytes": 14863,
+   "sha256": "52ce45cb33b924c29fbf29b109acb86702a7575351fdf6c75559ca1d9783a927",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PRD 32V-16C/Typedefs/Scan Resource Handles In.ctl",
+   "bytes": 17269,
+   "sha256": "ccc537ccdd5ccd6dacd5be1421764adfa8b927fd74bbbf4f7072e7f22ca4b9e5",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PRD 32V-16C/Typedefs/Scan Resource Handles Out.ctl",
+   "bytes": 17238,
+   "sha256": "b9376e0fc4a189970e7b1f74d650b73591dc611f714c8dcff7eafde2f7534105",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PRD 32V-16C/Typedefs/Scan Resource Names.ctl",
+   "bytes": 14792,
+   "sha256": "9483f5876a753e61aad0c9a41c2c34b4895e7e796660c22ac760a8b8d9c5fa92",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PRD 32V-16C/Typedefs/Scan configuration.ctl",
+   "bytes": 17695,
+   "sha256": "c3e538e606f4838a1d70c895ca4f6a6a622f743fe1432a5bbd4493a3926fffbc",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PRD 32V-16C/Typedefs/Switches Characteristics.ctl",
+   "bytes": 20605,
+   "sha256": "790f0ee81dcd6ee532764e1bac8bdd7a8daa7ede8c58b006a824f9f0941badf4",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM SCAN PRD 32V-16C/Typedefs/Topology.ctl",
+   "bytes": 13645,
+   "sha256": "f87a107a3e6f33f11cb84ddf31fc407c37ba49fba3e9ef60a5b05247d1e55bf6",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_DC-RMS Current Measurement/DMM_DC-RMS Current Meas Close.vi",
+   "bytes": 28117,
+   "sha256": "5b719236b5713855f64d3c36be4a9fe05de4f6a2ab480143975ca0da68dcd93d",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_DC-RMS Current Measurement/DMM_DC-RMS Current Meas Configure and Measure.vi",
+   "bytes": 84101,
+   "sha256": "c85996f64fa5bed501ff7ab3df3dec5aea543b9a09bc3281f99470fbfa8c195e",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_DC-RMS Current Measurement/DMM_DC-RMS Current Meas Initialize.vi",
+   "bytes": 44690,
+   "sha256": "3881593d27b4879953bbc6ee658b99712e0b1c7a7a25429fb1b27e985ac8c13b",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_DC-RMS Current Measurement/DMM_DC-RMS Current Measurement.lvlib",
+   "bytes": 2641,
+   "sha256": "faca56961b70eb66652eaa086d895bf6a7d2fa112523f91268f580805713f112",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_DC-RMS Current Measurement/SubVIs/DMM_DC-RMS Current Meas Format Function Range.vi",
+   "bytes": 56673,
+   "sha256": "5e65d1a84aeb62fb8049e247e49de251c1fb7aec37e98586721206d08b002b88",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_DC-RMS Current Measurement/SubVIs/DMM_DC-RMS Current Meas Format Measurement.vi",
+   "bytes": 45374,
+   "sha256": "17c89ebc2fba623517076442ae9b7a1027acd049eb30943cdc6cafbd392ed05b",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_DC-RMS Current Measurement/Typedefs/DMM Execution Settings.ctl",
+   "bytes": 27331,
+   "sha256": "b3c08b0ca23ace227f2e537a5dd907ba1e9c373ef2574070bedda2c4b98a80c8",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_DC-RMS Current Measurement/Typedefs/Function Settings.ctl",
+   "bytes": 16650,
+   "sha256": "d2f4482275f4ea931e6cc713bcdf83f7051dfcb78265e3952bb97061d06111d9",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_DC-RMS Current Measurement/Typedefs/Measurement.ctl",
+   "bytes": 18480,
+   "sha256": "9bcd5069e60e420b8ae23fc91edd1b471d0e1393d091b97a5166872dca027b3f",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_DC-RMS Current Measurement/Typedefs/Timing & Trigger Settings.ctl",
+   "bytes": 29326,
+   "sha256": "b0271282deebe4169f31a7f6fecf08ce71904fcb325c55e46a9a7894b8bbae26",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_DC-RMS Voltage Measurement/DMM_DC-RMS Voltage Meas Close.vi",
+   "bytes": 24829,
+   "sha256": "171edb45e26a271a2a25bbf498494bf9cb9e43c1c2834f0c0608f9de28183c50",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_DC-RMS Voltage Measurement/DMM_DC-RMS Voltage Meas Configure and Measure.vi",
+   "bytes": 81461,
+   "sha256": "ceb3cf47e72051b37ba3300b1d93173a843f9ba9f9032cddde74a45f96ebbf38",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_DC-RMS Voltage Measurement/DMM_DC-RMS Voltage Meas Initialize.vi",
+   "bytes": 41402,
+   "sha256": "8eb7fd27b7c5460d00f294f6601e85eacc8844c60dd3f90af8452a2d2df43cd6",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_DC-RMS Voltage Measurement/DMM_DC-RMS Voltage Measurement.lvlib",
+   "bytes": 2656,
+   "sha256": "50ce450e7b892aa89c379e7570a38a5ccce8e29813f886489f7489a085d2bf9b",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_DC-RMS Voltage Measurement/SubVIs/DMM_DC-RMS Meas Format Measurement.vi",
+   "bytes": 42082,
+   "sha256": "075e8d3f5fba916cfed4cc4ffefc776b8bb2f7257714996a1cbfd7dc62dfad5f",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_DC-RMS Voltage Measurement/SubVIs/DMM_DC-RMS Voltage Meas Format Function Range.vi",
+   "bytes": 52189,
+   "sha256": "36b766dcb3f37f508023dcb64777e34a1d46679ac7656a199879d6d824d580bd",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_DC-RMS Voltage Measurement/Typedefs/DMM Execution Settings.ctl",
+   "bytes": 24043,
+   "sha256": "d3264eafe6dea52eff02dabda4082ec0b0edb4221841a051debb25cce4b7f058",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_DC-RMS Voltage Measurement/Typedefs/Function Settings.ctl",
+   "bytes": 16602,
+   "sha256": "872932b2fd5d79b2024ab8fbddf123f3e28e954f3bfe9989ceb5745da9af1f7d",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_DC-RMS Voltage Measurement/Typedefs/Measurement.ctl",
+   "bytes": 15236,
+   "sha256": "8b0a8dedd4b1e8117989c713fb5bfe016d2a9a14dfb527400195d54b9a09408d",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_DC-RMS Voltage Measurement/Typedefs/Timing & Trigger Settings.ctl",
+   "bytes": 29286,
+   "sha256": "0478e39834993599febd23635f8251ddb39160ad001f8bb01c79e7d948655f2a",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_Frequency Domain Measurement/DMM_Frequency Domain Meas Close.vi",
+   "bytes": 24835,
+   "sha256": "12a5e2728afac2aef6c380b613188d9daade816bb2fb131139ba6b08f71efc9d",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_Frequency Domain Measurement/DMM_Frequency Domain Meas Configure and Measure.vi",
+   "bytes": 79015,
+   "sha256": "31226e2a54c98204dc2b18e8d918df0d92730b020b824adef7181b9a0ed2ae26",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_Frequency Domain Measurement/DMM_Frequency Domain Meas Initialize.vi",
+   "bytes": 44696,
+   "sha256": "535d24892afe86418f278fa22a1c8a49d8986c60c65d4fd5ecf8bc24c9231d27",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_Frequency Domain Measurement/DMM_Frequency Domain Measurement.lvlib",
+   "bytes": 2681,
+   "sha256": "8e56b94c01c1ceed23f33b2419a1d322426fd708740ff8a793034d57e2a64bd3",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_Frequency Domain Measurement/SubVIs/DMM_Frequency Domain Meas Format Function Range.vi",
+   "bytes": 62587,
+   "sha256": "05d15fa15d2292d2d84cc012057eebc74c1b7f8ce68da5c61a4969ecc7cf310e",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_Frequency Domain Measurement/SubVIs/DMM_Frequency Domain Meas Format Measurement.vi",
+   "bytes": 51948,
+   "sha256": "90c7d85ea301dbc503e4c2d0fb41897a9273706189d3fcfcd4aa3e793c9fc1d2",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_Frequency Domain Measurement/Typedefs/DMM Execution Settings.ctl",
+   "bytes": 30571,
+   "sha256": "fb61caf22384ba99ce1e1a389d0b6af1fa50e53383c3211e7625e563fa258563",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_Frequency Domain Measurement/Typedefs/Function Settings.ctl",
+   "bytes": 23178,
+   "sha256": "79a71c6e14bf58a63bbe1bb8011658c481b6a63e7e087d681ddb0ed2c83d20c7",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_Frequency Domain Measurement/Typedefs/Measurement.ctl",
+   "bytes": 21808,
+   "sha256": "e6f5f88fdf2229e12813383eb2dc209f523bf8b144aa51f3abfb5b49cf0ad553",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_Frequency Domain Measurement/Typedefs/Timing & Trigger Settings.ctl",
+   "bytes": 33770,
+   "sha256": "6efc93c3201577c9e7edb19af25a5fbbee48469c008058c4c081cd8d4ac42a01",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_Resistance Measurement/DMM Resistance SubVIs/DMM Resistance Meas Format Function Range.vi",
+   "bytes": 52653,
+   "sha256": "6141337f9890ab2e6ebeefc24be53e51f50baeac13528046627bb3b3c9d34129",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_Resistance Measurement/DMM Resistance SubVIs/DMM Resistance Meas Format Measurement.vi",
+   "bytes": 42306,
+   "sha256": "348f2135f5e51967a87519441f5fdd02c82f5f4b096532bca6641fb20dc7ca54",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_Resistance Measurement/DMM Resistance Typedefs/DMM Execution Settings.ctl",
+   "bytes": 20703,
+   "sha256": "042ffeafe485ed1c5baa2c2372cf361c63c7de8b68fd79bb8250cb20f1715ade",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_Resistance Measurement/DMM Resistance Typedefs/Function Settings.ctl",
+   "bytes": 16622,
+   "sha256": "86d45492898646498c5129d9f17fd2249e410f2fdb1121b663b77d447e919a86",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_Resistance Measurement/DMM Resistance Typedefs/Measurement.ctl",
+   "bytes": 11896,
+   "sha256": "5174ec982016f1c9395151a748fd8e465865d2c84c9014f0b775747d61764969",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_Resistance Measurement/DMM Resistance Typedefs/Timing & Trigger Settings.ctl",
+   "bytes": 27098,
+   "sha256": "1e66ab9beb401e96563ea0791bde74e93e029511442327452df806e64e83bf8b",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_Resistance Measurement/DMM_Resistance Meas Close.vi",
+   "bytes": 24817,
+   "sha256": "419658483fdf44ee9cbff3b6aeae888531608ed74f0e5c3e1f6f0fd2427f4996",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_Resistance Measurement/DMM_Resistance Meas Configure and Measure.vi",
+   "bytes": 78045,
+   "sha256": "8846c59bd5fdd1e7197c0581c645ca4e8532b1fa14b4e5c2a3788b8c5fa3a9d8",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_Resistance Measurement/DMM_Resistance Meas Initialize.vi",
+   "bytes": 41390,
+   "sha256": "37bebf5c7ee80187940f9db6b279d507e02082f53c11af3ef07a5b943eb15852",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/DMM_Resistance Measurement/DMM_Resistance Measurement.lvlib",
+   "bytes": 2689,
+   "sha256": "01e07bdb4218138b9261cc3eecbe78be53de99e6e6ecc5b0ff331a65120a7762",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Clock Generation/DAQ_Digital Clk Gen Close.vi",
+   "bytes": 24025,
+   "sha256": "281e2ea395444dcef16a1fdcda914f10489f56ee835a8f533dc85c64f1ec7033",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Clock Generation/DAQ_Digital Clk Gen Configure and Generate.vi",
+   "bytes": 35146,
+   "sha256": "2d9e3461b54cbd8e84590ab42af7e69a78cb237a97a19ce1af8fe1ba580b161b",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Clock Generation/DAQ_Digital Clk Gen Initialize.vi",
+   "bytes": 31334,
+   "sha256": "b0719b5fa9adb478cd58792569a1fcedad315110068a0df01d0519ce8569832f",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Clock Generation/DAQ_Digital Clock Generation.lvlib",
+   "bytes": 14476,
+   "sha256": "b8cee04c12ee294e00f0d493fe446e1d245c8a1479bc64e941d762b9fe991a4f",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Clock Generation/Typedefs/Actual Clock Settings.ctl",
+   "bytes": 18138,
+   "sha256": "b2a6ba8be668586126d3b5ab08087fd44b631518067ddc2e01ae1a108d991b73",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Clock Generation/Typedefs/Digital Clock Settings.ctl",
+   "bytes": 20127,
+   "sha256": "5059bfb57f7f15351fc86232112cc1ca51a053b1715571ed7ebf1f995e5f2e78",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Edge Count Measurement/DAQ_DECM Close.vi",
+   "bytes": 27566,
+   "sha256": "be49a14b6ac967da075dd54a997bba90a4cb5d7412dc66c2c75fe3d4ac1070b2",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Edge Count Measurement/DAQ_DECM Configure and Measure.vi",
+   "bytes": 57598,
+   "sha256": "3def9d2eacd6aad76d06e0f34a35cf28537df85815c3c1261ad0c9fde193cbdc",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Edge Count Measurement/DAQ_DECM Initialize.vi",
+   "bytes": 41291,
+   "sha256": "4e247c4464cb24b45760e052905f8a8b5063b3dcff3f47b0ed19eaa3c6544504",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Edge Count Measurement/DAQ_Digital Edge Count Measurement.lvlib",
+   "bytes": 27328,
+   "sha256": "59a4bb8e7f99db1e31075955d922c4852cb3a091daeb5f8861412a9f44ecec16",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Edge Count Measurement/SubVI/DECM Get Counter Internal Output.vi",
+   "bytes": 28896,
+   "sha256": "474d467f3d0c3a462d05cf8ea417e00f47e5374ce970175b72087e944bc951a3",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Edge Count Measurement/Typedefs/DAQmx Tasks.ctl",
+   "bytes": 13628,
+   "sha256": "30ed1ec351e9e6c0d7b50229fec3b9cfe63eb72386b4db7ce501e0ec2ae196b7",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Edge Count Measurement/Typedefs/Measurement Settings.ctl",
+   "bytes": 19305,
+   "sha256": "055cb9fd7367fbd6e6a0fe9e55afa52ca7bdfbbc5324682ddeaf621b0b726fc6",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Edge Count Measurement/Typedefs/Timer - Trigger Settings.ctl",
+   "bytes": 19297,
+   "sha256": "8b8713a597216d0964ab06f42866b6ebaa0e10becf2bb700c473b184372b1127",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Edge Count Measurement/Typedefs/Wait Type.ctl",
+   "bytes": 18090,
+   "sha256": "e7b960743ad8fbc15c7ce76529568474f455d5a655746b81f1442ad2f0409f3f",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Frequency Measurement/DAQ_Dig Freq Meas Close.vi",
+   "bytes": 22671,
+   "sha256": "d5d17a3099de58944e784adf8e8a22b70f75220fc753eb4a5f1efe51b1a09589",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Frequency Measurement/DAQ_Dig Freq Meas Configure and Measure.vi",
+   "bytes": 33671,
+   "sha256": "435b614bca909f1c0900c74d1b61b918e186729f487c0015211adcca7e99452e",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Frequency Measurement/DAQ_Dig Freq Meas Initialize.vi",
+   "bytes": 36836,
+   "sha256": "dc34db4c43e29ff77185badc93ef1d1d7d2d453cb97fc316e7e77506f931674a",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Frequency Measurement/DAQ_Digital Frequency Measurement.lvlib",
+   "bytes": 27143,
+   "sha256": "663269b123079bb2d3d4387006037aa4fb9c7fc414afc22703e86f182f72814d",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Frequency Measurement/SubVI/Dig Freq Meas Check for Multiple Global Channels.vi",
+   "bytes": 26352,
+   "sha256": "9475078fc8d08d7e373c8f3caa5fe10daa4ee0d9e0e8ffad1636ab090fbb493a",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Frequency Measurement/Typedefs/Range Settings.ctl",
+   "bytes": 16671,
+   "sha256": "99a8bb91f433cd05cf070ccafcc4bcdf8ef0a76ff379b9775878748f584d7f65",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital PWM Measurement/DAQ_Dig PWM Meas Close.vi",
+   "bytes": 22622,
+   "sha256": "7caebab9bf04baa59db154e16f81a4130dc008180c6d36462fcecbac5a07c45e",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital PWM Measurement/DAQ_Dig PWM Meas Configure and Measure.vi",
+   "bytes": 40026,
+   "sha256": "853bf5b69e7318412c24ac6172bbff1bbc4ddec9b37ccf85f97f49b111878b55",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital PWM Measurement/DAQ_Dig PWM Meas Initialize.vi",
+   "bytes": 35979,
+   "sha256": "28e7671346bde6f0e49840c6924f7737e41bd31eeacfc6c2cf78461d5e5c1e18",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital PWM Measurement/DAQ_Digital PWM Measurement.lvlib",
+   "bytes": 27321,
+   "sha256": "81c2e4419b8c50703ff8f8d61ec43c107a6406496c2dc256ae34fedfff22b263",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital PWM Measurement/SubVI/Dig PWM Meas Analyze PWM Measurements.vi",
+   "bytes": 22957,
+   "sha256": "5f595f2a6813aff8babba3a930cbb495fec449a9b2feca411f93f4d830cb5466",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital PWM Measurement/SubVI/Dig PWM Meas Check for Multiple Global Channels.vi",
+   "bytes": 27091,
+   "sha256": "b04e3fbd6d465544a3ec50bc9cfac114efdb33a35403bcb2e8700612545f4c30",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital PWM Measurement/Typedefs/Digital PWM Measurements.ctl",
+   "bytes": 15077,
+   "sha256": "e3a4ebb5fd92600e6735b6fec79ad1544674f63acf4c5f6dd89d11555646224d",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital PWM Measurement/Typedefs/Measurement Settings.ctl",
+   "bytes": 14453,
+   "sha256": "2408be5eb239dfef7f55c287f2297afb04a229fd29d69a7b8ce129990d433c37",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Pulse Generation/DAQ_Digital Pulse Gen Close.vi",
+   "bytes": 23831,
+   "sha256": "99b7125bde9cd545e939be527aba1961c892ef0bd35abaef67e4eccea6a056c3",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Pulse Generation/DAQ_Digital Pulse Gen Configure and Generate.vi",
+   "bytes": 37752,
+   "sha256": "5f51ff83ec8cd7181aabfcb3d0df35cd7e7fe80db9c85b0f375f3f1ac7348a52",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Pulse Generation/DAQ_Digital Pulse Gen Initialize.vi",
+   "bytes": 35776,
+   "sha256": "a70b28cade58c40896625ed3be8224ccb6ea86a59d4497d7acb24434b3f393ea",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Pulse Generation/DAQ_Digital Pulse Generation.lvlib",
+   "bytes": 14683,
+   "sha256": "e6aeaa301c038e1adef825db6013b0cd38fcfcc8b1e3b9571d03b5ac7bdcc8a8",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Pulse Generation/SubVI/Dig Pulse Gen Check for Multiple Global Channels.vi",
+   "bytes": 26344,
+   "sha256": "38af0f3c5af709266cd5a3c349f94f229ff0ffc619ca95873873b07ce51d1c1f",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Pulse Generation/Typedefs/Actual Pulse Settings.ctl",
+   "bytes": 21834,
+   "sha256": "ddeb8a9d14062e5d53aca49d013e5c74ad3bc8e7cf7512dbce3ec8cf1dbef644",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Digital Pulse Generation/Typedefs/Digital Pulse Settings.ctl",
+   "bytes": 21699,
+   "sha256": "ce592ebeedeaf2f7c0ee0b539e383f9203bf96d1f1403e5a82057aab86d29ee9",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Dynamic Digital Pattern Generation/DAQ_Dyn Dig Gen Close.vi",
+   "bytes": 24089,
+   "sha256": "e45308b21a5f1f122d95d3607154de32e6d7fd454cfe03451a62b214a774acb1",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Dynamic Digital Pattern Generation/DAQ_Dyn Dig Gen Configure and Generate.vi",
+   "bytes": 47254,
+   "sha256": "d723fa6e311e3da29254533582288cb4258345c3eb6554a148bda5d8beb49d2b",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Dynamic Digital Pattern Generation/DAQ_Dyn Dig Gen Initialize.vi",
+   "bytes": 31614,
+   "sha256": "3273f31d62399ac817a554259c06b24784d15286fc89de1fd3f9d24f428d25ef",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Dynamic Digital Pattern Generation/DAQ_Dynamic Digital Pattern Generation.lvlib",
+   "bytes": 27305,
+   "sha256": "8e4fab474f24253c5dc9c4a5d51df4c4561c5933102b54881102960aaaa3beac",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Dynamic Digital Pattern Generation/SubVI/DDG Check Multi Module Global Channels.vi",
+   "bytes": 30098,
+   "sha256": "ef5330e63bb34f5a4be02317497ac16c68f62557c00596f20b79bcdc5ca49b86",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Dynamic Digital Pattern Generation/Typedefs/Timing & Trigger Settings.ctl",
+   "bytes": 29278,
+   "sha256": "8f8d62f66c118d22b7cefeb009bec00bbe9cb039acd66c9119a54ad47943dd96",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Dynamic Digital Pattern Generation/Typedefs/Timing Settings.ctl",
+   "bytes": 18932,
+   "sha256": "452459b7fec2358ad77dd6b00cf8a76fc69d401027799eea14d592661e3bb1b0",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Dynamic Digital Pattern Generation/Typedefs/Trigger Settings.ctl",
+   "bytes": 19005,
+   "sha256": "af797b1d3fa0bada516d5980b5625b79b24dd09ea852f7ebd122a81d15e80df5",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Dynamic Digital Pattern Measurement/DAQ_Dyn Dig Meas Close.vi",
+   "bytes": 25998,
+   "sha256": "8140e2f6461f02116e7b3fac3f15013c1da0e0b23827a92143e601b20293a612",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Dynamic Digital Pattern Measurement/DAQ_Dyn Dig Meas Configure and Measure.vi",
+   "bytes": 64022,
+   "sha256": "d8ab13a97202b5cc7c55e78887685d175586d4cc0fdf3f4569460b46e0f3bd42",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Dynamic Digital Pattern Measurement/DAQ_Dyn Dig Meas Initialize.vi",
+   "bytes": 34895,
+   "sha256": "c2ef4618d7734805efecaa7a833572d528f7efeb974bdc6c6c394a11a158ffa0",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Dynamic Digital Pattern Measurement/DAQ_Dynamic Digital Pattern Measurement.lvlib",
+   "bytes": 27358,
+   "sha256": "db05ccfb14c7ee5f4009983f62e8d3cb72e28ea55038aed1b7dcd3fdfcbb1d07",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Dynamic Digital Pattern Measurement/SubVI/DDM Check Multi Module Global Channels.vi",
+   "bytes": 30102,
+   "sha256": "61728a37d5853a0702dca1012e9ae5629f4e6018b106bf21e2e872ed4fd27d27",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Dynamic Digital Pattern Measurement/SubVI/DDM Process Digital Data.vi",
+   "bytes": 28936,
+   "sha256": "37825777f089114b8161ddeb528b3bfd8ea753c33147f19c031f5bea4896d8e2",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Dynamic Digital Pattern Measurement/Typedefs/Timing & Trigger Settings.ctl",
+   "bytes": 31474,
+   "sha256": "fb62565f1b825c13af591efd79602b07931dc5343926930b0b911b0a3a2be719",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Dynamic Digital Pattern Measurement/Typedefs/Timing Settings.ctl",
+   "bytes": 21144,
+   "sha256": "7d7a8cbaa7768724bd960f4efec9bdc7e639561f51c8746c7387964e603a0ddb",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Dynamic Digital Pattern Measurement/Typedefs/Trigger Settings.ctl",
+   "bytes": 19001,
+   "sha256": "ea993ba1aa1dbe7d1f575f39d9a33615f3cb31e879df164c417ee077240f2b3d",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Frequency Domain Measurement/DAQ_FDV Meas Close.vi",
+   "bytes": 22750,
+   "sha256": "a3d15e6e6b4b0f352cebbfd3bf1d1d9568294c92137e8e183abd5b82dd1784f8",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Frequency Domain Measurement/DAQ_FDV Meas Configure and Measure.vi",
+   "bytes": 95886,
+   "sha256": "09258900cc4fa796d530914f8055a651d3757de807d3c8a18906a7bf7f633c39",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Frequency Domain Measurement/DAQ_FDV Meas Initialize.vi",
+   "bytes": 30611,
+   "sha256": "08dff479d1a1362feb069ac5cedad2237010accb4a42c78ba988b5227e9beb34",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Frequency Domain Measurement/DAQ_Frequency Domain Measurement.lvlib",
+   "bytes": 27921,
+   "sha256": "8997b6b15bcc8bdb56e36896551538a97836506c6ea4eda2422bbb53830917b6",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Frequency Domain Measurement/SubVIs/FDV Meas Analyze FD Measurements.vi",
+   "bytes": 52764,
+   "sha256": "68fcb29b1e672cb766f325b159a8552c21e6e6330b38c263ee4d726bd40f36ff",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Frequency Domain Measurement/SubVIs/FDV Meas Configure Range and Terminal Settings.vi",
+   "bytes": 33066,
+   "sha256": "7277b5ca9bc9bf2826f3e5d0e5b060911b0151628460406ac505a609701435a1",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Frequency Domain Measurement/Typedefs/Detected Tones.ctl",
+   "bytes": 23723,
+   "sha256": "99535a9481fbead2b3cc092a431c70dfb59daf5004abed968572c6bd401f1341",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Frequency Domain Measurement/Typedefs/Execution Settings.ctl",
+   "bytes": 21979,
+   "sha256": "173fdef276c3f651ce18df26969986ddd9b39584e20b6b5306f3db4455a0bfb5",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Frequency Domain Measurement/Typedefs/FD Measurements.ctl",
+   "bytes": 27852,
+   "sha256": "accd19d8616d94d26fcca81037f5561026a22682393c0dacc426d3c4aba164ab",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Frequency Domain Measurement/Typedefs/Range and Terminal Settings.ctl",
+   "bytes": 28776,
+   "sha256": "79dfdabef619fdfd5853889dc6464b607a7e3dd4676133a884e2a1cb71293412",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Frequency Domain Measurement/Typedefs/Specific Channel Settings.ctl",
+   "bytes": 20806,
+   "sha256": "8cc107a36c178f30877ce8f63b1b780f974f11a361deeba2dd7920177a17b17c",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Frequency Domain Measurement/Typedefs/Timing & Trigger Settings.ctl",
+   "bytes": 28518,
+   "sha256": "52632b25c0e12dbff10821e4d72334ecb1e808459c0d81fb4fcb8e023ad3f547",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Frequency Domain Measurement/Typedefs/Timing Settings.ctl",
+   "bytes": 21192,
+   "sha256": "4389ec76f27f515a36f440c467c97859a5b0916da4e79768bf0ee820b60fae25",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Frequency Domain Measurement/Typedefs/Trigger Settings.ctl",
+   "bytes": 18933,
+   "sha256": "4c5b4c966db5b57be1aa6aff59f4b68bab03c8bdd6f4d110656ecd588f5bad6d",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/PC Based Examples/PC_AO to DCCM no trigger_Current.vi",
+   "bytes": 55612,
+   "sha256": "d510a0914506ce9efbe3463d0dd6956b67091a663c71423635c3bd3418aefe71",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/PC Based Examples/PC_AO_Thermistor Temperature.vi",
+   "bytes": 78432,
+   "sha256": "6fa2e6e7975ec51425e460be361dede9877d75b39df6aa289f5a0d4779a6c1fa",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/PC Based Examples/PC_DCG to DECM HW timed DAQ1 to DAQ2.vi",
+   "bytes": 41964,
+   "sha256": "1a003c9dcb3cad01552b85587b36bb4dcd0cd76343ebd0eab6bba7233733ac45",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/PC Based Examples/PC_DCG to DECM HW timed.vi",
+   "bytes": 41935,
+   "sha256": "c6b2ea4bdc8602f295e0a0fec1237167dd3f85c613cd979306b348483fa70739",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/PC Based Examples/PC_DCG to DFM.vi",
+   "bytes": 32589,
+   "sha256": "2b12ed4ef38fc74b0f23ba8a47d892fc3ea3096e9eeade7452ded13fc0edf63c",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/PC Based Examples/PC_DCG to DPWMM DAQ1 to DAQ2.vi",
+   "bytes": 32004,
+   "sha256": "690a816c161c1b1a1858530edc78143335211b69769d176317e4fb7f2208a42b",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/PC Based Examples/PC_DCG to DPWMM.vi",
+   "bytes": 31999,
+   "sha256": "b52fea4c447187f362deb82660bc2acaf7fbb93609aba3a31d2401a857d745c1",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/PC Based Examples/PC_DCG_Single.vi",
+   "bytes": 19593,
+   "sha256": "9c5c08e45274fffc22f6792046ca52a179d7d147bc19691b1f17e783b1be3a92",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/PC Based Examples/PC_DDPG to DDPM DAQ1 to DAQ2.vi",
+   "bytes": 806316,
+   "sha256": "47f3dc8ac7d0c9f90475451ccb88e5c263590b79a815ecac001ce6accf3e73f0",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/PC Based Examples/PC_DDPG to DDPM two lines or ports same DAQ.vi",
+   "bytes": 33283,
+   "sha256": "088d327c8b578eb5dde66b704bc73b7afee3257c7c7d47fee1f3334984cfbf6a",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/PC Based Examples/PC_DFM_Single.vi",
+   "bytes": 20961,
+   "sha256": "97aae6564677d06202e5b9dbfb2735c486e69f6dda406f3052a8061f543e5aa1",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/PC Based Examples/PC_DPG to DECM.vi",
+   "bytes": 47222,
+   "sha256": "5e65525dda1058adcd792f6a0de32e0d4e79529ddc1c3fa14a1deea57c2f09f7",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/PC Based Examples/PC_DPG to DPWMM.vi",
+   "bytes": 37227,
+   "sha256": "57067521768b65614822dab60a2f737c7643b5082275fd39d97b5cea0eebc8fb",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/PC Based Examples/PC_DRVG to DRVM multiple channels no trigger.vi",
+   "bytes": 51200,
+   "sha256": "7731e58aff9a9ff87a08dc350897b41be9ace38bb2517f1d8deffeb6d505fc15",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/PC Based Examples/PC_SDSG to SDSM.vi",
+   "bytes": 25099,
+   "sha256": "6c68f47fdc18623bfc6c5a59a263b0a63555c7b89f5f3b96778884f9ae89a063",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/PC Based Examples/PC_SVG DAQ1 to TDVM DAQ2 RSS.vi",
+   "bytes": 244232,
+   "sha256": "468d4b82a51b246e7a6c2e9e4bac7a06f855c7b62218cc5fc5a23fe3e3555646",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/PC Based Examples/PC_SVG to DC-RMSM no trigger.vi",
+   "bytes": 311456,
+   "sha256": "c1565806975aee14bcace2cfe42b16e0e85996e0758960001ad4db0ae44de2b1",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/PC Based Examples/PC_SVG to FDVM with trigger.vi",
+   "bytes": 101103,
+   "sha256": "c952c807c18f6044624ad3987802599a7db0907381f15ddbb644d1131c52d216",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/PC Based Examples/PC_SVG to TDVM with trigger.vi",
+   "bytes": 334731,
+   "sha256": "fa0d783da71fe4f875ef3cebdb7e4ec5fdd79e58dcb0246caf4cdb6c089ed273",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/PC Based Examples/PC_SVG_Single.vi",
+   "bytes": 41869,
+   "sha256": "7e7fa28fab2f200188ecbedd0d5e3b7d85f131e54068827a2d200a6a0e98214f",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/PC Based Examples/PC_TDVM_Single.vi",
+   "bytes": 48362,
+   "sha256": "7e3b918560795ee858db88f8745ba72b2aeadd5b60a6e17dbaaedb6c7cf57928",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/PCBA Measurements.lvproj",
+   "bytes": 59041,
+   "sha256": "69312a85eb617d86a11beb5c91b1bcd666090588c41e12af7e8577226f1ec550",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Power Supply Source and Measure/DAQ_PS Close.vi",
+   "bytes": 25788,
+   "sha256": "9cb701a77ad592462b351469341a513fde9ab2a93b670b72ef8f362b7aaa260c",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Power Supply Source and Measure/DAQ_PS Configure and Measure.vi",
+   "bytes": 96964,
+   "sha256": "152f13d94b9345d993678dac32696371ba5142db2fb10aa3fc0da332ea9b0535",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Power Supply Source and Measure/DAQ_PS Initialize.vi",
+   "bytes": 22617,
+   "sha256": "cf9c05e0f4a31700c46bc9cdde15ed06782d3c0c03719ee535bb731124f30c24",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Power Supply Source and Measure/DAQ_Power Supply Source and Measure.lvlib",
+   "bytes": 27679,
+   "sha256": "ab2fb81439db3cd01c08048c9ea527fe5897453a66793ce32bc4660b30ae22f0",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Power Supply Source and Measure/SubVIs/PS Analyze Power Measurements.vi",
+   "bytes": 34885,
+   "sha256": "4c63a5b119a8057041e014f2cf59229515d60e2af38668027e2aee4400b4bb8a",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Power Supply Source and Measure/SubVIs/PS Configure Power Supply Source Settings.vi",
+   "bytes": 33849,
+   "sha256": "021591ab2f2a818caa6fc10ff7bba6618b33dfd1b2aa25ef5c459b9a3d0ecbe6",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Power Supply Source and Measure/SubVIs/PS Replace NaN with Zero.vi",
+   "bytes": 26708,
+   "sha256": "8a2d1084917db2924eadcdf1ff66381febe11846a2847bc85020fe32111ca7c6",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Power Supply Source and Measure/Typedefs/Channel Settings.ctl",
+   "bytes": 20029,
+   "sha256": "92af2c6251d5f62211dfae96bc5e3a322a0179bf8c7d0dec905d537ec3f25067",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Power Supply Source and Measure/Typedefs/Execution Settings.ctl",
+   "bytes": 21955,
+   "sha256": "bf0b723262cd01d0e9ae1ce8543a8384bcad339edaaa95c81fc8f8e8b6f0ab35",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Power Supply Source and Measure/Typedefs/Power Measurements.ctl",
+   "bytes": 20287,
+   "sha256": "9a9fd2f23325167326c7302d876db91e21c9611a9dc8b28a1315578d0750b173",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Power Supply Source and Measure/Typedefs/Timing Settings.ctl",
+   "bytes": 21380,
+   "sha256": "8edae4d7f852ed5b671775fdd5e1c564c24c1cc14c5a9afa6da80c6c31f1e2f1",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Power Supply Source and Measure/Typedefs/Timing and Trigger Settings.ctl",
+   "bytes": 34988,
+   "sha256": "2b83eae442a98c5b3d927e28a188d5a33d9f43468235946beda969c6fad241a7",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Power Supply Source and Measure/Typedefs/Trigger Settings.ctl",
+   "bytes": 19025,
+   "sha256": "3b94309dd1c7660ad34e73ad97ee353b1a5e9a2b98f006fd5c0368606770f161",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Signal Voltage Generation/DAQ_SV Gen Close.vi",
+   "bytes": 23952,
+   "sha256": "009a619b4f82eba1dd99346732ca9d3b0b64d015c7b132d37c4ec626aa1bd897",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Signal Voltage Generation/DAQ_SV Gen Configure and Generate.vi",
+   "bytes": 65865,
+   "sha256": "9d80bba28cb675a3a3ffa102f5b928a6bc995ea99ff17342c7c6216d17d0d33b",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Signal Voltage Generation/DAQ_SV Gen Initialize.vi",
+   "bytes": 30541,
+   "sha256": "4472c17f853f6ba883e8a789e5e385348695c78205bd3bf29d8ed950159aaa62",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Signal Voltage Generation/DAQ_Signal Voltage Generation.lvlib",
+   "bytes": 28011,
+   "sha256": "e691be1876dd4b73177d825b6f6e67626984f6509325eb6afead20996a46b02d",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Signal Voltage Generation/SubVIs/SV Gen Configure Range and Terminal Settings.vi",
+   "bytes": 24596,
+   "sha256": "0ec73205a2878fc52221761b3a4326fab4b9e42844d2f2c4aeded7aa0598d870",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Signal Voltage Generation/SubVIs/SV Gen Generate Signal Voltage Waveform.vi",
+   "bytes": 53647,
+   "sha256": "5a0a47f0786c63d5afffa473e50a82514140c93eb9f2342598c3690412420089",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Signal Voltage Generation/Typedefs/Generation Types.ctl",
+   "bytes": 14057,
+   "sha256": "66ff9039578488739671c575da51e89d400f23cf0c09b0c03408fe7c26437a3e",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Signal Voltage Generation/Typedefs/Range and Terminal Settings.ctl",
+   "bytes": 19652,
+   "sha256": "08f85aef0c6baedf3f1e5deeb8cd5c35b2c010d620fe5545c42e71140ff9e9b8",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Signal Voltage Generation/Typedefs/Signal Generation Settings.ctl",
+   "bytes": 26691,
+   "sha256": "ff954b09d82fdc9c1b60cf622a4c33e1aea7b87d08fcfbca136efbd191178e0e",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Signal Voltage Generation/Typedefs/Single Tone Settings.ctl",
+   "bytes": 17349,
+   "sha256": "384957cb3498f4b3ae95f46f1f5e89c8f12369a21eb1d790b547d7ed9f0b94e2",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Signal Voltage Generation/Typedefs/Timing & Trigger Settings.ctl",
+   "bytes": 27398,
+   "sha256": "1f7387550f3310eef0b02f88f9fab321c06b59ab0f5c51922d592d170744cbc3",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Signal Voltage Generation/Typedefs/Timing Settings.ctl",
+   "bytes": 17360,
+   "sha256": "3e6f0e6766a9934a098ecb39fe32b0857a0c5dc612a86eee9264db17257b2888",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Signal Voltage Generation/Typedefs/Tone Settings.ctl",
+   "bytes": 14578,
+   "sha256": "f3ed13e20e897ae5934510d6ae3ba8a0ee4f5406a8212583f3744fa4b5240eba",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Signal Voltage Generation/Typedefs/Trigger Settings.ctl",
+   "bytes": 18985,
+   "sha256": "89f57af21b1712173930f63b4a669b3e9f976132ddcc627aa3b8733800bc5ae8",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Signal Voltage Generation/Typedefs/Waveform Type.ctl",
+   "bytes": 14114,
+   "sha256": "17ca9e0ac19ea44ba6ea57f6749c5ef68b7c4f8cbe5d62da262365384119324c",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Static Digital Path Generation/Switch_Static Dig Path Gen Close.vi",
+   "bytes": 26488,
+   "sha256": "5f0b3a3f95fafe3e4f2a1eb35fad47ec3c35f5eeab8eb5f61168e3bd08453bdb",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Static Digital Path Generation/Switch_Static Dig Path Gen Configure and Generate.vi",
+   "bytes": 40065,
+   "sha256": "af034ef82f15c30b0b1c019a430d56bdee74d2891c79b58cad65b2a7c75bb649",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Static Digital Path Generation/Switch_Static Dig Path Gen Initialize.vi",
+   "bytes": 37405,
+   "sha256": "d0d9e36b01935dbed292c76f7490e55efeed21b0fc035fedd2dedc6e28c9476a",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Static Digital Path Generation/Switch_Static Digital Path Generation.lvlib",
+   "bytes": 2279,
+   "sha256": "30bafd0f3e0897721afcb1e88b2a2f7be7fb9649a0afef2ca1ed4196bcce2f81",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Static Digital Path Generation/Typedefs/Module Characteristics.ctl",
+   "bytes": 20011,
+   "sha256": "6082227379ea94e2692cbbcd6f85e9d02de54f59f52b13dfd46be2e8fcace8c1",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Static Digital Path Generation/Typedefs/Path Status.ctl",
+   "bytes": 10668,
+   "sha256": "6854bdfb34958a8b3cfc6a7bfd81aca11d45ca72215714ae8d0fd67a2981c03f",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Static Digital Path Generation/Typedefs/Terminal and State Settings.ctl",
+   "bytes": 10148,
+   "sha256": "75e36564f7b5f0f0c0894497413e96b7404dd775c7e96c0841b57b8ca1bf72b2",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Static Digital State Generation/DAQ_Static Dig Gen Close.vi",
+   "bytes": 22656,
+   "sha256": "20420c06bc7def6d7e9b06936bb656f20fbe8618dfed8bcdeb2e3e2ba515f616",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Static Digital State Generation/DAQ_Static Dig Gen Configure and Generate.vi",
+   "bytes": 27225,
+   "sha256": "f83c66d3807ec5a83e9f222924c5141af48de6f80cca4161aa9906b7dc00823c",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Static Digital State Generation/DAQ_Static Dig Gen Initialize.vi",
+   "bytes": 33965,
+   "sha256": "8dd466421f9d41bf8b6ccdc95abcf3fe12d1e6d40aabe7189c209e9a8bc869a6",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Static Digital State Generation/DAQ_Static Digital State Generation.lvlib",
+   "bytes": 27136,
+   "sha256": "6966b869c936cf58cbfabb40f10e41e9ff17b831a6f7db987fb6b88e0622ac8e",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Static Digital State Generation/SubVIs/SDG Check Physical Channel Port.vi",
+   "bytes": 29611,
+   "sha256": "d6d4640a10ec81a6d5fca0db4064c0bae8dbb145645a80b87213158128cf8e07",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Static Digital State Generation/SubVIs/SDG Check for Global Channel Ports.vi",
+   "bytes": 30938,
+   "sha256": "f4e3b86f9450ff043491b13533d622df9c3029e8239c62bc24c02c51bcd8600d",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Static Digital State Measurement/DAQ_Static Dig Meas Close.vi",
+   "bytes": 22661,
+   "sha256": "379619ec66305e3774a12fff6ee968fa4793b9fd48335f0779a82334c74f8e93",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Static Digital State Measurement/DAQ_Static Dig Meas Configure and Measure.vi",
+   "bytes": 29357,
+   "sha256": "2c987fa8e7ac70c9fba6e65d45bc3ff03021486e0ceee346a190a7b0e4d2bcfb",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Static Digital State Measurement/DAQ_Static Dig Meas Initialize.vi",
+   "bytes": 34006,
+   "sha256": "90673526b786d71aee70d3a806d1d813afa746b3b70179ed43c384d051932766",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Static Digital State Measurement/DAQ_Static Digital State Measurement.lvlib",
+   "bytes": 27098,
+   "sha256": "37a9ea30bc38595ef1c7243f8075136b8a9ac0e55b27479c9c8b70404422c43c",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Static Digital State Measurement/SubVIs/SDM Check Global Channel Ports.vi",
+   "bytes": 30606,
+   "sha256": "cfa801dd25b19fe8bbffbb606790086bc2879465f4061b8ac8de52559490f694",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Static Digital State Measurement/SubVIs/SDM Check Physical Channel Port.vi",
+   "bytes": 29359,
+   "sha256": "6ed770cdc2b88209ff0d2bb198fa6a319af6269e4f8dabcda83466b7e44d8fb7",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Synchronization/DAQ_Route synchronization signals.vi",
+   "bytes": 33857,
+   "sha256": "a163bd0da9bb41de3dccee75403b901a42da73196ef525967460ca7ceca81cb3",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Synchronization/DAQ_Synchronization.lvlib",
+   "bytes": 26931,
+   "sha256": "6031089d9392d6ab705e4e073e66e46f06162351964521fe15fe3dff4a84d843",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Synchronization/SubVIs/Get Generic Export Signal.vi",
+   "bytes": 21213,
+   "sha256": "f0a2a00ca9d9f25b92450e7115df808e3d8edd94cc293e9ecb20cce028821a90",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Synchronization/Typedefs/Routing Path.ctl",
+   "bytes": 17017,
+   "sha256": "19fec73a4b65bed9252472cf5e94547e46a582367ee8ba1b20c4159e07dd466d",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Synchronization/Typedefs/Routing Signal.ctl",
+   "bytes": 13871,
+   "sha256": "6ba8f4def4dfe8f53ac8c369b1c51e3a30afa942b46aed5e8800c80d371ae571",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature RTD Measurement/DAQ_TRTD Meas Close.vi",
+   "bytes": 23603,
+   "sha256": "8301045e2b641ca0b87df4b6dfa736c95e00729ec243e5d52537e30146eeafb6",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature RTD Measurement/DAQ_TRTD Meas Configure and Measure.vi",
+   "bytes": 96399,
+   "sha256": "8adbf0b10831f8f00fd496a01558c7fc480d818078072c24d814f4b4fb4760ce",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature RTD Measurement/DAQ_TRTD Meas Initialize.vi",
+   "bytes": 31384,
+   "sha256": "a6fa36c857796dd880a1b9054aeeae18fa1f4ef59efb09110e14505bd2b1a111",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature RTD Measurement/DAQ_Temperature RTD Measurement.lvlib",
+   "bytes": 29883,
+   "sha256": "d02be573075646f3a578e82be06fc04fb0f962bd4b682304e328aa2cf6b085df",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature RTD Measurement/SubVIs/TRTDM Analyze Temp Measurements.vi",
+   "bytes": 33299,
+   "sha256": "6e14820fa08d0d7ff94c503473ef82846660ec79a2dc227331d3c167a325e4b3",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature RTD Measurement/SubVIs/TRTDM Configure Range and Terminal Settings.vi",
+   "bytes": 51555,
+   "sha256": "a6014e85c42a75f3bcd4dedf8491e2ef5c8f28cc6c91ca8d151eb46ee5df7007",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature RTD Measurement/Typedefs/ADC Timing Mode.ctl",
+   "bytes": 17628,
+   "sha256": "77e03e8ca40b34bea986a6ccfb3551a5495eedf00598f6eaa0c121292056596d",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature RTD Measurement/Typedefs/Range and Terminal Settings.ctl",
+   "bytes": 46740,
+   "sha256": "ed9faed8c1b0751da2e17bc049b658209df4af4f1a35cc13579a8da91b2a4d84",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature RTD Measurement/Typedefs/Specific Channel Settings.ctl",
+   "bytes": 24974,
+   "sha256": "fa3ba4ad0539d8d0fa10510574a8fa2d3e6165589cb155a8a5efd6838173211e",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature RTD Measurement/Typedefs/Temperature RTD Measurements.ctl",
+   "bytes": 17497,
+   "sha256": "34950dd81a4e270f7a9b323b7e6419afcbe6050e9f5a6cd00739b3163b75fddc",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature RTD Measurement/Typedefs/Timing & Trigger Settings.ctl",
+   "bytes": 31682,
+   "sha256": "8511d4d438731aa84c81681fefc953d3d4a49a72ae4c77323e2c919b2027d85b",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature RTD Measurement/Typedefs/Timing Settings.ctl",
+   "bytes": 21160,
+   "sha256": "bbb5b2957e69687b558f717d5a9b5f48d5188c1a2632b86a0ea5436073bfedeb",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature RTD Measurement/Typedefs/Trigger Settings.ctl",
+   "bytes": 18957,
+   "sha256": "46be97f8d97cbba9c23734c0f70e6156f396adf09fa30b8abc3a030069ff8754",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermistor Measurement/DAQ_TTR Meas Close.vi",
+   "bytes": 22762,
+   "sha256": "5c575efbd628d303c766f3d88b3eac6b5ed5835014212effc3179ef63e71d707",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermistor Measurement/DAQ_TTR Meas Configure and Measure.vi",
+   "bytes": 111230,
+   "sha256": "2b62194def3d5b4e71f4b2a6f37b56c3da0a1533b269255593017cf07f92078d",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermistor Measurement/DAQ_TTR Meas Initialize.vi",
+   "bytes": 31943,
+   "sha256": "795d490fad9ffc9297b0e6aefe290b848f4543846df38a19574b11e2bd45720d",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermistor Measurement/DAQ_Temperature Thermistor Measurement.lvlib",
+   "bytes": 28167,
+   "sha256": "983f4d2183739276d96bce7680e00c8e3e861fa1bec5bde73a82b1ac2bd0c640",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermistor Measurement/SubVIs/TTRM Analyze Temperature Measurements.vi",
+   "bytes": 37009,
+   "sha256": "6d99de705f1691779ecaa17ecee692cc3b60df1e6d890551743fc35be34cf5ef",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermistor Measurement/SubVIs/TTRM Analyze Thermistor ABC Parameters.vi",
+   "bytes": 63178,
+   "sha256": "2c70c50f368415b6931c1739691dca91840d2e7559238a5ac7deb46d99eecf2d",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermistor Measurement/SubVIs/TTRM Configure Thermistor Settings.vi",
+   "bytes": 64086,
+   "sha256": "fa384029d379b144ac21c491309f70f34cb229d17d10d23468f92a9d050d4c3f",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermistor Measurement/Typedefs/ABC Parameters.ctl",
+   "bytes": 25027,
+   "sha256": "019ff1010173a01f07484f2a9f955bef3c82d82836fa8b43268f7fef454237da",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermistor Measurement/Typedefs/Beta Parameters.ctl",
+   "bytes": 19808,
+   "sha256": "0201517a0d1b0c7b986da583e380161bd6198476a5d1c7257eeb5a81cc93afb2",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermistor Measurement/Typedefs/Range and Terminal Settings.ctl",
+   "bytes": 57928,
+   "sha256": "c8ff1beb3337e62faba904602bc841593e0585846bd203cf1475578477593acf",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermistor Measurement/Typedefs/Specific Channel Settings.ctl",
+   "bytes": 34970,
+   "sha256": "815d132d1cf7a6c5b926bcc045bed3a6df934ae2988eaa608895550c1b6241b2",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermistor Measurement/Typedefs/Temperature Thermistor Measurements.ctl",
+   "bytes": 21168,
+   "sha256": "73296d7cd233e6f4fca636abf5c271e5d256da90ba26a1126f724d24f604fcb4",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermistor Measurement/Typedefs/Thermistor Parameters.ctl",
+   "bytes": 28774,
+   "sha256": "7919e6a370154490644b3b4da057711dd7723aece75a0a8f5041ecebe996624c",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermistor Measurement/Typedefs/Timing & Trigger Settings.ctl",
+   "bytes": 31718,
+   "sha256": "f5ae2fae3e356d4d246bb14840bca9bc7c0437385e99182cfe4da1bba145e8b1",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermistor Measurement/Typedefs/Timing Settings.ctl",
+   "bytes": 21192,
+   "sha256": "413ea73f84fc0394efb3ffad20c7653a17d2e11cd27abc5b023daf761ec8ae13",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermistor Measurement/Typedefs/Trigger Settings.ctl",
+   "bytes": 18993,
+   "sha256": "f7d863cfbd0f1452714fa1d5d91772c8ac4a9420caac45d00d788fdad0b600a7",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermocouple Measurement/DAQ_TTC Meas Close.vi",
+   "bytes": 23650,
+   "sha256": "3927315089721a2f16d35c2291aa7de8bd857ad3a46304406e1b4403872577fc",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermocouple Measurement/DAQ_TTC Meas Configure and Measure.vi",
+   "bytes": 82790,
+   "sha256": "1ca9d78d2b8067106d0af694055b642cffa1d27a4a876cc4322469c06aecbdbe",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermocouple Measurement/DAQ_TTC Meas Initialize.vi",
+   "bytes": 34527,
+   "sha256": "2783da03ebdb3180732bb563a49fbbd0fc219c6b162ba54ed155f4a3e23f5d5c",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermocouple Measurement/DAQ_Temperature Thermocouple Measurement.lvlib",
+   "bytes": 29805,
+   "sha256": "a21fe3874ef6598e5de865070e5d3db10cb864eda6076f5ac7a342bcbb25dc30",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermocouple Measurement/SubVIs/TTCM Analyze Temp Measurements.vi",
+   "bytes": 33374,
+   "sha256": "b0d01ee1da2397cd314b02754f9a584ca220f6dd7b0bb63d8ed6a25338a7318d",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermocouple Measurement/SubVIs/TTCM Config Range and Terminal Settings.vi",
+   "bytes": 38815,
+   "sha256": "015df8a7591883db8495f4023eb8a19e545a3cc18bd8a02b1d60fa37ee782ab8",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermocouple Measurement/Typedefs/Range and Terminal Settings.ctl",
+   "bytes": 33016,
+   "sha256": "04998215327d8e6842c7c45f786857b3c2b7b769dfa8b381c61f5ff8d34fad14",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermocouple Measurement/Typedefs/Specific Channel Settings.ctl",
+   "bytes": 16614,
+   "sha256": "152a9964b2cb648d982a98b97279f95c0867699c20b605e3191186d12e01df5b",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermocouple Measurement/Typedefs/Temperature Thermocouple Measurements.ctl",
+   "bytes": 17646,
+   "sha256": "9729e63d5360360f7953b92010dc6f6298f530644599360f29ee24f13c132eb1",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermocouple Measurement/Typedefs/Timing & Trigger Settings.ctl",
+   "bytes": 31706,
+   "sha256": "1161d8fe041fdd54897e0cd2221ca5ff3c65d9d950d2675c6e765fada7b135ad",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermocouple Measurement/Typedefs/Timing Settings.ctl",
+   "bytes": 21180,
+   "sha256": "c9049202b714507a19873e9ec775bd3e0ad34a8cdaf7b911a1b3da86db9579c7",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Temperature Thermocouple Measurement/Typedefs/Trigger Settings.ctl",
+   "bytes": 18981,
+   "sha256": "f5566196139925ec36d351c5789eed05f68d526f2fe9f5e15a24e4a447a39bfa",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Time Domain Measurement/DAQ_TDV Meas Close.vi",
+   "bytes": 22710,
+   "sha256": "7ae651b68990d35277347b6b7b7401388606976834f4ec5f347adfed8f72b04f",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Time Domain Measurement/DAQ_TDV Meas Configure and Measure.vi",
+   "bytes": 92022,
+   "sha256": "5988ec55aa62db96adde998c90ad50f0a6a180ba52dfae9febeaecc009d0e4fa",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Time Domain Measurement/DAQ_TDV Meas Initialize.vi",
+   "bytes": 30527,
+   "sha256": "bb6ec68cba424460c86932e938f349b317d1b11ff9c0a35515af015bd5efa281",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Time Domain Measurement/DAQ_Time Domain Measurement.lvlib",
+   "bytes": 27790,
+   "sha256": "209b23e856413c325d8f27eda6a9ad5238093da918c75b09a5a68fe189858740",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Time Domain Measurement/SubVIs/TDVM Analyze Time Domain Measurements.vi",
+   "bytes": 43573,
+   "sha256": "9852e8840c76b5d82eb8d1681750668435b0237e83dcc21ba293223339e4ff76",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Time Domain Measurement/SubVIs/TDVM Configure Range and Terminal Settings.vi",
+   "bytes": 36110,
+   "sha256": "2921acf62002f4fd181ceb7666ad2c7d1a6d9ab8ee511aa27d95bef1981544bc",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Time Domain Measurement/Typedefs/Execution Settings.ctl",
+   "bytes": 21975,
+   "sha256": "8f09909bf07b274e18f0cf2e73d85a0d5c7f9d6b663a112125e67f3ff535bda5",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Time Domain Measurement/Typedefs/Range and Terminal Settings.ctl",
+   "bytes": 31932,
+   "sha256": "b80a111010e16dd4523413eb588df6f0283de8af0ab55583a45636b84ce6dcab",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Time Domain Measurement/Typedefs/Specific Channel Settings.ctl",
+   "bytes": 20790,
+   "sha256": "6dc2812da63feccc1efc7031af36a1b4d5e601e37c4e1b65c2fcc39d1a3f229c",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Time Domain Measurement/Typedefs/Time Domain Measurements.ctl",
+   "bytes": 24153,
+   "sha256": "1921751d327b9a8b02926ef29767ffe44e30e43c4ed5b8a96852440b544aa957",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Time Domain Measurement/Typedefs/Timing & Trigger Settings.ctl",
+   "bytes": 31646,
+   "sha256": "291798a906b99dbb53968826c42907083ac6528edf7670eff4a4841aa95101c7",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Time Domain Measurement/Typedefs/Timing Settings.ctl",
+   "bytes": 21144,
+   "sha256": "4f527580cbc1f3e729ef391cc3dadc3e2cc4df91ea3ba73bf3abf704281bf82a",
+   "via": "extension"
+  },
+  {
+   "path": "source/Library/Time Domain Measurement/Typedefs/Trigger Settings.ctl",
+   "bytes": 18945,
+   "sha256": "dc3c9cce1aa43c35efe218d362691c9cb6d12fdb2dbefcfeaf8f6ec743b06505",
+   "via": "extension"
+  },
+  {
+   "path": "source/PCBA FT Demo/Hardware Config Demo.ini",
+   "bytes": 3794,
+   "sha256": "ce43ce2005fc2d891fb54684828b80a4fbd362a284b14d37001a26d10bea0c2f",
+   "via": "extension"
+  },
+  {
+   "path": "source/PCBA FT Demo/PCBA FT Demo Sequence.tpj",
+   "bytes": 1750,
+   "sha256": "bca822f0786bddfe72d9bc3b2b3d708718ec95e1c27b420d085d4a91dfe82fc3",
+   "via": "extension"
+  },
+  {
+   "path": "source/PCBA FT Demo/PCBA FT Demo.seq",
+   "bytes": 30112,
+   "sha256": "a2bbfd543e9fc3ee0b7cd099543550621ebfeca8d4e84687fcde5d5838192731",
+   "via": "extension"
+  },
+  {
+   "path": "source/PCBA TestStand Project.tpj",
+   "bytes": 2080,
+   "sha256": "95f20b4dd29f1482121ba77dbd0a08c3bf97c4c317f158eec215a30dd148a544",
+   "via": "extension"
+  },
+  {
+   "path": "source/PCBA TestStand WorkSpace.tsw",
+   "bytes": 1616,
+   "sha256": "122007a33a791fe6e575571a53985501e290817e8381e55779ee476f087251ca",
+   "via": "extension"
+  },
+  {
+   "path": ".github/CODEOWNERS",
+   "bytes": 72,
+   "sha256": "94b1f23f72346194a02c01a6de7d7aec2e85e19331703bd9e0048446df21a362",
+   "via": "tree"
+  },
+  {
+   "path": ".github/PULL_REQUEST_TEMPLATE.md",
+   "bytes": 352,
+   "sha256": "0139209365b5c76e6c9126a902a4f4280708f8bdf686d37685a3fa503f3b0907",
+   "via": "tree"
+  },
+  {
+   "path": "CONTRIBUTING.md",
+   "bytes": 2920,
+   "sha256": "55069231001149a631312690fde3b40a5c681590f00ec682ee08a366207b165c",
+   "via": "tree"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1148,
+   "sha256": "f3b78543a3ea26fd0737b7691e155b9aa5b4c6ae2089d7cdb02d6aaef214983b",
+   "via": "tree"
+  },
+  {
+   "path": "README.md",
+   "bytes": 8409,
+   "sha256": "e46589841e7045d84910685e5f0210ee053ca1b11179027cb001ba8aa848855c",
+   "via": "tree"
+  },
+  {
+   "path": "SECURITY.md",
+   "bytes": 1312,
+   "sha256": "c3c34cacd2f1f76e9c299372d8b9cf3fbe6da13340cc1eb9721762a521c80a69",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/Hardware Configuration Utility.png",
+   "bytes": 321062,
+   "sha256": "f19b25f422558dc4442e6d979860ca9e9900426db651071dc503fbb76f3f62c8",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/NI-MAX.png",
+   "bytes": 140356,
+   "sha256": "ce8c5963b1b3348f0e3ccfb6c84718e1447004003283bc6ae364cf8b78c622fe",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/SVG_to_FDVM_Results.png",
+   "bytes": 175105,
+   "sha256": "4ff403958ae46c4ad4e0e4a8c303dc024e1f516261ddd0888dfcd776bddc5b3c",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/Simple_three_block_architecture.png",
+   "bytes": 28234,
+   "sha256": "ec73b588894efbb3867c1dd94986276ea10f9163caee8ec712bc4b98d569fc58",
+   "via": "tree"
+  },
+  {
+   "path": "source/Library/PCBA Measurements.aliases",
+   "bytes": 43,
+   "sha256": "d9692350f735351e5c003fc873acd76e8f2cf2ad948cd7fecbbcc3f37a1b3ee4",
+   "via": "tree"
+  },
+  {
+   "path": "source/Library/images/PCBATT25.png",
+   "bytes": 542,
+   "sha256": "b4ab29b9733799387552adff1844c2e1ca98c9a955935108f6487a600d7ec530",
+   "via": "tree"
+  },
+  {
+   "path": "source/NILV_PCBA_TemplateMetaData.xml",
+   "bytes": 849,
+   "sha256": "94aef2f74cd45504e440aca21682e5f3050f070261a102bd665bda173903c3d3",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA TestStand WorkSpace.tso",
+   "bytes": 1581,
+   "sha256": "f8a072174b5776aa61281514261970ad4d4351c37cbfc04dc0d36046899cd4bc",
+   "via": "tree"
+  }
+ ],
+ "skipped": [],
+ "external": [
+  "<helpdir>\\PCBA_Measurement_Library_Help.chm",
+  "<instrlib>\\niDMM\\nidmm.llb\\niDMM Close.vi",
+  "<instrlib>\\niDMM\\nidmm.llb\\niDMM Config Measurement.vi",
+  "<instrlib>\\niDMM\\nidmm.llb\\niDMM Configure AC Bandwidth.vi",
+  "<instrlib>\\niDMM\\nidmm.llb\\niDMM Configure Frequency Voltage Range.vi",
+  "<instrlib>\\niDMM\\nidmm.llb\\niDMM Configure Measurement Digits.vi",
+  "<instrlib>\\niDMM\\nidmm.llb\\niDMM Configure Powerline Frequency.vi",
+  "<instrlib>\\niDMM\\nidmm.llb\\niDMM Configure Trigger Slope.vi",
+  "<instrlib>\\niDMM\\nidmm.llb\\niDMM Configure Trigger.vi",
+  "<instrlib>\\niDMM\\nidmm.llb\\niDMM Function.ctl",
+  "<instrlib>\\niDMM\\nidmm.llb\\niDMM Initialize.vi",
+  "<instrlib>\\niDMM\\nidmm.llb\\niDMM Is Over Range.vi",
+  "<instrlib>\\niDMM\\nidmm.llb\\niDMM Powerline Frequency.ctl",
+  "<instrlib>\\niDMM\\nidmm.llb\\niDMM Read.vi",
+  "<instrlib>\\niDMM\\nidmm.llb\\niDMM Resolution in Digits.ctl",
+  "<instrlib>\\niDMM\\nidmm.llb\\niDMM Slope.ctl",
+  "<instrlib>\\niDMM\\nidmm.llb\\niDMM Trigger.ctl",
+  "<instrlib>\\niSwitch\\niSwitch.llb\\niSwitch Can Connect Channels.vi",
+  "<instrlib>\\niSwitch\\niSwitch.llb\\niSwitch Close.vi",
+  "<instrlib>\\niSwitch\\niSwitch.llb\\niSwitch Connect Channels (Single).vi",
+  "<instrlib>\\niSwitch\\niSwitch.llb\\niSwitch Connect Channels.vi",
+  "<instrlib>\\niSwitch\\niSwitch.llb\\niSwitch Disconnect All Channels.vi",
+  "<instrlib>\\niSwitch\\niSwitch.llb\\niSwitch Disconnect Channels (Single).vi",
+  "<instrlib>\\niSwitch\\niSwitch.llb\\niSwitch Disconnect Channels.vi",
+  "<instrlib>\\niSwitch\\niSwitch.llb\\niSwitch Initialize With Topology.vi",
+  "<instrlib>\\niSwitch\\niSwitch.llb\\niSwitch Topologies.ctl",
+  "<instrlib>\\niSwitch\\niSwitch.llb\\niSwitch Wait For Debounce.vi",
+  "<resource>\\lvanlys.dll",
+  "<resource>\\objmgr\\NI845x.rc",
+  "<resource>\\objmgr\\daqmx.rc",
+  "<resource>\\visarc",
+  "<vilib>\\Analysis\\4window.llb\\windowTd.ctl",
+  "<vilib>\\Analysis\\NI_AALBase.lvlib",
+  "<vilib>\\Analysis\\NI_AALPro.lvlib",
+  "<vilib>\\Analysis\\baseanly.llb\\Mean (DBL).vi",
+  "<vilib>\\Analysis\\baseanly.llb\\Mean.vi",
+  "<vilib>\\DAQmx\\configure\\events\\hardwareSignals.llb\\DAQmx Export Signal (Most Signals).vi",
+  "<vilib>\\DAQmx\\configure\\events\\hardwareSignals.llb\\DAQmx Export Signal.vi",
+  "<vilib>\\DAQmx\\configure\\task.llb\\DAQmx Clear Task.vi",
+  "<vilib>\\DAQmx\\configure\\task.llb\\DAQmx Control Task.vi",
+  "<vilib>\\DAQmx\\configure\\task.llb\\DAQmx Start Task.vi",
+  "<vilib>\\DAQmx\\configure\\task.llb\\DAQmx Stop Task.vi",
+  "<vilib>\\DAQmx\\configure\\task.llb\\DAQmx Wait Until Done.vi",
+  "<vilib>\\DAQmx\\configure\\timing.llb\\DAQmx Timing (Implicit).vi",
+  "<vilib>\\DAQmx\\configure\\timing.llb\\DAQmx Timing (Sample Clock).vi",
+  "<vilib>\\DAQmx\\configure\\timing.llb\\DAQmx Timing.vi",
+  "<vilib>\\DAQmx\\configure\\trigger.llb\\DAQmx Start Trigger (Digital Edge).vi",
+  "<vilib>\\DAQmx\\configure\\trigger.llb\\DAQmx Trigger.vi",
+  "<vilib>\\DAQmx\\create\\channels.llb\\DAQmx Create Channel (AI-Current-Basic).vi",
+  "<vilib>\\DAQmx\\create\\channels.llb\\DAQmx Create Channel (AI-Temperature-RTD).vi",
+  "<vilib>\\DAQmx\\create\\channels.llb\\DAQmx Create Channel (AI-Temperature-Thermistor-Vex).vi",
+  "<vilib>\\DAQmx\\create\\channels.llb\\DAQmx Create Channel (AI-Temperature-Thermocouple).vi",
+  "<vilib>\\DAQmx\\create\\channels.llb\\DAQmx Create Channel (AI-Voltage-Basic).vi",
+  "<vilib>\\DAQmx\\create\\channels.llb\\DAQmx Create Channel (AO-Voltage-Basic).vi",
+  "<vilib>\\DAQmx\\create\\channels.llb\\DAQmx Create Channel (CI-Count Edges).vi",
+  "<vilib>\\DAQmx\\create\\channels.llb\\DAQmx Create Channel (CI-Frequency).vi",
+  "<vilib>\\DAQmx\\create\\channels.llb\\DAQmx Create Channel (CI-Semi Period).vi",
+  "<vilib>\\DAQmx\\create\\channels.llb\\DAQmx Create Channel (CO-Pulse Generation-Frequency).vi",
+  "<vilib>\\DAQmx\\create\\channels.llb\\DAQmx Create Channel (CO-Pulse Generation-Time).vi",
+  "<vilib>\\DAQmx\\create\\channels.llb\\DAQmx Create Channel (DI-Digital Input).vi",
+  "<vilib>\\DAQmx\\create\\channels.llb\\DAQmx Create Channel (DO-Digital Output).vi",
+  "<vilib>\\DAQmx\\create\\channels.llb\\DAQmx Create Channel (Power).vi",
+  "<vilib>\\DAQmx\\create\\channels.llb\\DAQmx Create Virtual Channel.vi",
+  "<vilib>\\DAQmx\\miscellaneous.llb\\DAQmx Fill In Error Info.vi",
+  "<vilib>\\DAQmx\\miscellaneous.llb\\DAQmx Flatten Channel String.vi",
+  "<vilib>\\DAQmx\\miscellaneous.llb\\DAQmx Unflatten Channel String.vi",
+  "<vilib>\\DAQmx\\read.llb\\DAQmx Read (Analog 1D Wfm NChan NSamp).vi",
+  "<vilib>\\DAQmx\\read.llb\\DAQmx Read (Counter 1D DBL 1Chan NSamp).vi",
+  "<vilib>\\DAQmx\\read.llb\\DAQmx Read (Counter DBL 1Chan 1Samp).vi",
+  "<vilib>\\DAQmx\\read.llb\\DAQmx Read (Counter U32 1Chan 1Samp).vi",
+  "<vilib>\\DAQmx\\read.llb\\DAQmx Read (Digital 1D Bool NChan 1Samp 1Line).vi",
+  "<vilib>\\DAQmx\\read.llb\\DAQmx Read (Digital 1D Wfm NChan NSamp).vi",
+  "<vilib>\\DAQmx\\read.llb\\DAQmx Read (Power Wfm 1Chan NSamp).vi",
+  "<vilib>\\DAQmx\\read.llb\\DAQmx Read.vi",
+  "<vilib>\\DAQmx\\write.llb\\DAQmx Write (Analog 1D DBL NChan 1Samp).vi",
+  "<vilib>\\DAQmx\\write.llb\\DAQmx Write (Analog 1D Wfm NChan NSamp).vi",
+  "<vilib>\\DAQmx\\write.llb\\DAQmx Write (Digital 1D Bool NChan 1Samp 1Line).vi",
+  "<vilib>\\DAQmx\\write.llb\\DAQmx Write (Digital 2D U32 NChan NSamp).vi",
+  "<vilib>\\DAQmx\\write.llb\\DAQmx Write.vi",
+  "<vilib>\\ErrorRing\\Error Ring.xnode",
+  "<vilib>\\Instr\\_visa.llb\\VISA Configure Serial Port",
+  "<vilib>\\Instr\\_visa.llb\\VISA Configure Serial Port (Instr).vi",
+  "<vilib>\\Utility\\High Resolution Relative Seconds.vi",
+  "<vilib>\\Utility\\error.llb\\Clear Errors.vi",
+  "<vilib>\\Utility\\error.llb\\Error Cluster From Error Code.vi",
+  "<vilib>\\Utility\\error.llb\\Error Code Database.vi",
+  "<vilib>\\Waveform\\DWDT.llb\\Append Digital Signals.vi",
+  "<vilib>\\Waveform\\DWDT.llb\\Digital to Boolean Array.vi",
+  "<vilib>\\Waveform\\DWDTOps.llb\\DWDT Append Digital Signals.vi",
+  "<vilib>\\Waveform\\DWDTOps.llb\\DWDT Digital to Boolean Array.vi",
+  "<vilib>\\Waveform\\WDTOps.llb\\Waveform Scale and Offset.vi",
+  "<vilib>\\measure\\NI_MABase.lvlib",
+  "<vilib>\\measure\\NI_MAPro.lvlib",
+  "<vilib>\\measure\\madcrms.llb\\Basic Averaged DC-RMS for N Chan.vi",
+  "<vilib>\\measure\\madcrms.llb\\Basic Averaged DC-RMS.vi",
+  "<vilib>\\measure\\mascope.llb\\Amplitude and Levels N chan.vi",
+  "<vilib>\\measure\\mascope.llb\\Amplitude and Levels.vi",
+  "<vilib>\\measure\\mascope.llb\\Pulse Measurements N chan.vi",
+  "<vilib>\\measure\\mascope.llb\\Pulse Measurements.vi",
+  "<vilib>\\measure\\masignal.llb\\Sine Waveform.vi",
+  "<vilib>\\measure\\masignal.llb\\Square Waveform.vi",
+  "<vilib>\\measure\\maspectr.llb\\FFT Spectrum (Mag-Phase) for N Chan.vi",
+  "<vilib>\\measure\\maspectr.llb\\FFT Spectrum (Mag-Phase).vi",
+  "<vilib>\\measure\\matone.llb\\Extract Multiple Tone Information 1 Chan.vi",
+  "<vilib>\\measure\\matone.llb\\Extract Multiple Tone Information.vi",
+  "<vilib>\\measure\\matone.llb\\Multitone Generator.vi",
+  "<vilib>\\ni845x\\ni845x.llb\\NI-845x Close Reference.vi",
+  "<vilib>\\ni845x\\ni845x.llb\\NI-845x I2C Close Configuration Reference.vi",
+  "<vilib>\\ni845x\\ni845x.llb\\NI-845x I2C Create Configuration Reference.vi",
+  "<vilib>\\ni845x\\ni845x.llb\\NI-845x I2C Write Read.vi",
+  "<vilib>\\ni845x\\ni845x.llb\\NI-845x I2C Write.vi",
+  "<vilib>\\ni845x\\ni845x.llb\\NI-845x SPI Close Configuration Reference.vi",
+  "<vilib>\\ni845x\\ni845x.llb\\NI-845x SPI Create Configuration Reference.vi",
+  "<vilib>\\ni845x\\ni845x.llb\\NI-845x SPI Write Read.vi",
+  "<vilib>\\ni845x\\ni845x.llb\\ni845xControl.ctl",
+  "<vilib>\\nisyscfg\\Close (System).vi",
+  "<vilib>\\nisyscfg\\Close.vi",
+  "<vilib>\\nisyscfg\\Import.vi",
+  "<vilib>\\nisyscfg\\Initialize Session.vi",
+  "<vilib>\\nisyscfg\\nisyscfg.lvlib"
+ ]
+}
