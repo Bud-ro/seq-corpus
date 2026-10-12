@@ -33,7 +33,10 @@ This repo provides a few additional convenience files:
   commit and path it came from.
 
 This repo does NOT include installers, archives, VI Package Manager packages, FPGA bitfiles,
-build and IDE caches, office documents, video, 3D models and unreferenced files over 1 MB.
+build and IDE caches, office documents, video, 3D models and unreferenced files over 1 MB,
+except where another kept file refers to such a file by path (a DLL named by a Call Library
+Function node, a help document named by a VI), in which case it is kept as that file's
+dependency.
 
 ## Legal
 
