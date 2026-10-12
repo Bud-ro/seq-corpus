@@ -1,11 +1,12 @@
 # seq-corpus
 
-TestStand sequence files and the LabVIEW code they call, vendored from public repositories, with their licenses,
-for measuring the [labwright](https://github.com/Bud-ro/labwright) TestStand reader.
+TestStand sequence files and the LabVIEW code they call, vendored from public
+repositories with their licenses, for measuring the
+[labwright](https://github.com/Bud-ro/labwright) TestStand reader.
 
 Each upstream repository lives under `sources/<owner>__<repo>/` with its own
-tree layout preserved, so relative links between sequences and the code modules they call resolve
-as they did upstream. Next to the tree:
+tree layout preserved, so relative links between sequences and the code
+modules they call resolve as they did upstream. Next to the tree:
 
 - `LICENSE.md`, the upstream license file copied verbatim;
 - `manifest.json`, the repository URL, the vendored commit, the license's SPDX
@@ -15,11 +16,15 @@ as they did upstream. Next to the tree:
   repository (`<vilib>` paths and absolute paths).
 
 `sources.json` lists every vendored source; `candidates.json` lists public
-repositories that were surveyed but not vendored, with the reason (no license
-file, a non-commercial or non-redistributable license, or NI product content),
-so they can be revisited with permission. `corpus.json` names the file
-extensions the corpus collects; everything else in a tree is kept as a
-dependency candidate except installers, archives, office documents and video.
+repositories that are not vendored, with the reason: no license file, a
+non-commercial or non-redistributable license, NI product content, no LabVIEW
+files at the pinned commit, or every file a byte-identical copy of another
+source's. `corpus.json` names the file extensions the corpus collects. Beyond
+those, a tree keeps every file another kept file refers to (PTH0 path records,
+LabVIEW XML `URL` attributes, file names in TestStand files) and the rest of
+the tree except installers, archives, VIPM packages, FPGA bitfiles, build and
+IDE caches, office documents, video, 3D models and unreferenced files over
+1 MB, so a project's assets stay in place.
 
 Files are redistributed under their upstream licenses only; this repository
 adds no license of its own. Only sources with an explicit license file are
