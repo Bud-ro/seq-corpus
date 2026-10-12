@@ -1,0 +1,169 @@
+[
+ {
+  "path": "ni_tool_esf-2.4.0.25.vip",
+  "url": "https://raw.githubusercontent.com/illuminated-g/tss/8552fa72a15fc9d926fc5a23eaa351e44926335f/ni_tool_esf-2.4.0.25.vip",
+  "bytes": 286808,
+  "sha256": "2812733c5118c452e7b5a69194a6f6758e91f527a8f237ea80d6a3f2b629b831",
+  "members": [
+   {
+    "path": "spec",
+    "bytes": 3498,
+    "crc32": 2381981718,
+    "sha256": "5f134ad4a99750df38b830a8f74e6bf25a5bddce5607aecfe8fc4a10ddb468d4"
+   },
+   {
+    "path": "icon.bmp",
+    "bytes": 4230,
+    "crc32": 3015044897,
+    "sha256": "6bc9132061f323c3e5e14e0b14cca0cff27b7dbef5bd9120d0affbd46401f200"
+   },
+   {
+    "path": "File Group 0/user.lib/_Session Fwk/ROOT - Obtain Session.vi",
+    "bytes": 36777,
+    "crc32": 3511990610,
+    "sha256": "4d4759424e6b348df220ba42bae7b86b5f07b0aa12a2a8ff1824fd08888aa16c"
+   },
+   {
+    "path": "File Group 0/user.lib/_Session Fwk/ROOT - Release Session.vi",
+    "bytes": 29266,
+    "crc32": 1087570619,
+    "sha256": "9f79a66e9d6d51921f6defe8c1faaba740cef706bde436a4a85268ef3b0d2347"
+   },
+   {
+    "path": "File Group 0/user.lib/_Session Fwk/ROOT - Restore Session Defaults.vi",
+    "bytes": 24371,
+    "crc32": 3163538875,
+    "sha256": "d7201a48372503ef838ea4fdf7797070c4d7735e78ebe9b4ed7b37990294c8c8"
+   },
+   {
+    "path": "File Group 0/user.lib/_Session Fwk/Session - Root.lvclass",
+    "bytes": 75638,
+    "crc32": 1998121715,
+    "sha256": "d2b408facfbf6418f68789558f387c6e3466c2fe785e84b60ba0b570f996dc25"
+   },
+   {
+    "path": "File Group 0/user.lib/_Session Fwk/Utilities/clear Session Data.vi",
+    "bytes": 19842,
+    "crc32": 305007301,
+    "sha256": "ab4bb63834c894d941d8fbfcd09543c882fcbea5ff7bd69a370966e2a7e80237"
+   },
+   {
+    "path": "File Group 0/user.lib/_Session Fwk/Utilities/initialize Session Data.vi",
+    "bytes": 23147,
+    "crc32": 1955945397,
+    "sha256": "936324610fd729254c565de8e0f64c095ba508433f94525a31a86fe59a0ac266"
+   },
+   {
+    "path": "File Group 0/user.lib/_Session Fwk/Utilities/set Defaults.vi",
+    "bytes": 19820,
+    "crc32": 449830266,
+    "sha256": "b2ebb5d13c3930fc9c0077e0f2c0e21f8a1adf1f7a564b5fb0238a0b52ed9ac5"
+   },
+   {
+    "path": "File Group 0/user.lib/_Session Fwk/Typedefs/Session Handle.ctl",
+    "bytes": 18599,
+    "crc32": 2634876107,
+    "sha256": "5b2d899011ba44f56bd92293e0df235751e996d88bcdf0e0932a36f45a618085"
+   },
+   {
+    "path": "File Group 0/user.lib/_Session Fwk/Template Session/Obtain Session.vi",
+    "bytes": 26078,
+    "crc32": 450956042,
+    "sha256": "5dbc9d53c52d419a3165739fea5db4dea42e3e65a741440be2a82378d61e6648"
+   },
+   {
+    "path": "File Group 0/user.lib/_Session Fwk/Template Session/Release Session.vi",
+    "bytes": 23243,
+    "crc32": 3180170629,
+    "sha256": "03a311c58564f3d2cd37e7799aec844a54e619e5083e13e830e77f429f2dc62a"
+   },
+   {
+    "path": "File Group 0/user.lib/_Session Fwk/Template Session/Restore Session Defaults.vi",
+    "bytes": 23988,
+    "crc32": 4153376572,
+    "sha256": "206a3a863aacf97d4a475f532dd24ce41e012cac557247bfeb7d62c7f084a37a"
+   },
+   {
+    "path": "File Group 0/user.lib/_Session Fwk/Template Session/Template Session.lvclass",
+    "bytes": 83126,
+    "crc32": 2200506581,
+    "sha256": "63ee4a28a302a5676df35211ed6b0fa54c7886611e8af3e1eeb9e8612aaf1653"
+   },
+   {
+    "path": "File Group 0/user.lib/_Session Fwk/Template Session/Utilities/clear Session Data.vi",
+    "bytes": 23598,
+    "crc32": 688072944,
+    "sha256": "7544505d353c970b64e8c11f23d83df08a50c6439e681f66e501f4ef8618ff4f"
+   },
+   {
+    "path": "File Group 0/user.lib/_Session Fwk/Template Session/Utilities/initialize Session Data.vi",
+    "bytes": 21479,
+    "crc32": 3789339279,
+    "sha256": "eb0723a0c57d7e314247471e436f45275fcd6e9c2709ff5d4966a283aa6c4995"
+   },
+   {
+    "path": "File Group 0/user.lib/_Session Fwk/Template Session/Utilities/set Defaults.vi",
+    "bytes": 23060,
+    "crc32": 2818932137,
+    "sha256": "2f4ab0bab211ad2a3d38f949f9bbd24db9af6e48dd23a88a64a2b19ef761147d"
+   },
+   {
+    "path": "File Group 0/user.lib/_Session Fwk/Template Session/Typedefs/Session Handle.ctl",
+    "bytes": 18507,
+    "crc32": 592839548,
+    "sha256": "73cf3f629a104f51d5e1357f2099001f47685630394785f703c9699b7e7ccc21"
+   },
+   {
+    "path": "File Group 0/user.lib/_Session Fwk/Template Session/_Templates/DVR Based Method.vit",
+    "bytes": 24109,
+    "crc32": 3028115834,
+    "sha256": "8c2fd2dacc608f8941999c78305bf5c44065bc81fd4141ea78b4c58da7f7572f"
+   },
+   {
+    "path": "File Group 0/user.lib/_Session Fwk/Accessors/_get Session Name for PN.vi",
+    "bytes": 22488,
+    "crc32": 118629586,
+    "sha256": "16d44de19ed538067a60f6a8fa6a2c3607683dfacb304de7b529727b535da67f"
+   },
+   {
+    "path": "File Group 0/user.lib/_Session Fwk/Accessors/get Session Handle Queue.vi",
+    "bytes": 23492,
+    "crc32": 4187119918,
+    "sha256": "81dbe8bf25232728f9b644205ae74da4548e084d83034d2f9736dc02a633fe8d"
+   },
+   {
+    "path": "File Group 0/user.lib/_Session Fwk/Accessors/get Session Name.vi",
+    "bytes": 24952,
+    "crc32": 191725315,
+    "sha256": "2577e00997225cadd92432c3e777361aae8875f2a6e05f19ed08109dc6527c7a"
+   },
+   {
+    "path": "File Group 0/user.lib/_Session Fwk/Accessors/get Session Prefix.vi",
+    "bytes": 13730,
+    "crc32": 1793388816,
+    "sha256": "766a43ac76b01f4ed3c1e631bf4088a1366c6e71cb6e541c694b4e2079fd1be8"
+   },
+   {
+    "path": "File Group 0/user.lib/_Session Fwk/Accessors/set Session Handle Queue.vi",
+    "bytes": 24324,
+    "crc32": 953990452,
+    "sha256": "51e3eaed1a1ee05385120987627df03b4d53b7106903579bf1529dbd54cee0ab"
+   },
+   {
+    "path": "File Group 0/project/ESF.llb",
+    "bytes": 82767,
+    "crc32": 4068920890,
+    "sha256": "714cc272070bd86d63e75bb9bf0d1ce589e8eda38d20c28c4e9f589597699c59"
+   },
+   {
+    "path": "PostInstall.vi",
+    "bytes": 21363,
+    "crc32": 1746559368,
+    "sha256": "290dbad0978d342d0448c7ec9b9718c6b38a647be6134ea53ee20682a1c72b70"
+   }
+  ],
+  "spec": {
+   "spec": "[Package]\r\nName=\"ni_tool_esf\"\r\nVersion=\"2.4.0.25\"\r\nRelease=\"\"\r\nID=7fc77dcbc851cc65f471a83d26f60748\r\nFile Format=\"vip\"\r\nFormat Version=\"2010\"\r\nDisplay Name=\"ESF - Extensible Session Framework\"\r\n\r\n\r\n[Description]\r\nDescription=\"The Extensible Session Framework (ESF) is a software component that adds rich features to your session-based application programming interface (API). Examples session-oriented APIs are file writers and readers, functions that manage a communication link, driver APIs for instrumentation, and hardware abstraction layers (HAL).\\0D\\0A\\0D\\0AESF uses a single base class to manage multiple instantiations of your session wire. These instances can be obtained from anywhere in your application by name, much like a LabVIEW Queue or Notifier. This adds multi-access and multi-instance functionality to your API without any coding overhead.\"\r\nSummary=\"Simple framework for creating session-based APIs\"\r\nLicense=\"\"\r\nCopyright=\"Copyright (c) 2013, National Instruments\"\r\nDistribution=\"\"\r\nVendor=\"National Instruments\"\r\nURL=\"http://decibel.ni.com/content/docs/DOC-12813\"\r\nPackager=\"NI Systems Engineering\"\r\nDemo=\"FALSE\"\r\nRelease Notes=\"Rollback version to 2011 and greater\\0AAdded template and root methods for restoring defaults\\0A\\0AFor breakages after upgrade from v1 use mutation utility available from Norm.Kirchner@NI.com\"\r\nSystem Package=\"FALSE\"\r\n\r\n\r\n[Platform]\r\nExclusive_LabVIEW_Version=\">=11.0\"\r\nExclusive_LabVIEW_System=\"ALL\"\r\nExclusive_OS=\"ALL\"\r\n\r\n\r\n[Script VIs]\r\nPreInstall=\"\"\r\nPostInstall=\"<OS User Home>\\\\NIP4\\\\Sales\\\\projects\\\\Utilities\\\\ESF\\\\_dev\\\\ESF.llb\\\\LLB - Make VI Top Level.vi\"\r\nPreUninstall=\"\"\r\nPostUninstall=\"\"\r\nVerify=\"\"\r\nPreBuild=\"\"\r\nPostBuild=\"\"\r\n\r\n\r\n[Dependencies]\r\nAutoReqProv=FALSE\r\nRequires=\"\"\r\nConflicts=\"\"\r\n\r\n\r\n[Activation]\r\nLicense File=\"\"\r\nLicensed Library=\"\"\r\n\r\n\r\n[Files]\r\nNum File Groups=\"1\"\r\nSub-Packages=\"\"\r\n\r\n\r\n[File Group 0]\r\nTarget Dir=\"<application>\"\r\nReplace Mode=\"Always\"\r\nNum Files=23\r\nFile 0=\"user.lib/_Session Fwk/ROOT - Obtain Session.vi\"\r\nFile 1=\"user.lib/_Session Fwk/ROOT - Release Session.vi\"\r\nFile 2=\"user.lib/_Session Fwk/ROOT - Restore Session Defaults.vi\"\r\nFile 3=\"user.lib/_Session Fwk/Session - Root.lvclass\"\r\nFile 4=\"user.lib/_Session Fwk/Utilities/clear Session Data.vi\"\r\nFile 5=\"user.lib/_Session Fwk/Utilities/initialize Session Data.vi\"\r\nFile 6=\"user.lib/_Session Fwk/Utilities/set Defaults.vi\"\r\nFile 7=\"user.lib/_Session Fwk/Typedefs/Session Handle.ctl\"\r\nFile 8=\"user.lib/_Session Fwk/Template Session/Obtain Session.vi\"\r\nFile 9=\"user.lib/_Session Fwk/Template Session/Release Session.vi\"\r\nFile 10=\"user.lib/_Session Fwk/Template Session/Restore Session Defaults.vi\"\r\nFile 11=\"user.lib/_Session Fwk/Template Session/Template Session.lvclass\"\r\nFile 12=\"user.lib/_Session Fwk/Template Session/Utilities/clear Session Data.vi\"\r\nFile 13=\"user.lib/_Session Fwk/Template Session/Utilities/initialize Session Data.vi\"\r\nFile 14=\"user.lib/_Session Fwk/Template Session/Utilities/set Defaults.vi\"\r\nFile 15=\"user.lib/_Session Fwk/Template Session/Typedefs/Session Handle.ctl\"\r\nFile 16=\"user.lib/_Session Fwk/Template Session/_Templates/DVR Based Method.vit\"\r\nFile 17=\"user.lib/_Session Fwk/Accessors/_get Session Name for PN.vi\"\r\nFile 18=\"user.lib/_Session Fwk/Accessors/get Session Handle Queue.vi\"\r\nFile 19=\"user.lib/_Session Fwk/Accessors/get Session Name.vi\"\r\nFile 20=\"user.lib/_Session Fwk/Accessors/get Session Prefix.vi\"\r\nFile 21=\"user.lib/_Session Fwk/Accessors/set Session Handle Queue.vi\"\r\nFile 22=\"project/ESF.llb\"\r\n"
+  }
+ }
+]
