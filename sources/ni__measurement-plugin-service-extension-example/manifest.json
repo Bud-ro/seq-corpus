@@ -1,0 +1,673 @@
+{
+ "repo": "ni/measurement-plugin-service-extension-example",
+ "url": "https://github.com/ni/measurement-plugin-service-extension-example",
+ "commit": "2d62999804db66787ee7fca0e752c77336ebd628",
+ "license": "MIT",
+ "licenseFile": "LICENSE",
+ "fetched": "2026-10-11",
+ "files": [
+  {
+   "path": "examples/labview_measurement/Json Logger Client/Json Logger Client.lvclass",
+   "bytes": 16847,
+   "sha256": "d642e3c137fd13ae96648643d3db115b18327f02846c32678e6dc21f092a046c",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/Json Logger Client/Methods/Destroy Client.vi",
+   "bytes": 14834,
+   "sha256": "9ba3086972025b5a8f1ebcdcf1da499e6e0713ab888c62551906d846c2445fcd",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/Json Logger Client/Methods/Initialize Log.vi",
+   "bytes": 18110,
+   "sha256": "3e199c61b5a0934509199b1ce8751824c2163c268a920593b9c8be0f36f98855",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/Json Logger Client/Methods/Log Measurement.vi",
+   "bytes": 17907,
+   "sha256": "1318de773158983fb76220037184f09d6786c7878d8406a1288c237aa3beb74b",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/Json Logger Client/stubs/Client API/Create Client.vi",
+   "bytes": 15401,
+   "sha256": "f97551581aa0dcf8dd82c6ec0786654b511c8f2f4db88aa37dc17ec474f2fed3",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/Json Logger Client/stubs/Client API/Destroy Client.vi",
+   "bytes": 13954,
+   "sha256": "4dc427e11f3badbbd55b09b116b0ccfaf62c3a73c32776e740f771090c4dba74",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/Json Logger Client/stubs/RPC Messages/FlatToRichlogging_service_LogRequest.vi",
+   "bytes": 16344,
+   "sha256": "988c50019ed6058813f8efc52ceee4f5013603f07d7cb86f3f795d4215152117",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/Json Logger Client/stubs/RPC Messages/FlatToRichlogging_service_LogResponse.vi",
+   "bytes": 12377,
+   "sha256": "60b3b86207ed9ee4510c9af0852c2bc2f14fe189217cd6498c62162d17951286",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/Json Logger Client/stubs/RPC Messages/Register gRPC Messages.vi",
+   "bytes": 20534,
+   "sha256": "62e08233640ceadeb42fe6ea3915b0a20683956e905b46aef31600b385519b98",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/Json Logger Client/stubs/RPC Messages/RichToFlatlogging_service_LogRequest.vi",
+   "bytes": 16344,
+   "sha256": "174c0ce34dc367e0ce917a253efb32a899460cf9c96334c69a26a579c40afcfb",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/Json Logger Client/stubs/RPC Messages/RichToFlatlogging_service_LogResponse.vi",
+   "bytes": 12381,
+   "sha256": "30a46a82cca5fb8fac62c5fd8b99ef299da03122a87002cdae28ff5163b69e4b",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/Json Logger Client/stubs/RPC Messages/logging_service_LogRequest.ctl",
+   "bytes": 7295,
+   "sha256": "ce9fe4aa674e145039bd4a9bcab280c180574cda4c610ae5592f502b60b4542c",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/Json Logger Client/stubs/RPC Messages/logging_service_LogRequest_Flat.ctl",
+   "bytes": 7304,
+   "sha256": "fad1b0a45347b07c23fc9cd133d38c2b69f7abce53fe078900b9286eff6a0473",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/Json Logger Client/stubs/RPC Messages/logging_service_LogResponse.ctl",
+   "bytes": 4780,
+   "sha256": "9eff30db045527220e94002149f7eb1a6c9111f0f11fd0f7e920ca3f7748385f",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/Json Logger Client/stubs/RPC Messages/logging_service_LogResponse_Flat.ctl",
+   "bytes": 4797,
+   "sha256": "94373123b3e1e83e7986d4f831ef13a0aa0393a478d0a1864e93ea92a350bcfc",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/Json Logger Client/stubs/RPC Service/LogMeasurement/LogMeasurement Log.vi",
+   "bytes": 65206,
+   "sha256": "04bfd8fcf18338b791e8906ec3b6dace4c3f23c4f43889ca3c1c86308636a46d",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/Json Logger Client/stubs/gRPC Client Test.vi",
+   "bytes": 13920,
+   "sha256": "6ad15de0b982686bef1b2edd28e6069fb79053d6a2022a12e223c82c5de4d194",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/Json Logger Client/stubs/log_measurement_client.lvlib",
+   "bytes": 27682,
+   "sha256": "0972735f129a0f5be886912dea1d9e32314c1a4ad6acade29291ff648b49195c",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/NI-DCPower Measurement/Advanced/Build Assets/Post-Build Action.vi",
+   "bytes": 16809,
+   "sha256": "198cb82dfeb79609e48723eac77bfa240e55024f7498365a8d469826e9653bd6",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/NI-DCPower Measurement/Advanced/Get Plugin Paths.vi",
+   "bytes": 19700,
+   "sha256": "076d90a38fe78825db3fe784d4732379e21d71819390ad2be710638925e05578",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/NI-DCPower Measurement/Advanced/Measurement Plugin.lvclass",
+   "bytes": 20551,
+   "sha256": "68857a3eea3399f83e2f4c3e3c864eb798a90e31762bc7ee9a266ee977dd6f0d",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/NI-DCPower Measurement/Advanced/Pack for gRPC.vi",
+   "bytes": 78809,
+   "sha256": "825980a867d0fe0632d691e2f0431f27371f033c2a56d5e9189d6f55fbd967dd",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/NI-DCPower Measurement/Advanced/Unpack for gRPC.vi",
+   "bytes": 78751,
+   "sha256": "f1aec4bc078a9ce2af51aa4326a015452b905a065551360135558ff99f1ee044",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/NI-DCPower Measurement/Get Measurement Details.vi",
+   "bytes": 18271,
+   "sha256": "408366a9c98a60585f23b8de430361199962bcc24a0ded86e895dd7aeafb8541",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/NI-DCPower Measurement/Get Type Specializations.vi",
+   "bytes": 22820,
+   "sha256": "d3b1d664868d9420810896cfa237d544e115455a1a5f2199a9b2419d9aa31965",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/NI-DCPower Measurement/Get UI Details.vi",
+   "bytes": 22658,
+   "sha256": "6a6ce6f66818833d46009334886a9e04092b217112d0a01026624d16f239526f",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/NI-DCPower Measurement/Measurement Configuration.ctl",
+   "bytes": 12630,
+   "sha256": "393b83660ff07d72b98f14ea14094e8c8c5db9cebcd79564039ece51a8f80f99",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/NI-DCPower Measurement/Measurement Logic.vi",
+   "bytes": 25321,
+   "sha256": "b0127c705a70302dd6fe129e927b5020a3cedbac4a223b6095b6b98fe119f1a2",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/NI-DCPower Measurement/Measurement Results.ctl",
+   "bytes": 12784,
+   "sha256": "869fe8da0dfacd750c7f6d24e1e7fc805653bdac1e62256a45e3b9f8b9120f24",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/NI-DCPower Measurement/Measurement UI.vi",
+   "bytes": 30582,
+   "sha256": "a742ad36906d133d894fe096943fb61813a241af2a92758fbe3fc7927c64c408",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/NI-DCPower Measurement/NIDCPowerSourceDCVoltage.lvlib",
+   "bytes": 15411,
+   "sha256": "1edb51273c28573d860a61fd58e424fb42d1df35cd8014375f5930e760771187",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/NI-DCPower Measurement/Run Service.vi",
+   "bytes": 22131,
+   "sha256": "240b0e45c36f153369308d444fbc7801bbfd232c39ea6b1004ee70daefd237fa",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/NI-DCPower Measurement/TestStand Code Modules/Initialize and Register Sessions.vi",
+   "bytes": 22016,
+   "sha256": "7f8e2904222c200eb4fc956486fe7a6a73ec79c0a6ce34a277fa350df7f55de5",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/NI-DCPower Measurement/TestStand Code Modules/Unregister and Close Sessions.vi",
+   "bytes": 19221,
+   "sha256": "1e79e70a98dca909e3f01790d60a9e6aa5f0e909d77c4d22f63c20dd4b0ac6d9",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/NI-DCPower Measurement/subVIs/NI-DCPower Specific Logic.vi",
+   "bytes": 34069,
+   "sha256": "dc6c7538cc441b00cf8b9e122fb0c80581879c6ea439bd5e60c153912ebff397",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/NIDCPowerSourceDCVoltage.lvproj",
+   "bytes": 19780,
+   "sha256": "46bf452a4b055df3d56423f0edf6d47cb9903984904c2e5441725de1d6015995",
+   "via": "extension"
+  },
+  {
+   "path": "examples/labview_measurement/NIDCPowerSourceDCVoltage_example.seq",
+   "bytes": 244830,
+   "sha256": "adccf9422b1ebb4781549afe6bb6b536ebfd88ba83bf01e7a3f9ba82ff88f9d5",
+   "via": "extension"
+  },
+  {
+   "path": "examples/python_measurement/NIDCPowerSourceDCVoltage_example.seq",
+   "bytes": 177177,
+   "sha256": "248458613a5da4ac54779890f7490138a8d352044e9d34171b6613b334592f26",
+   "via": "extension"
+  },
+  {
+   "path": "examples/python_measurement/teststand_nidcpower.py",
+   "bytes": 2563,
+   "sha256": "aa72204d94e0c408ed2ab8bb87d9f1b4d125b0b879c5bb2c967741f4e58873aa",
+   "via": "ref:examples/python_measurement/NIDCPowerSourceDCVoltage_example.seq"
+  },
+  {
+   "path": ".github/CODEOWNERS",
+   "bytes": 104,
+   "sha256": "3edb65262556f984c757988437c01fbe91382bb83243fa868a5c1dc1f2b8a43f",
+   "via": "tree"
+  },
+  {
+   "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+   "bytes": 1459,
+   "sha256": "deb7fc4c6ab2a77ab5e16bc3c8d37d8fbc47450d663ce154395a06878664d726",
+   "via": "tree"
+  },
+  {
+   "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+   "bytes": 706,
+   "sha256": "5ceba21368a78045ac42c331903059748658fb55683f94a049a042f3c4d7b351",
+   "via": "tree"
+  },
+  {
+   "path": ".github/ISSUE_TEMPLATE/tech_debt.md",
+   "bytes": 156,
+   "sha256": "1ed210ea12d872f3148cac8835603110b0a1be9a06d76abdffed675337084586",
+   "via": "tree"
+  },
+  {
+   "path": ".github/ISSUE_TEMPLATE/user_story.md",
+   "bytes": 310,
+   "sha256": "d555077d24869921b9c14dc5e1acf3b3627d0128e684ae8c3386d7f892816bba",
+   "via": "tree"
+  },
+  {
+   "path": ".github/PULL_REQUEST_TEMPLATE.md",
+   "bytes": 889,
+   "sha256": "8e25cb12388dc42fd32c8c097f6e99949a6bfb06109250c66459846f2783539f",
+   "via": "tree"
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 3040,
+   "sha256": "8100f47c47b5b08de7c42bc1b69c4035b238c3e4c70b0ef5f0ef47c7b174ed00",
+   "via": "tree"
+  },
+  {
+   "path": "CONTRIBUTING.md",
+   "bytes": 5308,
+   "sha256": "3b9d0217c7b91f81b6bee5a6071c4ea51770ec2a0fc91dff438ef30b159f8476",
+   "via": "tree"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1071,
+   "sha256": "b97f1b89ab386a24388eac18238af18f70b997f06a8f8652a2e70cad892c4147",
+   "via": "tree"
+  },
+  {
+   "path": "README.md",
+   "bytes": 7234,
+   "sha256": "8803bd7d6b1afd8d18a331e5c07178a46567a2d6916342649bcc697888e9e8d7",
+   "via": "tree"
+  },
+  {
+   "path": "SECURITY.md",
+   "bytes": 1312,
+   "sha256": "c3c34cacd2f1f76e9c299372d8b9cf3fbe6da13340cc1eb9721762a521c80a69",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/call_apis.png",
+   "bytes": 16849,
+   "sha256": "fb9ffcf13d574a8ca265ae7375c3d0c5da89518df6ca9a8bbd0da225594c0c1b",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/create_client.png",
+   "bytes": 15635,
+   "sha256": "a8c73a1b63b29a5163ff43dd1c4890512801c4de567ade26b3734cc2e022b609",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/destroy_client.png",
+   "bytes": 41331,
+   "sha256": "14c15c610f7814f0619d5085d872c741f490e1e593da53da343d39fd0aa25379",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/establish_connection.png",
+   "bytes": 27195,
+   "sha256": "f48e49acd071dddb25ca711b958327f98e5f6a7e665abc599fe27171de8426f7",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/gRPC_Server_Client_Generator.png",
+   "bytes": 27964,
+   "sha256": "e6562580941113ce8946323da29bc993b51436857d695c0a421d5fb675124196",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/register_service_flowchart.JPG",
+   "bytes": 40352,
+   "sha256": "95d8b397b449a81a51d9065a399b337dac5858ee6913a062d7ecd325f7bc1da7",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/resolve_service_flowchart.JPG",
+   "bytes": 87581,
+   "sha256": "f3fa1adb39029e34e03420d37350965a68d8ba5acf100a45fa556fc6f98b603e",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/user_workflow.png",
+   "bytes": 85281,
+   "sha256": "49e0e696ecddb5132c5bf8eaa70191044326e26f53b3b99296730d97dd14e5f1",
+   "via": "tree"
+  },
+  {
+   "path": "examples/labview_measurement/NIDCPowerSourceDCVoltage.instudioproj",
+   "bytes": 2233,
+   "sha256": "d39d0ec165c28a714be7391ce6e1321e5f29e43fdaf173411f87add56b56cc3e",
+   "via": "tree"
+  },
+  {
+   "path": "examples/labview_measurement/NIDCPowerSourceDCVoltage.pinmap",
+   "bytes": 591,
+   "sha256": "9cd252f5ee64e690c53ff60093c95ad7d18b294f2955cde80ad0a1a6d69d0be3",
+   "via": "tree"
+  },
+  {
+   "path": "examples/labview_measurement/NIDCPowerSourceDCVoltage.sfp",
+   "bytes": 4730,
+   "sha256": "c3cac78bb54098686e072be0a3a83c5af8865e9ea984e34f307673259335d36a",
+   "via": "tree"
+  },
+  {
+   "path": "examples/labview_measurement/README.md",
+   "bytes": 2317,
+   "sha256": "076e66855ffcf979d823b390f5d9bd2138dd791eae0a20bb744e5360be5cd786",
+   "via": "tree"
+  },
+  {
+   "path": "examples/python_measurement/.serviceignore",
+   "bytes": 143,
+   "sha256": "a69b9d18c02cdeee19373f09e6d0929fb2529709e613c2ca14d8f752ead768ed",
+   "via": "tree"
+  },
+  {
+   "path": "examples/python_measurement/NIDCPowerSourceDCVoltage.instudioproj",
+   "bytes": 2232,
+   "sha256": "4f41f8ef32f4a68111caee5c644cd63f61c39a3af66aea7331ce4417ca7edd22",
+   "via": "tree"
+  },
+  {
+   "path": "examples/python_measurement/NIDCPowerSourceDCVoltage.measproj",
+   "bytes": 3811,
+   "sha256": "19cb83b7e897f2fac68718637e33a9e4707f6d0e6201a69d53827f97766dd02a",
+   "via": "tree"
+  },
+  {
+   "path": "examples/python_measurement/NIDCPowerSourceDCVoltage.measui",
+   "bytes": 8980,
+   "sha256": "e0756e3ed4abd90fe8f89d925b6fd7a08a5b98a52e458ee5c9cc5b9d5afcb81d",
+   "via": "tree"
+  },
+  {
+   "path": "examples/python_measurement/NIDCPowerSourceDCVoltage.pinmap",
+   "bytes": 591,
+   "sha256": "9cd252f5ee64e690c53ff60093c95ad7d18b294f2955cde80ad0a1a6d69d0be3",
+   "via": "tree"
+  },
+  {
+   "path": "examples/python_measurement/NIDCPowerSourceDCVoltage.serviceconfig",
+   "bytes": 697,
+   "sha256": "aade75d2e3eaeef805a21977f4a19e5277f46ba91abe5e9b9d498cae75c50696",
+   "via": "tree"
+  },
+  {
+   "path": "examples/python_measurement/NIDCPowerSourceDCVoltage.sfp",
+   "bytes": 12186,
+   "sha256": "a6a2842b69c6d622e07db0e3bc480e1cb8a9efa4a702fabe4bfa7c4440229a50",
+   "via": "tree"
+  },
+  {
+   "path": "examples/python_measurement/README.md",
+   "bytes": 2353,
+   "sha256": "804958bdda809798e632faa375c54b89717c1c6f00fb0b00733bcd2508025fa2",
+   "via": "tree"
+  },
+  {
+   "path": "examples/python_measurement/_helpers.py",
+   "bytes": 2805,
+   "sha256": "f7453a9c74fd3764c7947e919c95285d1415f37cf2ac3e1d1dc0e2bbe2737b8a",
+   "via": "tree"
+  },
+  {
+   "path": "examples/python_measurement/install.bat",
+   "bytes": 199,
+   "sha256": "cd0a317041e1bde443d7ff44abf5170e414893c29b91f33da85a419f45774b16",
+   "via": "tree"
+  },
+  {
+   "path": "examples/python_measurement/logger_service_client.py",
+   "bytes": 2168,
+   "sha256": "53e293e508aa0ece525f7fa96fb64ba5e7e1d3f5330ea1eb560b95c787c3ddb6",
+   "via": "tree"
+  },
+  {
+   "path": "examples/python_measurement/measurement.py",
+   "bytes": 5905,
+   "sha256": "623c1032c84922dbce6f29cc644aa6346a35cbf6b1127a07b95ea1e90da5aec1",
+   "via": "tree"
+  },
+  {
+   "path": "examples/python_measurement/pyproject.toml",
+   "bytes": 1190,
+   "sha256": "b8a577b5cb87b1d5438ebd91be2aa8aefab667d03a8b6cca64bbe7676b7c80b8",
+   "via": "tree"
+  },
+  {
+   "path": "examples/python_measurement/start.bat",
+   "bytes": 247,
+   "sha256": "a870a81c5b433893e38651d5290857af5946a33f4be7df5d8678c60c6fd5e67c",
+   "via": "tree"
+  },
+  {
+   "path": "examples/python_measurement/stubs/__init__.py",
+   "bytes": 303,
+   "sha256": "4b0c7ea66c0ff724ed5bfbcd70b183075c2905f2b177e3cc224a95cd77784efa",
+   "via": "tree"
+  },
+  {
+   "path": "examples/python_measurement/stubs/log_measurement.proto",
+   "bytes": 364,
+   "sha256": "f41e8a4af28652e0821234aaf9a15152ea659ba4df07a3210c7c15ff810908e5",
+   "via": "tree"
+  },
+  {
+   "path": "examples/python_measurement/stubs/log_measurement_pb2.py",
+   "bytes": 1467,
+   "sha256": "615b9e7bad6ce3780a191091151d16d2b5cb74d210830cd54567e0dd7adc1e64",
+   "via": "tree"
+  },
+  {
+   "path": "examples/python_measurement/stubs/log_measurement_pb2.pyi",
+   "bytes": 2295,
+   "sha256": "8ff1b1ee57ad1b5d947782ef75bd29d87325d38319fa3cf97e024b1c68bb411b",
+   "via": "tree"
+  },
+  {
+   "path": "examples/python_measurement/stubs/log_measurement_pb2_grpc.py",
+   "bytes": 2477,
+   "sha256": "9fbb9d5bd35b09d78abd0d44b1acfae6c9dabf853026b7081e54e4cc65927720",
+   "via": "tree"
+  },
+  {
+   "path": "examples/python_measurement/stubs/log_measurement_pb2_grpc.pyi",
+   "bytes": 1325,
+   "sha256": "6daac686579d224d1683cab101be06d31209452ea4a17af33403f3b818a97014",
+   "via": "tree"
+  },
+  {
+   "path": "src/json_logger/LogMeasurement.serviceconfig",
+   "bytes": 262,
+   "sha256": "1a03a517af0773e0649906cbe6c8ee9826991d2c3f9fb91ebe0b64f982e7c7e2",
+   "via": "tree"
+  },
+  {
+   "path": "src/json_logger/__init__.py",
+   "bytes": 34,
+   "sha256": "af1ba629bd78b6b0d3b705bebbefec38ac480bee64c626f21c1ef3c98bd460fb",
+   "via": "tree"
+  },
+  {
+   "path": "src/json_logger/log_measurement.proto",
+   "bytes": 364,
+   "sha256": "f41e8a4af28652e0821234aaf9a15152ea659ba4df07a3210c7c15ff810908e5",
+   "via": "tree"
+  },
+  {
+   "path": "src/json_logger/logger_service.py",
+   "bytes": 2846,
+   "sha256": "9f563b8544a29896907722a40e90e711b54014216c53a5c74cf75a32a3a606f8",
+   "via": "tree"
+  },
+  {
+   "path": "src/json_logger/start.bat",
+   "bytes": 238,
+   "sha256": "95db9cd7c3de0c42e071dbbc3c835a12c3eb2b86fae1b8ad6613a36263f876a2",
+   "via": "tree"
+  },
+  {
+   "path": "src/json_logger/stubs/__init__.py",
+   "bytes": 42,
+   "sha256": "346cbe904b11c4f21b82e96373d71e14d54de4a948dd5c6dd7ae3d82f97ed7ac",
+   "via": "tree"
+  },
+  {
+   "path": "src/json_logger/stubs/log_measurement_pb2.py",
+   "bytes": 1549,
+   "sha256": "d0a566c48e509ee37b3e22ee051c85d60122cda8585e0bd3273d4dad73bba6fa",
+   "via": "tree"
+  },
+  {
+   "path": "src/json_logger/stubs/log_measurement_pb2.pyi",
+   "bytes": 2295,
+   "sha256": "8ff1b1ee57ad1b5d947782ef75bd29d87325d38319fa3cf97e024b1c68bb411b",
+   "via": "tree"
+  },
+  {
+   "path": "src/json_logger/stubs/log_measurement_pb2_grpc.py",
+   "bytes": 2534,
+   "sha256": "d662c8112f9f06d665992438c928ac6548701fb4a541ec516f7496962cfb52fd",
+   "via": "tree"
+  },
+  {
+   "path": "src/json_logger/stubs/log_measurement_pb2_grpc.pyi",
+   "bytes": 1337,
+   "sha256": "f408d3b5c9e2a79aba265d743e5ecf1c6275073289fe10bed2d6b813fa5f5d5b",
+   "via": "tree"
+  },
+  {
+   "path": "src/poetry.lock",
+   "bytes": 61061,
+   "sha256": "dbcbf654d5cc4240b614928d12d3a8e8fbf309a0aa605ff9dd894fd11d5197a3",
+   "via": "tree"
+  },
+  {
+   "path": "src/poetry.toml",
+   "bytes": 32,
+   "sha256": "aa057105d3dc259387747093381a196276b77247b854681190d6746ca80deabb",
+   "via": "tree"
+  },
+  {
+   "path": "src/pyproject.toml",
+   "bytes": 1064,
+   "sha256": "ad7881278bcd3b1d7ef4e849603676e7e32ce3b035e9bc3a4f11e3d4d8d29f1b",
+   "via": "tree"
+  }
+ ],
+ "skipped": [],
+ "external": [
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Configure Current Limit Range.vi",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Configure Current Limit.vi",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Configure Output Function.vi",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Configure Source Mode With Channels.vi",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Configure Voltage Level Range.vi",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Configure Voltage Level.vi",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Initiate With Channels.vi",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Measure Multiple.vi",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Output Function.ctl",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Query In Compliance.vi",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Reset With Channels.vi",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Source Mode.ctl",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Wait For Event - Event.ctl",
+  "<instrlib>\\niDCPower\\nidcpower.llb\\niDCPower Wait For Event With Channels.vi",
+  "<vilib>\\AdvancedString\\1D String Array to Delimited String.vi",
+  "<vilib>\\Plug-In SDKs\\Clients\\Discovery V1\\NI Discovery V1 Client.lvlib",
+  "<vilib>\\Plug-In SDKs\\Clients\\Discovery V1\\Resolve Service.vi",
+  "<vilib>\\Plug-In SDKs\\Clients\\Session Management V1\\Session Reservation\\Close Sessions.vi",
+  "<vilib>\\Plug-In SDKs\\Clients\\Session Management V1\\Session Reservation\\Connection.ctl",
+  "<vilib>\\Plug-In SDKs\\Clients\\Session Management V1\\Session Reservation\\Initialize and Close Session Behavior.ctl",
+  "<vilib>\\Plug-In SDKs\\Clients\\Session Management V1\\Session Reservation\\Register Sessions.vi",
+  "<vilib>\\Plug-In SDKs\\Clients\\Session Management V1\\Session Reservation\\Reserve Registered Sessions.vi",
+  "<vilib>\\Plug-In SDKs\\Clients\\Session Management V1\\Session Reservation\\Reserve Sessions.vi",
+  "<vilib>\\Plug-In SDKs\\Clients\\Session Management V1\\Session Reservation\\Session Reservation.lvclass",
+  "<vilib>\\Plug-In SDKs\\Clients\\Session Management V1\\Session Reservation\\Unregister Sessions.vi",
+  "<vilib>\\Plug-In SDKs\\Clients\\Session Management V1\\Session Reservation\\Unreserve Sessions.vi",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Build Assets\\Post-Build Action.vi",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\Create Basic Measurement Annotations.vi",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\TypeDefs\\Measurement Annotation.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\TypeDefs\\Measurement Server User Settings.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\TypeDefs\\Measurement Service Version.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\TypeDefs\\Parameter Type Specialization.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\TypeDefs\\Stop Server User Event.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\TypeDefs\\Type Specialization Key.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\TypeDefs\\Type Specialization.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\TypeDefs\\User Interface Information.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Measure Call Context\\Measure Call Context.lvclass",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Measure Call Context\\Reserve Sessions - NPin.vi",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Measurement Plugin Service\\Accessors\\Get gRPC ID.vi",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Measurement Plugin Service\\Measurement Plugin Service.lvclass",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Measurement Plugin Service\\Plugin Paths.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\NI Measurement Plug-In SDK.lvlib",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Run Service.vi",
+  "<vilib>\\Plug-In SDKs\\Sessions\\niDCPower\\Connection with Session.ctl",
+  "<vilib>\\Plug-In SDKs\\Sessions\\niDCPower\\Get Connections - NPin MConn.vi",
+  "<vilib>\\Plug-In SDKs\\Sessions\\niDCPower\\Initialize Sessions - 1Sess.vi",
+  "<vilib>\\Plug-In SDKs\\Sessions\\niDCPower\\Initialize Sessions - NSess.vi",
+  "<vilib>\\Plug-In SDKs\\Sessions\\niDCPower\\Instrument Type ID.vi",
+  "<vilib>\\Plug-In SDKs\\Sessions\\niDCPower\\NI Session Management niDCPower.lvlib",
+  "<vilib>\\Plug-In SDKs\\TestStand\\Get Pin Map ID for Sequence.vi",
+  "<vilib>\\Plug-In SDKs\\TestStand\\NI Pin Map TestStand.lvlib",
+  "<vilib>\\Utility\\config.llb\\Close Config Data.vi",
+  "<vilib>\\Utility\\config.llb\\Not A Config Data Refnum.vi",
+  "<vilib>\\Utility\\config.llb\\Open Config Data.vi",
+  "<vilib>\\Utility\\config.llb\\Read Key (Boolean).vi",
+  "<vilib>\\Utility\\config.llb\\Read Key.vi",
+  "<vilib>\\Utility\\config.llb\\Write Key (Boolean).vi",
+  "<vilib>\\Utility\\config.llb\\Write Key.vi",
+  "<vilib>\\Utility\\error.llb\\Error Cluster From Error Code.vi",
+  "<vilib>\\gRPC\\Generated APIs\\ni\\measurementlink\\discovery\\v1\\RPC Messages\\ni_measurementlink_discovery_v1_ResolveServiceRequest.ctl",
+  "<vilib>\\gRPC\\Generated APIs\\ni\\measurementlink\\discovery\\v1\\ni.measurementlink.discovery.v1.api.lvlib",
+  "<vilib>\\gRPC\\Generated APIs\\ni\\measurementlink\\measurement\\v1\\RPC Messages\\ni_measurementlink_measurement_v1_MeasurementDetails.ctl",
+  "<vilib>\\gRPC\\Generated APIs\\ni\\measurementlink\\measurement\\v1\\ni.measurementlink.measurement.v1.api.lvlib",
+  "<vilib>\\gRPC\\Generated APIs\\ni\\measurementlink\\sessionmanagement\\v1\\RPC Messages\\ni_measurementlink_PinMapContext.ctl",
+  "<vilib>\\gRPC\\Generated APIs\\ni\\measurementlink\\sessionmanagement\\v1\\ni.measurementlink.sessionmanagement.v1.api.lvlib",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Client API\\Client Unary Call.vim",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Client API\\Close Client.vi",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Client API\\Create Client.vi",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\CompleteMetadataRegistration.vi",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\Message Requests\\PackToAny.vim",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\Message Requests\\UnpackFromAny.vim",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\Server\\Get Server DLL Path.vi",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\Server\\Register Enum Metadata.vi",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\Server\\Register Message Metadata.vi",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\Translate Protobuf Error.vi",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\typeDefs\\Enum Metadata.ctl",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\typeDefs\\Message Element Metadata.ctl",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\typeDefs\\Message Element Type.ctl",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\typeDefs\\Message Metadata.ctl",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Shared\\Any.ctl",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Shared\\TranslateGrpcError.vi",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Shared\\Wait On Occurence.vi",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Shared\\Wait On Occurrence Wrapper.vi",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Shared\\grpcId.ctl",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\grpc-lvsupport-release.lvlib",
+  "<vilib>\\gRPC\\gRPC Server and Client Template [2]\\Oneof Template\\FlatToRich.vim",
+  "C:\\Program Files\\National Instruments\\LabVIEW 2021\\vi.lib\\Plug-In SDKs\\Measurements\\Measurement Plugin Service\\Measurement Plugin Service.lvclass",
+  "C:\\Users\\sabarinathan.gopal\\source\\repos\\custom-measurement-plugin-services\\measurements\\labview_measurement\\log_measurement_client\\RPC Service\\Unary UnaryTemplate.vi",
+  "\\\\\\\\10.1.133.57\\measurement-services-labview\\Source\\Measurement Service Template_lv\\MeasurementLink Measurement Server\\RPC Service\\MeasurementService\\Get Plugin Paths.vi",
+  "\\\\\\\\10.1.133.57\\measurement-services-labview\\Source\\Measurement Service Template_lv\\MeasurementLink Measurement Server\\RPC Service\\MeasurementService\\Get Type Specializations.vi"
+ ]
+}

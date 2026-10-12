@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='windows-1252' standalone='yes'?>
+<MetaData>
+<ProjectTemplate>
+  <Title localize="no">PCB Assembly Test Toolkit for LabVIEW</Title>
+  <Description localize="no">PCB Assembly Test Toolkit for Electrical Functional Test.</Description>
+  <Filters localize="no">Sample Projects:PCBATT</Filters>
+  <Keywords localize="no">PCB;PCBA;acquistion;generation;PCBATT</Keywords>
+  <LocationPath>PCB Assembly Test Toolkit/Library</LocationPath>
+  <ProjectPath>PCBA Measurements.lvproj</ProjectPath>
+  <ListboxImagePath>images/PCBATT25.png</ListboxImagePath>
+  <!-- <DocumentationPath>documentation/PCBATT.html</DocumentationPath> -->
+  <CustomVIMode>None</CustomVIMode>
+  <CustomVIPath></CustomVIPath>
+  <EnvironmentMode></EnvironmentMode>
+  <SortPriority></SortPriority>
+  <HidePrefix>True</HidePrefix>
+</ProjectTemplate>
+</MetaData>

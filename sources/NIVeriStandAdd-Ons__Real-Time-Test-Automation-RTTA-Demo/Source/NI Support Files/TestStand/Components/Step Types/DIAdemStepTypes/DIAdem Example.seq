@@ -1,0 +1,2057 @@
+[__Header__]
+ProductName = "TestStand"
+ProductVersion = 3.1.0.9095
+CompatibleProdVersion = 3.1.0.0
+Version = 304
+Type = "SequenceFile"
+Path = "C:\\Program Files\\National Instruments\\TestStand 3.1\\DIAdemExample.seq"
+ProductVersionString = "3.1f1 (3.1.0.9095)"
+CharEncoding = "SBCS"
+
+[DEF, %OBJROOT]
+SF = SequenceFileData
+Path = PathValue
+DIAdem_OpenReference = StepType
+Expression = ExprValue
+StepTypeMenu = Obj
+StepTypeSubstepsArray = Objs
+PostSubstep = StepType
+TEInf = Obj
+Error = Obj
+CommonResults = Obj
+FlexCVIStepAdditions = FCVIModule
+FCVIParameter = FCVIParameter
+EditSubstep = StepType
+NoneStepAdditions = NoneModule
+DIAdem_ExportChannels = StepType
+FlexCStepAdditions = FCModule
+FCParameter = FCParameter
+DIAdem_ImportChannels = StepType
+MessagePopup = StepType
+DIAdem_Close_Reference = StepType
+DIAdem_Reference = Obj
+DIAdem_RunScript = StepType
+
+[DEF, SF]
+Seq = Objs
+FileGlobalDefaults = Obj
+ModelFile = "TYPE, Path"
+LoadOpt = Str
+UnloadOpt = Str
+Version = Str
+BatchSync = Num
+SFGlobalsScope = Num
+Type = Num
+ModelOption = Num
+Requirements = Obj
+%NAME = "Data"
+
+[SF]
+%HI: Seq = [1]
+%FLG: Seq = 4194304
+%FLG: FileGlobalDefaults = 4194304
+%FLG: ModelFile = 4194312
+LoadOpt = "UseStepLoadOpt"
+%FLG: LoadOpt = 4194312
+UnloadOpt = "UseStepUnloadOpt"
+%FLG: UnloadOpt = 4194312
+Version = "0.0.0.0"
+%FLG: Version = 4194312
+BatchSync = 1
+%FLG: BatchSync = 4194312
+%FLG: SFGlobalsScope = 4194312
+%FLG: Type = 4194312
+%FLG: ModelOption = 4194312
+%FLG: Requirements = 4194305
+
+[DEF, SF.Seq]
+%[0] = Sequence
+%[1] = Sequence
+
+[DEF, SF.Seq[0]]
+Parameters = Obj
+Locals = Obj
+Main = Objs
+Setup = Objs
+Cleanup = Objs
+GotoCleanupOnFail = Bool
+RecordResults = Bool
+RTS = Obj
+Requirements = Obj
+%NAME = "MainSequence"
+
+[SF.Seq[0]]
+%FLG: Parameters = 4456448
+%FLG: Locals = 4194304
+%HI: Main = [5]
+%FLG: Main = 4194304
+%FLG: Setup = 4194304
+%FLG: Cleanup = 4194304
+%FLG: GotoCleanupOnFail = 4194312
+RecordResults = True
+%FLG: RecordResults = 4194312
+%FLG: RTS = 4456456
+%FLG: Requirements = 4456456
+
+[DEF, SF.Seq[0].Locals]
+ResultList = Objs
+DIAdemReference = "TYPE, DIAdem_Reference"
+DataToCopy = Nums
+DataReturned = Nums
+DIAdemPath = Str
+
+[DEF, SF.Seq[0].Locals.ResultList]
+%EPTYPE = TEResult
+
+[SF.Seq[0].Locals]
+%LO: DataToCopy = [0][0]
+%HI: DataToCopy = [3][3]
+DIAdemPath = "C:\\Program Files\\National Instruments\\DIAdem 9.1"
+
+[SF.Seq[0].Locals.DataToCopy]
+%[0][0] = 1
+%[1][0] = 2
+%[2][0] = 3
+%[3][0] = 4
+%[0][1] = 5
+%[1][1] = 6
+%[2][1] = 7
+%[3][1] = 8
+%[0][2] = 9
+%[1][2] = 10
+%[2][2] = 11
+%[3][2] = 12
+%[0][3] = 13
+%[1][3] = 14
+%[2][3] = 15
+%[3][3] = 16
+
+[DEF, SF.Seq[0].Main]
+%[0] = Step
+%TYPE: %[0] = "DIAdem_OpenReference"
+%[1] = Step
+%TYPE: %[1] = "DIAdem_ExportChannels"
+%[2] = Step
+%TYPE: %[2] = "DIAdem_ImportChannels"
+%[3] = Step
+%TYPE: %[3] = "MessagePopup"
+%[4] = Step
+%TYPE: %[4] = "DIAdem_RunScript"
+%[5] = Step
+%TYPE: %[5] = "DIAdem_Close_Reference"
+
+[SF.Seq[0].Main[0].TS]
+Id = "ID#:TZ+ZO5KnoEqeQUe+rj+1AA"
+
+[SF.Seq[0].Main[0]]
+DIAdemRefExpr = "Locals.DIAdemReference"
+ShowEnvironment = True
+
+[DEF, SF.Seq[0].Main[0]]
+%NAME = "Open DIAdem"
+
+[SF.Seq[0].Main[1].TS]
+Id = "ID#:t2yn9F/3h06DeLRfaslt0A"
+
+[SF.Seq[0].Main[1]]
+DIAdemRefExpr = "Locals.DIAdemReference"
+SourceDataExpr = "Locals.DataToCopy"
+ChannelExpr = "\"Chn1\""
+CreateChannel = True
+
+[DEF, SF.Seq[0].Main[1]]
+%NAME = "Export Channels"
+
+[SF.Seq[0].Main[2].TS]
+Id = "ID#:e2h1VSzR2Ey52QysT60LAC"
+
+[SF.Seq[0].Main[2]]
+DIAdemRefExpr = "Locals.DIAdemReference"
+DataExpr = "Locals.DataReturned"
+FirstChannelExpr = "\"Chn1\""
+LastChannelExpr = "\"Chn1\""
+
+[DEF, SF.Seq[0].Main[2]]
+%NAME = "Import Channels"
+
+[SF.Seq[0].Main[3].TS]
+Id = "ID#:H1I0kBJedECEnfjKMa1QIC"
+
+[SF.Seq[0].Main[3]]
+TitleExpr = "\"Data Returned\""
+MessageExpr = "Str(Locals.DataReturned)"
+
+[DEF, SF.Seq[0].Main[3]]
+%NAME = "Message Popup"
+
+[SF.Seq[0].Main[4].TS]
+Id = "ID#:+WQI0YB2EU+hc7Fg901E/C"
+
+[SF.Seq[0].Main[4]]
+DIAdemRefExpr = "Locals.DIAdemReference"
+PathExpr = "Locals.DIAdemPath + \"\\\\Demo\\\\Aut\\\\Demo.vbs\""
+Synchronous = True
+UsePathExpr = True
+
+[DEF, SF.Seq[0].Main[4]]
+%NAME = "Run Script"
+
+[SF.Seq[0].Main[5].TS]
+Id = "ID#:Z4I7Hi9YMU+9HhSyzmpb1D"
+
+[SF.Seq[0].Main[5]]
+DIAdemRefExpr = "Locals.DIAdemReference"
+
+[DEF, SF.Seq[0].Main[5]]
+%NAME = "Close DIAdem"
+
+[DEF, SF.Seq[0].RTS]
+Type = Num
+OptimizeNonReentrantCalls = Bool
+EPNameExpr = Str
+EPEnabledExpr = Str
+EPMenuHint = Str
+EPIgnoreClient = Bool
+EPInitiallyHidden = Bool
+EPCheckToSaveTitledFile = Bool
+ShowEPAlways = Bool
+ShowEPForFileWin = Bool
+ShowEPForExeWin = Bool
+ShowEPForEditorOnly = Bool
+AllowIntExeOfEP = Bool
+CopyStepsOnOverriding = Bool
+Priority = Num
+
+[SF.Seq[0].RTS]
+%FLG: Type = 4194304
+OptimizeNonReentrantCalls = True
+%FLG: OptimizeNonReentrantCalls = 4194304
+EPNameExpr = "\"Unnamed Entry Point\""
+%FLG: EPNameExpr = 4194304
+EPEnabledExpr = "True"
+%FLG: EPEnabledExpr = 4194304
+%FLG: EPMenuHint = 4194304
+%FLG: EPIgnoreClient = 4194304
+%FLG: EPInitiallyHidden = 4194304
+EPCheckToSaveTitledFile = True
+%FLG: EPCheckToSaveTitledFile = 4194304
+%FLG: ShowEPAlways = 4194304
+ShowEPForFileWin = True
+%FLG: ShowEPForFileWin = 4194304
+%FLG: ShowEPForExeWin = 4194304
+%FLG: ShowEPForEditorOnly = 4194304
+%FLG: AllowIntExeOfEP = 4194304
+CopyStepsOnOverriding = True
+%FLG: CopyStepsOnOverriding = 4194304
+Priority = 2953567917
+%FLG: Priority = 4194304
+
+[DEF, SF.Seq[1]]
+Parameters = Obj
+Locals = Obj
+Main = Objs
+Setup = Objs
+Cleanup = Objs
+GotoCleanupOnFail = Bool
+StoreResults = Bool
+RecordResults = Bool
+RTS = Obj
+Requirements = Obj
+%NAME = "SequenceFileLoad"
+
+[SF.Seq[1]]
+%FLG: Parameters = 4456448
+%FLG: Locals = 4194304
+%HI: Main = [0]
+%FLG: Main = 4194304
+%FLG: Setup = 4194304
+%FLG: Cleanup = 4194304
+%FLG: GotoCleanupOnFail = 4194312
+StoreResults = True
+RecordResults = True
+%FLG: RecordResults = 4194312
+%FLG: RTS = 4456456
+%FLG: Requirements = 4456456
+
+[DEF, SF.Seq[1].Locals]
+ResultList = Objs
+
+[DEF, SF.Seq[1].Locals.ResultList]
+%EPTYPE = TEResult
+
+[DEF, SF.Seq[1].Main]
+%[0] = Step
+%TYPE: %[0] = "MessagePopup"
+
+[SF.Seq[1].Main[0].TS]
+Id = "ID#:Oktr0CORh0+46qzv44zd7D"
+
+[SF.Seq[1].Main[0]]
+TitleExpr = "\"Example Information\""
+MessageExpr Line0001 = "\"This example sends channel data to DIAdem, runs a script, and returns the channel from DIAdem.  Be sure to make sure t"
+MessageExpr Line0002 = "he Locals.DIAdemPath is set to the path of DIAdem.  This example requires DIAdem 9.1 or higher to run.\""
+
+[DEF, SF.Seq[1].Main[0]]
+%NAME = "Display Example Information"
+
+[DEF, SF.Seq[1].RTS]
+Type = Num
+EPNameExpr = Str
+EPEnabledExpr = Str
+EPMenuHint = Str
+EPIgnoreClient = Bool
+EPInitiallyHidden = Bool
+EPCheckToSaveTitledFile = Bool
+ShowEPForFileWin = Bool
+ShowEPForExeWin = Bool
+CopyStepsOnOverriding = Bool
+OptimizeNonReentrantCalls = Bool
+Priority = Num
+ShowEPAlways = Bool
+ShowEPForEditorOnly = Bool
+AllowIntExeOfEP = Bool
+
+[SF.Seq[1].RTS]
+%FLG: Type = 4194304
+%FLG: EPNameExpr = 4194304
+EPEnabledExpr = "True"
+%FLG: EPEnabledExpr = 4194304
+%FLG: EPMenuHint = 4194304
+%FLG: EPIgnoreClient = 4194304
+%FLG: EPInitiallyHidden = 4194304
+EPCheckToSaveTitledFile = True
+%FLG: EPCheckToSaveTitledFile = 4194304
+ShowEPForFileWin = True
+%FLG: ShowEPForFileWin = 4194304
+%FLG: ShowEPForExeWin = 4194304
+CopyStepsOnOverriding = True
+%FLG: CopyStepsOnOverriding = 4194304
+OptimizeNonReentrantCalls = True
+%FLG: OptimizeNonReentrantCalls = 4194304
+Priority = 2953567917
+%FLG: Priority = 4194304
+%FLG: ShowEPAlways = 4194304
+%FLG: ShowEPForEditorOnly = 4194304
+%FLG: AllowIntExeOfEP = 4194304
+
+[%TYPES]
+Path = "Path"
+DIAdem_OpenReference = "DIAdem_OpenReference"
+Expression = "Expression"
+StepTypeMenu = "StepTypeMenu"
+StepTypeSubstepsArray = "StepTypeSubstepsArray"
+PostSubstep = "PostSubstep"
+TEInf = "TEInf"
+Error = "Error"
+CommonResults = "CommonResults"
+FlexCVIStepAdditions = "FlexCVIStepAdditions"
+FCVIParameter = "FCVIParameter"
+EditSubstep = "EditSubstep"
+NoneStepAdditions = "NoneStepAdditions"
+DIAdem_ExportChannels = "DIAdem_ExportChannels"
+FlexCStepAdditions = "FlexCStepAdditions"
+FCParameter = "FCParameter"
+DIAdem_ImportChannels = "DIAdem_ImportChannels"
+MessagePopup = "MessagePopup"
+DIAdem_Close_Reference = "DIAdem_Close_Reference"
+DIAdem_Reference = "DIAdem_Reference"
+DIAdem_RunScript = "DIAdem_RunScript"
+
+[DEF, Path]
+%LOCATION = "StdTypes"
+%ROOT_TYPE = True
+
+[Path]
+%TIMESTAMP = 1122480903
+%VERSION = "3.1.0.9095"
+%TYPELASTMOD = "3.1.0.9095"
+%MINPRODVER = "3.1.0.0"
+%FLG = 4194304
+%TYPE_FLG = 33554436
+
+[DEF, DIAdem_OpenReference]
+%LOCATION = "StepTypes"
+DescriptionFormat = "TYPE, Expression"
+%FLG: DescriptionFormat = 524288
+DefaultNameFormat = "TYPE, Expression"
+%FLG: DefaultNameFormat = 524288
+BlockStartTypes = Str
+%FLG: BlockStartTypes = 524288
+BlockEndTypes = Str
+%FLG: BlockEndTypes = 524288
+AppliesToBlockStructure = Bool
+%FLG: AppliesToBlockStructure = 524288
+Menu = "TYPE, StepTypeMenu"
+Substeps = "TYPE, StepTypeSubstepsArray"
+CodeTemplates = Str
+%FLG: CodeTemplates = 524288
+TS = "TYPE, TEInf"
+Result = Obj
+HostNameExpr = "TYPE, Expression"
+DIAdemRefExpr = "TYPE, Expression"
+ShowEnvironment = Bool
+%ROOT_TYPE = True
+
+[DIAdem_OpenReference]
+DescriptionFormat Line0001 = "ResStr(\"OPEN_DIADEM_REF_STEP_TYPE\",\"DESCRIPTION\") + (Step.HostNameExpr==\"\\\"\\\"\"? ResStr(\"OPEN_DIADEM_REF_STEP_"
+DescriptionFormat Line0002 = "TYPE\",\"LOCALHOST\") :Step.HostNameExpr)"
+%FLG: DescriptionFormat = 4194328
+%INSTFLG: DescriptionFormat = 4718616
+%INSTOVRD: DescriptionFormat = 4718616
+DefaultNameFormat = "ResStr(\"OPEN_DIADEM_REF_STEP_TYPE\",\"DEFAULT_NAME\")"
+%FLG: DefaultNameFormat = 4194328
+%INSTFLG: DefaultNameFormat = 4718616
+%INSTOVRD: DefaultNameFormat = 4718616
+%FLG: BlockStartTypes = 4194328
+%FLG: BlockEndTypes = 4194328
+%FLG: AppliesToBlockStructure = 4194328
+%HI: Substeps = [1]
+%FLG: CodeTemplates = 4194328
+%INSTFLG: TS = 262168
+%FLG: Result = 4194304
+%INSTFLG: Result = 4194304
+HostNameExpr = "\"\""
+%TIMESTAMP = 1138918951
+%VERSION = "3.1.0.100"
+%TYPELASTMOD = "3.1.0.9095"
+%MINPRODVER = "3.1.0.0"
+%TYPE_FLG = 2
+
+[DIAdem_OpenReference.Menu]
+ItemName = "ResStr(\"OPEN_DIADEM_REF_STEP_TYPE\",\"MENU_ITEM\")"
+Group = "DIAdem"
+
+[DEF, DIAdem_OpenReference.Substeps]
+%[0] = Step
+%TYPE: %[0] = "PostSubstep"
+%[1] = Step
+%TYPE: %[1] = "EditSubstep"
+
+[DIAdem_OpenReference.Substeps[0].TS]
+Id = "ID#:PhUsd13wO0mOpIoPXHrxMC"
+
+[DEF, DIAdem_OpenReference.Substeps[0].TS]
+SData = "TYPE, FlexCVIStepAdditions"
+%FLG: SData = 2097152
+
+[DIAdem_OpenReference.Substeps[0].TS.SData.Call]
+LibPath = "DIAdemStepTypes.dll"
+Func = "DIAdemOpenRef"
+%HI: Parms = [1]
+
+[DEF, DIAdem_OpenReference.Substeps[0].TS.SData.Call.Parms]
+%[0] = "TYPE, FCVIParameter"
+%[1] = "TYPE, FCVIParameter"
+
+[DIAdem_OpenReference.Substeps[0].TS.SData.Call.Parms[0]]
+Name = "Return Value"
+Type = 3
+
+[DIAdem_OpenReference.Substeps[0].TS.SData.Call.Parms[1]]
+Name = "context"
+Type = 4
+ObjType = 1
+ArgVal = "ThisContext"
+
+[DIAdem_OpenReference.Substeps[0].TS.SData]
+ModuleSrcPath = "DIAdemSteps.c"
+ModulePrjPath = "DIAdemSteps.prj"
+
+[DEF, DIAdem_OpenReference.Substeps[0]]
+%NAME = "Post"
+
+[DIAdem_OpenReference.Substeps[1].TS]
+Id = "ID#:hMYg4JETmkGtyjC4PslNJC"
+
+[DEF, DIAdem_OpenReference.Substeps[1].TS]
+SData = "TYPE, FlexCVIStepAdditions"
+%FLG: SData = 2097152
+
+[DIAdem_OpenReference.Substeps[1].TS.SData.Call]
+LibPath = "DIAdemStepTypes.dll"
+Func = "DIAdemOpenRefEdit"
+%HI: Parms = [1]
+
+[DEF, DIAdem_OpenReference.Substeps[1].TS.SData.Call.Parms]
+%[0] = "TYPE, FCVIParameter"
+%[1] = "TYPE, FCVIParameter"
+
+[DIAdem_OpenReference.Substeps[1].TS.SData.Call.Parms[0]]
+Name = "Return Value"
+Type = 3
+
+[DIAdem_OpenReference.Substeps[1].TS.SData.Call.Parms[1]]
+Name = "seqContext"
+Type = 4
+ObjType = 1
+ArgVal = "ThisContext"
+
+[DIAdem_OpenReference.Substeps[1].TS.SData]
+ModuleSrcPath = "DIAdemSteps.c"
+ModulePrjPath = "DIAdemSteps.prj"
+AlwaysRunInProcess = 1
+
+[DIAdem_OpenReference.Substeps[1]]
+MenuName = "ResStr(\"OPEN_DIADEM_REF_STEP_TYPE\",\"EDIT_MENU_ITEM\") "
+
+[DEF, DIAdem_OpenReference.Substeps[1]]
+%NAME = "Edit"
+
+[DIAdem_OpenReference.TS]
+Icon = "DIAdem.ico"
+%INSTFLG: SData = 2097152
+%INSTOVRD: SData = 7274521
+NoResult = True
+StepFCSeqF = False
+VirtualDeviceName = "\"SwitchExecutiveExample\""
+CanSpecifyModule = False
+%FLG: CanSpecifyModule = 131072
+
+[DEF, DIAdem_OpenReference.TS]
+SData = "TYPE, NoneStepAdditions"
+%FLG: SData = 2097152
+
+[DEF, DIAdem_OpenReference.Result]
+Error = "TYPE, Error"
+Status = Str
+ReportText = Str
+Common = "TYPE, CommonResults"
+
+[DIAdem_OpenReference.Result]
+%FLG: Error = 4194304
+%INSTFLG: Error = 4194304
+%FLG: Status = 4194304
+%INSTFLG: Status = 4194304
+%FLG: ReportText = 4194304
+%INSTFLG: ReportText = 4194304
+%FLG: Common = 0
+
+[DEF, Expression]
+%LOCATION = "StdTypes"
+%ROOT_TYPE = True
+
+[Expression]
+%TIMESTAMP = 1122480903
+%VERSION = "3.1.0.9095"
+%TYPELASTMOD = "3.1.0.9095"
+%MINPRODVER = "3.1.0.0"
+%FLG = 4194304
+%TYPE_FLG = 33554436
+
+[DEF, StepTypeMenu]
+%LOCATION = "StdTypes"
+CanBeSubstepType = Bool
+CanOnlyBeSubstepType = Bool
+Category = Str
+ItemName = "TYPE, Expression"
+SingularItemName = Str
+SeparatorBeforeCategory = Bool
+SeparatorBeforeItemName = Bool
+Group = Str
+%ROOT_TYPE = True
+
+[StepTypeMenu]
+Category = "\"\""
+ItemName = "\"\""
+SingularItemName = "\"\""
+%TIMESTAMP = 1100205560
+%VERSION = "3.1.0.9095"
+%TYPELASTMOD = "3.1.0.9095"
+%MINPRODVER = "3.1.0.0"
+%FLG = 4194328
+%TYPE_FLG = 33554436
+%INSTFLG = 4718616
+%INSTOVRD = 4718616
+
+[DEF, StepTypeSubstepsArray]
+%LOCATION = "StdTypes"
+%ROOT_TYPE = True
+
+[StepTypeSubstepsArray]
+%TIMESTAMP = 1100205560
+%VERSION = "3.1.0.9095"
+%TYPELASTMOD = "3.1.0.9095"
+%MINPRODVER = "3.1.0.0"
+%FLG = 4194328
+%TYPE_FLG = 33554436
+%INSTFLG = 4718616
+%INSTOVRD = 4849688
+
+[DEF, PostSubstep]
+%LOCATION = "StepTypes"
+DescriptionFormat = "TYPE, Expression"
+%FLG: DescriptionFormat = 524288
+DefaultNameFormat = "TYPE, Expression"
+%FLG: DefaultNameFormat = 524288
+BlockStartTypes = Str
+%FLG: BlockStartTypes = 524288
+BlockEndTypes = Str
+%FLG: BlockEndTypes = 524288
+AppliesToBlockStructure = Bool
+%FLG: AppliesToBlockStructure = 524288
+Menu = "TYPE, StepTypeMenu"
+Substeps = "TYPE, StepTypeSubstepsArray"
+CodeTemplates = Str
+%FLG: CodeTemplates = 524288
+TS = "TYPE, TEInf"
+Result = Obj
+%ROOT_TYPE = True
+
+[PostSubstep]
+DescriptionFormat = "\"%ModuleDescription\""
+%FLG: DescriptionFormat = 4194328
+%INSTFLG: DescriptionFormat = 4718616
+%INSTOVRD: DescriptionFormat = 4718616
+DefaultNameFormat = "ResStr(\"NI_STEPTYPES\", \"POST_DEF_SUBSTEP_NAME\")"
+%FLG: DefaultNameFormat = 4194328
+%INSTFLG: DefaultNameFormat = 4718616
+%INSTOVRD: DefaultNameFormat = 4718616
+%FLG: BlockStartTypes = 4194328
+%FLG: BlockEndTypes = 4194328
+%FLG: AppliesToBlockStructure = 4194328
+CodeTemplates Line0001 = "DefaultLabVIEW|DefaultCVI|DefaultVB.NET|DefaultCSharp.NET|DefaultC++.NET|DefaultVC++_Template|DefaultHTB72_Template|Defa"
+CodeTemplates Line0002 = "ultHTB80_Template|Default_Template"
+%FLG: CodeTemplates = 4194328
+%INSTFLG: TS = 4456472
+%FLG: Result = 4194304
+%INSTFLG: Result = 4194304
+%TIMESTAMP = 1100205560
+%VERSION = "3.1.0.9095"
+%TYPELASTMOD = "3.1.0.9095"
+%MINPRODVER = "3.1.0.0"
+%TYPE_FLG = 33554438
+%INSTFLG = 4194304
+%INSTOVRD = 4194304
+
+[PostSubstep.Menu]
+CanBeSubstepType = True
+CanOnlyBeSubstepType = True
+ItemName = "ResStr(\"NI_STEPTYPES\", \"POST_SUBSTEP_MENU_ITEM_NAME\")"
+Group = "ExecSubsteps"
+
+[DEF, PostSubstep.TS]
+SData = Obj
+%FLG: SData = 2097152
+
+[PostSubstep.TS]
+%INSTFLG: SData = 2097152
+%INSTOVRD: SData = 7274521
+
+[DEF, PostSubstep.Result]
+Error = "TYPE, Error"
+Status = Str
+ReportText = Str
+Common = "TYPE, CommonResults"
+
+[PostSubstep.Result]
+%FLG: Error = 4194304
+%INSTFLG: Error = 4194304
+%FLG: Status = 4194304
+%INSTFLG: Status = 4194304
+%FLG: ReportText = 4194304
+%INSTFLG: ReportText = 4194304
+
+[DEF, TEInf]
+%LOCATION = "StdTypes"
+Id = Str
+Icon = Str
+SData = Obj
+%FLG: SData = 2097152
+PreCond = "TYPE, Expression"
+LoadOpt = Str
+UnloadOpt = Str
+Mode = Str
+WindowActivation = Str
+NoResult = Bool
+StepFCSeqF = Bool
+IgnoreRTE = Bool
+UseMutex = Bool
+MutexNameOrRef = "TYPE, Expression"
+BatchSyncOpt = Num
+SwitchEnabled = Bool
+VirtualDeviceName = "TYPE, Expression"
+SwitchOperation = Num
+RouteGroupConnect = "TYPE, Expression"
+RouteGroupDisconnect = "TYPE, Expression"
+MulticonnectMode = Num
+OperationOrder = Num
+ConnectionLifetime = Num
+WaitForDebounce = Bool
+PassAct = Str
+FailAct = Str
+PassActTarget = "TYPE, Expression"
+FailActTarget = "TYPE, Expression"
+CustExpr = "TYPE, Expression"
+CustTrueAct = Str
+CustFalseAct = Str
+CustTrueActTarget = "TYPE, Expression"
+CustFalseActTarget = "TYPE, Expression"
+LoopType = Str
+LoopWhile = "TYPE, Expression"
+LoopStatus = "TYPE, Expression"
+LoopIncrement = "TYPE, Expression"
+LoopInitialize = "TYPE, Expression"
+LoopOpt = Num
+PreExpr = "TYPE, Expression"
+PostExpr = "TYPE, Expression"
+StatusExpr = "TYPE, Expression"
+CanSpecifyModule = Bool
+CanEditCode = Bool
+CanEditModulePrototype = Bool
+PrecondIntExe = Num
+Requirements = Obj
+%FLG: Requirements = 2097152
+%ROOT_TYPE = True
+
+[TEInf]
+%INSTFLG: Id = 1
+%INSTOVRD: Id = 5046297
+%INSTOVRD: Icon = 5046296
+%INSTFLG: SData = 2097152
+%INSTOVRD: SData = 7143448
+%INSTOVRD: PreCond = 5046296
+LoadOpt = "PreloadWhenExecuted"
+%INSTOVRD: LoadOpt = 5046296
+UnloadOpt = "UnloadWithFile"
+%INSTOVRD: UnloadOpt = 5046296
+Mode = "Normal"
+%INSTOVRD: Mode = 5046296
+WindowActivation = "None"
+%INSTOVRD: WindowActivation = 5046296
+%INSTOVRD: NoResult = 5046296
+StepFCSeqF = True
+%INSTOVRD: StepFCSeqF = 5046296
+%INSTOVRD: IgnoreRTE = 5046296
+%INSTOVRD: UseMutex = 5046296
+%INSTOVRD: MutexNameOrRef = 5046296
+%INSTOVRD: BatchSyncOpt = 5046296
+%INSTOVRD: SwitchEnabled = 5046296
+%INSTOVRD: VirtualDeviceName = 5046296
+SwitchOperation = 1
+%INSTOVRD: SwitchOperation = 5046296
+%INSTOVRD: RouteGroupConnect = 5046296
+%INSTOVRD: RouteGroupDisconnect = 5046296
+MulticonnectMode = 1
+%INSTOVRD: MulticonnectMode = 5046296
+OperationOrder = 2
+%INSTOVRD: OperationOrder = 5046296
+ConnectionLifetime = 4
+%INSTOVRD: ConnectionLifetime = 5046296
+WaitForDebounce = True
+%INSTOVRD: WaitForDebounce = 5046296
+PassAct = "Next"
+%INSTOVRD: PassAct = 5046296
+FailAct = "Next"
+%INSTOVRD: FailAct = 5046296
+%INSTOVRD: PassActTarget = 5046296
+%INSTOVRD: FailActTarget = 5046296
+%INSTOVRD: CustExpr = 5046296
+CustTrueAct = "Next"
+%INSTOVRD: CustTrueAct = 5046296
+CustFalseAct = "Next"
+%INSTOVRD: CustFalseAct = 5046296
+%INSTOVRD: CustTrueActTarget = 5046296
+%INSTOVRD: CustFalseActTarget = 5046296
+LoopType = "NoLooping"
+%INSTOVRD: LoopType = 5046296
+%INSTOVRD: LoopWhile = 5046296
+%INSTOVRD: LoopStatus = 5046296
+LoopIncrement = "RunState.LoopIndex += 1"
+%INSTOVRD: LoopIncrement = 5046296
+LoopInitialize = "RunState.LoopIndex = 0"
+%INSTOVRD: LoopInitialize = 5046296
+%INSTOVRD: LoopOpt = 5046296
+%INSTOVRD: PreExpr = 5046296
+%INSTOVRD: PostExpr = 5046296
+%INSTOVRD: StatusExpr = 5046296
+CanSpecifyModule = True
+%INSTOVRD: CanSpecifyModule = 5046296
+CanEditCode = True
+%INSTOVRD: CanEditCode = 5046296
+CanEditModulePrototype = True
+%INSTOVRD: CanEditModulePrototype = 5046296
+%INSTOVRD: PrecondIntExe = 5046296
+%FLG: Requirements = 1
+%INSTFLG: Requirements = 2097153
+%INSTOVRD: Requirements = 7143449
+%TIMESTAMP = 1100205560
+%VERSION = "3.1.0.9095"
+%TYPELASTMOD = "3.1.0.9095"
+%MINPRODVER = "3.1.0.0"
+%FLG = 4194328
+%TYPE_FLG = 33554436
+%INSTFLG = 4456472
+%INSTOVRD = 4456472
+
+[DEF, Error]
+%LOCATION = "StdTypes"
+Code = Num
+Msg = Str
+Occurred = Bool
+%ROOT_TYPE = True
+
+[Error]
+%FLG: Code = 4194304
+%INSTFLG: Code = 4194304
+%FLG: Msg = 4194304
+%INSTFLG: Msg = 4194304
+%FLG: Occurred = 4194304
+%INSTFLG: Occurred = 4194304
+%TIMESTAMP = 1100205560
+%VERSION = "3.1.0.9095"
+%TYPELASTMOD = "3.1.0.9095"
+%MINPRODVER = "3.1.0.0"
+%FLG = 4194304
+%TYPE_FLG = 33554436
+%EXTDATA = True
+
+[Error.Code]
+%EXTDATA = True
+
+[EXTDATA, Error.Code, STRUCT]
+DataVersion = 1
+Type = 6
+
+[EXTDATA, Error.Code, CLUST]
+DataVersion = 1
+ClusterMemberLabelName = "code"
+
+[EXTDATA, Error.Code, DNSTRUCT]
+DataVersion = 1
+StructMemberName = "code"
+
+[Error.Msg]
+%EXTDATA = True
+
+[EXTDATA, Error.Msg, STRUCT]
+DataVersion = 1
+Type = 2
+StringBufferSize = 1024
+StringStorage = 1
+
+[EXTDATA, Error.Msg, CLUST]
+DataVersion = 1
+ClusterMemberLabelName = "source"
+
+[EXTDATA, Error.Msg, DNSTRUCT]
+DataVersion = 1
+StructMemberName = "msg"
+
+[Error.Occurred]
+%EXTDATA = True
+
+[EXTDATA, Error.Occurred, STRUCT]
+DataVersion = 1
+Type = 6
+
+[EXTDATA, Error.Occurred, CLUST]
+DataVersion = 1
+ClusterMemberLabelName = "status"
+
+[EXTDATA, Error.Occurred, DNSTRUCT]
+DataVersion = 1
+StructMemberName = "occurred"
+
+[EXTDATA, Error, STRUCT]
+AllowStructPassing = True
+DataVersion = 1
+PackingOption = 8
+Type = 0
+
+[EXTDATA, Error, CLUST]
+AllowClusterPassing = True
+DataVersion = 1
+ClusterMemberLabelName = ""
+
+[EXTDATA, Error, DNSTRUCT]
+AllowStructPassing = True
+DataVersion = 1
+StructMemberName = ""
+
+[DEF, CommonResults]
+%LOCATION = "StdTypes"
+%ROOT_TYPE = True
+
+[CommonResults]
+%TIMESTAMP = 1088442000
+%VERSION = "3.1.0.100"
+%TYPELASTMOD = "3.1.0.9095"
+%MINPRODVER = "3.1.0.0"
+%FLG = 4194304
+%TYPE_FLG = 33554432
+%INSTFLG = 4194304
+
+[DEF, FlexCVIStepAdditions]
+%LOCATION = "StdTypes"
+Call = FCVIExtCall
+ModuleSrcPath = "TYPE, Path"
+ModulePrjPath = "TYPE, Path"
+ModuleWorkspacePath = "TYPE, Path"
+AlwaysRunInProcess = Num
+%ROOT_TYPE = True
+
+[DEF, FlexCVIStepAdditions.Call]
+LibPath = "TYPE, Path"
+Func = Str
+Parms = Objs
+ModuleType = Num
+
+[DEF, FlexCVIStepAdditions.Call.Parms]
+%EPTYPE = "TYPE, FCVIParameter"
+%FLG: %EPTYPE = 131072
+%[0] = "TYPE, FCVIParameter"
+
+[FlexCVIStepAdditions.Call]
+%HI: Parms = [0]
+ModuleType = 2
+
+[FlexCVIStepAdditions.Call.Parms[0]]
+Name = "Return Value"
+Type = 3
+
+[FlexCVIStepAdditions]
+%TIMESTAMP = 1100206273
+%VERSION = "3.1.0.9095"
+%TYPELASTMOD = "3.1.0.9095"
+%MINPRODVER = "3.1.0.0"
+%FLG = 24
+%TYPE_FLG = 33554436
+
+[DEF, FCVIParameter]
+%LOCATION = "StdTypes"
+Name = Str
+Type = Num
+NumType = Num
+ObjType = Num
+StructType = Str
+NumPass = Num
+StrPass = Num
+ElemPass = Num
+ArrayDimensionsSize = Objs
+StrSize = "TYPE, Expression"
+ResultAct = Num
+ArgVal = "TYPE, Expression"
+ArgDisplayVal = "TYPE, Expression"
+Flags = Num
+UserData = Obj
+%FLG: UserData = 2097152
+%ROOT_TYPE = True
+
+[FCVIParameter]
+Name = "_notNamed"
+NumType = 4
+StrSize = "1024"
+%INSTFLG: UserData = 2097152
+%TIMESTAMP = 1100206273
+%VERSION = "3.1.0.9095"
+%TYPELASTMOD = "3.1.0.9095"
+%MINPRODVER = "3.1.0.0"
+%FLG = 24
+%TYPE_FLG = 33554436
+
+[DEF, FCVIParameter.ArrayDimensionsSize]
+%EPTYPE = "TYPE, Expression"
+%FLG: %EPTYPE = 131072
+
+[FCVIParameter.ArrayDimensionsSize]
+%EPTYPE = "1024"
+
+[DEF, EditSubstep]
+%LOCATION = "StepTypes"
+DescriptionFormat = "TYPE, Expression"
+%FLG: DescriptionFormat = 524288
+DefaultNameFormat = "TYPE, Expression"
+%FLG: DefaultNameFormat = 524288
+BlockStartTypes = Str
+%FLG: BlockStartTypes = 524288
+BlockEndTypes = Str
+%FLG: BlockEndTypes = 524288
+AppliesToBlockStructure = Bool
+%FLG: AppliesToBlockStructure = 524288
+Menu = "TYPE, StepTypeMenu"
+Substeps = "TYPE, StepTypeSubstepsArray"
+CodeTemplates = Str
+%FLG: CodeTemplates = 524288
+TS = "TYPE, TEInf"
+Result = Obj
+MenuName = "TYPE, Expression"
+SupportsReadOnly = Bool
+%ROOT_TYPE = True
+
+[EditSubstep]
+DescriptionFormat = "\"%ModuleDescription\""
+%FLG: DescriptionFormat = 4194328
+%INSTFLG: DescriptionFormat = 4718616
+%INSTOVRD: DescriptionFormat = 4718616
+DefaultNameFormat = "ResStr(\"NI_STEPTYPES\", \"EDIT_DEF_SUBSTEP_NAME\")"
+%FLG: DefaultNameFormat = 4194328
+%INSTFLG: DefaultNameFormat = 4718616
+%INSTOVRD: DefaultNameFormat = 4718616
+%FLG: BlockStartTypes = 4194328
+%FLG: BlockEndTypes = 4194328
+%FLG: AppliesToBlockStructure = 4194328
+CodeTemplates Line0001 = "DefaultLabVIEW|DefaultCVI|DefaultVB.NET|DefaultCSharp.NET|DefaultC++.NET|DefaultVC++_Template|DefaultHTB72_Template|Defa"
+CodeTemplates Line0002 = "ultHTB80_Template|Default_Template"
+%FLG: CodeTemplates = 4194328
+%INSTFLG: TS = 4456472
+%FLG: Result = 4194304
+%INSTFLG: Result = 4194304
+%TIMESTAMP = 1100205560
+%VERSION = "3.1.0.9095"
+%TYPELASTMOD = "3.1.0.9095"
+%MINPRODVER = "3.1.0.0"
+%TYPE_FLG = 33554438
+%INSTFLG = 4194304
+%INSTOVRD = 4194304
+
+[EditSubstep.Menu]
+CanBeSubstepType = True
+CanOnlyBeSubstepType = True
+ItemName = "ResStr(\"NI_STEPTYPES\", \"EDIT_SUBSTEP_MENU_ITEM_NAME\")"
+Group = "EditSubsteps"
+
+[DEF, EditSubstep.TS]
+SData = Obj
+%FLG: SData = 2097152
+
+[EditSubstep.TS]
+%INSTFLG: SData = 2097152
+%INSTOVRD: SData = 7274521
+
+[DEF, EditSubstep.Result]
+Error = "TYPE, Error"
+Status = Str
+ReportText = Str
+Common = "TYPE, CommonResults"
+
+[EditSubstep.Result]
+%FLG: Error = 4194304
+%INSTFLG: Error = 4194304
+%FLG: Status = 4194304
+%INSTFLG: Status = 4194304
+%FLG: ReportText = 4194304
+%INSTFLG: ReportText = 4194304
+
+[DEF, NoneStepAdditions]
+%LOCATION = "StdTypes"
+%ROOT_TYPE = True
+
+[NoneStepAdditions]
+%TIMESTAMP = 1090968787
+%VERSION = "3.1.0.9095"
+%TYPELASTMOD = "3.1.0.9095"
+%MINPRODVER = "3.1.0.0"
+%FLG = 24
+%TYPE_FLG = 33554436
+
+[DEF, DIAdem_ExportChannels]
+%LOCATION = "StepTypes"
+DescriptionFormat = "TYPE, Expression"
+%FLG: DescriptionFormat = 524288
+DefaultNameFormat = "TYPE, Expression"
+%FLG: DefaultNameFormat = 524288
+BlockStartTypes = Str
+%FLG: BlockStartTypes = 524288
+BlockEndTypes = Str
+%FLG: BlockEndTypes = 524288
+AppliesToBlockStructure = Bool
+%FLG: AppliesToBlockStructure = 524288
+Menu = "TYPE, StepTypeMenu"
+Substeps = "TYPE, StepTypeSubstepsArray"
+CodeTemplates = Str
+%FLG: CodeTemplates = 524288
+TS = "TYPE, TEInf"
+Result = Obj
+DIAdemRefExpr = "TYPE, Expression"
+SourceDataExpr = "TYPE, Expression"
+ChannelExpr = "TYPE, Expression"
+UseName = Bool
+CreateChannel = Bool
+%ROOT_TYPE = True
+
+[DIAdem_ExportChannels]
+DescriptionFormat Line0001 = "(Step.SourceDataExpr!=\"\" && Step.ChannelExpr!=\"\")?(ResStr(\"EXPORT_DIADEM_CHN_STEP_TYPE\",\"DESCRIPTION\") + \" \" +"
+DescriptionFormat Line0002 = " Step.SourceDataExpr + \" \" + ResStr(\"EXPORT_DIADEM_CHN_STEP_TYPE\",\"DESCRIPTION2\") + \" \" + Step.ChannelExpr):ResS"
+DescriptionFormat Line0003 = "tr(\"EXPORT_DIADEM_CHN_STEP_TYPE\",\"DESCRIPTION3\") "
+%FLG: DescriptionFormat = 4194328
+%INSTFLG: DescriptionFormat = 4718616
+%INSTOVRD: DescriptionFormat = 4718616
+DefaultNameFormat = "ResStr(\"EXPORT_DIADEM_CHN_STEP_TYPE\",\"DEFAULT_NAME\")"
+%FLG: DefaultNameFormat = 4194328
+%INSTFLG: DefaultNameFormat = 4718616
+%INSTOVRD: DefaultNameFormat = 4718616
+%FLG: BlockStartTypes = 4194328
+%FLG: BlockEndTypes = 4194328
+%FLG: AppliesToBlockStructure = 4194328
+%HI: Substeps = [1]
+CodeTemplates Line0001 = "DefaultLabVIEW|DefaultCVI|DefaultVB.NET|DefaultCSharp.NET|DefaultC++.NET|DefaultVC++_Template|DefaultHTB72_Template|Defa"
+CodeTemplates Line0002 = "ultHTB80_Template|Default_Template"
+%FLG: CodeTemplates = 4194328
+%INSTFLG: TS = 262168
+%FLG: Result = 4194304
+%INSTFLG: Result = 4194304
+UseName = True
+%TIMESTAMP = 1138918963
+%VERSION = "3.1.0.100"
+%TYPELASTMOD = "3.1.0.9095"
+%MINPRODVER = "3.1.0.0"
+%TYPE_FLG = 2
+
+[DIAdem_ExportChannels.Menu]
+ItemName = "ResStr(\"EXPORT_DIADEM_CHN_STEP_TYPE\",\"MENU_ITEM\")"
+Group = "DIAdem"
+
+[DEF, DIAdem_ExportChannels.Substeps]
+%[0] = Step
+%TYPE: %[0] = "PostSubstep"
+%[1] = Step
+%TYPE: %[1] = "EditSubstep"
+
+[DIAdem_ExportChannels.Substeps[0].TS]
+Id = "ID#:2SvlfkgYaUGof3Ye9Xh3/B"
+
+[DEF, DIAdem_ExportChannels.Substeps[0].TS]
+SData = "TYPE, FlexCStepAdditions"
+%FLG: SData = 2097152
+
+[DIAdem_ExportChannels.Substeps[0].TS.SData.Call]
+LibPath = "DIAdemStepTypes.dll"
+Func = "DIAdemExportChn"
+%HI: Parms = [1]
+
+[DEF, DIAdem_ExportChannels.Substeps[0].TS.SData.Call.Parms]
+%[0] = "TYPE, FCParameter"
+%[1] = "TYPE, FCParameter"
+
+[DIAdem_ExportChannels.Substeps[0].TS.SData.Call.Parms[0]]
+Name = "Return Value"
+Type = 3
+
+[DIAdem_ExportChannels.Substeps[0].TS.SData.Call.Parms[1]]
+Name = "context"
+Type = 4
+ObjType = 1
+ArgVal = "ThisContext"
+
+[DEF, DIAdem_ExportChannels.Substeps[0]]
+%NAME = "Post"
+
+[DIAdem_ExportChannels.Substeps[1].TS]
+Id = "ID#:rTFIJDwlGkOGFJ4j2ajVZB"
+
+[DEF, DIAdem_ExportChannels.Substeps[1].TS]
+SData = "TYPE, FlexCStepAdditions"
+%FLG: SData = 2097152
+
+[DIAdem_ExportChannels.Substeps[1].TS.SData.Call]
+LibPath = "DIAdemStepTypes.dll"
+Func = "DIAdemExportChnEdit"
+%HI: Parms = [1]
+
+[DEF, DIAdem_ExportChannels.Substeps[1].TS.SData.Call.Parms]
+%[0] = "TYPE, FCParameter"
+%[1] = "TYPE, FCParameter"
+
+[DIAdem_ExportChannels.Substeps[1].TS.SData.Call.Parms[0]]
+Name = "Return Value"
+Type = 3
+
+[DIAdem_ExportChannels.Substeps[1].TS.SData.Call.Parms[1]]
+Name = "context"
+Type = 4
+ObjType = 1
+ArgVal = "ThisContext"
+
+[DIAdem_ExportChannels.Substeps[1]]
+MenuName = "ResStr(\"EXPORT_DIADEM_CHN_STEP_TYPE\",\"EDIT_MENU_ITEM\")"
+
+[DEF, DIAdem_ExportChannels.Substeps[1]]
+%NAME = "Edit"
+
+[DIAdem_ExportChannels.TS]
+Icon = "DIAdem.ico"
+%INSTFLG: SData = 2097152
+%INSTOVRD: SData = 7274521
+
+[DEF, DIAdem_ExportChannels.TS]
+SData = "TYPE, NoneStepAdditions"
+%FLG: SData = 2097152
+
+[DEF, DIAdem_ExportChannels.Result]
+Error = "TYPE, Error"
+Status = Str
+ReportText = Str
+Common = "TYPE, CommonResults"
+
+[DIAdem_ExportChannels.Result]
+%FLG: Error = 4194304
+%INSTFLG: Error = 4194304
+%FLG: Status = 4194304
+%INSTFLG: Status = 4194304
+%FLG: ReportText = 4194304
+%INSTFLG: ReportText = 4194304
+%FLG: Common = 0
+
+[DEF, FlexCStepAdditions]
+%LOCATION = "StdTypes"
+Call = ExternalCall
+ModuleSrcPath = "TYPE, Path"
+ModulePrjPath = "TYPE, Path"
+ModuleWorkspacePath = "TYPE, Path"
+ModuleCreateSrcType = Num
+%ROOT_TYPE = True
+
+[DEF, FlexCStepAdditions.Call]
+LibPath = "TYPE, Path"
+Func = Str
+Parms = Objs
+
+[DEF, FlexCStepAdditions.Call.Parms]
+%EPTYPE = "TYPE, FCParameter"
+%FLG: %EPTYPE = 131072
+%[0] = "TYPE, FCParameter"
+
+[FlexCStepAdditions.Call]
+%HI: Parms = [0]
+
+[FlexCStepAdditions.Call.Parms[0]]
+Name = "Return Value"
+Type = 3
+
+[FlexCStepAdditions]
+%TIMESTAMP = 1100206273
+%VERSION = "3.1.0.9095"
+%TYPELASTMOD = "3.1.0.9095"
+%MINPRODVER = "3.1.0.0"
+%FLG = 24
+%TYPE_FLG = 33554436
+
+[DEF, FCParameter]
+%LOCATION = "StdTypes"
+Name = Str
+Type = Num
+NumType = Num
+ObjType = Num
+StructType = Str
+NumPass = Num
+StrPass = Num
+ElemPass = Num
+ArrayDimensionsSize = Objs
+StrSize = "TYPE, Expression"
+ResultAct = Num
+ArgVal = "TYPE, Expression"
+ArgDisplayVal = "TYPE, Expression"
+Flags = Num
+UserData = Obj
+%FLG: UserData = 2097152
+ArgValImag = "TYPE, Expression"
+%ROOT_TYPE = True
+
+[FCParameter]
+Name = "_notNamed"
+NumType = 4
+StrSize = "1024"
+%INSTFLG: UserData = 2097152
+%TIMESTAMP = 1100206273
+%VERSION = "3.1.0.9095"
+%TYPELASTMOD = "3.1.0.9095"
+%MINPRODVER = "3.1.0.0"
+%FLG = 24
+%TYPE_FLG = 33554436
+
+[DEF, FCParameter.ArrayDimensionsSize]
+%EPTYPE = "TYPE, Expression"
+%FLG: %EPTYPE = 131072
+
+[FCParameter.ArrayDimensionsSize]
+%EPTYPE = "1024"
+
+[DEF, DIAdem_ImportChannels]
+%LOCATION = "StepTypes"
+DescriptionFormat = "TYPE, Expression"
+%FLG: DescriptionFormat = 524288
+DefaultNameFormat = "TYPE, Expression"
+%FLG: DefaultNameFormat = 524288
+BlockStartTypes = Str
+%FLG: BlockStartTypes = 524288
+BlockEndTypes = Str
+%FLG: BlockEndTypes = 524288
+AppliesToBlockStructure = Bool
+%FLG: AppliesToBlockStructure = 524288
+Menu = "TYPE, StepTypeMenu"
+Substeps = "TYPE, StepTypeSubstepsArray"
+CodeTemplates = Str
+%FLG: CodeTemplates = 524288
+TS = "TYPE, TEInf"
+Result = Obj
+DIAdemRefExpr = "TYPE, Expression"
+DataExpr = "TYPE, Expression"
+FirstChannelExpr = "TYPE, Expression"
+LastChannelExpr = "TYPE, Expression"
+UseName = Bool
+%ROOT_TYPE = True
+
+[DIAdem_ImportChannels]
+DescriptionFormat Line0001 = "(Step.DataExpr!=\"\" && Step.FirstChannelExpr!=\"\" && Step.LastChannelExpr!=\"\")?(ResStr(\"IMPORT_DIADEM_CHN_STEP_TYPE"
+DescriptionFormat Line0002 = "\",\"DESCRIPTION\") + \" \" + Step.FirstChannelExpr+ \":\" + Step.LastChannelExpr + \" \" + ResStr(\"IMPORT_DIADEM_CHN_S"
+DescriptionFormat Line0003 = "TEP_TYPE\",\"DESCRIPTION2\") + \" \" + Step.DataExpr):ResStr(\"IMPORT_DIADEM_CHN_STEP_TYPE\",\"DESCRIPTION\") "
+%FLG: DescriptionFormat = 4194328
+%INSTFLG: DescriptionFormat = 4718616
+%INSTOVRD: DescriptionFormat = 4718616
+DefaultNameFormat = "ResStr(\"IMPORT_DIADEM_CHN_STEP_TYPE\",\"DEFAULT_NAME\")"
+%FLG: DefaultNameFormat = 4194328
+%INSTFLG: DefaultNameFormat = 4718616
+%INSTOVRD: DefaultNameFormat = 4718616
+%FLG: BlockStartTypes = 4194328
+%FLG: BlockEndTypes = 4194328
+%FLG: AppliesToBlockStructure = 4194328
+%HI: Substeps = [1]
+CodeTemplates Line0001 = "DefaultLabVIEW|DefaultCVI|DefaultVB.NET|DefaultCSharp.NET|DefaultC++.NET|DefaultVC++_Template|DefaultHTB72_Template|Defa"
+CodeTemplates Line0002 = "ultHTB80_Template|Default_Template"
+%FLG: CodeTemplates = 4194328
+%INSTFLG: TS = 262168
+%FLG: Result = 4194304
+%INSTFLG: Result = 4194304
+UseName = True
+%TIMESTAMP = 1138918972
+%VERSION = "3.1.0.100"
+%TYPELASTMOD = "3.1.0.9095"
+%MINPRODVER = "3.1.0.0"
+%TYPE_FLG = 2
+
+[DIAdem_ImportChannels.Menu]
+ItemName = "ResStr(\"IMPORT_DIADEM_CHN_STEP_TYPE\",\"MENU_ITEM\")"
+Group = "DIAdem"
+
+[DEF, DIAdem_ImportChannels.Substeps]
+%[0] = Step
+%TYPE: %[0] = "PostSubstep"
+%[1] = Step
+%TYPE: %[1] = "EditSubstep"
+
+[DIAdem_ImportChannels.Substeps[0].TS]
+Id = "ID#:2SvlfkgYaUGof3Ye9Xh3/B"
+
+[DEF, DIAdem_ImportChannels.Substeps[0].TS]
+SData = "TYPE, FlexCStepAdditions"
+%FLG: SData = 2097152
+
+[DIAdem_ImportChannels.Substeps[0].TS.SData.Call]
+LibPath = "DIAdemStepTypes.dll"
+Func = "DIAdemImportChn"
+%HI: Parms = [1]
+
+[DEF, DIAdem_ImportChannels.Substeps[0].TS.SData.Call.Parms]
+%[0] = "TYPE, FCParameter"
+%[1] = "TYPE, FCParameter"
+
+[DIAdem_ImportChannels.Substeps[0].TS.SData.Call.Parms[0]]
+Name = "Return Value"
+Type = 3
+
+[DIAdem_ImportChannels.Substeps[0].TS.SData.Call.Parms[1]]
+Name = "context"
+Type = 4
+ObjType = 1
+ArgVal = "ThisContext"
+
+[DEF, DIAdem_ImportChannels.Substeps[0]]
+%NAME = "Post"
+
+[DIAdem_ImportChannels.Substeps[1].TS]
+Id = "ID#:rTFIJDwlGkOGFJ4j2ajVZB"
+
+[DEF, DIAdem_ImportChannels.Substeps[1].TS]
+SData = "TYPE, FlexCStepAdditions"
+%FLG: SData = 2097152
+
+[DIAdem_ImportChannels.Substeps[1].TS.SData.Call]
+LibPath = "DIAdemStepTypes.dll"
+Func = "DIAdemImportChnEdit"
+%HI: Parms = [1]
+
+[DEF, DIAdem_ImportChannels.Substeps[1].TS.SData.Call.Parms]
+%[0] = "TYPE, FCParameter"
+%[1] = "TYPE, FCParameter"
+
+[DIAdem_ImportChannels.Substeps[1].TS.SData.Call.Parms[0]]
+Name = "Return Value"
+Type = 3
+
+[DIAdem_ImportChannels.Substeps[1].TS.SData.Call.Parms[1]]
+Name = "context"
+Type = 4
+ObjType = 1
+ArgVal = "ThisContext"
+
+[DIAdem_ImportChannels.Substeps[1]]
+MenuName = "ResStr(\"IMPORT_DIADEM_CHN_STEP_TYPE\",\"EDIT_MENU_ITEM\")"
+
+[DEF, DIAdem_ImportChannels.Substeps[1]]
+%NAME = "Edit"
+
+[DIAdem_ImportChannels.TS]
+Icon = "DIAdem.ico"
+%INSTFLG: SData = 2097152
+%INSTOVRD: SData = 7274521
+CanSpecifyModule = False
+%FLG: CanSpecifyModule = 131072
+
+[DEF, DIAdem_ImportChannels.TS]
+SData = "TYPE, NoneStepAdditions"
+%FLG: SData = 2097152
+
+[DEF, DIAdem_ImportChannels.Result]
+Error = "TYPE, Error"
+Status = Str
+ReportText = Str
+Common = "TYPE, CommonResults"
+
+[DIAdem_ImportChannels.Result]
+%FLG: Error = 4194304
+%INSTFLG: Error = 4194304
+%FLG: Status = 4194304
+%INSTFLG: Status = 4194304
+%FLG: ReportText = 4194304
+%INSTFLG: ReportText = 4194304
+%FLG: Common = 0
+
+[DEF, MessagePopup]
+%LOCATION = "StepTypes"
+Substeps = "TYPE, StepTypeSubstepsArray"
+DescriptionFormat = "TYPE, Expression"
+%FLG: DescriptionFormat = 524288
+DefaultNameFormat = "TYPE, Expression"
+%FLG: DefaultNameFormat = 524288
+Menu = "TYPE, StepTypeMenu"
+TS = "TYPE, TEInf"
+Result = Obj
+TitleExpr = "TYPE, Expression"
+MessageExpr = "TYPE, Expression"
+Button1Label = "TYPE, Expression"
+Button2Label = "TYPE, Expression"
+Button3Label = "TYPE, Expression"
+Button4Label = "TYPE, Expression"
+Button5Label = "TYPE, Expression"
+Button6Label = "TYPE, Expression"
+CenterDialog = Bool
+Position = Obj
+Modal = Bool
+ShowResponse = Bool
+MaxResponseLength = Num
+DefaultResponse = Str
+ButtonLocation = Num
+ActiveCtrl = Num
+DefaultButton = Num
+CancelButton = Num
+CodeTemplates = Str
+%FLG: CodeTemplates = 524288
+TimerButton = Num
+TimeToWait = Num
+BlockStartTypes = Str
+%FLG: BlockStartTypes = 524288
+BlockEndTypes = Str
+%FLG: BlockEndTypes = 524288
+AppliesToBlockStructure = Bool
+%FLG: AppliesToBlockStructure = 524288
+%ROOT_TYPE = True
+
+[MessagePopup]
+%HI: Substeps = [1]
+%INSTFLG: Substeps = 524312
+%INSTOVRD: Substeps = 655384
+DescriptionFormat = "LocalizeExpression(Step.TitleExpr)"
+%FLG: DescriptionFormat = 4194328
+%INSTFLG: DescriptionFormat = 4718616
+%INSTOVRD: DescriptionFormat = 4718616
+DefaultNameFormat = "ResStr(\"MSG_BOX_STEP_TYPE\", \"DEF_STEP_NAME\")"
+%FLG: DefaultNameFormat = 4194328
+%INSTFLG: DefaultNameFormat = 4718616
+%INSTOVRD: DefaultNameFormat = 4718616
+%INSTFLG: Menu = 524312
+%INSTOVRD: Menu = 524312
+%INSTFLG: TS = 262168
+%INSTOVRD: TS = 4456472
+%FLG: Result = 4194304
+%INSTFLG: Result = 4194304
+TitleExpr = "\"untitled\""
+%FLG: TitleExpr = 262144
+MessageExpr = "\"Your message here\""
+Button1Label = "\"OK\""
+Button2Label = "\"\""
+Button3Label = "\"\""
+Button4Label = "\"\""
+Button5Label = "\"\""
+Button6Label = "\"\""
+CenterDialog = True
+MaxResponseLength = 4096
+ActiveCtrl = 1
+DefaultButton = 1
+CancelButton = 1
+%FLG: CodeTemplates = 4194328
+%FLG: BlockStartTypes = 4194328
+%FLG: BlockEndTypes = 4194328
+%FLG: AppliesToBlockStructure = 4194328
+%TIMESTAMP = 1080231589
+%VERSION = "3.1.0.1"
+%TYPELASTMOD = "3.1.0.34"
+%MINPRODVER = "3.1.0.0"
+%TYPE_FLG = 33554446
+
+[DEF, MessagePopup.Substeps]
+%[0] = Step
+%TYPE: %[0] = "PostSubstep"
+%[1] = Step
+%TYPE: %[1] = "EditSubstep"
+
+[DEF, MessagePopup.Substeps[0].TS]
+SData = "TYPE, FlexCStepAdditions"
+%FLG: SData = 2097152
+
+[MessagePopup.Substeps[0].TS.SData.Call]
+LibPath = "msgbox.dll"
+Func = "DisplayTimerMsgPopupEx"
+%HI: Parms = [17]
+
+[DEF, MessagePopup.Substeps[0].TS.SData.Call.Parms]
+%[0] = "TYPE, FCParameter"
+%[1] = "TYPE, FCParameter"
+%[2] = "TYPE, FCParameter"
+%[3] = "TYPE, FCParameter"
+%[4] = "TYPE, FCParameter"
+%[5] = "TYPE, FCParameter"
+%[6] = "TYPE, FCParameter"
+%[7] = "TYPE, FCParameter"
+%[8] = "TYPE, FCParameter"
+%[9] = "TYPE, FCParameter"
+%[10] = "TYPE, FCParameter"
+%[11] = "TYPE, FCParameter"
+%[12] = "TYPE, FCParameter"
+%[13] = "TYPE, FCParameter"
+%[14] = "TYPE, FCParameter"
+%[15] = "TYPE, FCParameter"
+%[16] = "TYPE, FCParameter"
+%[17] = "TYPE, FCParameter"
+
+[MessagePopup.Substeps[0].TS.SData.Call.Parms[0]]
+Name = "Return Value"
+ResultAct = 1
+Flags = 2
+
+[MessagePopup.Substeps[0].TS.SData.Call.Parms[1]]
+Name = "context"
+Type = 4
+ObjType = 1
+ArgVal = "ThisContext"
+
+[MessagePopup.Substeps[0].TS.SData.Call.Parms[2]]
+Name = "titleExpr"
+Type = 2
+ArgVal = "Step.TitleExpr"
+
+[MessagePopup.Substeps[0].TS.SData.Call.Parms[3]]
+Name = "msgExpr"
+Type = 2
+ArgVal = "Step.MessageExpr"
+
+[MessagePopup.Substeps[0].TS.SData.Call.Parms[4]]
+Name = "buttonsExpressions"
+Type = 6
+%HI: ArrayDimensionsSize = [0]
+ArgVal = "{Step.Button1Label, Step.Button2Label, Step.Button3Label, Step.Button4Label, Step.Button5Label, Step.Button6Label}"
+
+[MessagePopup.Substeps[0].TS.SData.Call.Parms[5]]
+Name = "buttonArraySize"
+ArgVal = "6"
+
+[MessagePopup.Substeps[0].TS.SData.Call.Parms[6]]
+Name = "showReponseTextBox"
+ArgVal = "Step.ShowResponse"
+
+[MessagePopup.Substeps[0].TS.SData.Call.Parms[7]]
+Name = "initialResponseBuf"
+Type = 2
+ArgVal = "Step.DefaultResponse"
+
+[MessagePopup.Substeps[0].TS.SData.Call.Parms[8]]
+Name = "responseBufResult"
+Type = 4
+ObjType = 1
+ArgVal = "Step.Result.Response"
+
+[MessagePopup.Substeps[0].TS.SData.Call.Parms[9]]
+Name = "maxResponseBufLength"
+ArgVal = "Step.MaxResponseLength"
+
+[MessagePopup.Substeps[0].TS.SData.Call.Parms[10]]
+Name = "buttonLoc"
+ArgVal = "Step.ButtonLocation"
+
+[MessagePopup.Substeps[0].TS.SData.Call.Parms[11]]
+Name = "activeCtrl"
+ArgVal = "Step.ActiveCtrl"
+
+[MessagePopup.Substeps[0].TS.SData.Call.Parms[12]]
+Name = "defaultButton"
+ArgVal = "Step.DefaultButton"
+
+[MessagePopup.Substeps[0].TS.SData.Call.Parms[13]]
+Name = "cancelButton"
+ArgVal = "Step.CancelButton"
+
+[MessagePopup.Substeps[0].TS.SData.Call.Parms[14]]
+Name = "timeoutButton"
+ArgVal = "Step.TimerButton"
+
+[MessagePopup.Substeps[0].TS.SData.Call.Parms[15]]
+Name = "timeToWait"
+NumType = 7
+ArgVal = "Step.TimeToWait"
+
+[MessagePopup.Substeps[0].TS.SData.Call.Parms[16]]
+Name = "buttonHit"
+NumPass = 1
+ArgVal = "Step.Result.ButtonHit"
+
+[MessagePopup.Substeps[0].TS.SData.Call.Parms[17]]
+Name = "errorMessage"
+Type = 2
+StrPass = 2
+ArgVal = "Step.Result.Error.Msg"
+
+[MessagePopup.Substeps[0].TS]
+%INSTFLG: SData = 2097152
+%INSTOVRD: SData = 2097152
+ConnectionLifetime = 0
+
+[MessagePopup.Substeps[0]]
+%INSTFLG: TS = 262168
+%INSTOVRD: TS = 262168
+
+[MessagePopup.Substeps[0].Result]
+%INSTOVRD: Error = 4194304
+%INSTFLG: ReportText = 0
+%INSTOVRD: Common = 4194304
+
+[DEF, MessagePopup.Substeps[0]]
+%NAME = "Post"
+
+[DEF, MessagePopup.Substeps[1].TS]
+SData = "TYPE, FlexCStepAdditions"
+%FLG: SData = 2097152
+
+[MessagePopup.Substeps[1].TS.SData.Call]
+LibPath = "msgbox.dll"
+Func = "EditMessageBoxStep"
+%HI: Parms = [4]
+
+[DEF, MessagePopup.Substeps[1].TS.SData.Call.Parms]
+%[0] = "TYPE, FCParameter"
+%[1] = "TYPE, FCParameter"
+%[2] = "TYPE, FCParameter"
+%[3] = "TYPE, FCParameter"
+%[4] = "TYPE, FCParameter"
+
+[MessagePopup.Substeps[1].TS.SData.Call.Parms[0]]
+Name = "Return Value"
+ResultAct = 1
+Flags = 2
+
+[MessagePopup.Substeps[1].TS.SData.Call.Parms[1]]
+Name = "context"
+Type = 4
+ObjType = 1
+ArgVal = "ThisContext"
+
+[MessagePopup.Substeps[1].TS.SData.Call.Parms[2]]
+Name = "engine"
+Type = 4
+ObjType = 1
+ArgVal = "RunState.Engine"
+ArgDisplayVal = "RunState.Engine"
+
+[MessagePopup.Substeps[1].TS.SData.Call.Parms[3]]
+Name = "reserved"
+ArgVal = "0"
+
+[MessagePopup.Substeps[1].TS.SData.Call.Parms[4]]
+Name = "changed"
+NumPass = 1
+ArgVal = "RunState.InitialSelection.SelectedFile.ChangeCount"
+ArgDisplayVal = "RunState.InitialSelection.SelectedFile.ChangeCount"
+
+[MessagePopup.Substeps[1].TS]
+%INSTFLG: SData = 2097152
+%INSTOVRD: SData = 2097152
+ConnectionLifetime = 0
+
+[MessagePopup.Substeps[1]]
+%INSTFLG: TS = 262168
+%INSTOVRD: TS = 262168
+MenuName = "ResStr(\"MSG_BOX_STEP_TYPE\", \"EDIT_STEP_NAME\")"
+SupportsReadOnly = True
+
+[MessagePopup.Substeps[1].Result]
+%INSTOVRD: Error = 4194304
+%INSTFLG: ReportText = 0
+%INSTOVRD: Common = 4194304
+
+[DEF, MessagePopup.Substeps[1]]
+%NAME = "Edit"
+
+[MessagePopup.Menu]
+ItemName = "ResStr(\"MSG_BOX_STEP_TYPE\", \"MENU_ITEM_NAME\")"
+Group = "NI_Miscellaneous"
+
+[MessagePopup.TS]
+Icon = "MsgBox.ico"
+%INSTFLG: SData = 2097152
+%INSTOVRD: SData = 7143448
+ConnectionLifetime = 0
+LoopIncrement = ""
+LoopInitialize = ""
+CanSpecifyModule = False
+
+[DEF, MessagePopup.TS]
+SData = "TYPE, NoneStepAdditions"
+%FLG: SData = 2097152
+
+[DEF, MessagePopup.Result]
+Error = "TYPE, Error"
+Status = Str
+ButtonHit = Num
+Response = Str
+ReportText = Str
+Common = "TYPE, CommonResults"
+
+[MessagePopup.Result]
+%FLG: Error = 4194304
+%INSTFLG: Error = 4194304
+%INSTOVRD: Error = 4194304
+%FLG: Status = 4194304
+%INSTFLG: Status = 4194304
+%FLG: ButtonHit = 8192
+%INSTFLG: ButtonHit = 8192
+%FLG: Response = 10240
+%INSTFLG: Response = 10240
+%FLG: ReportText = 4194304
+%INSTFLG: ReportText = 4194304
+%INSTOVRD: Common = 4194304
+
+[DEF, MessagePopup.Position]
+Top = "TYPE, Expression"
+Left = "TYPE, Expression"
+
+[DEF, DIAdem_Close_Reference]
+%LOCATION = "StepTypes"
+DescriptionFormat = "TYPE, Expression"
+%FLG: DescriptionFormat = 524288
+DefaultNameFormat = "TYPE, Expression"
+%FLG: DefaultNameFormat = 524288
+BlockStartTypes = Str
+%FLG: BlockStartTypes = 524288
+BlockEndTypes = Str
+%FLG: BlockEndTypes = 524288
+AppliesToBlockStructure = Bool
+%FLG: AppliesToBlockStructure = 524288
+Menu = "TYPE, StepTypeMenu"
+Substeps = "TYPE, StepTypeSubstepsArray"
+CodeTemplates = Str
+%FLG: CodeTemplates = 524288
+TS = "TYPE, TEInf"
+Result = Obj
+DIAdemRefExpr = "TYPE, Expression"
+%ROOT_TYPE = True
+
+[DIAdem_Close_Reference]
+DescriptionFormat = "ResStr(\"CLOSE_DIADEM_REF_STEP_TYPE\",\"DESCRIPTION\")"
+%FLG: DescriptionFormat = 4194328
+%INSTFLG: DescriptionFormat = 4718616
+%INSTOVRD: DescriptionFormat = 4718616
+DefaultNameFormat = "ResStr(\"CLOSE_DIADEM_REF_STEP_TYPE\",\"DEFAULT_NAME\")"
+%FLG: DefaultNameFormat = 4194328
+%INSTFLG: DefaultNameFormat = 4718616
+%INSTOVRD: DefaultNameFormat = 4718616
+%FLG: BlockStartTypes = 4194328
+%FLG: BlockEndTypes = 4194328
+%FLG: AppliesToBlockStructure = 4194328
+%HI: Substeps = [1]
+%FLG: CodeTemplates = 4194328
+%INSTFLG: TS = 262168
+%FLG: Result = 4194304
+%INSTFLG: Result = 4194304
+%TIMESTAMP = 1138918991
+%VERSION = "3.1.0.100"
+%TYPELASTMOD = "3.1.0.9095"
+%MINPRODVER = "3.1.0.0"
+%TYPE_FLG = 2
+
+[DIAdem_Close_Reference.Menu]
+ItemName = "ResStr(\"CLOSE_DIADEM_REF_STEP_TYPE\",\"MENU_ITEM\")"
+Group = "DIAdem"
+
+[DEF, DIAdem_Close_Reference.Substeps]
+%[0] = Step
+%TYPE: %[0] = "PostSubstep"
+%[1] = Step
+%TYPE: %[1] = "EditSubstep"
+
+[DIAdem_Close_Reference.Substeps[0].TS]
+Id = "ID#:PhUsd13wO0mOpIoPXHrxMC"
+
+[DEF, DIAdem_Close_Reference.Substeps[0].TS]
+SData = "TYPE, FlexCVIStepAdditions"
+%FLG: SData = 2097152
+
+[DIAdem_Close_Reference.Substeps[0].TS.SData.Call]
+LibPath = "DIAdemStepTypes.dll"
+Func = "DIAdemCloseRef"
+%HI: Parms = [1]
+
+[DEF, DIAdem_Close_Reference.Substeps[0].TS.SData.Call.Parms]
+%[0] = "TYPE, FCVIParameter"
+%[1] = "TYPE, FCVIParameter"
+
+[DIAdem_Close_Reference.Substeps[0].TS.SData.Call.Parms[0]]
+Name = "Return Value"
+Type = 3
+
+[DIAdem_Close_Reference.Substeps[0].TS.SData.Call.Parms[1]]
+Name = "context"
+Type = 4
+ObjType = 1
+ArgVal = "ThisContext"
+
+[DIAdem_Close_Reference.Substeps[0].TS.SData]
+ModuleSrcPath = "DIAdemSteps.c"
+ModulePrjPath = "DIAdemSteps.prj"
+
+[DEF, DIAdem_Close_Reference.Substeps[0]]
+%NAME = "Post"
+
+[DIAdem_Close_Reference.Substeps[1].TS]
+Id = "ID#:hMYg4JETmkGtyjC4PslNJC"
+
+[DEF, DIAdem_Close_Reference.Substeps[1].TS]
+SData = "TYPE, FlexCVIStepAdditions"
+%FLG: SData = 2097152
+
+[DIAdem_Close_Reference.Substeps[1].TS.SData.Call]
+LibPath = "DIAdemStepTypes.dll"
+Func = "DIAdemCloseRefEdit"
+%HI: Parms = [1]
+
+[DEF, DIAdem_Close_Reference.Substeps[1].TS.SData.Call.Parms]
+%[0] = "TYPE, FCVIParameter"
+%[1] = "TYPE, FCVIParameter"
+
+[DIAdem_Close_Reference.Substeps[1].TS.SData.Call.Parms[0]]
+Name = "Return Value"
+Type = 3
+
+[DIAdem_Close_Reference.Substeps[1].TS.SData.Call.Parms[1]]
+Name = "seqContext"
+Type = 4
+ObjType = 1
+ArgVal = "ThisContext"
+
+[DIAdem_Close_Reference.Substeps[1].TS.SData]
+ModuleSrcPath = "CloseDIAdem.c"
+ModulePrjPath = "DIAdemSteps.prj"
+AlwaysRunInProcess = 1
+
+[DIAdem_Close_Reference.Substeps[1]]
+MenuName = "ResStr(\"CLOSE_DIADEM_REF_STEP_TYPE\",\"EDIT_MENU_ITEM\") "
+
+[DEF, DIAdem_Close_Reference.Substeps[1]]
+%NAME = "Edit"
+
+[DIAdem_Close_Reference.TS]
+Icon = "DIAdem.ico"
+%INSTFLG: SData = 2097152
+%INSTOVRD: SData = 7274521
+NoResult = True
+StepFCSeqF = False
+VirtualDeviceName = "\"SwitchExecutiveExample\""
+
+[DEF, DIAdem_Close_Reference.TS]
+SData = "TYPE, NoneStepAdditions"
+%FLG: SData = 2097152
+
+[DEF, DIAdem_Close_Reference.Result]
+Error = "TYPE, Error"
+Status = Str
+ReportText = Str
+Common = "TYPE, CommonResults"
+
+[DIAdem_Close_Reference.Result]
+%FLG: Error = 4194304
+%INSTFLG: Error = 4194304
+%FLG: Status = 4194304
+%INSTFLG: Status = 4194304
+%FLG: ReportText = 4194304
+%INSTFLG: ReportText = 4194304
+%FLG: Common = 0
+
+[DEF, DIAdem_Reference]
+%LOCATION = "UserTypes"
+CommandReference = Ref
+DataSheetReference = Ref
+%ROOT_TYPE = True
+
+[DIAdem_Reference]
+%TIMESTAMP = 1138919010
+%VERSION = "3.1.0.100"
+%TYPELASTMOD = "3.1.0.9095"
+%MINPRODVER = "3.1.0.0"
+
+[DEF, DIAdem_RunScript]
+%LOCATION = "StepTypes"
+DescriptionFormat = "TYPE, Expression"
+%FLG: DescriptionFormat = 524288
+DefaultNameFormat = "TYPE, Expression"
+%FLG: DefaultNameFormat = 524288
+BlockStartTypes = Str
+%FLG: BlockStartTypes = 524288
+BlockEndTypes = Str
+%FLG: BlockEndTypes = 524288
+AppliesToBlockStructure = Bool
+%FLG: AppliesToBlockStructure = 524288
+Menu = "TYPE, StepTypeMenu"
+Substeps = "TYPE, StepTypeSubstepsArray"
+CodeTemplates = Str
+%FLG: CodeTemplates = 524288
+TS = "TYPE, TEInf"
+Result = Obj
+DIAdemRefExpr = "TYPE, Expression"
+PathExpr = "TYPE, Expression"
+Path = "TYPE, Path"
+Synchronous = Bool
+UsePathExpr = Bool
+%ROOT_TYPE = True
+
+[DIAdem_RunScript]
+DescriptionFormat = "ResStr(\"RUN_DIADEM_SCRIPT_STEP_TYPE\",\"DESCRIPTION\")  + ((Step.UsePathExpr)?Step.PathExpr:Step.Path)"
+%FLG: DescriptionFormat = 4194328
+%INSTFLG: DescriptionFormat = 4718616
+%INSTOVRD: DescriptionFormat = 4718616
+DefaultNameFormat = "ResStr(\"RUN_DIADEM_SCRIPT_STEP_TYPE\",\"DEFAULT_NAME\") "
+%FLG: DefaultNameFormat = 4194328
+%INSTFLG: DefaultNameFormat = 4718616
+%INSTOVRD: DefaultNameFormat = 4718616
+%FLG: BlockStartTypes = 4194328
+%FLG: BlockEndTypes = 4194328
+%FLG: AppliesToBlockStructure = 4194328
+%HI: Substeps = [1]
+%FLG: CodeTemplates = 4194328
+%INSTFLG: TS = 262168
+%FLG: Result = 4194304
+%INSTFLG: Result = 4194304
+%TIMESTAMP = 1138918982
+%VERSION = "3.1.0.100"
+%TYPELASTMOD = "3.1.0.9095"
+%MINPRODVER = "3.1.0.0"
+%TYPE_FLG = 2
+
+[DIAdem_RunScript.Menu]
+ItemName = "ResStr(\"RUN_DIADEM_SCRIPT_STEP_TYPE\",\"MENU_ITEM\")"
+Group = "DIAdem"
+
+[DEF, DIAdem_RunScript.Substeps]
+%[0] = Step
+%TYPE: %[0] = "PostSubstep"
+%[1] = Step
+%TYPE: %[1] = "EditSubstep"
+
+[DIAdem_RunScript.Substeps[0].TS]
+Id = "ID#:wrlem4GqOE2yJA2i5acUgB"
+
+[DEF, DIAdem_RunScript.Substeps[0].TS]
+SData = "TYPE, FlexCVIStepAdditions"
+%FLG: SData = 2097152
+
+[DIAdem_RunScript.Substeps[0].TS.SData.Call]
+LibPath = "DIAdemStepTypes.dll"
+Func = "DIAdemRunScript"
+%HI: Parms = [1]
+
+[DEF, DIAdem_RunScript.Substeps[0].TS.SData.Call.Parms]
+%[0] = "TYPE, FCVIParameter"
+%[1] = "TYPE, FCVIParameter"
+
+[DIAdem_RunScript.Substeps[0].TS.SData.Call.Parms[0]]
+Name = "Return Value"
+Type = 3
+
+[DIAdem_RunScript.Substeps[0].TS.SData.Call.Parms[1]]
+Type = 4
+ObjType = 1
+ArgVal = "ThisContext"
+
+[DEF, DIAdem_RunScript.Substeps[0]]
+%NAME = "Post"
+
+[DIAdem_RunScript.Substeps[1].TS]
+Id = "ID#:hMYg4JETmkGtyjC4PslNJC"
+
+[DEF, DIAdem_RunScript.Substeps[1].TS]
+SData = "TYPE, FlexCVIStepAdditions"
+%FLG: SData = 2097152
+
+[DIAdem_RunScript.Substeps[1].TS.SData.Call]
+LibPath = "DIAdemStepTypes.dll"
+Func = "DIAdemRunScriptEdit"
+%HI: Parms = [1]
+
+[DEF, DIAdem_RunScript.Substeps[1].TS.SData.Call.Parms]
+%[0] = "TYPE, FCVIParameter"
+%[1] = "TYPE, FCVIParameter"
+
+[DIAdem_RunScript.Substeps[1].TS.SData.Call.Parms[0]]
+Name = "Return Value"
+Type = 3
+
+[DIAdem_RunScript.Substeps[1].TS.SData.Call.Parms[1]]
+Name = "seqContext"
+Type = 4
+ObjType = 1
+ArgVal = "ThisContext"
+
+[DIAdem_RunScript.Substeps[1].TS.SData]
+ModuleSrcPath = "ExecuteScript.c"
+ModulePrjPath = "DIAdemSteps.prj"
+AlwaysRunInProcess = 1
+
+[DIAdem_RunScript.Substeps[1]]
+MenuName = "ResStr(\"RUN_DIADEM_SCRIPT_STEP_TYPE\",\"EDIT_MENU_ITEM\") "
+
+[DEF, DIAdem_RunScript.Substeps[1]]
+%NAME = "Edit"
+
+[DIAdem_RunScript.TS]
+Icon = "DIAdem.ico"
+%INSTFLG: SData = 2097152
+%INSTOVRD: SData = 7274521
+NoResult = True
+StepFCSeqF = False
+VirtualDeviceName = "\"SwitchExecutiveExample\""
+
+[DEF, DIAdem_RunScript.TS]
+SData = "TYPE, NoneStepAdditions"
+%FLG: SData = 2097152
+
+[DEF, DIAdem_RunScript.Result]
+Error = "TYPE, Error"
+Status = Str
+ReportText = Str
+Common = "TYPE, CommonResults"
+
+[DIAdem_RunScript.Result]
+%FLG: Error = 4194304
+%INSTFLG: Error = 4194304
+%FLG: Status = 4194304
+%INSTFLG: Status = 4194304
+%FLG: ReportText = 4194304
+%INSTFLG: ReportText = 4194304
+%FLG: Common = 0
+

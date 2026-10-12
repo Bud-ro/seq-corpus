@@ -1,0 +1,30 @@
+[Files]
+Names=NIGEL Engine Test Req,Seq,Report
+
+[NIGEL Engine Test Req]
+Cover1=Seq
+Cover1Position=1020@842
+GraphicPosition=1015@565
+Type=Word
+Path=Requirements Docs\Engine Test Requirements.doc
+
+[Seq]
+Cover1=Report
+Cover1Position=1055@1345
+GraphicPosition=1025@1120
+Type=TestStand
+Path=$ProjDir\Working Directory
+Variable1Name=selectedFiles
+Variable1Value=$ProjDir\Working Directory#ELTSEP#0
+Variable2Name=defaultDirectory
+Variable2Value=$ProjDir\Working Directory
+
+[Report]
+GraphicPosition=1085@1570
+Type=TestStand XML Reports
+Path=$ProjDir\Working Directory
+Variable1Name=selectedFiles
+Variable1Value=$ProjDir\Working Directory#ELTSEP#0
+Variable2Name=defaultDirectory
+Variable2Value=$ProjDir\Working Directory
+

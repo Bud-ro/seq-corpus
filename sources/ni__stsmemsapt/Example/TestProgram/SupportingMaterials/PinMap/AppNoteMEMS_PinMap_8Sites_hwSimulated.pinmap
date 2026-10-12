@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PinMap schemaVersion="1.6" xmlns="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Instruments>
+		<NIDCPowerInstrument name="PPS_4110_C2_S18" numberOfChannels="1">
+			<ChannelGroup name="CommonDCPowerChannelGroup" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4137_C1_S04" numberOfChannels="1">
+			<ChannelGroup name="smu0_s0" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4137_C1_S05" numberOfChannels="1">
+			<ChannelGroup name="smu0_s1" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4137_C1_S06" numberOfChannels="1">
+			<ChannelGroup name="CommonDCPowerChannelGroup" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4137_C1_S07" numberOfChannels="1">
+			<ChannelGroup name="CommonDCPowerChannelGroup" />
+		</NIDCPowerInstrument>
+		<NIScopeInstrument name="SCOPE_5172_C1_S08" numberOfChannels="8" />
+		<NIScopeInstrument name="SCOPE_5172_C1_S09" numberOfChannels="8" />
+		<NIFGenInstrument name="FGEN_5433_C1_S11" numberOfChannels="2" />
+		<NIFGenInstrument name="FGEN_5433_C1_S12" numberOfChannels="2" />
+		<NIDigitalPatternInstrument name="HSD_6571_C1_S02" numberOfChannels="32" group="s01" />
+		<NIDigitalPatternInstrument name="HSD_6571_C1_S03" numberOfChannels="32" group="Digital" />
+		<NIRelayDriverModule name="RELAY_2567_C1_S17" numberOfControlLines="64" />
+		<NIDCPowerInstrument name="SMU_4137_C2_S13" numberOfChannels="1">
+			<ChannelGroup name="smu0_s2" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4137_C2_S14" numberOfChannels="1">
+			<ChannelGroup name="smu0_s3" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4137_C2_S15" numberOfChannels="1">
+			<ChannelGroup name="CommonDCPowerChannelGroup" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4137_C2_S16" numberOfChannels="1">
+			<ChannelGroup name="CommonDCPowerChannelGroup" />
+		</NIDCPowerInstrument>
+		<NIScopeInstrument name="SCOPE_5172_C2_S08" numberOfChannels="8" />
+		<NIScopeInstrument name="SCOPE_5172_C2_S09" numberOfChannels="8" />
+		<NIFGenInstrument name="FGEN_5433_C2_S11" numberOfChannels="2" />
+		<NIFGenInstrument name="FGEN_5433_C2_S12" numberOfChannels="2" />
+		<NIDigitalPatternInstrument name="HSD_6571_C2_S02" numberOfChannels="32" group="s23" />
+		<NIDigitalPatternInstrument name="HSD_6571_C2_S03" numberOfChannels="32" group="Digital" />
+		<NIDCPowerInstrument name="SMU_4137_C3_S13" numberOfChannels="1">
+			<ChannelGroup name="smu0_s4" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4137_C3_S14" numberOfChannels="1">
+			<ChannelGroup name="smu0_s5" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4137_C3_S15" numberOfChannels="1">
+			<ChannelGroup name="CommonDCPowerChannelGroup" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4137_C3_S16" numberOfChannels="1">
+			<ChannelGroup name="CommonDCPowerChannelGroup" />
+		</NIDCPowerInstrument>
+		<NIScopeInstrument name="SCOPE_5172_C3_S04" numberOfChannels="8" />
+		<NIScopeInstrument name="SCOPE_5172_C3_S05" numberOfChannels="8" />
+		<NIFGenInstrument name="FGEN_5433_C3_S06" numberOfChannels="2" />
+		<NIFGenInstrument name="FGEN_5433_C3_S07" numberOfChannels="2" />
+		<NIDigitalPatternInstrument name="HSD_6571_C3_S02" numberOfChannels="32" group="s45" />
+		<NIDigitalPatternInstrument name="HSD_6571_C3_S03" numberOfChannels="32" group="Digital" />
+		<NIRelayDriverModule name="RELAY_2567_C3_S17" numberOfControlLines="64" />
+		<NIRelayDriverModule name="RELAY_2567_C3_S18" numberOfControlLines="64" />
+		<NIDCPowerInstrument name="SMU_4137_C4_S04" numberOfChannels="1">
+			<ChannelGroup name="smu0_s6" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4137_C4_S05" numberOfChannels="1">
+			<ChannelGroup name="smu0_s7" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4137_C4_S06" numberOfChannels="1">
+			<ChannelGroup name="CommonDCPowerChannelGroup" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4137_C4_S07" numberOfChannels="1">
+			<ChannelGroup name="CommonDCPowerChannelGroup" />
+		</NIDCPowerInstrument>
+		<NIScopeInstrument name="SCOPE_5172_C4_S08" numberOfChannels="8" />
+		<NIScopeInstrument name="SCOPE_5172_C4_S09" numberOfChannels="8" />
+		<NIFGenInstrument name="FGEN_5433_C4_S11" numberOfChannels="2" />
+		<NIFGenInstrument name="FGEN_5433_C4_S12" numberOfChannels="2" />
+		<NIDigitalPatternInstrument name="HSD_6571_C4_S02" numberOfChannels="32" group="s67" />
+		<NIDigitalPatternInstrument name="HSD_6571_C4_S03" numberOfChannels="32" group="Digital" />
+		<NIRelayDriverModule name="RELAY_2567_C4_S17" numberOfControlLines="64" />
+		<NIDCPowerInstrument name="SMU_4147_C1_S13" numberOfChannels="1">
+			<ChannelGroup name="smu1_s0" channels="0" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4147_C1_S14" numberOfChannels="1">
+			<ChannelGroup name="smu1_s1" channels="0" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4147_C1_S15" numberOfChannels="4">
+			<ChannelGroup name="ch0" channels="0" />
+			<ChannelGroup name="ch1" channels="1" />
+			<ChannelGroup name="ch2" channels="2" />
+			<ChannelGroup name="ch3" channels="3" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4147_C1_S16" numberOfChannels="4">
+			<ChannelGroup name="ch0" channels="0" />
+			<ChannelGroup name="ch1" channels="1" />
+			<ChannelGroup name="ch2" channels="2" />
+			<ChannelGroup name="ch3" channels="3" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4147_C2_S04" numberOfChannels="1">
+			<ChannelGroup name="smu1_s2" channels="0" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4147_C2_S05" numberOfChannels="1">
+			<ChannelGroup name="smu1_s3" channels="0" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4147_C2_S06" numberOfChannels="4">
+			<ChannelGroup name="ch0" channels="0" />
+			<ChannelGroup name="ch1" channels="1" />
+			<ChannelGroup name="ch2" channels="2" />
+			<ChannelGroup name="ch3" channels="3" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4147_C2_S07" numberOfChannels="4">
+			<ChannelGroup name="ch0" channels="0" />
+			<ChannelGroup name="ch1" channels="1" />
+			<ChannelGroup name="ch2" channels="2" />
+			<ChannelGroup name="ch3" channels="3" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4147_C3_S08" numberOfChannels="1">
+			<ChannelGroup name="smu1_s4" channels="0" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4147_C3_S09" numberOfChannels="1">
+			<ChannelGroup name="smu1_s5" channels="0" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4147_C3_S11" numberOfChannels="4">
+			<ChannelGroup name="ch0" channels="0" />
+			<ChannelGroup name="ch1" channels="1" />
+			<ChannelGroup name="ch2" channels="2" />
+			<ChannelGroup name="ch3" channels="3" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4147_C3_S12" numberOfChannels="4">
+			<ChannelGroup name="ch0" channels="0" />
+			<ChannelGroup name="ch1" channels="1" />
+			<ChannelGroup name="ch2" channels="2" />
+			<ChannelGroup name="ch3" channels="3" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4147_C4_S13" numberOfChannels="1">
+			<ChannelGroup name="smu1_s6" channels="0" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4147_C4_S14" numberOfChannels="1">
+			<ChannelGroup name="smu1_s7" channels="0" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4147_C4_S15" numberOfChannels="4">
+			<ChannelGroup name="ch0" channels="0" />
+			<ChannelGroup name="ch1" channels="1" />
+			<ChannelGroup name="ch2" channels="2" />
+			<ChannelGroup name="ch3" channels="3" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4147_C4_S16" numberOfChannels="4">
+			<ChannelGroup name="ch0" channels="0" />
+			<ChannelGroup name="ch1" channels="1" />
+			<ChannelGroup name="ch2" channels="2" />
+			<ChannelGroup name="ch3" channels="3" />
+		</NIDCPowerInstrument>
+	</Instruments>
+	<Pins>
+		<SystemPin name="VRelay" />
+		<DUTPin name="PPMU0" />
+		<DUTPin name="PPMU1" />
+		<DUTPin name="PPMU2" />
+		<DUTPin name="PPMU3" />
+		<DUTPin name="SMU0" />
+		<DUTPin name="SMU1" />
+		<DUTPin name="FGEN" />
+		<DUTPin name="V1" />
+		<DUTPin name="V2" />
+	</Pins>
+	<PinGroups></PinGroups>
+	<Relays>
+		<SystemRelay name="FGEN_A" />
+		<SystemRelay name="FGEN_B" />
+		<SystemRelay name="V1_A" />
+		<SystemRelay name="V2_B" />
+		<SystemRelay name="PPMU0_A" />
+		<SystemRelay name="PPMU1_B" />
+		<SystemRelay name="PPMU2_C" />
+		<SystemRelay name="PPMU3_D" />
+		<SystemRelay name="SMU0_A" />
+		<SystemRelay name="SMU1_E" />
+		<SystemRelay name="SMU0_C" />
+		<SystemRelay name="SMU1_D" />
+		<SystemRelay name="SMU1_B" />
+		<SystemRelay name="V2_A" />
+	</Relays>
+	<Sites>
+		<Site siteNumber="0" />
+		<Site siteNumber="1" />
+		<Site siteNumber="2" />
+		<Site siteNumber="3" />
+		<Site siteNumber="4" />
+		<Site siteNumber="5" />
+		<Site siteNumber="6" />
+		<Site siteNumber="7" />
+	</Sites>
+	<Connections>
+		<Connection pin="FGEN" siteNumber="0" instrument="FGEN_5433_C1_S11" channel="0" />
+		<Connection pin="FGEN" siteNumber="1" instrument="FGEN_5433_C1_S11" channel="1" />
+		<Connection pin="FGEN" siteNumber="2" instrument="FGEN_5433_C2_S11" channel="0" />
+		<Connection pin="FGEN" siteNumber="3" instrument="FGEN_5433_C2_S11" channel="1" />
+		<Connection pin="FGEN" siteNumber="4" instrument="FGEN_5433_C3_S06" channel="0" />
+		<Connection pin="FGEN" siteNumber="5" instrument="FGEN_5433_C3_S06" channel="1" />
+		<Connection pin="FGEN" siteNumber="6" instrument="FGEN_5433_C4_S11" channel="0" />
+		<Connection pin="FGEN" siteNumber="7" instrument="FGEN_5433_C4_S11" channel="1" />
+		<Connection pin="PPMU0" siteNumber="0" instrument="HSD_6571_C1_S02" channel="0" />
+		<Connection pin="PPMU0" siteNumber="1" instrument="HSD_6571_C1_S02" channel="15" />
+		<Connection pin="PPMU0" siteNumber="2" instrument="HSD_6571_C2_S02" channel="0" />
+		<Connection pin="PPMU0" siteNumber="3" instrument="HSD_6571_C2_S02" channel="15" />
+		<Connection pin="PPMU0" siteNumber="4" instrument="HSD_6571_C3_S02" channel="0" />
+		<Connection pin="PPMU0" siteNumber="5" instrument="HSD_6571_C3_S02" channel="15" />
+		<Connection pin="PPMU0" siteNumber="6" instrument="HSD_6571_C4_S02" channel="0" />
+		<Connection pin="PPMU0" siteNumber="7" instrument="HSD_6571_C4_S02" channel="15" />
+		<Connection pin="PPMU1" siteNumber="0" instrument="HSD_6571_C1_S02" channel="1" />
+		<Connection pin="PPMU1" siteNumber="1" instrument="HSD_6571_C1_S02" channel="16" />
+		<Connection pin="PPMU1" siteNumber="2" instrument="HSD_6571_C2_S02" channel="1" />
+		<Connection pin="PPMU1" siteNumber="3" instrument="HSD_6571_C2_S02" channel="16" />
+		<Connection pin="PPMU1" siteNumber="4" instrument="HSD_6571_C3_S02" channel="1" />
+		<Connection pin="PPMU1" siteNumber="5" instrument="HSD_6571_C3_S02" channel="16" />
+		<Connection pin="PPMU1" siteNumber="6" instrument="HSD_6571_C4_S02" channel="1" />
+		<Connection pin="PPMU1" siteNumber="7" instrument="HSD_6571_C4_S02" channel="16" />
+		<Connection pin="PPMU2" siteNumber="0" instrument="HSD_6571_C1_S02" channel="2" />
+		<Connection pin="PPMU2" siteNumber="1" instrument="HSD_6571_C1_S02" channel="17" />
+		<Connection pin="PPMU2" siteNumber="2" instrument="HSD_6571_C2_S02" channel="2" />
+		<Connection pin="PPMU2" siteNumber="3" instrument="HSD_6571_C2_S02" channel="17" />
+		<Connection pin="PPMU2" siteNumber="4" instrument="HSD_6571_C3_S02" channel="2" />
+		<Connection pin="PPMU2" siteNumber="5" instrument="HSD_6571_C3_S02" channel="17" />
+		<Connection pin="PPMU2" siteNumber="6" instrument="HSD_6571_C4_S02" channel="2" />
+		<Connection pin="PPMU2" siteNumber="7" instrument="HSD_6571_C4_S02" channel="17" />
+		<Connection pin="PPMU3" siteNumber="0" instrument="HSD_6571_C1_S02" channel="3" />
+		<Connection pin="PPMU3" siteNumber="1" instrument="HSD_6571_C1_S02" channel="18" />
+		<Connection pin="PPMU3" siteNumber="2" instrument="HSD_6571_C2_S02" channel="3" />
+		<Connection pin="PPMU3" siteNumber="3" instrument="HSD_6571_C2_S02" channel="18" />
+		<Connection pin="PPMU3" siteNumber="4" instrument="HSD_6571_C3_S02" channel="3" />
+		<Connection pin="PPMU3" siteNumber="5" instrument="HSD_6571_C3_S02" channel="18" />
+		<Connection pin="PPMU3" siteNumber="6" instrument="HSD_6571_C4_S02" channel="3" />
+		<Connection pin="PPMU3" siteNumber="7" instrument="HSD_6571_C4_S02" channel="18" />
+		<Connection pin="SMU0" siteNumber="0" instrument="SMU_4137_C1_S04" channel="0" />
+		<Connection pin="SMU0" siteNumber="1" instrument="SMU_4137_C1_S05" channel="0" />
+		<Connection pin="SMU0" siteNumber="2" instrument="SMU_4137_C2_S13" channel="0" />
+		<Connection pin="SMU0" siteNumber="3" instrument="SMU_4137_C2_S14" channel="0" />
+		<Connection pin="SMU0" siteNumber="4" instrument="SMU_4137_C3_S13" channel="0" />
+		<Connection pin="SMU0" siteNumber="5" instrument="SMU_4137_C3_S14" channel="0" />
+		<Connection pin="SMU0" siteNumber="6" instrument="SMU_4137_C4_S04" channel="0" />
+		<Connection pin="SMU0" siteNumber="7" instrument="SMU_4137_C4_S05" channel="0" />
+		<Connection pin="SMU1" siteNumber="0" instrument="SMU_4147_C1_S13" channel="0" />
+		<Connection pin="SMU1" siteNumber="1" instrument="SMU_4147_C1_S14" channel="0" />
+		<Connection pin="SMU1" siteNumber="2" instrument="SMU_4147_C2_S04" channel="0" />
+		<Connection pin="SMU1" siteNumber="3" instrument="SMU_4147_C2_S05" channel="0" />
+		<Connection pin="SMU1" siteNumber="4" instrument="SMU_4147_C3_S08" channel="0" />
+		<Connection pin="SMU1" siteNumber="5" instrument="SMU_4147_C3_S09" channel="0" />
+		<Connection pin="SMU1" siteNumber="6" instrument="SMU_4147_C4_S13" channel="0" />
+		<Connection pin="SMU1" siteNumber="7" instrument="SMU_4147_C4_S14" channel="0" />
+		<Connection pin="V1" siteNumber="0" instrument="SCOPE_5172_C1_S08" channel="0" />
+		<Connection pin="V1" siteNumber="1" instrument="SCOPE_5172_C1_S08" channel="4" />
+		<Connection pin="V1" siteNumber="2" instrument="SCOPE_5172_C2_S08" channel="0" />
+		<Connection pin="V1" siteNumber="3" instrument="SCOPE_5172_C2_S08" channel="4" />
+		<Connection pin="V1" siteNumber="4" instrument="SCOPE_5172_C3_S04" channel="0" />
+		<Connection pin="V1" siteNumber="5" instrument="SCOPE_5172_C3_S04" channel="4" />
+		<Connection pin="V1" siteNumber="6" instrument="SCOPE_5172_C4_S08" channel="0" />
+		<Connection pin="V1" siteNumber="7" instrument="SCOPE_5172_C4_S08" channel="4" />
+		<Connection pin="V2" siteNumber="0" instrument="SCOPE_5172_C1_S08" channel="1" />
+		<Connection pin="V2" siteNumber="1" instrument="SCOPE_5172_C1_S08" channel="5" />
+		<Connection pin="V2" siteNumber="2" instrument="SCOPE_5172_C2_S08" channel="1" />
+		<Connection pin="V2" siteNumber="3" instrument="SCOPE_5172_C2_S08" channel="5" />
+		<Connection pin="V2" siteNumber="4" instrument="SCOPE_5172_C3_S04" channel="1" />
+		<Connection pin="V2" siteNumber="5" instrument="SCOPE_5172_C3_S04" channel="5" />
+		<Connection pin="V2" siteNumber="6" instrument="SCOPE_5172_C4_S08" channel="1" />
+		<Connection pin="V2" siteNumber="7" instrument="SCOPE_5172_C4_S08" channel="5" />
+		<SystemConnection pin="VRelay" instrument="PPS_4110_C2_S18" channel="0" />
+		<SystemRelayConnection relay="FGEN_A" relayDriverModule="RELAY_2567_C1_S17" controlLine="K0" />
+		<SystemRelayConnection relay="FGEN_B" relayDriverModule="RELAY_2567_C1_S17" controlLine="K1" />
+		<SystemRelayConnection relay="PPMU0_A" relayDriverModule="RELAY_2567_C3_S17" controlLine="K0" />
+		<SystemRelayConnection relay="PPMU1_B" relayDriverModule="RELAY_2567_C3_S17" controlLine="K1" />
+		<SystemRelayConnection relay="PPMU2_C" relayDriverModule="RELAY_2567_C3_S17" controlLine="K2" />
+		<SystemRelayConnection relay="PPMU3_D" relayDriverModule="RELAY_2567_C3_S17" controlLine="K3" />
+		<SystemRelayConnection relay="SMU0_A" relayDriverModule="RELAY_2567_C4_S17" controlLine="K0" />
+		<SystemRelayConnection relay="SMU0_C" relayDriverModule="RELAY_2567_C4_S17" controlLine="K2" />
+		<SystemRelayConnection relay="SMU1_B" relayDriverModule="RELAY_2567_C3_S18" controlLine="K2" />
+		<SystemRelayConnection relay="SMU1_D" relayDriverModule="RELAY_2567_C4_S17" controlLine="K3" />
+		<SystemRelayConnection relay="SMU1_E" relayDriverModule="RELAY_2567_C4_S17" controlLine="K1" />
+		<SystemRelayConnection relay="V1_A" relayDriverModule="RELAY_2567_C3_S18" controlLine="K0" />
+		<SystemRelayConnection relay="V2_A" relayDriverModule="RELAY_2567_C3_S18" controlLine="K3" />
+		<SystemRelayConnection relay="V2_B" relayDriverModule="RELAY_2567_C3_S18" controlLine="K1" />
+	</Connections>
+</PinMap>

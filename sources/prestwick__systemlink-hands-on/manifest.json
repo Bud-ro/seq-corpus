@@ -1,0 +1,139 @@
+{
+ "repo": "prestwick/systemlink-hands-on",
+ "url": "https://github.com/prestwick/systemlink-hands-on",
+ "commit": "50dabc8d1f18c22d3cc6af27d8d60391b93f8dcb",
+ "license": "MIT",
+ "licenseFile": "LICENSE",
+ "fetched": "2026-10-11",
+ "files": [
+  {
+   "path": "machine-monitoring/RT Loop - Publish IO.vi",
+   "bytes": 34904,
+   "sha256": "bc13a99b09667f3e6b772c2ed60a0cda87d174eec61190a9f9f8a1d370d24d9e",
+   "via": "extension"
+  },
+  {
+   "path": "machine-monitoring/machine-monitoring.lvproj",
+   "bytes": 86914,
+   "sha256": "24ffc3ada4906b70f77c88b519e65794ee95bf709ec2267e26eac192e840ae30",
+   "via": "extension"
+  },
+  {
+   "path": "test-monitoring/Attach Test Files.seq",
+   "bytes": 6079,
+   "sha256": "30480136fa17687a34b626cfbd28af74af25414dd0e434c634019b22df54d6dd",
+   "via": "extension"
+  },
+  {
+   "path": "test-monitoring/LabVIEW/Attach Test Files.lvlib",
+   "bytes": 1194,
+   "sha256": "91302a9a151c1b9f351b9ee0c83977920e863116604c282bd1c799cb1e43ef28",
+   "via": "extension"
+  },
+  {
+   "path": "test-monitoring/LabVIEW/Attach Test Files.lvproj",
+   "bytes": 43812,
+   "sha256": "0c8c47fa36e56ff512f3a8cc35dee7fe0c408e65283098229fb0586009504212",
+   "via": "extension"
+  },
+  {
+   "path": "test-monitoring/LabVIEW/Waveform Test.vi",
+   "bytes": 109109,
+   "sha256": "6031ed525d4abda7e420629bd451070419455e9c57bf7d850033c39df9598ce6",
+   "via": "extension"
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 11,
+   "sha256": "ac244209df6370a954b10db85f1630454dd22ca7e616f351cad19d49e8aa6ce1",
+   "via": "tree"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1067,
+   "sha256": "4d20decd12e281f607f0bf5fd2fe7486d5940425c7a9bd96a8f38791bef92b38",
+   "via": "tree"
+  },
+  {
+   "path": "README.md",
+   "bytes": 61,
+   "sha256": "d8289434f2fe44fdd359ea0f106b5b9eae603f7af06ef030833c35b385962ea6",
+   "via": "tree"
+  },
+  {
+   "path": "machine-monitoring/README.md",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "via": "tree"
+  },
+  {
+   "path": "machine-monitoring/embedded-monitoring.lvlps",
+   "bytes": 82,
+   "sha256": "4603d086435f69c80a6b9f27d42d5a8e20d5dbc1f9ad1d40f70ca848447e58b8",
+   "via": "tree"
+  },
+  {
+   "path": "machine-monitoring/machine-monitoring.aliases",
+   "bytes": 99,
+   "sha256": "29b2f6eddfab048cedebc64af51f70704780768f4fb30a4e58139ae99633493e",
+   "via": "tree"
+  },
+  {
+   "path": "machine-monitoring/machine-monitoring.lvlps",
+   "bytes": 82,
+   "sha256": "cd673994738ffc39fe2626451bff0e95ae28689fa77c6628f4e2afe98af2b455",
+   "via": "tree"
+  },
+  {
+   "path": "test-monitoring/README.md",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "via": "tree"
+  },
+  {
+   "path": "test-monitoring/Test Station Manager.fp",
+   "bytes": 2874,
+   "sha256": "2224a3a266fb6a8832380488b5aaf2c73b5fb264ec315fc3aca28b90da2f7814",
+   "via": "tree"
+  },
+  {
+   "path": "test-monitoring/Test Station.fpt",
+   "bytes": 7847,
+   "sha256": "9fc0585f3e67e045fb1620205665396fa65a2e1b4934e4f13bf0ec98e793ec14",
+   "via": "tree"
+  }
+ ],
+ "skipped": [],
+ "external": [
+  "<helpdir>\\lvexpress.chm",
+  "<vilib>\\Skyline\\Configuration\\Configuration AMQP_class\\NI Skyline Configuration AMQP.lvclass",
+  "<vilib>\\Skyline\\Configuration\\Configuration AMQP_class\\Open Configuration AMQP.vi",
+  "<vilib>\\Skyline\\Configuration\\Configuration HTTP_class\\NI Skyline Configuration HTTP.lvclass",
+  "<vilib>\\Skyline\\Configuration\\Configuration HTTP_class\\Open Configuration API Key.vi",
+  "<vilib>\\Skyline\\Configuration\\Configuration_class\\NI Skyline Configuration.lvclass",
+  "<vilib>\\Skyline\\Configuration\\Configuration_class\\Open Configuration.vi",
+  "<vilib>\\Skyline\\File\\File\\NI Skyline File.lvclass",
+  "<vilib>\\Skyline\\File\\File\\Send File.vi",
+  "<vilib>\\Skyline\\File\\File\\Send.vi",
+  "<vilib>\\Skyline\\Tag\\Shared\\NI Skyline Tag.lvlib",
+  "<vilib>\\Skyline\\Tag\\Shared\\typedefs\\DataType.ctl",
+  "<vilib>\\Skyline\\Tag\\Shared\\typedefs\\Retention Type.ctl",
+  "<vilib>\\Skyline\\Tag\\Wrapper\\Wrapper AMQP_class\\NI Skyline Tag AMQP.lvclass",
+  "<vilib>\\Skyline\\Tag\\Wrapper\\Wrapper AMQP_class\\Open Tag AMQP.vi",
+  "<vilib>\\Skyline\\Tag\\Wrapper\\Wrapper_class\\Generate Tag Cluster (DBL) 2.vi",
+  "<vilib>\\Skyline\\Tag\\Wrapper\\Wrapper_class\\Generate Tag Cluster 2.vi",
+  "<vilib>\\Skyline\\Tag\\Wrapper\\Wrapper_class\\Multi Write 2.vi",
+  "<vilib>\\Skyline\\Tag\\Wrapper\\Wrapper_class\\NI Skyline Tag.lvclass",
+  "<vilib>\\Skyline\\Tag\\Wrapper\\Wrapper_class\\Open Tag.vi",
+  "<vilib>\\express\\express input\\SimulateSignalBlock.llb\\Ex_Inst_Simulate Signal.vi",
+  "<vilib>\\express\\express input\\SimulateSignalBlock.llb\\subSigGeneratorBlock.vi",
+  "<vilib>\\express\\express input\\SimulateSignalConfig.llb\\Configure Simulate Signal.vi",
+  "<vilib>\\express\\express output\\ExFileWriteBlock.llb\\Ex_Inst_Write LabVIEW Measurement File.vi",
+  "<vilib>\\express\\express output\\ExFileWriteBlock.llb\\ex_subFileWrite.vi",
+  "<vilib>\\express\\express output\\ExFileWriteConfig.llb\\Configure Write LabVIEW Measurement File.vi",
+  "<vilib>\\express\\express shared\\ExFile.llb\\ex_FileFormats.ctl",
+  "<vilib>\\express\\express shared\\ExFile.llb\\ex_propertySource.ctl",
+  "<vilib>\\express\\express shared\\ExFile.llb\\ex_userDefProperty.ctl",
+  "<vilib>\\express\\express shared\\ex_EditUserDefinedProperties\\usiDataType.ctl"
+ ]
+}

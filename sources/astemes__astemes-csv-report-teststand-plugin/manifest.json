@@ -1,0 +1,786 @@
+{
+ "repo": "astemes/astemes-csv-report-teststand-plugin",
+ "url": "https://github.com/astemes/astemes-csv-report-teststand-plugin",
+ "commit": "f13915451f8f874b8a7c34f2d80778d61b509ed8",
+ "license": "MIT",
+ "licenseFile": "LICENSE",
+ "fetched": "2026-10-11",
+ "files": [
+  {
+   "path": "sandbox/Test Sequence.seq",
+   "bytes": 6989,
+   "sha256": "375fd4a4c3fe67f3b81b9e88e5ed36f715448ed266b3d9f81453da27fde07961",
+   "via": "extension"
+  },
+  {
+   "path": "source/Astemes CSV Report Plugin.lvproj",
+   "bytes": 25960,
+   "sha256": "c9dbd7d67a22d4e0a7b607a671b97d43c6875adc14b8b777ba29cb855f29212f",
+   "via": "extension"
+  },
+  {
+   "path": "source/Astemes_CSVReportGenerator.seq",
+   "bytes": 18446,
+   "sha256": "76f3be2629247cb5f6b3d48d8cda68e05fb921bbeb5f9ac8e8abf7ae8d451bbe",
+   "via": "extension"
+  },
+  {
+   "path": "source/Astemes_CSVReportGenerator/TSContext Configuration/Create.vi",
+   "bytes": 21790,
+   "sha256": "d66b596eefdebf3c91987c0e3c850dc8dda489238526c090c06f5b11537866b5",
+   "via": "extension"
+  },
+  {
+   "path": "source/Astemes_CSVReportGenerator/TSContext Configuration/Read Boolean.vi",
+   "bytes": 27912,
+   "sha256": "6a4c4d70f40af008212b865c16452d87b8d0ae79c02c00411eb2025810ee5688",
+   "via": "extension"
+  },
+  {
+   "path": "source/Astemes_CSVReportGenerator/TSContext Configuration/Read Double.vi",
+   "bytes": 27815,
+   "sha256": "bd797e00b44b4c7cdce014ffa5980a4cdb84271ba2f4a979ec3d5758efba613f",
+   "via": "extension"
+  },
+  {
+   "path": "source/Astemes_CSVReportGenerator/TSContext Configuration/Read I32.vi",
+   "bytes": 27892,
+   "sha256": "954f78eef873d173d68e1712b06844809d64b0d9aebd73fde80e370a7b03b93e",
+   "via": "extension"
+  },
+  {
+   "path": "source/Astemes_CSVReportGenerator/TSContext Configuration/Read Path.vi",
+   "bytes": 27993,
+   "sha256": "9194b73b7633a88a0e8062b4f0a92c0c45dcc02ddccb2fd054a0bd8f473c59aa",
+   "via": "extension"
+  },
+  {
+   "path": "source/Astemes_CSVReportGenerator/TSContext Configuration/Read String.vi",
+   "bytes": 27679,
+   "sha256": "8b903a4babaf9ab64bc07044ac9de29dc5b69af2977945a36769c31aa0683f41",
+   "via": "extension"
+  },
+  {
+   "path": "source/Astemes_CSVReportGenerator/TSContext Configuration/Read U32.vi",
+   "bytes": 27916,
+   "sha256": "6495655b9748a9019d5d9f3099bb2b35c9324124049570f316ee988ce8769b09",
+   "via": "extension"
+  },
+  {
+   "path": "source/Astemes_CSVReportGenerator/TSContext Configuration/TSContext Configuration.lvclass",
+   "bytes": 45594,
+   "sha256": "556d9fd671f87ed2b4ec6d6b10d1423a9d22a16e4fd70d7d760e0f6d3256b05a",
+   "via": "extension"
+  },
+  {
+   "path": "source/Astemes_CSVReportPlugin.lvlib",
+   "bytes": 1909,
+   "sha256": "e2e63d46667e5114384bee7aea36464bf6a04f2bdd969165ab7253d6b9c5f406",
+   "via": "extension"
+  },
+  {
+   "path": "source/Configuration/Configuration.lvclass",
+   "bytes": 47897,
+   "sha256": "1ba98e9e1710b84523996b09df8d8c1b3fd4a422c80514965f7980079a762908",
+   "via": "extension"
+  },
+  {
+   "path": "source/Configuration/Read Methods/Read Boolean.vi",
+   "bytes": 25224,
+   "sha256": "1feee091c902ed859428a991e12d7eb19ccbc0daba4f06694efc824bc4da9e86",
+   "via": "extension"
+  },
+  {
+   "path": "source/Configuration/Read Methods/Read Double.vi",
+   "bytes": 25143,
+   "sha256": "0e4b0248625bc48683dc8e3c115247ddc7b852067002e1b6b5bc33e7c3b03726",
+   "via": "extension"
+  },
+  {
+   "path": "source/Configuration/Read Methods/Read I32.vi",
+   "bytes": 25124,
+   "sha256": "4dcd5648cf1799dbc84632c0339a336e12cf667b221923ad671610cf35ec683c",
+   "via": "extension"
+  },
+  {
+   "path": "source/Configuration/Read Methods/Read Path.vi",
+   "bytes": 25229,
+   "sha256": "354df9da0bc9fd3bbec3b3d07decbee5726e726ecb178821a89a459d640b92a0",
+   "via": "extension"
+  },
+  {
+   "path": "source/Configuration/Read Methods/Read String.vi",
+   "bytes": 24983,
+   "sha256": "54a9ac7a04af936f321c5329ac795246073204272d97d87909547f6e7549bce9",
+   "via": "extension"
+  },
+  {
+   "path": "source/Configuration/Read Methods/Read U32.vi",
+   "bytes": 25132,
+   "sha256": "ed59d13d334e460d4616b4d7cf8ad75bd4ef5070efcd0c40fba3d9e82b89d574",
+   "via": "extension"
+  },
+  {
+   "path": "source/Configuration/Write Methods/Write Boolean.vi",
+   "bytes": 24929,
+   "sha256": "e793529e831fd6824cdf13c00b0ed1b32c42f058352541d6424a70ed7b6423b4",
+   "via": "extension"
+  },
+  {
+   "path": "source/Configuration/Write Methods/Write Double.vi",
+   "bytes": 24876,
+   "sha256": "8d8e2a05701737c2bf66728fd3d0960d7d81d8f4e2397e5ad8f15bec7c94dee4",
+   "via": "extension"
+  },
+  {
+   "path": "source/Configuration/Write Methods/Write I32.vi",
+   "bytes": 24861,
+   "sha256": "2abbe90bd8c12241e892c77790d454d45994f13474c1e9d3fb9c6f5b1d0b69a5",
+   "via": "extension"
+  },
+  {
+   "path": "source/Configuration/Write Methods/Write Path.vi",
+   "bytes": 24942,
+   "sha256": "99e5b81dfa68a5d385324e07cb03ceea01ad83348cf2d6aad5ad836f1024cc28",
+   "via": "extension"
+  },
+  {
+   "path": "source/Configuration/Write Methods/Write String.vi",
+   "bytes": 24752,
+   "sha256": "cd4a4fac3b9b48c8cb5d5ca38a34b1e3795e253c8a252d8cce2c2beaf85f24d3",
+   "via": "extension"
+  },
+  {
+   "path": "source/Configuration/Write Methods/Write U32.vi",
+   "bytes": 28157,
+   "sha256": "6312ef82da7a1b0b2b41e934818fb3c2751600cf016605a36cb95b4e11afc821",
+   "via": "extension"
+  },
+  {
+   "path": "source/Options Dialog/Options Dialog.lvlib",
+   "bytes": 1448,
+   "sha256": "755757fb35355d0a323419f6f19a7ae2ee3ebd69d08b3869ebc0bb01a0713fcc",
+   "via": "extension"
+  },
+  {
+   "path": "source/Options Dialog/Options Dialog.vi",
+   "bytes": 21558,
+   "sha256": "298cb057b3ea3876d868ee56afcd886977aba87cb3834c9f34780d620b1325f3",
+   "via": "extension"
+  },
+  {
+   "path": "source/Report Generator/Add Result.vi",
+   "bytes": 24398,
+   "sha256": "dfd5fc23680c1d10b54fbbc2062bc470bd10f2e7abce199a1b87ea4f66f28426",
+   "via": "extension"
+  },
+  {
+   "path": "source/Report Generator/New Report.vi",
+   "bytes": 20062,
+   "sha256": "40c1660e4f84cbd97a494d3ba97a894b0288afa527e29e434a7a7a3440db1bef",
+   "via": "extension"
+  },
+  {
+   "path": "source/Report Generator/Private/Reference.vi",
+   "bytes": 4861,
+   "sha256": "b7aa9635e1ad5e33ef1fd50e184764fdeae0a0bf00817b31c99bedf26c39cc27",
+   "via": "extension"
+  },
+  {
+   "path": "source/Report Generator/Report Generator.lvlib",
+   "bytes": 1767,
+   "sha256": "b5127cf30c73bd16257934bbee0ba056d5739172c266b6b318f4edfa0613769c",
+   "via": "extension"
+  },
+  {
+   "path": "source/Report Generator/Save Report.vi",
+   "bytes": 21879,
+   "sha256": "6818f42a696385537ca27b9ea43ca107d5d2f89a506f4a27dad99958782d45f3",
+   "via": "extension"
+  },
+  {
+   "path": "source/Test Result Handler/Add Result.vi",
+   "bytes": 27182,
+   "sha256": "0afec9b3fb33f13c067cd1c9f14bf0f96d38616b1c48cbea0c24fe2f90d88791",
+   "via": "extension"
+  },
+  {
+   "path": "source/Test Result Handler/Additional Results.vi",
+   "bytes": 24618,
+   "sha256": "05e23c45275dc185b3301398bd1c82f3bfaf323cdc9df7c84ac8ebfb9cedaf26",
+   "via": "extension"
+  },
+  {
+   "path": "source/Test Result Handler/Column Headers.vi",
+   "bytes": 46950,
+   "sha256": "43c0f933991151ba3c018d94f9a001de666353e556799c4bbf2f1e00d546d0d1",
+   "via": "extension"
+  },
+  {
+   "path": "source/Test Result Handler/Create.vi",
+   "bytes": 21638,
+   "sha256": "5218b4b57aa567958fce2fe81bde28a54f94a11244ef3facb6be615a363d8765",
+   "via": "extension"
+  },
+  {
+   "path": "source/Test Result Handler/Get Report String.vi",
+   "bytes": 24229,
+   "sha256": "a5c6e8d9867ef19dab4f95df30b730bb3042dd35fa2ff3c19c921485d646378c",
+   "via": "extension"
+  },
+  {
+   "path": "source/Test Result Handler/Initialize.vi",
+   "bytes": 22658,
+   "sha256": "4cd91e57fe7743d1c2f5ca48dbd54617c2c8290077f1af4cc81461c6830f6e72",
+   "via": "extension"
+  },
+  {
+   "path": "source/Test Result Handler/Map Column Indices.vi",
+   "bytes": 15334,
+   "sha256": "4e37800922b1078e73537e27b41540787d0309dcfd59d86d912d930f79a0f82b",
+   "via": "extension"
+  },
+  {
+   "path": "source/Test Result Handler/Private/Add Common Data.vi",
+   "bytes": 19319,
+   "sha256": "bf76bee7d21999d1d94648cad94bbbe7eeec489008241ecae3025fdb3beea618",
+   "via": "extension"
+  },
+  {
+   "path": "source/Test Result Handler/Private/Add Numeric Comparators.vi",
+   "bytes": 16027,
+   "sha256": "4b91079bd141ef4b832b708ad1a0d70a7881213ba001a0af6c60288816790966",
+   "via": "extension"
+  },
+  {
+   "path": "source/Test Result Handler/Private/Add Step Type Specific Results.vi",
+   "bytes": 25302,
+   "sha256": "5ef974269d68c84e794c3023f9941f47152e63a42c4b666672e0179ee7b9da25",
+   "via": "extension"
+  },
+  {
+   "path": "source/Test Result Handler/Private/Column Separator.vi",
+   "bytes": 11348,
+   "sha256": "d114df55c3494e330c79978d05e33ff63aadd1abef193f546247df7a81e06659",
+   "via": "extension"
+  },
+  {
+   "path": "source/Test Result Handler/Private/Columns.ctl",
+   "bytes": 12048,
+   "sha256": "339532dad39c007c4b9647390bc695c2208028d2dd75f9bf27938b98557e4e3b",
+   "via": "extension"
+  },
+  {
+   "path": "source/Test Result Handler/Private/Format Double Numeric.vi",
+   "bytes": 20313,
+   "sha256": "f155f355e4ee46dd005730e9cfdb6c6111c2a5cdcd0ddb43ffb705a11ea67d7e",
+   "via": "extension"
+  },
+  {
+   "path": "source/Test Result Handler/Private/Format I32 Numeric.vi",
+   "bytes": 18202,
+   "sha256": "0d9a0b97b82c8e376559d163a57f74d6d13e2d6ce43c78123f7d3386192c2d84",
+   "via": "extension"
+  },
+  {
+   "path": "source/Test Result Handler/Private/Get Empty Row.vi",
+   "bytes": 14781,
+   "sha256": "da3c7b7b7b6f4c6d2f5ed456b7e3d749462fbd7330804d05c11bb4cf59e248fa",
+   "via": "extension"
+  },
+  {
+   "path": "source/Test Result Handler/Private/Parse Step Type.vi",
+   "bytes": 20027,
+   "sha256": "237bd98bf21b2214c243724c3e4d2318dad8cd664b08633f8c90703ce930f3f7",
+   "via": "extension"
+  },
+  {
+   "path": "source/Test Result Handler/Private/Set Column Value.vi",
+   "bytes": 14916,
+   "sha256": "e635b8bbb5e2b4d5598ad4c383aca634ff9849bd17d865e5e7d2d75157c771ba",
+   "via": "extension"
+  },
+  {
+   "path": "source/Test Result Handler/Private/Step Types.ctl",
+   "bytes": 12015,
+   "sha256": "9ea5d3128f9d86f51a25501728fc048640f129ed02d801df5afe5458f534b722",
+   "via": "extension"
+  },
+  {
+   "path": "source/Test Result Handler/TestStand Result Handler.lvclass",
+   "bytes": 50431,
+   "sha256": "2c45c89ed902f62be4160479ea0b7449239c3c86a111db9bf9297597851c5f6c",
+   "via": "extension"
+  },
+  {
+   "path": "source/Test Result Handler/TestStand Result.ctl",
+   "bytes": 15573,
+   "sha256": "536cc1e8631dffa749f71018ea87eb52169a9919ee14f87470ff4caa60fab406",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/Close Config.vi",
+   "bytes": 24384,
+   "sha256": "14dd00eab9bf697719a1d13fbdac2eaa3743e04ebb5d06c3f9efbd56d07872db",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/Create.vi",
+   "bytes": 22246,
+   "sha256": "7abbd114359a9788e383ae201ea33f12afa6c0806ca1e89331882ce185417fae",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/Get All Keys.vi",
+   "bytes": 28340,
+   "sha256": "066f8fb58719b6843a716237aaeb72b7b2ee5e086198977c37549ebc80cc5166",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/Mock Configuration.lvclass",
+   "bytes": 56747,
+   "sha256": "3f89374acb961d7318155888e4a336937ce812897d446905259847b95202de0b",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/Open Config.vi",
+   "bytes": 24379,
+   "sha256": "d883afccfb971be5416e5424bd7d315b04e1a982c3d3c0ef3ba8b54181b9e0ed",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/Read Boolean.vi",
+   "bytes": 29488,
+   "sha256": "420889eeb3091100e822f5d01dab61f7fc1ba59acecacdd4761ec9d63195e718",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/Read Double.vi",
+   "bytes": 29395,
+   "sha256": "a4fac765516ec80b74de880b1be40649442e93305ede9fb4bd8843f49d66fbbd",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/Read I32.vi",
+   "bytes": 29600,
+   "sha256": "a0997d15d5433debc438634a070a746b61d22c2d9807a2887976deb4329548f6",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/Read Path.vi",
+   "bytes": 29493,
+   "sha256": "21f4f8906a7b2bc2fb5420e35ba46a90437cfc9d87aa3ffba3ff1d5983ca8c51",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/Read String.vi",
+   "bytes": 29247,
+   "sha256": "1698a24e217cca0871e5a8bd301138d8b2165456d1a03c6655c01adfe162a406",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/Read U32.vi",
+   "bytes": 29620,
+   "sha256": "f29b8f1c81af772ee2da25512cb5751fbd72f75562ff484b96c4d4dfbed7744a",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/When Close Config.vi",
+   "bytes": 17973,
+   "sha256": "546aa5585c8784308a150bf8e9b5df8e1251fb5f6ed1505046683dda3096de6d",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/When Get All Keys.vi",
+   "bytes": 18837,
+   "sha256": "67c68834350247e962d9b3927bba46a2616a2acd3d1f78e8fd4ee68bb45ac4f8",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/When Open Config.vi",
+   "bytes": 17964,
+   "sha256": "c232d75f3474a1655aa46c3b4ef128b03dfa0914e6541f8912de9e81baf35c59",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/When Read Boolean.vi",
+   "bytes": 18561,
+   "sha256": "913eece48e1aa3c4437c9f26282e935d422912222913fe05daa2a0e6f429dc98",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/When Read Double.vi",
+   "bytes": 18332,
+   "sha256": "985a1ac52e39f596dff25f6bf24ff5e7cdc874f6faecd5afd8e30326a7cf7046",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/When Read I32.vi",
+   "bytes": 18797,
+   "sha256": "6633244b9f05f71e57412c4f6b36fc1a059246bb0bbae209196d4587ea5591e9",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/When Read Path.vi",
+   "bytes": 18694,
+   "sha256": "a764b1291a5ba153919aa08a35bd13171df4253f2c1b70b07814146e7a5cbfee",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/When Read String.vi",
+   "bytes": 18252,
+   "sha256": "46b185eebf82c784b7b0ae9b85724ccdfaa54e6b0ba6e222531668c459ad87c2",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/When Read U32.vi",
+   "bytes": 18805,
+   "sha256": "2a5f140e612e6fc8341dc148fae550b5a3956ffe6446e3f9c53eb893c60720b2",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/When Write Boolean.vi",
+   "bytes": 17810,
+   "sha256": "8312b7a63d0a27b565da2a53dfff59fe330c2d6fe90045bcbfeb8a0e4977e5a9",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/When Write Double.vi",
+   "bytes": 17809,
+   "sha256": "a73f1b34a56293b24383f21ff525e9a2e7426c6a2d63d997472b891a4b909be8",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/When Write I32.vi",
+   "bytes": 17802,
+   "sha256": "0e4a78cf3bb0ee5336288d863ecf72dc07ae89449539bc82320316e9c4241d95",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/When Write Path.vi",
+   "bytes": 17803,
+   "sha256": "e3208accfa99aa0f333029e55b36b3b8205c63bb8878d4b1c60c062c4cdaaf68",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/When Write String.vi",
+   "bytes": 17813,
+   "sha256": "0d487f240ebdf4ec8ca41e49b65e109ecfac4362e1859a2f97466955c0d7507c",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/When Write U32.vi",
+   "bytes": 17806,
+   "sha256": "06fb6ea7136b3aec19468f3216bb2513a5b8b56b5423386093d8785c83f3c9fe",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/Write Boolean.vi",
+   "bytes": 28941,
+   "sha256": "e8db92150ca22f89ddeebf3566f393663e4ce43eb276fed43afcde22b13f10a6",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/Write Double.vi",
+   "bytes": 28888,
+   "sha256": "2970c8dc0d7216080615be18a910ac0b7c6efef163a701ccd9cbcdca79dbc5e7",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/Write I32.vi",
+   "bytes": 28865,
+   "sha256": "c02805586790970eb65e5e5e0b5ba31129500fe23cda6120931dd07ad74af03b",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/Write Path.vi",
+   "bytes": 28962,
+   "sha256": "575d7fcadbe5016bf15b6628202aec3136974c29aa21826bd97517e3939a8751",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/Write String.vi",
+   "bytes": 28764,
+   "sha256": "9c9fa9a69c5abe3872dee0ac97ba4bac8bb5d782b2d4591e7e2968ff71a770df",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Mock Configuration/Write U32.vi",
+   "bytes": 32161,
+   "sha256": "2b1bfcbce15466391921ea7527e50b9939d6d65e6db28b8d857bfb74588b5b56",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Default Test Result.vi",
+   "bytes": 13255,
+   "sha256": "fc2cee390beda3bce814077d13e6a660ec605d675dcf3812bfa5bafe848b704f",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Report CSV Content Test.lvclass",
+   "bytes": 36440,
+   "sha256": "fe9e1516b0feec6da26f5f2337c2cdccde262ce141b22e574a732a51cfde051f",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test Column Headers in Report.vi",
+   "bytes": 65165,
+   "sha256": "857951e481883555ff98e864459002eb44e9ac4c7c31bfd26dd31ba84410d381",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test Comma in Step Name not in Report.vi",
+   "bytes": 64025,
+   "sha256": "b300fe8cc1a20199a09806b1ee5bbdad8fdae51a5ce71d12410571e0d276b6ff",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test Ignore Flow Control Steps.vi",
+   "bytes": 64014,
+   "sha256": "92e4aa239ff9eb05c4c7b7cee1569c89227462536e700bee45d5f0ce9d651da2",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test Numeric Lower Compare EQ in Report.vi",
+   "bytes": 69191,
+   "sha256": "139f8d597d0643c92cf2f601da938d73088994ca41b6005a7b7ff23fa50cbac0",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test Numeric Lower Compare GELE in Report.vi",
+   "bytes": 69205,
+   "sha256": "c519a8e23c173445a81adc5812d2e7a2c7f784fa970a77d57e926e077ab24a8f",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test Numeric Lower Compare GT in Report.vi",
+   "bytes": 90919,
+   "sha256": "f04f6fa21c6028aa8de90ed01639d69b5eafe3dc495a06859bf15f81abef1a76",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test Numeric Lower Compare GTLE in Report.vi",
+   "bytes": 69201,
+   "sha256": "6ae5fe1c571581c57c861207350069466916dfd9833d9b6a3f2dd1d4be8f4b1b",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test Numeric Lower Compare NE in Report.vi",
+   "bytes": 69191,
+   "sha256": "59d2d541b7dd71db4e3451f57b1825ec7308a8f3d92bc212d521049143d5b266",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test Numeric Lower Limit in Report.vi",
+   "bytes": 69314,
+   "sha256": "a2892c03b13503dab7e3a6d0c179ff42473ca0a7739a9457cd546cd8fe15554f",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test Numeric Measured Value Properly Formatted for Small numbers.vi",
+   "bytes": 17776,
+   "sha256": "5c25b74ade70b4ec38e45abfd7dc0e2e113d1eb55fc57f08285a48e89c62472d",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test Numeric Measured Value in Report.vi",
+   "bytes": 18437,
+   "sha256": "43cc78184dcaf411bbee4784526a89b64e33dcff891e1921434725c84b214dfd",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test Numeric Upper Compare GELE in Report.vi",
+   "bytes": 69945,
+   "sha256": "d6c6b86828b036b37390d4ca740457aa12874fb8969a01147ea3c7fce6d0e0ba",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test Numeric Upper Compare GELT in Report.vi",
+   "bytes": 70393,
+   "sha256": "f5705d1ac100f75e3d19edf146b4fdc3c847c482f6c2941ffb4c05b07edc37a9",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test Numeric Upper Limit in Report.vi",
+   "bytes": 89978,
+   "sha256": "734d81e07e5fcacf705727c0e86a384931d2e35e6c3b9806adc3a870fd95b83e",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test Report Text Escapes Comma.vi",
+   "bytes": 19402,
+   "sha256": "d195fd782525bd51327178d12b5cdbee6d66f0a02141457a53f492f7c8bf957c",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test Report Text Escapes Line Feed.vi",
+   "bytes": 33706,
+   "sha256": "3c643e228445601cd9c84c1b815076fa29358c94b33e56e36b3e3d68cea337f4",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test Report Text in Report.vi",
+   "bytes": 33558,
+   "sha256": "996cd108a1a93020d05d5c0969e1122037c4336fba86cde81d5c9dc4859ee9f5",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test Step Name in Report.vi",
+   "bytes": 65320,
+   "sha256": "57aee24e57d74682e3b5ced2996ffd5b163c0de268f9513314ceef92cba93df7",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test Step Result in Report.vi",
+   "bytes": 65318,
+   "sha256": "7dfa6cb21350eb5aeee80148650f0205bdd62370b1b0f86efe18f3a3ed637113",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test Step Type in Report.vi",
+   "bytes": 65320,
+   "sha256": "c44f6d140f9351ec9bcbf0df9e15c163b70a5450f944337cc4ec2ceaf9f36269",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test String Limit in Report.vi",
+   "bytes": 69019,
+   "sha256": "212461a3159d71f8ee37efb021663d0f32395b8426bdd1155010d0e476d67d51",
+   "via": "extension"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test String Value in Report.vi",
+   "bytes": 90931,
+   "sha256": "928e0d61d3ce78d2c5be9a81c75bed345214166d5b0e0631c35121edab526b8e",
+   "via": "extension"
+  },
+  {
+   "path": ".gitattributes",
+   "bytes": 66,
+   "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+   "via": "tree"
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 140,
+   "sha256": "7f85313d0f037c1a369feeafd238b84ab70f801db51845a6cc1e070fba0f2a0b",
+   "via": "tree"
+  },
+  {
+   "path": "Jenkinsfile",
+   "bytes": 1661,
+   "sha256": "9d214dd4fe51ddc07af2651f4069b000466f042845986839fdad8e35f74d4b31",
+   "via": "tree"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1082,
+   "sha256": "c39d082edca4f247e2bc96f7a2dc1a6300c97f0f51c52d1e873736e1e76fc15f",
+   "via": "tree"
+  },
+  {
+   "path": "Package Build Specification.pbs",
+   "bytes": 11865,
+   "sha256": "87ee074044b270bba91643212ed5edeb57bf3e41e944c99239561b5df0b97e53",
+   "via": "tree"
+  },
+  {
+   "path": "README.md",
+   "bytes": 3380,
+   "sha256": "70e2797263d88000704ff9580424294b6173cef4a15402a4c4a24d43bcd904c1",
+   "via": "tree"
+  },
+  {
+   "path": "source/Astemes CSV Report Plugin.aliases",
+   "bytes": 46,
+   "sha256": "cb3254ea767360b864ae92a67e3bafede374d8f2c19fbacf7df8b37410885d6b",
+   "via": "tree"
+  },
+  {
+   "path": "source/install_script.bat",
+   "bytes": 495,
+   "sha256": "bb2f27af241c551924ca4d7a2c01938e9a6a2f785f7a975544ef8076cd3c373c",
+   "via": "tree"
+  },
+  {
+   "path": "source/logo_alphasigma_icon.ico",
+   "bytes": 267870,
+   "sha256": "5525ed2169d284591915690c08bf14ff68db5c97d434ec5392a77bb302a7e543",
+   "via": "tree"
+  },
+  {
+   "path": "tests/Test Report CSV Content/Test Method Template.vit",
+   "bytes": 77729,
+   "sha256": "f65c21a23b89241ef7ea52b56ae651007da400dd9449bbae12c8b565effc1444",
+   "via": "tree"
+  }
+ ],
+ "skipped": [],
+ "external": [
+  "<helpdir>\\glang.chm",
+  "<vilib>\\AdvancedString\\1D String Array to Delimited String.vi",
+  "<vilib>\\Astemes\\LMock\\Enqueue Return Value.vi",
+  "<vilib>\\Astemes\\LMock\\LMock One.lvlib",
+  "<vilib>\\Astemes\\LMock\\LMock Verifier.lvclass",
+  "<vilib>\\Astemes\\LMock\\LMock.lvlib",
+  "<vilib>\\Astemes\\LMock\\Mock Call.vi",
+  "<vilib>\\Astemes\\LMock\\Mock.lvclass",
+  "<vilib>\\Astemes\\LMock\\One Identical Inputs.vi",
+  "<vilib>\\Astemes\\LMock\\One.vi",
+  "<vilib>\\Astemes\\LMock\\Verify.vi",
+  "<vilib>\\Astemes\\LUnit\\Append Fail Result.vi",
+  "<vilib>\\Astemes\\LUnit\\Append Pass Result.vi",
+  "<vilib>\\Astemes\\LUnit\\Compare Variants.vi",
+  "<vilib>\\Astemes\\LUnit\\Core\\LUnit Test Case\\Private\\Append Fail Result.vi",
+  "<vilib>\\Astemes\\LUnit\\Core\\LUnit Test Case\\Private\\Append Pass Result.vi",
+  "<vilib>\\Astemes\\LUnit\\Core\\LUnit Test Case\\Private\\Run In UI.vi",
+  "<vilib>\\Astemes\\LUnit\\Describe Comparison.vi",
+  "<vilib>\\Astemes\\LUnit\\Describe Variant.vi",
+  "<vilib>\\Astemes\\LUnit\\Palette\\Advanced Assertions\\Fail If Matching String.vi",
+  "<vilib>\\Astemes\\LUnit\\Palette\\Advanced Assertions\\LUnit Advanced Assertions.lvlib",
+  "<vilib>\\Astemes\\LUnit\\Palette\\Advanced Assertions\\Pass If Matching String.vi",
+  "<vilib>\\Astemes\\LUnit\\Palette\\Fail If Equal.vim",
+  "<vilib>\\Astemes\\LUnit\\Palette\\Fail If.vi",
+  "<vilib>\\Astemes\\LUnit\\Palette\\Pass If Equal.vim",
+  "<vilib>\\Astemes\\LUnit\\Run In UI.vi",
+  "<vilib>\\Astemes\\LUnit\\Test Case.lvclass",
+  "<vilib>\\Astemes\\LUnit\\Test Case.lvclass\\Test Case.ctl",
+  "<vilib>\\Utility\\error.llb\\Clear Errors.vi",
+  "<vilib>\\Utility\\file.llb\\Create File with Incrementing Suffix.vi",
+  "<vilib>\\Utility\\libraryn.llb\\Create Directory Recursive.vi",
+  "<vilib>\\addons\\TestStand\\_TSUtility.llb\\TestStand - End Modal Dialog (Sequence Context).vi",
+  "<vilib>\\addons\\TestStand\\_TSUtility.llb\\TestStand - End Modal Dialog.vi",
+  "<vilib>\\addons\\TestStand\\_TSUtility.llb\\TestStand - Get Property Value (Boolean).vi",
+  "<vilib>\\addons\\TestStand\\_TSUtility.llb\\TestStand - Get Property Value (Number {Signed 32-bit Integer}).vi",
+  "<vilib>\\addons\\TestStand\\_TSUtility.llb\\TestStand - Get Property Value (Number {Unsigned 32-bit Integer}).vi",
+  "<vilib>\\addons\\TestStand\\_TSUtility.llb\\TestStand - Get Property Value (Number).vi",
+  "<vilib>\\addons\\TestStand\\_TSUtility.llb\\TestStand - Get Property Value (String).vi",
+  "<vilib>\\addons\\TestStand\\_TSUtility.llb\\TestStand - Get Property Value.vi",
+  "<vilib>\\addons\\TestStand\\_TSUtility.llb\\TestStand - Set Property Value (Boolean).vi",
+  "<vilib>\\addons\\TestStand\\_TSUtility.llb\\TestStand - Set Property Value (String).vi",
+  "<vilib>\\addons\\TestStand\\_TSUtility.llb\\TestStand - Set Property Value.vi",
+  "<vilib>\\addons\\TestStand\\_TSUtility.llb\\TestStand - Start Modal Dialog (Sequence Context).vi",
+  "<vilib>\\addons\\TestStand\\_TSUtility.llb\\TestStand - Start Modal Dialog.vi",
+  "<vilib>\\numeric\\Enum to Array of Enums.vim",
+  "C:\\Git\\triarc-framework\\source\\Framework\\Configuration File\\Close Config.vi",
+  "C:\\Git\\triarc-framework\\source\\Framework\\Configuration File\\Open Config.vi",
+  "C:\\Program Files (x86)\\National Instruments\\LabVIEW 2020\\vi.lib\\Astemes\\LMock\\Mock.lvclass",
+  "C:\\Program Files (x86)\\National Instruments\\LabVIEW 2020\\vi.lib\\Astemes\\LUnit\\LUnit Runnable.lvclass",
+  "C:\\Program Files (x86)\\National Instruments\\LabVIEW 2020\\vi.lib\\Astemes\\LUnit\\Test Case.lvclass",
+  "C:\\git\\astemes-excel-report-teststand-plugin\\source\\Astemes_CSVReportGenerator\\Configuration\\Configuration.lvclass",
+  "C:\\git\\astemes-excel-report-teststand-plugin\\source\\Astemes_CSVReportGenerator\\TSContext Configuration\\TSContext Configuration.lvclass",
+  "C:\\git\\astemes-excel-report-teststand-plugin\\source\\Configuration\\Configuration.lvclass",
+  "C:\\git\\astemes-excel-report-teststand-plugin\\tests\\Mock Configuration\\Mock Configuration.lvclass",
+  "C:\\git\\astemes-excel-report-teststand-plugin\\tests\\Test Report CSV Content\\Report CSV Content Test.lvclass",
+  "C:\\git\\danfoss-csv-report-teststand-plugin\\source\\Configuration\\Configuration.lvclass",
+  "C:\\git\\danfoss-excel-report-teststand-plugin\\source\\Astemes_CSVReportGenerator\\Test Result Handler\\Column Headers.vi",
+  "C:\\git\\danfoss-excel-report-teststand-plugin\\source\\TestStand Public\\Components\\Models\\ModelPlugin\\Astemes_CSVReportGenerator\\Configuration\\Configuration.lvclass",
+  "C:\\git\\danfoss-excel-report-teststand-plugin\\source\\TestStand Public\\Components\\Models\\ModelPlugin\\Astemes_CSVReportGenerator\\Configuration\\Read Methods\\Read Boolean.vi",
+  "C:\\git\\danfoss-excel-report-teststand-plugin\\source\\TestStand Public\\Components\\Models\\ModelPlugin\\Astemes_CSVReportGenerator\\Configuration\\Read Methods\\Read Double.vi",
+  "C:\\git\\danfoss-excel-report-teststand-plugin\\source\\TestStand Public\\Components\\Models\\ModelPlugin\\Astemes_CSVReportGenerator\\Configuration\\Read Methods\\Read I32.vi",
+  "C:\\git\\danfoss-excel-report-teststand-plugin\\source\\TestStand Public\\Components\\Models\\ModelPlugin\\Astemes_CSVReportGenerator\\Configuration\\Read Methods\\Read Path.vi",
+  "C:\\git\\danfoss-excel-report-teststand-plugin\\source\\TestStand Public\\Components\\Models\\ModelPlugin\\Astemes_CSVReportGenerator\\Configuration\\Read Methods\\Read String.vi",
+  "C:\\git\\danfoss-excel-report-teststand-plugin\\source\\TestStand Public\\Components\\Models\\ModelPlugin\\Astemes_CSVReportGenerator\\Configuration\\Read Methods\\Read U32.vi",
+  "C:\\git\\danfoss-excel-report-teststand-plugin\\tests\\Mock Configuration\\Mock Configuration.lvclass"
+ ]
+}

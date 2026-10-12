@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PinMap schemaVersion="1.6" xmlns="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Instruments>
+		<NIDCPowerInstrument name="PPS_4110_C2_S18" numberOfChannels="1">
+			<ChannelGroup name="CommonDCPowerChannelGroup" />
+		</NIDCPowerInstrument>
+		<NIScopeInstrument name="SCOPE_5171_C5_S03" numberOfChannels="8" />
+		<NIFGenInstrument name="FGEN_5413_C5_S02" numberOfChannels="2" />
+		<NIDigitalPatternInstrument name="HSD_6570_C5_S05" numberOfChannels="32" group="s01" />
+		<NIRelayDriverModule name="RELAY_2567_C5_S07" numberOfControlLines="64" />
+		<NIDCPowerInstrument name="SMU_4145_C5_S04" numberOfChannels="4">
+			<ChannelGroup name="smu0_s0" channels="0" />
+			<ChannelGroup name="smu1_s0" channels="1" />
+			<ChannelGroup name="smu0_s1" channels="2" />
+			<ChannelGroup name="smu1_s1" channels="3" />
+		</NIDCPowerInstrument>
+	</Instruments>
+	<Pins>
+		<SystemPin name="VRelay" />
+		<DUTPin name="PPMU0" />
+		<DUTPin name="PPMU1" />
+		<DUTPin name="PPMU2" />
+		<DUTPin name="PPMU3" />
+		<DUTPin name="SMU0" />
+		<DUTPin name="SMU1" />
+		<DUTPin name="FGEN" />
+		<DUTPin name="V1" />
+		<DUTPin name="V2" />
+	</Pins>
+	<PinGroups></PinGroups>
+	<Relays>
+		<SystemRelay name="FGEN_A" />
+		<SystemRelay name="FGEN_B" />
+		<SystemRelay name="V1_A" />
+		<SystemRelay name="V2_A" />
+		<SystemRelay name="PPMU0_A" />
+		<SystemRelay name="PPMU1_B" />
+		<SystemRelay name="PPMU2_C" />
+		<SystemRelay name="PPMU3_D" />
+		<SystemRelay name="SMU0_A" />
+		<SystemRelay name="SMU1_E" />
+		<SystemRelay name="SMU0_C" />
+		<SystemRelay name="SMU1_D" />
+		<SystemRelay name="SMU1_B" />
+		<SystemRelay name="V2_B" />
+	</Relays>
+	<Sites>
+		<Site siteNumber="0" />
+		<Site siteNumber="1" />
+	</Sites>
+	<Connections>
+		<Connection pin="FGEN" siteNumber="0" instrument="FGEN_5413_C5_S02" channel="0" />
+		<Connection pin="FGEN" siteNumber="1" instrument="FGEN_5413_C5_S02" channel="1" />
+		<Connection pin="PPMU0" siteNumber="0" instrument="HSD_6570_C5_S05" channel="0" />
+		<Connection pin="PPMU0" siteNumber="1" instrument="HSD_6570_C5_S05" channel="15" />
+		<Connection pin="PPMU1" siteNumber="0" instrument="HSD_6570_C5_S05" channel="1" />
+		<Connection pin="PPMU1" siteNumber="1" instrument="HSD_6570_C5_S05" channel="16" />
+		<Connection pin="PPMU2" siteNumber="0" instrument="HSD_6570_C5_S05" channel="2" />
+		<Connection pin="PPMU2" siteNumber="1" instrument="HSD_6570_C5_S05" channel="17" />
+		<Connection pin="PPMU3" siteNumber="0" instrument="HSD_6570_C5_S05" channel="3" />
+		<Connection pin="PPMU3" siteNumber="1" instrument="HSD_6570_C5_S05" channel="18" />
+		<Connection pin="SMU0" siteNumber="0" instrument="SMU_4145_C5_S04" channel="0" />
+		<Connection pin="SMU0" siteNumber="1" instrument="SMU_4145_C5_S04" channel="2" />
+		<Connection pin="SMU1" siteNumber="0" instrument="SMU_4145_C5_S04" channel="1" />
+		<Connection pin="SMU1" siteNumber="1" instrument="SMU_4145_C5_S04" channel="3" />
+		<Connection pin="V1" siteNumber="0" instrument="SCOPE_5171_C5_S03" channel="0" />
+		<Connection pin="V1" siteNumber="1" instrument="SCOPE_5171_C5_S03" channel="4" />
+		<Connection pin="V2" siteNumber="0" instrument="SCOPE_5171_C5_S03" channel="1" />
+		<Connection pin="V2" siteNumber="1" instrument="SCOPE_5171_C5_S03" channel="5" />
+		<SystemConnection pin="VRelay" instrument="PPS_4110_C2_S18" channel="0" />
+		<SystemRelayConnection relay="FGEN_A" relayDriverModule="RELAY_2567_C5_S07" controlLine="K0" />
+		<SystemRelayConnection relay="FGEN_B" relayDriverModule="RELAY_2567_C5_S07" controlLine="K1" />
+		<SystemRelayConnection relay="PPMU0_A" relayDriverModule="RELAY_2567_C5_S07" controlLine="K2" />
+		<SystemRelayConnection relay="PPMU1_B" relayDriverModule="RELAY_2567_C5_S07" controlLine="K3" />
+		<SystemRelayConnection relay="PPMU2_C" relayDriverModule="RELAY_2567_C5_S07" controlLine="K4" />
+		<SystemRelayConnection relay="PPMU3_D" relayDriverModule="RELAY_2567_C5_S07" controlLine="K5" />
+		<SystemRelayConnection relay="SMU0_A" relayDriverModule="RELAY_2567_C5_S07" controlLine="K6" />
+		<SystemRelayConnection relay="SMU0_C" relayDriverModule="RELAY_2567_C5_S07" controlLine="K7" />
+		<SystemRelayConnection relay="SMU1_B" relayDriverModule="RELAY_2567_C5_S07" controlLine="K12" />
+		<SystemRelayConnection relay="SMU1_D" relayDriverModule="RELAY_2567_C5_S07" controlLine="K8" />
+		<SystemRelayConnection relay="SMU1_E" relayDriverModule="RELAY_2567_C5_S07" controlLine="K9" />
+		<SystemRelayConnection relay="V1_A" relayDriverModule="RELAY_2567_C5_S07" controlLine="K10" />
+		<SystemRelayConnection relay="V2_A" relayDriverModule="RELAY_2567_C5_S07" controlLine="K11" />
+		<SystemRelayConnection relay="V2_B" relayDriverModule="RELAY_2567_C5_S07" controlLine="K13" />
+	</Connections>
+</PinMap>

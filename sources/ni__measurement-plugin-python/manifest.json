@@ -1,0 +1,3486 @@
+{
+ "repo": "ni/measurement-plugin-python",
+ "url": "https://github.com/ni/measurement-plugin-python",
+ "commit": "145feccdee6e7163f6527af3c4d4d79f23857ad4",
+ "license": "MIT",
+ "licenseFile": "LICENSE",
+ "fetched": "2026-10-11",
+ "files": [
+  {
+   "path": "examples/nidaqmx_analog_input/NIDAQmxAnalogInput_example.seq",
+   "bytes": 170934,
+   "sha256": "9ee6ce924c2678cf46a78edf6c1f99150e912537a81b29f7df27b7b0e3890283",
+   "via": "extension"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage/NIDCPowerSourceDCVoltageUI.vi",
+   "bytes": 26974,
+   "sha256": "663119d195011a6faf1b112335cd173a3ce146015ce3f6d2bf92aab733b5e95e",
+   "via": "extension"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage/NIDCPowerSourceDCVoltage_example.seq",
+   "bytes": 181367,
+   "sha256": "acaec3a30310e7753d4d30b821e6e2d533b3758df9e3edaed6477304bacfe1b4",
+   "via": "extension"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage_with_multiplexer/NIDCPowerSourceDCVoltageWithMultiplexer_example.seq",
+   "bytes": 211667,
+   "sha256": "442792358adc24e4688e120c80ac6096bbffda930f27cbe64bdf7168e9b7d83a",
+   "via": "extension"
+  },
+  {
+   "path": "examples/nidigital_spi/NIDigitalSPI_example.seq",
+   "bytes": 244480,
+   "sha256": "bd5b1161aa747a546d105e7581dc41c22725899d9203ce4ddda8b2c0a12012d4",
+   "via": "extension"
+  },
+  {
+   "path": "examples/nidmm_measurement/NIDmmMeasurement_example.seq",
+   "bytes": 178596,
+   "sha256": "c08d9f1c9f45548412a43452987140be25c217005931858702e6085078fec84c",
+   "via": "extension"
+  },
+  {
+   "path": "examples/nifgen_standard_function/NIFgenStandardFunction_example.seq",
+   "bytes": 174209,
+   "sha256": "66d1b3ea79c62668fdabf8dfe98164c75204e50d5256576a0ca64986054e4b21",
+   "via": "extension"
+  },
+  {
+   "path": "examples/niscope_acquire_waveform/NIScopeAcquireWaveform_example.seq",
+   "bytes": 190966,
+   "sha256": "bfac73cd5102ee77f74a2023611014d337aa1ef083e76f46660c738a6d6f3520",
+   "via": "extension"
+  },
+  {
+   "path": "examples/niswitch_control_relays/NISwitchControlRelays_example.seq",
+   "bytes": 310114,
+   "sha256": "510732ad3382cf76ffa4aeee7c60b0dddf7910434b5c6660b4e02f8709855cfb",
+   "via": "extension"
+  },
+  {
+   "path": "examples/nivisa_dmm_measurement/NIVisaDmmMeasurement_example.seq",
+   "bytes": 172811,
+   "sha256": "89e14cdffb1e07602fdc69445ea8018c2254ec1569ed42b889cd2b41ee2532a9",
+   "via": "extension"
+  },
+  {
+   "path": "examples/output_voltage_measurement/OutputVoltageMeasurement_example.seq",
+   "bytes": 216294,
+   "sha256": "716125d536968c0d1d55a970251ce75f305c1892ab179ba5ed5b55d10d2f91b0",
+   "via": "extension"
+  },
+  {
+   "path": "examples/sample_measurement/SampleMeasurement.vi",
+   "bytes": 31037,
+   "sha256": "0cbbedc36b93b55b039949edc0d3fb92d92e3643fbd3b52f7e55c9a3c2ee6321",
+   "via": "extension"
+  },
+  {
+   "path": "packages/generator/tox.ini",
+   "bytes": 829,
+   "sha256": "7292422a13e9ec8095fadb64d5049372e5aeb4a2c57ea47ca929ca94d0fe4c54",
+   "via": "extension"
+  },
+  {
+   "path": "packages/service/tox.ini",
+   "bytes": 851,
+   "sha256": "5538531c8104886d4c91a7d812c4d956f859542dd62f3b12f341bc692095ac25",
+   "via": "extension"
+  },
+  {
+   "path": "examples/nidaqmx_analog_input/teststand_nidaqmx.py",
+   "bytes": 2673,
+   "sha256": "3752e46478f443d05b8bb7f24c77133b20c33f70315ebf4444766ab6c30fee2f",
+   "via": "ref:examples/nidaqmx_analog_input/NIDAQmxAnalogInput_example.seq"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage/teststand_nidcpower.py",
+   "bytes": 2563,
+   "sha256": "aa72204d94e0c408ed2ab8bb87d9f1b4d125b0b879c5bb2c967741f4e58873aa",
+   "via": "ref:examples/nidcpower_source_dc_voltage/NIDCPowerSourceDCVoltage_example.seq"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage_with_multiplexer/teststand_nidcpower.py",
+   "bytes": 2563,
+   "sha256": "aa72204d94e0c408ed2ab8bb87d9f1b4d125b0b879c5bb2c967741f4e58873aa",
+   "via": "ref:examples/nidcpower_source_dc_voltage_with_multiplexer/NIDCPowerSourceDCVoltageWithMultiplexer_example.seq"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage_with_multiplexer/teststand_niswitch.py",
+   "bytes": 4791,
+   "sha256": "bef9f79246efd72ddd250f218097ee8165c3614c39f19d5d273eb4f3cd9cf0b3",
+   "via": "ref:examples/nidcpower_source_dc_voltage_with_multiplexer/NIDCPowerSourceDCVoltageWithMultiplexer_example.seq"
+  },
+  {
+   "path": "examples/nidigital_spi/teststand_nidigital.py",
+   "bytes": 7646,
+   "sha256": "ecdc7aa61c45539cc8435c53c5d9daf917187ba8c73248dee0a939eac0f90b51",
+   "via": "ref:examples/nidigital_spi/NIDigitalSPI_example.seq"
+  },
+  {
+   "path": "examples/nidmm_measurement/teststand_nidmm.py",
+   "bytes": 2524,
+   "sha256": "b8e6b215cb7587fadad5c5157fcbc00ddaced86b2218929d31bcd740f82dde4a",
+   "via": "ref:examples/nidmm_measurement/NIDmmMeasurement_example.seq"
+  },
+  {
+   "path": "examples/nifgen_standard_function/teststand_nifgen.py",
+   "bytes": 2547,
+   "sha256": "946e4097736394223ec48ed20c1f7f21ddb2492f0abe5e1cfb5fe150deb386f1",
+   "via": "ref:examples/nifgen_standard_function/NIFgenStandardFunction_example.seq"
+  },
+  {
+   "path": "examples/niscope_acquire_waveform/teststand_niscope.py",
+   "bytes": 2544,
+   "sha256": "1bcc8b9bec8ea68351da7b03527f0c68f06d083ab7231b44b661ae958facbe5e",
+   "via": "ref:examples/niscope_acquire_waveform/NIScopeAcquireWaveform_example.seq"
+  },
+  {
+   "path": "examples/niswitch_control_relays/teststand_niswitch.py",
+   "bytes": 4791,
+   "sha256": "bef9f79246efd72ddd250f218097ee8165c3614c39f19d5d273eb4f3cd9cf0b3",
+   "via": "ref:examples/niswitch_control_relays/NISwitchControlRelays_example.seq"
+  },
+  {
+   "path": "examples/nivisa_dmm_measurement/teststand_nivisa_dmm.py",
+   "bytes": 3266,
+   "sha256": "809c947b4be619404522e075da4892bfb80d98cfa7968cffcf084faaffbefc2e",
+   "via": "ref:examples/nivisa_dmm_measurement/NIVisaDmmMeasurement_example.seq"
+  },
+  {
+   "path": "examples/output_voltage_measurement/teststand_nidcpower.py",
+   "bytes": 2563,
+   "sha256": "aa72204d94e0c408ed2ab8bb87d9f1b4d125b0b879c5bb2c967741f4e58873aa",
+   "via": "ref:examples/output_voltage_measurement/OutputVoltageMeasurement_example.seq"
+  },
+  {
+   "path": "examples/output_voltage_measurement/teststand_nivisa_dmm.py",
+   "bytes": 3266,
+   "sha256": "809c947b4be619404522e075da4892bfb80d98cfa7968cffcf084faaffbefc2e",
+   "via": "ref:examples/output_voltage_measurement/OutputVoltageMeasurement_example.seq"
+  },
+  {
+   "path": ".github/CODEOWNERS",
+   "bytes": 323,
+   "sha256": "8279bf9e11cdc8aace263eb0bd4831457f0443a2d92c468c1e7d22e458a1f3f2",
+   "via": "tree"
+  },
+  {
+   "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+   "bytes": 1466,
+   "sha256": "9abb8a6577a025530f3d2a84644c7268cce21e58c05d5894bb4bd58158576309",
+   "via": "tree"
+  },
+  {
+   "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+   "bytes": 687,
+   "sha256": "71a40bb4623a633f5b0ab6f8211b47a7bf4d73b3650a4fec7b6e95edf36bb49e",
+   "via": "tree"
+  },
+  {
+   "path": ".github/ISSUE_TEMPLATE/tech_debt.md",
+   "bytes": 157,
+   "sha256": "bc462cd8df54250176b8c2eb72a91c63766e09d6fb166c9371d454895e90ef0d",
+   "via": "tree"
+  },
+  {
+   "path": ".github/ISSUE_TEMPLATE/user_story.md",
+   "bytes": 311,
+   "sha256": "8c4b546ef217409be2ea92e03202a61007509a0e04340d8e0d9f1b7e776a0d9c",
+   "via": "tree"
+  },
+  {
+   "path": ".github/PULL_REQUEST_TEMPLATE.md",
+   "bytes": 657,
+   "sha256": "da8776564b11902948fdd43d428b31d55f23dcafd3a01ae4531ec0f4900a9c9f",
+   "via": "tree"
+  },
+  {
+   "path": ".github/renovate.json",
+   "bytes": 540,
+   "sha256": "144349076f1b69825ad2fce228a872841d9a0fd9ff6b92e82ac9fe0d9c9b16c8",
+   "via": "tree"
+  },
+  {
+   "path": ".github/workflows/CI.yml",
+   "bytes": 1272,
+   "sha256": "ab8e951806244ff30f9f6cba26bbf9639e32410ce4afb567380c61534bcd9aa0",
+   "via": "tree"
+  },
+  {
+   "path": ".github/workflows/PR.yml",
+   "bytes": 424,
+   "sha256": "7bc7ee2048eb32164a3211568f1a048f36c21ecb587f355c0c6a3167373e441f",
+   "via": "tree"
+  },
+  {
+   "path": ".github/workflows/check_examples.yml",
+   "bytes": 2863,
+   "sha256": "d4f872f90210c92a9203e522f86a06342384587654e98be3f041343a5d370387",
+   "via": "tree"
+  },
+  {
+   "path": ".github/workflows/check_nimg.yml",
+   "bytes": 2101,
+   "sha256": "86971fd080f445d29855844fd4133fbcdda21804198f1dd7986696527b77c10e",
+   "via": "tree"
+  },
+  {
+   "path": ".github/workflows/check_nims.yml",
+   "bytes": 1974,
+   "sha256": "777626d4322e0cfd7b22e908361ee274acc3b06cff12e1904b85daa9ef5860fc",
+   "via": "tree"
+  },
+  {
+   "path": ".github/workflows/check_nims_docs.yml",
+   "bytes": 1125,
+   "sha256": "f19ea3c2564062590577fb62eb2316b89fa9815825438f48fdca05e050111f52",
+   "via": "tree"
+  },
+  {
+   "path": ".github/workflows/check_workflows.yml",
+   "bytes": 478,
+   "sha256": "6a73f2912368d6cb178e36c5d162a7f25463ed58bfcb92e33e273e37febc916e",
+   "via": "tree"
+  },
+  {
+   "path": ".github/workflows/publish.yml",
+   "bytes": 6960,
+   "sha256": "6c012e80115b5a8f292c4386a32a2da9ab90e072b893ec110b40eca54f9db8b9",
+   "via": "tree"
+  },
+  {
+   "path": ".github/workflows/report_test_results.yml",
+   "bytes": 916,
+   "sha256": "9cfef8fc4480a6b9a016b1d7ba9396cda4608c39f0232d313ed59aad39a5df2b",
+   "via": "tree"
+  },
+  {
+   "path": ".github/workflows/run_system_tests.yml",
+   "bytes": 2587,
+   "sha256": "618170d5bbf102af229f7d98fe13e39e58eb75494620f14533b1382f986d4d37",
+   "via": "tree"
+  },
+  {
+   "path": ".github/workflows/run_unit_tests.yml",
+   "bytes": 3989,
+   "sha256": "5e08805122db4d5d5121d73bf1c1caa7aa2828e2556fa409f2748a684268f380",
+   "via": "tree"
+  },
+  {
+   "path": ".github/workflows/sync_github_issues_to_azdo.yml",
+   "bytes": 1364,
+   "sha256": "9139fa8cbee1f279e486ff33b358b6e024219dfff870c67d05d65e5d194d4f1d",
+   "via": "tree"
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 2881,
+   "sha256": "8b59e8ac4bb66b4b1f0818cd162828ef611e787c9405b140089efd835ee52951",
+   "via": "tree"
+  },
+  {
+   "path": ".gitmodules",
+   "bytes": 103,
+   "sha256": "bff5d2e9dd46a420450b067a9bc5420ad2bed561a894f6f1144b45cf524ad751",
+   "via": "tree"
+  },
+  {
+   "path": ".readthedocs.yml",
+   "bytes": 315,
+   "sha256": "7fa03f779b206ae7cf2723b42e4305eff67f5244977a77f2688064a8533cbdca",
+   "via": "tree"
+  },
+  {
+   "path": ".rgignore",
+   "bytes": 6,
+   "sha256": "221cd56e9786452756f9632bf10fd5559b048665204cf1110f9b83055d2864f5",
+   "via": "tree"
+  },
+  {
+   "path": "CONTRIBUTING.md",
+   "bytes": 10308,
+   "sha256": "0c5b755d8aff89afb95ee240c0ce40b3f5efa91c4a2f10c3330bbb4e605b60c8",
+   "via": "tree"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1071,
+   "sha256": "5144eca44162b73e95f04430ccba9c8f96e1658409f4b08afd7bbd8fda81fe56",
+   "via": "tree"
+  },
+  {
+   "path": "README.md",
+   "bytes": 23979,
+   "sha256": "dc3d6d4aceb65bcca9cfb8fe2c0a55d2425403445c2840372d96bf01c69bc930",
+   "via": "tree"
+  },
+  {
+   "path": "SECURITY.md",
+   "bytes": 1312,
+   "sha256": "c3c34cacd2f1f76e9c299372d8b9cf3fbe6da13340cc1eb9721762a521c80a69",
+   "via": "tree"
+  },
+  {
+   "path": "ThirdPartyNotices.txt",
+   "bytes": 2579,
+   "sha256": "10b0bc0ac9533fe6504aec1c86c149bce1274ae3f708b1729c11d712cfe5f7f4",
+   "via": "tree"
+  },
+  {
+   "path": "docs/CNAME",
+   "bytes": 40,
+   "sha256": "3e7207f5b60b8737447bbef01c913c5da5c6a465fe7591968f595d4f5cfc37c0",
+   "via": "tree"
+  },
+  {
+   "path": "examples/.env.sample",
+   "bytes": 3065,
+   "sha256": "a8f91dbcb4e24bd0add432c7cbacccff58bf8cc250b78ddaef14ca2772704e3e",
+   "via": "tree"
+  },
+  {
+   "path": "examples/.env.simulation",
+   "bytes": 1423,
+   "sha256": "15f9ec62577c739c569255777d93dfa94ed4d51343b3e2286b1df5988c052b58",
+   "via": "tree"
+  },
+  {
+   "path": "examples/README.md",
+   "bytes": 6894,
+   "sha256": "292deebba08446c804d623c3dd33827ad27a57035a0431552accd98db2bbaba6",
+   "via": "tree"
+  },
+  {
+   "path": "examples/game_of_life/.serviceignore",
+   "bytes": 144,
+   "sha256": "20a56a41be9851b9d58e879b739a723e712d79019a850649f722c7044731f5e3",
+   "via": "tree"
+  },
+  {
+   "path": "examples/game_of_life/GameOfLife.instudioproj",
+   "bytes": 1683,
+   "sha256": "4e98d3034fbaf06c931527fa13e477095ac7130f36f612d4d18435de98662b94",
+   "via": "tree"
+  },
+  {
+   "path": "examples/game_of_life/GameOfLife.sfp",
+   "bytes": 19026,
+   "sha256": "ffaaf915d3a3686a8583b915d91c82e1afeb4373c14d422e302f50a3bf2bbd9c",
+   "via": "tree"
+  },
+  {
+   "path": "examples/game_of_life/README.md",
+   "bytes": 511,
+   "sha256": "7bb35809c1105d06f880adf3173d775b3ecae28a86f2cd14fe1f3da10a6d0832",
+   "via": "tree"
+  },
+  {
+   "path": "examples/game_of_life/_helpers.py",
+   "bytes": 2833,
+   "sha256": "190d88154fe0d50cd438821a79b45d15a6bafff383219d6a299f74e5019b8340",
+   "via": "tree"
+  },
+  {
+   "path": "examples/game_of_life/game_of_life.measproj",
+   "bytes": 3284,
+   "sha256": "45ec027faea4cc8824b89f80c9aae6e5eeedcadf335f57d84eb08b3303f48034",
+   "via": "tree"
+  },
+  {
+   "path": "examples/game_of_life/game_of_life.measui",
+   "bytes": 15934,
+   "sha256": "0b5bbd9e192b7784a8aa02df81c8b42e37fe05b06549e2a7e979bfb3aaee4bff",
+   "via": "tree"
+  },
+  {
+   "path": "examples/game_of_life/game_of_life.serviceconfig",
+   "bytes": 594,
+   "sha256": "acf58a1ba962ca811a544afd722e8313136a16a745fcb0a0d58a77463f04c4a6",
+   "via": "tree"
+  },
+  {
+   "path": "examples/game_of_life/install.bat",
+   "bytes": 199,
+   "sha256": "cd0a317041e1bde443d7ff44abf5170e414893c29b91f33da85a419f45774b16",
+   "via": "tree"
+  },
+  {
+   "path": "examples/game_of_life/measurement.py",
+   "bytes": 4461,
+   "sha256": "9b01ec332ad79b1021d3549d104cc1e3d3877c931f559500b9c9220b4fd913bf",
+   "via": "tree"
+  },
+  {
+   "path": "examples/game_of_life/poetry.toml",
+   "bytes": 32,
+   "sha256": "aa057105d3dc259387747093381a196276b77247b854681190d6746ca80deabb",
+   "via": "tree"
+  },
+  {
+   "path": "examples/game_of_life/pyproject.toml",
+   "bytes": 888,
+   "sha256": "4ec020e6a7fd868d1a3f9f05eca05f2bc5355eef2e5b1b2c64a01b455ef51f92",
+   "via": "tree"
+  },
+  {
+   "path": "examples/game_of_life/start.bat",
+   "bytes": 247,
+   "sha256": "a870a81c5b433893e38651d5290857af5946a33f4be7df5d8678c60c6fd5e67c",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidaqmx_analog_input/.serviceignore",
+   "bytes": 144,
+   "sha256": "20a56a41be9851b9d58e879b739a723e712d79019a850649f722c7044731f5e3",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidaqmx_analog_input/NIDAQmxAnalogInput.instudioproj",
+   "bytes": 2000,
+   "sha256": "16de55bf3792ed7d7c780b622850a1dc02e70f1bab957e932acbafd4b8c329d1",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidaqmx_analog_input/NIDAQmxAnalogInput.measproj",
+   "bytes": 3780,
+   "sha256": "031b9c0256e8b3d8ff0b0976e579e3351b0db8e3e381aee4f069bbd15492616e",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidaqmx_analog_input/NIDAQmxAnalogInput.measui",
+   "bytes": 12681,
+   "sha256": "dfb314bb5129d34481ffc851b2509c9add334016522d8d306df96434ca1d1ba1",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidaqmx_analog_input/NIDAQmxAnalogInput.pinmap",
+   "bytes": 634,
+   "sha256": "f8151a4cfbc6ee2b73fdfef9928fb3c4ff2c7daba5fee11561f9926a20e65cc9",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidaqmx_analog_input/NIDAQmxAnalogInput.serviceconfig",
+   "bytes": 670,
+   "sha256": "fd7d5c8c7a6ed8acf3ca38a2f59943e80ff12e7bc7c3be3f52421aaf7849223f",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidaqmx_analog_input/NIDAQmxAnalogInput.sfp",
+   "bytes": 15828,
+   "sha256": "d513634932f370c407232f94585a9194ea3ffdd67e311692d94aee717ae42fa5",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidaqmx_analog_input/README.md",
+   "bytes": 1574,
+   "sha256": "509b1f24e136ac430cb41ae6a3cc4e5f651861fd36d79396c4738ddcf208dbc7",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidaqmx_analog_input/_helpers.py",
+   "bytes": 2833,
+   "sha256": "190d88154fe0d50cd438821a79b45d15a6bafff383219d6a299f74e5019b8340",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidaqmx_analog_input/install.bat",
+   "bytes": 199,
+   "sha256": "cd0a317041e1bde443d7ff44abf5170e414893c29b91f33da85a419f45774b16",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidaqmx_analog_input/measurement.py",
+   "bytes": 3384,
+   "sha256": "cbaa3e670a668787022402e9439277205d72c11f3e8c7158001264a0ee8dbaae",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidaqmx_analog_input/poetry.toml",
+   "bytes": 32,
+   "sha256": "aa057105d3dc259387747093381a196276b77247b854681190d6746ca80deabb",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidaqmx_analog_input/pyproject.toml",
+   "bytes": 1052,
+   "sha256": "00952ac3c7d281eb12c20481f00d40724a4f3df73c189585fd9519df1921658b",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidaqmx_analog_input/start.bat",
+   "bytes": 247,
+   "sha256": "a870a81c5b433893e38651d5290857af5946a33f4be7df5d8678c60c6fd5e67c",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage/.serviceignore",
+   "bytes": 144,
+   "sha256": "20a56a41be9851b9d58e879b739a723e712d79019a850649f722c7044731f5e3",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage/NIDCPowerSourceDCVoltage.instudioproj",
+   "bytes": 2351,
+   "sha256": "82b0ebdccd1d70e474e00cb777a1ca2fa4253663f2b97d9c83ff10aeb3a7daca",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage/NIDCPowerSourceDCVoltage.measproj",
+   "bytes": 4126,
+   "sha256": "60311a9b58fb1ad7b231e5f56acf1b99c131ecdb9cb5f661eb7d594b4ef7cbce",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage/NIDCPowerSourceDCVoltage.measui",
+   "bytes": 9948,
+   "sha256": "be684103898018a11b4a28f1acd6fb65276ddd4c1b62bac0fa75d7db0fb4d208",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage/NIDCPowerSourceDCVoltage.pinmap",
+   "bytes": 591,
+   "sha256": "9cd252f5ee64e690c53ff60093c95ad7d18b294f2955cde80ad0a1a6d69d0be3",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage/NIDCPowerSourceDCVoltage.serviceconfig",
+   "bytes": 675,
+   "sha256": "018b2515223a5ffb573c1d02f5c580093427a37875506f6d57dfd7fa17b1e169",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage/NIDCPowerSourceDCVoltage.sfp",
+   "bytes": 13117,
+   "sha256": "ed21ba0b0291e89559bc6acc2f1c23107d6db451f75070029a940eb87738840c",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage/NIDCPowerSourceDCVoltageMultiSite.pinmap",
+   "bytes": 1063,
+   "sha256": "3499e288d2506c3028d007405b93cb8ff21b463255c906ad5762ed056fba3024",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage/README.md",
+   "bytes": 2499,
+   "sha256": "af17f6574cb8c554e3091c9572d1e3bbeff9c58b56daf5f4a1f6d7de4d9de589",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage/_helpers.py",
+   "bytes": 2833,
+   "sha256": "190d88154fe0d50cd438821a79b45d15a6bafff383219d6a299f74e5019b8340",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage/install.bat",
+   "bytes": 199,
+   "sha256": "cd0a317041e1bde443d7ff44abf5170e414893c29b91f33da85a419f45774b16",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage/measurement.py",
+   "bytes": 8496,
+   "sha256": "1079225a9e9bbf50e3b968438672ed16d94bbc7071a6e68140551c402a28a609",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage/poetry.toml",
+   "bytes": 32,
+   "sha256": "aa057105d3dc259387747093381a196276b77247b854681190d6746ca80deabb",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage/pyproject.toml",
+   "bytes": 1104,
+   "sha256": "ad5b8a14b0bcac0aee509f3acd8e8a7b4cf0c61ec392813eb0fe6456bc791966",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage/start.bat",
+   "bytes": 247,
+   "sha256": "a870a81c5b433893e38651d5290857af5946a33f4be7df5d8678c60c6fd5e67c",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage_with_multiplexer/.serviceignore",
+   "bytes": 144,
+   "sha256": "20a56a41be9851b9d58e879b739a723e712d79019a850649f722c7044731f5e3",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage_with_multiplexer/NIDCPowerSourceDCVoltageWithMultiplexer.instudioproj",
+   "bytes": 2089,
+   "sha256": "453abac2ba1716f9b67cafaa44fb41488efb62a1cf13c1efbc728a4e180c1065",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage_with_multiplexer/NIDCPowerSourceDCVoltageWithMultiplexer.measproj",
+   "bytes": 3867,
+   "sha256": "00e3dca323d6ec6f67e9d9c976ba7d75e32310f93c76d5c1c6471917c69e5959",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage_with_multiplexer/NIDCPowerSourceDCVoltageWithMultiplexer.measui",
+   "bytes": 9073,
+   "sha256": "513503e7c85447357a896edf06200d1abba900a8603cf1138c4b29aa82d7bfe9",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage_with_multiplexer/NIDCPowerSourceDCVoltageWithMultiplexer.pinmap",
+   "bytes": 888,
+   "sha256": "c6a43a4d55abe034cd28c6f768d7be02906ec48ac8492adb5de72382958881a4",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage_with_multiplexer/NIDCPowerSourceDCVoltageWithMultiplexer.serviceconfig",
+   "bytes": 736,
+   "sha256": "f501bb38b6f1ccbae2913337ab19314136bc241d55a3fa346c4265eddbdc4522",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage_with_multiplexer/NIDCPowerSourceDCVoltageWithMultiplexer.sfp",
+   "bytes": 12298,
+   "sha256": "5488eb48de886570d0f3f45d85ad1d9072c8aefc02c5f01897d116d5597834cf",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage_with_multiplexer/README.md",
+   "bytes": 2330,
+   "sha256": "c919db5efa0b9e1d6e0a4d00953b2a834377626b0be67de27a82ea835c6e46b9",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage_with_multiplexer/_helpers.py",
+   "bytes": 2833,
+   "sha256": "190d88154fe0d50cd438821a79b45d15a6bafff383219d6a299f74e5019b8340",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage_with_multiplexer/install.bat",
+   "bytes": 199,
+   "sha256": "cd0a317041e1bde443d7ff44abf5170e414893c29b91f33da85a419f45774b16",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage_with_multiplexer/measurement.py",
+   "bytes": 6664,
+   "sha256": "210c3aba21b0a5eea68fe3363519da45ac35220033c4f546fa8cf47ea7b6ae54",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage_with_multiplexer/poetry.toml",
+   "bytes": 32,
+   "sha256": "aa057105d3dc259387747093381a196276b77247b854681190d6746ca80deabb",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage_with_multiplexer/pyproject.toml",
+   "bytes": 1351,
+   "sha256": "78420be1b8fdb43d5234f4ce9c5ecf336e3c30be930a6fdfca0946f29abaef07",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidcpower_source_dc_voltage_with_multiplexer/start.bat",
+   "bytes": 247,
+   "sha256": "a870a81c5b433893e38651d5290857af5946a33f4be7df5d8678c60c6fd5e67c",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidigital_spi/.serviceignore",
+   "bytes": 144,
+   "sha256": "20a56a41be9851b9d58e879b739a723e712d79019a850649f722c7044731f5e3",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidigital_spi/NIDigitalSPI.instudioproj",
+   "bytes": 1968,
+   "sha256": "a38b786796ffb6a99a34d1db22ea1797c95be541a88ca5e2f28fdd051bd08041",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidigital_spi/NIDigitalSPI.measproj",
+   "bytes": 3745,
+   "sha256": "485a7903cb50869e9ceb27e64b45c62c97ead76197b14ba22851d10c691d7d01",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidigital_spi/NIDigitalSPI.measui",
+   "bytes": 10432,
+   "sha256": "c0712fcb0521c3c4aea3c1ac9a7d2ea0a178f2ad41c3096c16165db9e680d243",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidigital_spi/NIDigitalSPI.serviceconfig",
+   "bytes": 658,
+   "sha256": "71059b1cafaa39c3f31ff24cf5927f3c59e546fce1c51c83e6c13667d47a5767",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidigital_spi/NIDigitalSPI.sfp",
+   "bytes": 8366,
+   "sha256": "61a7b33a48186495971dc8c9a31a2137fac77ad84b682bf597ea3865339099eb",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidigital_spi/Pattern.digipat",
+   "bytes": 4188,
+   "sha256": "05e60068d461cd1806ede839c7b14c66a62004e46487d0f283b46f66f09b3462",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidigital_spi/PinLevels.digilevels",
+   "bytes": 1582,
+   "sha256": "501ae33ecafe4ee6b8af6ec8e526744d0e51e7036892d0248ef93ade35866842",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidigital_spi/PinMap.pinmap",
+   "bytes": 2217,
+   "sha256": "0aa4345608e275fc9891bf9d98576dc9c30864fd08256722ea4c00298b881b47",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidigital_spi/README.md",
+   "bytes": 1993,
+   "sha256": "08221242b4b9dc8c79624918407b3d04e69746f5897f911592ae901e140ec895",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidigital_spi/SPI Example.digiproj",
+   "bytes": 3508,
+   "sha256": "81941b0ba48d05ba99ba7b78e6c5c9b8dcb438fc2e6a7c47472a8bb53791b50e",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidigital_spi/Shmoo.digishmoo",
+   "bytes": 1195,
+   "sha256": "5a7b4409dd3a5466903f750100b200bf5e5f2d35fe6c82a542e4aec66fa6c713",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidigital_spi/Specifications.specs",
+   "bytes": 571,
+   "sha256": "9db04e7f9586e145c2d90a593ddec4710affeab0d9ac07ceeed1782bee9d1973",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidigital_spi/Timing.digitiming",
+   "bytes": 1882,
+   "sha256": "ab8bebe6ca03b162fb90fae21536474dd6fe508613c6433dcaf82ea382677bbe",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidigital_spi/_helpers.py",
+   "bytes": 2833,
+   "sha256": "190d88154fe0d50cd438821a79b45d15a6bafff383219d6a299f74e5019b8340",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidigital_spi/install.bat",
+   "bytes": 199,
+   "sha256": "cd0a317041e1bde443d7ff44abf5170e414893c29b91f33da85a419f45774b16",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidigital_spi/measurement.py",
+   "bytes": 4465,
+   "sha256": "f3d25b5be1d741fecbc09b2699a2ea64ba9903fe7109c5ab75ecf94ce96157fe",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidigital_spi/poetry.toml",
+   "bytes": 32,
+   "sha256": "aa057105d3dc259387747093381a196276b77247b854681190d6746ca80deabb",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidigital_spi/pyproject.toml",
+   "bytes": 1081,
+   "sha256": "8f648e17631f94f643a90fc3fe75cba43387ed26de55b337dd92deed8630c360",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidigital_spi/start.bat",
+   "bytes": 247,
+   "sha256": "a870a81c5b433893e38651d5290857af5946a33f4be7df5d8678c60c6fd5e67c",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidmm_measurement/.serviceignore",
+   "bytes": 144,
+   "sha256": "20a56a41be9851b9d58e879b739a723e712d79019a850649f722c7044731f5e3",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidmm_measurement/NIDmmMeasurement.instudioproj",
+   "bytes": 1992,
+   "sha256": "63b073ec788ff78e10c67275a71c675ff272afd453fc4476c33652d3c1ab9812",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidmm_measurement/NIDmmMeasurement.measproj",
+   "bytes": 3764,
+   "sha256": "dea34204c4dabe5bac32a689812636555ecf56095fcfa707af255713fcd3f725",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidmm_measurement/NIDmmMeasurement.measui",
+   "bytes": 10951,
+   "sha256": "c76bf86b534f01b11be1a5ea0eaa33ed4e25ecf9d5b07192ce30ce46f91dd80c",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidmm_measurement/NIDmmMeasurement.pinmap",
+   "bytes": 482,
+   "sha256": "1dc96488e913a11e4aa1bda13c8ef766451906c2766e33e0a22383028c63be65",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidmm_measurement/NIDmmMeasurement.serviceconfig",
+   "bytes": 647,
+   "sha256": "7b958b8ffa7f4f826a074d7b388b470f5ce4585a054b279524475316f241157e",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidmm_measurement/NIDmmMeasurement.sfp",
+   "bytes": 11590,
+   "sha256": "b26f23c0706e58ee1a87f5b9745be748bd415aeb416d6d6d3a2701cd13ec9e0d",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidmm_measurement/README.md",
+   "bytes": 1810,
+   "sha256": "9e416fbf8f854b1bdfbc0b4297dd7a019bf532b1b0d00d1ee00352436db1045b",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidmm_measurement/_helpers.py",
+   "bytes": 2833,
+   "sha256": "190d88154fe0d50cd438821a79b45d15a6bafff383219d6a299f74e5019b8340",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidmm_measurement/install.bat",
+   "bytes": 199,
+   "sha256": "cd0a317041e1bde443d7ff44abf5170e414893c29b91f33da85a419f45774b16",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidmm_measurement/measurement.py",
+   "bytes": 3737,
+   "sha256": "06309cb0bcea85f9de4f4a7b5fa51a517bc320559746ecf589b37d5c73edb125",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidmm_measurement/poetry.toml",
+   "bytes": 32,
+   "sha256": "aa057105d3dc259387747093381a196276b77247b854681190d6746ca80deabb",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidmm_measurement/pyproject.toml",
+   "bytes": 1050,
+   "sha256": "5d5e653f89d78a180889450529a183df57a08295aef9bdf79df10150c93bc4ca",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nidmm_measurement/start.bat",
+   "bytes": 247,
+   "sha256": "a870a81c5b433893e38651d5290857af5946a33f4be7df5d8678c60c6fd5e67c",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nifgen_standard_function/.serviceignore",
+   "bytes": 144,
+   "sha256": "20a56a41be9851b9d58e879b739a723e712d79019a850649f722c7044731f5e3",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nifgen_standard_function/NIFgenStandardFunction.instudioproj",
+   "bytes": 2016,
+   "sha256": "7b93827c8bd3fd809813ee438c522daa1f432430d03e645e88aa9dab3245cc9e",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nifgen_standard_function/NIFgenStandardFunction.measproj",
+   "bytes": 3788,
+   "sha256": "c63bd3f5b3fd834f15ef711845e5f886a678a1d37775bd838631c79f9d17c640",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nifgen_standard_function/NIFgenStandardFunction.measui",
+   "bytes": 8344,
+   "sha256": "6cce7d34be6d7b9754f104b41bde79a454685f30d9346b10b7d5b7ef9314bc87",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nifgen_standard_function/NIFgenStandardFunction.pinmap",
+   "bytes": 506,
+   "sha256": "9c74db5d5825fadabae61be0a6e3762740128d17fc1cddfdb2a3e6ef10bc32db",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nifgen_standard_function/NIFgenStandardFunction.serviceconfig",
+   "bytes": 691,
+   "sha256": "27053cb3110d73af92bcae6d976b312ba59a8398af4e5b12bf82ba8096541723",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nifgen_standard_function/NIFgenStandardFunction.sfp",
+   "bytes": 11444,
+   "sha256": "8a7942f772fc909435d16636d835d3dc7cb6458b515c0fc0992267bef26de15f",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nifgen_standard_function/NIFgenStandardFunctionMultiSite.pinmap",
+   "bytes": 863,
+   "sha256": "caf2b930beaa16c28af1c78d78497f6fb9b251140268ec3efbc64128026ddd42",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nifgen_standard_function/README.md",
+   "bytes": 2125,
+   "sha256": "4415e75aad80e1d2a94db7a5df10e278130fee168f486b4aef8fe0be3263ea86",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nifgen_standard_function/_helpers.py",
+   "bytes": 2833,
+   "sha256": "190d88154fe0d50cd438821a79b45d15a6bafff383219d6a299f74e5019b8340",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nifgen_standard_function/install.bat",
+   "bytes": 199,
+   "sha256": "cd0a317041e1bde443d7ff44abf5170e414893c29b91f33da85a419f45774b16",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nifgen_standard_function/measurement.py",
+   "bytes": 6246,
+   "sha256": "41fb9538f755d55ce859be74cac7107b0816c0c0b81beecb1f29054c42dac636",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nifgen_standard_function/poetry.toml",
+   "bytes": 32,
+   "sha256": "aa057105d3dc259387747093381a196276b77247b854681190d6746ca80deabb",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nifgen_standard_function/pyproject.toml",
+   "bytes": 1110,
+   "sha256": "3e8334a70d7293d09fa3f5d54da398dc5574bf8636f1211ab312c1e2084c1592",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nifgen_standard_function/start.bat",
+   "bytes": 247,
+   "sha256": "a870a81c5b433893e38651d5290857af5946a33f4be7df5d8678c60c6fd5e67c",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niscope_acquire_waveform/.serviceignore",
+   "bytes": 144,
+   "sha256": "20a56a41be9851b9d58e879b739a723e712d79019a850649f722c7044731f5e3",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niscope_acquire_waveform/NIScopeAcquireWaveform.instudioproj",
+   "bytes": 2016,
+   "sha256": "92b9ec30acbe085ebd06cee2e0d25a320f8b3ef08503faf0c08ad31aed0ccce6",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niscope_acquire_waveform/NIScopeAcquireWaveform.measproj",
+   "bytes": 3788,
+   "sha256": "d29bc1f10c081f146387c65d3422f63ffb848637b0ff27d1e591211e3ce14ea7",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niscope_acquire_waveform/NIScopeAcquireWaveform.measui",
+   "bytes": 23498,
+   "sha256": "72e3f241a4f45ff31e338e727f1b9cb97e89f579b74f0b4e8e33f9ac0bb7cf17",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niscope_acquire_waveform/NIScopeAcquireWaveform.pinmap",
+   "bytes": 993,
+   "sha256": "c0fa1b6b6c28626e56087787ef18a01e7a3c4b99a736bf0e9f8a0b5bf1aa995b",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niscope_acquire_waveform/NIScopeAcquireWaveform.serviceconfig",
+   "bytes": 666,
+   "sha256": "7fa4ac0822db5aa6e6c42279ff4521885f76a096da39d53533b911ca5b6d0815",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niscope_acquire_waveform/NIScopeAcquireWaveform.sfp",
+   "bytes": 27003,
+   "sha256": "409ee365aef7c5fb23ca77455ea4b6f1ff0ecc711890525cad10920332ed2cbc",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niscope_acquire_waveform/README.md",
+   "bytes": 2047,
+   "sha256": "9ef6cbcf847db860a64df0b2fe32e069b05ee5c398ecb0b01cdc16fa50891e1b",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niscope_acquire_waveform/_helpers.py",
+   "bytes": 2833,
+   "sha256": "190d88154fe0d50cd438821a79b45d15a6bafff383219d6a299f74e5019b8340",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niscope_acquire_waveform/install.bat",
+   "bytes": 199,
+   "sha256": "cd0a317041e1bde443d7ff44abf5170e414893c29b91f33da85a419f45774b16",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niscope_acquire_waveform/measurement.py",
+   "bytes": 6998,
+   "sha256": "2bdc400716f6ae66d586a2bfb4597780339a22486322048364db05f911b01432",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niscope_acquire_waveform/poetry.toml",
+   "bytes": 32,
+   "sha256": "aa057105d3dc259387747093381a196276b77247b854681190d6746ca80deabb",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niscope_acquire_waveform/pyproject.toml",
+   "bytes": 1071,
+   "sha256": "d5a1dbbb7a921ee41ed322c5c17bf31ccd4c64ca7496134481cd8d263134c68e",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niscope_acquire_waveform/start.bat",
+   "bytes": 247,
+   "sha256": "a870a81c5b433893e38651d5290857af5946a33f4be7df5d8678c60c6fd5e67c",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niswitch_control_relays/.serviceignore",
+   "bytes": 144,
+   "sha256": "20a56a41be9851b9d58e879b739a723e712d79019a850649f722c7044731f5e3",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niswitch_control_relays/NISwitchControlRelays.instudioproj",
+   "bytes": 2012,
+   "sha256": "eed2a9528e6dc6949c819bad58093eda507a82d8579c0393aa4807624c46727e",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niswitch_control_relays/NISwitchControlRelays.measproj",
+   "bytes": 3784,
+   "sha256": "c2e27cb1d8b15aadbbd8291240daaa87a4874c28ff88b7a7fe26fe88fabd8490",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niswitch_control_relays/NISwitchControlRelays.measui",
+   "bytes": 3490,
+   "sha256": "bb8a707b508c89ec389728b07604f954b38a20e4d88e1d57724b2a1c4bbb8cae",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niswitch_control_relays/NISwitchControlRelays.pinmap",
+   "bytes": 1300,
+   "sha256": "07e6ad28378f7dae2450e62f11c962763eab29c848cf844491b370956ae4f8ab",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niswitch_control_relays/NISwitchControlRelays.serviceconfig",
+   "bytes": 676,
+   "sha256": "c58eec74eabb968301e01e67c48e757c09002069e433dea95b31a0c07b001f47",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niswitch_control_relays/NISwitchControlRelays.sfp",
+   "bytes": 6470,
+   "sha256": "35bf7b516d952bcb1c23ad8cf4665f07157d095f1ae6364542b3178070762a58",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niswitch_control_relays/README.md",
+   "bytes": 1965,
+   "sha256": "a2642fc50b6d72693482ae671e00f7b37e5b233015eaabbbd524acc2b29ed5da",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niswitch_control_relays/_helpers.py",
+   "bytes": 2833,
+   "sha256": "190d88154fe0d50cd438821a79b45d15a6bafff383219d6a299f74e5019b8340",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niswitch_control_relays/install.bat",
+   "bytes": 199,
+   "sha256": "cd0a317041e1bde443d7ff44abf5170e414893c29b91f33da85a419f45774b16",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niswitch_control_relays/measurement.py",
+   "bytes": 2136,
+   "sha256": "ced942177fa4e9ec20c0669ac38cbd0cd573042057acf9069233bd409feb8e7f",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niswitch_control_relays/poetry.toml",
+   "bytes": 32,
+   "sha256": "aa057105d3dc259387747093381a196276b77247b854681190d6746ca80deabb",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niswitch_control_relays/pyproject.toml",
+   "bytes": 1086,
+   "sha256": "9e507f3e7750b3957f822a4c5f0324028fc602228d7a391fddd7049afcb64348",
+   "via": "tree"
+  },
+  {
+   "path": "examples/niswitch_control_relays/start.bat",
+   "bytes": 247,
+   "sha256": "a870a81c5b433893e38651d5290857af5946a33f4be7df5d8678c60c6fd5e67c",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nivisa_dmm_measurement/.serviceignore",
+   "bytes": 144,
+   "sha256": "20a56a41be9851b9d58e879b739a723e712d79019a850649f722c7044731f5e3",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nivisa_dmm_measurement/NIVisaDmmMeasurement.instudioproj",
+   "bytes": 2012,
+   "sha256": "04ce64407a90b230453293079307f8522936d6d0c13cd3b301e565fc057bf1df",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nivisa_dmm_measurement/NIVisaDmmMeasurement.measproj",
+   "bytes": 3788,
+   "sha256": "4e6b4f8700afbff484e5e602202a4ad0508c7598a8d39502a3645cb870b399a9",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nivisa_dmm_measurement/NIVisaDmmMeasurement.measui",
+   "bytes": 6994,
+   "sha256": "56310a2d1ad3b3a7cc088f9c0fbef21858b54f4f2aa38b4becdedfc61c811f3e",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nivisa_dmm_measurement/NIVisaDmmMeasurement.pinmap",
+   "bytes": 562,
+   "sha256": "1add7b5ace2dcb40bcecba48cc8fb00e07a395e1ee3a786b4606ff7b61e71b13",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nivisa_dmm_measurement/NIVisaDmmMeasurement.serviceconfig",
+   "bytes": 694,
+   "sha256": "e7090e71886d08bf9df44ef34466b2708689d990c2d8ff3f74922b39778f70fc",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nivisa_dmm_measurement/NIVisaDmmMeasurement.sfp",
+   "bytes": 9866,
+   "sha256": "a3a912fa5bb8fbdbcd395d10ad58359f9815a1968c6814d11a80b5f6fb611956",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nivisa_dmm_measurement/README.md",
+   "bytes": 3061,
+   "sha256": "bcf11bf06fc9dcde6b7e515967f71d1cd3727cd4e959cb782513895fbc6fa0bb",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nivisa_dmm_measurement/_helpers.py",
+   "bytes": 2833,
+   "sha256": "190d88154fe0d50cd438821a79b45d15a6bafff383219d6a299f74e5019b8340",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nivisa_dmm_measurement/_visa_dmm.py",
+   "bytes": 4424,
+   "sha256": "7dd8e6fc9a79a263e8ad348a2c12a0b9e885c0c8bc5af0be635313faad9ea706",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nivisa_dmm_measurement/_visa_dmm_session_management.py",
+   "bytes": 2556,
+   "sha256": "069342c5bbfdf1eddc2fe206b3a1bd90561d46f002cc47a269f7892b8a06d219",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nivisa_dmm_measurement/_visa_dmm_sim.yaml",
+   "bytes": 712,
+   "sha256": "77e5a2f6d94dc36cf3c1a5586f7b322fab0c4305d36ee79879e78ae047bbeb49",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nivisa_dmm_measurement/_visa_grpc.py",
+   "bytes": 2048,
+   "sha256": "79b2b32b160639e8dedabca529312ad2fd56f555cae411092e31f40c70868f98",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nivisa_dmm_measurement/install.bat",
+   "bytes": 199,
+   "sha256": "cd0a317041e1bde443d7ff44abf5170e414893c29b91f33da85a419f45774b16",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nivisa_dmm_measurement/measurement.py",
+   "bytes": 2735,
+   "sha256": "14ae14a00b5924defa306b45fd18b437cfc61b2662bb782e56b6c4ef21f0e835",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nivisa_dmm_measurement/poetry.toml",
+   "bytes": 32,
+   "sha256": "aa057105d3dc259387747093381a196276b77247b854681190d6746ca80deabb",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nivisa_dmm_measurement/pyproject.toml",
+   "bytes": 1086,
+   "sha256": "4f7758bd28fa454268f6f8c11231f976d22b16045962d8bb521d092cb78498ec",
+   "via": "tree"
+  },
+  {
+   "path": "examples/nivisa_dmm_measurement/start.bat",
+   "bytes": 247,
+   "sha256": "a870a81c5b433893e38651d5290857af5946a33f4be7df5d8678c60c6fd5e67c",
+   "via": "tree"
+  },
+  {
+   "path": "examples/output_voltage_measurement/.serviceignore",
+   "bytes": 144,
+   "sha256": "20a56a41be9851b9d58e879b739a723e712d79019a850649f722c7044731f5e3",
+   "via": "tree"
+  },
+  {
+   "path": "examples/output_voltage_measurement/OutputVoltageMeasurement.instudioproj",
+   "bytes": 2025,
+   "sha256": "b90f561ee4cf3a5383d9578e1558b0d3e65496d5cb0d7c5dfc03525084b1f4cc",
+   "via": "tree"
+  },
+  {
+   "path": "examples/output_voltage_measurement/OutputVoltageMeasurement.measproj",
+   "bytes": 3800,
+   "sha256": "f2812e2d007f647f42fda1efaf9c68e95d590be6bb0cf23561c232c6aafe7076",
+   "via": "tree"
+  },
+  {
+   "path": "examples/output_voltage_measurement/OutputVoltageMeasurement.measui",
+   "bytes": 11786,
+   "sha256": "90599a995fb418a79b5c087fe80462736d4d8c3af257993d421b2dcf9193ed1b",
+   "via": "tree"
+  },
+  {
+   "path": "examples/output_voltage_measurement/OutputVoltageMeasurement.pinmap",
+   "bytes": 809,
+   "sha256": "7fc36d3c75e6cea2fc167135469c6d2df54c719402f8d9917348c588295e2259",
+   "via": "tree"
+  },
+  {
+   "path": "examples/output_voltage_measurement/OutputVoltageMeasurement.serviceconfig",
+   "bytes": 706,
+   "sha256": "f605d1472396194566f33a1ae3f22046056e1cc366cffe236140d29ff010bea0",
+   "via": "tree"
+  },
+  {
+   "path": "examples/output_voltage_measurement/OutputVoltageMeasurement.sfp",
+   "bytes": 15101,
+   "sha256": "e02d33b291179d8a02bfbf809857846ac3bc456af6c5483fae62d35977c09ab3",
+   "via": "tree"
+  },
+  {
+   "path": "examples/output_voltage_measurement/README.md",
+   "bytes": 3593,
+   "sha256": "75883821ce1bc06008f5a14046bdc98f6cb837a32a3ef384b9907b0a952c9e0f",
+   "via": "tree"
+  },
+  {
+   "path": "examples/output_voltage_measurement/_helpers.py",
+   "bytes": 2833,
+   "sha256": "190d88154fe0d50cd438821a79b45d15a6bafff383219d6a299f74e5019b8340",
+   "via": "tree"
+  },
+  {
+   "path": "examples/output_voltage_measurement/_visa_dmm.py",
+   "bytes": 4424,
+   "sha256": "7dd8e6fc9a79a263e8ad348a2c12a0b9e885c0c8bc5af0be635313faad9ea706",
+   "via": "tree"
+  },
+  {
+   "path": "examples/output_voltage_measurement/_visa_dmm_session_management.py",
+   "bytes": 2572,
+   "sha256": "b1ba65397cb43c809cd049375f7605f668aaba0b136e3f59ff14be1f9d60762e",
+   "via": "tree"
+  },
+  {
+   "path": "examples/output_voltage_measurement/_visa_dmm_sim.yaml",
+   "bytes": 712,
+   "sha256": "77e5a2f6d94dc36cf3c1a5586f7b322fab0c4305d36ee79879e78ae047bbeb49",
+   "via": "tree"
+  },
+  {
+   "path": "examples/output_voltage_measurement/_visa_grpc.py",
+   "bytes": 2048,
+   "sha256": "79b2b32b160639e8dedabca529312ad2fd56f555cae411092e31f40c70868f98",
+   "via": "tree"
+  },
+  {
+   "path": "examples/output_voltage_measurement/install.bat",
+   "bytes": 199,
+   "sha256": "cd0a317041e1bde443d7ff44abf5170e414893c29b91f33da85a419f45774b16",
+   "via": "tree"
+  },
+  {
+   "path": "examples/output_voltage_measurement/measurement.py",
+   "bytes": 7035,
+   "sha256": "051e46f93a5df67cd9047512b2426de9f9ce283f16cfacb45178d3e50178c1d2",
+   "via": "tree"
+  },
+  {
+   "path": "examples/output_voltage_measurement/poetry.toml",
+   "bytes": 31,
+   "sha256": "d90443f50f554a808fc49fb2a9187901ae79edac269a3680f73b38d4c709f5d1",
+   "via": "tree"
+  },
+  {
+   "path": "examples/output_voltage_measurement/pyproject.toml",
+   "bytes": 1018,
+   "sha256": "6016481325c832469dacb4b521b20f3240436e40b4dfef5d8f1e90d7f7ff8406",
+   "via": "tree"
+  },
+  {
+   "path": "examples/output_voltage_measurement/start.bat",
+   "bytes": 247,
+   "sha256": "a870a81c5b433893e38651d5290857af5946a33f4be7df5d8678c60c6fd5e67c",
+   "via": "tree"
+  },
+  {
+   "path": "examples/sample_measurement/.serviceignore",
+   "bytes": 144,
+   "sha256": "20a56a41be9851b9d58e879b739a723e712d79019a850649f722c7044731f5e3",
+   "via": "tree"
+  },
+  {
+   "path": "examples/sample_measurement/README.md",
+   "bytes": 581,
+   "sha256": "9146361aa9f805ba9480b84783fe28f6360ae6e3b2bfcc035ee2906c4c827059",
+   "via": "tree"
+  },
+  {
+   "path": "examples/sample_measurement/SampleAllParameters.measui",
+   "bytes": 30757,
+   "sha256": "fe95184c13a4fa0bae5fc47c2b5d3319c34612ccf14f3bec96ca3f5074d2a086",
+   "via": "tree"
+  },
+  {
+   "path": "examples/sample_measurement/SampleMeasurement.instudioproj",
+   "bytes": 1517,
+   "sha256": "b24e78c33165ff936c6b31e5d8df13f6b4ca7a63ed7c89f50a9171639c96c460",
+   "via": "tree"
+  },
+  {
+   "path": "examples/sample_measurement/SampleMeasurement.measproj",
+   "bytes": 3512,
+   "sha256": "884a3a41e48f441095a217f14ee8b8444de8ec4d96ac6d0c86fd5b40255ded85",
+   "via": "tree"
+  },
+  {
+   "path": "examples/sample_measurement/SampleMeasurement.measui",
+   "bytes": 15069,
+   "sha256": "48e391610b5618b4afc8fd9405e1dd952b2030f9e39f1ec3b418237603bdd4c9",
+   "via": "tree"
+  },
+  {
+   "path": "examples/sample_measurement/SampleMeasurement.serviceconfig",
+   "bytes": 665,
+   "sha256": "04c4597eb1c3ce87cb9abf19b87096b5997eb27c7b11daae0937c9e0ca5d4495",
+   "via": "tree"
+  },
+  {
+   "path": "examples/sample_measurement/SampleMeasurement.sfp",
+   "bytes": 12825,
+   "sha256": "96cf208c97af97fd2d0a33c5999cbbd4dae96e8f7c28da2f4e10f02b179f8000",
+   "via": "tree"
+  },
+  {
+   "path": "examples/sample_measurement/_array_utils.py",
+   "bytes": 2663,
+   "sha256": "a0ae2d38ee73e0ae596b8e16e64f4ff57e9d6a6e5b3809189851ca5216251de1",
+   "via": "tree"
+  },
+  {
+   "path": "examples/sample_measurement/_helpers.py",
+   "bytes": 2833,
+   "sha256": "190d88154fe0d50cd438821a79b45d15a6bafff383219d6a299f74e5019b8340",
+   "via": "tree"
+  },
+  {
+   "path": "examples/sample_measurement/_stubs/__init__.py",
+   "bytes": 49,
+   "sha256": "39d1e95f853e7ab5b5a68daadc30af1b19a968b36b47090dae85fac40160ed73",
+   "via": "tree"
+  },
+  {
+   "path": "examples/sample_measurement/_stubs/color.proto",
+   "bytes": 781,
+   "sha256": "de5018353e28fcca8b99b2d4a3b9244206537743fd23b56e85c458e07d385e3c",
+   "via": "tree"
+  },
+  {
+   "path": "examples/sample_measurement/_stubs/color_pb2.py",
+   "bytes": 1174,
+   "sha256": "f345f14c67371dac4dc90cae39a189e62a6cf80bd525f6b25c874a5bc61cbf44",
+   "via": "tree"
+  },
+  {
+   "path": "examples/sample_measurement/_stubs/color_pb2.pyi",
+   "bytes": 1412,
+   "sha256": "33c1848028945334cd933439a021b4e6a01dd654a283790cf5c07c184f9dd304",
+   "via": "tree"
+  },
+  {
+   "path": "examples/sample_measurement/_stubs/color_pb2_grpc.py",
+   "bytes": 159,
+   "sha256": "d686e804f171693117b7d030ec4023f205c70c234c8590f6557aa8702f65fe09",
+   "via": "tree"
+  },
+  {
+   "path": "examples/sample_measurement/_stubs/color_pb2_grpc.pyi",
+   "bytes": 553,
+   "sha256": "4af4ca68fd6cae066f771c84a439787766b61cc66dced0b82c38519b0529e2c5",
+   "via": "tree"
+  },
+  {
+   "path": "examples/sample_measurement/install.bat",
+   "bytes": 199,
+   "sha256": "cd0a317041e1bde443d7ff44abf5170e414893c29b91f33da85a419f45774b16",
+   "via": "tree"
+  },
+  {
+   "path": "examples/sample_measurement/measurement.py",
+   "bytes": 5339,
+   "sha256": "c15ccfc33bbca7332e81bdb2a05c461369e05c5f766875e5790c3a99ef8c9968",
+   "via": "tree"
+  },
+  {
+   "path": "examples/sample_measurement/poetry.toml",
+   "bytes": 32,
+   "sha256": "aa057105d3dc259387747093381a196276b77247b854681190d6746ca80deabb",
+   "via": "tree"
+  },
+  {
+   "path": "examples/sample_measurement/pyproject.toml",
+   "bytes": 1206,
+   "sha256": "d9cc81c443d877fdd8cbc95aee7a46ef3b884be00edbf76b30b3e00c4721d163",
+   "via": "tree"
+  },
+  {
+   "path": "examples/sample_measurement/start.bat",
+   "bytes": 247,
+   "sha256": "a870a81c5b433893e38651d5290857af5946a33f4be7df5d8678c60c6fd5e67c",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/README.md",
+   "bytes": 6951,
+   "sha256": "2e8bb08d967c2266d9f8cccd3b92dac7426112e6ec61b92700ff9e01263549a1",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/ni_measurement_plugin_sdk_generator/__init__.py",
+   "bytes": 46,
+   "sha256": "e2ed170c5ff8945db5e645a93f154ead93ca5e09ca1aa672037d083233996967",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/ni_measurement_plugin_sdk_generator/client/__init__.py",
+   "bytes": 12179,
+   "sha256": "7d06d231fd73202f9520e5b2a929836b285f6fbf90032891fc936e4eb8721229",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/ni_measurement_plugin_sdk_generator/client/__main__.py",
+   "bytes": 150,
+   "sha256": "ec090cbc367a5503dbd00e6ef293ecf8533233e25e9e95ecaa26818d991e489d",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/ni_measurement_plugin_sdk_generator/client/_support.py",
+   "bytes": 21018,
+   "sha256": "e74de52a8009218b76f5837f0672c04de442a095641ea1f06c51fbe0e18f46c2",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/ni_measurement_plugin_sdk_generator/client/templates/measurement_plugin_client.py.mako",
+   "bytes": 12566,
+   "sha256": "19a758d281d2d1ee3ef06b4526ed19db1689f8beacea0730893a92f082e4450d",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/ni_measurement_plugin_sdk_generator/plugin/__init__.py",
+   "bytes": 6510,
+   "sha256": "923da4769d7522b6cf5b125262d8b9062f28b37bb4c67af4289d8e0323fdd8d5",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/ni_measurement_plugin_sdk_generator/plugin/__main__.py",
+   "bytes": 153,
+   "sha256": "16aed0cba052da6affac3fe010dfd012cc7739b075906385c173f937cd2d798b",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/ni_measurement_plugin_sdk_generator/plugin/templates/_helpers.py.mako",
+   "bytes": 2833,
+   "sha256": "190d88154fe0d50cd438821a79b45d15a6bafff383219d6a299f74e5019b8340",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/ni_measurement_plugin_sdk_generator/plugin/templates/measurement.measproj.mako",
+   "bytes": 3304,
+   "sha256": "785364d8f694e6494f52c889e54732e6d97c7baf9a6b38934a6e3434d6f8f651",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/ni_measurement_plugin_sdk_generator/plugin/templates/measurement.measui.mako",
+   "bytes": 4281,
+   "sha256": "261715ac2ac17b5edff5bf3abc78d54bc25271ecf34b13c242b9336a827932ba",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/ni_measurement_plugin_sdk_generator/plugin/templates/measurement.py.mako",
+   "bytes": 1539,
+   "sha256": "a377f22c9a8f52dc8ce35367554141af3b85051be41983b96a5c511e5d21a392",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/ni_measurement_plugin_sdk_generator/plugin/templates/measurement.serviceconfig.mako",
+   "bytes": 858,
+   "sha256": "2c9b68bda03390e764d413830d4b5da2e7c540544dd06801ffabf9fa5f3dc714",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/ni_measurement_plugin_sdk_generator/plugin/templates/start.bat.mako",
+   "bytes": 247,
+   "sha256": "a870a81c5b433893e38651d5290857af5946a33f4be7df5d8678c60c6fd5e67c",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/ni_measurement_plugin_sdk_generator/py.typed",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/poetry.lock",
+   "bytes": 195277,
+   "sha256": "cf5474ed0c99fc1737a2d2e687a40487054bbeb497822e1c9f6dfade198869dd",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/poetry.toml",
+   "bytes": 773,
+   "sha256": "7de6ceb07b16ab2c99ea22f074ea4d19b941665dfb508a3ff4d3dcadbf91e77f",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/pyproject.toml",
+   "bytes": 3892,
+   "sha256": "f6f7c33d4192dfd2f4fa904faf8eaed52dc3f574ab32ca6b5448fd541d3a7b73",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/scripts/generate_grpc_stubs.py",
+   "bytes": 3173,
+   "sha256": "bac2f9116cb21b60baf9b1e7b0a8d89423029f4bb0a78a5290ba238541a817cc",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/__init__.py",
+   "bytes": 13,
+   "sha256": "64453cfc044144622a68039370f46c8d7c5c7c74a88c19bee7e92b60137eebc8",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/acceptance/test_client_generator.py",
+   "bytes": 9312,
+   "sha256": "aea0a83dde8bc9bbf3b29ec5df28a47346a8ecd90fa0c7ac18a4878554fb6aa2",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/acceptance/test_non_streaming_measurement_client.py",
+   "bytes": 9556,
+   "sha256": "489ec62fefb35b8da8ba60c7dc352c3504d53f3c696d1aaf8806e5547640ff79",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/acceptance/test_pin_aware_measurement_client.py",
+   "bytes": 8130,
+   "sha256": "abaa5ade2f720a75e9b17245fc76a9737bacf4cfb74b57ede1498909fc2eca1c",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/acceptance/test_plugin_generator.py",
+   "bytes": 2698,
+   "sha256": "bc08d735bb2fb2f4f4138b5d69e2d4867c58eff6b17ab9ef8cc222163c973215",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/acceptance/test_streaming_measurement_client.py",
+   "bytes": 6489,
+   "sha256": "fa7a688ed0c5f77e1d7a483c708a931adbeaff999bf8b7aad058607cb0cb03f4",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/conftest.py",
+   "bytes": 2844,
+   "sha256": "d3e6b7836962f7c2f88ea0a091821298cb09140f120f51cbd3a64f5cd63c6327",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/test_assets/example_renders/measurement/SampleMeasurement.serviceconfig",
+   "bytes": 559,
+   "sha256": "55da8203951b5e8b632352640e93a18dd0f1d5fc87af13f29ea6910a7bb343c4",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/test_assets/example_renders/measurement/_helpers.py",
+   "bytes": 2833,
+   "sha256": "190d88154fe0d50cd438821a79b45d15a6bafff383219d6a299f74e5019b8340",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/test_assets/example_renders/measurement/measurement.py",
+   "bytes": 1455,
+   "sha256": "04b88e12ab43d3153060f26c8c31b1477738de02b484ae71ef3c6fe549680a7e",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/test_assets/example_renders/measurement/start.bat",
+   "bytes": 247,
+   "sha256": "a870a81c5b433893e38651d5290857af5946a33f4be7df5d8678c60c6fd5e67c",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/test_assets/example_renders/measurement_plugin_client/localized_measurement_client.py",
+   "bytes": 25078,
+   "sha256": "8bc3a37b7d9edc2c60abe4c3fe83978147771819c319703bc9563937047392ea",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/test_assets/example_renders/measurement_plugin_client/non_streaming_data_measurement_client.py",
+   "bytes": 26499,
+   "sha256": "1e0f8418b04dccca0abc9996ea55353b2210f1f948b17a4f9d7c34a1d928b1c6",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/test_assets/example_renders/measurement_plugin_client/void_measurement_client.py",
+   "bytes": 8784,
+   "sha256": "838b24a75f0b3be9c25220bbd66690bc073cd64f11eccbdd1800400449c23222",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/test_assets/example_renders/measurement_with_annotations/SampleMeasurement.serviceconfig",
+   "bytes": 660,
+   "sha256": "38ca7a75d49e087043320a3e74caaaba8d20e37836fdb7216703a55b1f854fa6",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/test_assets/example_renders/measurement_with_annotations/_helpers.py",
+   "bytes": 2833,
+   "sha256": "190d88154fe0d50cd438821a79b45d15a6bafff383219d6a299f74e5019b8340",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/test_assets/example_renders/measurement_with_annotations/measurement.py",
+   "bytes": 1455,
+   "sha256": "04b88e12ab43d3153060f26c8c31b1477738de02b484ae71ef3c6fe549680a7e",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/test_assets/example_renders/measurement_with_annotations/start.bat",
+   "bytes": 247,
+   "sha256": "a870a81c5b433893e38651d5290857af5946a33f4be7df5d8678c60c6fd5e67c",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/test_assets/pin_map/1Smu1ChannelGroup1Pin1Site.pinmap",
+   "bytes": 588,
+   "sha256": "4923a6047230727b220ccd86bf6b1bccabe986708075543e54c1ca4e9267747c",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/test_assets/pin_map/1Smu1ChannelGroup2Pin2Site.pinmap",
+   "bytes": 870,
+   "sha256": "6160824ddee58a5a00f22c14054e22666388a206ad89cf8fae61748f37f3cc09",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/unit/test_measurement_client.py",
+   "bytes": 1258,
+   "sha256": "4b30192e43ef0f982dbf14076bd5eceb5b89dc8b82d659d945ccc9b59942cc37",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/utilities/discovery_service_process.py",
+   "bytes": 1546,
+   "sha256": "8c5707c0ed2a7a7c51433b4f4b2225a8fdeae686a92503c86770215be4425a8b",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/utilities/measurements/localized_measurement/LocalizedMeasurement.serviceconfig",
+   "bytes": 596,
+   "sha256": "663c0138b95720d2598307b6441c61727cb4dde171978e3af69941f78ff5867b",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/utilities/measurements/localized_measurement/__init__.py",
+   "bytes": 5291,
+   "sha256": "6debaf3d79c53d64c58132a0cce3900e95a97dadbfd401e8c9144d5a397bb97d",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/utilities/measurements/non_streaming_data_measurement/NonStreamingDataMeasurement.serviceconfig",
+   "bytes": 629,
+   "sha256": "6bee2f8722a222dad8905ee8a495962b74b10bf40957c5e198ea1e3b4cac9c50",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/utilities/measurements/non_streaming_data_measurement/__init__.py",
+   "bytes": 5724,
+   "sha256": "99c0eaaf0ccda1effd9e57788b8377e28adb68c3d4b97c06f6072023ec493608",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/utilities/measurements/non_streaming_data_measurement/_stubs/__init__.py",
+   "bytes": 61,
+   "sha256": "ddee8ace008d997c5ca527756d07954a808a89dd9c6165054f32684ee4bd77ef",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/utilities/measurements/non_streaming_data_measurement/_stubs/color.proto",
+   "bytes": 607,
+   "sha256": "c80e3354e1a9305c5bdd59c9aa845d67e29052f95ca9165c6bfdbc92a55406c9",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/utilities/measurements/non_streaming_data_measurement/_stubs/color_pb2.py",
+   "bytes": 1080,
+   "sha256": "ddde6dd8f6194bee35c67f4edc4e77d8d4a0c069512a6ef39de31f7292e0206c",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/utilities/measurements/non_streaming_data_measurement/_stubs/color_pb2.pyi",
+   "bytes": 1412,
+   "sha256": "33c1848028945334cd933439a021b4e6a01dd654a283790cf5c07c184f9dd304",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/utilities/measurements/non_streaming_data_measurement/_stubs/color_pb2_grpc.py",
+   "bytes": 159,
+   "sha256": "d686e804f171693117b7d030ec4023f205c70c234c8590f6557aa8702f65fe09",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/utilities/measurements/non_streaming_data_measurement/_stubs/color_pb2_grpc.pyi",
+   "bytes": 553,
+   "sha256": "4af4ca68fd6cae066f771c84a439787766b61cc66dced0b82c38519b0529e2c5",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/utilities/measurements/pin_aware_measurement/PinAwareMeasurement.serviceconfig",
+   "bytes": 585,
+   "sha256": "70b16fa7a2bbd3882d95db8175b91a7b8864b9063fdf14b20c08cfa98204ebf3",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/utilities/measurements/pin_aware_measurement/__init__.py",
+   "bytes": 2120,
+   "sha256": "fa10f34f42688aabfd19be54b608d1c028e16c661dc8b36edb2a1809a44f23a8",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/utilities/measurements/streaming_data_measurement/StreamingDataMeasurement.serviceconfig",
+   "bytes": 564,
+   "sha256": "de966730489bd983569711ce5cffaac532afeae30538842bdbfa952ba50c76ca",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/utilities/measurements/streaming_data_measurement/__init__.py",
+   "bytes": 2602,
+   "sha256": "a9a1b6d748f048c126d2ae63dd93f5aa90b8a90cf5c4849cfff0be34d4941c7e",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/utilities/measurements/void_measurement/VoidMeasurement.serviceconfig",
+   "bytes": 608,
+   "sha256": "22008a2c5843c9c2e69704a1ce13189ca53424d0d5b3a73f23ad4d44ddc9db0a",
+   "via": "tree"
+  },
+  {
+   "path": "packages/generator/tests/utilities/measurements/void_measurement/__init__.py",
+   "bytes": 1345,
+   "sha256": "d5f07fceda37dc746dc857a29c577f80c944155afd487e064759e1727d41c46e",
+   "via": "tree"
+  },
+  {
+   "path": "packages/sdk/README.md",
+   "bytes": 835,
+   "sha256": "9ad2e65195a2845d420d32ff02a4a108e496a549f92c59292e4d242f00775bf9",
+   "via": "tree"
+  },
+  {
+   "path": "packages/sdk/ni_measurement_plugin_sdk/__init__.py",
+   "bytes": 42,
+   "sha256": "78778a1cd38247d23aa077980724be1a16bbe79968678ebfcc6baef6963aa44c",
+   "via": "tree"
+  },
+  {
+   "path": "packages/sdk/poetry.lock",
+   "bytes": 85001,
+   "sha256": "f2ca4f72bbfaf8735ae388429eb81ca039e09f82c1e8cd56d65f57278589ba8f",
+   "via": "tree"
+  },
+  {
+   "path": "packages/sdk/poetry.toml",
+   "bytes": 816,
+   "sha256": "e4d41a20b39d05b249e5882bb9aed4e1eb42d7d4f63c3f732b30dbdd4724db2d",
+   "via": "tree"
+  },
+  {
+   "path": "packages/sdk/pyproject.toml",
+   "bytes": 1283,
+   "sha256": "30b683aea5836fb554fad9a426e4fbbf5549253532763c57965989802ed71cff",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/README.md",
+   "bytes": 16202,
+   "sha256": "06f512cdbf5fe8b3d69d945c0deb3b0e0d84d7736a886e3c5709ea5739e1e62e",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/_docs_source/conf.py",
+   "bytes": 5310,
+   "sha256": "7563878a6234e858451928d44abdeb5404bb20e14938c8a66d9c20d552c46e14",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/_docs_source/index.rst",
+   "bytes": 174,
+   "sha256": "fee25b350412ebbc8722abef3c19d8b61e67d3e3365beb437f7220637a59228f",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/__init__.py",
+   "bytes": 572,
+   "sha256": "fb44d9543eb6ad44fb1f6145078d64438edab0e4ae74e1c79365e56b2460ee11",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/_annotations.py",
+   "bytes": 187,
+   "sha256": "e0420718d07c909225eac312792b9cfc20b7498d060148facf829e08e86f2515",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/_configuration.py",
+   "bytes": 3835,
+   "sha256": "13a81edf0e7743d1a0f7a0c537b286d7095256fe57335203b4c40922d1efefe0",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/_datatypeinfo.py",
+   "bytes": 3927,
+   "sha256": "f85112511147eb34bc0057100e49e38a5c9d7b877c47eef194e0b0c8fd840020",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/_dotenvpath.py",
+   "bytes": 2308,
+   "sha256": "87139b71c60d0a2d506eb3435d462e86d276326083bcb0fa844cf8e1ea1b787f",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/_featuretoggles.py",
+   "bytes": 4575,
+   "sha256": "de8066f002f3575b0e2824b415b11e5b6d9b4c07c3d3154bfc43b07964f57194",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/_internal/__init__.py",
+   "bytes": 275,
+   "sha256": "ce7ac6a9706922a8385280d4ae0c321c6568e37cace384689e07800b3eb5ab99",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/_internal/discovery_client.py",
+   "bytes": 510,
+   "sha256": "4f29ca64d41c32f51410aad12d15c67ffbe4a9e3adaea8dd25e3671f1badb28a",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/_internal/grpc_servicer.py",
+   "bytes": 17664,
+   "sha256": "5590ea652076fe72ffc635b2400875285021594576d6b6343b29911aa1f68df3",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/_internal/parameter/__init__.py",
+   "bytes": 57,
+   "sha256": "b5f93408bbab803232c471caf76f738e4e1c758099f3f254d2ccd1a636e159b6",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/_internal/parameter/_get_type.py",
+   "bytes": 1590,
+   "sha256": "16c3c992eebb630d4e5d04162a13561972c88a8d438d950c4792f542f56769f3",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/_internal/parameter/decoder.py",
+   "bytes": 2273,
+   "sha256": "c6b4bf1745999d4fecb27fc062f7f9d3647a24ba3d6d35c11064b361bc43742b",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/_internal/parameter/encoder.py",
+   "bytes": 3002,
+   "sha256": "9eee186148a12cabd6c68b86f5c8d4fb912009d565f86b92fb7836a6270add50",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/_internal/parameter/metadata.py",
+   "bytes": 8092,
+   "sha256": "5eb6c290524f8cc070527b295ce52eca9de4ee681bc45524228d939c40e46a72",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/_internal/parameter/serialization_descriptors.py",
+   "bytes": 4334,
+   "sha256": "78d3bd515ccd65bdbab241082117571fb33b631316722c7291cb0c2d8fc03497",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/_internal/service_manager.py",
+   "bytes": 5983,
+   "sha256": "d40a8d6df33641a4405d2f42b3efab85a56827b186ded85e04ec6b712fe6321f",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/discovery/__init__.py",
+   "bytes": 488,
+   "sha256": "76e8ba9d5675a849120bd6ea09ff95e986e18a93a63d5f4a93a6cf9414f80e14",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/grpc/__init__.py",
+   "bytes": 301,
+   "sha256": "f8182866d107f0a670d8ceee30df4af89d2e84f1cb76eecbce23c0064b00169d",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/grpc/channelpool.py",
+   "bytes": 406,
+   "sha256": "9cc329e40a69cd80cfe916acddf774a44b76f91f77870115f8890cdda719f5ac",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/grpc/loggers.py",
+   "bytes": 431,
+   "sha256": "3727ab136d4525149116b5717035fb232c5eaf06ce38ae153086e581e3e08725",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/measurement/__init__.py",
+   "bytes": 135,
+   "sha256": "e2cf92eedc8659eaa9d0d21d84a2c607bf3f77e8dc7e27564108f05ab52134cb",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/measurement/client_support.py",
+   "bytes": 3818,
+   "sha256": "a5d8fdcad8b2780337fbc0b39e2ac2682e51dff34d3b84b65182bbb75b2cf381",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/measurement/info.py",
+   "bytes": 1558,
+   "sha256": "e95ac07426cf2ea562090203d3dcd16b4f717083dd5550caba0a426efe3804c2",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/measurement/service.py",
+   "bytes": 24574,
+   "sha256": "dce5eb26017c0bf37e545c20d7915eb7223b488b3dedd187d3df0a909eabe12c",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/pin_map/__init__.py",
+   "bytes": 434,
+   "sha256": "fded73adeebf9cec3f94e9f4dbf2186ad5eaf4286b747ba504b630f20f904da8",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/py.typed",
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/session_management/__init__.py",
+   "bytes": 2638,
+   "sha256": "dc6b109cda0cc36b2f1226305fa2b015b6f5981c0bf913469dfbf810aab296c9",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/session_management/_reservation.py",
+   "bytes": 312,
+   "sha256": "9a35b13a05b7977833ebcffa91f586d463454b878f60d4524a1509f8d54d36ef",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/ni_measurement_plugin_sdk_service/session_management/_types.py",
+   "bytes": 648,
+   "sha256": "430c2740a96511dd8159e9ccbefb04f0d2c2124c6bd0ea38fad37d47a960c00b",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/poetry.lock",
+   "bytes": 244942,
+   "sha256": "338f59bf9aa91b80187a93d4e7c2e07a8de87632afa892b301faf326a3d69c96",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/poetry.toml",
+   "bytes": 732,
+   "sha256": "d114e6b1f6d73d6c2986bca8940c4ea1d9f14f41ade97faffd22f636693ef3d1",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/pyproject.toml",
+   "bytes": 6456,
+   "sha256": "c907ca070f6a9312689e6648dcefcd992a77ae22386197b89f3ef285562dce96",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/scripts/generate_grpc_stubs.py",
+   "bytes": 1719,
+   "sha256": "ab515255423e4dfc4ec10dcb671456b1f97b167e4760a669a2e20bb8b04b498a",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/scripts/install_examples.py",
+   "bytes": 2630,
+   "sha256": "2a75d3dc0dc682f1b11ab469123d304b02b704d2692e1ccab6b3339db6d98f2c",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/__init__.py",
+   "bytes": 13,
+   "sha256": "64453cfc044144622a68039370f46c8d7c5c7c74a88c19bee7e92b60137eebc8",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/acceptance/__init__.py",
+   "bytes": 24,
+   "sha256": "d79d75a49678002ac23c04b9f659370498927fe4e690edbfbabf81b8f85c3274",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/acceptance/conftest.py",
+   "bytes": 744,
+   "sha256": "bfb9ef1016bac19654bf3ef583ec5681aeb16ce66681f574a7890f82e27e3e1e",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/acceptance/test_logging.py",
+   "bytes": 7095,
+   "sha256": "de45f07f1a5ceb733ea21c450a592abaecf7c6721bc3cad45d62daebf573ea8f",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/acceptance/test_measurement_service.py",
+   "bytes": 10293,
+   "sha256": "66d88f80d1c14a1669278452e4418f6309e44daa71653a380209d7f99cfe4552",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/acceptance/test_nidaqmx_measurement.py",
+   "bytes": 3732,
+   "sha256": "f715ddba651e1e1da654c063f0edf4429f4049db0d89f2c54e3a6035915cae39",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/acceptance/test_nidcpower_measurement.py",
+   "bytes": 4009,
+   "sha256": "4ef5b68db75de758ae431e7edf9058a6ac9372858fbdf83ce42225ffc66fdc7a",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/acceptance/test_nidigital_measurement.py",
+   "bytes": 5072,
+   "sha256": "b83737d5004b1556c5e4f8b8390405152757ff5c3061b3e89be97e5133772ac3",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/acceptance/test_nidmm_measurement.py",
+   "bytes": 3910,
+   "sha256": "8aabaa8d96819e5801b90f10808c1515206f5ed4ae53fa52274a620d823d3179",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/acceptance/test_nifgen_measurement.py",
+   "bytes": 3436,
+   "sha256": "44b505658a903b1d4e60dffd7b0a1f87bacc9e79f49c51441ff2455b85844fe9",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/acceptance/test_niscope_measurement.py",
+   "bytes": 3820,
+   "sha256": "cfd093d42ddc17410587a9f2456fface88214227da277db7d60a510cc7c7b719",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/acceptance/test_niswitch_measurement.py",
+   "bytes": 3725,
+   "sha256": "81e85d853440572fabdba95b28f180a79db0f3c4d18d12d3101fe8b60738f54b",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/acceptance/test_niswitch_multiplexer_measurement.py",
+   "bytes": 3441,
+   "sha256": "a23d11886aadc4d13eba531fd7578ab88104a9ca057f117aaf020eb854620e95",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/acceptance/test_security.py",
+   "bytes": 1209,
+   "sha256": "7a4432c884a390dddea812f07d773551003443168a9b70102df8c2430626da4b",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/acceptance/test_session_management.py",
+   "bytes": 10972,
+   "sha256": "4a37cd23dadd583d5549199c5d6ecc240c5e1a473ea20ae8106321cd22af4bb1",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/acceptance/test_streaming_data_measurement.py",
+   "bytes": 6020,
+   "sha256": "5e52ad23b5823c9f324919d5b439a2cfce6dfa0f2b3b65343507d0dcf32a94d7",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/acceptance/test_yield_vs_return.py",
+   "bytes": 2510,
+   "sha256": "52ac45d08dc78c9dab675a835779ed5cf0e7aebaf688177705b32395e7318c4c",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/__init__.py",
+   "bytes": 28,
+   "sha256": "75569bbe873ba7f2ff5d49e9561f3bf924ce41df022dd72423f1b376f548769b",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/acceptance/session_management/1Fgen1Pin1Site.pinmap",
+   "bytes": 506,
+   "sha256": "9c74db5d5825fadabae61be0a6e3762740128d17fc1cddfdb2a3e6ef10bc32db",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/acceptance/session_management/1Smu1ChannelGroup1Pin1Site.pinmap",
+   "bytes": 588,
+   "sha256": "4923a6047230727b220ccd86bf6b1bccabe986708075543e54c1ca4e9267747c",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/acceptance/session_management/1Smu1ChannelGroup2Pin2Site.pinmap",
+   "bytes": 870,
+   "sha256": "6160824ddee58a5a00f22c14054e22666388a206ad89cf8fae61748f37f3cc09",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/acceptance/session_management/1Smu2ChannelGroup2Pin1Site.pinmap",
+   "bytes": 763,
+   "sha256": "fd163fb7c3ae77cd1f220eb6e8ccf15068db24260fc4cb6a9e4068b7867de6b1",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/acceptance/session_management/1Smu2ChannelGroup2Pin2Site.pinmap",
+   "bytes": 943,
+   "sha256": "85b72e5cfdab3079cb5c680f469966ef0989eaa507267a6b4cd21c2332634938",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/acceptance/session_management/2Digital2Group4Pin1Site.pinmap",
+   "bytes": 1332,
+   "sha256": "71c116475bc41baff6d7e0e43693adbd033b83a5dc5c56e875043737f8ad703d",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/acceptance/session_management/2Dmm2Pin1Site.pinmap",
+   "bytes": 611,
+   "sha256": "406c878a6a70da71eee4eaa39c65e4be2eb60b4db3d0e01fe90d90f2c859f2f1",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/acceptance/session_management/2Fgen2Pin1Site.pinmap",
+   "bytes": 662,
+   "sha256": "1186063c15452b330b65ba682198c5e9b669257114625d5204775954f271042d",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/acceptance/session_management/2Fgen2Pin2Site.pinmap",
+   "bytes": 836,
+   "sha256": "b9ece58959822b990c97f4b51a9bbf7cc3731cb432bd2b792375abb3e86e369e",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/acceptance/session_management/2Mio2Pin1Site.pinmap",
+   "bytes": 712,
+   "sha256": "5687e3c34c565d0eb5a5587ab0e1ee7adfa32e8ec759cc8b93a11bc6f7350cc9",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/acceptance/session_management/2Scope2Pin2Group1Site.pinmap",
+   "bytes": 698,
+   "sha256": "1f89fc2d3370af69919980fe09767a7ece3a3aed9328bee2fb0f4fcaefe1cddc",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/acceptance/session_management/2Smu2ChannelGroup2Pin2Site.pinmap",
+   "bytes": 999,
+   "sha256": "88423dc983d7e670e0c20ffd053e5b55844536c66c69d9efebe65a8fb316abcc",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/acceptance/session_management/2Switch2Relay1Site.pinmap",
+   "bytes": 822,
+   "sha256": "040a837dd62d0409c4bcccba5c648cc6ec6948c1b0e22e8da6f593e51ab99c26",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/acceptance/session_management/2SwitchMultiplexer1Smu2Pin1Site.pinmap",
+   "bytes": 1071,
+   "sha256": "c0137efed63ab043930c8099c108f300acccef95f3b43a059c0de7353200d4c6",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/example.AllAnnotations.serviceconfig",
+   "bytes": 660,
+   "sha256": "798e1830e011057db895e0061e64d937f8a8e61c7c2d5e5136fa930d47cc9631",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/example.CustomAnnotations.serviceconfig",
+   "bytes": 822,
+   "sha256": "bfe962f5a4cfe5d58cc3fd856e04921b0c0f7382feee7268c9864338eead1bfd",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/example.NoVersion.serviceconfig",
+   "bytes": 662,
+   "sha256": "0d91cfcee520e63ba3585315540503c60fa5a1a13ba142c283db8c3ffcfd23a6",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/example.OnlyCollection.serviceconfig",
+   "bytes": 507,
+   "sha256": "1cd17dde695df888a3bdbb5f2470aa5e4605d396cdd00904c8395522c80956de",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/example.OnlyTags.serviceconfig",
+   "bytes": 451,
+   "sha256": "de2d57562f30415c25362af679d6d495444747a40e8a4985c84228a1a9f213bc",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/example.localized.serviceconfig",
+   "bytes": 353,
+   "sha256": "d0b7d50620dceeadf30bf546c5675ea1cfaf1801f6d0217e35422451f4adf402",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/example.serviceconfig",
+   "bytes": 688,
+   "sha256": "8167238d78a71290b8880c1f98eb9ab282cba285a83faa3b9885118a0cf3634d",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/example.v1.serviceconfig",
+   "bytes": 355,
+   "sha256": "04213b6ac4df72fe60166ee418551116870910e92da5bdb0caff5ff3581044e8",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/example.v2.serviceconfig",
+   "bytes": 356,
+   "sha256": "b766856d0cdb8948af41bbf8191de97db31e559dfe7589668d8f7854059518f0",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/integration/session_management/1Smu2ChannelGroup2Pin1Site.pinmap",
+   "bytes": 763,
+   "sha256": "fd163fb7c3ae77cd1f220eb6e8ccf15068db24260fc4cb6a9e4068b7867de6b1",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/integration/session_management/1Smu2Multiplexer2Pin1Site.pinmap",
+   "bytes": 1063,
+   "sha256": "7edcb435f90a1b5f479fe29214341cd161711751f5b0dc0c8671b67362b65d05",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/integration/session_management/2Digital2Group4Pin1Site.pinmap",
+   "bytes": 1332,
+   "sha256": "71c116475bc41baff6d7e0e43693adbd033b83a5dc5c56e875043737f8ad703d",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/integration/session_management/2Dmm2Pin1Site.pinmap",
+   "bytes": 611,
+   "sha256": "406c878a6a70da71eee4eaa39c65e4be2eb60b4db3d0e01fe90d90f2c859f2f1",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/integration/session_management/2Fgen2Pin1Site.pinmap",
+   "bytes": 662,
+   "sha256": "1186063c15452b330b65ba682198c5e9b669257114625d5204775954f271042d",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/integration/session_management/2Mio2Pin1Site.pinmap",
+   "bytes": 712,
+   "sha256": "5687e3c34c565d0eb5a5587ab0e1ee7adfa32e8ec759cc8b93a11bc6f7350cc9",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/integration/session_management/2Scope2Pin2Group1Site.pinmap",
+   "bytes": 698,
+   "sha256": "1f89fc2d3370af69919980fe09767a7ece3a3aed9328bee2fb0f4fcaefe1cddc",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/integration/session_management/2Switch2Relay1Site.pinmap",
+   "bytes": 822,
+   "sha256": "040a837dd62d0409c4bcccba5c648cc6ec6948c1b0e22e8da6f593e51ab99c26",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/integration/session_management/PinMapA_3Instruments_3DutPins_2SystemPins_2Sites.pinmap",
+   "bytes": 1412,
+   "sha256": "2eb096ec71e41109a7661e0680c80bad4031f9cfc3f539a10c0b2c773988ffb6",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/integration/session_management/PinMapB_3Instruments_3DutPins_2SystemPins_2Sites_SharedPins.pinmap",
+   "bytes": 1345,
+   "sha256": "0434f6760e4eb7234c6883e23d8eef26114c723744ddaa9f624e5f0fe01f5e9e",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/integration/session_management/PinMapC_MultipleInstrumentsPinsRelaysAndSites.pinmap",
+   "bytes": 2608,
+   "sha256": "d7db5f1d73bc442d879d6ceca0fc9e26f8b89a7b8878ef17bd86e4b5d4eadd8e",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/integration/session_management/PinMapD_3Instruments_4DutPins_2Sites_2Multiplexers.pinmap",
+   "bytes": 1881,
+   "sha256": "4dae4d109d0ab72861398c8dcea20df5b0274573b13a931491352e156bdca55a",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/assets/unit/pin_map/1Smu1ChannelGroup1Pin1Site.pinmap",
+   "bytes": 588,
+   "sha256": "4923a6047230727b220ccd86bf6b1bccabe986708075543e54c1ca4e9267747c",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/conftest.py",
+   "bytes": 5391,
+   "sha256": "18a3c4b254c6c339fba9edfcbb4856c809a2a45025d05bfefa4fd18eeccaf0ca",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/integration/__init__.py",
+   "bytes": 25,
+   "sha256": "ac685699a0c0a25fde518d92fd2f8d17c97948008060c87a9e33828cba1092f4",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/integration/session_management/__init__.py",
+   "bytes": 69,
+   "sha256": "d1ef75c70be3feb7539f423608348d791aa75bfee364e4501dfc58ee6f897a37",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/integration/session_management/conftest.py",
+   "bytes": 327,
+   "sha256": "7932c7471c064a76362fe1c7f178c76af5e422ff71869b8a2e27fff066298018",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/integration/session_management/test_nidaqmx_reservation.py",
+   "bytes": 3368,
+   "sha256": "0acec3aba46fdf73034c4d6b99419b8772f485ace7f0b09d9a0232464fe2ff69",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/integration/session_management/test_nidcpower_reservation.py",
+   "bytes": 3959,
+   "sha256": "f95ba4d212916e4eda243da4bd0a41dc08ac4790a1d5bce11f719b04e0b50e87",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/integration/session_management/test_nidigital_reservation.py",
+   "bytes": 3718,
+   "sha256": "d0dab24a52d5ad1193135d4ee3119610ad3b2e68f1ba4fc12338cb81bb5227ca",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/integration/session_management/test_nidmm_reservation.py",
+   "bytes": 3723,
+   "sha256": "e1401cd6a5c82df92b2d7f98d0b27f162789feee2af9f957fa7b107b7b72c06f",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/integration/session_management/test_nifgen_reservation.py",
+   "bytes": 3504,
+   "sha256": "e6e318c30dbbb4d63a6c884e8d03e50a8c7e77f343b1ec61e6eaa7cfa1050392",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/integration/session_management/test_niscope_reservation.py",
+   "bytes": 3557,
+   "sha256": "9b1914f523ba35b7ab17c35ecda50cedd8cd3cb8939c7c33fc60708cb4c2609a",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/integration/session_management/test_niswitch_multiplexer_reservation.py",
+   "bytes": 4820,
+   "sha256": "b176db7df7a2a411aad601230a120d166a0b2ac9e9c3eb972ec3482679c0a57f",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/integration/session_management/test_niswitch_reservation.py",
+   "bytes": 3617,
+   "sha256": "7e0499a6035ea0cea59ef8660c8a7c5cb9c66b190b82f96698ea8f9ddf399dcd",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/integration/session_management/test_reservation.py",
+   "bytes": 29023,
+   "sha256": "6cd4d3200bbf7952595d42ed93e38961013a7ffb73a69f862a6b4dba68b37fe6",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/integration/test_service_manager.py",
+   "bytes": 6327,
+   "sha256": "83c51ee4363dd45a9c60fd18726b388aa32c947346a492d2bffa2cca0c3e68f4",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/__init__.py",
+   "bytes": 18,
+   "sha256": "3b2bec5485bb3fb3bb29a41ff8b1d86feb92bbc6587a20491c94a0b29d2a195b",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/_drivers/__init__.py",
+   "bytes": 65,
+   "sha256": "1699df9e1c0e714ebbc468503e2a9d59177597be7e789bfda65db7f4f1b6d824",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/_drivers/_driver_utils.py",
+   "bytes": 1143,
+   "sha256": "b87ba355e073b63eabcaab990b2ff4ed172ccb486cf777150f77a6d9f4f0626e",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/_drivers/test_grpcdevice.py",
+   "bytes": 6317,
+   "sha256": "098decb35c77556c198b5defc3fc1ac3932806b4d7fa3d1764dd62bb5dda5902",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/_drivers/test_nidaqmx.py",
+   "bytes": 6887,
+   "sha256": "aa55414f5900f80b523cc6f4f520804d7830faa369aa2034a163958f08a1e366",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/_drivers/test_nidcpower.py",
+   "bytes": 9101,
+   "sha256": "35bc06e18d526f8cd61f1e5719de79a547475a63f85d24560df46eccd289de3a",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/_drivers/test_nidigital.py",
+   "bytes": 8734,
+   "sha256": "0c681f899dcee2c8378915195035261399748b8b2cb16c25a291e91d1af37736",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/_drivers/test_nidmm.py",
+   "bytes": 8528,
+   "sha256": "62565f7438c9e37441314cdecf2ddae8c2c15bce5fc5698918de208f94e882cd",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/_drivers/test_nifgen.py",
+   "bytes": 8602,
+   "sha256": "dd0011b6348f123fd8dd576f68c900a8aa3ac81fea516e85c8a1d99991de994a",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/_drivers/test_niscope.py",
+   "bytes": 8628,
+   "sha256": "890a2b342f8d29cdecbb5a648b716ee50d5af5f4d77cdec37aa836e460df4c63",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/_drivers/test_niswitch.py",
+   "bytes": 9721,
+   "sha256": "d11b108180b61c45c9f0fb159332a1a094fd56db1bbdfa5fc7a9f7d38d17fecb",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/_reservation_utils.py",
+   "bytes": 1833,
+   "sha256": "923444de42755eb410e43ae899039a84e84527c88f8ed4248ebd86edab235c67",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/conftest.py",
+   "bytes": 3584,
+   "sha256": "841fd2abfb50c7163854186fe77742983d9cc2a7d481b57c013e0a769695af55",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/grpc/__init__.py",
+   "bytes": 61,
+   "sha256": "549fcb7d5af0cd78b8a41d18f60a593f01b9e1182fed20f9ecb22382a8941e65",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/grpc/channelpool/__init__.py",
+   "bytes": 73,
+   "sha256": "f6aa4d114ba53dac16744254466d538f4977b9866651e6040c51850abf522463",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/grpc/channelpool/test_channel_pool.py",
+   "bytes": 1081,
+   "sha256": "6c80a7467f1ad598fe15492e9fb7bdab8f20d044ea737c0e7ebf163de5d21f00",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/measurement/__init__.py",
+   "bytes": 68,
+   "sha256": "e7013ce41feb23c63e4de3acf7f500feac997dd3520da912562148cbd504ca64",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/measurement/service/__init__.py",
+   "bytes": 76,
+   "sha256": "66f7481c33a2fda26a3acdd2fa5fb591f8248624cfdef814c935a59e69c5550f",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/measurement/service/test_measurement_context.py",
+   "bytes": 3956,
+   "sha256": "656f61861273da86147b3d2edd7a757b009653efea2faaa542f6ecceacb68d2b",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/test_array_utils.py",
+   "bytes": 2619,
+   "sha256": "dbb5949bae868a4e51d6322d7f294fa97847bbed4a0004cdd71cfa9183ef1cf2",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/test_configuration.py",
+   "bytes": 2059,
+   "sha256": "00601c6d7c3715988f0ea9fd72a1f1bcf3cc9ab30524d58670936593cdc440eb",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/test_decoder.py",
+   "bytes": 13992,
+   "sha256": "5e154f7da2bb138603a4d021dc6b1e49a326df9c190d705f21cf1ed8a2c92e34",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/test_default_value.py",
+   "bytes": 1051,
+   "sha256": "6e48dac330f95ac9723f8ff7094c1ae6a705685ad9bdf5e14371ccc15bd333b8",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/test_dotenvpath.py",
+   "bytes": 1108,
+   "sha256": "6a44efb0de9832299bac24891621d2e0cba39ee5b7d3c957b0cec43a44114d5a",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/test_drivers.py",
+   "bytes": 4216,
+   "sha256": "cdd4ffe02b58ffc9579f6aa20f20cde76c7a3758cd965fb82b9e8e270462fd88",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/test_encoder.py",
+   "bytes": 7398,
+   "sha256": "590d4fa060490eab3e58050f3b368a5589ee443b6a9d0b901515b3a2ace27d52",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/test_featuretoggles.py",
+   "bytes": 3928,
+   "sha256": "fc76257cbdb4b275826637f1cb8334c9f03d1de67fc54dc3032008f44117b3f0",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/test_metadata.py",
+   "bytes": 5356,
+   "sha256": "2e7bc1e3677f6f2fd3a93242fac36cfdd37e201e62d52b7c2b4218cd57804cf2",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/test_pin_map_client.py",
+   "bytes": 2560,
+   "sha256": "9741ce9f3a0ba44f63b73b4f9e8ed917f955ae247af026cc47e0979177f46bd2",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/test_reservation.py",
+   "bytes": 37651,
+   "sha256": "21e9e84e4bea177dfead4c7bff17e94488130eeb12813b055b323aae773e884b",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/test_reservation_multiplexer.py",
+   "bytes": 36544,
+   "sha256": "fa58a3a499e9d182a5a8bbbd69e209748aab7d343ab6efbe4bc2652d69ef218c",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/test_service.py",
+   "bytes": 18763,
+   "sha256": "0ab28558ce9b421d9dee9d3369283baf37aa206812400c1503c2848df1107629",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/unit/test_session_management.py",
+   "bytes": 40630,
+   "sha256": "35432e8993daa09c93dc09808e43d7137acd878835040c0cc3778a93f2ac212c",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/__init__.py",
+   "bytes": 31,
+   "sha256": "228beaf155e97d53b5dfee69251c23ec7d53f76ec9f8d3ab513ccbbb9bca44d6",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/_array_utils.py",
+   "bytes": 2663,
+   "sha256": "a0ae2d38ee73e0ae596b8e16e64f4ff57e9d6a6e5b3809189851ca5216251de1",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/connection_subset.py",
+   "bytes": 1415,
+   "sha256": "e94176f37d044c1e303334ab7da8c0522dffb260c982e4399cbf7faccdf7fca1",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/discovery_service_process.py",
+   "bytes": 1546,
+   "sha256": "8c5707c0ed2a7a7c51433b4f4b2225a8fdeae686a92503c86770215be4425a8b",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/fake_discovery_service.py",
+   "bytes": 1507,
+   "sha256": "6f687849cf42c509a8fdf3c482a5d2f737b55c783b54d5c8024bdddbfba901c3",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/fake_driver.py",
+   "bytes": 4650,
+   "sha256": "3e54cb591dc9eef4f32375e36e5377fe3d8449445e5422cd2b1c95ace50a9171",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/fake_multiplexer_driver.py",
+   "bytes": 4752,
+   "sha256": "63010e9a3e56963d96aaaad74f26010ec6bbfcec6ff946ce3a38fb0814c542a4",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/fake_rpc_error.py",
+   "bytes": 537,
+   "sha256": "f934f343bca7ec5a376c258fd8601a242c6549bbc310d2c45259402bd893653a",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/__init__.py",
+   "bytes": 25,
+   "sha256": "cbd6f0c3244779fdc25466bf1566c637b9708ea0c100b11eb11a2674ee768814",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/loopback_measurement/LoopbackMeasurement.serviceconfig",
+   "bytes": 635,
+   "sha256": "98620a441716b01d15fe2348ff40d1a41de856261796b217d8cf6f6431571d78",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/loopback_measurement/__init__.py",
+   "bytes": 2866,
+   "sha256": "6118c3c97de23198e8358efadeb0f6d6b79a5d8863704e4d6aae5e20897f7ac1",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/nidaqmx_measurement/NIDAQmxMeasurement.serviceconfig",
+   "bytes": 602,
+   "sha256": "692335fe3f704d8f54069165f1c6e29d7e2de975de71193d128e317223e5fe2b",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/nidaqmx_measurement/__init__.py",
+   "bytes": 3894,
+   "sha256": "052adb39a6bfb9e12d4a885589585df1adcec8ce9b4e467eafb4b7ab3350606d",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/nidcpower_measurement/NIDCPowerMeasurement.serviceconfig",
+   "bytes": 559,
+   "sha256": "19c4a28252b3118c41048cb6ad00670a3492984f03ef21a8b3713c639dc6e04f",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/nidcpower_measurement/__init__.py",
+   "bytes": 4637,
+   "sha256": "f19c6f18df74cb85cf9731f8ff979633254ff1c14ba596e9bc2b41cbd2d09c4b",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/nidigital_measurement/NIDigitalMeasurement.serviceconfig",
+   "bytes": 559,
+   "sha256": "dd2cb42c9a95b59b0dc9577275e1668287b29a821263696c61fcea92cdb7ddb8",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/nidigital_measurement/Pattern.digipat",
+   "bytes": 4188,
+   "sha256": "05e60068d461cd1806ede839c7b14c66a62004e46487d0f283b46f66f09b3462",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/nidigital_measurement/PinLevels.digilevels",
+   "bytes": 1582,
+   "sha256": "501ae33ecafe4ee6b8af6ec8e526744d0e51e7036892d0248ef93ade35866842",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/nidigital_measurement/Specifications.specs",
+   "bytes": 571,
+   "sha256": "9db04e7f9586e145c2d90a593ddec4710affeab0d9ac07ceeed1782bee9d1973",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/nidigital_measurement/Timing.digitiming",
+   "bytes": 1882,
+   "sha256": "ab8bebe6ca03b162fb90fae21536474dd6fe508613c6433dcaf82ea382677bbe",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/nidigital_measurement/__init__.py",
+   "bytes": 6129,
+   "sha256": "185b4ca08785160c159df98fdea91546aba5a96c251f9a10c1d89e692439d763",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/nidmm_measurement/NIDmmMeasurement.serviceconfig",
+   "bytes": 547,
+   "sha256": "a2c2c84eb186ff82f60067bb20336c1e237e752c76d052ee48a72da8fc7a57ad",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/nidmm_measurement/__init__.py",
+   "bytes": 3955,
+   "sha256": "ade83420f0b85774b37914e213224a97eb129c8afb85316108c80ffcead3fa7c",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/nifgen_measurement/NIFgenMeasurement.serviceconfig",
+   "bytes": 550,
+   "sha256": "a9d068fb363dcdcdcf36b6e51bed9142773b32301a7ddfae571417fb116c5032",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/nifgen_measurement/__init__.py",
+   "bytes": 3211,
+   "sha256": "522e9936f22430f881665178e4f8a5ee027855a0c403daa1ea8abc8517ebacd3",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/niscope_measurement/NIScopeMeasurement.serviceconfig",
+   "bytes": 553,
+   "sha256": "25e6f4f7b834a884ec12aff217f69ebea6ac51b9601a62694bd808ef552662cc",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/niscope_measurement/__init__.py",
+   "bytes": 4278,
+   "sha256": "4187ade416cfa40f896f67aa4647db37ec0442a61c958890c42ac3ddf2c17d0b",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/niswitch_measurement/NISwitchMeasurement.serviceconfig",
+   "bytes": 556,
+   "sha256": "5562e3a38cce34e502884d7ca8881b819a2db987483e792762caa2ed3d903fda",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/niswitch_measurement/__init__.py",
+   "bytes": 3032,
+   "sha256": "508ca73a3a47bcc438ff09d5351d9ca858c94eeac6439ed198a6a48f409c1e8e",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/niswitch_multiplexer_measurement/NISwitchMultiplexerMeasurement.serviceconfig",
+   "bytes": 591,
+   "sha256": "3f16cd550ac8a9fd54302d15533f1dc841236a57d3f04ff4fcd6f2e553259cb8",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/niswitch_multiplexer_measurement/__init__.py",
+   "bytes": 3567,
+   "sha256": "781c85841ec87723092c7f010d202909ccdc35a7f7476156cf1aa7659302597d",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/pin_aware_measurement/PinAwareMeasurement.serviceconfig",
+   "bytes": 557,
+   "sha256": "061bc07b8e66cec19966c5d113464c4a89be4d0a3f72f453a33963f8d387f266",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/pin_aware_measurement/__init__.py",
+   "bytes": 2120,
+   "sha256": "fa10f34f42688aabfd19be54b608d1c028e16c661dc8b36edb2a1809a44f23a8",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/sample_measurement/_stubs/__init__.py",
+   "bytes": 49,
+   "sha256": "39d1e95f853e7ab5b5a68daadc30af1b19a968b36b47090dae85fac40160ed73",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/sample_measurement/_stubs/color_pb2.py",
+   "bytes": 1240,
+   "sha256": "b469490b79eb1b532d952b5f045410745966908e1cd7e443db23b55ef887c585",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/sample_measurement/_stubs/color_pb2.pyi",
+   "bytes": 1411,
+   "sha256": "a9ca883165875e852964d6de451b61e1fcafd00146304cc253ffb87eba8c6101",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/sample_measurement/_stubs/color_pb2_grpc.py",
+   "bytes": 159,
+   "sha256": "d686e804f171693117b7d030ec4023f205c70c234c8590f6557aa8702f65fe09",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/sample_measurement/_stubs/color_pb2_grpc.pyi",
+   "bytes": 216,
+   "sha256": "eb2655649b5b0d74b75bf0f7623f3c9abfda284faa6472495706c75ea9363470",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/streaming_data_measurement/StreamingDataMeasurement.serviceconfig",
+   "bytes": 536,
+   "sha256": "e7f9941ff044260dd17547be0ace24a6ac59143636cab688a5d54f7480839af7",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/streaming_data_measurement/__init__.py",
+   "bytes": 2550,
+   "sha256": "e0c642d8a68b555d6f9c9a7a72899e53bb379067047a3bac80a76f3818b31d81",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/unknown_interface_measurement/__init__.py",
+   "bytes": 780,
+   "sha256": "cf63359eda8f8e963ff0de1114ae765cda3d1ffd5a60c29b0fa4c116eb9ada72",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/unknown_interface_measurement/unknown_interface.serviceconfig",
+   "bytes": 508,
+   "sha256": "50822a44962da01da79050e0612592999e22530033bb0622795a430f72efb8d7",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/v1_only_measurement/__init__.py",
+   "bytes": 770,
+   "sha256": "343bb4bac5a01c1a93e58c64816ba7620fd6805d2ba9cf3e0cb909b575f260b2",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/v1_only_measurement/v1_only.serviceconfig",
+   "bytes": 506,
+   "sha256": "27067adcd178bde6b058386dd0b11d2e061a60740bff10ed645449adf2dbbaa4",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/v2_only_measurement/__init__.py",
+   "bytes": 770,
+   "sha256": "09a4dd5c0be50beac1d0faae2911f61856f21914041f3b2af81bcf554471dc9d",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/v2_only_measurement/v2_only.serviceconfig",
+   "bytes": 506,
+   "sha256": "6fa3c78cc5fa99acbf6d05ae86826794cdecec5ad7c315240fa64ea8ad03268e",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/yield_vs_return_measurement/UIProgressUpdates.serviceconfig",
+   "bytes": 620,
+   "sha256": "31612d70c8045b1396df3f0adc1281fe2b0c92f7fbce3b7373cd889f4e7ec71c",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/measurements/yield_vs_return_measurement/__init__.py",
+   "bytes": 3188,
+   "sha256": "755f4cb0562089da8719509da9dfaabdf25ffd100fcca65a900296181cc0c865",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/__init__.py",
+   "bytes": 33,
+   "sha256": "4f6f01ba1b616b998296d27b792c517f26d2a58fb4bca4e4a411fe81b4bfb70f",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/loopback/__init__.py",
+   "bytes": 58,
+   "sha256": "25fac0dabeb270c4315f61369e9f96d666b9e360eb244b7527f54755fd91c342",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/loopback/types.proto",
+   "bytes": 474,
+   "sha256": "e4bc1cadc09bd2c796f94c33de89751ba40a1cbda91440a99fe9c7d38b160c46",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/loopback/types_pb2.py",
+   "bytes": 1790,
+   "sha256": "3ce409b691a716266dc6f76033b820d85ccf4e0de87558902c966696a2a5dd67",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/loopback/types_pb2.pyi",
+   "bytes": 3477,
+   "sha256": "444a4bfcb59c1e2448d870313b58757b55dff652a746ef1a45d8f3fe983e014c",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/loopback/types_pb2_grpc.py",
+   "bytes": 159,
+   "sha256": "d686e804f171693117b7d030ec4023f205c70c234c8590f6557aa8702f65fe09",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/loopback/types_pb2_grpc.pyi",
+   "bytes": 413,
+   "sha256": "0e5f2492386a6fa1752addb899c160ee9a62b21e222957e3462881c448ec30c0",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidaqmx/__init__.py",
+   "bytes": 62,
+   "sha256": "bf359adb11f3b9bccd4aaa225607a6677e2a5f3102f7b6bc4fcb89043ba72229",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidaqmx/types.proto",
+   "bytes": 386,
+   "sha256": "648b394f5f9c168fc82cccfb19cda8d151a303a42924bb82cb8a7fc9ab2c9e25",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidaqmx/types_pb2.py",
+   "bytes": 1375,
+   "sha256": "d4d86ff1a7624076f98bd699befbb79263dd3e416c9fbb617b81a38641977f09",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidaqmx/types_pb2.pyi",
+   "bytes": 2748,
+   "sha256": "847b49719f493f6297715ae46c79a849dfe172d23b05411cae291f38ce05a7e2",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidaqmx/types_pb2_grpc.py",
+   "bytes": 159,
+   "sha256": "d686e804f171693117b7d030ec4023f205c70c234c8590f6557aa8702f65fe09",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidaqmx/types_pb2_grpc.pyi",
+   "bytes": 413,
+   "sha256": "0e5f2492386a6fa1752addb899c160ee9a62b21e222957e3462881c448ec30c0",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidcpower/__init__.py",
+   "bytes": 64,
+   "sha256": "d366f6347698add4d4ef8f568d06973fbf0889d640d7234e56251a19677a53ed",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidcpower/types.proto",
+   "bytes": 441,
+   "sha256": "4e8e32caabfefd654a3d1298ba66e363e5f249c1d9f40c7f731d2a8cc06a05a3",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidcpower/types_pb2.py",
+   "bytes": 1444,
+   "sha256": "fea9381e767fd93eee5cef970d5fd0542a12ba37f68707889483de913928617f",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidcpower/types_pb2.pyi",
+   "bytes": 3102,
+   "sha256": "89f0f3cf70ec88635e5022b561a99cfc4efff62c7159d034393629a07837c240",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidcpower/types_pb2_grpc.py",
+   "bytes": 159,
+   "sha256": "d686e804f171693117b7d030ec4023f205c70c234c8590f6557aa8702f65fe09",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidcpower/types_pb2_grpc.pyi",
+   "bytes": 413,
+   "sha256": "0e5f2492386a6fa1752addb899c160ee9a62b21e222957e3462881c448ec30c0",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidigital/__init__.py",
+   "bytes": 64,
+   "sha256": "f994a7c532852be819f593ebab1fd96367ff6746104cae5a354a4daefb361ec2",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidigital/types.proto",
+   "bytes": 424,
+   "sha256": "38384a9030f34dafacdcf28c73355fb241335aef5e5836280b83e2e521694afd",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidigital/types_pb2.py",
+   "bytes": 1423,
+   "sha256": "fc6072c0e8a1b24c1029d909ec5a83850b222a808c9d94014c45997cf68f7cd7",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidigital/types_pb2.pyi",
+   "bytes": 3024,
+   "sha256": "fb610ecff98916ff028786d4aeb16d28773605f8743edc173d2e1367163e1226",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidigital/types_pb2_grpc.py",
+   "bytes": 159,
+   "sha256": "d686e804f171693117b7d030ec4023f205c70c234c8590f6557aa8702f65fe09",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidigital/types_pb2_grpc.pyi",
+   "bytes": 413,
+   "sha256": "0e5f2492386a6fa1752addb899c160ee9a62b21e222957e3462881c448ec30c0",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidmm/__init__.py",
+   "bytes": 60,
+   "sha256": "4d4d4608c034d4d03d2230bec905180ea2255dfff90db60778696c6c11f30e34",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidmm/types.proto",
+   "bytes": 434,
+   "sha256": "ec8f4a9df5c1a57c4f0fcccd407894d843a0711cbf62d2f6a30eaa2f5f425785",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidmm/types_pb2.py",
+   "bytes": 1431,
+   "sha256": "2414f2f4426e8fc136e20ae6e6883407cd8d9de2c70df9322525959a37f9716e",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidmm/types_pb2.pyi",
+   "bytes": 3100,
+   "sha256": "c92d76f8801bf18b94d7a7ce57f888cae481ee85f9c2e68cc0b196ead77ca139",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidmm/types_pb2_grpc.py",
+   "bytes": 159,
+   "sha256": "d686e804f171693117b7d030ec4023f205c70c234c8590f6557aa8702f65fe09",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nidmm/types_pb2_grpc.pyi",
+   "bytes": 413,
+   "sha256": "0e5f2492386a6fa1752addb899c160ee9a62b21e222957e3462881c448ec30c0",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nifgen/__init__.py",
+   "bytes": 61,
+   "sha256": "57c7569adb978baeea33c2ab9f7eaefc3ea2407b2e1039656ca840fbabfff78a",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nifgen/types.proto",
+   "bytes": 346,
+   "sha256": "2f7d25f0e1d8b616a8bc2c64047e8c8eead4acc55445e88d522031ed6a3fef25",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nifgen/types_pb2.py",
+   "bytes": 1315,
+   "sha256": "3e1e35118380c397367b6dcae62e1caa271c511ff6c14c538087a68f9f049b55",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nifgen/types_pb2.pyi",
+   "bytes": 2454,
+   "sha256": "29fb81feffd6e0643f7f9769e2ae496dbe13dd7a5ea3dd39c02dd8ae2e67ef58",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nifgen/types_pb2_grpc.py",
+   "bytes": 159,
+   "sha256": "d686e804f171693117b7d030ec4023f205c70c234c8590f6557aa8702f65fe09",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/nifgen/types_pb2_grpc.pyi",
+   "bytes": 413,
+   "sha256": "0e5f2492386a6fa1752addb899c160ee9a62b21e222957e3462881c448ec30c0",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/niscope/__init__.py",
+   "bytes": 62,
+   "sha256": "6f6edf75b7d43275d01012a3be970418392cdd1662a5d2a282d1567944836232",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/niscope/types.proto",
+   "bytes": 381,
+   "sha256": "a6a0eb596381d3f6fe9b5eb12cdb7b6979040790e89dbbf445687a36660b5099",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/niscope/types_pb2.py",
+   "bytes": 1362,
+   "sha256": "9a92ca789016603e76bf851a930cfe0c0016011f41f7fb7a95a12da5daeaddb1",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/niscope/types_pb2.pyi",
+   "bytes": 2718,
+   "sha256": "672f1fb56405e77a06d09f2c7237bb6cdf37b07dbae8bc6477ccfdd795f3ac6d",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/niscope/types_pb2_grpc.py",
+   "bytes": 159,
+   "sha256": "d686e804f171693117b7d030ec4023f205c70c234c8590f6557aa8702f65fe09",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/niscope/types_pb2_grpc.pyi",
+   "bytes": 413,
+   "sha256": "0e5f2492386a6fa1752addb899c160ee9a62b21e222957e3462881c448ec30c0",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/niswitch/__init__.py",
+   "bytes": 63,
+   "sha256": "4c60bc550837ea1b60fa7d9a11c812e6d58242df536c61f67a92aaf963b5a3e9",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/niswitch/types.proto",
+   "bytes": 349,
+   "sha256": "f206fc47f73a495584026ffb28c211b56aaeb67562423b9a0f267973b57a8821",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/niswitch/types_pb2.py",
+   "bytes": 1327,
+   "sha256": "70a23c88a8ad3abfa909bd91c48abc04cb2dbce6915608b58a265b4c475d60f5",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/niswitch/types_pb2.pyi",
+   "bytes": 2464,
+   "sha256": "7a4b216cb61fa5303667025e256194eef37c02170a253997730aedfbe0aab2c8",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/niswitch/types_pb2_grpc.py",
+   "bytes": 159,
+   "sha256": "d686e804f171693117b7d030ec4023f205c70c234c8590f6557aa8702f65fe09",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/niswitch/types_pb2_grpc.pyi",
+   "bytes": 413,
+   "sha256": "0e5f2492386a6fa1752addb899c160ee9a62b21e222957e3462881c448ec30c0",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/niswitchmultiplexer/types.proto",
+   "bytes": 387,
+   "sha256": "bbd63f7980883c58c972eab8345deb58aa462ab7637776225857644fdb06eba1",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/niswitchmultiplexer/types_pb2.py",
+   "bytes": 1405,
+   "sha256": "07a95be0a788c88e9d374e2b74329b126c0c7c16b2e5de634eb9da28b9723904",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/niswitchmultiplexer/types_pb2.pyi",
+   "bytes": 2599,
+   "sha256": "7cd90d5002e92138fc9b82200f6e56bd1118cc7365543535c78f4365d689a01d",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/niswitchmultiplexer/types_pb2_grpc.py",
+   "bytes": 159,
+   "sha256": "d686e804f171693117b7d030ec4023f205c70c234c8590f6557aa8702f65fe09",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/niswitchmultiplexer/types_pb2_grpc.pyi",
+   "bytes": 413,
+   "sha256": "0e5f2492386a6fa1752addb899c160ee9a62b21e222957e3462881c448ec30c0",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/pinaware/__init__.py",
+   "bytes": 59,
+   "sha256": "425cf92a6c4ef37ba757a467c3b678885e703beaa4bba07d2d662a4654dcb73d",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/pinaware/types.proto",
+   "bytes": 361,
+   "sha256": "1c5fc5c7ad8131b9b207584b449b569a25e7f03f5183d72c0a8818cc83cba454",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/pinaware/types_pb2.py",
+   "bytes": 1345,
+   "sha256": "30c702d9923374959e94ebeccbc8dcc89451e470b5aa81ee9de73169646f0fc8",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/pinaware/types_pb2.pyi",
+   "bytes": 2529,
+   "sha256": "4822beb80771826c02f1f2ab4045328eee78e9bbdace1354640ab1c8ac23baf5",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/pinaware/types_pb2_grpc.py",
+   "bytes": 159,
+   "sha256": "d686e804f171693117b7d030ec4023f205c70c234c8590f6557aa8702f65fe09",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/pinaware/types_pb2_grpc.pyi",
+   "bytes": 413,
+   "sha256": "0e5f2492386a6fa1752addb899c160ee9a62b21e222957e3462881c448ec30c0",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/serialization/__init__.py",
+   "bytes": 57,
+   "sha256": "c2d80149f95e3d8d47c8b7d50409033e8ac563288b0af4b5aa0c4a8a5918449f",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/serialization/bigmessage.proto",
+   "bytes": 2386,
+   "sha256": "370d9e577b6997a7113feda783f892f02d5bca4380d63f3c784054102cf49ba5",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/serialization/bigmessage_pb2.py",
+   "bytes": 5058,
+   "sha256": "4e6fbc77fc3b92d98e3c64145be39af18a0747628a4e0c18f2f2b8c06347ebd8",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/serialization/bigmessage_pb2.pyi",
+   "bytes": 13370,
+   "sha256": "49d2644a5189cbad6ecae684d1dd4a2291189e069954bdb947be3cb813993dd0",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/serialization/bigmessage_pb2_grpc.py",
+   "bytes": 159,
+   "sha256": "d686e804f171693117b7d030ec4023f205c70c234c8590f6557aa8702f65fe09",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/serialization/bigmessage_pb2_grpc.pyi",
+   "bytes": 413,
+   "sha256": "0e5f2492386a6fa1752addb899c160ee9a62b21e222957e3462881c448ec30c0",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/serialization/test.proto",
+   "bytes": 1149,
+   "sha256": "8258ab44b88dbd971c90c0cb0a81d39cd833bfe5d9f446a8b4c28298fca66777",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/serialization/test_pb2.py",
+   "bytes": 2895,
+   "sha256": "0f50924f7defdf0ec5b9a81a49e9ff3884c3c59b56d20586e4b6bb683d7ee90e",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/serialization/test_pb2.pyi",
+   "bytes": 7575,
+   "sha256": "3e11cb9ab4acf2ec871096612ab32523126536dc8a952d84c0b5cdea729f0cc8",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/serialization/test_pb2_grpc.py",
+   "bytes": 159,
+   "sha256": "d686e804f171693117b7d030ec4023f205c70c234c8590f6557aa8702f65fe09",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/serialization/test_pb2_grpc.pyi",
+   "bytes": 413,
+   "sha256": "0e5f2492386a6fa1752addb899c160ee9a62b21e222957e3462881c448ec30c0",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/streamingdata/__init__.py",
+   "bytes": 64,
+   "sha256": "c775dc7cead3c3044bb11ac6813893510108558db37a634bdd12a31836e94346",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/streamingdata/types.proto",
+   "bytes": 355,
+   "sha256": "e37a3408cf7f3c52b2f923ffdc580c7fafac55393338a2c1129f8c7526e3ad6b",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/streamingdata/types_pb2.py",
+   "bytes": 1480,
+   "sha256": "37ad559f32e674d1543eefe77488b6ec6c00b9331e49183fd352da37e4daa731",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/streamingdata/types_pb2.pyi",
+   "bytes": 2259,
+   "sha256": "a491f4d2e99a952c75df473a196e734a2a932445e59c3291019e095d09aab70d",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/streamingdata/types_pb2_grpc.py",
+   "bytes": 159,
+   "sha256": "d686e804f171693117b7d030ec4023f205c70c234c8590f6557aa8702f65fe09",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/streamingdata/types_pb2_grpc.pyi",
+   "bytes": 413,
+   "sha256": "0e5f2492386a6fa1752addb899c160ee9a62b21e222957e3462881c448ec30c0",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/yieldvsreturn/__init__.py",
+   "bytes": 66,
+   "sha256": "b3f67679c3558dadd73145d1aab38f28f2fcb5308dee920241e72a2c7389030c",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/yieldvsreturn/types.proto",
+   "bytes": 263,
+   "sha256": "fef1d96e7a5799a79e54e8efb6bd5465a9f686288767f4417190f572a9a3bf83",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/yieldvsreturn/types_pb2.py",
+   "bytes": 1276,
+   "sha256": "1c68922b2ce7ae0f9ab48395b94c63752f21df38b3cda41c7eba941c803b26ea",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/yieldvsreturn/types_pb2.pyi",
+   "bytes": 1654,
+   "sha256": "95ce62fabc9be9823da537a36e42062783bd7f8b566fc0fa92a71da8dea12b0a",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/yieldvsreturn/types_pb2_grpc.py",
+   "bytes": 159,
+   "sha256": "d686e804f171693117b7d030ec4023f205c70c234c8590f6557aa8702f65fe09",
+   "via": "tree"
+  },
+  {
+   "path": "packages/service/tests/utilities/stubs/yieldvsreturn/types_pb2_grpc.pyi",
+   "bytes": 413,
+   "sha256": "0e5f2492386a6fa1752addb899c160ee9a62b21e222957e3462881c448ec30c0",
+   "via": "tree"
+  }
+ ],
+ "skipped": [],
+ "external": []
+}

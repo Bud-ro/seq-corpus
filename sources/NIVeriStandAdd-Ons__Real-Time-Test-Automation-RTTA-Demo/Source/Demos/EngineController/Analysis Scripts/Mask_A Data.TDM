@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<usi:tdm xmlns:usi="http://www.ni.com/Schemas/USI/1_0" version="1.0">
+
+  <usi:documentation>
+    <usi:exporter>National Instruments USI</usi:exporter>
+    <usi:exporterVersion>1.8</usi:exporterVersion>
+  </usi:documentation>
+
+  <usi:model modelName="National Instruments USI generated meta file" modelVersion="1.0">
+    <usi:include nsUri="http://www.ni.com/DataModels/USI/TDM/1_0"/>
+  </usi:model>
+
+  <usi:include>
+    <file byteOrder="littleEndian" url="Mask Data.tdx">
+      <block byteOffset="0" id="inc0" length="7" valueType="eFloat64Usi"/>
+      <block byteOffset="56" id="inc1" length="7" valueType="eFloat64Usi"/>
+    </file>
+  </usi:include>
+
+  <usi:data>
+    <double_sequence id="usi1">
+      <values external="inc0"/>
+    </double_sequence>
+    <double_sequence id="usi2">
+      <values external="inc1"/>
+    </double_sequence>
+    <tdm_root id="usi3">
+      <name>Mask Data</name>
+      <description></description>
+      <title>---</title>
+      <author>---</author>
+      <datetime>2010-02-24T17:45:44</datetime>
+      <registertxt1></registertxt1>
+      <registertxt2></registertxt2>
+      <registertxt3></registertxt3>
+      <instance_attributes>
+        <string_attribute name="datestring">
+          <s>02/24/2010</s>
+        </string_attribute>
+        <string_attribute name="timestring">
+          <s>17:45:44</s>
+        </string_attribute>
+      </instance_attributes>
+      <channelgroups>#xpointer(id("usi4"))</channelgroups>
+    </tdm_root>
+    <tdm_channelgroup id="usi4">
+      <name>Mask Data</name>
+      <description></description>
+      <root>#xpointer(id("usi3"))</root>
+      <registertxt1></registertxt1>
+      <registertxt2></registertxt2>
+      <registertxt3></registertxt3>
+      <channels>#xpointer(id("usi5") id("usi6"))</channels>
+      <submatrices>#xpointer(id("usi7") id("usi8"))</submatrices>
+    </tdm_channelgroup>
+    <tdm_channel id="usi5">
+      <name>Engine Speed</name>
+      <description></description>
+      <group>#xpointer(id("usi4"))</group>
+      <unit_string>RPM</unit_string>
+      <datatype>DT_DOUBLE</datatype>
+      <minimum>0</minimum>
+      <maximum>3500</maximum>
+      <registerint1>0</registerint1>
+      <registerint2>0</registerint2>
+      <registerint3>0</registerint3>
+      <registerint4>0</registerint4>
+      <registerint5>0</registerint5>
+      <registerint6>0</registerint6>
+      <registertxt1></registertxt1>
+      <registertxt2></registertxt2>
+      <registertxt3></registertxt3>
+      <instance_attributes>
+        <string_attribute name="displaytype">
+          <s>Numeric</s>
+        </string_attribute>
+        <string_attribute name="monotony">
+          <s>increasing</s>
+        </string_attribute>
+        <string_attribute name="novaluekey">
+          <s>No</s>
+        </string_attribute>
+      </instance_attributes>
+      <local_columns>#xpointer(id("usi9"))</local_columns>
+    </tdm_channel>
+    <tdm_channel id="usi6">
+      <name>Torque</name>
+      <description></description>
+      <group>#xpointer(id("usi4"))</group>
+      <unit_string>ft-lbs</unit_string>
+      <datatype>DT_DOUBLE</datatype>
+      <minimum>0</minimum>
+      <maximum>400</maximum>
+      <registerint1>0</registerint1>
+      <registerint2>0</registerint2>
+      <registerint3>0</registerint3>
+      <registerint4>0</registerint4>
+      <registerint5>0</registerint5>
+      <registerint6>0</registerint6>
+      <registertxt1></registertxt1>
+      <registertxt2></registertxt2>
+      <registertxt3></registertxt3>
+      <instance_attributes>
+        <string_attribute name="displaytype">
+          <s>Numeric</s>
+        </string_attribute>
+        <string_attribute name="monotony">
+          <s>not monotone</s>
+        </string_attribute>
+        <string_attribute name="novaluekey">
+          <s>No</s>
+        </string_attribute>
+      </instance_attributes>
+      <local_columns>#xpointer(id("usi10"))</local_columns>
+    </tdm_channel>
+    <submatrix id="usi7">
+      <name>submatrix</name>
+      <description></description>
+      <measurement>#xpointer(id("usi4"))</measurement>
+      <number_of_rows>7</number_of_rows>
+      <local_columns>#xpointer(id("usi9"))</local_columns>
+    </submatrix>
+    <submatrix id="usi8">
+      <name>submatrix</name>
+      <description></description>
+      <measurement>#xpointer(id("usi4"))</measurement>
+      <number_of_rows>7</number_of_rows>
+      <local_columns>#xpointer(id("usi10"))</local_columns>
+    </submatrix>
+    <localcolumn id="usi9">
+      <name></name>
+      <description></description>
+      <measurement_quantity>#xpointer(id("usi5"))</measurement_quantity>
+      <submatrix>#xpointer(id("usi7"))</submatrix>
+      <global_flag>15</global_flag>
+      <independent>0</independent>
+      <minimum>0</minimum>
+      <maximum>3500</maximum>
+      <sequence_representation>explicit</sequence_representation>
+      <values>#xpointer(id("usi1"))</values>
+    </localcolumn>
+    <localcolumn id="usi10">
+      <name></name>
+      <description></description>
+      <measurement_quantity>#xpointer(id("usi6"))</measurement_quantity>
+      <submatrix>#xpointer(id("usi8"))</submatrix>
+      <global_flag>15</global_flag>
+      <independent>0</independent>
+      <minimum>0</minimum>
+      <maximum>400</maximum>
+      <sequence_representation>explicit</sequence_representation>
+      <values>#xpointer(id("usi2"))</values>
+    </localcolumn>
+  </usi:data>
+
+</usi:tdm>

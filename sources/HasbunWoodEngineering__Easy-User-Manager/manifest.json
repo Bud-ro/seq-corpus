@@ -1,0 +1,264 @@
+{
+ "repo": "HasbunWoodEngineering/Easy-User-Manager",
+ "url": "https://github.com/HasbunWoodEngineering/Easy-User-Manager",
+ "commit": "5ca7281aa1525eb3046cd68eff9bb84dd921dfb1",
+ "license": "MIT",
+ "licenseFile": "LICENSE",
+ "fetched": "2026-10-11",
+ "files": [
+  {
+   "path": "Easy User Manager.lvproj",
+   "bytes": 8218,
+   "sha256": "0415176811a42643e6e7eb6b7b7087d63ef37d206f6b89d5a4573e1ffe778e2f",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Add User to Group.vi",
+   "bytes": 20073,
+   "sha256": "9cb203e849d8f86a5468fba5f0c6b3fbb93a54d9c9d16bc106ce52242076d51a",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Check User Has Privilege.vi",
+   "bytes": 18360,
+   "sha256": "2108dbed914d7dc5a797b22afc1fb251746ce44ddbaead690f62e9481dbec35a",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Close Engine Reference.vi",
+   "bytes": 16638,
+   "sha256": "0a7ea47632367c6327d349ef19780d0a6bf0425a1bf645595d2ec2f68d30e5fe",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Create Group.vi",
+   "bytes": 21100,
+   "sha256": "6ec3c883a50c2a49affc4bc64e8d1932d0a2f2e302321a0eaa034d4743961382",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Create User.vi",
+   "bytes": 21323,
+   "sha256": "9e20b43b67d0104f091ee176692cf23bfab9cca0ffb1d2bf2e114d57ebb9cecf",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Delete Group.vi",
+   "bytes": 20340,
+   "sha256": "2acb0b1960df4c5a5a294b8d3a64bb2a87bb78b5982fe72e9ca0ccedee1c90c2",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Delete User from All Groups.vi",
+   "bytes": 21183,
+   "sha256": "1b2632923bb82323433d546120c5d38ae965b63484f14ae5ea57213ef8fa30cf",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Delete User.vi",
+   "bytes": 23567,
+   "sha256": "f23efb65e1213982bb245b7a9e00d3879731dc09627be9c9a79f7b0433dec653",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/EasyUserManager.lvclass",
+   "bytes": 51818,
+   "sha256": "97daef9874825c24c85657308deb0d75e0d6ecfeb36968c10d340040ea639a26",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Find User in Groups.vi",
+   "bytes": 22971,
+   "sha256": "98d8f2304f61dff815f23af776191268f51fc284a12d962b03f3c0302fed201e",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Get All Groups.vi",
+   "bytes": 20690,
+   "sha256": "c1e1c37f0cf3867a8187ccd9c61f58ed32482a50ae5ac9324040a47da5d78fe1",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Get All Users.vi",
+   "bytes": 20677,
+   "sha256": "2e1efaa4b9e286089e05b63238f41a231eb442f99dd3b6254b7eb1d89c5d88a4",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Get Current User.vi",
+   "bytes": 17664,
+   "sha256": "b52d6af2c1c5f2d265c1d89c8910924372de5d4fd1b3e476c5a5d83bea22fe81",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Get Group Reference by Name.vi",
+   "bytes": 17603,
+   "sha256": "58acc65fea69008aaad1d2d1296c8115190a9d60f5395dc23276060237488501",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Get User FullName.vi",
+   "bytes": 17925,
+   "sha256": "75f0b6d12c65511e1aa3baaecd98bd34a45d9baae2dfddf7c669fe7941abee54",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Get User Reference by Name.vi",
+   "bytes": 17574,
+   "sha256": "9aa03d720b1b50bacaa5b9aeb59d1f5993238f14a1f83e268364cc034aa3655c",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Group Exists.vi",
+   "bytes": 17536,
+   "sha256": "515937605e1e34293416251570e4995a8aecfb7de368ddcb2ac4c34f579438b4",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Initialize from Teststand.vi",
+   "bytes": 16437,
+   "sha256": "db4157bef569b5e26c52164b264429d6f953dbce6786b917b9072e0f928d217d",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Initialize.vi",
+   "bytes": 16426,
+   "sha256": "f1b2d505b8198be0efb3736e760ab2d1dfdf6dbf4821c330118d1234dc62535b",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Read Engine Reference.vi",
+   "bytes": 16261,
+   "sha256": "d23d341960815759085e51eb343374448f7d69dbf9241ff0e8b644a6deff951e",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Remove User from Group.vi",
+   "bytes": 22178,
+   "sha256": "e694045688ab4e9f84a845242cf5bc260aeb94778f21bfe385cde4521e266f56",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Save Users File.vi",
+   "bytes": 19483,
+   "sha256": "101ab5f165e6d7b1a4fba18c0cf0653be2bf75158d1dc6a6a4dfbe44c70f79a1",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Set Group Privilege.vi",
+   "bytes": 20263,
+   "sha256": "7a63ab1e235207d2a289eb5e26d6f554301d86eb278b46d16969b9159f5b7a83",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Set User FullName.vi",
+   "bytes": 18929,
+   "sha256": "228367f1a6c2c654291eba8b68bd562b73ffdfb17a6a070ea7bd0f29848420b0",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Set User Password.vi",
+   "bytes": 18937,
+   "sha256": "8bd16e4d233762c66587fb22f950c2fd6da02b262cbf826701064c91bb2b14cb",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Set User Privilege.vi",
+   "bytes": 20246,
+   "sha256": "5754e7f62d981fd6aa8286bb5fa24f3e4d4e2602f8043e6235493bc5e2ef8b37",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/User Exists.vi",
+   "bytes": 17359,
+   "sha256": "bb671bcdba6edd57668f6fa9af8bf0b1a3d0c0185be5f1ad46df4f0b02f03e48",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/User in Group.vi",
+   "bytes": 17805,
+   "sha256": "e7f9b5c883f4922f0aa86ede55881a5356c3abd6a86af5f067e8cb71d3a39092",
+   "via": "extension"
+  },
+  {
+   "path": "EasyUserManager/Validate Password.vi",
+   "bytes": 18357,
+   "sha256": "29b882979b185e738726e5ec7123b763d1fd65ae7ab3cbae889e38161fa81080",
+   "via": "extension"
+  },
+  {
+   "path": "Example/Easy User Manager Example.lvproj",
+   "bytes": 1572,
+   "sha256": "e985a68a4bfacba1632358dc8f61a61605e725d68c3365e7660656b92fc11891",
+   "via": "extension"
+  },
+  {
+   "path": "Example/EasyUserManagerExample.seq",
+   "bytes": 1218701,
+   "sha256": "15233b55666b126295d0b57cf86e35e56278062791e5b0c6db813b1c1c3cba11",
+   "via": "extension"
+  },
+  {
+   "path": "Example/State Machine User Manager.vi",
+   "bytes": 86846,
+   "sha256": "c89b71fadb1d661d0d97644ad7e1cdab4d7d389ec7166b22d02b983a17533833",
+   "via": "extension"
+  },
+  {
+   "path": "Example/Type Definitions/Data.ctl",
+   "bytes": 4473,
+   "sha256": "be11e24e8309e877f243ff9cea8aa228eafe24f9d0a29b8dd7b4c242e8a9bfaa",
+   "via": "extension"
+  },
+  {
+   "path": "Example/Type Definitions/States.ctl",
+   "bytes": 3995,
+   "sha256": "cd42d4e7f54f14cae2b21da2d47f39deda6bb889b6a72b2e04a460dc7a9ee00e",
+   "via": "extension"
+  },
+  {
+   "path": "Post-Uninstall Custom Action.vi",
+   "bytes": 19292,
+   "sha256": "9d347a9a1e4e23a8b52cf4d0a7c33bc4b673184938e8905c9ab0cdb38130c46e",
+   "via": "extension"
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 176,
+   "sha256": "6ec0d81022d1683eee472d7756a0d6869b9f6d2f347cd811f37e4abf30fa5f98",
+   "via": "tree"
+  },
+  {
+   "path": "Easy User Manager_2.vipb",
+   "bytes": 46384,
+   "sha256": "8dbd038a618bed57da40cf33daf196f6493271036b767d15d664eba627e918a0",
+   "via": "tree"
+  },
+  {
+   "path": "EasyUserManager.bin3",
+   "bytes": 671,
+   "sha256": "e2b4ed2cb6ab38a5e7a56d131bb1393189e593a05440b2d94ba9bb69c0b0fe54",
+   "via": "tree"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1078,
+   "sha256": "1125f838cbb30fe13b0f16771597061141cd95320a5ee8591e8a5dc3793235d9",
+   "via": "tree"
+  },
+  {
+   "path": "README.md",
+   "bytes": 6969,
+   "sha256": "31faf2310ceee1c0298c3d8fca617e580c55cba1b091146c7048043efaf2d263",
+   "via": "tree"
+  }
+ ],
+ "skipped": [],
+ "external": [
+  "<vilib>\\Utility\\error.llb\\Clear Errors.vi",
+  "<vilib>\\Utility\\error.llb\\Simple Error Handler.vi",
+  "<vilib>\\Utility\\libraryn.llb\\Check if File or Folder Exists.vi",
+  "<vilib>\\addons\\TestStand\\_TSUISupport.llb\\TestStand - Set TestStand Application Window.vi",
+  "<vilib>\\regexp\\Match Regular Expression.xnode"
+ ]
+}

@@ -1,0 +1,33 @@
+<SemiconductorModuleTests>
+	<SequenceName>	<StepName>	<StepId>	<TestName>	<TestNumber>	<Pin>	<LowLimitExpression>	<HighLimitExpression>	<ScalingFactor>	<Units>	<EvaluationType>	<FailBin>	<PublishedDataId>	
+	MainSequence	Continuity - Resistance Test	ID#:auHPrIj07xGXqwCALzlbaB	Continuity_Resistance_A	100	SMU0	0	10		Ohm	Numeric Limit	11		
+	MainSequence	Continuity - Resistance Test	ID#:auHPrIj07xGXqwCALzlbaB	Continuity_Resistance_B	101	SMU1	0	10		Ohm	Numeric Limit	11		
+	MainSequence	Continuity - Diode Test through GND	ID#:a+HPrIj07xGXqwCALzlbaB	Continuity_Diode_GND_A	110	PPMU0	-800	-200	m	V	Numeric Limit	12		
+	MainSequence	Continuity - Diode Test through GND	ID#:a+HPrIj07xGXqwCALzlbaB	Continuity_Diode_GND_B	111	PPMU1	-800	-200	m	V	Numeric Limit	12		
+	MainSequence	Continuity - Diode Test through GND	ID#:a+HPrIj07xGXqwCALzlbaB	Continuity_Diode_GND_C	112	PPMU2	-800	-200	m	V	Numeric Limit	12		
+	MainSequence	Continuity - Diode Test through GND	ID#:a+HPrIj07xGXqwCALzlbaB	Continuity_Diode_GND_D	113	PPMU3	-800	-200	m	V	Numeric Limit	12		
+	MainSequence	Continuity - Diode Test through VDD	ID#:bOHPrIj07xGXqwCALzlbaB	Continuity_Diode_VDD_A	120	PPMU0	200	800	m	V	Numeric Limit	13		
+	MainSequence	Continuity - Diode Test through VDD	ID#:bOHPrIj07xGXqwCALzlbaB	Continuity_Diode_VDD_B	121	PPMU1	200	800	m	V	Numeric Limit	13		
+	MainSequence	Continuity - Diode Test through VDD	ID#:bOHPrIj07xGXqwCALzlbaB	Continuity_Diode_VDD_B	122	PPMU2	200	800	m	V	Numeric Limit	13		
+	MainSequence	Continuity - Diode Test through VDD	ID#:bOHPrIj07xGXqwCALzlbaB	Continuity_Diode_VDD_B	123	PPMU3	200	800	m	V	Numeric Limit	13		
+	MainSequence	Leakage - Test	ID#:KKhWtIj07xGXqwCALzlbaB	Leakage_A	200	PPMU0	0	100	n	A	Numeric Limit	20		
+	MainSequence	Leakage - Test	ID#:KKhWtIj07xGXqwCALzlbaB	Leakage_B	201	PPMU1	0	100	n	A	Numeric Limit	20		
+	MainSequence	Leakage - Test	ID#:KKhWtIj07xGXqwCALzlbaB	Leakage_C	202	PPMU2	0	100	n	A	Numeric Limit	20		
+	MainSequence	Leakage - Test	ID#:KKhWtIj07xGXqwCALzlbaB	Leakage_D	203	PPMU3	0	100	n	A	Numeric Limit	20		
+	MainSequence	Resistance - Test	ID#:E7KSy4j07xGXqwCALzlbaB	Resistance_A	300	SMU0	1	3	K	Ohm	Numeric Limit	30		
+	MainSequence	Resistance - Test	ID#:E7KSy4j07xGXqwCALzlbaB	Resistance_B	301	SMU1	0.1	0.5	K	Ohm	Numeric Limit	30		
+	MainSequence	Offset - Static Test	ID#:iYMm0g/17xGXqwCALzlbaB	OffsetStatic_A	400	V1	10	40	m	V/V	Numeric Limit	41		
+	MainSequence	Offset - Static Test	ID#:iYMm0g/17xGXqwCALzlbaB	OffsetStatic_B	401	V2	30	60	m	V/V	Numeric Limit	41		
+	MainSequence	Offset - Dynamic Test	ID#:XoV0BRD17xGXqwCALzlbaB	OffsetDynamic_A	410	V1	10	20	m	V/V	Numeric Limit	42		
+	MainSequence	Offset - Dynamic Test	ID#:XoV0BRD17xGXqwCALzlbaB	OffsetDynamic_B	411	V2	10	20	m	V/V	Numeric Limit	42		
+	MainSequence	Capacitance - Voltage Ramp Test	ID#:Q/+Yf9r17xGXqwCALzlbaB	CapacitanceVRamp_A	500	SMU0	20	100	n	F	Numeric Limit	51		
+	MainSequence	Capacitance - Voltage Ramp Test	ID#:Q/+Yf9r17xGXqwCALzlbaB	CapacitanceVRamp_B	501	SMU1	20	100	n	F	Numeric Limit	51		
+	MainSequence	Capacitance - Impedance Spectroscopy Test	ID#:5Mc1HNv17xGXqwCALzlbaB	CapacitanceIS	510		0	50	n	F	Numeric Limit	52	IS_cap	
+	MainSequence	Capacitance - Impedance Spectroscopy Test	ID#:5Mc1HNv17xGXqwCALzlbaB	CapacitanceIS_Frequency	511		10	30	K	Hz	Numeric Limit	53	IS_freq	
+	MainSequence	Resonance - Test	ID#:Fkj1I9v17xGXqwCALzlbaB	ResonanceAmplitude_A	600		200	600	m	V	Numeric Limit	61	resonance_0_0	
+	MainSequence	Resonance - Test	ID#:Fkj1I9v17xGXqwCALzlbaB	ResonanceAmplitude_B	601		200	600	m	V	Numeric Limit	61	resonance_1_0	
+	MainSequence	Resonance - Test	ID#:Fkj1I9v17xGXqwCALzlbaB	ResonanceFrequency_A	610		500	2000		Hz	Numeric Limit	62	resonance_0_1	
+	MainSequence	Resonance - Test	ID#:Fkj1I9v17xGXqwCALzlbaB	ResonanceFrequency_B	611		500	2000		Hz	Numeric Limit	62	resonance_1_1	
+	MainSequence	Resonance - Test	ID#:Fkj1I9v17xGXqwCALzlbaB	ResonancePhase_A	620		-1.7	1.7		rad	Numeric Limit	63	resonance_0_2	
+	MainSequence	Resonance - Test	ID#:Fkj1I9v17xGXqwCALzlbaB	ResonancePhase_B	621		-1.7	1.7		rad	Numeric Limit	63	resonance_1_2	
+</SemiconductorModuleTests>

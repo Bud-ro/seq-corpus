@@ -1,0 +1,13 @@
+pywin32
+nidcpower
+nidmm
+niscope
+nidigital
+niswitch
+nidaqmx
+nifgen
+tox
+pytest
+pytest-cov
+black
+ni-python-styleguide

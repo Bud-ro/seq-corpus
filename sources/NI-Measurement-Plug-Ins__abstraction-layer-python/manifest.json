@@ -1,0 +1,402 @@
+{
+ "repo": "NI-Measurement-Plug-Ins/abstraction-layer-python",
+ "url": "https://github.com/NI-Measurement-Plug-Ins/abstraction-layer-python",
+ "commit": "b1e30c9310bd89fbd60d6a28541790e8ab458dfe",
+ "license": "MIT",
+ "licenseFile": "LICENSE",
+ "fetched": "2026-10-11",
+ "files": [
+  {
+   "path": "source/demo_files/DmmMeasurementHAL.seq",
+   "bytes": 175642,
+   "sha256": "91cd82cc706d3f8fbd8f7ac64e42362c8a6146d3c5a7fffa4b34069827fc7f89",
+   "via": "extension"
+  },
+  {
+   "path": "source/demo_files/SourceMeasureDCVoltageFAL.seq",
+   "bytes": 178398,
+   "sha256": "f452da0137bdd4dc5082ebe02bc41b99f9cfe7679b4ef92de87a9e4a371c4271",
+   "via": "extension"
+  },
+  {
+   "path": "source/measurements/dmm_measurement_hal/teststand_helper.py",
+   "bytes": 1930,
+   "sha256": "f0e6556250e7654116a4b621b9de0f640fdc585f41781b8747b8c367c3183265",
+   "via": "ref:source/demo_files/DmmMeasurementHAL.seq"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/teststand_helper.py",
+   "bytes": 2020,
+   "sha256": "9ccba6736a1d4eebf8b58d503a497229b7a90fa6c1a0124c5416b84a830b8b9f",
+   "via": "ref:source/demo_files/SourceMeasureDCVoltageFAL.seq"
+  },
+  {
+   "path": ".github/CODEOWNERS",
+   "bytes": 92,
+   "sha256": "18b83848261be579cf725efa855178849f7ab93ee4e1a71914f047d88a533fe4",
+   "via": "tree"
+  },
+  {
+   "path": ".github/PULL_REQUEST_TEMPLATE.md",
+   "bytes": 602,
+   "sha256": "8701f5c397b726b6261942849363932442e66cdaec5618ca01def1a68b50ba5d",
+   "via": "tree"
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 3073,
+   "sha256": "740c94ca34c236a23a703813f9008e1a5b804dc04affca8194b51bbcd19e7338",
+   "via": "tree"
+  },
+  {
+   "path": "CONTRIBUTING.md",
+   "bytes": 4219,
+   "sha256": "1bdde1b6218ac3687b26626544f169e9a1af5ac67b21fdece0724b0eef1af39f",
+   "via": "tree"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1071,
+   "sha256": "b97f1b89ab386a24388eac18238af18f70b997f06a8f8652a2e70cad892c4147",
+   "via": "tree"
+  },
+  {
+   "path": "README.md",
+   "bytes": 3182,
+   "sha256": "e958b6259ef5123bd77a956330aba32b549ae0955384b7457a5f9732d2a66e62",
+   "via": "tree"
+  },
+  {
+   "path": "SECURITY.md",
+   "bytes": 1312,
+   "sha256": "c3c34cacd2f1f76e9c299372d8b9cf3fbe6da13340cc1eb9721762a521c80a69",
+   "via": "tree"
+  },
+  {
+   "path": "docs/FAL in Measurement Plug-In.md",
+   "bytes": 6686,
+   "sha256": "76363dbaef74a4f0cd293cd0e51d769a3f634235757ac923d5c1a6a0c69923d7",
+   "via": "tree"
+  },
+  {
+   "path": "docs/HAL in Measurement Plug-In.md",
+   "bytes": 6152,
+   "sha256": "3f6c80058a2ce1983ce09b7cfdee9398b49ab40f3c5fb2f3247bc3f851d1ae61",
+   "via": "tree"
+  },
+  {
+   "path": "docs/Images/FAL/FAL Implementation.png",
+   "bytes": 43223,
+   "sha256": "8a37e0cab53774064642486b2f6ac61c33f9740aad5901eee5b67ef7ffa8d37a",
+   "via": "tree"
+  },
+  {
+   "path": "docs/Images/FAL/FAL Structure.png",
+   "bytes": 67187,
+   "sha256": "8c70725b6efd483e6cfade9196375620cd82f02aae198a24ce776066f8c3806a",
+   "via": "tree"
+  },
+  {
+   "path": "docs/Images/FAL/Measurement with FAL workflow.png",
+   "bytes": 39429,
+   "sha256": "af6b2d3703a9838a30e909d1cf691d8d2032e5134530c9ff1b6cf32ec69e3818",
+   "via": "tree"
+  },
+  {
+   "path": "docs/Images/HAL/HAL Structure.png",
+   "bytes": 181549,
+   "sha256": "dcf799b02d3b377cf61d3cedcb2a8db316bd74d750c83880d4e4406da1c09bf3",
+   "via": "tree"
+  },
+  {
+   "path": "docs/Images/HAL/Measurement with HAL workflow.png",
+   "bytes": 39406,
+   "sha256": "c4fecdf980d740c659b079aca4187dda735331050e1c1d7b599bb11dc6bd83ce",
+   "via": "tree"
+  },
+  {
+   "path": "source/demo_files/DmmMeasurementHAL.instudioproj",
+   "bytes": 1999,
+   "sha256": "16846dfdc3a3971bb89fe522980e195b65dce95cc72b0f5942d3df4dd88932b8",
+   "via": "tree"
+  },
+  {
+   "path": "source/demo_files/DmmMeasurementHAL.pinmap",
+   "bytes": 972,
+   "sha256": "0bc0f6e94a32da5f58084063830d49541367e9a6785a94cc475aeefb97443900",
+   "via": "tree"
+  },
+  {
+   "path": "source/demo_files/DmmMeasurementHAL.sfp",
+   "bytes": 12254,
+   "sha256": "b0c3cba3a28d8111723df096da72caa4ece8dc1097525e21830226d6f61a1c03",
+   "via": "tree"
+  },
+  {
+   "path": "source/demo_files/SourceMeasureDCVoltageFAL.instudioproj",
+   "bytes": 2033,
+   "sha256": "150e3f8efdcdf92f4e33b85adca70445ffb34f966fcffff402552be02195a8e9",
+   "via": "tree"
+  },
+  {
+   "path": "source/demo_files/SourceMeasureDCVoltageFAL.pinmap",
+   "bytes": 1237,
+   "sha256": "b97bddb5c08b27f4f1dff761acb0ed524bd1487747ed0c62b2b9592995ce080a",
+   "via": "tree"
+  },
+  {
+   "path": "source/demo_files/SourceMeasureDCVoltageFAL.sfp",
+   "bytes": 13448,
+   "sha256": "e110ec2229beac4d31af9ada2f253dc70d8ca5d684cb411e9b127ced285466a9",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/dmm_measurement_hal/DmmMeasurementHAL.measproj",
+   "bytes": 3801,
+   "sha256": "f67fc6a4954dd9bc0ee08f5d3bc680d03e38b630e9725ac614bd8aa920183bf4",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/dmm_measurement_hal/DmmMeasurementHAL.measui",
+   "bytes": 9204,
+   "sha256": "88af7d520eabd2a4e8df12be76825da07e7c1ea13e9d4daacbd597d36a15118e",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/dmm_measurement_hal/DmmMeasurementHAL.serviceconfig",
+   "bytes": 583,
+   "sha256": "026a1c974096d2c612cbd83329e37fc7d443fa735ab4f179a0f6ce29072374ce",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/dmm_measurement_hal/README.md",
+   "bytes": 4537,
+   "sha256": "11252772715a3b6b5532b3718feee96069ee9bcc51a25de33b40cbfa422ba6cb",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/dmm_measurement_hal/_helpers.py",
+   "bytes": 2805,
+   "sha256": "f7453a9c74fd3764c7947e919c95285d1415f37cf2ac3e1d1dc0e2bbe2737b8a",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/dmm_measurement_hal/dmm_hal/__init__.py",
+   "bytes": 249,
+   "sha256": "b8eb7ef06a2ee2e13545c3a18bf1dd25c097bf6df3d2526d653550f63c994a9d",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/dmm_measurement_hal/dmm_hal/dmm.py",
+   "bytes": 6205,
+   "sha256": "cbd9b3643d13e246901a6506d6770215dcd277e48ae982994f7e7b9afa18b9ed",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/dmm_measurement_hal/dmm_hal/function.py",
+   "bytes": 443,
+   "sha256": "3f5fd429ce9d6e2c1c68422ec8ed3e19d9d50979c5db52ff89602e98b2c8cc43",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/dmm_measurement_hal/dmm_hal/keysightdmm/_keysight_dmm.py",
+   "bytes": 4361,
+   "sha256": "2fc69a9dae84d3d18ad77defe480f09249f8efdd18d1395171785dd72faf162a",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/dmm_measurement_hal/dmm_hal/keysightdmm/_keysight_dmm_session_management.py",
+   "bytes": 2417,
+   "sha256": "e59615fc536f9d9f3ab5e5dd2a23b441a4c90896482623c2b1d178eba171c7f1",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/dmm_measurement_hal/dmm_hal/keysightdmm/_keysight_dmm_sim.yaml",
+   "bytes": 720,
+   "sha256": "a7eb93675a5da948fac39fa9c17a54a1f90fcadae42094b6955833991e3e14a2",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/dmm_measurement_hal/dmm_hal/keysightdmm/keysightdmm.py",
+   "bytes": 3340,
+   "sha256": "f12938240b125953876d5f7475ebcb20c7496cfe8f7c9d9f3e039039437def1d",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/dmm_measurement_hal/dmm_hal/nidmm/nidmm.py",
+   "bytes": 2821,
+   "sha256": "8d90678437400d36baa2bc7089c1c1e73c1864899c7ed8939a361a5db35de4a8",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/dmm_measurement_hal/dmm_hal/utilities/_visa_grpc.py",
+   "bytes": 2399,
+   "sha256": "5a18a9628b0f6cce6223db2b386d7701f829e6d163940c72be6d196539b2006f",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/dmm_measurement_hal/measurement.py",
+   "bytes": 2182,
+   "sha256": "c1e896846fd3c45a543c7bf073d1f540751a6fe6e740584a8373b68ebfce2b06",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/dmm_measurement_hal/poetry.lock",
+   "bytes": 46295,
+   "sha256": "d4e21e9a432164c3a8daccabccefa3a69d8453afd0d5498163da525e2a3323b1",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/dmm_measurement_hal/poetry.toml",
+   "bytes": 31,
+   "sha256": "d90443f50f554a808fc49fb2a9187901ae79edac269a3680f73b38d4c709f5d1",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/dmm_measurement_hal/pyproject.toml",
+   "bytes": 1217,
+   "sha256": "37aaa5cf73eeeb2ac1b750fc97da6b657adb42d259b5a3f2a241c010431593a9",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/dmm_measurement_hal/start.bat",
+   "bytes": 302,
+   "sha256": "676392fcca4d24b86e9985eb5ffeff0365c59c47c579ce33af70384c3936c501",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/README.md",
+   "bytes": 4951,
+   "sha256": "15146ab619d85ba15161ea2f8a9ec32a88b06a599c48bd10bdb2b8fc778ebba6",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/SourceMeasureDCVoltageFAL.measproj",
+   "bytes": 3833,
+   "sha256": "4b5be3651c824a3f0d5ec7b04f18e98e471994bf31e166d58b23048134028deb",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/SourceMeasureDCVoltageFAL.measui",
+   "bytes": 10288,
+   "sha256": "0be14d7835dc3497b82117bb92e2d52ba7e8b06f79ba46233cf568c31066091e",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/SourceMeasureDCVoltageFAL.serviceconfig",
+   "bytes": 607,
+   "sha256": "ec299e68901ae8befa6bae8fbc447fedb9b98ef334d5d3bb6dfa2489a5bc0ebd",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/_helpers.py",
+   "bytes": 2805,
+   "sha256": "f7453a9c74fd3764c7947e919c95285d1415f37cf2ac3e1d1dc0e2bbe2737b8a",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/fal/__init__.py",
+   "bytes": 402,
+   "sha256": "9183ec76908449a1d60d91f35e2dc229a4c7d9ab9eed62b07768deea105a44c4",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/fal/initialize_session.py",
+   "bytes": 889,
+   "sha256": "189028a0e8430874eac01326a7c5cd919cb2cbc8f7291ac1ad2ecd74f7160163",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/fal/keysightdmm/_keysight_dmm.py",
+   "bytes": 4361,
+   "sha256": "2fc69a9dae84d3d18ad77defe480f09249f8efdd18d1395171785dd72faf162a",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/fal/keysightdmm/_keysight_dmm_session_management.py",
+   "bytes": 2409,
+   "sha256": "cbe351045658335c6a8c557f58cf389a60df31b9c87a09f11530d5df9f18d301",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/fal/keysightdmm/_keysight_dmm_sim.yaml",
+   "bytes": 720,
+   "sha256": "a7eb93675a5da948fac39fa9c17a54a1f90fcadae42094b6955833991e3e14a2",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/fal/keysightdmm/keysightdmm.py",
+   "bytes": 2805,
+   "sha256": "11cb117d882018dfeae6445a697ced29b57fba95429e866d2e2e39d7a05c5fcd",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/fal/measure_dc_voltage.py",
+   "bytes": 391,
+   "sha256": "7bfba51e0263f5dcf692400b2d5bb3b2b2ee6bd39b50d028094ab01b55148b1f",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/fal/nidcpower/nidcpower.py",
+   "bytes": 5689,
+   "sha256": "0c79108104f3bb506f0806c658043c691f16725203b658c75ff428d68886bee4",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/fal/nidmm/nidmm.py",
+   "bytes": 2322,
+   "sha256": "f55625dec5eb328951f86a3f286edf84cf1ee1bddcc2cd584cf2c31d3972cf7a",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/fal/session_helper.py",
+   "bytes": 5925,
+   "sha256": "30efc7cf6dae0d069ad7ff1a39d37197c0d6d53f097817db415888c1f919d9ab",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/fal/source_dc_voltage.py",
+   "bytes": 449,
+   "sha256": "b3bb092376cf5a3bc2721657b09521dd07eee8187ef01241da8fe903ab53e10f",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/fal/utilities/_visa_grpc.py",
+   "bytes": 2408,
+   "sha256": "5442f855673cde796f3106143857559d93bc7695b0811a7e1fcd926922079f64",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/measurement.py",
+   "bytes": 3474,
+   "sha256": "bef849f0533e735bcf9956d109d28313abe00644546e5fb3012bc1b12b14d7e8",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/poetry.lock",
+   "bytes": 46983,
+   "sha256": "5200506bd9e5beeae7c735dc25e7323c9249dc4c4864c2eec0f7403af882c371",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/poetry.toml",
+   "bytes": 31,
+   "sha256": "d90443f50f554a808fc49fb2a9187901ae79edac269a3680f73b38d4c709f5d1",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/pyproject.toml",
+   "bytes": 1475,
+   "sha256": "de1b118af0509767afef1131e601a5efe6e536194858dd0d1564c95e41351d49",
+   "via": "tree"
+  },
+  {
+   "path": "source/measurements/source_measure_dc_voltage_fal/start.bat",
+   "bytes": 302,
+   "sha256": "676392fcca4d24b86e9985eb5ffeff0365c59c47c579ce33af70384c3936c501",
+   "via": "tree"
+  }
+ ],
+ "skipped": [],
+ "external": []
+}

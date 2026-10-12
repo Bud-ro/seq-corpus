@@ -1,0 +1,55 @@
+name: Check NIMS
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  check_nims:
+    name: Check NIMS
+    env:
+      oldest-python-version: '3.10'
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+        python-version: ['3.10', 3.14]
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        # Set the working-directory for all steps in this job.
+        working-directory: ./packages/service
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          submodules: true
+          persist-credentials: false
+      - name: Set up Python
+        uses: ni/python-actions/setup-python@a2554c7e5680982d3355677b2290e48b60678744 # v0.8.0
+        id: setup-python
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Set up Poetry
+        uses: ni/python-actions/setup-poetry@a2554c7e5680982d3355677b2290e48b60678744 # v0.8.0
+      - name: Analyze generator
+        uses: ni/python-actions/analyze-project@a2554c7e5680982d3355677b2290e48b60678744 # v0.8.0
+        with:
+          project-directory: packages/service
+          install-args: --all-extras
+      - name: Bandit security checks (ni-measurement-plugin-sdk-service)
+        run:  poetry run bandit -c pyproject.toml -r ni_measurement_plugin_sdk_service
+      - name: Generate gRPC stubs
+        if: matrix.python-version == env.oldest-python-version
+        run: |
+          find tests/utilities/stubs/ -name \*_pb2.py\* -o -name \*_pb2_grpc.py\* -delete
+          poetry run python scripts/generate_grpc_stubs.py
+      - name: Check for out-of-date gRPC stubs
+        if: matrix.python-version == env.oldest-python-version
+        run:  git diff --exit-code
+      - name: Revert gRPC stubs
+        if: matrix.python-version == env.oldest-python-version
+        run: |
+          git clean -dfx tests/utilities/stubs/
+          git restore tests/utilities/stubs/

@@ -1,0 +1,22 @@
+# LabVIEW project temporary files.
+*.aliases
+*.lvlps
+
+#LabVIEW builds
+[Bb]uild/
+[Bb]uilds/
+
+#Package builder
+[Pp]ackages/
+ProcessingStage/
+
+#Package log file
+package/log-Device Power Sequencer.txt
+
+#InstrumentStudio
+*.[Cc]ache/
+
+#Executables
+*.exe
+
+
