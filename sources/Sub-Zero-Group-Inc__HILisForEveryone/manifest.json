@@ -10,133 +10,155 @@
    "path": "veristand-automation/teststand/engine-demo-ts.seq",
    "bytes": 6033,
    "sha256": "5be4acc31d6f86ab6dd5047dc1136648c42505b7071d1911f1e9c24bbb77a90f",
-   "via": "extension"
+   "via": "extension",
+   "blob": "13719fcab51dd6aca1ab87ee3c04393f5f627560"
   },
   {
    "path": ".gitignore",
    "bytes": 4662,
    "sha256": "0a513a32387e635420c9532ce239245a1568e4fa4f3b6c61e4c9677847a764ae",
-   "via": "tree"
+   "via": "tree",
+   "blob": "31a7abe6720f32fdb35a767d05cac152e32c19a7"
   },
   {
    "path": "LICENSE",
    "bytes": 1075,
    "sha256": "6f6551ab526bc807163d385220fd1e7327395237f1e22fb9261989f25ca58f08",
-   "via": "tree"
+   "via": "tree",
+   "blob": "1dd3fd277dab12ebb1b36c7c5103bf3c9757d8fb"
   },
   {
    "path": "README.md",
    "bytes": 2866,
    "sha256": "9a76db9bdb4160a1c952dbd0b4e73fdf19e7498cc1219dc5768fc66c051c05f1",
-   "via": "tree"
+   "via": "tree",
+   "blob": "5caa6bfbe99c10a1d4c6237ef8ffc859cea1c781"
   },
   {
    "path": "logo/HILIFE-logo.png",
    "bytes": 34746,
    "sha256": "2aaf5ec1ea8defb778aa0c36b4f75f7c9bc9384dd77335a0ced22ab21d39af3b",
-   "via": "tree"
+   "via": "tree",
+   "blob": "6b563baa6d7883968578376efde48e279b7b82fd"
   },
   {
    "path": "logo/hilisforeveryone.png",
    "bytes": 185627,
    "sha256": "dd31b36483f538b5b6ef5dd7464dc5649fbf877e7fba0212e966f37d822470b9",
-   "via": "tree"
+   "via": "tree",
+   "blob": "f66d3fbee0b0c32f4835cd676b7b24a20118318b"
   },
   {
    "path": "presentation/images/hil-definition-ni.png",
    "bytes": 74758,
    "sha256": "c73ee5cd818467d07b4c4ef0ee6213511c40fe6b6816fdbdc3c72d3bde3d6e80",
-   "via": "tree"
+   "via": "tree",
+   "blob": "7f6a386f4773e61cd08004c0d488d43620a31d00"
   },
   {
    "path": "presentation/images/hil-definition-websters.png",
    "bytes": 48630,
    "sha256": "6232907f439d139a6346753bb15c5aed9bb1bbb213779393e8276e6f03b6e13e",
-   "via": "tree"
+   "via": "tree",
+   "blob": "f5b9696b3d8d9a366b4bfede0262538ff61df244"
   },
   {
    "path": "presentation/images/hil-for-dummies.png",
    "bytes": 49495,
    "sha256": "a2b8d7aa9f486b9f154fc0d29e4af44404c1308ac72f7f74026740edaf1e235a",
-   "via": "tree"
+   "via": "tree",
+   "blob": "0d57c292665d94243664d3a0149fa8c831138097"
   },
   {
    "path": "presentation/images/hilverbs-27-17.png",
    "bytes": 947028,
    "sha256": "f6ea8673178a72b78375dd38e77dfd5fb6904b8bab33f6b47584b0bcdb2975ea",
-   "via": "tree"
+   "via": "tree",
+   "blob": "e859f45f595f6e9476d3df517fa42a837a96f2d4"
   },
   {
    "path": "veristand-automation/python/README.md",
    "bytes": 5326,
    "sha256": "7f6ae204236c5e8f5714b763dc9f9657d193eee24719fdaa192c3d2d3f6210f2",
-   "via": "tree"
+   "via": "tree",
+   "blob": "2d89aa478dfa0cb846af0f0a73169de2006ca8fc"
   },
   {
    "path": "veristand-automation/python/conftest.py",
    "bytes": 1908,
    "sha256": "2ceb804e868b3472e6f41d6093b1a5e1a1e743f25dbc43e86237f8f6ef814b0a",
-   "via": "tree"
+   "via": "tree",
+   "blob": "beeb607cd86d5aa827139a04568fd44abb58c2eb"
   },
   {
    "path": "veristand-automation/python/core/__init__.py",
    "bytes": 0,
    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "via": "tree"
+   "via": "tree",
+   "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
   },
   {
    "path": "veristand-automation/python/core/utils.py",
    "bytes": 808,
    "sha256": "5020576a407254dd604f2d3eba7d7436856498a28d4ef2509b191c8d85f02e08",
-   "via": "tree"
+   "via": "tree",
+   "blob": "314323cdc565928436aa7ed2e9faf349281dc2bd"
   },
   {
    "path": "veristand-automation/python/core/veristand_channels.py",
    "bytes": 1083,
    "sha256": "471e1ec01a4fc568d1b109812eda13d2accbaceb15a668d83b8288a192511bec",
-   "via": "tree"
+   "via": "tree",
+   "blob": "8f3f775cb874d9b8f8b342154fb17619f0e623a5"
   },
   {
    "path": "veristand-automation/python/core/veristand_utilities.py",
    "bytes": 10016,
    "sha256": "c9c6a968079c28e748fae3a81d8f1a13737279738465dea23681f75b41654fbe",
-   "via": "tree"
+   "via": "tree",
+   "blob": "803ca91a291b44c9679b28610692db1a34108279"
   },
   {
    "path": "veristand-automation/python/engine_demo.py",
    "bytes": 2993,
    "sha256": "3a98122531a057b5a385e27f501dcea41b9f58b18583643facb13d4b64374c1a",
-   "via": "tree"
+   "via": "tree",
+   "blob": "0d1d02891b505fd6003864b33350e1915c2c336a"
   },
   {
    "path": "veristand-automation/python/engine_demo_setup.png",
    "bytes": 80311,
    "sha256": "d83dfaad00fe1e6ff423a33a84d4a5a8c4703f9cb60e82023791a4c6117a8be9",
-   "via": "tree"
+   "via": "tree",
+   "blob": "32e59779809921cc77f2b24afa9d5755477848b6"
   },
   {
    "path": "veristand-automation/python/pytest_runner.py",
    "bytes": 1228,
    "sha256": "57b7d37e3c2687ee6999d45f90c88a987155c9dcba7000897fd8af3f9c1fa818",
-   "via": "tree"
+   "via": "tree",
+   "blob": "bbb59a1958de904aebadb500bbe02522031f0361"
   },
   {
    "path": "veristand-automation/python/requirements.txt",
    "bytes": 37,
    "sha256": "925b7b51cfed586effb206476541afb101940c8b0264308b9b6b4da5d2d6ef1b",
-   "via": "tree"
+   "via": "tree",
+   "blob": "dd9b4cc3c8415aa1cc4a88ed12fe3c1e94c53b7c"
   },
   {
    "path": "veristand-automation/python/test_veristand_smoke.py",
    "bytes": 3619,
    "sha256": "0d9bd227ffc7108d73ec6c125e7712cd4f3d9a7a5cbb877e743b885ac6786569",
-   "via": "tree"
+   "via": "tree",
+   "blob": "d61ba6547156780b474179f800c2fae31876ddac"
   },
   {
    "path": "veristand-automation/teststand/README.md",
    "bytes": 1116,
    "sha256": "4535ee084567f5084cb07997bc67029c36be4cda80dc3b53992e33f03e804fa1",
-   "via": "tree"
+   "via": "tree",
+   "blob": "fd67325f383f60f0caad202b02a6546f5ec43d17"
   }
  ],
  "skipped": [],

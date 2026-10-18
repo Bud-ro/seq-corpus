@@ -10,73 +10,85 @@
    "path": "Installer/Install.seq",
    "bytes": 11166,
    "sha256": "f3439bc534a94fb02a935246544743c340004e88e63f43b827ba28ab7929bbe8",
-   "via": "extension"
+   "via": "extension",
+   "blob": "582cfa49acb8c38ff2bacbc82922e4892e716a61"
   },
   {
    "path": "Installer/Resources/FrontEnd/FrontEndCallbacks.seq",
    "bytes": 10526,
    "sha256": "b5193c9aae52208372f872f47bf78bf59e33c01a370abcadc94559b9ee2a9c87",
-   "via": "extension"
+   "via": "extension",
+   "blob": "ead77ae22834ae3ff1a07746143da9b5d6013a75"
   },
   {
    "path": "Installer/Resources/Users.ini",
    "bytes": 2299,
    "sha256": "643bd86e057711dc295686bafaaabb177d8c64ca568122aa0bd92b609fcf8568",
-   "via": "extension"
+   "via": "extension",
+   "blob": "981238f327e31dfca6aab2c85c19311e5f7b4da9"
   },
   {
    "path": "Documentation/w0.svg",
    "bytes": 2152,
    "sha256": "93ec7972f98d188f042380e0cbeadee63fb5953b4273cd91af92c8e5a864635e",
-   "via": "tree"
+   "via": "tree",
+   "blob": "33dc1b7d52a0f5e4b16681b41fcada5f781a278c"
   },
   {
    "path": "Installer/Resources/FrontEnd/Restart.bat",
    "bytes": 1605,
    "sha256": "f0c7d85403a52de596c7b4b3457ad72639d87ebdcc435dd83b903fe879ae647f",
-   "via": "tree"
+   "via": "tree",
+   "blob": "972b70e07551dc4ffa14fa81f51c7a0fba917cd4"
   },
   {
    "path": "Installer/Resources/SeqEdit/Administrator.xml",
    "bytes": 101439,
    "sha256": "84154e5dc0be0cdae6760c63d6b4761f2f487fb64eaf99fd6f6ad3f60708ef57",
-   "via": "tree"
+   "via": "tree",
+   "blob": "9817577f7ea7047d4302b3e79a314d069ed307a7"
   },
   {
    "path": "Installer/Resources/SeqEdit/Operator.xml",
    "bytes": 88320,
    "sha256": "a6ee4f5c730d20c2b8b5d80e7c83cae9e4761b98a028804d1e48c7ceb42139f4",
-   "via": "tree"
+   "via": "tree",
+   "blob": "0283470160bf5b7b160d1fcf506f8aead295f8d3"
   },
   {
    "path": "Installer/Resources/SeqEdit/layout_Administrator.bin",
    "bytes": 200447,
    "sha256": "37d7c799fc5048661e4842b8a015270c222b2d56fbb61be8d5775aa204e10452",
-   "via": "tree"
+   "via": "tree",
+   "blob": "66845f384b131260e860cec005ff2a8bf43d416f"
   },
   {
    "path": "Installer/Resources/SeqEdit/layout_Operator.bin",
    "bytes": 213475,
    "sha256": "8ae5116cbae72cf2a03f9da01dd7d58dacf766492d40e1a5eea212146e50ee1f",
-   "via": "tree"
+   "via": "tree",
+   "blob": "e3569881ab35f70e0e11388390c98e04721c576f"
   },
   {
    "path": "Installer/SetEnvironmentVariables.bat",
    "bytes": 482,
    "sha256": "affab8d576dde91f56f7824bcf25ff22698c14e7617ef736a0d53178ce186650",
-   "via": "tree"
+   "via": "tree",
+   "blob": "c3874ec39d608e751419c820576e9c6d3a8fc464"
   },
   {
    "path": "LICENSE",
    "bytes": 1063,
    "sha256": "f3720c661e0f40c8bac934f68eed91314dd238be29d076b265ed3a547630ff4e",
-   "via": "tree"
+   "via": "tree",
+   "blob": "1be190406a621fb3ee30bb54f9aab6004ec116cf"
   },
   {
    "path": "README.md",
    "bytes": 1305,
    "sha256": "3c9f3246e7c7d3f50b1928e3bcb3a04b261b98db1a70768f04f6f6cf6dc9606c",
-   "via": "tree"
+   "via": "tree",
+   "blob": "002b1edff58838a8fe337413ad83654baf3ba692"
   }
  ],
  "skipped": [],

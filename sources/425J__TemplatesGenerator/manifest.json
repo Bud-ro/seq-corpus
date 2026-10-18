@@ -10,37 +10,43 @@
    "path": "Installer/Install.seq",
    "bytes": 7937,
    "sha256": "53fc94a99a69df1adfda8e347bdc2f4194a22a1f96a6ab5005751eacfd036ddb",
-   "via": "extension"
+   "via": "extension",
+   "blob": "ddd01891b7b2eeeebcffd622ff9bcc0b4f4cbb63"
   },
   {
    "path": "Installer/Resources/TemplatesGenerator.seq",
    "bytes": 8518,
    "sha256": "973490377e88ece3d22d50d2774830f7c676f50250e0db6aa449137aef3f4a04",
-   "via": "extension"
+   "via": "extension",
+   "blob": "2f506a2d5bd08d838f1c5931b18347c68fc86342"
   },
   {
    "path": "Installer/Resources/Tools.ini",
    "bytes": 232,
    "sha256": "a7ec239bd88085efd8d6b84dd1b70ce8318c956a86ea0aa63ed95fc4e7dab6ab",
-   "via": "extension"
+   "via": "extension",
+   "blob": "5ec0b29f8ef4141b821641e20600960ca9bd4b9b"
   },
   {
    "path": "Documentation/w0.svg",
    "bytes": 2152,
    "sha256": "93ec7972f98d188f042380e0cbeadee63fb5953b4273cd91af92c8e5a864635e",
-   "via": "tree"
+   "via": "tree",
+   "blob": "33dc1b7d52a0f5e4b16681b41fcada5f781a278c"
   },
   {
    "path": "LICENSE",
    "bytes": 1063,
    "sha256": "f3720c661e0f40c8bac934f68eed91314dd238be29d076b265ed3a547630ff4e",
-   "via": "tree"
+   "via": "tree",
+   "blob": "1be190406a621fb3ee30bb54f9aab6004ec116cf"
   },
   {
    "path": "README.md",
    "bytes": 910,
    "sha256": "f415f7f3384b31b7f0f06d9b7b78897ff434716846bd77b2fb51b8bc524ed7be",
-   "via": "tree"
+   "via": "tree",
+   "blob": "6d9cd89c08d680f51c0d6b79eb484aad67f6bb67"
   }
  ],
  "skipped": [],

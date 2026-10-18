@@ -10,631 +10,736 @@
    "path": "setup.cfg",
    "bytes": 577,
    "sha256": "252ad657706620c35f72af56c0189cfedec6b1c43703f7953cf6e658bdb48f70",
-   "via": "extension"
+   "via": "extension",
+   "blob": "7ac2c0c53d397ae440d2b12af5591f9c8f29ecdb"
   },
   {
    "path": "systemtests/FrontEndCallbacks.seq",
    "bytes": 45426,
    "sha256": "c93e646b33e8e0cd0a5854b3c3cd0c5ecd9345824c486406af0008fd8a8374a8",
-   "via": "extension"
+   "via": "extension",
+   "blob": "22d45c7d28e281c89faf67d6e9f88dbc1dac3656"
   },
   {
    "path": "systemtests/SystemTestFixture.seq",
    "bytes": 9510,
    "sha256": "fe7b3f13684aad6975f0a467951726c1622cde8ad5d57acb7b1cc4ed7cf6a6b1",
-   "via": "extension"
+   "via": "extension",
+   "blob": "00df652bd31becd8b8a09ea8f6198cb008dd01a7"
   },
   {
    "path": "systemtests/custom_instruments.seq",
    "bytes": 12761,
    "sha256": "5657cbea5a2b5b9c1f3019102bc0fe07f3b71893c58bdb918bff0a03628a1a69",
-   "via": "extension"
+   "via": "extension",
+   "blob": "d7237315549334de0626b07529a132e31b383f5e"
   },
   {
    "path": "systemtests/nidaqmx.seq",
    "bytes": 12720,
    "sha256": "1ed33792f5be12d3b3f475b9bc0821b7b8cc2db18ffdce13e481994107d35c9b",
-   "via": "extension"
+   "via": "extension",
+   "blob": "2db65073675af17c8e77da5e1629b2ca5ce2f5db"
   },
   {
    "path": "systemtests/nidcpower.seq",
    "bytes": 12533,
    "sha256": "54ef57fe9d0086aff3be752ac6f6e48edd01c2b150da4042ac6335e66058af71",
-   "via": "extension"
+   "via": "extension",
+   "blob": "a3f4290530a25530362e49c0413f3c837e62fbb1"
   },
   {
    "path": "systemtests/nidigital.seq",
    "bytes": 14306,
    "sha256": "cfa4c14f810d66478d6474d1255a22008a2d27b617f4bb20ac888b40cf49783a",
-   "via": "extension"
+   "via": "extension",
+   "blob": "da5dcd458b2b7d8b562a1f7e5a653d36158ab238"
   },
   {
    "path": "systemtests/nidmm.seq",
    "bytes": 12674,
    "sha256": "f54660545da388028ed43e8a9aca72dfc752587bc29e9d3455c7ce75d8e21c12",
-   "via": "extension"
+   "via": "extension",
+   "blob": "8b3d2ffed7273f9cb4bf6af8d68865987fa7b0a9"
   },
   {
    "path": "systemtests/nifgen.seq",
    "bytes": 12707,
    "sha256": "77549541d8b557a7d2e1cee78dd81b0ddc5d528493d6df3bee466df644ad320f",
-   "via": "extension"
+   "via": "extension",
+   "blob": "0a380f81fedc4385079ef59f5129da472548a904"
   },
   {
    "path": "systemtests/nirelaydriver.seq",
    "bytes": 12576,
    "sha256": "3f853084bcb729f1fb4893a8ccdafca7a2a33d9cd2cee3ca5453c69da5128bfa",
-   "via": "extension"
+   "via": "extension",
+   "blob": "3f97b619963f0c81f836d43f85be7373bdde094a"
   },
   {
    "path": "systemtests/niscope.seq",
    "bytes": 12708,
    "sha256": "0fa0043f318934269a55dbdc1b8740f40cd3c56b6bf0c2aa5db4da3ac6dee0e0",
-   "via": "extension"
+   "via": "extension",
+   "blob": "87c868ebc4a3e04f6a8a6983ce135e073a91ecc0"
   },
   {
    "path": "systemtests/site_and_global_data.seq",
    "bytes": 12691,
    "sha256": "7c14f48d8c9e1ed086064ce4a65a176cc6e4d3a89d693ff120f8079bb365fde4",
-   "via": "extension"
+   "via": "extension",
+   "blob": "de07ad9cca3db2d04059596aa32a5316b13bdf23"
   },
   {
    "path": "systemtests/specifications.seq",
    "bytes": 12267,
    "sha256": "af76e2471af146cae1b2686b6d6206e1df058d3b1b71c137f2f52fd5ca3e1c8d",
-   "via": "extension"
+   "via": "extension",
+   "blob": "fd28e7dd6fc0551d9d360230de7c3a06ac9626cf"
   },
   {
    "path": "systemtests/switch.seq",
    "bytes": 12712,
    "sha256": "81e3301bd015313d669ce215f3fe948ed4437ccf32cf08d126dc808b3b3817e1",
-   "via": "extension"
+   "via": "extension",
+   "blob": "b4ffd6e15e1388bc6fd03dbd2c9ddd095c7a0719"
   },
   {
    "path": ".coveragerc",
    "bytes": 230,
    "sha256": "455a8f32847a1d47c036669e0e0847c2d544f507839b9e86f37e7a0954b20fcb",
-   "via": "tree"
+   "via": "tree",
+   "blob": "92f6dd32d2ca4dfe92df836e79441aae4e8d7475"
   },
   {
    "path": ".github/PULL_REQUEST_TEMPLATE.md",
    "bytes": 701,
    "sha256": "f3dddfea01608fb0083b00134f6e9408794e12b51cb90285dc4865c56a13dd57",
-   "via": "tree"
+   "via": "tree",
+   "blob": "49674b177638c37330318f7d1e898b8a4d56432b"
   },
   {
    "path": ".github/actions/build/action.yml",
    "bytes": 246,
    "sha256": "5c09b31e258bd695664ddc8a3595e6ad8089441ab4b9042b2652fd8d5de3df04",
-   "via": "tree"
+   "via": "tree",
+   "blob": "f92db88326f0d40cb272282991c1309d092dd713"
   },
   {
    "path": ".github/workflows/lint.yml",
    "bytes": 902,
    "sha256": "271eaa79e1e71866f4a41598299ecd6d50809026f2b061235862004494fef2bc",
-   "via": "tree"
+   "via": "tree",
+   "blob": "115b48fdd935d4627d2e931bea31d271537b0379"
   },
   {
    "path": ".github/workflows/publish-pypi.yml",
    "bytes": 430,
    "sha256": "aee4160043a43da188ee556905bc2dc346347084e9c3e09899f7ee727009f219",
-   "via": "tree"
+   "via": "tree",
+   "blob": "98b91f55414fc99ebcda90b3738426f8e77b30e6"
   },
   {
    "path": ".github/workflows/publish-testpypi.yml",
    "bytes": 500,
    "sha256": "c3fe8f1e33166d88cc00249a59a3460a6baf050aa5187f7ade5d30611a55153e",
-   "via": "tree"
+   "via": "tree",
+   "blob": "b2507a3c61b7e90f137cdc4e1c4f474c7875575c"
   },
   {
    "path": ".github/workflows/test-build-install.yml",
    "bytes": 518,
    "sha256": "f35aa100e30ef285935b71254661758fdbb071c0fccd9f888b45f5778a8f85ca",
-   "via": "tree"
+   "via": "tree",
+   "blob": "ea68903fd0e1881fef4e0f1be203a0f31bd4f0ef"
   },
   {
    "path": ".gitignore",
    "bytes": 485,
    "sha256": "961e042a31dac7e8dfc909401904c59bf1ba4da4e3c88b8a81dd67ca90d44b4a",
-   "via": "tree"
+   "via": "tree",
+   "blob": "9df3eca753362d677aedb52e86e27cc6326188c3"
   },
   {
    "path": "CONTRIBUTING.md",
    "bytes": 5557,
    "sha256": "95b5add15fcff520ec03674c5c884aa37ab5c1b13140593bcccb1eb6cb9d2d46",
-   "via": "tree"
+   "via": "tree",
+   "blob": "6c1bc322fb8ff73217040822c1e6582d91f1a813"
   },
   {
    "path": "LICENSE",
    "bytes": 1059,
    "sha256": "cf2f4083a1a2b2cdf798098bc0080b00e81f9c4e8187e2c1bffb635394b749ab",
-   "via": "tree"
+   "via": "tree",
+   "blob": "cb051c53c656a6090996e20434c871ddf115ccea"
   },
   {
    "path": "README.md",
    "bytes": 3177,
    "sha256": "2e4a883eb2f0d2f7528bd9f83eac3b2b3a1b534dc0cc8cd57ff083b82537d0ce",
-   "via": "tree"
+   "via": "tree",
+   "blob": "e71646f6ddcf8e0c3d960d0b7e94faf93c06a7c9"
   },
   {
    "path": "STATUS.md",
    "bytes": 21335,
    "sha256": "d4061b01cf93dc02fb5cea694bda152adb736e3eb516508d619c86c28f64d709",
-   "via": "tree"
+   "via": "tree",
+   "blob": "99b52aa63ea709e3bcfed5c0ef51b3ceb5817a80"
   },
   {
    "path": "azure-pipelines.yml",
    "bytes": 1416,
    "sha256": "b2509ca57a0785f7a5f622a76d40d55f13f3cd453052aa668876a3480db4b261",
-   "via": "tree"
+   "via": "tree",
+   "blob": "1b3f203840f77c82a29c329ee22e5264fed5c32c"
   },
   {
    "path": "pyproject.toml",
    "bytes": 1711,
    "sha256": "b68b432ab7e56b5ac400ec2b06bb59206b6e779561205f22d4a184de4713194f",
-   "via": "tree"
+   "via": "tree",
+   "blob": "92b291a9971a43c65e848b0564c4dd96a55c0a76"
   },
   {
    "path": "requirements.txt",
    "bytes": 115,
    "sha256": "f8f1ab78403194ebf1acac303fc4e51bd3530ab404e8dff2ad4e796d67c96bd8",
-   "via": "tree"
+   "via": "tree",
+   "blob": "177e55d9d27d8a7b0087e992f3be6f98c4aaf511"
   },
   {
    "path": "src/nitsm/__init__.py",
    "bytes": 74,
    "sha256": "a3d451f60f9de5f109828a7b1db1b2136309b30f0c5ee8a5fb32dd124376da48",
-   "via": "tree"
+   "via": "tree",
+   "blob": "22263e543f1f07be087a026dd4d5ca42a0901f96"
   },
   {
    "path": "src/nitsm/_pinmapinterfaces.py",
    "bytes": 117074,
    "sha256": "47b326cfe5d4e72c27e642a300e15e5a7abc071670fecf41140cd9e99d2d938d",
-   "via": "tree"
+   "via": "tree",
+   "blob": "952637b22e8302679afcb22afc44aad3e3e4a401"
   },
   {
    "path": "src/nitsm/codemoduleapi.py",
    "bytes": 2690,
    "sha256": "22fc078826c409581010b571598587b8fe7d39e4b70a63707520f210420c4528",
-   "via": "tree"
+   "via": "tree",
+   "blob": "dd5452e042ae644fdacbd8add4b12a9c7f88cbec"
   },
   {
    "path": "src/nitsm/debug.py",
    "bytes": 1704,
    "sha256": "31a88efb567549d09e59f797b68ccc2975cf87058361d072f55d72dcd940413e",
-   "via": "tree"
+   "via": "tree",
+   "blob": "ee10ceff003663a519df7b7c065fec483c60c78e"
   },
   {
    "path": "src/nitsm/enums.py",
    "bytes": 877,
    "sha256": "7a2e35e5feaa406fc442f9fc7e2d8da2f301256af00ac4a928d1f52d57014584",
-   "via": "tree"
+   "via": "tree",
+   "blob": "1439675fcc54c9df7fad69e1213e81c3b99e2954"
   },
   {
    "path": "src/nitsm/pinquerycontexts.py",
    "bytes": 9708,
    "sha256": "99b7e528c502062ba5154fb36d1f55951eaecd14727961429f8e6dd3de796654",
-   "via": "tree"
+   "via": "tree",
+   "blob": "3460fbcd2b713e11477554face76e42e23128008"
   },
   {
    "path": "src/nitsm/tsmcontext.py",
    "bytes": 79817,
    "sha256": "ea77ad2524a90dc14177b9186dfcff44c00cea9b986c667273fca3f96c5448bc",
-   "via": "tree"
+   "via": "tree",
+   "blob": "e2e98e993487d0c7148ce9b9267f2f3dbaea1ac4"
   },
   {
    "path": "systemtests/__init__.py",
    "bytes": 0,
    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "via": "tree"
+   "via": "tree",
+   "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
   },
   {
    "path": "systemtests/conftest.py",
    "bytes": 4565,
    "sha256": "f1cdbba5e83af5da6ad3a48ec1ef0ef898be7f7c04ec74009f1347fd2991e9f0",
-   "via": "tree"
+   "via": "tree",
+   "blob": "b091445052bc68ef3a1301e44e6f8f110434b944"
   },
   {
    "path": "systemtests/custom_instruments.pinmap",
    "bytes": 1001,
    "sha256": "acd4dce5cb3a216331c11c45447daa50171cfe6ad0bdb03eb5daac365cfbb5ef",
-   "via": "tree"
+   "via": "tree",
+   "blob": "b1001f1447d0719d156929e2fbfd4ac0a44280b5"
   },
   {
    "path": "systemtests/custom_instruments_codemodules.py",
    "bytes": 3163,
    "sha256": "dbacb11c6d4672fd0c2945075c07ab4f35012b7e44411cc021aa73dda1c0dc92",
-   "via": "tree"
+   "via": "tree",
+   "blob": "86e72a6e2d96d66bbe4871b9d99f80ff3b8dbd5c"
   },
   {
    "path": "systemtests/nidaqmx.offlinecfg",
    "bytes": 454,
    "sha256": "a37ab05c0b433fcb6055c69d4f063d150b98c155e6d95fdb892bfff0c3813bdc",
-   "via": "tree"
+   "via": "tree",
+   "blob": "249e8b48ee8ac75c0ee3fae9e2d36a8a5f1a42d8"
   },
   {
    "path": "systemtests/nidaqmx.pinmap",
    "bytes": 922,
    "sha256": "29745b56e01f61542cf6ec10a68f70afeb9114c00370344efd653fd9e27c705e",
-   "via": "tree"
+   "via": "tree",
+   "blob": "b8ae01fb9385dba370fbfb9d4bb514f31d051d87"
   },
   {
    "path": "systemtests/nidaqmx_codemodules.py",
    "bytes": 2488,
    "sha256": "5ab05f77420d346f81ab137593770bbf1a8e43c81a23852eb9d58f3ebc1d1147",
-   "via": "tree"
+   "via": "tree",
+   "blob": "c079ba0b2587f4b08fdab3418aa4d04929ceed44"
   },
   {
    "path": "systemtests/nidcpower.pinmap",
    "bytes": 703,
    "sha256": "ad4893b853cccfab00203e18bb570b81b81553056d734c092166e9c204c1d800",
-   "via": "tree"
+   "via": "tree",
+   "blob": "49dbc18a450fd2aacba5c912e8c385208068b716"
   },
   {
    "path": "systemtests/nidcpower_codemodules.py",
    "bytes": 2404,
    "sha256": "f524be2bde74b519c1382ef3386a29db1d3523660cf65e28b8e17541154df50d",
-   "via": "tree"
+   "via": "tree",
+   "blob": "43470881ffa03bcf02ef634ebca679568409846d"
   },
   {
    "path": "systemtests/nidigital.digicapture",
    "bytes": 809,
    "sha256": "aeaf44ff98e0cec6445cced22d4c8b73ca51c330318750c2806acf43995fb6e8",
-   "via": "tree"
+   "via": "tree",
+   "blob": "8a0a10f54fb542a76a0c441c7bed37cb55e73041"
   },
   {
    "path": "systemtests/nidigital.digilevels",
    "bytes": 768,
    "sha256": "e69fb864760bbbf3b3e0279d929bd47659d471118e5d9d1f00e4eaf6cfcc11ad",
-   "via": "tree"
+   "via": "tree",
+   "blob": "4721a44242ce63dd1255611c9f36a79a90bf584d"
   },
   {
    "path": "systemtests/nidigital.digipat",
    "bytes": 4632,
    "sha256": "748f5221275ad0b6134d201d2d82e63e43d2a4ea31ddaa3aa30ea86561c4267d",
-   "via": "tree"
+   "via": "tree",
+   "blob": "3063cd46d0607fff14687d62b6dfbf388c51aaf8"
   },
   {
    "path": "systemtests/nidigital.digiproj",
    "bytes": 3399,
    "sha256": "e1f5241c3709753d6607605ff4219d50b9e472012937ed0025b2e4c4bf31663a",
-   "via": "tree"
+   "via": "tree",
+   "blob": "07cf190b4cde7fce5f4ebbcefedda0abb87738c4"
   },
   {
    "path": "systemtests/nidigital.digitiming",
    "bytes": 1114,
    "sha256": "1f92ee841092e8fd93c330607f58764b165a335fa48f87e7e861e317b68325aa",
-   "via": "tree"
+   "via": "tree",
+   "blob": "eac04819db30f731625cc9062e6ffec9ad50a3bf"
   },
   {
    "path": "systemtests/nidigital.pinmap",
    "bytes": 966,
    "sha256": "f64e486e2e2a0a2ca939ed6e5d8a056c66a39ed342025a4de3b7ddb973befa45",
-   "via": "tree"
+   "via": "tree",
+   "blob": "bd61ac7cf1bae08f359a311bad24ff160f263d84"
   },
   {
    "path": "systemtests/nidigital.specs",
    "bytes": 552,
    "sha256": "ea106c2ab496b47c69efb6fe718327f02c73d58d5e2686bbe968523ebddb12e5",
-   "via": "tree"
+   "via": "tree",
+   "blob": "b58d696c7f5e2c147d0baa8442e3a5684070e1ba"
   },
   {
    "path": "systemtests/nidigital.tdms",
    "bytes": 1145,
    "sha256": "587e9b3636a89eca9e169f952d8bfdc8405b1c0404f414f3e3930c0a94b54c44",
-   "via": "tree"
+   "via": "tree",
+   "blob": "5bc971232e9d86cf387e384e53add483818f35e2"
   },
   {
    "path": "systemtests/nidigital_codemodules.py",
    "bytes": 6119,
    "sha256": "44892212f5477d2a825b68729181aec12fb3f8104ff3cbaf27f544f4de4c64d3",
-   "via": "tree"
+   "via": "tree",
+   "blob": "ba91fac10ec55eff3fa003095e2c280a7dc03b3e"
   },
   {
    "path": "systemtests/nidmm.pinmap",
    "bytes": 624,
    "sha256": "38b69e3af7c88792fe45f00b52eb9674f3c7555665ae1e524fc0cfdc1502c1e7",
-   "via": "tree"
+   "via": "tree",
+   "blob": "738be03247c1c0d35a972ec48773926bf7a0a2d4"
   },
   {
    "path": "systemtests/nidmm_codemodules.py",
    "bytes": 1720,
    "sha256": "5beb9109fc4a24aa393861d7af9e4841b4fb504f1a30b5157b2afc70682829c4",
-   "via": "tree"
+   "via": "tree",
+   "blob": "6707c4fb29c683de1cff89175f2ebd90215e30f0"
   },
   {
    "path": "systemtests/nifgen.pinmap",
    "bytes": 920,
    "sha256": "796bbf93d6dca4b76d2d5c5136d8ee3439160ae00a4c74455e5427221176f125",
-   "via": "tree"
+   "via": "tree",
+   "blob": "839cf779a8305b1c68f2c478aec1724bec249ee5"
   },
   {
    "path": "systemtests/nifgen_codemodules.py",
    "bytes": 2205,
    "sha256": "42be0be77853077a1cc750918305b3a4e3f6bea47ea05e5acde5852fa272162b",
-   "via": "tree"
+   "via": "tree",
+   "blob": "7d8bfa34cb87de476ac78f92847594eb3f7f81e2"
   },
   {
    "path": "systemtests/nirelaydriver.pinmap",
    "bytes": 1560,
    "sha256": "2066195837b3201385df58eed9f5e38bb8911de225baf63c95af450f51bad434",
-   "via": "tree"
+   "via": "tree",
+   "blob": "69f9b8b83bf5b8bf398233c9573593d61a5d2ef3"
   },
   {
    "path": "systemtests/nirelaydriver_codemodules.py",
    "bytes": 2346,
    "sha256": "b72a4d1e62232d772ce2a14e9e6bf9bccc2c36a100ce9448510a03659fbe439d",
-   "via": "tree"
+   "via": "tree",
+   "blob": "ddbb50fd6aa1627cd06990a336ed52078136733b"
   },
   {
    "path": "systemtests/niscope.pinmap",
    "bytes": 710,
    "sha256": "df29f2b16c4b9e53b7d1a93eb7d685d05a72a3f03b67d818d17442d8dc7eccec",
-   "via": "tree"
+   "via": "tree",
+   "blob": "49f9d4d330607aebcd9e49e73a2922b4dcddfa98"
   },
   {
    "path": "systemtests/niscope_codemodules.py",
    "bytes": 1956,
    "sha256": "f193530662e2637c78f2e1505470197a73548e757566a7afe39daf0d0ad5d01c",
-   "via": "tree"
+   "via": "tree",
+   "blob": "b3344df849b8340948e702fe205768dd612ae453"
   },
   {
    "path": "systemtests/sessionutils.py",
    "bytes": 513,
    "sha256": "9cd3a3a571cdbd43e84459de75ac957b5edc800df592d37edf53f4028695fe46",
-   "via": "tree"
+   "via": "tree",
+   "blob": "025381fd62b1c6aadf4167f9aa3d3d8f84f886c7"
   },
   {
    "path": "systemtests/site_and_global_data.pinmap",
    "bytes": 966,
    "sha256": "f64e486e2e2a0a2ca939ed6e5d8a056c66a39ed342025a4de3b7ddb973befa45",
-   "via": "tree"
+   "via": "tree",
+   "blob": "bd61ac7cf1bae08f359a311bad24ff160f263d84"
   },
   {
    "path": "systemtests/site_and_global_data_codemodules.py",
    "bytes": 1810,
    "sha256": "4020b2c3803e8fdb12d5d981f8d46e5bc386565b3657590bc6fe460443ba1593",
-   "via": "tree"
+   "via": "tree",
+   "blob": "bcb8bdb1fdf943e0595c11bde02fa5141ff2d804"
   },
   {
    "path": "systemtests/specifications.pinmap",
    "bytes": 344,
    "sha256": "8eebb21f5ff9ee1f727c4828154295e36d4b8f6fbca49154ead18fdb38f72b19",
-   "via": "tree"
+   "via": "tree",
+   "blob": "d12cde32b74acd92468730916c8201861ecf8ba0"
   },
   {
    "path": "systemtests/specifications.specs",
    "bytes": 521,
    "sha256": "5bbb4fe4ffb3f9bdf28a169dcb316bd7faf958f12c110ec85c3313a0cbd191d2",
-   "via": "tree"
+   "via": "tree",
+   "blob": "e11572510a72c6964b5da7e5f22ba68a51dc3192"
   },
   {
    "path": "systemtests/specifications_codemodules.py",
    "bytes": 473,
    "sha256": "d3c848b55de01e3760b3cbd8950b1902fb197eca6d6fcf3b72b7d1e1365fe218",
-   "via": "tree"
+   "via": "tree",
+   "blob": "8429ee7405b33b6d46c1d9f46a5825440f4a055b"
   },
   {
    "path": "systemtests/switch.pinmap",
    "bytes": 893,
    "sha256": "20f36e66247c8e1969d1a9792854521ec2d76a0718c1f3ee1ade464d324a0d76",
-   "via": "tree"
+   "via": "tree",
+   "blob": "79e1d2a19e49e73e5679226a9467f494b489778d"
   },
   {
    "path": "systemtests/switch_codemodules.py",
    "bytes": 2029,
    "sha256": "f59b6594dd98c06f560e06edd1ba36a8a15a2288677f4b9a1aeabb0d2dd432ed",
-   "via": "tree"
+   "via": "tree",
+   "blob": "156b7f3488e04efe39c21001e27649c2e10d4cd5"
   },
   {
    "path": "systemtests/test_system.py",
    "bytes": 1434,
    "sha256": "7566d5fd8009d40995f5d653d55c29fc61f51e6dd14afc95d91836c2c7c852a8",
-   "via": "tree"
+   "via": "tree",
+   "blob": "9a9586433138888138592ab21ddc2a2d8f6571ae"
   },
   {
    "path": "tests/__init__.py",
    "bytes": 0,
    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "via": "tree"
+   "via": "tree",
+   "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
   },
   {
    "path": "tests/codemoduleapi.pinmap",
    "bytes": 344,
    "sha256": "8eebb21f5ff9ee1f727c4828154295e36d4b8f6fbca49154ead18fdb38f72b19",
-   "via": "tree"
+   "via": "tree",
+   "blob": "d12cde32b74acd92468730916c8201861ecf8ba0"
   },
   {
    "path": "tests/conftest.py",
    "bytes": 3265,
    "sha256": "96a489c96c4636fea8d081f789acb3bfd79231c5b914c8c3cb8eb551cec741a5",
-   "via": "tree"
+   "via": "tree",
+   "blob": "97625124976081b5c5a18735b086161919e65334"
   },
   {
    "path": "tests/custom_instruments.pinmap",
    "bytes": 1031,
    "sha256": "884c88cac574e2f27d3a792aa31a3a1bcb350b890f81302914fc133ea048907a",
-   "via": "tree"
+   "via": "tree",
+   "blob": "12db5f3088b03c08fa4e0d8597cf428554fada17"
   },
   {
    "path": "tests/general_and_advanced.pinmap",
    "bytes": 1081,
    "sha256": "d2d16c855a61cb776da3276a4ed51da8107370e4dc41e70bc7066b8b52c416fb",
-   "via": "tree"
+   "via": "tree",
+   "blob": "cc9317180ad07c38a28488799fda048658d8b312"
   },
   {
    "path": "tests/multi_site.pinmap",
    "bytes": 1190,
    "sha256": "48a5b85669055ba0e4fb59cdfb72ec9c2f91807ba850a6528ce4adc4db7622a5",
-   "via": "tree"
+   "via": "tree",
+   "blob": "0b129407518cde15167241038680039b033335b9"
   },
   {
    "path": "tests/nidaqmx.pinmap",
    "bytes": 1137,
    "sha256": "47da8b24065a0fa4872a1813e0eabc3f51712b10230b34018cdb431fada5737c",
-   "via": "tree"
+   "via": "tree",
+   "blob": "6dbe3549abb6ee71a053759ef3d06721331fceea"
   },
   {
    "path": "tests/nidcpower.pinmap",
    "bytes": 1592,
    "sha256": "120a89cdd7ea433436b7988132d8feb535e056f0bfe8365f78d55faed79708ff",
-   "via": "tree"
+   "via": "tree",
+   "blob": "4c64e1e2aa415272c9f227b261df0e2ba8af0be3"
   },
   {
    "path": "tests/nidigital.pinmap",
    "bytes": 1236,
    "sha256": "77ba2eac212e0a0fefe2efb5339c1a3c8cee5ded80eb8391bc49b2f44337ecca",
-   "via": "tree"
+   "via": "tree",
+   "blob": "1a83a3bdf464f7eb805201cfa9acd00174b32010"
   },
   {
    "path": "tests/nidmm.pinmap",
    "bytes": 879,
    "sha256": "0d2010269ac43f43f038f043798dd52d43d79cc5c03f22fe7dabc40e16c35f99",
-   "via": "tree"
+   "via": "tree",
+   "blob": "f86739a686ccc988cfb6feacc1f3f14bad5df1fc"
   },
   {
    "path": "tests/nifgen.pinmap",
    "bytes": 1064,
    "sha256": "de79da13ff7fe85c23eb07a9eba51565903134c9c170a7b9c6097392a9dfd5e9",
-   "via": "tree"
+   "via": "tree",
+   "blob": "5272379570252e2c4de569d343d7601af417b17c"
   },
   {
    "path": "tests/nirelaydriver.pinmap",
    "bytes": 1855,
    "sha256": "1d923f2287dfc0405b86e6c6cc13df95bfec5009871b48934317e0bdc0e7b4f6",
-   "via": "tree"
+   "via": "tree",
+   "blob": "b05d12dd03c1f92ec496c46d2c9dcffb1796719e"
   },
   {
    "path": "tests/niscope.pinmap",
    "bytes": 1002,
    "sha256": "967249d23722e3fb45e53ec78d3ae8746d1475de01225691f84d2807d2069349",
-   "via": "tree"
+   "via": "tree",
+   "blob": "1d2681bb4efb04264a3b18ab37fb2c6cf8928116"
   },
   {
    "path": "tests/pinquerycontext.pinmap",
    "bytes": 970,
    "sha256": "9dce2ab7b80c7a086128721c96f418c8961e41663f55a4818b796cafa95af646",
-   "via": "tree"
+   "via": "tree",
+   "blob": "08d66ed4554cd572b2ef97650b4e2f708e6de59d"
   },
   {
    "path": "tests/publish.pinmap",
    "bytes": 1540,
    "sha256": "dce62fcb14da9dca2401d3c8e16bccd1f9280c9306dfa444b7ddd0fbced01117",
-   "via": "tree"
+   "via": "tree",
+   "blob": "9d88651eedae69030079b436319f9bc8efcc2827"
   },
   {
    "path": "tests/publish_single_site.pinmap",
    "bytes": 966,
    "sha256": "bf53e5f4be92b368cf88a4449d48bf09e9b134aae00cc3336b6ad05d7fdc4d0e",
-   "via": "tree"
+   "via": "tree",
+   "blob": "3ae05f7109bf19d27123036616e49a0b53194d3d"
   },
   {
    "path": "tests/site_and_global_data.pinmap",
    "bytes": 353,
    "sha256": "c01a210b9bd5c936a41b4df7df4618c4e46fad8558642ee888fe1496fb56de60",
-   "via": "tree"
+   "via": "tree",
+   "blob": "e9f4430ce882484697273cba75c55ee8a286e37c"
   },
   {
    "path": "tests/switch.pinmap",
    "bytes": 893,
    "sha256": "fbc692cd426e022eb21b74c6ac11c3fc69a9693bd38635879637e9a15b7c0dec",
-   "via": "tree"
+   "via": "tree",
+   "blob": "484d415c7656f561423f35fcb4d89b656649b023"
   },
   {
    "path": "tests/test_codemoduleapi.py",
    "bytes": 3977,
    "sha256": "f57385c07af857863224c58eb7507a327b10c9cace7ad80cb77cea52e0bf9dc5",
-   "via": "tree"
+   "via": "tree",
+   "blob": "5f6f38bada28a656d8c89722a1b4c7e7802001e2"
   },
   {
    "path": "tests/test_custom_instruments.py",
    "bytes": 8280,
    "sha256": "411ef5d750e3dc7d6bfaf951a449e60fbd366b61e42f34ecaa51e207e72e0394",
-   "via": "tree"
+   "via": "tree",
+   "blob": "993e7f0283cc3801aeadac54fae8133bedcb9535"
   },
   {
    "path": "tests/test_general_and_advanced.py",
    "bytes": 2086,
    "sha256": "91d558eafa8eb2cfb707797d83c7002c284f647e508cf14814816439f606cf10",
-   "via": "tree"
+   "via": "tree",
+   "blob": "c30396e6371a0fc8965102dafa05377052a333c1"
   },
   {
    "path": "tests/test_multi_site.py",
    "bytes": 1432,
    "sha256": "75339653b45ac7de22a099c8511cba623918d4ba27a3ff166da4aaf46e7dba62",
-   "via": "tree"
+   "via": "tree",
+   "blob": "f9891ed4d710c0812b9822e1761c7e0773169b1a"
   },
   {
    "path": "tests/test_nidaqmx.py",
    "bytes": 4842,
    "sha256": "83f112e2e3388ca9a743288946cde77b6d2b90454c791bab8e9e54a7ea13039f",
-   "via": "tree"
+   "via": "tree",
+   "blob": "a451940ba4d9181488a1f5d7b58d4d84fb3c3588"
   },
   {
    "path": "tests/test_nidcpower.py",
    "bytes": 4886,
    "sha256": "e4662ccb381efb7410b67f10b1291c5fc695a5bf35f0f9e3c5075a3483f9603d",
-   "via": "tree"
+   "via": "tree",
+   "blob": "c65794702080ba92e6d75e24721994a6e2d12c5a"
   },
   {
    "path": "tests/test_nidigital.py",
    "bytes": 8876,
    "sha256": "2dfd9fed6f2019d9aa2c9e49664e85719d6092645b76d7a89e36e5b66d24c1f1",
-   "via": "tree"
+   "via": "tree",
+   "blob": "a2335e9d56801460d1a59fe535d30f410376523e"
   },
   {
    "path": "tests/test_nidmm.py",
    "bytes": 3923,
    "sha256": "2436c6dcc96d46c856a53fcad62e0a07138ae9f27f833eeb0143db44e786629a",
-   "via": "tree"
+   "via": "tree",
+   "blob": "f732a1266d5c853c67006f483f36e4ebce514789"
   },
   {
    "path": "tests/test_nifgen.py",
    "bytes": 5180,
    "sha256": "1817d4ef5e6a77fcbac2c8b877ae31f5b290d6dc404f1746404841d1db194ebe",
-   "via": "tree"
+   "via": "tree",
+   "blob": "bff13cf1836d21b9c0e1a42335fcaa4d82d75170"
   },
   {
    "path": "tests/test_nirelaydriver.py",
    "bytes": 10648,
    "sha256": "11234aee7c02527f3d1c00063d6cfaec0cca88a2cdfcd1f504287b6fa67d1aae",
-   "via": "tree"
+   "via": "tree",
+   "blob": "0c0285189072b4710be9428d6e374dcfe120597d"
   },
   {
    "path": "tests/test_niscope.py",
    "bytes": 5296,
    "sha256": "02dc7af0c5e47f1d196404ac33ce9ebfea0937562198bbfe8ffd13d231b21ecb",
-   "via": "tree"
+   "via": "tree",
+   "blob": "7f5d36b48ac2729c114c6839b25d21eb963bf6aa"
   },
   {
    "path": "tests/test_pinquerycontext.py",
    "bytes": 1287,
    "sha256": "41548e8e3ebc05684c53e1d234777a49a2c9ceffa97158113577f809f480404b",
-   "via": "tree"
+   "via": "tree",
+   "blob": "ccca01571ff92099f9c09815754936ef3862bae8"
   },
   {
    "path": "tests/test_publish.py",
    "bytes": 14315,
    "sha256": "576a4f593fdc45c5a21bcb63a712a2e4d6b1039d295e4e09fc78cf26fb4246f9",
-   "via": "tree"
+   "via": "tree",
+   "blob": "e08ed6fd86f4b07d8656393dda86759d98e74945"
   },
   {
    "path": "tests/test_site_and_global_data.py",
    "bytes": 1396,
    "sha256": "6afe391ff68655089f99b56c0f37481b339a444450bd03a20f7d40199a2742d7",
-   "via": "tree"
+   "via": "tree",
+   "blob": "040570d4cc8513b8fa2d304dd10a7b1c9cc91e7d"
   },
   {
    "path": "tests/test_switch.py",
    "bytes": 2986,
    "sha256": "ddb3564019581e2f80877781428ad2fb44778ecf99d6869d4bf73a56200ebd08",
-   "via": "tree"
+   "via": "tree",
+   "blob": "7a43e81b0a1f7b3ab636f82e5ab075605c922064"
   },
   {
    "path": "tools/makepy_pinmapinterfaces.py",
    "bytes": 600,
    "sha256": "19f8f84f24c4d5e895adb850ca9884c5c199a038a368bd83746c8182bc782601",
-   "via": "tree"
+   "via": "tree",
+   "blob": "8891d32f7da2d276cf3ddd443581c9060be52542"
   }
  ],
  "skipped": [],

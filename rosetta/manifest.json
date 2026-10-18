@@ -6,7 +6,9 @@
   "commit": "cc8d3e4f7814d6bc519459fee79285f86bb432db",
   "path": "Source/HAL Implementation/DmmMeasurementHAL.seq",
   "sha256": "4794a7a05a457490f30dca96c8f1365f3b08d690d25ffbf820b055efdac0e483",
-  "license": "MIT"
+  "license": "MIT",
+  "blob": "eb5d2900a29485534eccca793b635252e8fb6439",
+  "bytes": 7432
  },
  {
   "file": "DmmHAL_python_XML.seq",
@@ -15,7 +17,9 @@
   "commit": "b1e30c9310bd89fbd60d6a28541790e8ab458dfe",
   "path": "source/demo_files/DmmMeasurementHAL.seq",
   "sha256": "91cd82cc706d3f8fbd8f7ac64e42362c8a6146d3c5a7fffa4b34069827fc7f89",
-  "license": "MIT"
+  "license": "MIT",
+  "blob": "efb94d7c54f391655355db68a86b343ce8e9e89c",
+  "bytes": 175642
  },
  {
   "file": "NIDCPower_labview_XML.seq",
@@ -24,7 +28,9 @@
   "commit": "8229e64d0375c5b22bab7a5a74f1311af7698146",
   "path": "Source/Example Measurements/NI-DCPower Source DC Voltage/NIDCPowerSourceDCVoltage_example.seq",
   "sha256": "03625296924bf3d5d04606f9dd4cb28a72c4f503ec2938bf04db6ee9c2e7b137",
-  "license": "MIT"
+  "license": "MIT",
+  "blob": "07e9738b0bb178eef061317e2e235d5005900510",
+  "bytes": 244588
  },
  {
   "file": "NIDCPower_python.seq",
@@ -33,7 +39,9 @@
   "commit": "145feccdee6e7163f6527af3c4d4d79f23857ad4",
   "path": "examples/nidcpower_source_dc_voltage/NIDCPowerSourceDCVoltage_example.seq",
   "sha256": "acaec3a30310e7753d4d30b821e6e2d533b3758df9e3edaed6477304bacfe1b4",
-  "license": "MIT"
+  "license": "MIT",
+  "blob": "26edfc2f65c6659078b3923f5fcb14f7d50feb8d",
+  "bytes": 181367
  },
  {
   "file": "NIDigitalSPI_python.seq",
@@ -42,7 +50,9 @@
   "commit": "145feccdee6e7163f6527af3c4d4d79f23857ad4",
   "path": "examples/nidigital_spi/NIDigitalSPI_example.seq",
   "sha256": "bd5b1161aa747a546d105e7581dc41c22725899d9203ce4ddda8b2c0a12012d4",
-  "license": "MIT"
+  "license": "MIT",
+  "blob": "ac318b152de1b5afce6f929e19c46cfa47350ef5",
+  "bytes": 244480
  },
  {
   "file": "NIDmm_labview_BIN.seq",
@@ -51,7 +61,9 @@
   "commit": "8229e64d0375c5b22bab7a5a74f1311af7698146",
   "path": "Source/Example Measurements/NI-DMM Measurement/NIDmmMeasurement_example.seq",
   "sha256": "592d5b8a83bff8565621c886cf2859a28383a195f0d3200a1b42b8f2ef470890",
-  "license": "MIT"
+  "license": "MIT",
+  "blob": "12095486fe1318d79a3bd0a835c912f396204712",
+  "bytes": 7705
  },
  {
   "file": "NIDmm_python_XML.seq",
@@ -60,7 +72,9 @@
   "commit": "145feccdee6e7163f6527af3c4d4d79f23857ad4",
   "path": "examples/nidmm_measurement/NIDmmMeasurement_example.seq",
   "sha256": "c08d9f1c9f45548412a43452987140be25c217005931858702e6085078fec84c",
-  "license": "MIT"
+  "license": "MIT",
+  "blob": "fe6db70776ce96f5c16d38bd7f98904d4733f9d3",
+  "bytes": 178596
  },
  {
   "file": "NIFgen_labview_BIN.seq",
@@ -69,7 +83,9 @@
   "commit": "8229e64d0375c5b22bab7a5a74f1311af7698146",
   "path": "Source/Example Measurements/NI-FGEN Standard Function/NIFgenStandardFunction_example.seq",
   "sha256": "7304a1cc08c8d990dd43f1882fddfa9eb1e99505c0fd260b418ec27971cb5d9e",
-  "license": "MIT"
+  "license": "MIT",
+  "blob": "3ddd88c2aefbdbe0651aef784198e8bf780e90f9",
+  "bytes": 7555
  },
  {
   "file": "NIFgen_python_XML.seq",
@@ -78,7 +94,9 @@
   "commit": "145feccdee6e7163f6527af3c4d4d79f23857ad4",
   "path": "examples/nifgen_standard_function/NIFgenStandardFunction_example.seq",
   "sha256": "66d1b3ea79c62668fdabf8dfe98164c75204e50d5256576a0ca64986054e4b21",
-  "license": "MIT"
+  "license": "MIT",
+  "blob": "6172e3175a368b825e238caccde0357683fdf55a",
+  "bytes": 174209
  },
  {
   "file": "NIScope_labview_BIN.seq",
@@ -87,7 +105,9 @@
   "commit": "8229e64d0375c5b22bab7a5a74f1311af7698146",
   "path": "Source/Example Measurements/NI-SCOPE Acquire Waveform/NIScopeAcquireWaveform_example.seq",
   "sha256": "dbf0abf452bc84dd4ec13c27b96cbb2e337bc83f0f668546149b06569d875046",
-  "license": "MIT"
+  "license": "MIT",
+  "blob": "e0a87fb9f9d7a8331e881deb81e9f64258b401fe",
+  "bytes": 7662
  },
  {
   "file": "NIScope_python_XML.seq",
@@ -96,7 +116,9 @@
   "commit": "145feccdee6e7163f6527af3c4d4d79f23857ad4",
   "path": "examples/niscope_acquire_waveform/NIScopeAcquireWaveform_example.seq",
   "sha256": "bfac73cd5102ee77f74a2023611014d337aa1ef083e76f46660c738a6d6f3520",
-  "license": "MIT"
+  "license": "MIT",
+  "blob": "e8e80f96d3181932933b7ebb24495fb2d00d6a46",
+  "bytes": 190966
  },
  {
   "file": "NIVisa_python.seq",
@@ -105,7 +127,9 @@
   "commit": "145feccdee6e7163f6527af3c4d4d79f23857ad4",
   "path": "examples/nivisa_dmm_measurement/NIVisaDmmMeasurement_example.seq",
   "sha256": "89e14cdffb1e07602fdc69445ea8018c2254ec1569ed42b889cd2b41ee2532a9",
-  "license": "MIT"
+  "license": "MIT",
+  "blob": "9b2373917389deb01485554ea7780b144a81daf3",
+  "bytes": 172811
  },
  {
   "file": "OutputVoltage_BIN.seq",
@@ -114,7 +138,9 @@
   "commit": "1eea63096f4638eee77eb840adea85763c94286b",
   "path": "examples/output_voltage_measurement/OutputVoltageMeasurement_example.seq",
   "sha256": "5552d30ca5e93b9c44bf309e2a1468b724fd1da7b4795752ddc54843e8b607bc",
-  "license": "MIT"
+  "license": "MIT",
+  "blob": "dfca4795f71575beefb2104b634d6e929c3dab33",
+  "bytes": 6944
  },
  {
   "file": "OutputVoltage_XML.seq",
@@ -123,7 +149,9 @@
   "commit": "145feccdee6e7163f6527af3c4d4d79f23857ad4",
   "path": "examples/output_voltage_measurement/OutputVoltageMeasurement_example.seq",
   "sha256": "716125d536968c0d1d55a970251ce75f305c1892ab179ba5ed5b55d10d2f91b0",
-  "license": "MIT"
+  "license": "MIT",
+  "blob": "ad6cb32b366a9f0008d9c1b76a0bec2bbb6957ce",
+  "bytes": 216294
  },
  {
   "file": "SmuFAL_labview_BIN.seq",
@@ -132,7 +160,9 @@
   "commit": "cc8d3e4f7814d6bc519459fee79285f86bb432db",
   "path": "Source/FAL Implementation/SourceMeasureDCVoltageFAL.seq",
   "sha256": "993940aae8ccde5bb6c1e702fbc4b6fba12578804ec75d7a038e8c7d5108b8b7",
-  "license": "MIT"
+  "license": "MIT",
+  "blob": "fd2c3b8605f13abf4638f414baab7fbaa578bca4",
+  "bytes": 7544
  },
  {
   "file": "SmuFAL_python_XML.seq",
@@ -141,6 +171,8 @@
   "commit": "b1e30c9310bd89fbd60d6a28541790e8ab458dfe",
   "path": "source/demo_files/SourceMeasureDCVoltageFAL.seq",
   "sha256": "f452da0137bdd4dc5082ebe02bc41b99f9cfe7679b4ef92de87a9e4a371c4271",
-  "license": "MIT"
+  "license": "MIT",
+  "blob": "bf1d5db4e2f3a5c455b9dc3df2fb6c70cba58d4d",
+  "bytes": 178398
  }
 ]

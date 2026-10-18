@@ -10,571 +10,666 @@
    "path": "examples/labview_measurement/Json Logger Client/Json Logger Client.lvclass",
    "bytes": 16847,
    "sha256": "d642e3c137fd13ae96648643d3db115b18327f02846c32678e6dc21f092a046c",
-   "via": "extension"
+   "via": "extension",
+   "blob": "976c4f28d3efe95d2407852686ea8c07a11cce37"
   },
   {
    "path": "examples/labview_measurement/Json Logger Client/Methods/Destroy Client.vi",
    "bytes": 14834,
    "sha256": "9ba3086972025b5a8f1ebcdcf1da499e6e0713ab888c62551906d846c2445fcd",
-   "via": "extension"
+   "via": "extension",
+   "blob": "0e7f57f8381b3338702a84593d182931a40085ef"
   },
   {
    "path": "examples/labview_measurement/Json Logger Client/Methods/Initialize Log.vi",
    "bytes": 18110,
    "sha256": "3e199c61b5a0934509199b1ce8751824c2163c268a920593b9c8be0f36f98855",
-   "via": "extension"
+   "via": "extension",
+   "blob": "2c4bd004203e656fdd581b85743d1a2e1dd3394b"
   },
   {
    "path": "examples/labview_measurement/Json Logger Client/Methods/Log Measurement.vi",
    "bytes": 17907,
    "sha256": "1318de773158983fb76220037184f09d6786c7878d8406a1288c237aa3beb74b",
-   "via": "extension"
+   "via": "extension",
+   "blob": "a588e6ee88f16f2fbf17c4c7c4da9989c910d450"
   },
   {
    "path": "examples/labview_measurement/Json Logger Client/stubs/Client API/Create Client.vi",
    "bytes": 15401,
    "sha256": "f97551581aa0dcf8dd82c6ec0786654b511c8f2f4db88aa37dc17ec474f2fed3",
-   "via": "extension"
+   "via": "extension",
+   "blob": "c17ef27a38bede536e9293516d17b268eb4edf38"
   },
   {
    "path": "examples/labview_measurement/Json Logger Client/stubs/Client API/Destroy Client.vi",
    "bytes": 13954,
    "sha256": "4dc427e11f3badbbd55b09b116b0ccfaf62c3a73c32776e740f771090c4dba74",
-   "via": "extension"
+   "via": "extension",
+   "blob": "ac658cc16541d281fd9072b9ea33ddf22de8dff5"
   },
   {
    "path": "examples/labview_measurement/Json Logger Client/stubs/RPC Messages/FlatToRichlogging_service_LogRequest.vi",
    "bytes": 16344,
    "sha256": "988c50019ed6058813f8efc52ceee4f5013603f07d7cb86f3f795d4215152117",
-   "via": "extension"
+   "via": "extension",
+   "blob": "3a7cf2529083835391867ab3608884ecc0f5f9a3"
   },
   {
    "path": "examples/labview_measurement/Json Logger Client/stubs/RPC Messages/FlatToRichlogging_service_LogResponse.vi",
    "bytes": 12377,
    "sha256": "60b3b86207ed9ee4510c9af0852c2bc2f14fe189217cd6498c62162d17951286",
-   "via": "extension"
+   "via": "extension",
+   "blob": "b4c26a7f63fe638aedb9aa906f4ffcdc9c2ab91f"
   },
   {
    "path": "examples/labview_measurement/Json Logger Client/stubs/RPC Messages/Register gRPC Messages.vi",
    "bytes": 20534,
    "sha256": "62e08233640ceadeb42fe6ea3915b0a20683956e905b46aef31600b385519b98",
-   "via": "extension"
+   "via": "extension",
+   "blob": "52efb3811489ce235dc0287ed17461f7b1d4e452"
   },
   {
    "path": "examples/labview_measurement/Json Logger Client/stubs/RPC Messages/RichToFlatlogging_service_LogRequest.vi",
    "bytes": 16344,
    "sha256": "174c0ce34dc367e0ce917a253efb32a899460cf9c96334c69a26a579c40afcfb",
-   "via": "extension"
+   "via": "extension",
+   "blob": "d2656540af5d2191dbe4164c2f2368bfcdb06543"
   },
   {
    "path": "examples/labview_measurement/Json Logger Client/stubs/RPC Messages/RichToFlatlogging_service_LogResponse.vi",
    "bytes": 12381,
    "sha256": "30a46a82cca5fb8fac62c5fd8b99ef299da03122a87002cdae28ff5163b69e4b",
-   "via": "extension"
+   "via": "extension",
+   "blob": "173a7895f6cd12b7cb05dd548508e669d50fccd6"
   },
   {
    "path": "examples/labview_measurement/Json Logger Client/stubs/RPC Messages/logging_service_LogRequest.ctl",
    "bytes": 7295,
    "sha256": "ce9fe4aa674e145039bd4a9bcab280c180574cda4c610ae5592f502b60b4542c",
-   "via": "extension"
+   "via": "extension",
+   "blob": "61fd8d7c108c4564ac237afa0a5d8b27b88b1891"
   },
   {
    "path": "examples/labview_measurement/Json Logger Client/stubs/RPC Messages/logging_service_LogRequest_Flat.ctl",
    "bytes": 7304,
    "sha256": "fad1b0a45347b07c23fc9cd133d38c2b69f7abce53fe078900b9286eff6a0473",
-   "via": "extension"
+   "via": "extension",
+   "blob": "3bc77443ed2d99e0d1c6104686ba22616e75367d"
   },
   {
    "path": "examples/labview_measurement/Json Logger Client/stubs/RPC Messages/logging_service_LogResponse.ctl",
    "bytes": 4780,
    "sha256": "9eff30db045527220e94002149f7eb1a6c9111f0f11fd0f7e920ca3f7748385f",
-   "via": "extension"
+   "via": "extension",
+   "blob": "24eef813c4176cfa7daa8c64e690730c87099de5"
   },
   {
    "path": "examples/labview_measurement/Json Logger Client/stubs/RPC Messages/logging_service_LogResponse_Flat.ctl",
    "bytes": 4797,
    "sha256": "94373123b3e1e83e7986d4f831ef13a0aa0393a478d0a1864e93ea92a350bcfc",
-   "via": "extension"
+   "via": "extension",
+   "blob": "423374dc29ae1759bf2ba4b9f31d40d4f3a5e6ba"
   },
   {
    "path": "examples/labview_measurement/Json Logger Client/stubs/RPC Service/LogMeasurement/LogMeasurement Log.vi",
    "bytes": 65206,
    "sha256": "04bfd8fcf18338b791e8906ec3b6dace4c3f23c4f43889ca3c1c86308636a46d",
-   "via": "extension"
+   "via": "extension",
+   "blob": "e4b978eb521531366d4ed8cf9a6e022d34d5105f"
   },
   {
    "path": "examples/labview_measurement/Json Logger Client/stubs/gRPC Client Test.vi",
    "bytes": 13920,
    "sha256": "6ad15de0b982686bef1b2edd28e6069fb79053d6a2022a12e223c82c5de4d194",
-   "via": "extension"
+   "via": "extension",
+   "blob": "dc9e18e55080c4bc5cc282f63fe12c797ca4435f"
   },
   {
    "path": "examples/labview_measurement/Json Logger Client/stubs/log_measurement_client.lvlib",
    "bytes": 27682,
    "sha256": "0972735f129a0f5be886912dea1d9e32314c1a4ad6acade29291ff648b49195c",
-   "via": "extension"
+   "via": "extension",
+   "blob": "04f22dc5af23b12600afd8e37dabdfc4f440df0d"
   },
   {
    "path": "examples/labview_measurement/NI-DCPower Measurement/Advanced/Build Assets/Post-Build Action.vi",
    "bytes": 16809,
    "sha256": "198cb82dfeb79609e48723eac77bfa240e55024f7498365a8d469826e9653bd6",
-   "via": "extension"
+   "via": "extension",
+   "blob": "c4056341daba163e59a8cd96ce5fbb0f68f4ac05"
   },
   {
    "path": "examples/labview_measurement/NI-DCPower Measurement/Advanced/Get Plugin Paths.vi",
    "bytes": 19700,
    "sha256": "076d90a38fe78825db3fe784d4732379e21d71819390ad2be710638925e05578",
-   "via": "extension"
+   "via": "extension",
+   "blob": "89a7a6760104bdc5cbee2dbee381ae43b6f50132"
   },
   {
    "path": "examples/labview_measurement/NI-DCPower Measurement/Advanced/Measurement Plugin.lvclass",
    "bytes": 20551,
    "sha256": "68857a3eea3399f83e2f4c3e3c864eb798a90e31762bc7ee9a266ee977dd6f0d",
-   "via": "extension"
+   "via": "extension",
+   "blob": "caf75c0e54424f6c0e70adf1848408a64e4dd955"
   },
   {
    "path": "examples/labview_measurement/NI-DCPower Measurement/Advanced/Pack for gRPC.vi",
    "bytes": 78809,
    "sha256": "825980a867d0fe0632d691e2f0431f27371f033c2a56d5e9189d6f55fbd967dd",
-   "via": "extension"
+   "via": "extension",
+   "blob": "cbc21c100449ea6a5ec2218b73d81d8f8500848d"
   },
   {
    "path": "examples/labview_measurement/NI-DCPower Measurement/Advanced/Unpack for gRPC.vi",
    "bytes": 78751,
    "sha256": "f1aec4bc078a9ce2af51aa4326a015452b905a065551360135558ff99f1ee044",
-   "via": "extension"
+   "via": "extension",
+   "blob": "9ea552a5ca5385c220a4ca790c35be08cf2e697a"
   },
   {
    "path": "examples/labview_measurement/NI-DCPower Measurement/Get Measurement Details.vi",
    "bytes": 18271,
    "sha256": "408366a9c98a60585f23b8de430361199962bcc24a0ded86e895dd7aeafb8541",
-   "via": "extension"
+   "via": "extension",
+   "blob": "8ae91fbbf4876ac418da5d42698c18ffa79f8bb0"
   },
   {
    "path": "examples/labview_measurement/NI-DCPower Measurement/Get Type Specializations.vi",
    "bytes": 22820,
    "sha256": "d3b1d664868d9420810896cfa237d544e115455a1a5f2199a9b2419d9aa31965",
-   "via": "extension"
+   "via": "extension",
+   "blob": "8a670e7e118a5d3c50ab4b090e87086b81db631f"
   },
   {
    "path": "examples/labview_measurement/NI-DCPower Measurement/Get UI Details.vi",
    "bytes": 22658,
    "sha256": "6a6ce6f66818833d46009334886a9e04092b217112d0a01026624d16f239526f",
-   "via": "extension"
+   "via": "extension",
+   "blob": "dd4fc127a3e68c03a14f0a4bc996286585ab5878"
   },
   {
    "path": "examples/labview_measurement/NI-DCPower Measurement/Measurement Configuration.ctl",
    "bytes": 12630,
    "sha256": "393b83660ff07d72b98f14ea14094e8c8c5db9cebcd79564039ece51a8f80f99",
-   "via": "extension"
+   "via": "extension",
+   "blob": "ef2ebc38d5ec39fb50db665d75376767e8c52207"
   },
   {
    "path": "examples/labview_measurement/NI-DCPower Measurement/Measurement Logic.vi",
    "bytes": 25321,
    "sha256": "b0127c705a70302dd6fe129e927b5020a3cedbac4a223b6095b6b98fe119f1a2",
-   "via": "extension"
+   "via": "extension",
+   "blob": "a950edbab2d053798df2b10bad4fbdb88e74b05e"
   },
   {
    "path": "examples/labview_measurement/NI-DCPower Measurement/Measurement Results.ctl",
    "bytes": 12784,
    "sha256": "869fe8da0dfacd750c7f6d24e1e7fc805653bdac1e62256a45e3b9f8b9120f24",
-   "via": "extension"
+   "via": "extension",
+   "blob": "62b01a1b74a772d721f8b23590dd6a384814f1fd"
   },
   {
    "path": "examples/labview_measurement/NI-DCPower Measurement/Measurement UI.vi",
    "bytes": 30582,
    "sha256": "a742ad36906d133d894fe096943fb61813a241af2a92758fbe3fc7927c64c408",
-   "via": "extension"
+   "via": "extension",
+   "blob": "3801c94d4f20a943a4a0d25e223e7c46335b4a83"
   },
   {
    "path": "examples/labview_measurement/NI-DCPower Measurement/NIDCPowerSourceDCVoltage.lvlib",
    "bytes": 15411,
    "sha256": "1edb51273c28573d860a61fd58e424fb42d1df35cd8014375f5930e760771187",
-   "via": "extension"
+   "via": "extension",
+   "blob": "70c9146c42370e2985fd39f0f785904f6046b9ad"
   },
   {
    "path": "examples/labview_measurement/NI-DCPower Measurement/Run Service.vi",
    "bytes": 22131,
    "sha256": "240b0e45c36f153369308d444fbc7801bbfd232c39ea6b1004ee70daefd237fa",
-   "via": "extension"
+   "via": "extension",
+   "blob": "6d08108c456f395ade40bb160733ca18115cc757"
   },
   {
    "path": "examples/labview_measurement/NI-DCPower Measurement/TestStand Code Modules/Initialize and Register Sessions.vi",
    "bytes": 22016,
    "sha256": "7f8e2904222c200eb4fc956486fe7a6a73ec79c0a6ce34a277fa350df7f55de5",
-   "via": "extension"
+   "via": "extension",
+   "blob": "0cd59278dd3481e739cbb746b85fccdd215e50cf"
   },
   {
    "path": "examples/labview_measurement/NI-DCPower Measurement/TestStand Code Modules/Unregister and Close Sessions.vi",
    "bytes": 19221,
    "sha256": "1e79e70a98dca909e3f01790d60a9e6aa5f0e909d77c4d22f63c20dd4b0ac6d9",
-   "via": "extension"
+   "via": "extension",
+   "blob": "83d3cdb1f9bfb9ece9dbf67328c5505fde39fd68"
   },
   {
    "path": "examples/labview_measurement/NI-DCPower Measurement/subVIs/NI-DCPower Specific Logic.vi",
    "bytes": 34069,
    "sha256": "dc6c7538cc441b00cf8b9e122fb0c80581879c6ea439bd5e60c153912ebff397",
-   "via": "extension"
+   "via": "extension",
+   "blob": "6a9a10c1cd62d82d4c3c5746ebcb905fd3503803"
   },
   {
    "path": "examples/labview_measurement/NIDCPowerSourceDCVoltage.lvproj",
    "bytes": 19780,
    "sha256": "46bf452a4b055df3d56423f0edf6d47cb9903984904c2e5441725de1d6015995",
-   "via": "extension"
+   "via": "extension",
+   "blob": "65c46597d7391c67610e0bf32dfbadefc12189c4"
   },
   {
    "path": "examples/labview_measurement/NIDCPowerSourceDCVoltage_example.seq",
    "bytes": 244830,
    "sha256": "adccf9422b1ebb4781549afe6bb6b536ebfd88ba83bf01e7a3f9ba82ff88f9d5",
-   "via": "extension"
+   "via": "extension",
+   "blob": "97b521501fffd1df7a28e383962449b0d93aa415"
   },
   {
    "path": "examples/python_measurement/NIDCPowerSourceDCVoltage_example.seq",
    "bytes": 177177,
    "sha256": "248458613a5da4ac54779890f7490138a8d352044e9d34171b6613b334592f26",
-   "via": "extension"
+   "via": "extension",
+   "blob": "7172cd06a5bed8c7ff77ef522bfdd4085b930d1a"
   },
   {
    "path": "examples/python_measurement/teststand_nidcpower.py",
    "bytes": 2563,
    "sha256": "aa72204d94e0c408ed2ab8bb87d9f1b4d125b0b879c5bb2c967741f4e58873aa",
-   "via": "ref:examples/python_measurement/NIDCPowerSourceDCVoltage_example.seq"
+   "via": "ref:examples/python_measurement/NIDCPowerSourceDCVoltage_example.seq",
+   "blob": "9f8404079806b76b249e293e7e959d1325f1a95f"
   },
   {
    "path": ".github/CODEOWNERS",
    "bytes": 104,
    "sha256": "3edb65262556f984c757988437c01fbe91382bb83243fa868a5c1dc1f2b8a43f",
-   "via": "tree"
+   "via": "tree",
+   "blob": "5c4a48cb1ad5cab238ffccf43cf4c096b6036fe6"
   },
   {
    "path": ".github/ISSUE_TEMPLATE/bug_report.md",
    "bytes": 1459,
    "sha256": "deb7fc4c6ab2a77ab5e16bc3c8d37d8fbc47450d663ce154395a06878664d726",
-   "via": "tree"
+   "via": "tree",
+   "blob": "2035b1ebbb25ffa20ad57a7afcbeb19a09ee370e"
   },
   {
    "path": ".github/ISSUE_TEMPLATE/feature_request.md",
    "bytes": 706,
    "sha256": "5ceba21368a78045ac42c331903059748658fb55683f94a049a042f3c4d7b351",
-   "via": "tree"
+   "via": "tree",
+   "blob": "6a36a0deed0ec2592bd94d24a94ab086668a6752"
   },
   {
    "path": ".github/ISSUE_TEMPLATE/tech_debt.md",
    "bytes": 156,
    "sha256": "1ed210ea12d872f3148cac8835603110b0a1be9a06d76abdffed675337084586",
-   "via": "tree"
+   "via": "tree",
+   "blob": "c23849410666629e56b2afc4d0fac2b3831a736b"
   },
   {
    "path": ".github/ISSUE_TEMPLATE/user_story.md",
    "bytes": 310,
    "sha256": "d555077d24869921b9c14dc5e1acf3b3627d0128e684ae8c3386d7f892816bba",
-   "via": "tree"
+   "via": "tree",
+   "blob": "1af432d692a4d5228e624a0b2cb76c112475f796"
   },
   {
    "path": ".github/PULL_REQUEST_TEMPLATE.md",
    "bytes": 889,
    "sha256": "8e25cb12388dc42fd32c8c097f6e99949a6bfb06109250c66459846f2783539f",
-   "via": "tree"
+   "via": "tree",
+   "blob": "f2264c0a49915c4d3aa52176e808747ac40a17e4"
   },
   {
    "path": ".gitignore",
    "bytes": 3040,
    "sha256": "8100f47c47b5b08de7c42bc1b69c4035b238c3e4c70b0ef5f0ef47c7b174ed00",
-   "via": "tree"
+   "via": "tree",
+   "blob": "e213bd105d5dc6316c009a6cf7b41f1b768820e8"
   },
   {
    "path": "CONTRIBUTING.md",
    "bytes": 5308,
    "sha256": "3b9d0217c7b91f81b6bee5a6071c4ea51770ec2a0fc91dff438ef30b159f8476",
-   "via": "tree"
+   "via": "tree",
+   "blob": "f882e754ab4843e8738dede9104360d27252d246"
   },
   {
    "path": "LICENSE",
    "bytes": 1071,
    "sha256": "b97f1b89ab386a24388eac18238af18f70b997f06a8f8652a2e70cad892c4147",
-   "via": "tree"
+   "via": "tree",
+   "blob": "c99724b7ffade82130505dee4fe0c71924c9ecd2"
   },
   {
    "path": "README.md",
    "bytes": 7234,
    "sha256": "8803bd7d6b1afd8d18a331e5c07178a46567a2d6916342649bcc697888e9e8d7",
-   "via": "tree"
+   "via": "tree",
+   "blob": "dfd0b495c67a0a4da76ce2aefe5293135f242d30"
   },
   {
    "path": "SECURITY.md",
    "bytes": 1312,
    "sha256": "c3c34cacd2f1f76e9c299372d8b9cf3fbe6da13340cc1eb9721762a521c80a69",
-   "via": "tree"
+   "via": "tree",
+   "blob": "ce102abf42cdeee88a5a6c8f66955cb69674ebea"
   },
   {
    "path": "docs/images/call_apis.png",
    "bytes": 16849,
    "sha256": "fb9ffcf13d574a8ca265ae7375c3d0c5da89518df6ca9a8bbd0da225594c0c1b",
-   "via": "tree"
+   "via": "tree",
+   "blob": "1b61fec55676247b8c5f50a790d1bc059c87be19"
   },
   {
    "path": "docs/images/create_client.png",
    "bytes": 15635,
    "sha256": "a8c73a1b63b29a5163ff43dd1c4890512801c4de567ade26b3734cc2e022b609",
-   "via": "tree"
+   "via": "tree",
+   "blob": "f97a1e8ee382eb9b6212f7f9fa8eea19a52eacb3"
   },
   {
    "path": "docs/images/destroy_client.png",
    "bytes": 41331,
    "sha256": "14c15c610f7814f0619d5085d872c741f490e1e593da53da343d39fd0aa25379",
-   "via": "tree"
+   "via": "tree",
+   "blob": "72695ca09b1bcddf88ce2e97682f0f49eac42977"
   },
   {
    "path": "docs/images/establish_connection.png",
    "bytes": 27195,
    "sha256": "f48e49acd071dddb25ca711b958327f98e5f6a7e665abc599fe27171de8426f7",
-   "via": "tree"
+   "via": "tree",
+   "blob": "18294673d15a58039368aff4c0f1d495421d5f42"
   },
   {
    "path": "docs/images/gRPC_Server_Client_Generator.png",
    "bytes": 27964,
    "sha256": "e6562580941113ce8946323da29bc993b51436857d695c0a421d5fb675124196",
-   "via": "tree"
+   "via": "tree",
+   "blob": "dcffa10e94f1ec794c8d37caf1e639cfcee10e5d"
   },
   {
    "path": "docs/images/register_service_flowchart.JPG",
    "bytes": 40352,
    "sha256": "95d8b397b449a81a51d9065a399b337dac5858ee6913a062d7ecd325f7bc1da7",
-   "via": "tree"
+   "via": "tree",
+   "blob": "98bd05e5f906f37a7be3036c54e251583bc06591"
   },
   {
    "path": "docs/images/resolve_service_flowchart.JPG",
    "bytes": 87581,
    "sha256": "f3fa1adb39029e34e03420d37350965a68d8ba5acf100a45fa556fc6f98b603e",
-   "via": "tree"
+   "via": "tree",
+   "blob": "3341b69a2f24ced0a4100ea927a48f5c977e0be4"
   },
   {
    "path": "docs/images/user_workflow.png",
    "bytes": 85281,
    "sha256": "49e0e696ecddb5132c5bf8eaa70191044326e26f53b3b99296730d97dd14e5f1",
-   "via": "tree"
+   "via": "tree",
+   "blob": "6acb218a2e9221b0dc719ffab4091ac8589a4108"
   },
   {
    "path": "examples/labview_measurement/NIDCPowerSourceDCVoltage.instudioproj",
    "bytes": 2233,
    "sha256": "d39d0ec165c28a714be7391ce6e1321e5f29e43fdaf173411f87add56b56cc3e",
-   "via": "tree"
+   "via": "tree",
+   "blob": "6b4a1d70c1eaaa5a589fa7821d150ef6fa5103dd"
   },
   {
    "path": "examples/labview_measurement/NIDCPowerSourceDCVoltage.pinmap",
    "bytes": 591,
    "sha256": "9cd252f5ee64e690c53ff60093c95ad7d18b294f2955cde80ad0a1a6d69d0be3",
-   "via": "tree"
+   "via": "tree",
+   "blob": "340a120a6c6a481848b9001d77751af639d21475"
   },
   {
    "path": "examples/labview_measurement/NIDCPowerSourceDCVoltage.sfp",
    "bytes": 4730,
    "sha256": "c3cac78bb54098686e072be0a3a83c5af8865e9ea984e34f307673259335d36a",
-   "via": "tree"
+   "via": "tree",
+   "blob": "200b6ddfe5ee8b25a27800cef777142eb09b7da1"
   },
   {
    "path": "examples/labview_measurement/README.md",
    "bytes": 2317,
    "sha256": "076e66855ffcf979d823b390f5d9bd2138dd791eae0a20bb744e5360be5cd786",
-   "via": "tree"
+   "via": "tree",
+   "blob": "b6cde9cc0ebdd8379ddcfdbc7f6b68dd57fde535"
   },
   {
    "path": "examples/python_measurement/.serviceignore",
    "bytes": 143,
    "sha256": "a69b9d18c02cdeee19373f09e6d0929fb2529709e613c2ca14d8f752ead768ed",
-   "via": "tree"
+   "via": "tree",
+   "blob": "9928f9a0dd89ecbbfff72af2be4ef538bb85a98b"
   },
   {
    "path": "examples/python_measurement/NIDCPowerSourceDCVoltage.instudioproj",
    "bytes": 2232,
    "sha256": "4f41f8ef32f4a68111caee5c644cd63f61c39a3af66aea7331ce4417ca7edd22",
-   "via": "tree"
+   "via": "tree",
+   "blob": "a0d552f51ecef58da3bf50d19deb0a952a69ec95"
   },
   {
    "path": "examples/python_measurement/NIDCPowerSourceDCVoltage.measproj",
    "bytes": 3811,
    "sha256": "19cb83b7e897f2fac68718637e33a9e4707f6d0e6201a69d53827f97766dd02a",
-   "via": "tree"
+   "via": "tree",
+   "blob": "c05b3db71c6e1fff75b65f5e4d715fb2eb443fc7"
   },
   {
    "path": "examples/python_measurement/NIDCPowerSourceDCVoltage.measui",
    "bytes": 8980,
    "sha256": "e0756e3ed4abd90fe8f89d925b6fd7a08a5b98a52e458ee5c9cc5b9d5afcb81d",
-   "via": "tree"
+   "via": "tree",
+   "blob": "493e9acf8505aa3407de2cd888156cac96ed29af"
   },
   {
    "path": "examples/python_measurement/NIDCPowerSourceDCVoltage.pinmap",
    "bytes": 591,
    "sha256": "9cd252f5ee64e690c53ff60093c95ad7d18b294f2955cde80ad0a1a6d69d0be3",
-   "via": "tree"
+   "via": "tree",
+   "blob": "340a120a6c6a481848b9001d77751af639d21475"
   },
   {
    "path": "examples/python_measurement/NIDCPowerSourceDCVoltage.serviceconfig",
    "bytes": 697,
    "sha256": "aade75d2e3eaeef805a21977f4a19e5277f46ba91abe5e9b9d498cae75c50696",
-   "via": "tree"
+   "via": "tree",
+   "blob": "efa5401958cef50dbf8a6be45e27dafbc56f879f"
   },
   {
    "path": "examples/python_measurement/NIDCPowerSourceDCVoltage.sfp",
    "bytes": 12186,
    "sha256": "a6a2842b69c6d622e07db0e3bc480e1cb8a9efa4a702fabe4bfa7c4440229a50",
-   "via": "tree"
+   "via": "tree",
+   "blob": "aeb4184fae252a494f034d10ad47b8831fd1874c"
   },
   {
    "path": "examples/python_measurement/README.md",
    "bytes": 2353,
    "sha256": "804958bdda809798e632faa375c54b89717c1c6f00fb0b00733bcd2508025fa2",
-   "via": "tree"
+   "via": "tree",
+   "blob": "887a48f208fb8debcd117b7d8f22d23de818f61d"
   },
   {
    "path": "examples/python_measurement/_helpers.py",
    "bytes": 2805,
    "sha256": "f7453a9c74fd3764c7947e919c95285d1415f37cf2ac3e1d1dc0e2bbe2737b8a",
-   "via": "tree"
+   "via": "tree",
+   "blob": "11b67ca38620f22a834b97cf264ea55a355c27e6"
   },
   {
    "path": "examples/python_measurement/install.bat",
    "bytes": 199,
    "sha256": "cd0a317041e1bde443d7ff44abf5170e414893c29b91f33da85a419f45774b16",
-   "via": "tree"
+   "via": "tree",
+   "blob": "9989b5b0b2750b3500e2a46be74ab0c34402239d"
   },
   {
    "path": "examples/python_measurement/logger_service_client.py",
    "bytes": 2168,
    "sha256": "53e293e508aa0ece525f7fa96fb64ba5e7e1d3f5330ea1eb560b95c787c3ddb6",
-   "via": "tree"
+   "via": "tree",
+   "blob": "7a03057f6ebb87908d916f93fb6df5ff8378891b"
   },
   {
    "path": "examples/python_measurement/measurement.py",
    "bytes": 5905,
    "sha256": "623c1032c84922dbce6f29cc644aa6346a35cbf6b1127a07b95ea1e90da5aec1",
-   "via": "tree"
+   "via": "tree",
+   "blob": "a18a38d9fc279c4a5474a0f8d76fe5cb4bb06b88"
   },
   {
    "path": "examples/python_measurement/pyproject.toml",
    "bytes": 1190,
    "sha256": "b8a577b5cb87b1d5438ebd91be2aa8aefab667d03a8b6cca64bbe7676b7c80b8",
-   "via": "tree"
+   "via": "tree",
+   "blob": "7e9389b831ce2ad11eafdb0d078fd0e901ffeed9"
   },
   {
    "path": "examples/python_measurement/start.bat",
    "bytes": 247,
    "sha256": "a870a81c5b433893e38651d5290857af5946a33f4be7df5d8678c60c6fd5e67c",
-   "via": "tree"
+   "via": "tree",
+   "blob": "a1d37a65714d840e50722f8e98119db0362c40fe"
   },
   {
    "path": "examples/python_measurement/stubs/__init__.py",
    "bytes": 303,
    "sha256": "4b0c7ea66c0ff724ed5bfbcd70b183075c2905f2b177e3cc224a95cd77784efa",
-   "via": "tree"
+   "via": "tree",
+   "blob": "d97807fe41a1634ccfc24c4c492e52f7f8350913"
   },
   {
    "path": "examples/python_measurement/stubs/log_measurement.proto",
    "bytes": 364,
    "sha256": "f41e8a4af28652e0821234aaf9a15152ea659ba4df07a3210c7c15ff810908e5",
-   "via": "tree"
+   "via": "tree",
+   "blob": "88a5005636bb88be9483e25385c090b4f5cc0deb"
   },
   {
    "path": "examples/python_measurement/stubs/log_measurement_pb2.py",
    "bytes": 1467,
    "sha256": "615b9e7bad6ce3780a191091151d16d2b5cb74d210830cd54567e0dd7adc1e64",
-   "via": "tree"
+   "via": "tree",
+   "blob": "1e4f5af7dc7dc81ff5f256a8b27135cacd99fcd4"
   },
   {
    "path": "examples/python_measurement/stubs/log_measurement_pb2.pyi",
    "bytes": 2295,
    "sha256": "8ff1b1ee57ad1b5d947782ef75bd29d87325d38319fa3cf97e024b1c68bb411b",
-   "via": "tree"
+   "via": "tree",
+   "blob": "99f6a13b8238cb40a4c0cc1d965127425c2aa2a3"
   },
   {
    "path": "examples/python_measurement/stubs/log_measurement_pb2_grpc.py",
    "bytes": 2477,
    "sha256": "9fbb9d5bd35b09d78abd0d44b1acfae6c9dabf853026b7081e54e4cc65927720",
-   "via": "tree"
+   "via": "tree",
+   "blob": "14dddbc847a870025f0b58b2e2999646e4994ec8"
   },
   {
    "path": "examples/python_measurement/stubs/log_measurement_pb2_grpc.pyi",
    "bytes": 1325,
    "sha256": "6daac686579d224d1683cab101be06d31209452ea4a17af33403f3b818a97014",
-   "via": "tree"
+   "via": "tree",
+   "blob": "d4de52b71d3989efc6697b3aca8a5851758a79fe"
   },
   {
    "path": "src/json_logger/LogMeasurement.serviceconfig",
    "bytes": 262,
    "sha256": "1a03a517af0773e0649906cbe6c8ee9826991d2c3f9fb91ebe0b64f982e7c7e2",
-   "via": "tree"
+   "via": "tree",
+   "blob": "80f2386a12e03aead6ed7d8c074f5c274d1d2102"
   },
   {
    "path": "src/json_logger/__init__.py",
    "bytes": 34,
    "sha256": "af1ba629bd78b6b0d3b705bebbefec38ac480bee64c626f21c1ef3c98bd460fb",
-   "via": "tree"
+   "via": "tree",
+   "blob": "9497f07ddd8694a7595e77159014b15e793956c9"
   },
   {
    "path": "src/json_logger/log_measurement.proto",
    "bytes": 364,
    "sha256": "f41e8a4af28652e0821234aaf9a15152ea659ba4df07a3210c7c15ff810908e5",
-   "via": "tree"
+   "via": "tree",
+   "blob": "88a5005636bb88be9483e25385c090b4f5cc0deb"
   },
   {
    "path": "src/json_logger/logger_service.py",
    "bytes": 2846,
    "sha256": "9f563b8544a29896907722a40e90e711b54014216c53a5c74cf75a32a3a606f8",
-   "via": "tree"
+   "via": "tree",
+   "blob": "91aa2ad2f7594f8e76ef4c30c531dfea2abdd22e"
   },
   {
    "path": "src/json_logger/start.bat",
    "bytes": 238,
    "sha256": "95db9cd7c3de0c42e071dbbc3c835a12c3eb2b86fae1b8ad6613a36263f876a2",
-   "via": "tree"
+   "via": "tree",
+   "blob": "a3b9e9285f5d164fe647ddf7cc89ba581991b870"
   },
   {
    "path": "src/json_logger/stubs/__init__.py",
    "bytes": 42,
    "sha256": "346cbe904b11c4f21b82e96373d71e14d54de4a948dd5c6dd7ae3d82f97ed7ac",
-   "via": "tree"
+   "via": "tree",
+   "blob": "a932db7bdbf50774e440e2a61e3e5244a3a49e09"
   },
   {
    "path": "src/json_logger/stubs/log_measurement_pb2.py",
    "bytes": 1549,
    "sha256": "d0a566c48e509ee37b3e22ee051c85d60122cda8585e0bd3273d4dad73bba6fa",
-   "via": "tree"
+   "via": "tree",
+   "blob": "38a246a3b4ef5c51e59f7f16d50fc4d653ecb5d8"
   },
   {
    "path": "src/json_logger/stubs/log_measurement_pb2.pyi",
    "bytes": 2295,
    "sha256": "8ff1b1ee57ad1b5d947782ef75bd29d87325d38319fa3cf97e024b1c68bb411b",
-   "via": "tree"
+   "via": "tree",
+   "blob": "99f6a13b8238cb40a4c0cc1d965127425c2aa2a3"
   },
   {
    "path": "src/json_logger/stubs/log_measurement_pb2_grpc.py",
    "bytes": 2534,
    "sha256": "d662c8112f9f06d665992438c928ac6548701fb4a541ec516f7496962cfb52fd",
-   "via": "tree"
+   "via": "tree",
+   "blob": "9005cfa015c70fc729306f64264b481ba3e6e9d9"
   },
   {
    "path": "src/json_logger/stubs/log_measurement_pb2_grpc.pyi",
    "bytes": 1337,
    "sha256": "f408d3b5c9e2a79aba265d743e5ecf1c6275073289fe10bed2d6b813fa5f5d5b",
-   "via": "tree"
+   "via": "tree",
+   "blob": "959b6adfa946124f70d5652e8576aa0c276f74f4"
   },
   {
    "path": "src/poetry.lock",
    "bytes": 61061,
    "sha256": "dbcbf654d5cc4240b614928d12d3a8e8fbf309a0aa605ff9dd894fd11d5197a3",
-   "via": "tree"
+   "via": "tree",
+   "blob": "e24e4efd838493fcac17d57068f69c6935680781"
   },
   {
    "path": "src/poetry.toml",
    "bytes": 32,
    "sha256": "aa057105d3dc259387747093381a196276b77247b854681190d6746ca80deabb",
-   "via": "tree"
+   "via": "tree",
+   "blob": "ab1033bd37224ee84b5862fb25f094db73809b74"
   },
   {
    "path": "src/pyproject.toml",
    "bytes": 1064,
    "sha256": "ad7881278bcd3b1d7ef4e849603676e7e32ce3b035e9bc3a4f11e3d4d8d29f1b",
-   "via": "tree"
+   "via": "tree",
+   "blob": "b5fc243933b4de3815e7d91e7913b71acde079fe"
   }
  ],
  "skipped": [],

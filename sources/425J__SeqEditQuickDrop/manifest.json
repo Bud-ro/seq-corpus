@@ -10,379 +10,442 @@
    "path": "Installer/Install.seq",
    "bytes": 11204,
    "sha256": "a248764bf00c05eb8f57f3f65bd2942004b26799ce04fbcb86726212fc2fa021",
-   "via": "extension"
+   "via": "extension",
+   "blob": "4a561c8bd85b9964b6bea54516c5321b93cd428f"
   },
   {
    "path": "Installer/Resources/FrontEnd/FrontEndCallbacks.seq",
    "bytes": 7043,
    "sha256": "9ff89fc51a824f4e06417396127beaef3a90cd76f903703bcb471158c84e2529",
-   "via": "extension"
+   "via": "extension",
+   "blob": "62aab0370855ada9e9dd686a45f0367cc52b85ab"
   },
   {
    "path": "Installer/Resources/QuickDrop/QuickDrop.seq",
    "bytes": 5561,
    "sha256": "1b42ecc95e3edc25ad912ed2bf92c263e675af2ca12c14ba20e458007f2eb4ed",
-   "via": "extension"
+   "via": "extension",
+   "blob": "fb50771297880e1c2000da57ac67765ddf7d7f51"
   },
   {
    "path": "Seq Edit Quick Drop.lvlib",
    "bytes": 5732,
    "sha256": "4935d02621dd94245c4c355e52ed26d3625b2d7943e28533dbcf5e3e624e7288",
-   "via": "extension"
+   "via": "extension",
+   "blob": "a6432cc00e4ac04c31e2a5a1bd4f030ba1b06ebb"
   },
   {
    "path": "Seq Edit Quick Drop.lvproj",
    "bytes": 11431,
    "sha256": "7cb9ccd5c97b93e1cfd82a75f337d6655667844f2864051fddbdbe18acadf58d",
-   "via": "extension"
+   "via": "extension",
+   "blob": "d2073716c93eaa2943df984b3ebfd5f9a0ded4b9"
   },
   {
    "path": "Sources/Add Separator.vi",
    "bytes": 15105,
    "sha256": "4f2a662b5f80c4dba0d5b7aa2ee0bf16d219e31ff349a12874ae7977af6e2900",
-   "via": "extension"
+   "via": "extension",
+   "blob": "76b9e2b3d9b0fc30de8ce454319e14f550d97d61"
   },
   {
    "path": "Sources/Add Tool Menu Item.vi",
    "bytes": 16238,
    "sha256": "e4991478d4de366a2193361ed6c86f9a438fcb4d0fe81bcb15281e7d4e92bbc2",
-   "via": "extension"
+   "via": "extension",
+   "blob": "35a771a5ead874e13c9b77381c9a7a5e82afa700"
   },
   {
    "path": "Sources/Check Control Key.vi",
    "bytes": 14937,
    "sha256": "6db099b1c2c83a0e10f1e52f9f07220969bc00a3e78cb3bb4f40f98feb73bac9",
-   "via": "extension"
+   "via": "extension",
+   "blob": "914fb67e2e0eb03d090112feb03227a0200ba1da"
   },
   {
    "path": "Sources/Check Custom Shortcuts.vi",
    "bytes": 27086,
    "sha256": "88d3b39308e4aec38a7a762adb3270c3c0d7563da1cc6235cdc51362197b1737",
-   "via": "extension"
+   "via": "extension",
+   "blob": "dc8159a7f64b2b5f35ce63dcd7eb44cd6a1e014b"
   },
   {
    "path": "Sources/Combine Key with Modifiers.vi",
    "bytes": 14138,
    "sha256": "f04b204ac0645711b30f3a81937b0d26a88d44e26fb967e04e790e22fad91690",
-   "via": "extension"
+   "via": "extension",
+   "blob": "ae230dd3c1b6f7f466b96b55cff9bd1645293d43"
   },
   {
    "path": "Sources/Command to Message.vi",
    "bytes": 9582,
    "sha256": "7fcefbe9b495cb3233407e64abec0339ecc5df70d2b543450b654baa694ca2e0",
-   "via": "extension"
+   "via": "extension",
+   "blob": "0031d19c9a23a581ba43200228091a9ab98a5eb7"
   },
   {
    "path": "Sources/Command.ctl",
    "bytes": 12000,
    "sha256": "7c1a5c59d62a22b6921b95efbc6a72a0c25766b8fa3032ca735dd85c4b06f449",
-   "via": "extension"
+   "via": "extension",
+   "blob": "b69683b83fd72ffa79e56bfe0bb736578b713cc4"
   },
   {
    "path": "Sources/Compare IDs.vi",
    "bytes": 51927,
    "sha256": "1b9926a9a3c21d3511924104cf5114752ec783d162eb31fcf1e186f0c1ea1dc8",
-   "via": "extension"
+   "via": "extension",
+   "blob": "c9283f61e958861321452d3480e969644485f4e8"
   },
   {
    "path": "Sources/Connection Type.ctl",
    "bytes": 4604,
    "sha256": "f4d707ede1e71336b0f405bf2dca6ef65b2be45032f71e86771234f92825bb51",
-   "via": "extension"
+   "via": "extension",
+   "blob": "535328afde2a735c66bab894d6e78a6042520caa"
   },
   {
    "path": "Sources/Control Keys.ctl",
    "bytes": 4597,
    "sha256": "c52c8f3d73655b8355d2521924c25e526e443cb545b81c2238a6c4625c50af79",
-   "via": "extension"
+   "via": "extension",
+   "blob": "34dd3bed9f5ef4d0c30e7c2904cc446cb5c7ef56"
   },
   {
    "path": "Sources/Create Message.vi",
    "bytes": 9746,
    "sha256": "bd8cc9a471c1199f5ae6003ac92472fc480c81687dfd91a48e5990a971d7a382",
-   "via": "extension"
+   "via": "extension",
+   "blob": "c235992dc64927fa13100a14bd79f35198a086af"
   },
   {
    "path": "Sources/Data.ctl",
    "bytes": 13797,
    "sha256": "3e18374f6c468fd7c122d1c0416dfd4bc0edc68c93563db5c121ab21a59e50f8",
-   "via": "extension"
+   "via": "extension",
+   "blob": "d244896e8921f4459ae9c5570b797c878335047d"
   },
   {
    "path": "Sources/Decode Key.vi",
    "bytes": 28778,
    "sha256": "7b9e8644dc32b1f07f1d39edf06e475a176610965ab5b4ae3d6689c6c6315234",
-   "via": "extension"
+   "via": "extension",
+   "blob": "a3648ac8fe9072340da1f53d556981552aa34387"
   },
   {
    "path": "Sources/Defer Panel Updates.vi",
    "bytes": 14159,
    "sha256": "c28ec9c327a53faac39f0f162a9767a6a4738317754a3c906653fa65546044c4",
-   "via": "extension"
+   "via": "extension",
+   "blob": "c90d9354ffd4afa3a5cc10872ba4b21ae35d4cad"
   },
   {
    "path": "Sources/Display Tools.vi",
    "bytes": 29025,
    "sha256": "1cabce5a5a4ebced79803bb20dda9f2d3d32d724aa6a4632ba94fba93c74d033",
-   "via": "extension"
+   "via": "extension",
+   "blob": "2cea6504660a3ab065c4c42fa013f2b90b5a4ac0"
   },
   {
    "path": "Sources/Event Data.ctl",
    "bytes": 12703,
    "sha256": "0f25a27221146bb9e3355c32b8cd5d1a5b497d61f386d3c81490cd3fb80e2fd2",
-   "via": "extension"
+   "via": "extension",
+   "blob": "ae7af2f3c9a4b52d5f44524c45949ee05848f99c"
   },
   {
    "path": "Sources/Event Handler - Sequence List - Key Up.vi",
    "bytes": 21246,
    "sha256": "b36d91d98ba99c487890f851467aa826af783b46c4e41464a1fc242590f6903b",
-   "via": "extension"
+   "via": "extension",
+   "blob": "805e3b716d916077b871dcf3ac6210aaf091f4f5"
   },
   {
    "path": "Sources/Event Handler - Sequence View - Key Down.vi",
    "bytes": 21672,
    "sha256": "ed1b627ec8bee34a201c7a3fae6ac3aef4822dfcd24d4a5546e5966b90bd8585",
-   "via": "extension"
+   "via": "extension",
+   "blob": "a2f3f0307551e3365e9007d5c4563dac597147a3"
   },
   {
    "path": "Sources/Event Handler - Variables View - Key Down.vi",
    "bytes": 21617,
    "sha256": "56de4fde6b07b1ec38fa614300011fc925e2afd2b3d9be14f919d6087457cade",
-   "via": "extension"
+   "via": "extension",
+   "blob": "c0bd0b32a6cf39801484f01870cad4489bf142c9"
   },
   {
    "path": "Sources/Event Response.ctl",
    "bytes": 12671,
    "sha256": "60da1983eb1be3d4b341e875e85cf7c4421f96563da90a4b5ee1d56a645fcc95",
-   "via": "extension"
+   "via": "extension",
+   "blob": "d22bf28286bfc010c219bfd3e85da3d3ea07d320"
   },
   {
    "path": "Sources/Get All Default Shortcuts.vi",
    "bytes": 13981,
    "sha256": "6c0a9390f53ec9bbed7326d134897cb05ae8cc7d96c86e9abe276f4b20905535",
-   "via": "extension"
+   "via": "extension",
+   "blob": "0264ede791155077cb0c2bb55c4eac6a9f943a1b"
   },
   {
    "path": "Sources/Get All Possible Shortcuts.vi",
    "bytes": 13834,
    "sha256": "61a2d77cbaa1222695b6a41b53fec1b3ee9c5568a490e89886f94eab958a850e",
-   "via": "extension"
+   "via": "extension",
+   "blob": "0a215db6cef4737f8a3119f201dcd07cb75cec3f"
   },
   {
    "path": "Sources/Get Application Manager.vi",
    "bytes": 15099,
    "sha256": "f64bd1cf42b01694bcbae82a3a410b9175b8bb9fe6ba3e514b25cfc0a0fc7fbc",
-   "via": "extension"
+   "via": "extension",
+   "blob": "229febc6af0607085f8e8fbfe0697ffb09946537"
   },
   {
    "path": "Sources/Get Context by ID.vi",
    "bytes": 17249,
    "sha256": "cfcbdb56032ac96ac981c19464b2c3b9e9f756d997279d0c3bb303db36d5ae88",
-   "via": "extension"
+   "via": "extension",
+   "blob": "33e9ddd8cbc2e5a57c2107be3ce260b781e7e2ee"
   },
   {
    "path": "Sources/Get Icon Path.vi",
    "bytes": 15977,
    "sha256": "9557bc61f387a45567e4ce4b3bd1ac9ec5ec68331ee531da6b16b5c89369489d",
-   "via": "extension"
+   "via": "extension",
+   "blob": "de78e727122ef7031be8b7b81ab9f2a6e6b1f80b"
   },
   {
    "path": "Sources/Get Key.vi",
    "bytes": 12479,
    "sha256": "097d92fe03c452e379702ce38bc904c4f56f0dd33ab9b05e6b9c70cdf826cec5",
-   "via": "extension"
+   "via": "extension",
+   "blob": "872080e8951320367bf15b769b4bb35dd11163ec"
   },
   {
    "path": "Sources/Get Keys Mapping.vi",
    "bytes": 14092,
    "sha256": "27cb9dc3be1a7d4c95862070d035fba1d8209b6d128276605661e400e48acc3c",
-   "via": "extension"
+   "via": "extension",
+   "blob": "ced581ef72a60dab76a9d57ddc0be40559d07bca"
   },
   {
    "path": "Sources/Get Modifier from Key Event.vi",
    "bytes": 10459,
    "sha256": "bc723ff96aff1989b20ccbdc6a083decbe8f8f35d2456b30be9c16cdf6e740e0",
-   "via": "extension"
+   "via": "extension",
+   "blob": "d1671bbe96049629cc0c816416e879a271e1f972"
   },
   {
    "path": "Sources/Get Modifier.vi",
    "bytes": 14264,
    "sha256": "9a80a8bfc8a0d7ea89a52c5fa679569f841bba70d550e0cab45c2e618cfa03b2",
-   "via": "extension"
+   "via": "extension",
+   "blob": "83d20105f4699624fe9d2139b1ca511693015fcf"
   },
   {
    "path": "Sources/Is Running.vi",
    "bytes": 15958,
    "sha256": "a29f7a6f522a5ce1d2ae543688771fec488f77d18fc0a9768f48026f34e5b12f",
-   "via": "extension"
+   "via": "extension",
+   "blob": "cac4d146180fd8718e173fd247e12f3aaad634a0"
   },
   {
    "path": "Sources/Key Code.ctl",
    "bytes": 5369,
    "sha256": "f70a8ccf02f0a50e519009e355b9523e8b5b421e9508e34c803596e94013fd23",
-   "via": "extension"
+   "via": "extension",
+   "blob": "9fc289831589473f21703f2e0926fcbfb53d33a7"
   },
   {
    "path": "Sources/Key Codes Constants.ctl",
    "bytes": 11612,
    "sha256": "e5af81e912817cfd6327a1c8be2cf7a682f4308ce633d729baee8d5962de301a",
-   "via": "extension"
+   "via": "extension",
+   "blob": "e35b0fa924b67a924e8b6a44b9b2629e169530b6"
   },
   {
    "path": "Sources/Key Codes Constants.vi",
    "bytes": 7559,
    "sha256": "2c5e8536cbf320b0aa71c05640e50cb36aefeb87f06f43a2073bed4eaaf49b7d",
-   "via": "extension"
+   "via": "extension",
+   "blob": "0dd02d44a57d22a1501ccbfe14cdfba248bcb72f"
   },
   {
    "path": "Sources/Message.ctl",
    "bytes": 13056,
    "sha256": "3afbfd31967dbd949a8298d0318566f37fcea76be7fd7e5b4a0978aa78eb2dcf",
-   "via": "extension"
+   "via": "extension",
+   "blob": "8e735e0dde24ae0b3b8fe327dc83224dc8757317"
   },
   {
    "path": "Sources/Modifiers.ctl",
    "bytes": 4566,
    "sha256": "0106bb3bb941b9732eb10c09c9cc8938253fcf5d1a701b34aaf88c0f63179212",
-   "via": "extension"
+   "via": "extension",
+   "blob": "ce0b0e06ed94473cd46f38859d1ad66c6f34d209"
   },
   {
    "path": "Sources/Register File.vi",
    "bytes": 28733,
    "sha256": "21ef6aeaa8daf28c398bce96922d007229dc852dd3816cc5c5c1e04dea593a1a",
-   "via": "extension"
+   "via": "extension",
+   "blob": "141113b4aefda10cf5d8d2197aea7b814bd0d760"
   },
   {
    "path": "Sources/Register Item.ctl",
    "bytes": 13306,
    "sha256": "e8ba21de50a3b26ffb43936c9f641aa789cfdd40952234ab5ee8f5b24aff51b5",
-   "via": "extension"
+   "via": "extension",
+   "blob": "921a29b760d3ac029ec53ddc08d080ad7dea6691"
   },
   {
    "path": "Sources/Register Open Sequences.vi",
    "bytes": 58151,
    "sha256": "99c5c95a4659d184a682f021b65243b483dd5903c597ac73f18b2fbc15bced30",
-   "via": "extension"
+   "via": "extension",
+   "blob": "1590d09ff962153e6c1b14d77113d0c630a33af2"
   },
   {
    "path": "Sources/Reset Tree.vi",
    "bytes": 13738,
    "sha256": "6b64655ca99c089df583f4567b3afc3883fddf51bcec5f11f859e33839ceb721",
-   "via": "extension"
+   "via": "extension",
+   "blob": "f7558fa8feaf60d0c2bcddea5715c5d2866f631d"
   },
   {
    "path": "Sources/Scan Codes Mapping.vi",
    "bytes": 6246,
    "sha256": "170b100af89540e62ac2a3468eac781ff695747093c68fb6b6e3380a98c6aea3",
-   "via": "extension"
+   "via": "extension",
+   "blob": "b101e9857e8be15d5a4e8d4dc09dc1e5816ad06b"
   },
   {
    "path": "Sources/Select First Tree Item.vi",
    "bytes": 14086,
    "sha256": "43a6eaddf6ef9e0087343bf2d71d038b15aaca957862d57edd94c04152ccd137",
-   "via": "extension"
+   "via": "extension",
+   "blob": "387408461553afef322f19c9099cb338fe8091d5"
   },
   {
    "path": "Sources/Set TestStand Icon.vi",
    "bytes": 14450,
    "sha256": "ad2030b5172565e5f92df4413add4a6cd54a11453386fed90b79460e7bb47623",
-   "via": "extension"
+   "via": "extension",
+   "blob": "b81b5b926e975c1cf864896d9d1bdebc95db791d"
   },
   {
    "path": "Sources/Set Title Icon.vi",
    "bytes": 17282,
    "sha256": "095d4f7644c9f54ae1b10159b24d71504dc87e9f0c9eb4601646dc8233d2750b",
-   "via": "extension"
+   "via": "extension",
+   "blob": "5ca543632bfb6245f93198d5f549feec189bd064"
   },
   {
    "path": "Sources/Settings.vi",
    "bytes": 13052,
    "sha256": "bc03989488ab74d7429bda71b9639a36b6b3c8beda1bc13eb5c1d7860ece08dd",
-   "via": "extension"
+   "via": "extension",
+   "blob": "a21920beca2922813a82c5162e55b94fa174f424"
   },
   {
    "path": "Sources/Start.vi",
    "bytes": 40745,
    "sha256": "5f56a2c08dfe63d971b7ff62ca7134c0b02b6689b24a6e2e17549ce25ee608f8",
-   "via": "extension"
+   "via": "extension",
+   "blob": "4b84ed0e5f4cbfb0f03525b519fce76a4e9bf7c6"
   },
   {
    "path": "Sources/Stop.vi",
    "bytes": 16372,
    "sha256": "55621934cc7a3554646f4caabf43c0c8af90dc464ca411dd03524d9a18e78e3b",
-   "via": "extension"
+   "via": "extension",
+   "blob": "7df1d0485807ed4115d337d0987c993625b32f6b"
   },
   {
    "path": "Sources/Tools Dialog.vi",
    "bytes": 39152,
    "sha256": "e9d94219d9aea3bdb988bf584f910a9fc11bd2445a14ad8f3a36935d9da6d403",
-   "via": "extension"
+   "via": "extension",
+   "blob": "9a96b0dafaf7d4323645ea49a645a10100f0f527"
   },
   {
    "path": "Sources/Tree Up or Down Event.vi",
    "bytes": 14401,
    "sha256": "a40e4cba12f6cbb45a082480b34826a788d76a4ecfde51f96714ca832a0c357b",
-   "via": "extension"
+   "via": "extension",
+   "blob": "23e65307f58da15207549faad4d4a1593e307d2a"
   },
   {
    "path": "Sources/Trim String.vi",
    "bytes": 8855,
    "sha256": "12fd5b6763cda48977a3a1eac0134b2be5a956e5efdbfabd39bd9a8ff90868e6",
-   "via": "extension"
+   "via": "extension",
+   "blob": "743a95444ea7533e0ee563b37c2eb01d8418f7d0"
   },
   {
    "path": "Installer/Resources/seqedit.ico",
    "bytes": 1406,
    "sha256": "4faf830d2b0b8c1a3b2657f49d7a47a72e1f59667c59465094c42c3f9e4981fd",
-   "via": "ref:Sources/Get Icon Path.vi"
+   "via": "ref:Sources/Get Icon Path.vi",
+   "blob": "86563e181210309833bab2773db03c6b9178a11a"
   },
   {
    "path": "Documentation/CustomQuickDrop.png",
    "bytes": 87666,
    "sha256": "bdbbae98b614a974d5eb55dda769f412689d70ea271dd9689f0c352847402171",
-   "via": "tree"
+   "via": "tree",
+   "blob": "0e224f27044068c0c032a9eeead55863d0b9402e"
   },
   {
    "path": "Documentation/TSQuickDrop.png",
    "bytes": 74118,
    "sha256": "4ca5daa6e2579793841b915451a21f78bbe592adea9f88ea56035c445749e2d7",
-   "via": "tree"
+   "via": "tree",
+   "blob": "08f45ce4bd38a17851d193fe985390d6d0c6854d"
   },
   {
    "path": "Documentation/w0.svg",
    "bytes": 2109,
    "sha256": "c232c5fae2307fc1b83e0ec2d734f99f6dd6c1732b2ca6a84d5e5baeefd19b1e",
-   "via": "tree"
+   "via": "tree",
+   "blob": "9a3dde9b88368cb1b3f0d9eb96512f942de22ccc"
   },
   {
    "path": "Installer/Resources/QuickDrop/Resources/Resources/Tool Menu Utility.lvlibp",
    "bytes": 225280,
    "sha256": "223e39fa9ea2203521c348f91eaa1dbab893d45b275b526f1d52968be1102190",
-   "via": "tree"
+   "via": "tree",
+   "blob": "c07137a2434512626d6b319fdd008794bb401f5e"
   },
   {
    "path": "Installer/Resources/QuickDrop/Resources/Seq Edit Quick Drop.lvlibp",
    "bytes": 284160,
    "sha256": "6e298e0f1595c75941ce699c008980dccd3504634f157ef89f5574843e5a8656",
-   "via": "tree"
+   "via": "tree",
+   "blob": "5a04eae91b2f91e925d26edd355414aff8806693"
   },
   {
    "path": "LICENSE",
    "bytes": 1063,
    "sha256": "f3720c661e0f40c8bac934f68eed91314dd238be29d076b265ed3a547630ff4e",
-   "via": "tree"
+   "via": "tree",
+   "blob": "1be190406a621fb3ee30bb54f9aab6004ec116cf"
   },
   {
    "path": "README.md",
    "bytes": 1917,
    "sha256": "99217905e5acc13eeec0570e72f23f80a5b616e19e46ad733e73ea0d3b871618",
-   "via": "tree"
+   "via": "tree",
+   "blob": "4254ed48f07270365bf58120b509b171d8321a24"
   },
   {
    "path": "Resources/Tool Menu Utility.lvlibp",
    "bytes": 225280,
    "sha256": "223e39fa9ea2203521c348f91eaa1dbab893d45b275b526f1d52968be1102190",
-   "via": "tree"
+   "via": "tree",
+   "blob": "c07137a2434512626d6b319fdd008794bb401f5e"
   }
  ],
  "skipped": [],
