@@ -1,0 +1,240 @@
+[Workspace Header]
+Version = 2000
+Pathname Line0001 = "/c/Users/Public/Documents/National Instruments/TestStand 2023 (64-bit)/Component"
+Pathname Line0002 = "s/Tools/DocGen/DocSupport.cws"
+CVI Dir = "/c/program files (x86)/national instruments/cvi2020"
+CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2020"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files (x86)/IVI Foundation/IVI"
+IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "DocSupport.prj"
+Drag Bar Left = 317
+Window Top = 23
+Window Left = 2189
+Window Bottom = 450
+Window Right = 2947
+Maximized = True
+Maximized Children = True
+Max32 Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win At Start = True
+Bring Up Err Win For Errors = False
+Save Changes Before Running = "Always"
+Save Changes Before Compiling = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 6
+Window Confinement Region Enabled = True
+MainColumnWidth = 300
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+
+[Project Header 0001]
+Version = 2000
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Release64"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[File 0001]
+Path = "/c/Program Files (x86)/National Instruments/CVI2020/toolslib/toolbox/toolbox.fp"
+File Type = "Function Panel"
+Disk Date = 3763342916
+In Projects = "1,"
+
+[File 0002]
+Path Line0001 = "/c/Users/Public/Documents/National Instruments/TestStand 2023 (64-bit)/Component"
+Path Line0002 = "s/Tools/DocGen/doc.fp"
+File Type = "Function Panel"
+Disk Date = 3778024290
+In Projects = "1,"
+
+[File 0003]
+Path Line0001 = "/C/Program Files (x86)/National Instruments/Shared/CVI/instr/TestStand/API/tsapi"
+Path Line0002 = "cvi.fp"
+File Type = "Function Panel"
+Disk Date = 3778024280
+In Projects = "1,"
+
+[File 0004]
+Path Line0001 = "/C/Program Files (x86)/National Instruments/Shared/CVI/instr/TestStand/API/tsuti"
+Path Line0002 = "l.fp"
+File Type = "Function Panel"
+Disk Date = 3778024280
+In Projects = "1,"
+
+[File 0005]
+Path Line0001 = "/c/Users/Public/Documents/National Instruments/TestStand 2023 (64-bit)/Component"
+Path Line0002 = "s/Tools/DocGen/doc.c"
+File Type = "CSource"
+Disk Date = 3846403372
+In Projects = "1,"
+Source Window State = "1,1335,1335,1335,1,1,1,0,0,0,0,0,0,0,0,0,1318,0,1335,1,386,700,1,0,"
+Window Top = 33
+Window Left = 10
+Window Z-Order = 1
+
+[File 0006]
+Path Line0001 = "/c/Users/Public/Documents/National Instruments/TestStand 2023 (64-bit)/Component"
+Path Line0002 = "s/Tools/DocGen/docdlgs.uir"
+File Type = "User Interface Resource"
+Disk Date = 3778024290
+In Projects = "1,"
+Window Top = 64
+Window Left = 26
+Window Height = 371
+Window Width = 700
+Window Z-Order = 3
+
+[File 0007]
+Path = "/c/Program Files (x86)/National Instruments/CVI2020/include/userint.h"
+File Type = "Include"
+Disk Date = 3679674590
+In Projects = ""
+Source Window State = "1,2299,2299,2299,8,22,8,0,3,0,0,0,0,0,0,0,2299,0,2299,22,371,700,1,0,"
+Window Top = 126
+Window Left = 58
+Window Z-Order = 6
+
+[File 0008]
+Path Line0001 = "/c/Users/Public/Documents/National Instruments/TestStand 2023 (64-bit)/Component"
+Path Line0002 = "s/Tools/DocGen/docdlgs.h"
+File Type = "Include"
+Disk Date = 3778872132
+In Projects = ""
+Source Window State = "1,17,17,17,9,28,9,0,3,0,0,0,0,0,0,0,0,0,17,28,371,700,1,0,"
+Window Top = 157
+Window Left = 74
+Window Z-Order = 5
+
+[File 0009]
+Path Line0001 = "/c/Program Files (x86)/National Instruments/Shared/CVI/instr/TestStand/API/tsuti"
+Path Line0002 = "l.h"
+File Type = "Include"
+Disk Date = 3778872120
+In Projects = ""
+Source Window State = "1,552,552,552,42,51,42,0,3,0,0,0,0,0,0,0,536,0,552,51,371,700,1,0,"
+Window Top = 188
+Window Left = 90
+Window Z-Order = 4
+
+[File 0010]
+Path = "/c/Program Files (x86)/National Instruments/CVI2020/toolslib/toolbox/toolbox.h"
+File Type = "Include"
+Disk Date = 3763349274
+In Projects = ""
+Source Window State = "1,611,611,611,8,14,8,0,3,0,0,0,0,0,0,0,595,0,611,14,371,700,1,0,"
+Window Top = 33
+Window Left = 10
+Window Z-Order = 2
+
+[Tab Order]
+Tab 0001 Line0001 = "/c/Users/Public/Documents/National Instruments/TestStand 2023 (64-bit)/Component"
+Tab 0001 Line0002 = "s/Tools/DocGen/doc.c"
+Tab 0002 Line0001 = "/c/Users/Public/Documents/National Instruments/TestStand 2023 (64-bit)/Component"
+Tab 0002 Line0002 = "s/Tools/DocGen/docdlgs.uir"
+Tab 0003 = "/c/Program Files (x86)/National Instruments/CVI2020/include/userint.h"
+Tab 0004 Line0001 = "/c/Users/Public/Documents/National Instruments/TestStand 2023 (64-bit)/Component"
+Tab 0004 Line0002 = "s/Tools/DocGen/docdlgs.h"
+Tab 0005 Line0001 = "/c/Program Files (x86)/National Instruments/Shared/CVI/instr/TestStand/API/tsuti"
+Tab 0005 Line0002 = "l.h"
+Tab 0006 = "/c/Program Files (x86)/National Instruments/CVI2020/toolslib/toolbox/toolbox.h"
+
+[Default Build Config 0001 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0001]
+Number of Dependencies = 0
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0001]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+
