@@ -10,97 +10,113 @@
    "path": "machine-monitoring/RT Loop - Publish IO.vi",
    "bytes": 34904,
    "sha256": "bc13a99b09667f3e6b772c2ed60a0cda87d174eec61190a9f9f8a1d370d24d9e",
-   "via": "extension"
+   "via": "extension",
+   "blob": "2e08eb56855a19efee748f4a341d8fb5ffa0a2f0"
   },
   {
    "path": "machine-monitoring/machine-monitoring.lvproj",
    "bytes": 86914,
    "sha256": "24ffc3ada4906b70f77c88b519e65794ee95bf709ec2267e26eac192e840ae30",
-   "via": "extension"
+   "via": "extension",
+   "blob": "90f9698912168557f7556469ec4fc2ae1184117f"
   },
   {
    "path": "test-monitoring/Attach Test Files.seq",
    "bytes": 6079,
    "sha256": "30480136fa17687a34b626cfbd28af74af25414dd0e434c634019b22df54d6dd",
-   "via": "extension"
+   "via": "extension",
+   "blob": "6136b27786620ffe3ac2fbab1ece62aab8b9f1f2"
   },
   {
    "path": "test-monitoring/LabVIEW/Attach Test Files.lvlib",
    "bytes": 1194,
    "sha256": "91302a9a151c1b9f351b9ee0c83977920e863116604c282bd1c799cb1e43ef28",
-   "via": "extension"
+   "via": "extension",
+   "blob": "9f5c144a7fd4fc76ba7bd024a2f2289fa3fb6a1c"
   },
   {
    "path": "test-monitoring/LabVIEW/Attach Test Files.lvproj",
    "bytes": 43812,
    "sha256": "0c8c47fa36e56ff512f3a8cc35dee7fe0c408e65283098229fb0586009504212",
-   "via": "extension"
+   "via": "extension",
+   "blob": "4dfbd8eb7dd94e0f0ebcf792a2c25815c8d17642"
   },
   {
    "path": "test-monitoring/LabVIEW/Waveform Test.vi",
    "bytes": 109109,
    "sha256": "6031ed525d4abda7e420629bd451070419455e9c57bf7d850033c39df9598ce6",
-   "via": "extension"
+   "via": "extension",
+   "blob": "75a40ad9f35502c2dbc4633bd504da67b32054a8"
   },
   {
    "path": ".gitignore",
    "bytes": 11,
    "sha256": "ac244209df6370a954b10db85f1630454dd22ca7e616f351cad19d49e8aa6ce1",
-   "via": "tree"
+   "via": "tree",
+   "blob": "9bea4330f055c418ce73df7a354fd5c29ead0631"
   },
   {
    "path": "LICENSE",
    "bytes": 1067,
    "sha256": "4d20decd12e281f607f0bf5fd2fe7486d5940425c7a9bd96a8f38791bef92b38",
-   "via": "tree"
+   "via": "tree",
+   "blob": "781150155d44bb74e0d37fe0f3f53811fdcdba21"
   },
   {
    "path": "README.md",
    "bytes": 61,
    "sha256": "d8289434f2fe44fdd359ea0f106b5b9eae603f7af06ef030833c35b385962ea6",
-   "via": "tree"
+   "via": "tree",
+   "blob": "913cc67e2d1aec30cacfb6bc1828158f96df7f7b"
   },
   {
    "path": "machine-monitoring/README.md",
    "bytes": 0,
    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "via": "tree"
+   "via": "tree",
+   "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
   },
   {
    "path": "machine-monitoring/embedded-monitoring.lvlps",
    "bytes": 82,
    "sha256": "4603d086435f69c80a6b9f27d42d5a8e20d5dbc1f9ad1d40f70ca848447e58b8",
-   "via": "tree"
+   "via": "tree",
+   "blob": "d8d22d26a65600932ac2321ab2d893508c30ca8f"
   },
   {
    "path": "machine-monitoring/machine-monitoring.aliases",
    "bytes": 99,
    "sha256": "29b2f6eddfab048cedebc64af51f70704780768f4fb30a4e58139ae99633493e",
-   "via": "tree"
+   "via": "tree",
+   "blob": "715a0d4d934d0bbbaf58309e5d27136e5b9b5501"
   },
   {
    "path": "machine-monitoring/machine-monitoring.lvlps",
    "bytes": 82,
    "sha256": "cd673994738ffc39fe2626451bff0e95ae28689fa77c6628f4e2afe98af2b455",
-   "via": "tree"
+   "via": "tree",
+   "blob": "077725e9c15a8555050f64701bbb495308b66d6a"
   },
   {
    "path": "test-monitoring/README.md",
    "bytes": 0,
    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "via": "tree"
+   "via": "tree",
+   "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
   },
   {
    "path": "test-monitoring/Test Station Manager.fp",
    "bytes": 2874,
    "sha256": "2224a3a266fb6a8832380488b5aaf2c73b5fb264ec315fc3aca28b90da2f7814",
-   "via": "tree"
+   "via": "tree",
+   "blob": "b7e4b2d0af2ccf3a138377859b9ca8a33982a1bf"
   },
   {
    "path": "test-monitoring/Test Station.fpt",
    "bytes": 7847,
    "sha256": "9fc0585f3e67e045fb1620205665396fa65a2e1b4934e4f13bf0ec98e793ec14",
-   "via": "tree"
+   "via": "tree",
+   "blob": "0e89e13ed1c3445ad0a596bc22fb46e38a9b294f"
   }
  ],
  "skipped": [],

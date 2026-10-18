@@ -62,28 +62,27 @@ cd seq-corpus
 git sparse-checkout set sources/425J__LayoutLoader
 ```
 
+## Checks
+
+Every file a `manifest.json` lists carries the id of the git blob that holds it, so the
+repository checks itself against its own tree: `dart tool/check.dart` reads `git ls-tree`
+and the manifests, and reports a listed file the tree lacks or holds as another blob, a
+tracked file no manifest lists, and any field, count or ordering that is off in
+`sources.json`, `corpus.json`, `candidates.json`, `rosetta/manifest.json` or a source's
+`manifest.json`. It needs git and a Dart SDK, reads no file contents, and fetches nothing;
+the `check` workflow runs it on every push from a blobless clone.
+
 ## Index
 
-Every source carries an `index.json` beside its `manifest.json`: one record per VI,
-control, snippet, library, class and project file under it, with the file's name and
-saving version, the ids its heaps hold (`primResID`s, block-diagram and front-panel
-class codes, each with how many objects carry it), its sub-VI and owning-library
-names, or a library file's members. The records store the raw ids, so the index does
-not change when a parser learns a name; labwright resolves them through its
-catalogues when it searches the corpus.
+The `index` workflow builds a SQLite index of the whole repository on every push to
+`master` and publishes it as the release `index-<commit>` (`index.sqlite.xz`): one row
+per VI, control, snippet, library, class and project file, with the file's name and
+saving version, the `primResID`s and block-diagram and front-panel class codes its heaps
+hold (each with how many objects carry it and the name labwright's catalogues give it),
+its sub-VI and owning-library names, or a library file's members. `tool/index`, a small Dart tool that depends on labwright's parser at the commit its
+`pubspec.yaml` pins, builds it; nothing derived from the files is committed here.
 
-The indexes and the rest of the metadata are checked on every push by the `check`
-workflow, which runs labwright's `tool/check_corpus.dart` over the sources the push
-changed (or, run by hand with `all`, over every source):
-
-```
-tool/labwright.sh check_corpus          # check every metadata file against the tree
-tool/labwright.sh index_corpus          # rebuild the index.json files of the sources checked out
-tool/labwright.sh index_corpus --check  # report missing or stale index files
-```
-
-`tool/labwright.sh` clones labwright into `.labwright` (ignored) at the `develop`
-branch, or uses the checkout `LABWRIGHT_DIR` names. `dart run tool/vendor_corpus.dart`
-in labwright writes the index when it vendors a source, and its `--repair` mode
-restores files that an upstream `.gitignore` or `.gitattributes` kept out of a commit
-or changed on the way in.
+`dart run tool/vendor_corpus.dart` in labwright adds a source, writes its manifest with
+the blob ids, and commits it with upstream `.gitattributes` rules switched off; its
+`--repair` mode restores files an upstream `.gitignore` or `.gitattributes` kept out of a
+commit or changed on the way in.

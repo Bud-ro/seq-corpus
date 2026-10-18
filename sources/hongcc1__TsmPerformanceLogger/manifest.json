@@ -10,55 +10,64 @@
    "path": "Code/ModelPlugins/PerformanceMeasurementLogger.seq",
    "bytes": 18450,
    "sha256": "f27b6cd2290d10158b2d2badf8c4d79e1ef6d42bde9b3c2213b67ce7d7ed28e5",
-   "via": "extension"
+   "via": "extension",
+   "blob": "2326f107d9bd47fdfc93c9f52cc17d936f312c08"
   },
   {
    "path": "Images/Batch Sample Rate.png",
    "bytes": 7860,
    "sha256": "ffe86ebeb3eb1da02db80dc6e3ecdbe012d18ea4451280b1a81bea58c81eb0b0",
-   "via": "tree"
+   "via": "tree",
+   "blob": "ee4c4612469c0b530fb9da040286abefa41688a4"
   },
   {
    "path": "Images/EnablePlugin.png",
    "bytes": 41200,
    "sha256": "adc9f797642f7e1b550c620c95893dbb26334ef3969af90532ea64fe881dd941",
-   "via": "tree"
+   "via": "tree",
+   "blob": "984d5acf06b17844f54bbedb07ba95596e31216b"
   },
   {
    "path": "Images/Launch Performance Analyzer.png",
    "bytes": 28942,
    "sha256": "180dd78dc987df78d2157461b844f8051cfafb902fec46eb363b233b2465535b",
-   "via": "tree"
+   "via": "tree",
+   "blob": "b9fa04805b84d243cfbf007f540e34a69a716697"
   },
   {
    "path": "Images/PluginEnabled.png",
    "bytes": 15824,
    "sha256": "a189999818c3b844cfc799beb7fdc9d8e5ecb3a4797fffee851d2cdcc4f878ad",
-   "via": "tree"
+   "via": "tree",
+   "blob": "e2417e2de71d5d56f620d71937b65050eebf439c"
   },
   {
    "path": "Images/SaveLocation.png",
    "bytes": 6287,
    "sha256": "d17cd1d8b1469ef00adaf807aeab09a287deb59ba337c2b47778f0075f393ae0",
-   "via": "tree"
+   "via": "tree",
+   "blob": "bd76f3a4c3e602b41e34e35793b0bd32d247d3a9"
   },
   {
    "path": "Images/Wrench.png",
    "bytes": 277,
    "sha256": "5b4e26c0b84fd5fdbd19ba0af4a1672b99852c43331300195d6b77847c049279",
-   "via": "tree"
+   "via": "tree",
+   "blob": "f0c0e71cfd5290ca42ac404255cab5c8005bdc49"
   },
   {
    "path": "LICENSE",
    "bytes": 1064,
    "sha256": "a5900c71a86a24aeaee44ab55b4eb2fa330ee01348bff7ea9a04bcfa53b54e6d",
-   "via": "tree"
+   "via": "tree",
+   "blob": "ef65e62ee316cabaa8695e843c001e3bb8776729"
   },
   {
    "path": "README.md",
    "bytes": 1733,
    "sha256": "730f80b0fc0f659d257805e6f9823c158bd331342aec1d8c557fdecc25dd4761",
-   "via": "tree"
+   "via": "tree",
+   "blob": "16de71c20df614f2fdb3f07062fa1fe9a6ca3279"
   }
  ],
  "skipped": [],
