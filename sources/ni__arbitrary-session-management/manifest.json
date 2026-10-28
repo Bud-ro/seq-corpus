@@ -1,0 +1,866 @@
+{
+ "repo": "ni/arbitrary-session-management",
+ "url": "https://github.com/ni/arbitrary-session-management",
+ "commit": "eb8697fc69072197d99b49f334548847290cc2bb",
+ "license": "MIT",
+ "licenseFile": "LICENSE",
+ "fetched": "2026-10-28",
+ "files": [
+  {
+   "path": "src/custom_instr_session_sharing/examples/teststand_sequence/DeviceCommExample.seq",
+   "bytes": 6830,
+   "sha256": "9f7ef6d16a7c518415fb66747701f64fb40835fb0de64cf8dbd04f6714a8e00d",
+   "blob": "d7d430b5e583624d84d215b844f93d74b8fae440",
+   "via": "extension"
+  },
+  {
+   "path": "src/file_session_sharing/examples/teststand_sequence/FileSessionSharing.seq",
+   "bytes": 7636,
+   "sha256": "5c1e733fc0e4eefbe13dc55179c6f9b7b7436af574a161f9c6a8907b7f702d8b",
+   "blob": "87760cb4335144e7dbc14dd1a2dcd8e28c171e88",
+   "via": "extension"
+  },
+  {
+   "path": ".github/CODEOWNERS",
+   "bytes": 115,
+   "sha256": "742ba834b249de601c57a9440028a119627d470b4303006814a2fe892a78f027",
+   "blob": "65bdfb66ce59bdc1e2f8ad6c9fc0a21a32909a0e",
+   "via": "tree"
+  },
+  {
+   "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+   "bytes": 1524,
+   "sha256": "06b3ca327ee090cded42327d92f87c5a01325fa6123573c8f9d17a69bcd90c4a",
+   "blob": "0cb3169a7e10992ba47fd4d33922763989e5135e",
+   "via": "tree"
+  },
+  {
+   "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+   "bytes": 705,
+   "sha256": "e5f13fffaf8fc09c59c0e9ab71ac997bf48e6f0db1bb8ecff9554684978d8818",
+   "blob": "b750fae06b4256e69e6e3530f59b523fab76bd46",
+   "via": "tree"
+  },
+  {
+   "path": ".github/ISSUE_TEMPLATE/tech_debt.md",
+   "bytes": 156,
+   "sha256": "1ed210ea12d872f3148cac8835603110b0a1be9a06d76abdffed675337084586",
+   "blob": "c23849410666629e56b2afc4d0fac2b3831a736b",
+   "via": "tree"
+  },
+  {
+   "path": ".github/ISSUE_TEMPLATE/user_story.md",
+   "bytes": 310,
+   "sha256": "d555077d24869921b9c14dc5e1acf3b3627d0128e684ae8c3386d7f892816bba",
+   "blob": "1af432d692a4d5228e624a0b2cb76c112475f796",
+   "via": "tree"
+  },
+  {
+   "path": ".github/PULL_REQUEST_TEMPLATE.md",
+   "bytes": 875,
+   "sha256": "c2e5bc1479c53223da027ec546ab4efbc0571c9142772411e993d3089e031e83",
+   "blob": "e3a288e9c1c703475c01a15672a335a4a60a22e8",
+   "via": "tree"
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 2807,
+   "sha256": "c68a9d68239fb3feb042a0487938a96fb6aef6d0ce07f491a854b51289fdd046",
+   "blob": "e94385176ea9b1a09e256101dc919e2c7f943635",
+   "via": "tree"
+  },
+  {
+   "path": "CONTRIBUTING.md",
+   "bytes": 6599,
+   "sha256": "72e3cb36702285314ade79d0449cb38768d44d4487b2ab515245910627749a1d",
+   "blob": "92e16ffc01fadc622b48c5c2d51d337bd81aed12",
+   "via": "tree"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1071,
+   "sha256": "b97f1b89ab386a24388eac18238af18f70b997f06a8f8652a2e70cad892c4147",
+   "blob": "c99724b7ffade82130505dee4fe0c71924c9ecd2",
+   "via": "tree"
+  },
+  {
+   "path": "README.md",
+   "bytes": 34741,
+   "sha256": "cd04c6c27b40aff7b4396a6f1c1e58a5479dc7a60506f8770e83ca41ecf5c515",
+   "blob": "74d26e49dfb5516af5888f8d3c243990bc2ba73d",
+   "via": "tree"
+  },
+  {
+   "path": "SECURITY.md",
+   "bytes": 1312,
+   "sha256": "c3c34cacd2f1f76e9c299372d8b9cf3fbe6da13340cc1eb9721762a521c80a69",
+   "blob": "ce102abf42cdeee88a5a6c8f66955cb69674ebea",
+   "via": "tree"
+  },
+  {
+   "path": "docs/images/concept_overview.png",
+   "bytes": 245865,
+   "sha256": "13c92986495b2f9f1639c9bbc71bd1bebca42646d7694160feed50a595e86de7",
+   "blob": "67cd38a4de9084052038b1cccd873653c0df0b62",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/client/README.md",
+   "bytes": 2307,
+   "sha256": "ab4e8caba229bed08e378de32001a5c98478cceb56bd482602d70a41483c1063",
+   "blob": "3a517a822175046480381096ceabf6c1509d6c8a",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/client/device_communication_client/__init__.py",
+   "bytes": 47,
+   "sha256": "054d90282f4636e078632189540526f0e82a560b11a27c7b1c4a49f73e625fa3",
+   "blob": "86d9464ba20b859027285a525703a8b60c65e8bd",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/client/device_communication_client/session.py",
+   "bytes": 15668,
+   "sha256": "cd5cbc4145548dc54d2a42d05b5bfe1f677930f7b8aad1b254a5cfceb32a637a",
+   "blob": "b9cd6b4335de02eaefa3b160d867ebc402cacf61",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/client/device_communication_client/session_constructor.py",
+   "bytes": 2285,
+   "sha256": "e310c76f7239b03a35f91218c09e2c4a271fcfeace45b21cc8192932a517e32f",
+   "blob": "9989e194eb8ce21d3ad6e83de164b99cd7ff20ec",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/client/poetry.lock",
+   "bytes": 66789,
+   "sha256": "6e7b08a165eeb6db3d95f265cdf296c5c1d4878d68758a4f5bb012c0b3142b8f",
+   "blob": "c54ee7222d3119f454e387b38959a7d2537deee4",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/client/poetry.toml",
+   "bytes": 31,
+   "sha256": "d90443f50f554a808fc49fb2a9187901ae79edac269a3680f73b38d4c709f5d1",
+   "blob": "efa46ec0ec02bc3c1cba02f3c7a7e88def85f056",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/client/pyproject.toml",
+   "bytes": 1021,
+   "sha256": "0390865a468ea8502d8a481c99157358209988d2b4f420f022cfe7f5ee4e0c69",
+   "blob": "c39ac17d30c812c9b8ca7fdbb313d4f8cdc0dc0c",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/client/setup.bat",
+   "bytes": 144,
+   "sha256": "a8cd1aa5af526117c6a12a7d5cc3201bd8d87d010d1a1ee930cca66b72d61bfa",
+   "blob": "38440fca42a6809eca06acdb1874521d1c005131",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/examples/pinmap/CustomInstrumentInfo.pinmap",
+   "bytes": 647,
+   "sha256": "b443c8d856185302b432d0f34a11014a3968024b37e127a648db1c7e699f9d8c",
+   "blob": "815ab811e3aca0ae49c0dea04b57e275ead834aa",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/examples/register_map/sample_register_map.csv",
+   "bytes": 223,
+   "sha256": "52732e9fee116e162066882663d4b4862e9cd86c52f264bce599efe26331d1c6",
+   "blob": "78d7d8dd40b890c705b0cd94f8cf74da12c9df10",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/examples/simple_measurement/README.md",
+   "bytes": 1735,
+   "sha256": "49f8280610b6aa192ea4a354e6435699c294865d9c9b0a7e704f5d38f4bc496c",
+   "blob": "a08a2f1d2af3f967f8d641773ab1ed7fab1950f4",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/examples/simple_measurement/SimpleMeasurement.instudioproj",
+   "bytes": 2193,
+   "sha256": "d366b1f86d5f3309dc05c502572f3076b92c8ad545ca7a0047f72b4ef45c1aaa",
+   "blob": "b7e875ad02ab4b31b66010bb8beb04928a7808b0",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/examples/simple_measurement/SimpleMeasurement.measproj",
+   "bytes": 3305,
+   "sha256": "7adaf6b98c80d0085cef2d05a1cf4c15a184b688488152e896f4da2734e5d4fe",
+   "blob": "861fc527b1e340c68f4e17edb4b7327cae758f72",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/examples/simple_measurement/SimpleMeasurement.measui",
+   "bytes": 4132,
+   "sha256": "3214fad79f6d6b8e4c38bedc75b5abed1f2f1d34edfc8e26634bd3ca82400175",
+   "blob": "9e44092a6bb79512d28cc46f8a7dafef33ad5cb5",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/examples/simple_measurement/SimpleMeasurement.serviceconfig",
+   "bytes": 512,
+   "sha256": "14a9514c97f96f8a6c62cd1e7f29b4518209cb41f9d22c4e00418f48cc7e5673",
+   "blob": "0ec114a136e36652f4b2fbe55aa17a6a7bcda83b",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/examples/simple_measurement/SimpleMeasurement.sfp",
+   "bytes": 7162,
+   "sha256": "fcd690c4f1a7411dcc9ad385a579db06b5de2ae9d71f563da290a3a56581833e",
+   "blob": "b4512179c77d443b8fe280ba7e39853e83673bff",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/examples/simple_measurement/_helpers.py",
+   "bytes": 2833,
+   "sha256": "190d88154fe0d50cd438821a79b45d15a6bafff383219d6a299f74e5019b8340",
+   "blob": "d636f47b5bc9d32a436b5088e1b518b82dccdda0",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/examples/simple_measurement/measurement.py",
+   "bytes": 2957,
+   "sha256": "a96222dde9870a468485a2938bfcb6315f6e1019c3d2ab4f9e2f005126f42a13",
+   "blob": "c9bb6b21f2648b9c399e3db2d754c1f474ee7657",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/examples/simple_measurement/poetry.lock",
+   "bytes": 67256,
+   "sha256": "7ddd981b052bc04a08d5949c5dab9d11529d9fa14f21ab83b9b0993d415d1270",
+   "blob": "e1d9253ed45e7cfe046bac243d6c90bed55b0b24",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/examples/simple_measurement/poetry.toml",
+   "bytes": 31,
+   "sha256": "d90443f50f554a808fc49fb2a9187901ae79edac269a3680f73b38d4c709f5d1",
+   "blob": "efa46ec0ec02bc3c1cba02f3c7a7e88def85f056",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/examples/simple_measurement/pyproject.toml",
+   "bytes": 1145,
+   "sha256": "470116520260bdf7d271ace00ba9cf6ac01688e84cfaa9ce3b5d7a5d314bbbc7",
+   "blob": "01729b49c620c35bf5e1292ef6edc5d312028050",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/examples/simple_measurement/start.bat",
+   "bytes": 338,
+   "sha256": "916f46fb49c4d0897ab9513fc60f12f64101380b5451ab9545f62cbe4e5a5838",
+   "blob": "51f32498574f14a7b47c3c1d012f0a2f56556b3b",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/examples/teststand_sequence/README.md",
+   "bytes": 3430,
+   "sha256": "cdd70f9f79e6e49c9b13c47257447c09cff36b9ef5cd8dbd71dd3b5bf8ef4be2",
+   "blob": "e82bd37619af3319856e337c9fd5e2ecc248cdf1",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/examples/teststand_sequence/_helpers.py",
+   "bytes": 2106,
+   "sha256": "c8859762f94d7501659a0f95d3bb218b127bb15e3e0ece17d3a34e4e3a887c2b",
+   "blob": "d109bd434c0869d25fca4689a0f5e3a89725f066",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/examples/teststand_sequence/poetry.lock",
+   "bytes": 67256,
+   "sha256": "0ba537c102ce797d0edb14b109134bdef1303b923eb64f063b793f81a368be7a",
+   "blob": "f42fcf3285d0523315c024f64ac746c0b8e289ce",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/examples/teststand_sequence/poetry.toml",
+   "bytes": 31,
+   "sha256": "d90443f50f554a808fc49fb2a9187901ae79edac269a3680f73b38d4c709f5d1",
+   "blob": "efa46ec0ec02bc3c1cba02f3c7a7e88def85f056",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/examples/teststand_sequence/pyproject.toml",
+   "bytes": 1175,
+   "sha256": "59f5f99a06707d214101dd8a2e7ab252d1afc1e72e9a5b54e18e911adb601c6a",
+   "blob": "36b60422f51bbb3bdb20097c2af7090f1f1171cc",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/examples/teststand_sequence/setup.bat",
+   "bytes": 145,
+   "sha256": "0f4d9408735e552e8c20d5e9cd07b769e2ee5facba89bd45bdf4567fb36db69a",
+   "blob": "c3253696d00b163a3f355b6901b2960befe69eec",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/examples/teststand_sequence/teststand_device_comm.py",
+   "bytes": 4290,
+   "sha256": "a1948d147f3aa40ebda092621d54e91278d0cbd729be353809af6f37ca5c0f31",
+   "blob": "10d548fcf8beecf2fce30b1443eec3cf3f828e1e",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/protos/device_comm_service.proto",
+   "bytes": 5815,
+   "sha256": "376fe6f7bd3c37527a21ec6d82f9e81e27ad46202ed07055e2b9804252d25415",
+   "blob": "c20e585bfd22d3338638fc8eeb6e4b71e80cc68e",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/server/README.md",
+   "bytes": 2824,
+   "sha256": "1aa1381ed009b0d002ff18c6abed538e2473e4c009a470bab74042625bebf1d1",
+   "blob": "03fa1e070375e3995999c7139afcb861164a1043",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/server/constants.py",
+   "bytes": 964,
+   "sha256": "262a70e529598dc3e50999978f0afb1e34384d3763bc73299fca0f0b8f40d3d6",
+   "blob": "e9f7a1507a53d0fea4f5eccdca3102036a55ef43",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/server/device_comm.serviceconfig",
+   "bytes": 281,
+   "sha256": "0f0daefee6bb4cc11b4d8121af21838ee002ac3ca643d74c6a1450648e82a397",
+   "blob": "d7b75223488fd1eb16b956d876af2100708269b6",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/server/poetry.lock",
+   "bytes": 66789,
+   "sha256": "6e7b08a165eeb6db3d95f265cdf296c5c1d4878d68758a4f5bb012c0b3142b8f",
+   "blob": "c54ee7222d3119f454e387b38959a7d2537deee4",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/server/poetry.toml",
+   "bytes": 31,
+   "sha256": "d90443f50f554a808fc49fb2a9187901ae79edac269a3680f73b38d4c709f5d1",
+   "blob": "efa46ec0ec02bc3c1cba02f3c7a7e88def85f056",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/server/pyproject.toml",
+   "bytes": 1078,
+   "sha256": "2f4710fda43696118a2752fbccf5b4ddd5eaa971e11e591d62b9992c5107471a",
+   "blob": "f33c4af6f48547b61236abbcfbc143dfd617a7e6",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/server/server.py",
+   "bytes": 26148,
+   "sha256": "6ae95fe59a572bb207bd80c85478dabb10abe75385565accbfae2f3b1a8d7b37",
+   "blob": "9abc01e3d60f3cb6b076b007800e59fe1111ecd5",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/server/start.bat",
+   "bytes": 342,
+   "sha256": "a335d5345a4b767b5055dad01dcb38b003098ffee3c92d68694b6048362bca86",
+   "blob": "4f559a1473c84b198387f833cfddc835df3da539",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/stubs/poetry.lock",
+   "bytes": 20297,
+   "sha256": "a651d4126263e83f7719b58da9b86ca84f1b69e4315a70ed74e6e424c9e06c7d",
+   "blob": "4f0f4e41712c97f40f8d4c35c17534655538c36c",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/stubs/poetry.toml",
+   "bytes": 31,
+   "sha256": "d90443f50f554a808fc49fb2a9187901ae79edac269a3680f73b38d4c709f5d1",
+   "blob": "efa46ec0ec02bc3c1cba02f3c7a7e88def85f056",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/stubs/pyproject.toml",
+   "bytes": 272,
+   "sha256": "62fb739551e4fd135d8eed287fac9d5a3005996aa28ad8fc875a0216d208737e",
+   "blob": "7673b0f3f52e8d907464aaadd30a8fa80675c6e9",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/stubs/stubs/__init__.py",
+   "bytes": 42,
+   "sha256": "397a4211d924a7caccf2f2264e2fd5a5a2509e700aee2cc56e54a08a37e1f987",
+   "blob": "4f943e0bdf57f533529ba47ce2c9713e866e0cff",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/stubs/stubs/device_comm_service_pb2.py",
+   "bytes": 5973,
+   "sha256": "b6060fef14b06895b9ebec75f636e0078a6a9eff5f3788e122015d51d677e2ca",
+   "blob": "c3cdf2a37490bb8456f7f88c0649dc472e5c045c",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/stubs/stubs/device_comm_service_pb2.pyi",
+   "bytes": 11731,
+   "sha256": "c170e144c261196289eaa4924759b2026e91b497d18c3fe628a940332087b685",
+   "blob": "b5190495e2bd78739c2baf20cb8e228ecf3b600c",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/stubs/stubs/device_comm_service_pb2_grpc.py",
+   "bytes": 18299,
+   "sha256": "85503adb408b86cdec067014750ce5e6e6027578edb2010c106b91f8a8241e37",
+   "blob": "ae505e8919ebb9836be3559dca79658696d8bb72",
+   "via": "tree"
+  },
+  {
+   "path": "src/custom_instr_session_sharing/stubs/stubs/device_comm_service_pb2_grpc.pyi",
+   "bytes": 13554,
+   "sha256": "48d1cb14f2d3094ba9835227f1b8b9a04759d2b14be9ca3018a33007ef9ba67c",
+   "blob": "2412c0015d6e059e2fcd25da1105d88c25d2f874",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/client/README.md",
+   "bytes": 1969,
+   "sha256": "99c97fc2abb5df3f9f43c14588bb6722afa2f876b726d69ac22e1ce5db525dc1",
+   "blob": "553073c88bdef15f99ff3edd0fb2e7c9ff9f176d",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/client/client_session/__init__.py",
+   "bytes": 47,
+   "sha256": "054d90282f4636e078632189540526f0e82a560b11a27c7b1c4a49f73e625fa3",
+   "blob": "86d9464ba20b859027285a525703a8b60c65e8bd",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/client/client_session/json_logger.proto",
+   "bytes": 3218,
+   "sha256": "5beb8eeceddd19129e03bb337fde8b6855c973e7b3a080dbb49c68de2abde899",
+   "blob": "c6b9205f87332eb689f3361d3fc1263580df9e48",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/client/client_session/session.py",
+   "bytes": 9556,
+   "sha256": "b0b4c896c1beebf94ca60d8eebc0a3fe2165e7d2dedf081768ab830aac5e60ce",
+   "blob": "580a0ed16b3f335cd4f43f2219ee4a5d4e5750f4",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/client/client_session/session_constructor.py",
+   "bytes": 1583,
+   "sha256": "8b432263e01d1df489207dff2f51a9f04ea5bcead010efe4f076c2ae7ab67672",
+   "blob": "9a5c4e82974d88d748c73861c74a348eb097d1c8",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/client/client_session/stubs/__init__.py",
+   "bytes": 25,
+   "sha256": "9b3727562406b6dfd3735ccf3519b8c63c37af5dc12394c9add487f885e4cb6f",
+   "blob": "164c6d575eef62a59a4e9299a401f83d53bc1773",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/client/client_session/stubs/json_logger_pb2.py",
+   "bytes": 4607,
+   "sha256": "2a216f007b5260c06176ab0967d3b0a622d6f6d77ac703c5477704c8f59760cc",
+   "blob": "b5bbc046670971ae524d32c86e60ad213e1a9535",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/client/client_session/stubs/json_logger_pb2.pyi",
+   "bytes": 7827,
+   "sha256": "ac3b93e66e3060245b76f456f20d534e08755d7b3d4c35bd70047e5bea70d261",
+   "blob": "e8c4e6519b4d40fd387543b6b0d46ec555ddc847",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/client/client_session/stubs/json_logger_pb2_grpc.py",
+   "bytes": 7955,
+   "sha256": "eb8e5227b38be1c00839a95579851103d548903efab452355754faaf50780645",
+   "blob": "1e4654a9976759e1649c829225fd633b0662a621",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/client/client_session/stubs/json_logger_pb2_grpc.pyi",
+   "bytes": 6495,
+   "sha256": "757b10ef39fa7e031f05fb11d3d43ae44b6fd7bea8dbc3e9e67701d2251aa0a3",
+   "blob": "a4c8745c6401c0dfa7077bf3d6ee84a4beefbb90",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/client/poetry.lock",
+   "bytes": 64298,
+   "sha256": "3db28f6370d665284575fcc46e9baa95c62922f6e20d22d13527a6b6c708c659",
+   "blob": "571bd64f2f6d915bc20fad3d4178d97e0b5d43a2",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/client/poetry.toml",
+   "bytes": 31,
+   "sha256": "d90443f50f554a808fc49fb2a9187901ae79edac269a3680f73b38d4c709f5d1",
+   "blob": "efa46ec0ec02bc3c1cba02f3c7a7e88def85f056",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/client/pyproject.toml",
+   "bytes": 912,
+   "sha256": "1184e19b22b578593cddf5a05bdfdb7ff8c7f94c702466960401ff52aa5c3180",
+   "blob": "b65cd49968d0cbd7e189ff30e1426cf2e6a06d13",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/client/setup.bat",
+   "bytes": 145,
+   "sha256": "0f4d9408735e552e8c20d5e9cd07b769e2ee5facba89bd45bdf4567fb36db69a",
+   "blob": "c3253696d00b163a3f355b6901b2960befe69eec",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/.env.simulation",
+   "bytes": 728,
+   "sha256": "5782fb4ca752313606a03b10d7f55f12bf68ed08a81130a4f4f99271da5ac691",
+   "blob": "7f196fe13d41df8116235097813420c46c8de000",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidcpower_measurement_with_logger/NIDCPowerSourceDCVoltage.instudioproj",
+   "bytes": 2213,
+   "sha256": "a06c296346b8355ed22411d930ec9150c7e09c9ed0bca33a66ce3e99bf2e0f76",
+   "blob": "faccdcb1cf7a32a6ddbdf050a34b47da677f6fed",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidcpower_measurement_with_logger/NIDCPowerWithLogger.measproj",
+   "bytes": 3799,
+   "sha256": "3e46343b61d99020428f76e2158ca1503c99a0d22dac70c51d903451a41d778b",
+   "blob": "34a53ec84db840111f6e52ea78f743a10adecc52",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidcpower_measurement_with_logger/NIDCPowerWithLogger.measui",
+   "bytes": 10644,
+   "sha256": "03bb7aeee1c5f7c1e9c525c7bf280f7a32b2b51c3acd867f35360c708fb78433",
+   "blob": "211f8d077a9b187db2bfd9a230b9607bab50f1f5",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidcpower_measurement_with_logger/NIDCPowerWithLogger.serviceconfig",
+   "bytes": 685,
+   "sha256": "6ef208bb32e7bc2fb231aec6ba25028f5dfa576353c2b7972e6759555b96d269",
+   "blob": "f2c4de751e254e2a7e263a369fb5e3a02a15b396",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidcpower_measurement_with_logger/NIDCPowerWithLogger.sfp",
+   "bytes": 13975,
+   "sha256": "ad2325185b7256e0035ce804d008fba343c9ae3501bdbd222b3d746a74c5c850",
+   "blob": "2b27cf7c9188cf69802b908e7f8696b10754f030",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidcpower_measurement_with_logger/README.md",
+   "bytes": 2469,
+   "sha256": "f2b397a6efde936f64f9ce04a3871e01bc56c3a45757713f87e3e94f139defcd",
+   "blob": "a650c7d6a64d23e8945225ed6ce3b7610eb208f8",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidcpower_measurement_with_logger/_helpers.py",
+   "bytes": 764,
+   "sha256": "50971080eb53902c2b891061061fb20c1c8b535cdd25794993fb4310b508e50d",
+   "blob": "f46f80f4e1b8d7842a4f673248712c060450df2f",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidcpower_measurement_with_logger/measurement.py",
+   "bytes": 9696,
+   "sha256": "f3dffa98572155b62bb9753daeac0ea45dbc08d8b673d9728adcb46a9ad6b0d3",
+   "blob": "f94a95cb8853f173e0dd23ade90ded18cae0fbe5",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidcpower_measurement_with_logger/poetry.lock",
+   "bytes": 65531,
+   "sha256": "161651a72347638f45e8d83be8cd624da2b047ad577188e99344086efdb3866c",
+   "blob": "4e3b36224ce62916408a4de4f69e5bf28466225f",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidcpower_measurement_with_logger/poetry.toml",
+   "bytes": 32,
+   "sha256": "aa057105d3dc259387747093381a196276b77247b854681190d6746ca80deabb",
+   "blob": "ab1033bd37224ee84b5862fb25f094db73809b74",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidcpower_measurement_with_logger/pyproject.toml",
+   "bytes": 1196,
+   "sha256": "c5268e7dca8fdfc82ffa3169f58046718a8a028d0f2aad819c1814cb499c4c58",
+   "blob": "b4cd4469865bf110cf972da069010da10b278fcd",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidcpower_measurement_with_logger/start.bat",
+   "bytes": 337,
+   "sha256": "db67866e38adafc6c2ee6bbe1a103131d704b2fed80f303c902094f089937a6f",
+   "blob": "749519b8fe73590593697ae6723632a7738218de",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidmm_measurement_with_logger/NIDmmMeasurementWithLogger.instudioproj",
+   "bytes": 2219,
+   "sha256": "261852c10d0849a2b4493ffff9e5035d13a01df6ca2722689eff5b356ad9ffea",
+   "blob": "37f70d848a66e9cda524c21cc1c4b281d11fc794",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidmm_measurement_with_logger/NIDmmMeasurementWithLogger.measproj",
+   "bytes": 3814,
+   "sha256": "72ab24f0ab9abb89b9ae90ea739b138ed4b70ee972ead399e11be633854a9965",
+   "blob": "3f7515aab0bd5afba2792199e921bf2516279919",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidmm_measurement_with_logger/NIDmmMeasurementWithLogger.measui",
+   "bytes": 11605,
+   "sha256": "03b9c7626808bbec5ce85ca2137ded5105f3c1fac37703169b0ec72003f3b68b",
+   "blob": "d13aee66b2e5c1977359ad6fcd6e1b681d274bdc",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidmm_measurement_with_logger/NIDmmMeasurementWithLogger.serviceconfig",
+   "bytes": 675,
+   "sha256": "103bed1e471d8a272a0daf9a71cb3b1a9508fdf27bfe0253a021230c5aa620b0",
+   "blob": "eabcbb625c2cbfa9cc4399f51d7e88ad6084b6f2",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidmm_measurement_with_logger/NIDmmMeasurementWithLogger.sfp",
+   "bytes": 14848,
+   "sha256": "7c557eda1e8257944160dd7a6f9d78c8199fb43b8919361b1414dbb3bde03bb4",
+   "blob": "41022999fd7d696de59b242536d413413d8d0ec0",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidmm_measurement_with_logger/README.md",
+   "bytes": 2423,
+   "sha256": "1f7106bacff301eb6eb57637aac4e6577bc8933cebf5cb1100fd237ae06415ab",
+   "blob": "f502fbbea284d1e7d26394761b857d166ba203b1",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidmm_measurement_with_logger/_helpers.py",
+   "bytes": 764,
+   "sha256": "50971080eb53902c2b891061061fb20c1c8b535cdd25794993fb4310b508e50d",
+   "blob": "f46f80f4e1b8d7842a4f673248712c060450df2f",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidmm_measurement_with_logger/measurement.py",
+   "bytes": 5170,
+   "sha256": "e8dbd7b26c99ffc25e07cb4409ec72e190e88d3f87ad0de307ce8a5de47cdd52",
+   "blob": "259f793ae97cd0ed78ba81bdfc1f6a8f441b86d7",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidmm_measurement_with_logger/poetry.lock",
+   "bytes": 65255,
+   "sha256": "023285727ea6ddf17106d812eb367ea00a61e73b13b9b8464cd141672df0a91f",
+   "blob": "03bc16c772782a9354e82fb734139a2b6c485e63",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidmm_measurement_with_logger/poetry.toml",
+   "bytes": 31,
+   "sha256": "d90443f50f554a808fc49fb2a9187901ae79edac269a3680f73b38d4c709f5d1",
+   "blob": "efa46ec0ec02bc3c1cba02f3c7a7e88def85f056",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidmm_measurement_with_logger/pyproject.toml",
+   "bytes": 1188,
+   "sha256": "820651e57b27ec24d82c011fb9ab05a8da49cc1c6850afa87f041d08d71d267b",
+   "blob": "8d282f67b1708196c3465694ab1e6f95e7932a9a",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/nidmm_measurement_with_logger/start.bat",
+   "bytes": 337,
+   "sha256": "db67866e38adafc6c2ee6bbe1a103131d704b2fed80f303c902094f089937a6f",
+   "blob": "749519b8fe73590593697ae6723632a7738218de",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/pinmap/FileSessionSharing.pinmap",
+   "bytes": 1011,
+   "sha256": "f1aa6a92b315d1f578e498704d53ffa0d9a74ca3b6f6ffb84c5042fb0a145bc4",
+   "blob": "8bc35f737f7ecef42d4e19506f933567868296fb",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/teststand_sequence/README.md",
+   "bytes": 4187,
+   "sha256": "39490bc78586c7b7e2ed8c507c656d986442924cdb187aa8c34d8f71843d4d1f",
+   "blob": "1d5eadf3ccd61e2404a17f3b5ff6775f0f6b353e",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/teststand_sequence/_helpers.py",
+   "bytes": 2106,
+   "sha256": "c8859762f94d7501659a0f95d3bb218b127bb15e3e0ece17d3a34e4e3a887c2b",
+   "blob": "d109bd434c0869d25fca4689a0f5e3a89725f066",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/teststand_sequence/poetry.lock",
+   "bytes": 66048,
+   "sha256": "b583aeb2aeddd1388cf6ab3e4ad9d513e23f7decb0da8b600fe5f1328ca3003c",
+   "blob": "de20167dc7d21d17338dd2e60baa62754f088f36",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/teststand_sequence/poetry.toml",
+   "bytes": 31,
+   "sha256": "d90443f50f554a808fc49fb2a9187901ae79edac269a3680f73b38d4c709f5d1",
+   "blob": "efa46ec0ec02bc3c1cba02f3c7a7e88def85f056",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/teststand_sequence/pyproject.toml",
+   "bytes": 1175,
+   "sha256": "1f7cd8a06ae989f37188e21a895fdea024426dd0e59bc3bdfc149eed62eeca1e",
+   "blob": "2ce97d94450d20c13bb9f9e204c01488cfa5bd55",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/teststand_sequence/setup.bat",
+   "bytes": 145,
+   "sha256": "0f4d9408735e552e8c20d5e9cd07b769e2ee5facba89bd45bdf4567fb36db69a",
+   "blob": "c3253696d00b163a3f355b6901b2960befe69eec",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/teststand_sequence/teststand_json_logger.py",
+   "bytes": 3586,
+   "sha256": "ee8b851e6e442b9eb7f50e4ac89a24338142dd87b85591d0f40c0686aa92086b",
+   "blob": "1c6d541a48fd6bd3d7dba1c37736341683ebcd43",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/teststand_sequence/teststand_nidcpower.py",
+   "bytes": 2605,
+   "sha256": "1195c8a9199b0680b59f1b9dcd21484dbf8866c938d996d922b7f3d24dfa919a",
+   "blob": "07ca68373a1748c723b6e8f6a1fb306e61a2a901",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/examples/teststand_sequence/teststand_nidmm.py",
+   "bytes": 2565,
+   "sha256": "6577110c353f6b84e64812c4634735e0c1e53496fc73c547c73a4090c94bb88e",
+   "blob": "37b3d7d26d0cd133d9c5360cd5dec1801c9b9ff5",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/server/JsonLogger.serviceconfig",
+   "bytes": 257,
+   "sha256": "d6dc2e4f4033f4a9564fd72227c74ce3092541647eb651a10a9eca84ee7bb5fb",
+   "blob": "771bb1d70d529823e0ec4c687e18076f0907e894",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/server/README.md",
+   "bytes": 2856,
+   "sha256": "ad6e7762a22d6560840eea32dc6de633084b5488cd54337cd277919b1a06f9b4",
+   "blob": "0bb831eab61ae876371f3923d8606979558922bf",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/server/json_logger.proto",
+   "bytes": 3218,
+   "sha256": "5beb8eeceddd19129e03bb337fde8b6855c973e7b3a080dbb49c68de2abde899",
+   "blob": "c6b9205f87332eb689f3361d3fc1263580df9e48",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/server/poetry.lock",
+   "bytes": 65285,
+   "sha256": "d5b928a335beddcb1617c3eb821c290f92629ef344b9b304d676d7a92b63e010",
+   "blob": "633a8efe904e89306e3e907623a47f53171ed09f",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/server/poetry.toml",
+   "bytes": 31,
+   "sha256": "d90443f50f554a808fc49fb2a9187901ae79edac269a3680f73b38d4c709f5d1",
+   "blob": "efa46ec0ec02bc3c1cba02f3c7a7e88def85f056",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/server/pyproject.toml",
+   "bytes": 1039,
+   "sha256": "eb8635ed5c05ac9232632abf81ea34ef421abaa400b13cdfdea5ad14c98d285f",
+   "blob": "e44aec9ed077683981bcbf4a29c47631b6e4784a",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/server/server.py",
+   "bytes": 16043,
+   "sha256": "7c0e4a5a55f90253351be416b35c8433eae69a0b34a439f59aafa5af9a2b7ae0",
+   "blob": "9fc6db17a39e2b611724b7dc0e79b27ee3a0b1a9",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/server/start.bat",
+   "bytes": 333,
+   "sha256": "287635958baa4c0611f084e4ca46395ece6380859f9147036162efa59536d35c",
+   "blob": "6b1fbada74fb8160e27b08b65ec8708038076cff",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/server/stubs/__init__.py",
+   "bytes": 33,
+   "sha256": "d374edd93dccb0fabd5ab7554582c890604bd49eafed9bafd396f37941cf13f4",
+   "blob": "a7d3b2800862986af223a726119704ad0740f561",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/server/stubs/json_logger_pb2.py",
+   "bytes": 4607,
+   "sha256": "2a216f007b5260c06176ab0967d3b0a622d6f6d77ac703c5477704c8f59760cc",
+   "blob": "b5bbc046670971ae524d32c86e60ad213e1a9535",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/server/stubs/json_logger_pb2.pyi",
+   "bytes": 7827,
+   "sha256": "ac3b93e66e3060245b76f456f20d534e08755d7b3d4c35bd70047e5bea70d261",
+   "blob": "e8c4e6519b4d40fd387543b6b0d46ec555ddc847",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/server/stubs/json_logger_pb2_grpc.py",
+   "bytes": 7940,
+   "sha256": "0b54cb46cd8d0a579bd183c2bc9e07778dab44a9b0fdaeb0164a6380c710a94f",
+   "blob": "4a294fc4f6af8f1e6a985dbfd4bd9ce854346280",
+   "via": "tree"
+  },
+  {
+   "path": "src/file_session_sharing/server/stubs/json_logger_pb2_grpc.pyi",
+   "bytes": 6480,
+   "sha256": "65239aceb1277f9078d661b3785e716ad40e5bade22775c57cf3b92685f512cd",
+   "blob": "f9c57b0035659850fad87acb45f4b5e7d69317da",
+   "via": "tree"
+  }
+ ],
+ "skipped": [],
+ "external": []
+}

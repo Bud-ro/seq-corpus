@@ -1,0 +1,11 @@
+{
+  "services": [
+    {
+      "displayName": "Python Bodeplot Summit",
+      "serviceClass": "Python Bodeplot Summit_Python",
+      "descriptionUrl": "",
+      "providedInterfaces": [ "ni.measurementlink.measurement.v1.MeasurementService" ],
+      "path": "start.bat"
+    }
+  ]
+}

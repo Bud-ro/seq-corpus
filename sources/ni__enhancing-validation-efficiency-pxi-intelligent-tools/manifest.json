@@ -1,0 +1,446 @@
+{
+ "repo": "ni/enhancing-validation-efficiency-pxi-intelligent-tools",
+ "url": "https://github.com/ni/enhancing-validation-efficiency-pxi-intelligent-tools",
+ "commit": "84582861130bdc17b17c09fd0e4caada006cb31d",
+ "license": "MIT",
+ "licenseFile": "LICENSE",
+ "fetched": "2026-10-28",
+ "files": [
+  {
+   "path": "InstrumentStudio/AppNote_LabSetUp/AppNote_LabSetUp.seq",
+   "bytes": 15169,
+   "sha256": "7ff74d85639b5d54bcd3b412624ae62f94810a03a8b363dfbb7c5a6557f32f8d",
+   "blob": "734d6f8cb6e740e916e632b0d0b70008e61b008b",
+   "via": "extension"
+  },
+  {
+   "path": "InstrumentStudio/DAQ_FiniteAnalogInput_plugin_labview/DAQ_FiniteAI UI/DAQ_FiniteAI UI.lvlib",
+   "bytes": 1264,
+   "sha256": "51173627967c351cac0999a5a1a11c08295995788fc2a8bd50b397132b6f753a",
+   "blob": "c9122eeee8774d17284bc289be36edec98e44ff9",
+   "via": "extension"
+  },
+  {
+   "path": "InstrumentStudio/DAQ_FiniteAnalogInput_plugin_labview/DAQ_FiniteAI UI/Measurement UI.vi",
+   "bytes": 52162,
+   "sha256": "262e751c8b1de480bbe0bbaeddfdee491de80635fcfa02a10f0dd349c6f6398b",
+   "blob": "a376bc1ea31bc9f0204e6f131bce26b2dac0a548",
+   "via": "extension"
+  },
+  {
+   "path": "InstrumentStudio/DAQ_FiniteAnalogInput_plugin_labview/DAQ_FiniteAI/Advanced/Build Assets/Post-Build Action.vi",
+   "bytes": 10205,
+   "sha256": "829da0fdd477d53f1610c8b4ecf12ccb81a0fbe39f3eeaf76ca15f4e7e227b04",
+   "blob": "e7e99d8dd30edc08e740415307e2d985215b095c",
+   "via": "extension"
+  },
+  {
+   "path": "InstrumentStudio/DAQ_FiniteAnalogInput_plugin_labview/DAQ_FiniteAI/Advanced/Get Plugin Paths.vi",
+   "bytes": 19736,
+   "sha256": "90f767591bdbef91d4acfd97a318d00e03702a0bd7b10c0adafbaede06690506",
+   "blob": "7e567359d045ce0cf2810a57bcba216106b10d63",
+   "via": "extension"
+  },
+  {
+   "path": "InstrumentStudio/DAQ_FiniteAnalogInput_plugin_labview/DAQ_FiniteAI/Advanced/Measurement Plugin.lvclass",
+   "bytes": 16886,
+   "sha256": "2c5d452ee4626e23c234c907e0253d241dea89caa0be953548df9c976f1d6476",
+   "blob": "aa76d7f0fb432459e39bb59ec3a1222d77dcd863",
+   "via": "extension"
+  },
+  {
+   "path": "InstrumentStudio/DAQ_FiniteAnalogInput_plugin_labview/DAQ_FiniteAI/Advanced/Pack for gRPC.vi",
+   "bytes": 90069,
+   "sha256": "9737af6421965a35a30f7b24092caa2da38945254e171adfa24764d7f240f8e6",
+   "blob": "c8748b662ed9e3a85bd301a0b1d918c847608e99",
+   "via": "extension"
+  },
+  {
+   "path": "InstrumentStudio/DAQ_FiniteAnalogInput_plugin_labview/DAQ_FiniteAI/Advanced/Unpack for gRPC.vi",
+   "bytes": 89855,
+   "sha256": "ae531ed36ddc375ad5109d2f42e0cb1f4c2686c315b0eef78baeaf7302cd17b8",
+   "blob": "76f293218cc1c7ac49417e22237e9424ddc0d3ad",
+   "via": "extension"
+  },
+  {
+   "path": "InstrumentStudio/DAQ_FiniteAnalogInput_plugin_labview/DAQ_FiniteAI/DAQ_FiniteAI.lvlib",
+   "bytes": 2067,
+   "sha256": "410e9ede45f7007fc4e1781d7998320c0b58f66156448b9a0c1ff8146343ba63",
+   "blob": "f56842c558f15e4b399d4eab4b9189f05a6aff5f",
+   "via": "extension"
+  },
+  {
+   "path": "InstrumentStudio/DAQ_FiniteAnalogInput_plugin_labview/DAQ_FiniteAI/Get Service Descriptor.vi",
+   "bytes": 21034,
+   "sha256": "438608446c5168638dccf1d4b9be18cda08d5d259e61b0c99d9f4814d82353b8",
+   "blob": "fdc9be5edb2a9b40ffeef42860a843168a3abbf2",
+   "via": "extension"
+  },
+  {
+   "path": "InstrumentStudio/DAQ_FiniteAnalogInput_plugin_labview/DAQ_FiniteAI/Get Type Specializations.vi",
+   "bytes": 19532,
+   "sha256": "175c7496877db6d81603e4709fadb5208be44bf7afdb7f896a7af8b4d108bc79",
+   "blob": "86cbb3829df4caf77bfb4098bce5b446b7ef98fd",
+   "via": "extension"
+  },
+  {
+   "path": "InstrumentStudio/DAQ_FiniteAnalogInput_plugin_labview/DAQ_FiniteAI/Get UI Details.vi",
+   "bytes": 19530,
+   "sha256": "a51feb77c8962aa0ef4f6498941483bab7a9d0415d660bb8b1ca70cab24c3070",
+   "blob": "3dc0a8eb855b96870d40c7fc73b5c1c8ccf0b209",
+   "via": "extension"
+  },
+  {
+   "path": "InstrumentStudio/DAQ_FiniteAnalogInput_plugin_labview/DAQ_FiniteAI/Measurement Configuration.ctl",
+   "bytes": 24178,
+   "sha256": "1b0972ea7d2e8671438b229928bf4bc3e538795e36a2e43fc575bfa2981272b8",
+   "blob": "d9e5da2e8447ce46cac1fcfab28991ffa02964b7",
+   "via": "extension"
+  },
+  {
+   "path": "InstrumentStudio/DAQ_FiniteAnalogInput_plugin_labview/DAQ_FiniteAI/Measurement Logic.vi",
+   "bytes": 47089,
+   "sha256": "d82a63e48fc726899d9b7c3ff8e6410da9ee3c82692e314ee33bb3b4b0a08ece",
+   "blob": "393daae4d9fa89c8b331ba18429f591d4ec26b9c",
+   "via": "extension"
+  },
+  {
+   "path": "InstrumentStudio/DAQ_FiniteAnalogInput_plugin_labview/DAQ_FiniteAI/Measurement Results.ctl",
+   "bytes": 16224,
+   "sha256": "3337ba4d744385fad76363f6865e47e82d4620fc0d493212ad7eae0881356714",
+   "blob": "8b2f74f8715d30f29448c91047bad1ae6bcd4604",
+   "via": "extension"
+  },
+  {
+   "path": "InstrumentStudio/DAQ_FiniteAnalogInput_plugin_labview/DAQ_FiniteAI/Run Service.vi",
+   "bytes": 13651,
+   "sha256": "1b03ce2e77f362d139f09fbe535dda4c1e4c74c665ad38aff65f7a030668216e",
+   "blob": "15038c2d2419398143a85d2c235b73a5b94cfd3a",
+   "via": "extension"
+  },
+  {
+   "path": "InstrumentStudio/DAQ_FiniteAnalogInput_plugin_labview/DAQ_FiniteAI_plugin.lvproj",
+   "bytes": 10131,
+   "sha256": "ffc42ea979b634daad10a8a6043feec596532ada05a466f180f530253cc64009",
+   "blob": "b8088481889e1015b882e2adae05d05dc72faae8",
+   "via": "extension"
+  },
+  {
+   "path": "InstrumentStudio/builds/DAQ_FiniteAI/DAQ_FiniteAI.ini",
+   "bytes": 329,
+   "sha256": "a1ebe844c90c36f177fba5c866726247a266151156fae9adfb05ae1e740a4c5b",
+   "blob": "b9ed55961ea54fec4ca657a51f0c945564449a18",
+   "via": "extension"
+  },
+  {
+   "path": "InstrumentStudio/builds/DAQ_FiniteAI/Libraries/Win64/feature_config.ini",
+   "bytes": 55,
+   "sha256": "57551dc710628b0411423a43c3425ab923a82a04e8375646628b391e19c7f2bb",
+   "blob": "a44d10a2c45c7415bc161f4096b320f856d200db",
+   "via": "extension"
+  },
+  {
+   "path": "Standalone/DAQ_labview/DAQ_Finite_AnalogInput_DigitalTrigger.vi",
+   "bytes": 50997,
+   "sha256": "aa2c0730d7120cc7f0545a3ac8bf0832ea14ad044e3a387b620f2e66bc260b8e",
+   "blob": "2b7d95eb04f8ceab34fe4d7264aa1d7e4baac68d",
+   "via": "extension"
+  },
+  {
+   "path": "Standalone/DAQ_labview/SMU_generateWfm_SaveToText_.vi",
+   "bytes": 24599,
+   "sha256": "c6e75a6d441ed08b6c6a90254cca87a5bc2c2753a0dd18c64d958b36ff88d758",
+   "blob": "a4feddb57147a6804527c3ce847b0052cf78ad5c",
+   "via": "extension"
+  },
+  {
+   "path": "TestStand/AutomatedSequence.seq",
+   "bytes": 46487,
+   "sha256": "1b41c7325a536375d1308431e10d1962fed9d882db2c5b4b9d04ced016cbb169",
+   "blob": "614aa0adb3ecc3dbce4b3ac13174451fad4016d4",
+   "via": "extension"
+  },
+  {
+   "path": ".github/CODEOWNERS",
+   "bytes": 72,
+   "sha256": "94b1f23f72346194a02c01a6de7d7aec2e85e19331703bd9e0048446df21a362",
+   "blob": "349c952b199922e5c1c2663b642df408f14c5713",
+   "via": "tree"
+  },
+  {
+   "path": ".github/PULL_REQUEST_TEMPLATE.md",
+   "bytes": 352,
+   "sha256": "0139209365b5c76e6c9126a902a4f4280708f8bdf686d37685a3fa503f3b0907",
+   "blob": "2eaebac540771d5bece7dc66bd4669722e701b67",
+   "via": "tree"
+  },
+  {
+   "path": "CONTRIBUTING.md",
+   "bytes": 2600,
+   "sha256": "d6ee40f85a238822c87c5125d28c56b1c83cb6f10f82ba025235c04b5836acae",
+   "blob": "688cf224f425f9fe03dd41e064f8136b2201fc5e",
+   "via": "tree"
+  },
+  {
+   "path": "InstrumentStudio/AppNote_LabSetUp/.cache/AppNote_LabSetUp.instudioprojcache",
+   "bytes": 13312,
+   "sha256": "c24eb334ceee26df1af20efb14e87d86b5892a8c964bf512863e3ab368b63fe4",
+   "blob": "63d5975a1647802baef6d6a16cee5ca3ad0aeb79",
+   "via": "tree"
+  },
+  {
+   "path": "InstrumentStudio/AppNote_LabSetUp/.cache/Instrument_2.sfpcache",
+   "bytes": 9216,
+   "sha256": "c8cd300b90ce39e1417916ac99be4503ef327dc57743ae2dc02fec7e69aa7bd0",
+   "blob": "5d4fe603b972ebebf1876faf28509ebca93fea56",
+   "via": "tree"
+  },
+  {
+   "path": "InstrumentStudio/AppNote_LabSetUp/.cache/Supply_Vin.sfpcache",
+   "bytes": 9216,
+   "sha256": "22511b2bf7aa7c41eb57b6c25c6b75f845c6570b249cc19d8c55dcff4b65e1a8",
+   "blob": "b48aa51098bac38f8ec70ad417f88d7e7bdc89f4",
+   "via": "tree"
+  },
+  {
+   "path": "InstrumentStudio/AppNote_LabSetUp/.cache/paths.xml",
+   "bytes": 724,
+   "sha256": "33ac24662937e3cb32e3eb2db1d27c5f67a8357da1bde550ccd15597f8d880f7",
+   "blob": "9ffe0026255e7fde10363d8e402ddd39892645b8",
+   "via": "tree"
+  },
+  {
+   "path": "InstrumentStudio/AppNote_LabSetUp/AppNote_LabSetUp.instudioproj",
+   "bytes": 3028,
+   "sha256": "30b22dcc7b6669837cfc4c464fd684a92156c4294b86933f5b78b78fcabab996",
+   "blob": "e712f454e48cdc4363927bc623c13b11ac35fa69",
+   "via": "tree"
+  },
+  {
+   "path": "InstrumentStudio/AppNote_LabSetUp/Instrument Plug-In/Vin_Supply.sfp",
+   "bytes": 70502,
+   "sha256": "b925c4e7e62b8de71fee6e7e91ffa91f6c678cb0e2dc87eb5ba380f9aadc968d",
+   "blob": "fcb74b1689bd2598c3349ce6d7efa59d6faff8e2",
+   "via": "tree"
+  },
+  {
+   "path": "InstrumentStudio/AppNote_LabSetUp/Measurement Plug-In/MultiPlugin_SinglePanel.sfp",
+   "bytes": 97913,
+   "sha256": "b60a540738a82304604e08432b511fb2fdf05b3b43d980d4d9f8aee8b3c8c5d7",
+   "blob": "504e591a76265f72623700d045f7252d8be7f59e",
+   "via": "tree"
+  },
+  {
+   "path": "InstrumentStudio/AppNote_LabSetUp/PinMap.pinmap",
+   "bytes": 1306,
+   "sha256": "285c9a85af7fa60f3ee27f28a5d59089e2023e9fa1a006e0fcc268250f2300d5",
+   "blob": "7ef96118db16fa27269c2313f1189d7e13a1f59a",
+   "via": "tree"
+  },
+  {
+   "path": "InstrumentStudio/DAQ_FiniteAnalogInput_plugin_labview/DAQ_FiniteAI/BuiltUI/DAQ_FiniteAI UI.lvlibp",
+   "bytes": 21504,
+   "sha256": "54658f23b8f6c77dc4f19fa282e55987bc1b11112206d09620091a1a644bbbfb",
+   "blob": "e1ebd8c5fbb61c8070a1e8d132169573de3cdd63",
+   "via": "tree"
+  },
+  {
+   "path": "InstrumentStudio/DAQ_FiniteAnalogInput_plugin_labview/DAQ_FiniteAI_plugin.aliases",
+   "bytes": 41,
+   "sha256": "29e08add771106f076ab120d68ee01071a9ac751629c811ac4778d33554df9d6",
+   "blob": "7b37479042a81f7012f86079ec12cdf04e683337",
+   "via": "tree"
+  },
+  {
+   "path": "InstrumentStudio/DAQ_FiniteAnalogInput_plugin_labview/DAQ_FiniteAI_plugin.lvlps",
+   "bytes": 880,
+   "sha256": "e4b6b4b94083cc3706979c8fa344ab33c07949918e4cbac2a510b158c1624c50",
+   "blob": "5e86c14a5dd103196c36d6b92b71319aa2189a3b",
+   "via": "tree"
+  },
+  {
+   "path": "InstrumentStudio/Temptronic_plugin_python/TemptronicATS.measproj",
+   "bytes": 3294,
+   "sha256": "42468a89bc3383918221ed73ffc49dc81d9f3a7a96d5d758816bc18b5626d4f7",
+   "blob": "81e1d0e2f9862a06522cc57824fec57b6d23ed7b",
+   "via": "tree"
+  },
+  {
+   "path": "InstrumentStudio/Temptronic_plugin_python/TemptronicATS.measui",
+   "bytes": 9150,
+   "sha256": "3d78282e69bde4ed440c9879fc0d2d6205420ec3da770216a69388ff37d26bfe",
+   "blob": "2ce46d7c801b028a8e200f3e4e0c13f6bb0e8b01",
+   "via": "tree"
+  },
+  {
+   "path": "InstrumentStudio/Temptronic_plugin_python/TemptronicATS.serviceconfig",
+   "bytes": 504,
+   "sha256": "45280f4655b4c72560348fafda747137a92a3da4bc02d656a0fa37ace1b65a83",
+   "blob": "02f0640a01d703af06285e790c8cc1a650b3ffe8",
+   "via": "tree"
+  },
+  {
+   "path": "InstrumentStudio/Temptronic_plugin_python/Temptronic_plugin.pyproj",
+   "bytes": 1556,
+   "sha256": "942f400bf2054f2d5054014c2334c6c8d10f4b5dcc615e0cbe5c35768c982e13",
+   "blob": "a9d1b343f1606df170ce6684791bb396dd28edca",
+   "via": "tree"
+  },
+  {
+   "path": "InstrumentStudio/Temptronic_plugin_python/Temptronic_plugin_python.sln",
+   "bytes": 960,
+   "sha256": "48de000f735f93334a43314b2b4c5125bd497964995498c72c2adee5a8e3e13c",
+   "blob": "22e25fede8da1c1d617f9b5ca58aae68008da8b3",
+   "via": "tree"
+  },
+  {
+   "path": "InstrumentStudio/Temptronic_plugin_python/_helpers.py",
+   "bytes": 2805,
+   "sha256": "f7453a9c74fd3764c7947e919c95285d1415f37cf2ac3e1d1dc0e2bbe2737b8a",
+   "blob": "11b67ca38620f22a834b97cf264ea55a355c27e6",
+   "via": "tree"
+  },
+  {
+   "path": "InstrumentStudio/Temptronic_plugin_python/measurement.py",
+   "bytes": 4960,
+   "sha256": "343a3bc5bb20336c687b594203c1dc816d88711b333863a2239901c2bd8d6d7d",
+   "blob": "e84c88fff86d93b53df3776c01f9d849fc07a24e",
+   "via": "tree"
+  },
+  {
+   "path": "InstrumentStudio/Temptronic_plugin_python/start.bat",
+   "bytes": 228,
+   "sha256": "8369ba4ebab042588b78bb5bb90ca92addd06666b68eaa2d3d410707a5c1a4d4",
+   "blob": "56d9f915192ba2bfe2e8937a260572f4137fcf71",
+   "via": "tree"
+  },
+  {
+   "path": "InstrumentStudio/builds/DAQ_FiniteAI/BuiltUI/DAQ_FiniteAI UI.lvlibp",
+   "bytes": 21504,
+   "sha256": "54658f23b8f6c77dc4f19fa282e55987bc1b11112206d09620091a1a644bbbfb",
+   "blob": "e1ebd8c5fbb61c8070a1e8d132169573de3cdd63",
+   "via": "tree"
+  },
+  {
+   "path": "InstrumentStudio/builds/DAQ_FiniteAI/DAQ_FiniteAI.aliases",
+   "bytes": 37,
+   "sha256": "72d857e6c3af47c16027526127ac0eb6818473df66eb0284eda607d48a8cace5",
+   "blob": "f1f7c6943a3b66082088bbeb418a05bf8195ff74",
+   "via": "tree"
+  },
+  {
+   "path": "InstrumentStudio/builds/DAQ_FiniteAI/DAQ_FiniteAI.serviceconfig",
+   "bytes": 464,
+   "sha256": "dbd10e1888c2487b28a817b6ecc6e5a0cd5ea52a9ba0441523f60002affa746b",
+   "blob": "a8fd92962bae92d53fe5fae0c94d7d445e8028f6",
+   "via": "tree"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1071,
+   "sha256": "b97f1b89ab386a24388eac18238af18f70b997f06a8f8652a2e70cad892c4147",
+   "blob": "c99724b7ffade82130505dee4fe0c71924c9ecd2",
+   "via": "tree"
+  },
+  {
+   "path": "README.md",
+   "bytes": 4752,
+   "sha256": "c7b432c6092dfd2e8c77eeeb608f3c85079ee0bb7761160df80af27e6628e77b",
+   "blob": "ce93415ed7ab8da8a1fed665b2cf4394989d198a",
+   "via": "tree"
+  },
+  {
+   "path": "SECURITY.md",
+   "bytes": 1312,
+   "sha256": "c3c34cacd2f1f76e9c299372d8b9cf3fbe6da13340cc1eb9721762a521c80a69",
+   "blob": "ce102abf42cdeee88a5a6c8f66955cb69674ebea",
+   "via": "tree"
+  },
+  {
+   "path": "Standalone/DAQ_labview/SMU_wfm_sine.txt",
+   "bytes": 24399,
+   "sha256": "5c7e01dbaa6e78d3f068d223377d6e216ff0452ca0a7f07b9a77a73f10a1c5f5",
+   "blob": "784c04b87d4ec77c8381127db85da25384c8a98c",
+   "via": "tree"
+  },
+  {
+   "path": "Standalone/DAQ_labview/SMU_wfm_square.txt",
+   "bytes": 24400,
+   "sha256": "e3c6a8df3e12f05c863bb915fe6ed898633769cf843f5203ca5fe3cf23f1197c",
+   "blob": "622deb2cc102c6f69e1555bb6efd98a70c537226",
+   "via": "tree"
+  },
+  {
+   "path": "Standalone/TemptronicATS_python/TemptronicATS.sln",
+   "bytes": 1099,
+   "sha256": "07055bb5b5bcf74c27ddef89a697bb26e7f271398803ae83aff7b7e10c16af50",
+   "blob": "d87895a170db46403f62ccc631cd6c4b52c03c5f",
+   "via": "tree"
+  },
+  {
+   "path": "Standalone/TemptronicATS_python/TemptronicATS/TemptronicATS.py",
+   "bytes": 2864,
+   "sha256": "756c4093c05f5510d9eca822b603b383d5925ef209336028bdd2b8c3a2784702",
+   "blob": "9d612df4065a9463e1e68113cdbff3b4d30bee3f",
+   "via": "tree"
+  },
+  {
+   "path": "Standalone/TemptronicATS_python/TemptronicATS/TemptronicATS.pyproj",
+   "bytes": 1514,
+   "sha256": "fca39cea9d90e686f8d35001f15a501cb9f0881309820595fb53885bed649f80",
+   "blob": "55745bad304bd024fec6534f6cf2026267ae2549",
+   "via": "tree"
+  }
+ ],
+ "skipped": [],
+ "external": [
+  "/<vilib>/Plug-In SDKs/Measurements/Measurement Plugin Service/Measurement Plugin Service.lvclass",
+  "<resource>\\objmgr\\daqmx.rc",
+  "<vilib>\\AdvancedString\\1D String Array to Delimited String.vi",
+  "<vilib>\\DAQmx\\configure\\task.llb\\DAQmx Clear Task.vi",
+  "<vilib>\\DAQmx\\configure\\task.llb\\DAQmx Start Task.vi",
+  "<vilib>\\DAQmx\\configure\\task.llb\\DAQmx Stop Task.vi",
+  "<vilib>\\DAQmx\\configure\\timing.llb\\DAQmx Timing (Sample Clock).vi",
+  "<vilib>\\DAQmx\\configure\\timing.llb\\DAQmx Timing.vi",
+  "<vilib>\\DAQmx\\configure\\trigger.llb\\DAQmx Start Trigger (Digital Edge).vi",
+  "<vilib>\\DAQmx\\configure\\trigger.llb\\DAQmx Start Trigger (None).vi",
+  "<vilib>\\DAQmx\\configure\\trigger.llb\\DAQmx Trigger.vi",
+  "<vilib>\\DAQmx\\create\\channels.llb\\DAQmx Create Channel (AI-Voltage-Basic).vi",
+  "<vilib>\\DAQmx\\create\\channels.llb\\DAQmx Create Virtual Channel.vi",
+  "<vilib>\\DAQmx\\miscellaneous.llb\\DAQmx Fill In Error Info.vi",
+  "<vilib>\\DAQmx\\read.llb\\DAQmx Read (Analog Wfm 1Chan NSamp).vi",
+  "<vilib>\\DAQmx\\read.llb\\DAQmx Read.vi",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Build Assets\\Post-Build Action.vi",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\Create Basic Measurement Annotations.vi",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\TypeDefs\\Measurement Annotation.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\TypeDefs\\Measurement Details.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\TypeDefs\\Parameter Type Specialization.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\TypeDefs\\Service Descriptor.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\TypeDefs\\Type Specialization Key.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\TypeDefs\\Type Specialization.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Helpers\\TypeDefs\\User Interface Information.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Measure Call Context\\Measure Call Context.lvclass",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Measurement Plugin Service\\Accessors\\Get gRPC ID.vi",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Measurement Plugin Service\\Measurement Plugin Service.lvclass",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Measurement Plugin Service\\Plugin Paths.ctl",
+  "<vilib>\\Plug-In SDKs\\Measurements\\NI Measurement Plug-In SDK.lvlib",
+  "<vilib>\\Plug-In SDKs\\Measurements\\Run Service.vi",
+  "<vilib>\\Utility\\error.llb\\DialogType.ctl",
+  "<vilib>\\Utility\\error.llb\\Simple Error Handler.vi",
+  "<vilib>\\Utility\\file.llb\\Write Delimited Spreadsheet (DBL).vi",
+  "<vilib>\\Utility\\file.llb\\Write Delimited Spreadsheet.vi",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\Message Requests\\PackToAny.vim",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\Message Requests\\UnpackFromAny.vim",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\Server\\Get Server DLL Path.vi",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Server API\\Translate Protobuf Error.vi",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Shared\\Any.ctl",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\Shared\\grpcId.ctl",
+  "<vilib>\\gRPC\\LabVIEW gRPC Library\\grpc-lvsupport-release.lvlib",
+  "<vilib>\\measure\\NI_MABase.lvlib",
+  "<vilib>\\measure\\NI_MAPro.lvlib",
+  "<vilib>\\measure\\masignal.llb\\Basic Function Generator.vi",
+  "<vilib>\\measure\\matone.llb\\Extract Single Tone Information 1 Chan.vi",
+  "<vilib>\\measure\\matone.llb\\Extract Single Tone Information.vi",
+  "C:\\Program Files\\National Instruments\\LabVIEW 2025\\vi.lib\\Plug-In SDKs\\Measurements\\Measurement Plugin Service\\Measurement Plugin Service.lvclass"
+ ]
+}

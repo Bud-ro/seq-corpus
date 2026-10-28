@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="E3C50006CDA0CE1C1CD310710156FE9DF1548762ECC7BB62C8529BE9474D7E952181176818B9E02805A2F3B6DAF88F0AB4C0D68B006AC01AF08791474B42C8C3" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="25.3.0.49970" FeatureSetName="Pin Map" Name="http://www.ni.com/InstrumentFramework/PinMap" OldestCompatibleVersion="21.3.0.0" Version="21.3.0.0" />
+		<ParsableNamespace AssemblyFileVersion="9.16.0.49970" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="25.3.0.49970" Name="InstrumentStudio" PersistenceVersion="22.1.0.0" Version="25.3.0.49970" />
+	</SourceModelFeatureSet>
+	<Project xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="933b85973bf947b6996b0a5c4942d4c8" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<EmbeddedDefinitionReference Id="71c340a9e7694aa3b56190659fb254f8" ModelDefinitionType="NationalInstruments.ProjectExplorer.Modeling.ProjectDataManager" Name="ProjectExplorer">
+			<ProjectExplorer />
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="f66a3faf66af4a36a69ba8809f2ee506" ModelDefinitionType="DefaultTarget" Name="DefaultTarget">
+			<DefaultTarget />
+			<SourceFileReference Bindings="EnvoyManager" Id="100ad7e6e8da454dbddddbe77349dbd5" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.UnifiedTask" Name="Vin_Supply.sfp" StoragePath="Instrument Plug-In\Vin_Supply.sfp" />
+			<FileReference Id="9db2f3a970104a7a910ab768ba910464" ModelDefinitionType="{http://www.ni.com/InstrumentFramework/PinMap}PinMapDefinition" Name="PinMap.pinmap" StoragePath="PinMap.pinmap" p4:IsActive="True" xmlns:p4="http://www.ni.com/InstrumentFramework/PinMap" />
+			<SourceFileReference Bindings="EnvoyManager" Id="584999f36c0c4a129c962bb84e84eb07" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.UnifiedTask" Name="MultiPlugin_SinglePanel.sfp" StoragePath="Measurement Plug-In\MultiPlugin_SinglePanel.sfp" />
+			<FileReference Bindings=".seq" Id="46e31b424bbd4a5bb2e87f6b75d8319f" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="AppNote_LabSetUp.seq" StoragePath="AppNote_LabSetUp.seq" />
+			<FileReference Bindings=".pdf" Id="ae915d5194824a5e815560ecb064cb36" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name=" Report 2025-05-15 15-51-58.pdf" StoragePath="Sequence Results\ Report 2025-05-15 15-51-58.pdf" />
+		</NameScopingEnvoy>
+	</Project>
+	<ProjectInformation xmlns="http://www.ni.com/PlatformFramework">
+		<p.ProjectProperties>
+			<Kind Name="plugin.reference">
+				<Item Name="DAQ_FiniteAI_LabVIEW" Value="1.0.1" />
+				<Item Name="ni.examples.NISCOPEAcquireWaveform_LabVIEW" Value="1.0.0" />
+				<Item Name="TemptronicATS_Python" Value="1.0.0.0" />
+			</Kind>
+		</p.ProjectProperties>
+	</ProjectInformation>
+</SourceFile>

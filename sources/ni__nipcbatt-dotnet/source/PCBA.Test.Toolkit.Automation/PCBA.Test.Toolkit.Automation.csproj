@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net6.0;net462</TargetFrameworks>
+    <LangVersion>7.3</LangVersion>
+    <RootNamespace>PCBATestToolkitAutomation</RootNamespace>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    <Version>1.2.0.250</Version>
+    <AssemblyVersion>1.2.0.250</AssemblyVersion>
+    <FileVersion>1.2.0.250</FileVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PCBA.Test.Toolkit\PCBA.Test.Toolkit.csproj" />
+  </ItemGroup>
+
+</Project>

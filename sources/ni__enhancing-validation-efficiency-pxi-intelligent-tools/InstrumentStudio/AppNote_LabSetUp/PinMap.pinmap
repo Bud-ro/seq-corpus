@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PinMap xmlns="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.9">
+	<Instruments>
+		<NIDCPowerInstrument name="PS_4110_C1_S02" numberOfChannels="3">
+			<ChannelGroup name="CommonDCPowerChannelGroup" channels="0" />
+			<ChannelGroup name="PositiveSupply" channels="1" />
+			<ChannelGroup name="NegativeSupply" channels="2" />
+		</NIDCPowerInstrument>
+		<NIDCPowerInstrument name="SMU_4139_C1_S03" numberOfChannels="1">
+			<ChannelGroup name="CommonDCPowerChannelGroup" />
+		</NIDCPowerInstrument>
+		<NIDAQmxTask name="DAQ_4309_C1_S04" taskType="" channelList="0" useAsRelayDriver="false" />
+	</Instruments>
+	<Pins>
+		<DUTPin name="VsupplyP" />
+		<DUTPin name="VsupplyN" />
+		<DUTPin name="Vin" />
+		<DUTPin name="Vout" />
+	</Pins>
+	<PinGroups></PinGroups>
+	<Sites>
+		<Site siteNumber="0" />
+	</Sites>
+	<Connections>
+		<Connection pin="Vin" siteNumber="0" instrument="SMU_4139_C1_S03" channel="0" />
+		<Connection pin="Vout" siteNumber="0" instrument="DAQ_4309_C1_S04" channel="0" />
+		<Connection pin="VsupplyN" siteNumber="0" instrument="PS_4110_C1_S02" channel="2" />
+		<Connection pin="VsupplyP" siteNumber="0" instrument="PS_4110_C1_S02" channel="1" />
+	</Connections>
+</PinMap>

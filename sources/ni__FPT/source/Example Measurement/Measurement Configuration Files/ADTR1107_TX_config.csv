@@ -1,0 +1,12 @@
+Power Sequence								
+Pin Name	Instrument	Channel	Power-up Seq	Power-up Voltage (V)	Power-down Seq	Power-down Voltage (V)	Current Limit (A)	Wait Before Next (ms)
+VDD_SW	PXI1Slot16	1	0	3.300000	5	0.000000	0.100000	0
+VSS_SW	PXI1Slot16	0	1	-3.300000	4	0.000000	0.100000	0
+CTRL_SW	PXI1Slot18	0	2	0.000000	3	0.000000	0.032000	0
+VGG_PA	PXI1Slot16	2	3	-1.750000	1	-1.750000	0.100000	0
+VDD_PA	PXI1Slot16	3	4	5.000000	2	0.000000	0.450000	0
+VGG_PA	PXI1Slot16	2	5	-1.050000	0	-1.750000	0.100000	0
+
+Switching
+Switch Name	Connection1	Connection2
+2599_s11	com0	nc0

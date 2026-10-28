@@ -1,0 +1,89 @@
+# ── clippy.toml ──────────────────────────────────────────────────────
+# Workspace-wide Clippy configuration for rs-teststand.
+# Lint *levels* live in Cargo.toml [workspace.lints.clippy]; this file
+# tunes the *parameters* of individual lints.
+
+# ── MSRV ─────────────────────────────────────────────────────────────
+# Deliberately not set. Clippy reads `rust-version` from each package, and
+# the workspace does not share one: the published libraries floor at 1.85
+# while the documentation tool needs more for its diagram renderer. Pinning
+# a single number here lints one of them against a floor it does not have,
+# and clippy says so on every run.
+
+# ── doc_markdown: domain idents that are not typos ───────────────────
+# Words that appear unbackticked in doc prose and would otherwise trip
+# clippy::doc_markdown.  ".." appends to Clippy's built-in set.
+doc-valid-idents = [
+    "TestStand",
+    "ProgID",
+    "VARIANT",
+    "VARENUM",
+    "HRESULT",
+    "DISPID",
+    "IDispatch",
+    "EXCEPINFO",
+    "BSTR",
+    "CoCreateInstance",
+    "CoInitializeEx",
+    "CoUninitialize",
+    "VariantClear",
+    "SysFreeString",
+    "SysAllocString",
+    "GetIDsOfNames",
+    "InprocServer",
+    "PropertyObject",
+    "StationOptions",
+    "StationGlobals",
+    "SequenceFile",
+    "SearchDirectories",
+    "SearchDirectory",
+    "WorkspaceFile",
+    "WorkspaceObject",
+    "NewSubProperty",
+    "NewExecution",
+    "GetValString",
+    "SetValString",
+    "GetValNumber",
+    "SetValNumber",
+    "GetValBoolean",
+    "SetValBoolean",
+    "GetPropertyObject",
+    "SetPropertyObject",
+    "DeleteSubProperty",
+    "MajorVersion",
+    "VersionString",
+    "PropValType",
+    "PropValTypeFlag",
+    "StepGroup",
+    "ExecRunState",
+    "ExecTermState",
+    "OpenWorkspaceFileOptions",
+    "SaveWorkspaceFileOptions",
+    "SearchDirectoryType",
+    "IWorkspaceObject",
+    "IWorkspaceFile",
+    "IStationOptions",
+    "IPropertyObject",
+    "ISearchDirectories",
+    "ISearchDirectory",
+    "StationID",
+    "FileGlobals",
+    "LabVIEW",
+    "MessagePopup",
+    "SequenceCall",
+    "ElseIf",
+    "..",
+]
+
+# ── Complexity thresholds ────────────────────────────────────────────
+# COM wrappers are shallow (one dispatch call each) so keep complexity
+# ceilings tight to flag any function that outgrows the pattern.
+cognitive-complexity-threshold = 20
+too-many-lines-threshold       = 80
+
+# ── Public API stability ─────────────────────────────────────────────
+# Pre-1.0 crate: the public surface is still evolving.  Suppress lints
+# that would otherwise discourage a breaking signature change.
+avoid-breaking-exported-api = false
+
+

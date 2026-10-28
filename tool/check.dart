@@ -50,6 +50,8 @@ Future<Map<String, String>> readTree(Directory root) async {
 final RegExp _sha40 = RegExp(r'^[0-9a-f]{40}$');
 final RegExp _sha64 = RegExp(r'^[0-9a-f]{64}$');
 final RegExp _ownerRepo = RegExp(r'^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$');
+
+final RegExp _host = RegExp(r'^[a-z0-9.-]+\.[a-z]{2,}$');
 final RegExp _isoDate = RegExp(r'^\d{4}-\d{2}-\d{2}$');
 
 /// The files a source directory holds beside those its manifest lists.
@@ -246,6 +248,7 @@ class Check {
     if (list == null) return;
     for (final entry in list) {
       string('candidates.json', entry, 'repo', pattern: _ownerRepo);
+      string('candidates.json', entry, 'host', pattern: _host, required: false);
       string('candidates.json', entry, 'commit', pattern: _sha40);
       string('candidates.json', entry, 'reason');
     }

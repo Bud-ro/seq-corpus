@@ -1,0 +1,34 @@
+[package]
+name = "rs-teststand-sys"
+version.workspace = true
+description = "Low-level COM interop layer for the National Instruments TestStand™ COM API. All unsafe code in the rs-teststand workspace lives here"
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+keywords.workspace = true
+categories.workspace = true
+readme = "README.md"
+
+[package.metadata.docs.rs]
+# This crate wraps a Windows COM API and does not build for Linux, which is what
+# docs.rs targets by default. Point it at Windows so the documentation builds.
+default-target = "x86_64-pc-windows-msvc"
+# `default-target` is built as well as these, so it is not repeated here.
+targets = ["i686-pc-windows-msvc"]
+all-features = true
+
+[dependencies]
+windows-core = "0.62.2"
+windows = { version = "0.62.2", features = [
+    "Win32_System_Com",
+    "Win32_System_Ole",
+    "Win32_System_Variant",
+    "Win32_Foundation",
+    "Win32_Globalization",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_System_Threading",
+] }
+
+[lints]
+workspace = true

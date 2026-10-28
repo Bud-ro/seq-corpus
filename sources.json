@@ -192,6 +192,14 @@
   "bytes": 1463365
  },
  {
+  "name": "TheDomcio__rs-teststand",
+  "repo": "TheDomcio/rs-teststand",
+  "commit": "6bf62437b1c1fb653bc29be73a0cd545d84dd109",
+  "license": "MIT",
+  "files": 348,
+  "bytes": 2223377
+ },
+ {
   "name": "astemes__astemes-csv-report-teststand-plugin",
   "repo": "astemes/astemes-csv-report-teststand-plugin",
   "commit": "f13915451f8f874b8a7c34f2d80778d61b509ed8",
@@ -232,6 +240,14 @@
   "bytes": 1812860
  },
  {
+  "name": "le-rominger__ml-dev-summit-2023",
+  "repo": "le-rominger/ml-dev-summit-2023",
+  "commit": "294f156d6176ac72f98546a3d17303fa37690c96",
+  "license": "MIT",
+  "files": 96,
+  "bytes": 2671583
+ },
+ {
   "name": "levylabpitt__TestStand",
   "repo": "levylabpitt/TestStand",
   "commit": "e6a93d99a1e830658ccc7c6baf74012fa42e441b",
@@ -248,12 +264,84 @@
   "bytes": 2635726
  },
  {
+  "name": "negentropicdev__lv-hts",
+  "repo": "negentropicdev/lv-hts",
+  "commit": "3a6a4aa8674a52804e78aad871518e40cb910b9d",
+  "license": "MIT",
+  "files": 95,
+  "bytes": 2720032
+ },
+ {
+  "name": "ni__FPT",
+  "repo": "ni/FPT",
+  "commit": "99d26e6ffceca898e33c0a0512af2e906e2b5510",
+  "license": "MIT",
+  "files": 392,
+  "bytes": 10515942
+ },
+ {
+  "name": "ni__arbitrary-session-management",
+  "repo": "ni/arbitrary-session-management",
+  "commit": "eb8697fc69072197d99b49f334548847290cc2bb",
+  "license": "MIT",
+  "files": 122,
+  "bytes": 1274685
+ },
+ {
+  "name": "ni__custom-grpc-drivers",
+  "repo": "ni/custom-grpc-drivers",
+  "commit": "042f7fc332e3378353e087ff8254220d33e6800a",
+  "license": "MIT",
+  "files": 559,
+  "bytes": 11740109
+ },
+ {
+  "name": "ni__enhancing-validation-efficiency-pxi-intelligent-tools",
+  "repo": "ni/enhancing-validation-efficiency-pxi-intelligent-tools",
+  "commit": "84582861130bdc17b17c09fd0e4caada006cb31d",
+  "license": "MIT",
+  "files": 55,
+  "bytes": 928788
+ },
+ {
   "name": "ni__grpc-teststand-api",
   "repo": "ni/grpc-teststand-api",
   "commit": "bffa744c44dfcd45847898da813104855f2401c4",
   "license": "MIT",
   "files": 87,
   "bytes": 2582341
+ },
+ {
+  "name": "ni__instrumentstudio-screenshot-utility-labview",
+  "repo": "ni/instrumentstudio-screenshot-utility-labview",
+  "commit": "9320c877c6df7f74caab8c0f95668ac9fb205d86",
+  "license": "MIT",
+  "files": 14,
+  "bytes": 133337
+ },
+ {
+  "name": "ni__instrumentstudio-screenshot-utility-python",
+  "repo": "ni/instrumentstudio-screenshot-utility-python",
+  "commit": "10b3210f8add27a4cfa3e123468874265c8ce6da",
+  "license": "MIT",
+  "files": 9,
+  "bytes": 31760
+ },
+ {
+  "name": "ni__measurement-plugin-abstraction-layer-labview",
+  "repo": "ni/measurement-plugin-abstraction-layer-labview",
+  "commit": "cc8d3e4f7814d6bc519459fee79285f86bb432db",
+  "license": "MIT",
+  "files": 180,
+  "bytes": 4971947
+ },
+ {
+  "name": "ni__measurement-plugin-converter-labview",
+  "repo": "ni/measurement-plugin-converter-labview",
+  "commit": "68d64d26cdc1add8a5817cd77dff4bcadab32e95",
+  "license": "MIT",
+  "files": 1200,
+  "bytes": 22246969
  },
  {
   "name": "ni__measurement-plugin-labview",
@@ -280,6 +368,14 @@
   "bytes": 1721945
  },
  {
+  "name": "ni__nipcbatt-dotnet",
+  "repo": "ni/nipcbatt-dotnet",
+  "commit": "c36b7b5445def722dee9096fff7f46b2faf1683f",
+  "license": "MIT",
+  "files": 106,
+  "bytes": 1102894
+ },
+ {
   "name": "ni__nipcbatt-labview",
   "repo": "ni/nipcbatt-labview",
   "commit": "9f5e339104d64a374ccf46c4c8caf805d6c23148",
@@ -298,10 +394,10 @@
  {
   "name": "ni__semi-test-library-dotnet",
   "repo": "ni/semi-test-library-dotnet",
-  "commit": "1bffd0d77c98c7898e73f5e39262749a701170c5",
+  "commit": "721b76e700c5969984ca924d603be8b1280e9846",
   "license": "MIT",
-  "files": 456,
-  "bytes": 8813026
+  "files": 517,
+  "bytes": 10062530
  },
  {
   "name": "ni__stsmemsapt",

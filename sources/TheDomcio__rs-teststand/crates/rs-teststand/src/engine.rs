@@ -1,0 +1,2783 @@
+//! The `Engine`, root of the object model and factory for everything else.
+
+use rs_teststand_sys::{Dispatch, InvokeArgument, OutKind, Value, create_dispatch};
+
+#[path = "engine_startup.rs"]
+mod startup;
+
+use rs_teststand_sys::DialogInfo;
+
+use crate::dispids::engine as dispid;
+use crate::error::Error;
+use crate::expression::{EvaluationOptions, ExpressionError};
+
+/// ProgID of the version-independent engine coclass. Resolves to the active
+/// installation's engine library via the registry.
+const ENGINE_PROG_ID: &str = "TestStand.Engine";
+
+/// The TestStand™ Engine.
+///
+/// Constructing an `Engine` creates the underlying COM object; dropping it
+/// releases it. It is the entry point of the API:
+///
+/// ```no_run
+/// use rs_teststand::Engine;
+///
+/// let engine = Engine::new()?;
+/// println!("TestStand {}", engine.version_string()?);
+/// # Ok::<(), rs_teststand::Error>(())
+/// ```
+#[derive(Debug)]
+pub struct Engine {
+    dispatch: Box<dyn Dispatch>,
+    /// Dialogs closed while this engine was being created. See
+    /// [`startup_dialogs`](Engine::startup_dialogs).
+    startup_dialogs: Vec<DialogInfo>,
+}
+
+impl Engine {
+    /// An owned handle to the same engine, for passing it back to a member.
+    pub(crate) fn duplicate_dispatch(&self) -> Option<Box<dyn Dispatch>> {
+        self.dispatch.duplicate()
+    }
+
+    /// Creates the engine (STA COM apartment plus the `TestStand.Engine` object).
+    ///
+    /// # Errors
+    /// [`Error::Com`] if COM cannot be initialized or the engine class
+    /// cannot be created (e.g. no TestStand™ installation is registered).
+    pub fn new() -> Result<Self, Error> {
+        // Creating the engine can itself raise a dialog, before any option can
+        // be set, see the `startup` module. The sweeper has to be running
+        // before the call, because the call is what blocks.
+        let sweeper = startup::Sweeper::start();
+        let dispatch = create_dispatch(ENGINE_PROG_ID);
+        let startup_dialogs = sweeper.stop();
+        let engine = Self {
+            dispatch: Box::new(dispatch?),
+            startup_dialogs,
+        };
+        engine.suppress_modal_dialogs();
+        engine.load_type_palettes();
+        Ok(engine)
+    }
+
+    /// Creates the engine in a selected environment
+    /// (`EngineInitializationSettings.SetEnvironmentPath` + `Engine`).
+    ///
+    /// `path` names a `.tsenv` file. Pass an empty string for the global
+    /// environment. The settings object lives only for this call; the engine it
+    /// creates keeps the environment.
+    ///
+    /// # Errors
+    /// [`Error`] if the environment file is missing or unreadable, or the engine
+    /// cannot be created.
+    pub fn new_with_environment(path: &str) -> Result<Self, Error> {
+        let settings = crate::EngineInitializationSettings::new()?;
+        settings.set_environment_path(path)?;
+        Self::new()
+    }
+
+    /// Dialogs that were closed while this engine was being created.
+    ///
+    /// A non-empty list is worth logging: it is the only record that something
+    /// asked a question and was answered by closing the window.
+    ///
+    /// Empty means nothing *owned by this process* was found, which is not the
+    /// same as no dialog having appeared. Detection cannot see another
+    /// process's windows, and whether the engine's unreleased-files warning is
+    /// raised in-process has not been established. Do not treat an empty list
+    /// as proof that startup was clean.
+    #[must_use]
+    pub fn startup_dialogs(&self) -> &[DialogInfo] {
+        &self.startup_dialogs
+    }
+
+    /// Loads the station's type palettes.
+    ///
+    /// Step types live in the palettes, so without this
+    /// [`new_step`](Self::new_step) fails with `TS_Err_StepTypeNotFound` for
+    /// every built-in type. The sequence editor does this as it starts; an
+    /// engine created directly over COM does not, so the crate does it here.
+    ///
+    /// Conflicts are resolved by failing rather than prompting, and a failure
+    /// is ignored for the same reason the dialog settings are: a station with
+    /// no palettes configured is still a usable engine.
+    fn load_type_palettes(&self) {
+        let _ = self.load_type_palette_files_ex(crate::ConflictHandler::Error, 0);
+    }
+
+    /// Loads the type palette files (`Engine.LoadTypePaletteFilesEx`).
+    ///
+    /// Called during construction; exposed for a caller that reconfigures the
+    /// palette list and needs to reload.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails.
+    pub fn load_type_palette_files_ex(
+        &self,
+        handler: crate::ConflictHandler,
+        options: i32,
+    ) -> Result<(), Error> {
+        self.dispatch.call(
+            dispid::LOAD_TYPE_PALETTE_FILES_EX,
+            &[Value::I32(handler.bits()), Value::I32(options)],
+        )?;
+        Ok(())
+    }
+
+    /// Loads the type palette files (`Engine.LoadTypePaletteFiles`).
+    ///
+    /// The older form, without conflict handling. Kept because it is the member
+    /// available on engines from TestStand 2016.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails.
+    pub fn load_type_palette_files(&self) -> Result<(), Error> {
+        self.dispatch.call(dispid::LOAD_TYPE_PALETTE_FILES, &[])?;
+        Ok(())
+    }
+
+    /// Unloads the type palette files (`Engine.UnloadTypePaletteFiles`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails.
+    pub fn unload_type_palette_files(&self) -> Result<(), Error> {
+        self.dispatch.call(dispid::UNLOAD_TYPE_PALETTE_FILES, &[])?;
+        Ok(())
+    }
+
+    /// Creates a CSV input stream (`Engine.NewCsvFileInputRecordStream`).
+    ///
+    /// CSV record streams exist from TestStand 2017 onward. On an older engine
+    /// this returns [`Error::Unsupported`] before dispatching.
+    ///
+    /// # Errors
+    /// [`Error::Unsupported`] on an engine older than 2017, or [`Error`] if the
+    /// file cannot be opened.
+    pub fn new_csv_file_input_record_stream(
+        &self,
+        absolute_path: &str,
+    ) -> Result<crate::CsvFileInputRecordStream, Error> {
+        self.require_major(17, "CSV record streams")?;
+        Ok(crate::CsvFileInputRecordStream::new(
+            self.dispatch
+                .call(
+                    dispid::NEW_CSV_FILE_INPUT_RECORD_STREAM,
+                    &[Value::Str(absolute_path.to_owned())],
+                )?
+                .into_object()?,
+        ))
+    }
+
+    /// Creates a CSV output stream
+    /// (`Engine.NewCsvFileOutputRecordStream`).
+    ///
+    /// CSV record streams exist from TestStand 2017 onward. On an older engine
+    /// this returns [`Error::Unsupported`] before dispatching.
+    ///
+    /// # Errors
+    /// [`Error::Unsupported`] on an engine older than 2017, or [`Error`] if the
+    /// file cannot be opened.
+    pub fn new_csv_file_output_record_stream(
+        &self,
+        absolute_path: &str,
+        open_mode: crate::FileOpenMode,
+    ) -> Result<crate::CsvFileOutputRecordStream, Error> {
+        self.require_major(17, "CSV record streams")?;
+        Ok(crate::CsvFileOutputRecordStream::new(
+            self.dispatch
+                .call(
+                    dispid::NEW_CSV_FILE_OUTPUT_RECORD_STREAM,
+                    &[
+                        Value::Str(absolute_path.to_owned()),
+                        Value::I32(open_mode.bits()),
+                    ],
+                )?
+                .into_object()?,
+        ))
+    }
+
+    /// Refuses a feature on an engine older than `minimum_major`.
+    fn require_major(&self, minimum_major: i32, feature: &'static str) -> Result<(), Error> {
+        let actual_major = self.major_version()?;
+        if actual_major < minimum_major {
+            return Err(Error::Unsupported {
+                feature,
+                minimum_major,
+                actual_major,
+            });
+        }
+        Ok(())
+    }
+
+    /// The type palette files currently loaded
+    /// (`Engine.GetTypePaletteFileList`).    ///
+    /// The returned files preserve the engine's order. Each one can be inspected
+    /// through its property tree or removed from the next
+    /// [`set_type_palette_file_list`](Self::set_type_palette_file_list).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn get_type_palette_file_list(&self) -> Result<Vec<crate::PropertyObjectFile>, Error> {
+        Ok(self
+            .dispatch
+            .call(dispid::GET_TYPE_PALETTE_FILE_LIST, &[])?
+            .into_object_array()?
+            .into_iter()
+            .map(crate::PropertyObjectFile::new)
+            .collect())
+    }
+
+    /// Replaces the loaded type palette files
+    /// (`Engine.SetTypePaletteFileList`).
+    ///
+    /// This changes the configured list; call
+    /// [`load_type_palette_files_ex`](Self::load_type_palette_files_ex) or
+    /// [`load_type_palette_files`](Self::load_type_palette_files) afterwards to
+    /// load the new set.
+    ///
+    /// # Errors
+    /// [`Error`] if a file has no COM identity or the COM call fails.
+    pub fn set_type_palette_file_list(
+        &self,
+        files: &[crate::PropertyObjectFile],
+    ) -> Result<(), Error> {
+        let mut handles = Vec::with_capacity(files.len());
+        for file in files {
+            handles.push(file.duplicate_dispatch().ok_or(Error::UnexpectedType {
+                expected: "a live property object file",
+                actual: "a test fake with no COM identity",
+            })?);
+        }
+        self.dispatch.call(
+            dispid::SET_TYPE_PALETTE_FILE_LIST,
+            &[Value::ObjectArray(handles)],
+        )?;
+        Ok(())
+    }
+
+    /// Compares two sequence files (`Engine.DiffSequenceFiles`).
+    ///
+    /// The result is a difference tree; call
+    /// [`SequenceFileDiffer::diff_sequence_files`](crate::SequenceFileDiffer::diff_sequence_files)
+    /// if the tree must be recomputed after a change.
+    ///
+    /// # Errors
+    /// [`Error`] if a file has no COM identity or the COM call fails.
+    pub fn diff_sequence_files(
+        &self,
+        file1: &crate::SequenceFile,
+        file2: &crate::SequenceFile,
+        options: crate::SequenceFileDifferOptions,
+    ) -> Result<crate::SequenceFileDiffer, Error> {
+        let file1 = file1.duplicate_dispatch().ok_or(Error::UnexpectedType {
+            expected: "a live sequence file",
+            actual: "a test fake with no COM identity",
+        })?;
+        let file2 = file2.duplicate_dispatch().ok_or(Error::UnexpectedType {
+            expected: "a live sequence file",
+            actual: "a test fake with no COM identity",
+        })?;
+        Ok(crate::SequenceFileDiffer::new(
+            self.dispatch
+                .call(
+                    dispid::DIFF_SEQUENCE_FILES,
+                    &[
+                        Value::Object(file1),
+                        Value::Object(file2),
+                        Value::I32(options.bits()),
+                    ],
+                )?
+                .into_object()?,
+        ))
+    }
+
+    /// The names of every type currently loaded (`Engine.GetTypeNames`).
+    ///
+    /// Includes step types, custom data types, and the built-in types. Use
+    /// [`get_type_definition`](Self::get_type_definition) to inspect one.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn get_type_names(&self) -> Result<Vec<String>, Error> {
+        Ok(self
+            .dispatch
+            .call(dispid::GET_TYPE_NAMES, &[])?
+            .into_string_array()?)
+    }
+
+    /// The definition of a loaded type (`Engine.GetTypeDefinition`).
+    ///
+    /// The definition is a property tree. Its `TypeCategory` subproperty tells
+    /// a step type from a custom data type or a standard type.
+    ///
+    /// # Errors
+    /// [`Error`] if no type has that name or the COM call returns an unexpected
+    /// type.
+    pub fn get_type_definition(&self, type_name: &str) -> Result<crate::PropertyObject, Error> {
+        Ok(crate::PropertyObject::new(
+            self.dispatch
+                .call(
+                    dispid::GET_TYPE_DEFINITION,
+                    &[Value::Str(type_name.to_owned())],
+                )?
+                .into_object()?,
+        ))
+    }
+
+    /// How many adapters the station knows (`Engine.NumAdapters`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn num_adapters(&self) -> Result<i32, Error> {
+        Ok(self.dispatch.get(dispid::NUM_ADAPTERS)?.as_i32()?)
+    }
+
+    /// An adapter by index (`Engine.GetAdapter`).
+    ///
+    /// # Errors
+    /// [`Error`] if the index is out of range or the COM call returns an
+    /// unexpected type.
+    pub fn get_adapter(&self, index: i32) -> Result<crate::Adapter, Error> {
+        Ok(crate::Adapter::new(
+            self.dispatch
+                .call(dispid::GET_ADAPTER, &[Value::I32(index)])?
+                .into_object()?,
+        ))
+    }
+
+    /// An adapter by key name (`Engine.GetAdapterByKeyName`).
+    ///
+    /// # Errors
+    /// [`Error`] if no adapter has that key or the COM call returns an
+    /// unexpected type.
+    pub fn get_adapter_by_key_name(&self, key_name: &str) -> Result<crate::Adapter, Error> {
+        Ok(crate::Adapter::new(
+            self.dispatch
+                .call(
+                    dispid::GET_ADAPTER_BY_KEY_NAME,
+                    &[Value::Str(key_name.to_owned())],
+                )?
+                .into_object()?,
+        ))
+    }
+
+    /// Whether the engine records output messages
+    /// (`Engine.OutputMessagesEnabled`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn output_messages_enabled(&self) -> Result<bool, Error> {
+        Ok(self
+            .dispatch
+            .get(dispid::OUTPUT_MESSAGES_ENABLED)?
+            .as_bool()?)
+    }
+
+    /// Sets whether the engine records output messages
+    /// (`Engine.OutputMessagesEnabled`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails.
+    pub fn set_output_messages_enabled(&self, enabled: bool) -> Result<(), Error> {
+        self.dispatch
+            .put(dispid::OUTPUT_MESSAGES_ENABLED, Value::Bool(enabled))?;
+        Ok(())
+    }
+
+    /// The engine's output messages (`Engine.GetOutputMessages`).
+    ///
+    /// The engine marks this member obsolete, but it remains the way to read
+    /// the messages already in the output pane.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn get_output_messages(&self) -> Result<crate::OutputMessages, Error> {
+        Ok(crate::OutputMessages::new(
+            self.dispatch
+                .call(dispid::GET_OUTPUT_MESSAGES, &[])?
+                .into_object()?,
+        ))
+    }
+
+    /// Creates an output message (`Engine.NewOutputMessage`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn new_output_message(
+        &self,
+        message_text: &str,
+        category_text: &str,
+        severity: crate::OutputMessageSeverity,
+        sequence_context: Option<&crate::SequenceContext>,
+    ) -> Result<crate::OutputMessage, Error> {
+        let context = match sequence_context {
+            Some(context) => {
+                Value::Object(context.duplicate_dispatch().ok_or(Error::UnexpectedType {
+                    expected: "a live sequence context",
+                    actual: "a test fake with no COM identity",
+                })?)
+            }
+            None => Value::NullObject,
+        };
+        Ok(crate::OutputMessage::new(
+            self.dispatch
+                .call(
+                    dispid::NEW_OUTPUT_MESSAGE,
+                    &[
+                        Value::Str(message_text.to_owned()),
+                        Value::Str(category_text.to_owned()),
+                        Value::I32(severity.as_i32()),
+                        context,
+                    ],
+                )?
+                .into_object()?,
+        ))
+    }
+
+    /// Creates an empty output message collection
+    /// (`Engine.NewOutputMessages`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn new_output_messages(&self) -> Result<crate::OutputMessages, Error> {
+        Ok(crate::OutputMessages::new(
+            self.dispatch
+                .call(dispid::NEW_OUTPUT_MESSAGES, &[])?
+                .into_object()?,
+        ))
+    }
+
+    /// The engine's undo limit (`Engine.UndoLimit`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn undo_limit(&self) -> Result<i32, Error> {
+        Ok(self.dispatch.get(dispid::UNDO_LIMIT)?.as_i32()?)
+    }
+
+    /// Sets the engine's undo limit (`Engine.UndoLimit`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails.
+    pub fn set_undo_limit(&self, limit: i32) -> Result<(), Error> {
+        self.dispatch.put(dispid::UNDO_LIMIT, Value::I32(limit))?;
+        Ok(())
+    }
+
+    /// Creates an undo stack (`Engine.NewUndoStack`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn new_undo_stack(&self) -> Result<crate::undo::UndoStack, Error> {
+        Ok(crate::undo::UndoStack::new(
+            self.dispatch
+                .call(dispid::NEW_UNDO_STACK, &[])?
+                .into_object()?,
+        ))
+    }
+
+    /// Creates an undo item creator (`Engine.NewUndoItemCreator`).
+    ///
+    /// # Errors
+    /// [`Error`] if the file has no COM identity or the COM call fails.
+    pub fn new_undo_item_creator(
+        &self,
+        kind: crate::undo::EditKind,
+        edited_file: &crate::PropertyObjectFile,
+        edit_description: &str,
+    ) -> Result<crate::undo::UndoItemCreator, Error> {
+        let file = edited_file
+            .duplicate_dispatch()
+            .ok_or(Error::UnexpectedType {
+                expected: "a live property-object file",
+                actual: "a test fake with no COM identity",
+            })?;
+        Ok(crate::undo::UndoItemCreator::new(
+            self.dispatch
+                .call(
+                    dispid::NEW_UNDO_ITEM_CREATOR,
+                    &[
+                        Value::I32(kind.as_i32()),
+                        Value::Object(file),
+                        Value::Str(edit_description.to_owned()),
+                    ],
+                )?
+                .into_object()?,
+        ))
+    }
+
+    /// Serializes property objects into a string
+    /// (`Engine.SerializeObjects`).
+    ///
+    /// # Errors
+    /// [`Error`] if an object has no COM identity or the COM call fails.
+    pub fn serialize_objects(
+        &self,
+        objects: &[&crate::PropertyObject],
+        options: i32,
+    ) -> Result<String, Error> {
+        let mut handles = Vec::with_capacity(objects.len());
+        for object in objects {
+            handles.push(object.duplicate_dispatch().ok_or(Error::UnexpectedType {
+                expected: "a live property object",
+                actual: "a test fake with no COM identity",
+            })?);
+        }
+        Ok(self
+            .dispatch
+            .call(
+                dispid::SERIALIZE_OBJECTS,
+                &[Value::ObjectArray(handles), Value::I32(options)],
+            )?
+            .into_string()?)
+    }
+
+    /// Converts serialized content into property objects
+    /// (`Engine.UnserializeObjects`).
+    ///
+    /// # Errors
+    /// [`Error`] if the stream is invalid or the COM call returns an
+    /// unexpected type.
+    pub fn unserialize_objects(
+        &self,
+        stream: &str,
+        reserved_param: i32,
+        handler_type: i32,
+    ) -> Result<Vec<crate::PropertyObject>, Error> {
+        Ok(self
+            .dispatch
+            .call(
+                dispid::UNSERIALIZE_OBJECTS,
+                &[
+                    Value::Str(stream.to_owned()),
+                    Value::I32(reserved_param),
+                    Value::I32(handler_type),
+                ],
+            )?
+            .into_object_array()?
+            .into_iter()
+            .map(crate::PropertyObject::new)
+            .collect())
+    }
+
+    /// Creates a results-file writer (`Engine.NewResultLogger`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn new_result_logger(&self) -> Result<crate::ResultLogger, Error> {
+        Ok(crate::ResultLogger::new(
+            self.dispatch
+                .call(dispid::NEW_RESULT_LOGGER, &[])?
+                .into_object()?,
+        ))
+    }
+
+    /// Creates a results log for reading a results file
+    /// (`Engine.NewResultLog`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn new_result_log(&self) -> Result<crate::ResultLog, Error> {
+        Ok(crate::ResultLog::new(
+            self.dispatch
+                .call(dispid::NEW_RESULT_LOG, &[])?
+                .into_object()?,
+        ))
+    }
+
+    /// Creates a custom step type (`Engine.NewStepType`).
+    ///
+    /// The returned type is empty until it is configured through its property
+    /// tree; `Step.ChangeStepType` can then apply it to a step.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn new_step_type(&self) -> Result<crate::StepType, Error> {
+        Ok(crate::StepType::new(
+            self.dispatch
+                .call(dispid::NEW_STEP_TYPE, &[])?
+                .into_object()?,
+        ))
+    }
+
+    /// Searches the configured directories for a file
+    /// (`Engine.FindFile`).
+    ///
+    /// The reference marks `FindFile` obsolete in favor of `FindFileEx`.
+    /// `FindFileEx` is present in the 2026 type library but absent from 2016,
+    /// and its minimum version is not confirmed, so this wrapper binds the
+    /// compatibility member.
+    ///
+    /// `current_sequence_file` is optional; when supplied, the search begins in
+    /// that file's directory if the station enables the current sequence-file
+    /// directory.
+    ///
+    /// # Errors
+    /// [`Error`] if the sequence file has no COM identity or the COM call
+    /// fails.
+    pub fn find_file(
+        &self,
+        file_to_find: &str,
+        prompt: crate::find::FindFilePromptOption,
+        search_list: crate::find::FindFileSearchListOption,
+        is_command: bool,
+        current_sequence_file: Option<&crate::SequenceFile>,
+    ) -> Result<crate::find::FindFileResult, Error> {
+        let context = match current_sequence_file {
+            Some(file) => {
+                Value::Object(file.duplicate_dispatch().ok_or(Error::UnexpectedType {
+                    expected: "a live sequence file",
+                    actual: "a test fake with no COM identity",
+                })?)
+            }
+            None => Value::Empty,
+        };
+        let (found, outputs) = self.dispatch.call_with_arguments(
+            dispid::FIND_FILE,
+            &[
+                InvokeArgument::Value(Value::Str(file_to_find.to_owned())),
+                InvokeArgument::Output(OutKind::Text),
+                InvokeArgument::Output(OutKind::Bool),
+                InvokeArgument::Value(Value::I32(prompt.as_i32())),
+                InvokeArgument::Value(Value::I32(search_list.as_i32())),
+                InvokeArgument::Value(Value::Bool(is_command)),
+                InvokeArgument::Value(context),
+            ],
+        )?;
+        let mut outputs = outputs.into_iter();
+        let absolute_path = outputs
+            .next()
+            .ok_or(Error::UnexpectedType {
+                expected: "an absolute path",
+                actual: "the engine returned no output",
+            })?
+            .into_string()?;
+        let user_cancelled = outputs
+            .next()
+            .ok_or(Error::UnexpectedType {
+                expected: "a cancellation flag",
+                actual: "the engine returned no output",
+            })?
+            .as_bool()?;
+        Ok(crate::find::FindFileResult {
+            found: found.as_bool()?,
+            absolute_path: (!absolute_path.is_empty()).then_some(absolute_path),
+            user_cancelled,
+        })
+    }
+
+    /// Searches the configured directories for a file or directory
+    /// (`Engine.FindPath`).
+    ///
+    /// # Errors
+    /// [`Error`] if the sequence file has no COM identity or the COM call
+    /// fails.
+    pub fn find_path(
+        &self,
+        path_to_find: &str,
+        current_sequence_file: Option<&crate::SequenceFile>,
+    ) -> Result<crate::find::FindPathResult, Error> {
+        let context = match current_sequence_file {
+            Some(file) => {
+                Value::Object(file.duplicate_dispatch().ok_or(Error::UnexpectedType {
+                    expected: "a live sequence file",
+                    actual: "a test fake with no COM identity",
+                })?)
+            }
+            None => Value::Empty,
+        };
+        let (found, outputs) = self.dispatch.call_with_arguments(
+            dispid::FIND_PATH,
+            &[
+                InvokeArgument::Value(Value::Str(path_to_find.to_owned())),
+                InvokeArgument::Output(OutKind::Text),
+                InvokeArgument::Output(OutKind::Int),
+                InvokeArgument::Value(context),
+            ],
+        )?;
+        let mut outputs = outputs.into_iter();
+        let absolute_path = outputs
+            .next()
+            .ok_or(Error::UnexpectedType {
+                expected: "an absolute path",
+                actual: "the engine returned no output",
+            })?
+            .into_string()?;
+        let status = outputs
+            .next()
+            .ok_or(Error::UnexpectedType {
+                expected: "a status",
+                actual: "the engine returned no output",
+            })?
+            .as_i32()?;
+        Ok(crate::find::FindPathResult {
+            found: found.as_bool()?,
+            absolute_path: (!absolute_path.is_empty()).then_some(absolute_path),
+            status: crate::find::FindPathStatus::from_i32(status),
+        })
+    }
+
+    /// The synchronization manager for a named object
+    /// (`Engine.GetSyncManager`).
+    ///
+    /// The name selects the manager: a plain name is in-process, a leading
+    /// `*` is out-of-process, and a `\\machine\object` name is remote.
+    ///
+    /// # Errors
+    /// [`Error`] if the engine cannot create or reach the manager, or the COM
+    /// call returns an unexpected type.
+    pub fn get_sync_manager(&self, sync_object_name: &str) -> Result<crate::SyncManager, Error> {
+        Ok(crate::SyncManager::new(
+            self.dispatch
+                .call(
+                    dispid::GET_SYNC_MANAGER,
+                    &[Value::Str(sync_object_name.to_owned())],
+                )?
+                .into_object()?,
+        ))
+    }
+
+    /// Searches files and open property trees (`Engine.SearchFiles`).
+    ///
+    /// `open_files` are already-loaded files to search; pass an empty slice to
+    /// search only what `directories_and_paths` names. The engine performs the
+    /// search asynchronously, so wait on
+    /// [`SearchResults::is_complete`](crate::SearchResults::is_complete) before
+    /// reading matches.
+    ///
+    /// # Errors
+    /// [`Error`] if a file has no COM identity or the COM call fails.
+    #[allow(clippy::too_many_arguments, reason = "mirrors the COM signature")]
+    pub fn search_files(
+        &self,
+        search_string: &str,
+        options: crate::SearchOptions,
+        filter_options: crate::SearchFilterOptions,
+        elements: crate::SearchElements,
+        limit_to_adapters: &[String],
+        limit_to_named_properties: &[String],
+        limit_to_named_types: &[String],
+        open_files: &[crate::PropertyObjectFile],
+        directories_and_paths: &[String],
+    ) -> Result<crate::SearchResults, Error> {
+        let mut files = Vec::with_capacity(open_files.len());
+        for file in open_files {
+            files.push(file.duplicate_dispatch().ok_or(Error::UnexpectedType {
+                expected: "a live property object file",
+                actual: "a test fake with no COM identity",
+            })?);
+        }
+        Ok(crate::SearchResults::new(
+            self.dispatch
+                .call(
+                    dispid::SEARCH_FILES,
+                    &[
+                        Value::Str(search_string.to_owned()),
+                        Value::I32(options.bits()),
+                        Value::I32(filter_options.bits()),
+                        Value::I32(elements.bits()),
+                        Value::StrArray(limit_to_adapters.to_vec()),
+                        Value::StrArray(limit_to_named_properties.to_vec()),
+                        Value::StrArray(limit_to_named_types.to_vec()),
+                        Value::ObjectArray(files),
+                        Value::StrArray(directories_and_paths.to_vec()),
+                    ],
+                )?
+                .into_object()?,
+        ))
+    }
+
+    /// Points the station's dialog-raising options at their non-interactive
+    /// settings for this session.
+    ///
+    /// A modal dialog is fatal to an unattended host: no one is there to
+    /// dismiss it, so the call blocks forever. That is unacceptable for CI,
+    /// provisioning, or a long-lived service, so engine construction always
+    /// applies these.
+    ///
+    /// Failures are deliberately ignored: an engine that cannot be configured
+    /// is still usable, and construction must not fail over a hardening step.
+    ///
+    /// One gap is worth knowing about. Automatic login uses the operating
+    /// system identity and skips password authentication, but only if that
+    /// account is also a known engine user; if it is not, the engine falls back
+    /// to asking, which is the one dialog this method cannot rule out. A
+    /// station that runs headless should therefore have its service account
+    /// present in the user file. Guard the first calls with a
+    /// [`Watchdog`](crate::Watchdog) if that cannot be guaranteed.
+    ///
+    /// Tracing is left alone. Only the execution bits that halt and wait for a
+    /// person are cleared, so a host keeps whatever tracing the station was
+    /// configured for, see [`ExecutionMask`](crate::ExecutionMask).
+    fn suppress_modal_dialogs(&self) {
+        let Ok(options) = self.station_options() else {
+            return;
+        };
+
+        // A run-time error must resolve itself rather than prompt.
+        let _ = options.set_rte_option(crate::RunTimeErrorOption::Abort);
+
+        // Every prompt the engine can raise while loading or editing files.
+        let _ = options.set_prompt_to_find_files(false);
+        let _ = options.set_type_version_auto_increment_prompt_opt(false);
+        let _ = options.set_use_dialog_for_check_out(false);
+        let _ = options.set_prompt_when_adding_files_to_sc(false);
+        let _ = options.set_check_out_files_when_edited(false);
+
+        // Logging in must never stop on a dialog. Privilege checking off and
+        // login not required means no gate; auto-login uses the operating
+        // system identity, which the engine accepts without asking for a
+        // password. The residual risk is documented on this method.
+        let _ = options.set_enable_user_privilege_checking(false);
+        let _ = options.set_require_user_login(false);
+        let _ = options.set_auto_login_system_user(true);
+
+        // Read-modify-write, for the same reason as the execution mask below:
+        // only two debug bits raise a dialog at shutdown, and the rest are
+        // choices the operator made. Clearing all of them would silently turn
+        // off stack and buffer checking on somebody's station.
+        if let Ok(current) = options.debug_options() {
+            let quiet = current.difference(crate::DebugOptions::MODAL_ON_SHUTDOWN);
+            let _ = options.set_debug_options(quiet);
+        }
+
+        // Read-modify-write: keep the station's tracing choices, drop only the
+        // break bits, which suspend an execution until an operator acts.
+        if let Ok(current) = options.execution_mask() {
+            let running = current.difference(crate::ExecutionMask::BREAKS);
+            let _ = options.set_execution_mask(running);
+        }
+    }
+
+    /// The engine's major version number (`Engine.MajorVersion`): the two-digit
+    /// major, so TestStand™ 2026 reports `26` and 2016 reports `16`.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn major_version(&self) -> Result<i32, Error> {
+        Ok(self.dispatch.get(dispid::MAJOR_VERSION)?.as_i32()?)
+    }
+
+    /// The engine's minor version number (`Engine.MinorVersion`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn minor_version(&self) -> Result<i32, Error> {
+        Ok(self.dispatch.get(dispid::MINOR_VERSION)?.as_i32()?)
+    }
+
+    /// The engine's revision version number (`Engine.RevisionVersion`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn revision_version(&self) -> Result<i32, Error> {
+        Ok(self.dispatch.get(dispid::REVISION_VERSION)?.as_i32()?)
+    }
+
+    /// The engine's build version number (`Engine.BuildVersion`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn build_version(&self) -> Result<i32, Error> {
+        Ok(self.dispatch.get(dispid::BUILD_VERSION)?.as_i32()?)
+    }
+
+    /// The engine's full version string (`Engine.VersionString`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn version_string(&self) -> Result<String, Error> {
+        Ok(self.dispatch.get(dispid::VERSION_STRING)?.into_string()?)
+    }
+
+    /// Returns `true` if the TestStand™ engine is running as a 64-bit process (`Engine.Is64Bit`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn is_64bit(&self) -> Result<bool, Error> {
+        Ok(self.dispatch.get(dispid::IS_64BIT)?.as_bool()?)
+    }
+
+    /// The path to the TestStand™ root directory (`Engine.TestStandDirectory`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn teststand_directory(&self) -> Result<String, Error> {
+        Ok(self
+            .dispatch
+            .get(dispid::TESTSTAND_DIRECTORY)?
+            .into_string()?)
+    }
+
+    /// The path to the TestStand™ `Bin` directory (`Engine.BinDirectory`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn bin_directory(&self) -> Result<String, Error> {
+        Ok(self.dispatch.get(dispid::BIN_DIRECTORY)?.into_string()?)
+    }
+
+    /// The path to the TestStand™ `Cfg` directory (`Engine.ConfigDirectory`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn config_directory(&self) -> Result<String, Error> {
+        Ok(self.dispatch.get(dispid::CONFIG_DIRECTORY)?.into_string()?)
+    }
+
+    /// Accesses the station's configuration settings (`Engine.StationOptions`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn station_options(&self) -> Result<crate::station::StationOptions, Error> {
+        let dispatch = self.dispatch.get(dispid::STATION_OPTIONS)?.into_object()?;
+        Ok(crate::station::StationOptions::new(dispatch))
+    }
+
+    /// Creates an empty sequence file (`Engine.NewSequenceFile`).
+    ///
+    /// The file exists only in memory until it is saved.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn new_sequence_file(&self) -> Result<crate::SequenceFile, Error> {
+        Ok(crate::SequenceFile::new(
+            self.dispatch
+                .call(dispid::NEW_SEQUENCE_FILE, &[])?
+                .into_object()?,
+        ))
+    }
+
+    /// Starts a sequence running (`Engine.NewExecution`).
+    ///
+    /// The execution begins immediately.
+    ///
+    /// Pass `None` for `process_model` to run the sequence directly; supply one
+    /// to run a process-model entry point instead. `execution_type_mask` is
+    /// normally `0`.
+    ///
+    /// # Errors
+    /// [`Error`] if the sequence cannot be started or the COM call fails.
+    pub fn new_execution(
+        &self,
+        sequence_file: &crate::SequenceFile,
+        sequence_name: &str,
+        process_model: Option<&crate::SequenceFile>,
+        break_at_first_step: bool,
+        execution_type_mask: i32,
+    ) -> Result<crate::Execution, Error> {
+        let file = sequence_file
+            .duplicate_dispatch()
+            .ok_or(Error::UnexpectedType {
+                expected: "a live sequence file",
+                actual: "a test fake with no COM identity",
+            })?;
+        // "No process model" is a null object reference, not a null variant.
+        let model = process_model
+            .and_then(crate::SequenceFile::duplicate_dispatch)
+            .map_or(Value::NullObject, Value::Object);
+
+        let major = self.major_version()?;
+        Ok(crate::Execution::with_engine_major(
+            self.dispatch
+                .call(
+                    dispid::NEW_EXECUTION,
+                    &[
+                        Value::Object(file),
+                        Value::Str(sequence_name.to_owned()),
+                        model,
+                        Value::Bool(break_at_first_step),
+                        Value::I32(execution_type_mask),
+                    ],
+                )?
+                .into_object()?,
+            major,
+        ))
+    }
+
+    /// Creates interactive-execution arguments
+    /// (`Engine.NewInteractiveArgs`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn new_interactive_args(&self) -> Result<crate::InteractiveArgs, Error> {
+        Ok(crate::InteractiveArgs::new(
+            self.dispatch
+                .call(dispid::NEW_INTERACTIVE_ARGS, &[])?
+                .into_object()?,
+        ))
+    }
+
+    /// Starts an interactive execution scoped to a step list
+    /// (`Engine.NewExecution` with interactive arguments).
+    ///
+    /// The run uses no process model and does not break at the first step.
+    ///
+    /// # Errors
+    /// [`Error`] if an object has no COM identity or the COM call fails.
+    pub fn new_interactive_execution(
+        &self,
+        sequence_file: &crate::SequenceFile,
+        sequence_name: &str,
+        interactive_args: &crate::InteractiveArgs,
+    ) -> Result<crate::Execution, Error> {
+        let file = sequence_file
+            .duplicate_dispatch()
+            .ok_or(Error::UnexpectedType {
+                expected: "a live sequence file",
+                actual: "a test fake with no COM identity",
+            })?;
+        let args = interactive_args
+            .duplicate_dispatch()
+            .ok_or(Error::UnexpectedType {
+                expected: "live interactive args",
+                actual: "a test fake with no COM identity",
+            })?;
+        let major = self.major_version()?;
+        Ok(crate::Execution::with_engine_major(
+            self.dispatch
+                .call(
+                    dispid::NEW_EXECUTION,
+                    &[
+                        Value::Object(file),
+                        Value::Str(sequence_name.to_owned()),
+                        Value::NullObject,
+                        Value::Bool(false),
+                        Value::I32(0),
+                        Value::Empty,
+                        Value::Empty,
+                        Value::Object(args),
+                    ],
+                )?
+                .into_object()?,
+            major,
+        ))
+    }
+
+    /// Posts a message on behalf of an execution (`Engine.PostUIMessage`).
+    ///
+    /// The counterpart to
+    /// [`Thread::post_ui_message_ex`](crate::Thread::post_ui_message_ex), for
+    /// code that is not itself running inside the sequence and therefore has no
+    /// current thread to post from. Because there is no implied context, the
+    /// execution and thread the message belongs to are given explicitly.
+    ///
+    /// `activex_data` carries structured data, read back by the host from
+    /// [`UIMessage::activex_data`](crate::UIMessage::activex_data). Pass `None`
+    /// to leave the slot empty.
+    ///
+    /// Pass `synchronous = true` in the ordinary case; see
+    /// [`Thread::post_ui_message_ex`](crate::Thread::post_ui_message_ex) for why
+    /// the blocking form is the safe default.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails, or if a wrapper has no COM identity.
+    #[allow(
+        clippy::too_many_arguments,
+        reason = "mirrors Engine.PostUIMessage's parameter list and order, which                   is the point of a twin API: grouping them into a struct would                   make the Rust call unpredictable from the COM documentation"
+    )]
+    pub fn post_ui_message(
+        &self,
+        execution: &crate::Execution,
+        thread: &crate::Thread,
+        event_code: i32,
+        numeric_data: f64,
+        string_data: &str,
+        activex_data: Option<&crate::PropertyObject>,
+        synchronous: bool,
+    ) -> Result<(), Error> {
+        let missing = || Error::UnexpectedType {
+            expected: "a live execution and thread",
+            actual: "a test fake with no COM identity",
+        };
+        let execution_handle = execution.duplicate_dispatch().ok_or_else(missing)?;
+        let thread_handle = thread.duplicate_dispatch().ok_or_else(missing)?;
+        self.dispatch.call(
+            dispid::POST_UI_MESSAGE,
+            &[
+                Value::Object(execution_handle),
+                Value::Object(thread_handle),
+                Value::I32(event_code),
+                Value::F64(numeric_data),
+                Value::Str(string_data.to_owned()),
+                crate::execution::thread::object_argument(activex_data)?,
+                Value::Bool(synchronous),
+            ],
+        )?;
+        Ok(())
+    }
+
+    /// Logs a user in, or logs the current one out (`Engine.CurrentUser`).
+    ///
+    /// `Some(user)` makes that user current; `None` clears it, which the engine
+    /// documents as logging out.
+    ///
+    /// **This does not check the password.** Setting the property is the act of
+    /// logging in, not an authentication step: a host that cares must call
+    /// [`User::validate_password`](crate::User::validate_password) first and
+    /// refuse on `false`. Written this way because the engine draws the same
+    /// line, and hiding a check inside a setter would make it unclear which one
+    /// a caller had actually performed.
+    ///
+    /// A host built on the `ActiveX` UI controls should use their own login
+    /// method instead, so the controls raise the event they expect; this is the
+    /// headless path.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails, or if `user` has no COM identity.
+    pub fn set_current_user(&self, user: Option<&crate::users::User>) -> Result<(), Error> {
+        let value = match user {
+            None => Value::NullObject,
+            Some(user) => {
+                user.duplicate_dispatch()
+                    .map(Value::Object)
+                    .ok_or(Error::UnexpectedType {
+                        expected: "a live user",
+                        actual: "a test fake with no COM identity",
+                    })?
+            }
+        };
+        self.dispatch.put(dispid::CURRENT_USER, value)?;
+        Ok(())
+    }
+
+    /// Asks every execution to stop (`Engine.TerminateAll`).
+    ///
+    /// Termination, not abort: cleanup groups still run, so hardware is left in
+    /// a safe state. Like [`Execution::terminate`](crate::Execution::terminate)
+    /// it is a request, and returns before the runs have finished unwinding. A
+    /// caller that needs them stopped must then wait for
+    /// [`UIMessageCode::EndExecution`](crate::UIMessageCode::EndExecution).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails.
+    pub fn terminate_all(&self) -> Result<(), Error> {
+        self.dispatch.call(dispid::TERMINATE_ALL, &[])?;
+        Ok(())
+    }
+
+    /// Stops every execution without running cleanup (`Engine.AbortAll`).
+    ///
+    /// The blunt counterpart to [`terminate_all`](Self::terminate_all). Cleanup
+    /// groups do **not** run, so anything a sequence would have switched off
+    /// stays on. Prefer terminating unless the point is to stop now.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails.
+    pub fn abort_all(&self) -> Result<(), Error> {
+        self.dispatch.call(dispid::ABORT_ALL, &[])?;
+        Ok(())
+    }
+
+    /// The license the engine is currently using (`Engine.LicenseType`).
+    ///
+    /// **Using, not holding.** A freshly created engine has acquired nothing
+    /// and reports [`LicenseType::NoLicense`](crate::LicenseType::NoLicense)
+    /// even on a fully licensed station; the answer only becomes meaningful
+    /// after something acquires. Use
+    /// [`require_license`](Self::require_license) to ask whether the station
+    /// can license this host.
+    ///
+    /// Reads state, so it acquires nothing and raises no dialog.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails, or [`Error::UnknownLicenseType`] if the
+    /// engine reports a type this build does not name.
+    pub fn license_type(&self) -> Result<crate::LicenseType, Error> {
+        let raw = self.dispatch.get(dispid::LICENSE_TYPE)?.as_i32()?;
+        crate::LicenseType::from_bits(raw).map_err(|bits| Error::UnknownLicenseType { bits })
+    }
+
+    /// Acquires a license, or fails if the station cannot grant one.
+    ///
+    /// The check a headless host should make before anything else, and the
+    /// object it should keep alive while it runs.
+    ///
+    /// Acquiring is what makes a license real.
+    /// [`license_type`](Self::license_type) reports the license the engine is
+    /// *using*, and a freshly created engine is using none, measured on a
+    /// station with a valid development system license, it reads `NoLicense`
+    /// until something acquires. So reading before acquiring answers the wrong
+    /// question, and this method acquires first.
+    ///
+    /// The request is [`ApplicationLicense::Unspecified`](crate::ApplicationLicense), which lets the engine
+    /// grant whatever it has. Naming a kind can be refused even when the
+    /// station is properly licensed: on a development system station,
+    /// [`ApplicationLicense::OperatorInterface`](crate::ApplicationLicense) is turned down while
+    /// unspecified succeeds. Ask for a specific kind through
+    /// [`acquire_license`](Self::acquire_license) only when the host genuinely
+    /// requires that one.
+    ///
+    /// The startup dialog is suppressed, so an unlicensed station returns an
+    /// error rather than opening a window nobody will close.
+    ///
+    /// **Refusal is retried for a few seconds before it is believed.** The
+    /// licensing subsystem is not ready the instant the engine object exists:
+    /// measured on a properly licensed station, acquiring immediately after
+    /// construction is refused, while the same call half a second later
+    /// succeeds. A host that trusted the first answer would report an
+    /// unlicensed station to its operator and stop. So a refusal is retried
+    /// until it stops changing, which costs an unlicensed station a few seconds
+    /// once, at startup.
+    ///
+    /// Success is the handle, not the type.
+    /// [`HeldLicense::kind`](crate::HeldLicense::kind) reports what the engine
+    /// says it is using and can still read
+    /// [`NoLicense`](crate::LicenseType::NoLicense) after an unspecified
+    /// request was granted, so treat it as information rather than as the
+    /// verdict.
+    ///
+    /// # Errors
+    /// [`Error::NoLicense`] if no license can be acquired, or [`Error`] if the
+    /// COM call fails.
+    pub fn require_license(&self) -> Result<crate::HeldLicense<'_>, Error> {
+        /// Longest to keep asking before calling the station unlicensed.
+        const PATIENCE: core::time::Duration = core::time::Duration::from_secs(3);
+        /// Gap between attempts.
+        const RETRY_INTERVAL: core::time::Duration = core::time::Duration::from_millis(100);
+
+        let started = std::time::Instant::now();
+        let handle = loop {
+            match self.acquire_license(
+                crate::ApplicationLicense::Unspecified,
+                crate::AcquireLicenseOptions::SUPPRESS_STARTUP_DIALOG,
+            ) {
+                Ok(handle) => break handle,
+                Err(Error::NoLicense) if started.elapsed() < PATIENCE => {
+                    std::thread::sleep(RETRY_INTERVAL);
+                }
+                Err(other) => return Err(other),
+            }
+        };
+        // The grant is the handle. `LicenseType` is informational and does not
+        // always follow an unspecified request: measured on a licensed station,
+        // acquiring unspecified returns a handle while the type still reads
+        // `NoLicense`, and only a named request such as a sequence editor makes
+        // it report `DevelopmentSystem`. So the type is recorded, not gated on.
+        let kind = self.license_type()?;
+        Ok(crate::HeldLicense::new(self, handle, kind))
+    }
+
+    /// A description of the current license (`Engine.GetLicenseDescription`).
+    ///
+    /// Free text meant for a person, so log it rather than branch on it; use
+    /// [`license_type`](Self::license_type) for decisions.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn get_license_description(&self) -> Result<String, Error> {
+        // The engine declares one reserved parameter, documented as always
+        // zero.
+        Ok(self
+            .dispatch
+            .call(dispid::GET_LICENSE_DESCRIPTION, &[Value::I32(0)])?
+            .into_string()?)
+    }
+
+    /// The license this application requested (`Engine.ApplicationLicense`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails, or [`Error::UnknownLicenseType`] if the
+    /// engine reports a value this build does not name.
+    pub fn application_license(&self) -> Result<crate::ApplicationLicense, Error> {
+        let raw = self.dispatch.get(dispid::APPLICATION_LICENSE)?.as_i32()?;
+        crate::ApplicationLicense::from_bits(raw).map_err(|bits| Error::UnknownLicenseType { bits })
+    }
+
+    /// Acquires a license and returns its handle (`Engine.AcquireLicense`).
+    ///
+    /// Release it with [`release_license`](Self::release_license); the license
+    /// is held until every handle for it is released.
+    ///
+    /// **Pass [`AcquireLicenseOptions::SUPPRESS_STARTUP_DIALOG`](crate::AcquireLicenseOptions) on any station
+    /// without a person at it.** Without it, an engine that cannot acquire the
+    /// license opens a window offering to evaluate, activate or buy, and waits.
+    /// A headless host stops there until something kills it. With it, the same
+    /// situation returns an error this method propagates.
+    ///
+    /// Prefer
+    /// [`ApplicationLicense::Unspecified`](crate::ApplicationLicense),
+    /// which lets the engine grant whatever it has. Naming a kind is a
+    /// constraint, not a preference, and a smaller request is not a safer one:
+    /// on a station licensed for a development system,
+    /// [`OperatorInterface`](crate::ApplicationLicense::OperatorInterface) is
+    /// refused while unspecified succeeds. Name a kind only when the host truly
+    /// requires it.
+    ///
+    /// Most callers want [`require_license`](Self::require_license) instead,
+    /// which acquires and hands back a guard that releases on drop.
+    ///
+    /// # Errors
+    /// [`Error::NoLicense`] if the license was not granted, or [`Error`] if the
+    /// COM call fails.
+    ///
+    /// A handle of zero is treated as refusal. The reference says this member
+    /// returns an error when it cannot acquire the license; measured against an
+    /// unlicensed station it succeeds and hands back zero instead. A caller
+    /// that trusted the documented behavior would carry on unlicensed, so the
+    /// zero is turned into the error the caller was promised.
+    pub fn acquire_license(
+        &self,
+        license: crate::ApplicationLicense,
+        options: crate::AcquireLicenseOptions,
+    ) -> Result<i32, Error> {
+        let handle = self
+            .dispatch
+            .call(
+                dispid::ACQUIRE_LICENSE,
+                &[Value::I32(license.bits()), Value::I32(options.bits())],
+            )?
+            .as_i32()?;
+        if handle == 0 {
+            return Err(Error::NoLicense);
+        }
+        Ok(handle)
+    }
+
+    /// Releases a license handle (`Engine.ReleaseLicense`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails.
+    pub fn release_license(&self, handle: i32) -> Result<(), Error> {
+        // Second parameter is reserved and documented as zero.
+        self.dispatch.call(
+            dispid::RELEASE_LICENSE,
+            &[Value::I32(handle), Value::I32(0)],
+        )?;
+        Ok(())
+    }
+
+    /// Whether the station licenses an add-on feature
+    /// (`Engine.HasAddonLicense`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn has_addon_license(&self, feature_name: &str) -> Result<bool, Error> {
+        Ok(self
+            .dispatch
+            .call(
+                dispid::HAS_ADDON_LICENSE,
+                &[Value::Str(feature_name.to_owned())],
+            )?
+            .as_bool()?)
+    }
+
+    /// Releases every code module the engine has loaded
+    /// (`Engine.UnloadAllModules`).
+    ///
+    /// Loading a sequence file loads its modules, and they stay loaded until
+    /// that file is closed. That is what makes the second run fast, and also
+    /// what holds a DLL open against the build that wants to replace it.
+    /// Unloading here frees them all at once, without closing anything.
+    ///
+    /// Call it between runs, not during one: a module in use by a live
+    /// execution is not a candidate, and the next run reloads whatever it needs.
+    ///
+    /// **State inside a module does not survive.** Anything a module kept in a
+    /// static or a global is gone once it is unloaded, and the reload starts
+    /// from nothing. A station whose modules carry state between steps that way
+    /// should keep that state in the engine instead, or not call this.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails.
+    pub fn unload_all_modules(&self) -> Result<(), Error> {
+        self.dispatch.call(dispid::UNLOAD_ALL_MODULES, &[])?;
+        Ok(())
+    }
+
+    /// Whether breakpoints stop an execution (`Engine.BreakpointsEnabled`).
+    ///
+    /// The master switch. With it off, breakpoints stay set but nothing stops
+    /// on them, which is how a station runs unattended without anyone having to
+    /// strip a sequence file of the breakpoints someone left in it.
+    ///
+    /// Distinct from the station option of the same name, which is the setting
+    /// written to disk. This is the engine's live state.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn breakpoints_enabled(&self) -> Result<bool, Error> {
+        Ok(self.dispatch.get(dispid::BREAKPOINTS_ENABLED)?.as_bool()?)
+    }
+
+    /// Turns breakpoints on or off (`Engine.BreakpointsEnabled`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails.
+    pub fn set_breakpoints_enabled(&self, enabled: bool) -> Result<(), Error> {
+        self.dispatch
+            .put(dispid::BREAKPOINTS_ENABLED, Value::Bool(enabled))?;
+        Ok(())
+    }
+
+    /// Whether breakpoints survive the file they are set in
+    /// (`Engine.PersistBreakpoints`).
+    ///
+    /// On, the engine remembers them across a close and reopen. A host that
+    /// sets breakpoints on behalf of a remote panel usually wants this off, so
+    /// that a debugging session leaves nothing behind on the station.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn persist_breakpoints(&self) -> Result<bool, Error> {
+        Ok(self.dispatch.get(dispid::PERSIST_BREAKPOINTS)?.as_bool()?)
+    }
+
+    /// Chooses whether breakpoints are remembered (`Engine.PersistBreakpoints`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails.
+    pub fn set_persist_breakpoints(&self, persist: bool) -> Result<(), Error> {
+        self.dispatch
+            .put(dispid::PERSIST_BREAKPOINTS, Value::Bool(persist))?;
+        Ok(())
+    }
+
+    /// Whether watch expressions survive between sessions
+    /// (`Engine.PersistWatchExpressions`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn persist_watch_expressions(&self) -> Result<bool, Error> {
+        Ok(self
+            .dispatch
+            .get(dispid::PERSIST_WATCH_EXPRESSIONS)?
+            .as_bool()?)
+    }
+
+    /// Chooses whether watch expressions are remembered
+    /// (`Engine.PersistWatchExpressions`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails.
+    pub fn set_persist_watch_expressions(&self, persist: bool) -> Result<(), Error> {
+        self.dispatch
+            .put(dispid::PERSIST_WATCH_EXPRESSIONS, Value::Bool(persist))?;
+        Ok(())
+    }
+
+    /// Whether watch expressions are evaluated during a run
+    /// (`Engine.WatchExpressionsEnabled`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn watch_expressions_enabled(&self) -> Result<bool, Error> {
+        Ok(self
+            .dispatch
+            .get(dispid::WATCH_EXPRESSIONS_ENABLED)?
+            .as_bool()?)
+    }
+
+    /// Chooses whether watch expressions are evaluated during a run
+    /// (`Engine.WatchExpressionsEnabled`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails.
+    pub fn set_watch_expressions_enabled(&self, enabled: bool) -> Result<(), Error> {
+        self.dispatch
+            .put(dispid::WATCH_EXPRESSIONS_ENABLED, Value::Bool(enabled))?;
+        Ok(())
+    }
+
+    /// How many times the watch list or one of its entries has changed
+    /// (`Engine.GetWatchExpressionsChangeCount`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn get_watch_expressions_change_count(&self) -> Result<i32, Error> {
+        Ok(self
+            .dispatch
+            .call(dispid::GET_WATCH_EXPRESSIONS_CHANGE_COUNT, &[])?
+            .as_i32()?)
+    }
+
+    /// The engine's watch expression list (`Engine.GetWatchExpressions`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn get_watch_expressions(&self) -> Result<crate::WatchExpressions, Error> {
+        Ok(crate::WatchExpressions::new(
+            self.dispatch
+                .call(
+                    dispid::GET_WATCH_EXPRESSIONS,
+                    &[Value::NullObject, Value::NullObject, Value::I32(0)],
+                )?
+                .into_object()?,
+        ))
+    }
+
+    /// Runs a .NET garbage collection now
+    /// (`Engine.DoDotNetGarbageCollection`).
+    ///
+    /// Only relevant to a station whose steps call .NET code. Collection is
+    /// otherwise periodic, on the
+    /// [interval](Self::dot_net_garbage_collection_interval); this forces one,
+    /// which is worth doing between runs on a long-lived host rather than
+    /// during a measurement, since collection pauses the runtime.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails.
+    pub fn do_dot_net_garbage_collection(&self) -> Result<(), Error> {
+        // The engine declares one reserved parameter, optional and defaulting
+        // to zero. Supplying it keeps the call correct if the default ever
+        // stops being applied.
+        self.dispatch
+            .call(dispid::DO_DOT_NET_GARBAGE_COLLECTION, &[Value::I32(0)])?;
+        Ok(())
+    }
+
+    /// How often the engine collects .NET garbage, in milliseconds
+    /// (`Engine.DotNetGarbageCollectionInterval`).
+    ///
+    /// Zero or less means automatic collection is off. A host built on this
+    /// crate will normally read `-1`, and that is correct rather than broken:
+    /// the three-second default belongs to applications built on the UI
+    /// control, and a headless host does not create one. Nothing collects on a
+    /// timer unless this is set to a positive interval, so a long-lived host
+    /// that runs .NET steps should either set one or call
+    /// [`do_dot_net_garbage_collection`](Self::do_dot_net_garbage_collection)
+    /// between runs.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn dot_net_garbage_collection_interval(&self) -> Result<i32, Error> {
+        Ok(self
+            .dispatch
+            .get(dispid::DOT_NET_GARBAGE_COLLECTION_INTERVAL)?
+            .as_i32()?)
+    }
+
+    /// Sets the .NET collection interval, in milliseconds
+    /// (`Engine.DotNetGarbageCollectionInterval`).
+    ///
+    /// Zero or less switches automatic collection off.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails.
+    pub fn set_dot_net_garbage_collection_interval(&self, milliseconds: i32) -> Result<(), Error> {
+        self.dispatch.put(
+            dispid::DOT_NET_GARBAGE_COLLECTION_INTERVAL,
+            Value::I32(milliseconds),
+        )?;
+        Ok(())
+    }
+
+    /// The .NET runtime version the engine loaded (`Engine.DotNetCLRVersion`).
+    ///
+    /// Empty on a station where nothing has pulled the runtime in yet, so treat
+    /// an empty string as "not loaded" rather than as an error.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn dot_net_clr_version(&self) -> Result<String, Error> {
+        Ok(self
+            .dispatch
+            .get(dispid::DOT_NET_CLR_VERSION)?
+            .into_string()?)
+    }
+
+    /// The station's user list, as a file (`Engine.UsersFile`).
+    ///
+    /// The users the engine loaded at startup, and the only route to writing
+    /// them back. [`new_user`](Self::new_user) builds a user in memory; without
+    /// saving through this file the station is unchanged once the process
+    /// exits.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn users_file(&self) -> Result<crate::UsersFile, Error> {
+        Ok(crate::UsersFile::new(
+            self.dispatch.get(dispid::USERS_FILE)?.into_object()?,
+        ))
+    }
+
+    /// Whether the host polls for messages (`Engine.UIMessagePollingEnabled`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn ui_message_polling_enabled(&self) -> Result<bool, Error> {
+        Ok(self
+            .dispatch
+            .get(dispid::UI_MESSAGE_POLLING_ENABLED)?
+            .as_bool()?)
+    }
+
+    /// Turns message polling on or off (`Engine.UIMessagePollingEnabled`).
+    ///
+    /// Off by default. A headless host must turn it on before anything appears
+    /// in the queue, without it the queue stays empty however much a sequence
+    /// posts.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails.
+    pub fn set_ui_message_polling_enabled(&self, enabled: bool) -> Result<(), Error> {
+        self.dispatch
+            .put(dispid::UI_MESSAGE_POLLING_ENABLED, Value::Bool(enabled))?;
+        Ok(())
+    }
+
+    /// Whether the message queue is empty (`Engine.IsUIMessageQueueEmpty`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn is_ui_message_queue_empty(&self) -> Result<bool, Error> {
+        Ok(self
+            .dispatch
+            .get(dispid::IS_UI_MESSAGE_QUEUE_EMPTY)?
+            .as_bool()?)
+    }
+
+    /// Takes the next message from the queue (`Engine.GetUIMessage`).
+    ///
+    /// Check [`is_ui_message_queue_empty`](Self::is_ui_message_queue_empty)
+    /// first. The message must be acknowledged once handled, see
+    /// [`UIMessage::acknowledge`](crate::UIMessage::acknowledge).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn get_ui_message(&self) -> Result<crate::UIMessage, Error> {
+        Ok(crate::UIMessage::new(
+            self.dispatch
+                .call(dispid::GET_UI_MESSAGE, &[])?
+                .into_object()?,
+        ))
+    }
+
+    /// Creates a step (`Engine.NewStep`).
+    ///
+    /// `adapter_key_name` selects the code-module adapter, see
+    /// [`AdapterKeyName`](crate::AdapterKeyName). `step_type_name` names the
+    /// step type, for example `NumericLimitTest` or `Action`.
+    ///
+    /// An empty key does **not** mean "no code module". It means the step type
+    /// chooses, falling back to the station's `DefaultAdapter` when the type
+    /// designates none, so an empty key on an `Action` yields whatever adapter
+    /// the station happens to default to. Pass
+    /// [`AdapterKeyName::NoneAdapter`](crate::AdapterKeyName::NoneAdapter) to
+    /// actually mean no code module.
+    ///
+    /// The step is not part of any sequence until it is inserted.
+    ///
+    /// # Errors
+    /// [`Error`] if the step type is unknown or the COM call fails.
+    pub fn new_step(
+        &self,
+        adapter_key_name: &str,
+        step_type_name: &str,
+    ) -> Result<crate::Step, Error> {
+        Ok(crate::Step::new(
+            self.dispatch
+                .call(
+                    dispid::NEW_STEP,
+                    &[
+                        Value::Str(adapter_key_name.to_owned()),
+                        Value::Str(step_type_name.to_owned()),
+                    ],
+                )?
+                .into_object()?,
+        ))
+    }
+
+    /// Creates a sequence (`Engine.NewSequence`).
+    ///
+    /// The sequence is not part of any file until it is inserted.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn new_sequence(&self) -> Result<crate::Sequence, Error> {
+        Ok(crate::Sequence::new(
+            self.dispatch
+                .call(dispid::NEW_SEQUENCE, &[])?
+                .into_object()?,
+        ))
+    }
+
+    /// Creates a user account object (`Engine.NewUser`).
+    ///
+    /// Pass an existing user as `profile` to inherit its privileges; the new
+    /// user does **not** join any group the profile belongs to. Pass `None` for
+    /// a user with no privileges.
+    ///
+    /// The result exists only in memory, nothing is written to the station's
+    /// users file by creating one.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn new_user(
+        &self,
+        profile: Option<&crate::users::User>,
+    ) -> Result<crate::users::User, Error> {
+        // The engine reads the profile's privileges, so it needs a real
+        // handle; a null means "no privileges to inherit".
+        // The profile is required, and "no profile" is a null object
+        // reference, a VT_DISPATCH holding nothing. VT_NULL and VT_EMPTY are
+        // both refused here, and omitting the argument reports it as missing.
+        let argument = profile
+            .and_then(crate::users::User::duplicate_dispatch)
+            .map_or(Value::NullObject, Value::Object);
+        Ok(crate::users::User::new(
+            self.dispatch
+                .call(dispid::NEW_USER, &[argument])?
+                .into_object()?,
+        ))
+    }
+
+    /// Looks up a running execution by its id (`Engine.GetExecution`).
+    ///
+    /// The engine exposes no collection of executions, so a host that wants to
+    /// address one later keeps the id from [`Self::new_execution`] and resolves
+    /// it here. Returns `None` when the engine no longer knows the id, which is
+    /// an ordinary result of holding one across the end of a run rather than a
+    /// failure.
+    ///
+    /// **Resolving does not mean running.** A finished execution was observed
+    /// still resolving on one run and absent on another against the same engine
+    /// version, so how long the engine keeps one addressable is not something
+    /// to depend on. Read [`Execution::result_status`](crate::Execution::result_status)
+    /// to find out whether it is still going.
+    ///
+    /// Not available on every supported engine: the member is absent from the
+    /// TestStand 2016 type library and present in 2026, so a call on an older
+    /// engine fails rather than returning `None`. Check
+    /// [`major_version`](Self::major_version) before relying on it.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn get_execution(&self, execution_id: i32) -> Result<Option<crate::Execution>, Error> {
+        match self
+            .dispatch
+            .call(dispid::GET_EXECUTION, &[Value::I32(execution_id)])?
+        {
+            Value::Object(dispatch) => {
+                let major = self.major_version()?;
+                Ok(Some(crate::Execution::with_engine_major(dispatch, major)))
+            }
+            Value::Null | Value::Empty => Ok(None),
+            other => Err(Error::UnexpectedType {
+                expected: "Object or Null",
+                actual: other.kind(),
+            }),
+        }
+    }
+
+    /// Creates an empty expression object (`Engine.NewExpression`).
+    ///
+    /// Set its text, then evaluate it as often as needed: the engine keeps the
+    /// parsed form, unlike
+    /// [`PropertyObject::evaluate_ex`](crate::PropertyObject::evaluate_ex),
+    /// which re-parses on every call.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn new_expression(&self) -> Result<crate::Expression, Error> {
+        Ok(crate::Expression::new(
+            self.dispatch
+                .call(dispid::NEW_EXPRESSION, &[])?
+                .into_object()?,
+        ))
+    }
+
+    /// Checks an expression's syntax (`Engine.CheckExprSyntax`).
+    ///
+    /// Returns `None` when the syntax is correct, or the error and the span it
+    /// covers when it is not. Only the syntax is checked: an expression naming
+    /// a variable that does not exist still passes, which is what
+    /// [`Self::check_expression`] is for.
+    ///
+    /// # Errors
+    /// [`Error`] if the engine cannot perform the check.
+    pub fn check_expr_syntax(&self, expression: &str) -> Result<Option<ExpressionError>, Error> {
+        let (valid, written) = self.dispatch.call_with_outputs(
+            dispid::CHECK_EXPR_SYNTAX,
+            &[Value::Str(expression.to_owned())],
+            &[OutKind::Text, OutKind::Int, OutKind::Int],
+        )?;
+        expression_check_result(&valid, written)
+    }
+
+    /// Checks an expression against a context (`Engine.CheckExpression`).
+    ///
+    /// Like [`Self::check_expr_syntax`], but it also resolves the variables the
+    /// expression names against `evaluation_context`. Pass `None` for the
+    /// context to check the syntax alone.
+    ///
+    /// Returns `None` when the expression is correct, or the error otherwise.
+    ///
+    /// # Errors
+    /// [`Error`] if the engine cannot perform the check.
+    pub fn check_expression(
+        &self,
+        evaluation_context: Option<&crate::PropertyObject>,
+        expression: &str,
+        evaluation_options: EvaluationOptions,
+    ) -> Result<Option<ExpressionError>, Error> {
+        // "Check the syntax only" is a null object reference: a VT_DISPATCH
+        // carrying no pointer, which is a different type from VT_NULL.
+        let context = evaluation_context
+            .and_then(crate::PropertyObject::duplicate_dispatch)
+            .map_or(Value::NullObject, Value::Object);
+        let (valid, written) = self.dispatch.call_with_outputs(
+            dispid::CHECK_EXPRESSION,
+            &[
+                context,
+                Value::Str(expression.to_owned()),
+                Value::I32(evaluation_options.bits()),
+            ],
+            &[OutKind::Text, OutKind::Int, OutKind::Int],
+        )?;
+        expression_check_result(&valid, written)
+    }
+
+    /// Converts expression text to the station's locale
+    /// (`Engine.LocalizeExpression`).
+    ///
+    /// Expression text is not locale-neutral: the decimal separator and list
+    /// separator differ. A host that shows an expression to an operator, or
+    /// accepts one typed by them, converts rather than assuming a point.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn localize_expression(
+        &self,
+        expression: &str,
+        decimal_point_option: crate::DecimalPointLocalizationOption,
+    ) -> Result<String, Error> {
+        Ok(self
+            .dispatch
+            .call(
+                dispid::LOCALIZE_EXPRESSION,
+                &[
+                    Value::Str(expression.to_owned()),
+                    Value::I32(decimal_point_option.bits()),
+                ],
+            )?
+            .into_string()?)
+    }
+
+    /// Converts locale-specific expression text back to the neutral form
+    /// (`Engine.DelocalizeExpression`).
+    ///
+    /// The inverse of [`localize_expression`](Self::localize_expression). Store
+    /// the delocalized form; show the localized one.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn delocalize_expression(
+        &self,
+        localized_expression: &str,
+        decimal_point_option: crate::DecimalPointLocalizationOption,
+    ) -> Result<String, Error> {
+        Ok(self
+            .dispatch
+            .call(
+                dispid::DELOCALIZE_EXPRESSION,
+                &[
+                    Value::Str(localized_expression.to_owned()),
+                    Value::I32(decimal_point_option.bits()),
+                ],
+            )?
+            .into_string()?)
+    }
+
+    /// Finds a user by login name (`Engine.GetUser`).
+    ///
+    /// Returns `None` when no user has that name, rather than erroring.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn get_user(&self, login_name: &str) -> Result<Option<crate::users::User>, Error> {
+        match self
+            .dispatch
+            .call(dispid::GET_USER, &[Value::Str(login_name.to_owned())])?
+        {
+            Value::Object(dispatch) => Ok(Some(crate::users::User::new(dispatch))),
+            Value::Null | Value::Empty => Ok(None),
+            other => Err(Error::UnexpectedType {
+                expected: "Object or Null",
+                actual: other.kind(),
+            }),
+        }
+    }
+
+    /// Whether a login name is already taken (`Engine.UserNameExists`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn user_name_exists(&self, login_name: &str) -> Result<bool, Error> {
+        Ok(self
+            .dispatch
+            .call(
+                dispid::USER_NAME_EXISTS,
+                &[Value::Str(login_name.to_owned())],
+            )?
+            .as_bool()?)
+    }
+
+    /// The user currently logged in (`Engine.CurrentUser`).
+    ///
+    /// Returns `None` when nobody is logged in, which is the normal state on a
+    /// station that does not require a login.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn current_user(&self) -> Result<Option<crate::users::User>, Error> {
+        match self.dispatch.get(dispid::CURRENT_USER)? {
+            Value::Object(dispatch) => Ok(Some(crate::users::User::new(dispatch))),
+            Value::Null | Value::Empty => Ok(None),
+            other => Err(Error::UnexpectedType {
+                expected: "Object or Null",
+                actual: other.kind(),
+            }),
+        }
+    }
+
+    /// Whether the logged-in user holds a privilege
+    /// (`Engine.CurrentUserHasPrivilege`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn current_user_has_privilege(
+        &self,
+        privilege: crate::users::UserPrivilege,
+    ) -> Result<bool, Error> {
+        Ok(self
+            .dispatch
+            .call(
+                dispid::CURRENT_USER_HAS_PRIVILEGE,
+                &[Value::Str(privilege.name().to_owned())],
+            )?
+            .as_bool()?)
+    }
+
+    /// Creates a standalone `PropertyObject` (`Engine.NewPropertyObject`).
+    ///
+    /// The object belongs to no sequence file or station; it is useful as the
+    /// root of a tree you build in memory. Pass a type name only when
+    /// `value_type` is `NamedType`.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn new_property_object(
+        &self,
+        value_type: crate::PropValType,
+        as_array: bool,
+        type_name: &str,
+        options: i32,
+    ) -> Result<crate::property::PropertyObject, Error> {
+        Ok(crate::property::PropertyObject::new(
+            self.dispatch
+                .call(
+                    dispid::NEW_PROPERTY_OBJECT,
+                    &[
+                        Value::I32(value_type as i32),
+                        Value::Bool(as_array),
+                        Value::Str(type_name.to_owned()),
+                        Value::I32(options),
+                    ],
+                )?
+                .into_object()?,
+        ))
+    }
+
+    /// Creates a standalone property object file
+    /// (`Engine.NewPropertyObjectFile`).
+    ///
+    /// `file_type` fixes what the file represents. Load content with
+    /// [`PropertyObjectFile::read_file`](crate::PropertyObjectFile::read_file),
+    /// or build the tree through
+    /// [`PropertyObjectFile::data`](crate::PropertyObjectFile::data).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn new_property_object_file(
+        &self,
+        file_type: crate::PropertyObjectFileType,
+    ) -> Result<crate::PropertyObjectFile, Error> {
+        Ok(crate::PropertyObjectFile::new(
+            self.dispatch
+                .call(
+                    dispid::NEW_PROPERTY_OBJECT_FILE,
+                    &[Value::I32(file_type.as_i32())],
+                )?
+                .into_object()?,
+        ))
+    }
+
+    /// Shuts the engine down and leaves this thread's COM apartment.
+    ///
+    /// For a host that owns the engine on a **spawned** thread. Such a thread
+    /// really does detach when it ends, so the apartment it initialized has to
+    /// be closed or the COM runtime is left believing a live thread still owns
+    /// one. The process's main thread does not need this: it is ending anyway.
+    ///
+    /// Consuming `self` is what makes the ordering safe, the engine is
+    /// released before the apartment closes, and no caller can hold a reference
+    /// across the boundary.
+    ///
+    /// # Errors
+    /// [`Error`] if a COM call during shutdown fails. The apartment is closed
+    /// either way.
+    pub fn close(self, timeout: std::time::Duration) -> Result<bool, Error> {
+        let confirmed = self.shutdown(timeout);
+        rs_teststand_sys::close_apartment(self.dispatch);
+        confirmed
+    }
+
+    /// Closes files, terminates executions, and waits for the engine to say it
+    /// is done (`Engine.ShutDown`).
+    ///
+    /// `ShutDown` is **asynchronous**. It returns as soon as the request is
+    /// accepted, having only *started* terminating executions and closing
+    /// files; the engine reports completion later by posting
+    /// [`UIMessageCode::ShutDownComplete`](crate::UIMessageCode::ShutDownComplete)
+    /// to its message queue. So a caller that simply calls it and drops the
+    /// engine tears down COM underneath work that is still running.
+    ///
+    /// This does the whole protocol: enables message polling, asks the engine
+    /// to shut down, then pumps and drains until the engine confirms or
+    /// `timeout` elapses.
+    ///
+    /// Returns `true` when the engine confirmed. `false` means the timeout came
+    /// first, or the engine posted
+    /// [`ShutDownCanceled`](crate::UIMessageCode::ShutDownCanceled), which a
+    /// sequence can cause, for instance by refusing to terminate. Either way the
+    /// wait is **bounded**: an unattended host must not be able to hang here.
+    ///
+    /// Shutting down twice is harmless; the second call simply finds nothing to
+    /// do and returns once the engine answers.
+    ///
+    /// # Errors
+    /// [`Error`] if a COM call fails.
+    pub fn shutdown(&self, timeout: std::time::Duration) -> Result<bool, Error> {
+        // Without polling the completion message goes to an event sink that a
+        // headless caller does not have, and the wait could never end.
+        self.set_ui_message_polling_enabled(true)?;
+        self.dispatch
+            .call(dispid::SHUT_DOWN, &[Value::Bool(true)])?;
+
+        let started = std::time::Instant::now();
+        while started.elapsed() < timeout {
+            if crate::pump_thread_messages() {
+                return Ok(false);
+            }
+            while !self.is_ui_message_queue_empty()? {
+                let message = self.get_ui_message()?;
+                let code = crate::UIMessageCode::from_bits(message.event()?);
+                // Acknowledge before deciding: an unacknowledged synchronous
+                // message would hold up the very shutdown being waited on.
+                message.acknowledge()?;
+                match code {
+                    Ok(crate::UIMessageCode::ShutDownComplete) => return Ok(true),
+                    Ok(crate::UIMessageCode::ShutDownCanceled) => return Ok(false),
+                    _ => {}
+                }
+            }
+        }
+        Ok(false)
+    }
+
+    /// The station's templates file (`Engine.GetTemplatesFile`).
+    ///
+    /// Holds the variable, step and sequence prototypes the editor offers when
+    /// inserting. It is a station-wide file, so it is empty until someone adds
+    /// templates to it, an empty one is the normal state, not a failure.
+    ///
+    /// A template is an ordinary [`PropertyObject`](crate::PropertyObject), not
+    /// a type of its own, so a program is free to keep its own prototypes in a
+    /// container it builds itself rather than in this file.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn get_templates_file(
+        &self,
+        options: crate::GetTemplatesFileOptions,
+    ) -> Result<crate::property::PropertyObjectFile, Error> {
+        Ok(crate::property::PropertyObjectFile::new(
+            self.dispatch
+                .call(dispid::GET_TEMPLATES_FILE, &[Value::I32(options.bits())])?
+                .into_object()?,
+        ))
+    }
+
+    /// Opens a sequence file, or returns the already-loaded one
+    /// (`Engine.GetSequenceFileEx`).
+    ///
+    /// The engine caches the file and counts load references, so every
+    /// successful call must be paired with
+    /// [`release_sequence_file_ex`](Self::release_sequence_file_ex).
+    ///
+    /// Both option arguments matter on an unattended host:
+    /// [`crate::sequence::GetSeqFileOptions::DO_NOT_RUN_LOAD_CALLBACK`] suppresses a load
+    /// callback that could raise a dialog, and [`crate::sequence::ConflictHandler::Error`]
+    /// fails the load instead of prompting.
+    ///
+    /// # Errors
+    /// [`Error`] if the file cannot be opened or the COM call fails.
+    pub fn get_sequence_file_ex(
+        &self,
+        path: &str,
+        options: crate::sequence::GetSeqFileOptions,
+        handler: crate::sequence::ConflictHandler,
+    ) -> Result<crate::sequence::SequenceFile, Error> {
+        let dispatch = self
+            .dispatch
+            .call(
+                dispid::GET_SEQUENCE_FILE_EX,
+                &[
+                    Value::Str(path.to_owned()),
+                    Value::I32(options.bits()),
+                    Value::I32(handler.bits()),
+                ],
+            )?
+            .into_object()?;
+        Ok(crate::sequence::SequenceFile::new(dispatch))
+    }
+
+    /// The process model file the station uses
+    /// (`Engine.GetStationModelSequenceFile`).
+    ///
+    /// Returns the file and the description the engine gives for it. The file
+    /// carries a load reference, so pair it with
+    /// [`release_sequence_file_ex`](Self::release_sequence_file_ex) when done.
+    ///
+    /// # Errors
+    /// [`Error`] if the model file is missing or cannot be loaded, or the COM
+    /// call fails.
+    pub fn get_station_model_sequence_file(
+        &self,
+    ) -> Result<Option<(crate::sequence::SequenceFile, String)>, Error> {
+        let (file, written) = self.dispatch.call_with_outputs(
+            dispid::GET_STATION_MODEL_SEQUENCE_FILE,
+            &[],
+            &[OutKind::Text],
+        )?;
+        let description = written
+            .into_iter()
+            .next()
+            .ok_or(Error::UnexpectedType {
+                expected: "a model description",
+                actual: "no output slot",
+            })?
+            .into_string()?;
+        match file {
+            Value::Object(dispatch) => Ok(Some((
+                crate::sequence::SequenceFile::new(dispatch),
+                description,
+            ))),
+            Value::Null | Value::Empty => Ok(None),
+            other => Err(Error::UnexpectedType {
+                expected: "Object or Null",
+                actual: other.kind(),
+            }),
+        }
+    }
+
+    /// Drops one load reference on a sequence file
+    /// (`Engine.ReleaseSequenceFileEx`).
+    ///
+    /// Returns `true` when that was the last reference and the engine has
+    /// discarded the file. `false` means something else still holds it open,
+    /// so the file stays loaded, which is why only the `true` case also
+    /// releases the wrapper's own COM reference.
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails.
+    pub fn release_sequence_file_ex(
+        &self,
+        sequence_file: crate::sequence::SequenceFile,
+        options: i32,
+    ) -> Result<bool, Error> {
+        let released = self
+            .dispatch
+            .call(
+                dispid::RELEASE_SEQUENCE_FILE_EX,
+                &[
+                    Value::Object(sequence_file.into_dispatch()),
+                    Value::I32(options),
+                ],
+            )?
+            .as_bool()?;
+        Ok(released)
+    }
+
+    /// Accesses the collection of search directories (`Engine.SearchDirectories`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn search_directories(&self) -> Result<crate::station::SearchDirectories, Error> {
+        let dispatch = self
+            .dispatch
+            .get(dispid::SEARCH_DIRECTORIES)?
+            .into_object()?;
+        Ok(crate::station::SearchDirectories::new(dispatch))
+    }
+
+    /// Accesses the station global variables container (`Engine.Globals`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn globals(&self) -> Result<crate::property::PropertyObject, Error> {
+        let dispatch = self.dispatch.get(dispid::GLOBALS)?.into_object()?;
+        Ok(crate::property::PropertyObject::new(dispatch))
+    }
+
+    /// Creates a new workspace file object (`Engine.NewWorkspaceFile`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn new_workspace_file(&self) -> Result<crate::workspace::WorkspaceFile, Error> {
+        let dispatch = self
+            .dispatch
+            .call(dispid::NEW_WORKSPACE_FILE, &[])?
+            .into_object()?;
+        Ok(crate::workspace::WorkspaceFile::new(dispatch))
+    }
+
+    /// Opens an existing workspace file (`Engine.OpenWorkspaceFile`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails or returns an unexpected type.
+    pub fn open_workspace_file(
+        &self,
+        path: &str,
+        read_only: bool,
+        options: i32,
+    ) -> Result<crate::workspace::WorkspaceFile, Error> {
+        let dispatch = self
+            .dispatch
+            .call(
+                dispid::OPEN_WORKSPACE_FILE,
+                &[
+                    Value::Str(path.to_string()),
+                    Value::Bool(read_only),
+                    Value::I32(options),
+                ],
+            )?
+            .into_object()?;
+        Ok(crate::workspace::WorkspaceFile::new(dispatch))
+    }
+
+    /// Flushes modified station globals and configuration to disk (`Engine.CommitGlobalsToDisk`).
+    ///
+    /// # Errors
+    /// [`Error`] if the COM call fails.
+    pub fn commit_globals_to_disk(&self, prompt_on_save_conflicts: bool) -> Result<(), Error> {
+        self.dispatch.call(
+            dispid::COMMIT_GLOBALS_TO_DISK,
+            &[Value::Bool(prompt_on_save_conflicts)],
+        )?;
+        Ok(())
+    }
+
+    /// Builds an engine over a caller-supplied dispatch handle.
+    ///
+    /// Used by the analyzer, whose server already owns an engine, and by tests,
+    /// which have a fake instead of COM.
+    pub(crate) fn from_dispatch(dispatch: Box<dyn Dispatch>) -> Self {
+        Self {
+            dispatch,
+            // Nothing was created, so nothing could have asked anything.
+            startup_dialogs: Vec::new(),
+        }
+    }
+}
+
+/// Folds the engine's answer to an expression check into one value.
+///
+/// Both checks report the same way: `True` and nothing more when the expression
+/// is fine, `False` plus a description and a span when it is not.
+fn expression_check_result(
+    valid: &Value,
+    written: Vec<Value>,
+) -> Result<Option<ExpressionError>, Error> {
+    if valid.as_bool()? {
+        return Ok(None);
+    }
+    let mut written = written.into_iter();
+    let description = written
+        .next()
+        .ok_or(Error::UnexpectedType {
+            expected: "an error description",
+            actual: "nothing",
+        })?
+        .into_string()?;
+    let mut position = || -> Result<i32, Error> {
+        Ok(written
+            .next()
+            .ok_or(Error::UnexpectedType {
+                expected: "an error position",
+                actual: "nothing",
+            })?
+            .as_i32()?)
+    };
+    let start = position()?;
+    let end = position()?;
+    Ok(Some(ExpressionError::new(description, start, end)))
+}
+
+#[cfg(test)]
+mod tests {
+    use std::collections::HashMap;
+
+    use rs_teststand_sys::{ComError, Value};
+
+    use super::{Engine, dispid};
+    use crate::error::Error;
+
+    /// A scripted response for one dispatch id, so the fake needs no COM and no
+    /// `Clone` on `Value`.
+    #[derive(Debug, Clone)]
+    enum Scripted {
+        Bool(bool),
+        I32(i32),
+        Str(&'static str),
+        Model(&'static str),
+        Fail(i32),
+    }
+
+    #[derive(Debug)]
+    struct FakeDispatch {
+        responses: HashMap<i32, Scripted>,
+        /// Every `put` and `call` in order, so a test can assert what a wrapper
+        /// sent rather than only what it read back.
+        written: Written,
+    }
+
+    /// Shared with the test, because `Engine` takes the dispatch by value.
+    type Written = std::rc::Rc<core::cell::RefCell<Vec<(i32, Value)>>>;
+
+    impl FakeDispatch {
+        fn new(entries: impl IntoIterator<Item = (i32, Scripted)>, written: Written) -> Self {
+            Self {
+                responses: entries.into_iter().collect(),
+                written,
+            }
+        }
+    }
+
+    impl rs_teststand_sys::Dispatch for FakeDispatch {
+        fn get(&self, dispid: i32) -> Result<Value, ComError> {
+            match self.responses.get(&dispid) {
+                Some(Scripted::Bool(value)) => Ok(Value::Bool(*value)),
+                Some(Scripted::I32(value)) => Ok(Value::I32(*value)),
+                Some(Scripted::Str(value)) => Ok(Value::Str((*value).to_owned())),
+                Some(Scripted::Model(_)) => {
+                    Err(ComError::hresult(0, "fake: model only via outputs"))
+                }
+                Some(Scripted::Fail(code)) => Err(ComError::hresult(*code, "fake")),
+                None => Err(ComError::hresult(0, "fake: unscripted dispid")),
+            }
+        }
+
+        fn put(&self, dispid: i32, value: Value) -> Result<(), ComError> {
+            self.written.borrow_mut().push((dispid, value));
+            Ok(())
+        }
+
+        fn call(&self, dispid: i32, args: &[Value]) -> Result<Value, ComError> {
+            let first = match args.first() {
+                Some(Value::I32(value)) => Value::I32(*value),
+                _ => Value::Empty,
+            };
+            self.written.borrow_mut().push((dispid, first));
+            if dispid == dispid::NEW_STEP_TYPE {
+                return Ok(Value::Object(Box::new(Self::new(
+                    std::iter::empty::<(i32, Scripted)>(),
+                    std::rc::Rc::default(),
+                ))));
+            }
+            if dispid == dispid::SERIALIZE_OBJECTS {
+                return Ok(Value::Str("<serialized/>".to_owned()));
+            }
+            if dispid == dispid::UNSERIALIZE_OBJECTS {
+                return Ok(Value::ObjectArray(vec![Box::new(Self::new(
+                    std::iter::empty::<(i32, Scripted)>(),
+                    std::rc::Rc::default(),
+                ))]));
+            }
+            Ok(Value::Empty)
+        }
+
+        fn duplicate(&self) -> Option<Box<dyn rs_teststand_sys::Dispatch>> {
+            Some(Box::new(Self::new(
+                self.responses.clone(),
+                std::rc::Rc::clone(&self.written),
+            )))
+        }
+
+        fn call_with_outputs(
+            &self,
+            dispid: i32,
+            _args: &[Value],
+            outputs: &[rs_teststand_sys::OutKind],
+        ) -> Result<(Value, Vec<Value>), ComError> {
+            assert_eq!(outputs, [rs_teststand_sys::OutKind::Text]);
+            match self.responses.get(&dispid) {
+                Some(Scripted::Model(description)) => {
+                    let file = Value::Object(Box::new(Self::new(
+                        std::iter::empty::<(i32, Scripted)>(),
+                        std::rc::Rc::default(),
+                    )));
+                    Ok((file, vec![Value::Str((*description).to_owned())]))
+                }
+                _ => Err(ComError::hresult(0, "fake: unscripted outputs")),
+            }
+        }
+
+        #[allow(
+            clippy::indexing_slicing,
+            reason = "the test asserts fixed parameter positions"
+        )]
+        fn call_with_arguments(
+            &self,
+            dispid: i32,
+            arguments: &[rs_teststand_sys::InvokeArgument],
+        ) -> Result<(Value, Vec<Value>), ComError> {
+            match dispid {
+                dispid::FIND_FILE => {
+                    assert_eq!(arguments.len(), 7, "FindFile has seven parameters");
+                    assert!(matches!(
+                        arguments[0],
+                        rs_teststand_sys::InvokeArgument::Value(Value::Str(_))
+                    ));
+                    assert!(matches!(
+                        arguments[1],
+                        rs_teststand_sys::InvokeArgument::Output(rs_teststand_sys::OutKind::Text)
+                    ));
+                    assert!(matches!(
+                        arguments[2],
+                        rs_teststand_sys::InvokeArgument::Output(rs_teststand_sys::OutKind::Bool)
+                    ));
+                    assert!(matches!(
+                        arguments[3],
+                        rs_teststand_sys::InvokeArgument::Value(Value::I32(_))
+                    ));
+                    assert!(matches!(
+                        arguments[4],
+                        rs_teststand_sys::InvokeArgument::Value(Value::I32(_))
+                    ));
+                    assert!(matches!(
+                        arguments[5],
+                        rs_teststand_sys::InvokeArgument::Value(Value::Bool(_))
+                    ));
+                    assert!(matches!(
+                        arguments[6],
+                        rs_teststand_sys::InvokeArgument::Value(Value::Empty)
+                    ));
+                    Ok((
+                        Value::Bool(true),
+                        vec![Value::Str("C:\\found.seq".to_owned()), Value::Bool(false)],
+                    ))
+                }
+                dispid::FIND_PATH => {
+                    assert_eq!(arguments.len(), 4, "FindPath has four parameters");
+                    assert!(matches!(
+                        arguments[0],
+                        rs_teststand_sys::InvokeArgument::Value(Value::Str(_))
+                    ));
+                    assert!(matches!(
+                        arguments[1],
+                        rs_teststand_sys::InvokeArgument::Output(rs_teststand_sys::OutKind::Text)
+                    ));
+                    assert!(matches!(
+                        arguments[2],
+                        rs_teststand_sys::InvokeArgument::Output(rs_teststand_sys::OutKind::Int)
+                    ));
+                    assert!(matches!(
+                        arguments[3],
+                        rs_teststand_sys::InvokeArgument::Value(Value::Empty)
+                    ));
+                    Ok((
+                        Value::Bool(true),
+                        vec![Value::Str("C:\\found".to_owned()), Value::I32(2)],
+                    ))
+                }
+                _ => Err(ComError::hresult(0, "fake: unscripted arguments")),
+            }
+        }
+    }
+
+    fn engine_with(entries: impl IntoIterator<Item = (i32, Scripted)>) -> Engine {
+        engine_recording(entries).0
+    }
+
+    /// An engine plus the log of everything it writes.
+    fn engine_recording(entries: impl IntoIterator<Item = (i32, Scripted)>) -> (Engine, Written) {
+        let written: Written = std::rc::Rc::default();
+        let dispatch = FakeDispatch::new(entries, std::rc::Rc::clone(&written));
+        (Engine::from_dispatch(Box::new(dispatch)), written)
+    }
+
+    /// What a wrapper sent, reduced to the shapes these members use.
+    ///
+    /// `Value` carries COM payloads that have no meaningful equality, so it does
+    /// not implement `PartialEq`. Comparing the handful of scalar cases here is
+    /// enough and keeps that out of the public type.
+    #[derive(Debug, PartialEq, Eq)]
+    enum Sent {
+        Empty,
+        Bool(bool),
+        I32(i32),
+        Other,
+    }
+
+    impl From<&Value> for Sent {
+        fn from(value: &Value) -> Self {
+            match *value {
+                Value::Empty => Self::Empty,
+                Value::Bool(flag) => Self::Bool(flag),
+                Value::I32(number) => Self::I32(number),
+                _ => Self::Other,
+            }
+        }
+    }
+
+    /// Whether the log holds exactly this one entry.
+    fn wrote(written: &Written, dispid: i32, expected: &Sent) -> bool {
+        let log = written.borrow();
+        matches!(log.as_slice(), [(id, sent)] if *id == dispid && Sent::from(sent) == *expected)
+    }
+
+    #[test]
+    fn major_version_reads_i4_property() -> Result<(), Error> {
+        let engine = engine_with([(dispid::MAJOR_VERSION, Scripted::I32(26))]);
+        assert_eq!(engine.major_version()?, 26);
+        Ok(())
+    }
+
+    #[test]
+    fn get_execution_asks_by_id_and_reports_a_stale_id_as_absent() -> Result<(), Error> {
+        let (engine, written) = engine_recording([]);
+        // An id the engine no longer knows is a normal outcome for a host that
+        // kept an id across the execution ending, not a failure.
+        assert!(engine.get_execution(7)?.is_none());
+        assert!(
+            wrote(&written, dispid::GET_EXECUTION, &Sent::I32(7)),
+            "expected the execution id to be sent, got {:?}",
+            written.borrow(),
+        );
+        Ok(())
+    }
+
+    #[test]
+    fn version_string_reads_bstr_property() -> Result<(), Error> {
+        let engine = engine_with([(dispid::VERSION_STRING, Scripted::Str("26.0.0.123"))]);
+        assert_eq!(engine.version_string()?, "26.0.0.123");
+        Ok(())
+    }
+
+    #[test]
+    fn is_64bit_reads_bool_property() -> Result<(), Error> {
+        let engine = engine_with([(dispid::IS_64BIT, Scripted::Bool(true))]);
+        assert!(engine.is_64bit()?);
+        Ok(())
+    }
+
+    #[test]
+    fn directories_read_bstr_properties() -> Result<(), Error> {
+        let engine = engine_with([
+            (dispid::TESTSTAND_DIRECTORY, Scripted::Str("T:\\TestStand")),
+            (dispid::BIN_DIRECTORY, Scripted::Str("T:\\TestStand\\Bin")),
+            (
+                dispid::CONFIG_DIRECTORY,
+                Scripted::Str("T:\\TestStand\\Cfg"),
+            ),
+        ]);
+        assert_eq!(engine.teststand_directory()?, "T:\\TestStand");
+        assert_eq!(engine.bin_directory()?, "T:\\TestStand\\Bin");
+        assert_eq!(engine.config_directory()?, "T:\\TestStand\\Cfg");
+        Ok(())
+    }
+
+    #[test]
+    fn unload_all_modules_calls_the_method_with_no_arguments() -> Result<(), Error> {
+        let (engine, written) = engine_recording([]);
+        engine.unload_all_modules()?;
+        assert!(
+            wrote(&written, dispid::UNLOAD_ALL_MODULES, &Sent::Empty),
+            "expected one argument-free call, got {written:?}",
+        );
+        Ok(())
+    }
+
+    #[test]
+    fn csv_streams_are_refused_before_2017() {
+        let engine = engine_with([(dispid::MAJOR_VERSION, Scripted::I32(16))]);
+        let result = engine.new_csv_file_input_record_stream("data.csv");
+        assert!(matches!(
+            result,
+            Err(Error::Unsupported {
+                minimum_major: 17,
+                actual_major: 16,
+                ..
+            })
+        ));
+    }
+
+    #[test]
+    fn breakpoints_enabled_round_trips() -> Result<(), Error> {
+        let engine = engine_with([(dispid::BREAKPOINTS_ENABLED, Scripted::Bool(true))]);
+        assert!(engine.breakpoints_enabled()?);
+
+        let (engine, written) = engine_recording([]);
+        engine.set_breakpoints_enabled(false)?;
+        assert!(
+            wrote(&written, dispid::BREAKPOINTS_ENABLED, &Sent::Bool(false)),
+            "expected the flag to be written as a bool, got {written:?}",
+        );
+        Ok(())
+    }
+
+    #[test]
+    fn persist_breakpoints_round_trips() -> Result<(), Error> {
+        let engine = engine_with([(dispid::PERSIST_BREAKPOINTS, Scripted::Bool(false))]);
+        assert!(!engine.persist_breakpoints()?);
+
+        let (engine, written) = engine_recording([]);
+        engine.set_persist_breakpoints(true)?;
+        assert!(
+            wrote(&written, dispid::PERSIST_BREAKPOINTS, &Sent::Bool(true)),
+            "expected the flag to be written as a bool, got {written:?}",
+        );
+        Ok(())
+    }
+
+    #[test]
+    fn dot_net_collection_passes_the_reserved_argument() -> Result<(), Error> {
+        // The engine declares the parameter optional with a zero default. Send
+        // it explicitly so the call stays correct if the default is dropped.
+        let (engine, written) = engine_recording([]);
+        engine.do_dot_net_garbage_collection()?;
+        assert!(
+            wrote(
+                &written,
+                dispid::DO_DOT_NET_GARBAGE_COLLECTION,
+                &Sent::I32(0)
+            ),
+            "expected the reserved argument to be sent as zero, got {written:?}",
+        );
+        Ok(())
+    }
+
+    #[test]
+    fn dot_net_collection_interval_round_trips() -> Result<(), Error> {
+        let engine = engine_with([(
+            dispid::DOT_NET_GARBAGE_COLLECTION_INTERVAL,
+            Scripted::I32(30_000),
+        )]);
+        assert_eq!(engine.dot_net_garbage_collection_interval()?, 30_000);
+
+        let (engine, written) = engine_recording([]);
+        engine.set_dot_net_garbage_collection_interval(5_000)?;
+        assert!(
+            wrote(
+                &written,
+                dispid::DOT_NET_GARBAGE_COLLECTION_INTERVAL,
+                &Sent::I32(5_000)
+            ),
+            "expected the interval to be written as an i4, got {written:?}",
+        );
+        Ok(())
+    }
+
+    #[test]
+    fn dot_net_clr_version_is_empty_when_the_runtime_is_not_loaded() -> Result<(), Error> {
+        // Documented behavior: empty means "not loaded", not "failed".
+        let engine = engine_with([(dispid::DOT_NET_CLR_VERSION, Scripted::Str(""))]);
+        assert_eq!(engine.dot_net_clr_version()?, "");
+        Ok(())
+    }
+
+    #[test]
+    fn com_failure_propagates_as_typed_error() {
+        // 0x8004_2001 stands in for an engine HRESULT; the exact code must survive.
+        let engine = engine_with([(dispid::MAJOR_VERSION, Scripted::Fail(-2_147_209_215))]);
+        let result = engine.major_version();
+        assert!(
+            matches!(result, Err(Error::Com { hresult, .. }) if hresult == -2_147_209_215),
+            "expected Com error carrying the HRESULT, got {result:?}",
+        );
+    }
+
+    #[test]
+    fn wrong_variant_type_is_reported_not_coerced() {
+        // Property answers with a string where the wrapper wants an i32.
+        let engine = engine_with([(dispid::MAJOR_VERSION, Scripted::Str("not a number"))]);
+        let result = engine.major_version();
+        assert!(
+            matches!(
+                result,
+                Err(Error::UnexpectedType {
+                    expected: "I32",
+                    ..
+                })
+            ),
+            "expected a type-mismatch error, got {result:?}",
+        );
+    }
+
+    #[test]
+    fn station_model_file_returns_the_file_and_description() -> Result<(), Error> {
+        let engine = engine_with([(
+            dispid::GET_STATION_MODEL_SEQUENCE_FILE,
+            Scripted::Model("Sequential model"),
+        )]);
+        let model = engine.get_station_model_sequence_file()?;
+        let (file, description) = model.ok_or(Error::UnexpectedType {
+            expected: "a station model file",
+            actual: "none",
+        })?;
+        assert_eq!(description, "Sequential model");
+        drop(file);
+        Ok(())
+    }
+
+    #[test]
+    fn new_step_type_returns_an_object() -> Result<(), Error> {
+        let engine = engine_with(std::iter::empty());
+        let step_type = engine.new_step_type()?;
+        drop(step_type);
+        Ok(())
+    }
+
+    #[test]
+    fn objects_serialize_and_unserialize_through_the_engine() -> Result<(), Error> {
+        let engine = engine_with(std::iter::empty());
+        let object = crate::PropertyObject::new(Box::new(FakeDispatch::new(
+            std::iter::empty::<(i32, Scripted)>(),
+            std::rc::Rc::default(),
+        )));
+        assert_eq!(engine.serialize_objects(&[&object], 0)?, "<serialized/>");
+        let objects = engine.unserialize_objects("<serialized/>", 0, 1)?;
+        assert_eq!(objects.len(), 1);
+        Ok(())
+    }
+
+    #[test]
+    fn find_file_reads_its_interleaved_outputs() -> Result<(), Error> {
+        let engine = engine_with(std::iter::empty());
+        let result = engine.find_file(
+            "found.seq",
+            crate::find::FindFilePromptOption::Disable,
+            crate::find::FindFileSearchListOption::No,
+            false,
+            None,
+        )?;
+        assert!(result.found);
+        assert_eq!(result.absolute_path.as_deref(), Some("C:\\found.seq"));
+        assert!(!result.user_cancelled);
+        Ok(())
+    }
+
+    #[test]
+    fn find_path_reads_its_interleaved_outputs() -> Result<(), Error> {
+        let engine = engine_with(std::iter::empty());
+        let result = engine.find_path("found", None)?;
+        assert!(result.found);
+        assert_eq!(result.absolute_path.as_deref(), Some("C:\\found"));
+        assert_eq!(result.status, Some(crate::find::FindPathStatus::Directory));
+        Ok(())
+    }
+}
