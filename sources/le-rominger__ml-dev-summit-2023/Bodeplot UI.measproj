@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="3222A7BABBC1C507DABDABF3E463ACB817019C90591EEF0FDB69C1FB7E6E8DA307E1F9037A06D7F688735B6136084D872215D398B85DE6099951A8FCC4EF81D8" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="23.3.0.50004" FeatureSetName="Pin Map" Name="http://www.ni.com/InstrumentFramework/PinMap" OldestCompatibleVersion="21.3.0.0" Version="21.3.0.0" />
+		<ParsableNamespace AssemblyFileVersion="23.3.0.50004" FeatureSetName="InstrumentStudio Measurement UI" Name="http://www.ni.com/InstrumentFramework/ScreenDocument" OldestCompatibleVersion="22.1.0.1" Version="22.1.0.1" />
+		<ParsableNamespace AssemblyFileVersion="9.8.0.50004" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="9.8.0.50004" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/EnvoyManagement" OldestCompatibleVersion="5.0.0.0" Version="5.0.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="9.8.0.50004" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/SystemDiagram" OldestCompatibleVersion="8.0.0.49152" Version="8.0.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="9.8.0.50004" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/SystemModelCore" OldestCompatibleVersion="5.1.0.5" Version="5.2.0.49152" />
+		<ApplicationVersionInfo Build="23.3.0.50004" Name="MeasurementLink UI Editor" Version="23.3.0.50004" />
+	</SourceModelFeatureSet>
+	<Project xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="8dd09c2ba8064736b7d4ec1f3a8525f0" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<EmbeddedDefinitionReference Id="fe05f6ad70154f0ba4f53e57ccb40db4" ModelDefinitionType="NationalInstruments.ProjectExplorer.Modeling.ProjectDataManager" Name="ProjectExplorer">
+			<ProjectExplorer />
+		</EmbeddedDefinitionReference>
+		<EmbeddedDefinitionReference Id="ba37d6b8aa644a57a80499da1b294fc0" ModelDefinitionType="NationalInstruments.SystemDesigner.SystemDiagram.SystemDiagramDefinition" Name="SystemDiagram">
+			<SystemDiagram Id="683dbc80196f49d5a51f5b7d321fe12a" SystemDiagramVersion="75" xmlns="http://www.ni.com/SystemDesigner/SystemDiagram">
+				<EnvoySuperimpositionContainer Id="1a55c692d1a940fe8fb4db1092445035" xmlns="http://www.ni.com/SystemDesigner/EnvoyManagement">
+					<MappingManager Id="b684b66ab94040829a920b74dff74af5" xmlns="http://www.ni.com/SystemDesigner/SystemModelCore">
+						<Superimposition Id="8c85dba93ce848c5bf66ca45e866206e" Name="Root Superimposition" />
+					</MappingManager>
+				</EnvoySuperimpositionContainer>
+				<SystemDiagramRootDiagram Id="82a841c6acdd4b75afa3b8e188628e22" />
+			</SystemDiagram>
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="f162827c124e442a89b2959cbd759ee2" ModelDefinitionType="NullTarget" Name="NullTarget">
+			<NullTarget />
+		</NameScopingEnvoy>
+		<NameScopingEnvoy Id="32851b87947a4f21949acff80af75b97" ModelDefinitionType="DefaultTarget" Name="DefaultTarget">
+			<DefaultTarget />
+			<SourceFileReference Id="324fddacd5b9475c8ae04c2ab4ae14ee" ModelDefinitionType="{http://www.ni.com/InstrumentFramework/ScreenDocument}Screen" Name="Measurement UI.measui" StoragePath="Measurement UI.measui" />
+			<FileReference Id="c508fff8a9dc4ef09b20bbeeec6673dd" ModelDefinitionType="{http://www.ni.com/InstrumentFramework/PinMap}PinMapDefinition" Name="PinMap.pinmap" StoragePath="PinMap.pinmap" p4:IsActive="True" xmlns:p4="http://www.ni.com/InstrumentFramework/PinMap" />
+		</NameScopingEnvoy>
+	</Project>
+	<ProjectInformation xmlns="http://www.ni.com/PlatformFramework" />
+</SourceFile>

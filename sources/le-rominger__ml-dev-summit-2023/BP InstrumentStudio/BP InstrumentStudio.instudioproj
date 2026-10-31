@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="9DFEF1937BF38A87651DD38DDC9C72A7F4C3B51FAFFFE66B663B27EBF565D8C9F1A30366C2E120CD8E21366A85C1D6FEE482944D4A8872A6D3A4546EEC1AF7BB" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="23.3.0.50000" FeatureSetName="Pin Map" Name="http://www.ni.com/InstrumentFramework/PinMap" OldestCompatibleVersion="21.3.0.0" Version="21.3.0.0" />
+		<ParsableNamespace AssemblyFileVersion="9.8.0.50000" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="23.3.0.50000" Name="InstrumentStudio" PersistenceVersion="22.1.0.0" Version="23.3.0.50000" />
+	</SourceModelFeatureSet>
+	<Project xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="535dca2b154c4b08a7f368c224a7eddb" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<EmbeddedDefinitionReference Id="69b0cc5943594bfdadd8b3b02115f37d" ModelDefinitionType="NationalInstruments.ProjectExplorer.Modeling.ProjectDataManager" Name="ProjectExplorer">
+			<ProjectExplorer />
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="a5401f5c958a4a4396f4d178c5a0acfb" ModelDefinitionType="DefaultTarget" Name="DefaultTarget">
+			<DefaultTarget />
+			<SourceFileReference Bindings="EnvoyManager" Id="f74cbe46b04a4b629eeb9320e2be28aa" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.UnifiedTask" Name="ML Plugin LabVIEW.sfp" StoragePath="ML Plugin LabVIEW.sfp" />
+			<SourceFileReference Bindings="EnvoyManager" Id="a1a13b518a7a49f19877111af39d524c" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.UnifiedTask" Name="Instruments.sfp" OverridingModelDefinitionType="NationalInstruments.InstrumentFramework.Scope.SourceModel.UnifiedTaskDocumentType" StoragePath="Instruments.sfp" />
+			<FileReference Id="8ff0fa276024415ca68157e51f42033d" ModelDefinitionType="{http://www.ni.com/InstrumentFramework/PinMap}PinMapDefinition" Name="PinMap.pinmap" StoragePath="..\PinMap.pinmap" p4:IsActive="True" xmlns:p4="http://www.ni.com/InstrumentFramework/PinMap" />
+			<SourceFileReference Bindings="EnvoyManager" Id="b218e516a9c34cd5b3b78164a60a5872" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.UnifiedTask" Name="ML PlugIn Python.sfp" StoragePath="ML PlugIn Python.sfp" />
+		</NameScopingEnvoy>
+	</Project>
+	<ProjectInformation xmlns="http://www.ni.com/PlatformFramework" />
+</SourceFile>

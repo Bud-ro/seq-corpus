@@ -1,0 +1,75 @@
+{
+ "repo": "ni/instrumentstudio-screenshot-utility-python",
+ "url": "https://github.com/ni/instrumentstudio-screenshot-utility-python",
+ "commit": "10b3210f8add27a4cfa3e123468874265c8ce6da",
+ "license": "MIT",
+ "licenseFile": "LICENSE",
+ "fetched": "2026-10-28",
+ "files": [
+  {
+   "path": "source/Test Screenshot Utility.seq",
+   "bytes": 7855,
+   "sha256": "cb6ab4fdf6a67b960b4742937a1a06026430c8566045ac9316091db476e5d372",
+   "blob": "176189d142aa984f5e9d83e37f3cecd4cd84b2d5",
+   "via": "extension"
+  },
+  {
+   "path": ".github/CODEOWNERS",
+   "bytes": 72,
+   "sha256": "94b1f23f72346194a02c01a6de7d7aec2e85e19331703bd9e0048446df21a362",
+   "blob": "349c952b199922e5c1c2663b642df408f14c5713",
+   "via": "tree"
+  },
+  {
+   "path": ".github/PULL_REQUEST_TEMPLATE.md",
+   "bytes": 352,
+   "sha256": "0139209365b5c76e6c9126a902a4f4280708f8bdf686d37685a3fa503f3b0907",
+   "blob": "2eaebac540771d5bece7dc66bd4669722e701b67",
+   "via": "tree"
+  },
+  {
+   "path": "CONTRIBUTING.md",
+   "bytes": 2934,
+   "sha256": "c498c9d34e7898010b58d923a541a414dc2b89de9f97959c689beb1ea9be8b6b",
+   "blob": "3215e5e65a93c631a8f8ab997ced291e6dcc4196",
+   "via": "tree"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1071,
+   "sha256": "aec0d06ce4db329f3bd53ca76527d3b98b2924777d596c470bdd49c6838b8663",
+   "blob": "9fe44f27d5743e8fc4b91caa062b4c0890a1b520",
+   "via": "tree"
+  },
+  {
+   "path": "README.md",
+   "bytes": 5623,
+   "sha256": "1227e14d821c79205739966ee69bb463ef5946fdd78f76f6b39f2f49ba1fd762",
+   "blob": "52cf9a9425406d350d2f54daf4fc7bda94906f23",
+   "via": "tree"
+  },
+  {
+   "path": "SECURITY.md",
+   "bytes": 1312,
+   "sha256": "c3c34cacd2f1f76e9c299372d8b9cf3fbe6da13340cc1eb9721762a521c80a69",
+   "blob": "ce102abf42cdeee88a5a6c8f66955cb69674ebea",
+   "via": "tree"
+  },
+  {
+   "path": "source/example.py",
+   "bytes": 405,
+   "sha256": "626903cafcc99f4862c74b28cddf878fb1d7daadab277e5d265e1c28ced37535",
+   "blob": "2ff38db46d25273bb254054936f6a38f0285fdee",
+   "via": "tree"
+  },
+  {
+   "path": "source/screenshot_utility.py",
+   "bytes": 12136,
+   "sha256": "1896417593770e553a8af8bd66454462650cc22cda267c3f3072faba802c8858",
+   "blob": "5316e9660965ae2d7bc0da5fd190e9a2d87ebeb7",
+   "via": "tree"
+  }
+ ],
+ "skipped": [],
+ "external": []
+}

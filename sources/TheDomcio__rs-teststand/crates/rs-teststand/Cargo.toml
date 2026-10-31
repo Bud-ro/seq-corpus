@@ -1,0 +1,35 @@
+[package]
+name = "rs-teststand"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Community Rust bindings (twin API) for the National Instruments TestStand™ COM API"
+documentation.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+keywords.workspace = true
+categories.workspace = true
+readme = "README.md"
+
+# On publish, cargo drops the `path` and resolves `rs-teststand-sys` by version
+# from crates.io, so `cargo add rs-teststand` pulls a self-contained crate.
+[package.metadata.docs.rs]
+# This crate wraps a Windows COM API and does not build for Linux, which is what
+# docs.rs targets by default. Point it at Windows so the documentation builds.
+default-target = "x86_64-pc-windows-msvc"
+# `default-target` is built as well as these, so it is not repeated here.
+targets = ["i686-pc-windows-msvc"]
+all-features = true
+
+[dependencies]
+rs-teststand-sys = { path = "../rs-teststand-sys", version = "0.14.1" }
+thiserror = "2.0.18"
+bitflags = "2.13.1"
+
+[features]
+# Enables tests that instantiate the live TestStand(TM) Engine.
+live-engine = []
+
+[lints]
+workspace = true

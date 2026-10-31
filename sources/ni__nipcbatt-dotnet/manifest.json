@@ -1,0 +1,754 @@
+{
+ "repo": "ni/nipcbatt-dotnet",
+ "url": "https://github.com/ni/nipcbatt-dotnet",
+ "commit": "c36b7b5445def722dee9096fff7f46b2faf1683f",
+ "license": "MIT",
+ "licenseFile": "LICENSE",
+ "fetched": "2026-10-28",
+ "files": [
+  {
+   "path": "source/NI_PCBA_Measurement_Simulated_TestScale.ini",
+   "bytes": 9799,
+   "sha256": "69a7904469c69f23168a17419c6ad390dfdf82ff391b1b12d49a7d1b7a6f918d",
+   "blob": "abc3a868d52f6169b8b57649e07e0ec189b089c9",
+   "via": "extension"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Automation/Action Button Test/Action Button Test.seq",
+   "bytes": 11008,
+   "sha256": "d0dfcffa91fa94d0cadf72fff96c7101167f0968bd75eab999f667deeb7fc721",
+   "blob": "b930dbc9ae95ffc4149cbac569908eaa0aa85dc5",
+   "via": "extension"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Automation/Audio Test/Audio Line Check Test.seq",
+   "bytes": 11700,
+   "sha256": "1b35b36ea66a180c84ef522cd03ffb785126f5a3ac3dfa2918007cd2d8d4faa0",
+   "blob": "989f2fc7f2840087511d1b4e7ebbd33c24be22ed",
+   "via": "extension"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Automation/Digital IO Test/Digital State Test.seq",
+   "bytes": 9044,
+   "sha256": "cc072c8e18f0d7a310b3e1b06f8f09a2534b5d871fa4bd66a4c800e335dd794a",
+   "blob": "79d48a8a3d05e9df5a3b21a6dfa705a7806d06d8",
+   "via": "extension"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Automation/Power Supply Test/Power Supply and Measure with trigger.seq",
+   "bytes": 12418,
+   "sha256": "6dbe4760603fe8d1771ff16850abe00cbe9f5d0e8ca428bc66536cc4d1c5a9c4",
+   "blob": "9b844e3b7fe189b9ad090837b751048aee41fa6d",
+   "via": "extension"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Automation/Power Supply Test/Power Supply and Measure without trigger.seq",
+   "bytes": 12019,
+   "sha256": "a28f7a964d7aa8cd60e300dd8726e5ab71232a8e22b9f892c4cca59f76037790",
+   "blob": "38816eb4f4db0ef448a0e6cce88b385078c18894",
+   "via": "extension"
+  },
+  {
+   "path": ".github/CODEOWNERS",
+   "bytes": 72,
+   "sha256": "94b1f23f72346194a02c01a6de7d7aec2e85e19331703bd9e0048446df21a362",
+   "blob": "349c952b199922e5c1c2663b642df408f14c5713",
+   "via": "tree"
+  },
+  {
+   "path": ".github/PULL_REQUEST_TEMPLATE.md",
+   "bytes": 352,
+   "sha256": "0139209365b5c76e6c9126a902a4f4280708f8bdf686d37685a3fa503f3b0907",
+   "blob": "2eaebac540771d5bece7dc66bd4669722e701b67",
+   "via": "tree"
+  },
+  {
+   "path": "CONTRIBUTING.md",
+   "bytes": 2912,
+   "sha256": "b79596167d542fde5fd872c4a6e9444d654e6d05eb546d5f7e0a35c26fe6df8f",
+   "blob": "dc725e4da2abde82986b0b8dcfaf9a067d50392b",
+   "via": "tree"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1148,
+   "sha256": "f3b78543a3ea26fd0737b7691e155b9aa5b4c6ae2089d7cdb02d6aaef214983b",
+   "blob": "218d100bbbe21d9c54d3e564d577dab36e038ab6",
+   "via": "tree"
+  },
+  {
+   "path": "README.md",
+   "bytes": 5031,
+   "sha256": "4daf253edd011784b92c5f4fc85d5299be3e482d07d4b50dbbc9e82f9aa0e523",
+   "blob": "dd50434a57d6bd8c16f9b2977c884478992ba73c",
+   "via": "tree"
+  },
+  {
+   "path": "SECURITY.md",
+   "bytes": 1312,
+   "sha256": "c3c34cacd2f1f76e9c299372d8b9cf3fbe6da13340cc1eb9721762a521c80a69",
+   "blob": "ce102abf42cdeee88a5a6c8f66955cb69674ebea",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCB Assembly Test Toolkit.sln",
+   "bytes": 2199,
+   "sha256": "c488ffe97f7490ea043b92fe10c4a480ed242da8e1e0511b38e265e5414b8941",
+   "blob": "881e887f9001e6295a57e15d08fd9d420c799c1c",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA Test Toolkit csproj template.xml",
+   "bytes": 3110,
+   "sha256": "642fafbd0cbfcb5c83f9cf05cbc534ec116fc9d233da62ddcc505f8784054c8e",
+   "blob": "24fac43d8824c72555353a6bcbbab119a845a1b2",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Automation/AbstractSequence.cs",
+   "bytes": 332,
+   "sha256": "a6eee53ee99abbf3b62fefb568f8bb7c2d8004a0a2b86c7f9ac793f33af7d8ac",
+   "blob": "66a76cc9c823a8d16612c5f1c2b264a84fedefbf",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Automation/Action Button Test/ActionButtonTestSequence.cs",
+   "bytes": 5728,
+   "sha256": "8f2eceabc3703f8ee9aa386f15c7eb98feee449d9228bda60cbc704179121984",
+   "blob": "0b97e3341025a3e29a5f339cc09805a0964f091f",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Automation/Audio Test/AudioLineCheckTestSequence.cs",
+   "bytes": 8097,
+   "sha256": "fd618cd56fd31fcd250f16a181789de01c34b3064dfc96a0c3d2a93dc5e1f11a",
+   "blob": "6746c954ca302ddd01c1e98679cc3d6eb7058e91",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Automation/Creation Example/Analog Trigger/TimeDomainMeasurementWithAnalogTrigger.cs",
+   "bytes": 23740,
+   "sha256": "b403f5d09d7492d6ce15e712bfd4bb8b3d629349af8fd373e4d06531d7ad5635",
+   "blob": "6ebbb2d4e29cbd3f9e84f37f6d6e02b1d07a095c",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Automation/Creation Example/TimeDomainMeasurementWithAnalogTriggerSequence.cs",
+   "bytes": 7866,
+   "sha256": "9417c4da8eed4c84dfce33f0ad81aff4196a42d57e9a3996f11990ea2c4430a0",
+   "blob": "865bec641d7b6f6428be25b6f339dc9e421b604c",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Automation/Digital IO Test/DigitalStateTestSequence.cs",
+   "bytes": 2576,
+   "sha256": "9bc3bb580c7057cd6a1f4ab758e9fda1d111a15367e796b4b049757e5e648108",
+   "blob": "45b815676f6c2e5b17c20774740d71aa238fab9a",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Automation/PCBA.Test.Toolkit.Automation.csproj",
+   "bytes": 729,
+   "sha256": "20db7a979ab6289b1c88b8b09200d5fb8f3e87ed164722b9055a471e47b854b9",
+   "blob": "bb5146dd2f663eefd97076d5dd5e4287dbe0504b",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Automation/Power Supply Test/PowerSupplyAndMeasureWithTrigger.cs",
+   "bytes": 7704,
+   "sha256": "8ae6e75c65d951d445cade3ce7ece8ae8f35515ffb6139b5df284fb8f1221e0f",
+   "blob": "f4aef08832e47e578f701c33e20bc61911744c10",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Automation/Power Supply Test/PowerSupplyAndMeasureWithoutTrigger.cs",
+   "bytes": 4150,
+   "sha256": "42a4dea98d1db25e98ee395bff19cf354607bfcab63365d9f7d1b82b7974d1ac",
+   "blob": "c292e320cce714aa04a7a99d14264cb499aa750a",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Automation/PowerDownChannels.cs",
+   "bytes": 4255,
+   "sha256": "d1d1fabcc3b0b0f64fa71da344a9e29a0328500bc60ce88a58480863845f208e",
+   "blob": "70abca3588dc193bdf179cd8f590a79f697d6a21",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Automation/Program.cs",
+   "bytes": 3333,
+   "sha256": "c37ba431f597d41cb766898e386892f9770f1d27f37983ce24f11d101cf8c21b",
+   "blob": "2cd7c28654aba46753b8bc87c2381c9cbe7301b9",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Communications/I2CCommunications/I2CReadCommunicationTests.cs",
+   "bytes": 1400,
+   "sha256": "ff79c4c6f65fe3cea0d9fce54f991ddaeea9953751f8fe39ce43b03433e7a235",
+   "blob": "df99adae235d1208151a52400b72694405ed05d3",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Communications/I2CCommunications/I2CWriteCommunicationTests.cs",
+   "bytes": 1237,
+   "sha256": "ec3deca657f36dfb894d24f38165c986d0bbf269148d28c47ea19f43f0749c33",
+   "blob": "c8fce952b13accd2e85dad4606d6dc5cfd22a511",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Communications/SerialCommunications/SerialCommunicationTests.cs",
+   "bytes": 1486,
+   "sha256": "301eb8402ce8692160d9bf8d369f6e0e653314de6d36a855b77a13f53431fabd",
+   "blob": "d34410f485686d8233257e187ce11f3b3e2769f3",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Communications/SpiCommunications/SpiReadCommunicationTests.cs",
+   "bytes": 1400,
+   "sha256": "36f40b796400b2338b1314796bb0cabee5ee4e3cf5e0cbdcfbc2eea181cd6cc7",
+   "blob": "e0eb17ce5343026f182dbedc55befdd10a90c4d5",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Communications/SpiCommunications/SpiWriteCommunicationTests.cs",
+   "bytes": 1237,
+   "sha256": "dc218ea7aa56c5de559e216a8e992a6665853c0227389172f5be1d371112eaf2",
+   "blob": "3f4ce84a248bb21272d4e4aa788628463e42c5fe",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Generations/DcVoltageGenerations/DcVoltageGenerationTests.cs",
+   "bytes": 2269,
+   "sha256": "f4eae873f047ee2ed65ee101b202eed92665d06b73c9663f49af3bec4e05cf0e",
+   "blob": "8275c6c9569f64b73e468b94f50fc144ddbff2c0",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Generations/DigitalClockGenerations/DigitalClockGenerationTests.cs",
+   "bytes": 1622,
+   "sha256": "89185af10702f332ad2de73031e8b974fc472547da7323e8bf0e53b86c28ba5a",
+   "blob": "077d4ea101c8db935e316e24248b156d928b8c23",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Generations/DigitalPulseGenerations/DigitalPulseGenerationTests.cs",
+   "bytes": 1621,
+   "sha256": "3eb3f002d72dfd715e8b56d1e7c56d1bf63f8d1d17dde65eb440eadcc0e64e69",
+   "blob": "7ab4bc0eebb62cc877c0bc8f1aaf350007dc321c",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Generations/DynamicDigitalPatternGenerations/DynamicDigitalPatternGenerationTests.cs",
+   "bytes": 1475,
+   "sha256": "787f1d14dc28572bceb9e9ae567e292d8d3b633f56eeca6bbe0cb0dcfde77500",
+   "blob": "8a358d227696b9d480f315292f3d66b6738801b4",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Generations/SignalVoltageGenerations/SignalVoltageGenerationTests.cs",
+   "bytes": 3118,
+   "sha256": "6d10b9f598252f2d9a38df38f7f8ef2955697797aa942cfa90c9832831c47476",
+   "blob": "a160187c595f7bec725b46824271e709c7ddc157",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Generations/StaticDigitalStateGenerations/StaticDigitalStateGenerationTests.cs",
+   "bytes": 1599,
+   "sha256": "63f5ade9774147d19d297ca27f9a79811df85b0bf1e29f69c39a558808bcac19",
+   "blob": "045a5de7cc82029b43e3e082abc78babdde494a7",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Measurements/DcRmsCurrentMeasurements/DcRmsCurrentMeasurementTests.cs",
+   "bytes": 1298,
+   "sha256": "321c37102bab895b9adf163eea7e2f1fa29dd929bcc99a287210c5262e27afc3",
+   "blob": "e20de18a05ddbc2961c52b65d8e9d57731aef55b",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Measurements/DcRmsVoltageMeasurements/DcRmsVoltageMeasurementTests.cs",
+   "bytes": 1352,
+   "sha256": "0baa4a93262eef7a84e1bb134cd815b628b8ece7782ba277085d6e4a6b1081aa",
+   "blob": "55ae33e1a9fbd2ed1be4dd9124680c3e15d20d28",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Measurements/DigitalEdgeCountMeasurements/DigitalEdgeCountMeasurementUsingHardwareTimerTests.cs",
+   "bytes": 1857,
+   "sha256": "0e31e02b7eb7d549d0534aa7e0353c2c1e07244c446c9145e6eef645d6d1485d",
+   "blob": "b5adab24b947b8ecaaac3522216615e7273a61ae",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Measurements/DigitalEdgeCountMeasurements/DigitalEdgeCountMeasurementUsingSoftwareTimerTests.cs",
+   "bytes": 1504,
+   "sha256": "6de16fe2ca156250c412a5317301f7eb3f4e9ab647939b6d4c5903babfe6107a",
+   "blob": "ef26a357fd9415cd212bd3677c97f2598088e6d0",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Measurements/DigitalFrequencyMeasurements/DigitalFrequencyMeasurementTests.cs",
+   "bytes": 1466,
+   "sha256": "75a708446d2940774e62c20338f878e3c1753087dcc3e95ff8aee60f0647d4a4",
+   "blob": "08436b13ba1b55d58993de424dd3b3c492ce03f9",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Measurements/DigitalPwmMeasurements/DigitalPwmMeasurementTests.cs",
+   "bytes": 1384,
+   "sha256": "0705400bc4e6967c8747b11dd106af32485465f4e2e4b85ff8069084704059cc",
+   "blob": "14751770ae8daa490615b8ecc4627e5cc55fdbfa",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Measurements/DynamicDigitalPatternMeasurements/DynamicDigitalPatternMeasurementTests.cs",
+   "bytes": 1458,
+   "sha256": "4440210a9b4be2ee586c268ad8fc74ac3610d39823efa279c26ba1a9998c6846",
+   "blob": "e6d8be94ad3e486b03492b82941b0edd7e4297d4",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Measurements/FrequencyDomainMeasurements/FrequencyDomainMeasurementTests.cs",
+   "bytes": 1375,
+   "sha256": "33670391585e28bdd9bda9ea899c69d1deecd7eaaf2958e3d5d6c97fb9bf9c75",
+   "blob": "18c6c1bdcb705ff1e031a7ee5b3b4e6d7b1e2e9a",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Measurements/PowerSupplySourceAndMeasurements/PowerSupplySourceAndMeasureTests.cs",
+   "bytes": 1392,
+   "sha256": "de4ffa9e081b9eeadeeb1dd67efc5f9f1dff1153c9e5c5e03cb6d4fbcb9596d8",
+   "blob": "3481ac10a24177f9466aad760a6294513bc3eefa",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Measurements/StaticDigitalStateMeasurements/StaticDigitalStateMeasurementTests.cs",
+   "bytes": 997,
+   "sha256": "2b0bef273c9ae76d73682f9da91b9c3646b6f2db9bcba95cb995fdd0b49c65a2",
+   "blob": "ae9bad968fb1cadf0fc6082b3983b63d3101e6ac",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Measurements/TemperatureMeasurements/TemperatureMeasurementUsingRtdTests.cs",
+   "bytes": 1304,
+   "sha256": "475d1151b5e144f26fd013b2ea1d3ef9b9d38d3ef2af00dd9042685f998a8824",
+   "blob": "5e6dfdeea2b5fbc989eb910aedf6aaecc5460fa9",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Measurements/TemperatureMeasurements/TemperatureMeasurementUsingThermistorTests.cs",
+   "bytes": 1357,
+   "sha256": "7f2294a0193bd9eb00004e4317283660d461435725c8db644e166bae74c120c1",
+   "blob": "7b12ebb36cea5c863d6c36719897a8841e5b60af",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Measurements/TemperatureMeasurements/TemperatureMeasurementUsingThermocoupleTests.cs",
+   "bytes": 4061,
+   "sha256": "9bc3682da3a3d75e9bbca82c671e856147d22ae44d626237988b432a57eddf9e",
+   "blob": "d61336e13655abd633e8f9fe615a865a2eb219a7",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/Measurements/TimeDomainMeasurements/TimeDomainMeasurementTests.cs",
+   "bytes": 1330,
+   "sha256": "9c3e77915c2a40a57886f16d710978abdeae35fc62a859cf4978e3b1c911796a",
+   "blob": "5ac6ef80ae8aab302ef4c951a4b922a98257f9fc",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit.Integration/PCBA.Test.Toolkit.Integration.csproj",
+   "bytes": 987,
+   "sha256": "300e614d10b2e0f6ffeb8fa792cfd79d47c9e87b483cf2bec42d8c4ea7c500bc",
+   "blob": "15674b859b34a282cf003f68c03baaedf99efa23",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Communications/I2CCommunications/Constants/ConstantsForI2CReadCommunications.cs",
+   "bytes": 3204,
+   "sha256": "9407da7d1b9a4927b6e555b65719c4abb8f79e8fa5d8f614ba2aaf54feba21e8",
+   "blob": "0cac36f68a05a5d94fc193a352887c516f933d2c",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Communications/I2CCommunications/Constants/ConstantsForI2CWriteCommunications.cs",
+   "bytes": 3465,
+   "sha256": "ede83be6f37108333d158fe02074518b98db900006d16a2b6e2dafe96c072a9f",
+   "blob": "5aeb78f7177dba4c2e933f3e59785689531df702",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Communications/I2CCommunications/I2CReadCommunication.cs",
+   "bytes": 2122,
+   "sha256": "afc4f2184038e8b1839e63cfc6a910fa6440903aace1c9002d173559aa9340f5",
+   "blob": "dc1357e2231639b5e7e23e56bcaaccd20358cdda",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Communications/I2CCommunications/I2CWriteCommunication.cs",
+   "bytes": 2107,
+   "sha256": "91fb428e2a8d17e5a81b0513717bc377369347b213198d384a3d62a23f96a8bd",
+   "blob": "085b046ef396f85c26edfcb138069abeea15249b",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Communications/SerialCommunications/Constants/ConstantsForSerialCommunications.cs",
+   "bytes": 1927,
+   "sha256": "b9c598f75ac4f6c4667b38a8965b8dcb8ba53488f54dd410da189897a0199dea",
+   "blob": "5ce4b3e6b25e09ee53618156be5eb708fc8d2185",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Communications/SerialCommunications/SerialCommunication.cs",
+   "bytes": 2041,
+   "sha256": "8836dd14a9f0d77176bc36b5115ce218e91fe1f8977bb2aa4f7a3d673c5a01e9",
+   "blob": "05afa496ad404de10e7dafce2b12338c875c8c91",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Communications/SpiCommunications/Constants/ConstantsForSpiReadCommunications.cs",
+   "bytes": 2790,
+   "sha256": "757901c59443f50349e404d7a4e83edf954c5718b6e05fe466ea3521d9bf5b7e",
+   "blob": "f5bf0999f5622e592928ce8248a9d0136637f585",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Communications/SpiCommunications/Constants/ConstantsForSpiWriteCommunications.cs",
+   "bytes": 3051,
+   "sha256": "51ee78663140fecc79b34948f62f027d6ee68db97875ede124821f9a803e4c26",
+   "blob": "c7f1c2443a0acc64fe2ff25a1c1038cb734620b2",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Communications/SpiCommunications/SpiReadCommunication.cs",
+   "bytes": 2122,
+   "sha256": "ded92577b8ae019923c8682e3a17815d2cba84f8c1d9f5226379e642cf56d309",
+   "blob": "11aa9a48b566a54fe7347b479e8e30c135181d7f",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Communications/SpiCommunications/SpiWriteCommunication.cs",
+   "bytes": 2108,
+   "sha256": "5788b4a7130559721b113fbc16240fa383486e3f063d3bdcb3883b7ee479ad70",
+   "blob": "d3df924d9d38a4d074a231ac9074e5e137e69978",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Generations/DcVoltageGenerations/Constants/ConstantsForDcVoltageGenerations.cs",
+   "bytes": 918,
+   "sha256": "63af3226c6145fb0b4025cf9efc81c2c2cac4d0e3c7efe05d999fa1be9ef6c23",
+   "blob": "3bc6d4de45fa8d2edf49f769d930392b24c20bfc",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Generations/DcVoltageGenerations/DcVoltageGeneration.cs",
+   "bytes": 2381,
+   "sha256": "36d32dcf66f2d52c178b6c0badfb05aec94f9b4c37fd008acd0e0057b97fc621",
+   "blob": "c38ecc5ac21eaef103ad1757d3453fea149be757",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Generations/DigitalClockGenerations/Constants/ConstantsForDigitalClockGenerations.cs",
+   "bytes": 1288,
+   "sha256": "20ecc3ad6a0d4a12ce6d32d90250cc47a6397facfa8fb63d46c12889904ebc82",
+   "blob": "db6ada28468707f2ee64dd09f833d3b3a86d6c0d",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Generations/DigitalClockGenerations/DigitalClockGeneration.cs",
+   "bytes": 2449,
+   "sha256": "7ccfe46b79ca84b3b75babc4cab8aac50ba01e525040bfb4dc4d366efa1981eb",
+   "blob": "3a276decbb25b0b82d05024c3140b24bc4641e68",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Generations/DigitalPulseGenerations/Constants/ConstantsForDigitalPulseGenerations.cs",
+   "bytes": 1265,
+   "sha256": "0ae233d64a3c3505d76ae7b8b409266a69edbdcad932609514751d4f7b0aa198",
+   "blob": "5b3321b06dfeadabebaf3139c44fa211ddc35961",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Generations/DigitalPulseGenerations/DigitalPulseGeneration.cs",
+   "bytes": 2512,
+   "sha256": "64c99e7e7e3034f89bb5d1ed5a04c5c9ea1efcad5a8b989f5d2bc7ad8e41444f",
+   "blob": "09a4eb3fca0a2913a12da4031fa50ca4eadf00d6",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Generations/DynamicDigitalPatternGenerations/Constants/ConstantsForDynamicDigitalPatternGenerations.cs",
+   "bytes": 1531,
+   "sha256": "456173f962ea03d444aaf0edb406e0e7140464dac8712186ae6a2619c0e794b6",
+   "blob": "95016e80f2080d8dc2dbd164745f7557bdf07173",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Generations/DynamicDigitalPatternGenerations/DynamicDigitalPatternGeneration.cs",
+   "bytes": 2988,
+   "sha256": "4361f74589f6b2b04805af09dc70b6fb4b06accfc525ee0f66b8849d824a6c0a",
+   "blob": "ba00800219964cda2555a375c35c5787dc5dc657",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Generations/SignalVoltageGenerations/Constants/ConstantsForSignalVoltageGenerations.cs",
+   "bytes": 8596,
+   "sha256": "f7bf10c89eebb68b617b6d5c3bd1dcac569d402a035e5e69630f598a360e867b",
+   "blob": "907f5b9e98722aba84905836e5c499b4e8fba0da",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Generations/SignalVoltageGenerations/SignalVoltageGeneration.cs",
+   "bytes": 8192,
+   "sha256": "9f4c56ecd2cd9e29710cd179f9ff79cabe6fc6cee318fde9bf315094297c05b4",
+   "blob": "318858accd025b2cf7993b697fb92e7d789c5ca5",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Generations/StaticDigitalStateGenerations/StaticDigitalStateGeneration.cs",
+   "bytes": 2352,
+   "sha256": "d2f1332451ff7ce936e108179a205e80b3b3bf3cdb941b5ce7230f5bdf7ecc79",
+   "blob": "93ef4d5094cf57a27c42cd5730b9e26b214cb2eb",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/DcRmsCurrentMeasurements/Constants/ConstantsForDcRmsCurrentMeasurements.cs",
+   "bytes": 4211,
+   "sha256": "e4c3c1cdc426f89d929838e305951f590d1076d2408c5ee616759334edc27240",
+   "blob": "78c6cbab6dd279587e486cd5c5408f41e8681c15",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/DcRmsCurrentMeasurements/DcRmsCurrentMeasurement.cs",
+   "bytes": 4442,
+   "sha256": "216f19f1a89be40d1c41dc0205b8367c2bcff5a77fb40ee63263e325fa7bfda5",
+   "blob": "9b1669d50b2b218b7e439bb4b336a0424c74fd9e",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/DcRmsVoltageMeasurements/Constants/ConstantsForDcRmsVoltageMeasurements.cs",
+   "bytes": 3735,
+   "sha256": "8a28c23d2647c6d65f2f0038e76db50909a142a68aaeb7c4cf1b6352517f78be",
+   "blob": "e0924361050eee05a83f54e70f31627e45589885",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/DcRmsVoltageMeasurements/DcRmsVoltageMeasurement.cs",
+   "bytes": 4115,
+   "sha256": "2ca1b75d4053741b7f00898b8a0f26320965d8c84509765d212af2ab4b18b7a4",
+   "blob": "7a76b4c682a35365fcb78ef4eff5e1733f30ca0c",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/DigitalEdgeCountMeasurements/Constants/ConstantsForDigitalEdgeCountMeasurementUsingHardwareTimer.cs",
+   "bytes": 1756,
+   "sha256": "67b35b2d4eb92cd9fc3c9b4d60a25cd1845ec6a6e261bfe60b6c0cabc2304776",
+   "blob": "c5ddb2a2cd12aa8474b103a697aea7856d110335",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/DigitalEdgeCountMeasurements/Constants/ConstantsForDigitalEdgeCountMeasurementUsingSoftwareTimer.cs",
+   "bytes": 1240,
+   "sha256": "a191d506036c4fd8a40df5dc0bd7d28c7b8f6888a2cd805dd634a816e151f365",
+   "blob": "f11581b3d41113fd6b2c8de0b68f21902fbb6524",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/DigitalEdgeCountMeasurements/DigitalEdgeCountMeasurementUsingHardwareTimer.cs",
+   "bytes": 3376,
+   "sha256": "e4b0c8e3b0166c50ddef1156a0c1e2493b8cd5b3529714cd2eaa53c187e0e923",
+   "blob": "0c36e2a8c8a1acf2d13da9e8005657bb58d90c31",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/DigitalEdgeCountMeasurements/DigitalEdgeCountMeasurementUsingSoftwareTimer.cs",
+   "bytes": 2742,
+   "sha256": "8f9cb60dab1d75eb8e4fa3673c6518f55eed43cfe6b609ffbda901f4921f0b73",
+   "blob": "17b74ea61e4ed4c9b0ccd11e11ec801bf8282cbf",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/DigitalFrequencyMeasurements/Constants/ConstantsForDigitalFrequencyMeasurements.cs",
+   "bytes": 1999,
+   "sha256": "9364948f87a2dbd6e00a621aacf49ca7da984f46682ab9e94a7bb4762cdc5318",
+   "blob": "58815ad66a4d871e5a08b78b618feeae23e976cf",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/DigitalFrequencyMeasurements/DigitalFrequencyMeasurement.cs",
+   "bytes": 2800,
+   "sha256": "d45bf3954ab8040d2a3606bc40c5d2b50af133356dfb99d0763d0d14275a19d5",
+   "blob": "ee8cdb384b98326787bbbaa0df0398c1f50f34b0",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/DigitalPwmMeasurements/Constants/ConstantsForDigitalPwmMeasurements.cs",
+   "bytes": 1745,
+   "sha256": "5ed08190c03037a180e48299d6643e988219a9aa7ec00be5451809b19bfdbcdd",
+   "blob": "5c8cc632c6fe5a91e3625d20c452cf7ae36dae23",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/DigitalPwmMeasurements/DigitalPwmMeasurement.cs",
+   "bytes": 4966,
+   "sha256": "4b4f1dc35c16fb14bcd6c45b8bec6d374c82d991d4dc8b5912bf066d995b915a",
+   "blob": "f6e9ac9fa55addc5b538f196e189bfee76ce074a",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/DynamicDigitalPatternMeasurements/Constants/ConstantsForDynamicDigitalPatternMeasurements.cs",
+   "bytes": 1577,
+   "sha256": "19a713613d2ec73a7651014f0e7d8b7a54d2935affb60af61b55d1068308c628",
+   "blob": "df9c4df1efe62803a77d5fa6a8e4757cd8c93737",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/DynamicDigitalPatternMeasurements/DynamicDigitalPatternMeasurement.cs",
+   "bytes": 2432,
+   "sha256": "201a0f0428a8a63d02f3411251054c250331ba53c3aaf7f9741daf6ec75c9896",
+   "blob": "8d227833ddc530351260a01ee2a465069485e656",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/FrequencyDomainMeasurements/Constants/ConstantsForFrequencyDomainMeasurements.cs",
+   "bytes": 3789,
+   "sha256": "1b3da9a95a9d7f9de27d125be743ec753837776f80c65d8f368a3167cb60c047",
+   "blob": "6d4b95f0289a78296641fe6c535b807f2ff0912d",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/FrequencyDomainMeasurements/FrequencyDomainMeasurement.cs",
+   "bytes": 5369,
+   "sha256": "b722e405511ae4fd03cb2faba570f03973f12cdf979a78ba18f36799f92482e4",
+   "blob": "211dd2b47a7e4ae9c8dbcac61951b3bb087763a8",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/PowerSupplySourceAndMeasurements/Constants/ConstantsForPowerSupplySourceAndMeasurements.cs",
+   "bytes": 3774,
+   "sha256": "dc89e9f9a9afbec7c687531c7d4e4534827752ee55f40eac104f76d6d25c1efc",
+   "blob": "40c0ca5346fa1b2bf868a14dc29d5fe57e39d128",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/PowerSupplySourceAndMeasurements/PowerSupplySourceAndMeasure.cs",
+   "bytes": 4508,
+   "sha256": "0a72d6542d1283c50f2fe05642943b754a9fc6e83cb11ec0dc536d221621e92f",
+   "blob": "d227748cf252e30691f26ca24d2de4ec0baf6044",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/StaticDigitalStateMeasurements/StaticDigitalStateMeasurement.cs",
+   "bytes": 2279,
+   "sha256": "9b83fe9c5e9d198d46cf86a3fd655f76dec48133af94f410f33fbc4fa92931c3",
+   "blob": "e2324583c235565f75f949c00d5e76011109e233",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/TemperatureMeasurements/Constants/ConstantsForTemperatureMeasurementsUsingRtd.cs",
+   "bytes": 3931,
+   "sha256": "b782837cb8491320079063e3b86af57e36f6a61895be2b0cbf3123abc7b817a8",
+   "blob": "f3773cefb2244d441bbb3326af319dfee1d8c250",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/TemperatureMeasurements/Constants/ConstantsForTemperatureMeasurementsUsingThermistor.cs",
+   "bytes": 4639,
+   "sha256": "d1a49e1911880bde7de337ddfdbb47131627636e90e8d961e4dd22dbd9ac30fa",
+   "blob": "f9de81fa0ab5de7e2a5f89e45f7d07a61d2e3140",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/TemperatureMeasurements/Constants/ConstantsForTemperatureMeasurementsUsingThermocouple.cs",
+   "bytes": 3945,
+   "sha256": "d8fe2dd95cff435485c244441c49c9da343c41378bd40d1c45b38852b3c1c6f3",
+   "blob": "028f6993ec2a6ef87590993db501ed5452cd520d",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/TemperatureMeasurements/TemperatureMeasurementUsingRtd.cs",
+   "bytes": 3159,
+   "sha256": "4891a3048dd4c0e9794771796a25eda0f98b9d63dbbfa656397692a031271b7a",
+   "blob": "655dc65f9fa25bad527a9e373b530a9652a6d6c7",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/TemperatureMeasurements/TemperatureMeasurementUsingThermistor.cs",
+   "bytes": 3303,
+   "sha256": "db03481fc4e487a83e9072e3dc02d16773cc29405918334a1854df85d12a90e7",
+   "blob": "ca5684248b6b74f91280bb6ee09a5088f85c13c8",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/TemperatureMeasurements/TemperatureMeasurementUsingThermocouple.cs",
+   "bytes": 7233,
+   "sha256": "c632aacc9ef7bbb86bbfaa72f651d27d40ca31b4cd09cae034b81b2942f764e6",
+   "blob": "194227270ab32b4c753dc9bdb9221f1522b3e235",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/TimeDomainMeasurements/Constants/ConstantsForTimeDomainMeasurements.cs",
+   "bytes": 3669,
+   "sha256": "75a267519986efddbd53bde9912b2016e484fd966abaf4a6c5715a28db8fac61",
+   "blob": "d34ff7e00a9e4083782734b88d8e17cbd4e1ffb0",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/Measurements/TimeDomainMeasurements/TimeDomainMeasurement.cs",
+   "bytes": 6310,
+   "sha256": "6115b807589773fa8cc00f4bde62e0b7dff25585f1360762f29fc944f91f8ba1",
+   "blob": "e833d3e0d8bd8db8bef800922053a1914d54fb5b",
+   "via": "tree"
+  },
+  {
+   "path": "source/PCBA.Test.Toolkit/PCBA.Test.Toolkit.csproj",
+   "bytes": 2963,
+   "sha256": "86772dccd9cd929e3764632d9c94569b320efba527a766708cc8c9cb0fdcf2f2",
+   "blob": "168f70fc549e5938a3665cbb5d4fa08227565820",
+   "via": "tree"
+  },
+  {
+   "path": "source/Packages/NI.Core.1.2.0.251.nupkg",
+   "bytes": 177126,
+   "sha256": "50b85c87f8f5d62260883bb541b2d89984e21889578a6945e8dcd6e2b16ec85c",
+   "blob": "8e256ed4649eea64626e5e3a931fecddca3c7b3c",
+   "via": "tree"
+  },
+  {
+   "path": "source/Packages/NI.Measurement.Analysis.Core.1.2.0.251.nupkg",
+   "bytes": 67057,
+   "sha256": "b7855b1faa8b6e1935cf6595ce8f33566bb935aef665b2982277a3282623ac4b",
+   "blob": "6bd72e72814703db31b99408ac185835f177e68b",
+   "via": "tree"
+  },
+  {
+   "path": "source/Packages/NI.Measurement.Analysis.DotNET.1.2.0.251.nupkg",
+   "bytes": 28054,
+   "sha256": "dc4cefd0184c2fe3e46d9d2a77cb5217b6373102dddb4274b230be82004245ac",
+   "blob": "8c5a25599f2903ae7de4fe88ccf788586c657c01",
+   "via": "tree"
+  },
+  {
+   "path": "source/Packages/NI.Measurement.Analysis.Library.1.2.0.251.nupkg",
+   "bytes": 13840,
+   "sha256": "368f320a76e165f161cb35a8c8ed19696e8fbd0d21ca75ad83a9be8c19bcb876",
+   "blob": "dda07c0a27ed747816fd152821cb26229f597a87",
+   "via": "tree"
+  },
+  {
+   "path": "source/Packages/NI.Measurement.Foundation.1.2.0.251.nupkg",
+   "bytes": 181119,
+   "sha256": "ab08f24d303086a026393c97d87078d006572f53e960516a7fdefe2601529188",
+   "blob": "a1b99729d1e88d7d2fc2afd380225001fd8726b1",
+   "via": "tree"
+  },
+  {
+   "path": "source/Packages/NI.PCBA.Measurements.Library.1.2.0.251.nupkg",
+   "bytes": 284062,
+   "sha256": "f832675fa39463f1e3d9e2bb7d8130bb623288ff0f37a24e02fbc4bce8568ac3",
+   "blob": "4ca0413070d48149e305af6d29797eec91bccf5d",
+   "via": "tree"
+  }
+ ],
+ "skipped": [],
+ "external": []
+}

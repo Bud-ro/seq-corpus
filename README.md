@@ -25,7 +25,7 @@ This repo provides a few additional convenience files:
   `config.xml` members. The packages are zip files of LabVIEW™ files that are already in
   the repo, so they are not stored themselves.
 - `sources.json` lists every vendored source
-- `candidates.json` lists public repos that could not be vendored due to missing licenses,
+- `candidates.json` lists public repos (on GitHub unless a `host` says otherwise) that could not be vendored due to missing licenses,
   unsuitable licenses, potential NI product content, etc.
 - `corpus.json` names the file extensions the corpus collects.
 - `sources/<owner>__<repo>/index.json` lists what each LabVIEW file holds; see [Index](#index).
@@ -53,7 +53,7 @@ NI's [trademark and logo guidelines](https://www.ni.com/en/about-ni/legal/tradem
 
 ## Checking out a Few Sources
 
-This repo is about 300 MB in the working tree. To take only a few sources, you can
+This repo is about 370 MB in the working tree. To take only a few sources, you can
 use the sparse checkout feature:
 
 ```

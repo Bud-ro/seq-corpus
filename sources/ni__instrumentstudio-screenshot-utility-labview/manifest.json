@@ -1,0 +1,116 @@
+{
+ "repo": "ni/instrumentstudio-screenshot-utility-labview",
+ "url": "https://github.com/ni/instrumentstudio-screenshot-utility-labview",
+ "commit": "9320c877c6df7f74caab8c0f95668ac9fb205d86",
+ "license": "MIT",
+ "licenseFile": "LICENSE",
+ "fetched": "2026-10-28",
+ "files": [
+  {
+   "path": "source/Examples/Example - Screenshot Capture.vi",
+   "bytes": 17604,
+   "sha256": "3e6394d6cbeb2b6826c4d54c964f3fdc9b4fc34231932cb78d1dcadafa099ae0",
+   "blob": "63671e6eea04d00cf896c48c177af0bc2f068120",
+   "via": "extension"
+  },
+  {
+   "path": "source/Examples/Test Screenshot Utility.seq",
+   "bytes": 8904,
+   "sha256": "32e05eb4ec8bced3e157277dd80c4fbe60ca0cb7d923324579a9ad454f92224b",
+   "blob": "3058a9b3622693a4b2a6574661669207f6b986f1",
+   "via": "extension"
+  },
+  {
+   "path": "source/InstrumentStudio Screenshot Capture.vi",
+   "bytes": 23835,
+   "sha256": "65ad6d2128cbed21ce5cebe61ab7b9e3b732c49e23f86279ec29ce5d38cd9dbe",
+   "blob": "eccca01eb81f41c2aae24b72a524261392262fea",
+   "via": "extension"
+  },
+  {
+   "path": "source/Screenshot Utility.lvlib",
+   "bytes": 1654,
+   "sha256": "3e13bf8834aaac80c97accb34736ba5d6a12ae507390f6b0fa4e215840881c97",
+   "blob": "cb57e3892db83fed4d30939826949797fb6a0a7f",
+   "via": "extension"
+  },
+  {
+   "path": "source/Screenshot Utility.lvproj",
+   "bytes": 1203,
+   "sha256": "d09d322b65fec2b973b894316fabc3db5d0d4cd6a1d33695e8e18cf0d7775331",
+   "blob": "0d3fcd7947472b8c8c280620a0636ecfbdb9a5ee",
+   "via": "extension"
+  },
+  {
+   "path": "source/SubVIs/Find InstrumentStudio Window.vi",
+   "bytes": 23628,
+   "sha256": "d20df0be5d26dcc18239a538a7497f2de870fc5388f9eff4cbea6c198e10f16f",
+   "blob": "3ed303453ca715f7fcbe3651ae07b6738932052c",
+   "via": "extension"
+  },
+  {
+   "path": "source/SubVIs/Get Window Width and Height.vi",
+   "bytes": 19199,
+   "sha256": "1609a345af4afc99aef4d260cbdfa12a38f50d59b134415b98b2431719293698",
+   "blob": "f850ecbf8346297165316e9debad2e10edf63b0a",
+   "via": "extension"
+  },
+  {
+   "path": "source/SubVIs/Save BMP File.vi",
+   "bytes": 26209,
+   "sha256": "68d2e321382d7827bc0168aeb1864c0ae63cf00b80ab10dc939ffbf4382773ec",
+   "blob": "534efd67ea8e5716863ee050c15b61ee96fe787a",
+   "via": "extension"
+  },
+  {
+   "path": ".github/CODEOWNERS",
+   "bytes": 72,
+   "sha256": "94b1f23f72346194a02c01a6de7d7aec2e85e19331703bd9e0048446df21a362",
+   "blob": "349c952b199922e5c1c2663b642df408f14c5713",
+   "via": "tree"
+  },
+  {
+   "path": ".github/PULL_REQUEST_TEMPLATE.md",
+   "bytes": 352,
+   "sha256": "0139209365b5c76e6c9126a902a4f4280708f8bdf686d37685a3fa503f3b0907",
+   "blob": "2eaebac540771d5bece7dc66bd4669722e701b67",
+   "via": "tree"
+  },
+  {
+   "path": "CONTRIBUTING.md",
+   "bytes": 2966,
+   "sha256": "5403875bb933d5936924bb9571851b137bf89b398536c954e4c92b3c58bed5cc",
+   "blob": "be2f175ec645b48f9bc00afdc23d6f1364f4e072",
+   "via": "tree"
+  },
+  {
+   "path": "LICENSE",
+   "bytes": 1071,
+   "sha256": "aec0d06ce4db329f3bd53ca76527d3b98b2924777d596c470bdd49c6838b8663",
+   "blob": "9fe44f27d5743e8fc4b91caa062b4c0890a1b520",
+   "via": "tree"
+  },
+  {
+   "path": "README.md",
+   "bytes": 5328,
+   "sha256": "be553971bc1d0a85c4877e987a7cbe05fe86dd9bc1151237aa94f2c4715e515e",
+   "blob": "8fb1a0cdef1ecfca31abe98b6548c150c0fad1ca",
+   "via": "tree"
+  },
+  {
+   "path": "SECURITY.md",
+   "bytes": 1312,
+   "sha256": "c3c34cacd2f1f76e9c299372d8b9cf3fbe6da13340cc1eb9721762a521c80a69",
+   "blob": "ce102abf42cdeee88a5a6c8f66955cb69674ebea",
+   "via": "tree"
+  }
+ ],
+ "skipped": [],
+ "external": [
+  "<vilib>\\Utility\\error.llb\\General Error Handler.vi",
+  "<vilib>\\Utility\\libraryn.llb\\Check if File or Folder Exists.vi",
+  "<vilib>\\picture\\bmp.llb\\Write BMP File.vi",
+  "<vilib>\\picture\\picture.llb\\imagedata.ctl",
+  "C:\\Temp"
+ ]
+}

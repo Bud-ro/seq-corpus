@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net462</TargetFrameworks>
+    <LangVersion>7.3</LangVersion>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <RootNamespace>PCBATestToolkitApi</RootNamespace>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    <Version>1.2.0.251</Version>
+    <AssemblyVersion>1.2.0.251</AssemblyVersion>
+    <FileVersion>1.2.0.251</FileVersion>
+  </PropertyGroup>
+
+
+  <PropertyGroup>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NI.Measurement.Instrumentation" Version="1.2.0.251" GeneratePathProperty="true"/>
+    <PackageReference Include="NI.PCBA.Measurements.Library" Version="1.2.0.251" GeneratePathProperty="true" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="$(PkgNI_Measurement_Instrumentation)\lib\$(TargetFramework)\x64\NationalInstruments.DAQmx.xml" Link="x64\NationalInstruments.DAQmx.xml" Visible="False">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(PkgNI_Measurement_Instrumentation)\lib\$(TargetFramework)\x86\NationalInstruments.DAQmx.xml" Link="x86\NationalInstruments.DAQmx.xml" Visible="False">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(PkgNI_Measurement_Instrumentation)\lib\$(TargetFramework)\NationalInstruments.Common.dll" Link="NationalInstruments.Common.dll" Visible="False">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(PkgNI_Measurement_Instrumentation)\lib\$(TargetFramework)\NationalInstruments.MStudioCLM.dll" Link="NationalInstruments.MStudioCLM.dll" Visible="False">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(PkgNI_Measurement_Instrumentation)\lib\$(TargetFramework)\NationalInstruments.NiLmClientDLL.dll" Link="NationalInstruments.NiLmClientDLL.dll" Visible="False">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(PkgNI_Measurement_Instrumentation)\lib\$(TargetFramework)\x64\NationalInstruments.DAQmx.dll" Link="x64\NationalInstruments.DAQmx.dll" Visible="False">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(PkgNI_Measurement_Instrumentation)\lib\$(TargetFramework)\x86\NationalInstruments.DAQmx.dll" Link="x86\NationalInstruments.DAQmx.dll" Visible="False">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(PkgNI_Measurement_Instrumentation)\lib\$(TargetFramework)\NI.Measurement.Instrumentation.dll.config" Link="NI.Measurement.Instrumentation.dll.config" Visible="False">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

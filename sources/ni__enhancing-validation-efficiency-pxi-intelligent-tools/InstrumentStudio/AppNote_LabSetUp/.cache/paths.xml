@@ -1,0 +1,34 @@
+<SerializableDictionary>
+	<item>
+		<key>
+			<string>Instrument_d156eb1a32748e396387f68f5867442.sfpcache</string>
+		</key>
+		<value>
+			<string>Instrument.sfpcache</string>
+		</value>
+	</item>
+	<item>
+		<key>
+			<string>Supply_Vin_d156eb1a32748e396387f68f5867442.sfpcache</string>
+		</key>
+		<value>
+			<string>Supply_Vin.sfpcache</string>
+		</value>
+	</item>
+	<item>
+		<key>
+			<string>Instrument_273087baec4244039d958984acea27d7.sfpcache</string>
+		</key>
+		<value>
+			<string>Instrument_1.sfpcache</string>
+		</value>
+	</item>
+	<item>
+		<key>
+			<string>Instrument_e894a1219d2a4635be8ef11d6e88a245.sfpcache</string>
+		</key>
+		<value>
+			<string>Instrument_2.sfpcache</string>
+		</value>
+	</item>
+</SerializableDictionary>

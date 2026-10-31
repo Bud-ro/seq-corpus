@@ -1,3206 +1,3635 @@
 {
  "repo": "ni/semi-test-library-dotnet",
  "url": "https://github.com/ni/semi-test-library-dotnet",
- "commit": "1bffd0d77c98c7898e73f5e39262749a701170c5",
+ "commit": "721b76e700c5969984ca924d603be8b1280e9846",
  "license": "MIT",
  "licenseFile": "LICENSE.txt",
- "fetched": "2026-10-11",
+ "fetched": "2026-10-28",
  "files": [
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/source/APIs/CloseFPGA.vi",
    "bytes": 17325,
    "sha256": "d79fd70d5cf9788a61db8579fb342f1836f61aba2ab3e6f307259cb69a6618e4",
-   "via": "extension",
-   "blob": "fb5a8806f7427d2cbcd9b749ba3ea49f554d3121"
+   "blob": "fb5a8806f7427d2cbcd9b749ba3ea49f554d3121",
+   "via": "extension"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/source/APIs/EnableLoopBack.vi",
    "bytes": 20182,
    "sha256": "fb2d362e6c536dd5d0f039d3b95c947d431d036719d3a7175dba5a8afef869da",
-   "via": "extension",
-   "blob": "61522b97261b2518db01fc4d7d952f66a2c9781c"
+   "blob": "61522b97261b2518db01fc4d7d952f66a2c9781c",
+   "via": "extension"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/source/APIs/OpenFPGA.vi",
    "bytes": 16004,
    "sha256": "de9bc5e64dcea632ba56c4318e7ed48c2e2e3e07e706efa0c733f78f8b3c395f",
-   "via": "extension",
-   "blob": "d0e7dbb9ab7726ec6b308ae0ad16ed8152b7036e"
+   "blob": "d0e7dbb9ab7726ec6b308ae0ad16ed8152b7036e",
+   "via": "extension"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/source/APIs/ReadData.vi",
    "bytes": 28252,
    "sha256": "5e6a838b55e389429b27e1b1d848ba467ef1d4d768df63090146891315dbddbc",
-   "via": "extension",
-   "blob": "6d438d0fe547ec27d9546003e4d0bb0a7ab18f77"
+   "blob": "6d438d0fe547ec27d9546003e4d0bb0a7ab18f77",
+   "via": "extension"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/source/APIs/Utility/NumToRefnum.vi",
    "bytes": 15995,
    "sha256": "dbb29e3d6e3a989c532deac7def42649da904f72df51a892b7646c551f9c187a",
-   "via": "extension",
-   "blob": "85e9713c68412c291f46466198854799f78e53aa"
+   "blob": "85e9713c68412c291f46466198854799f78e53aa",
+   "via": "extension"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/source/APIs/Utility/RefnumToNum.vi",
    "bytes": 16079,
    "sha256": "bcce9ba29a13ff4b42f74441dde324f5634ac0e31ae1b4b93969af7eb8312777",
-   "via": "extension",
-   "blob": "277d30606248ae4f2d6382d21a06a5486407068b"
+   "blob": "277d30606248ae4f2d6382d21a06a5486407068b",
+   "via": "extension"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/source/APIs/WriteData.vi",
    "bytes": 27813,
    "sha256": "febea4c5786d8ba9c6330380357bcb3c4c5f2f631f0ed21976dffeffade86415",
-   "via": "extension",
-   "blob": "de0de94e35fd4286ee04c7b957f2de555ea480cb"
+   "blob": "de0de94e35fd4286ee04c7b957f2de555ea480cb",
+   "via": "extension"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/source/Debug C API.vi",
    "bytes": 18783,
    "sha256": "230e4e99aa530bc44869471ab8efc00c68410dcaee6dfa4a05b3ebd0160334a9",
-   "via": "extension",
-   "blob": "826068321e92ccc13f60c6d89bcff4fce4f56367"
+   "blob": "826068321e92ccc13f60c6d89bcff4fce4f56367",
+   "via": "extension"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/source/Debug LV API.vi",
    "bytes": 29968,
    "sha256": "97c6898be5fe952db1b98e8d9b0be57ca7e8c05cfcec19824ef01343cf4642d9",
-   "via": "extension",
-   "blob": "f7d86b50600551ecf27243f9999cb60df97f937a"
+   "blob": "f7d86b50600551ecf27243f9999cb60df97f937a",
+   "via": "extension"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/source/FPGACode_ReadWriteDigitalPorts.vi",
    "bytes": 32058,
    "sha256": "7884349263f96719ebb082eeab4ee5992a83da4b1113e3c625b0cfa3d459334f",
-   "via": "extension",
-   "blob": "b37216fd20bb4454815652770cc540a02f77e74f"
+   "blob": "b37216fd20bb4454815652770cc540a02f77e74f",
+   "via": "extension"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/source/RSeries7822RDriverAPI.lvproj",
    "bytes": 49400,
    "sha256": "b361c8796aca86143a3603a2920356d89aa9744a8d9abb0408eee305dc39c263",
-   "via": "extension",
-   "blob": "47f56828ff84b58e6a82c04dc019c15977e03114"
+   "blob": "47f56828ff84b58e6a82c04dc019c15977e03114",
+   "via": "extension"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/STLExample.CustomInstrument.RSeries.seq",
    "bytes": 13373,
    "sha256": "56e475bd596c003d4ebc529c7681be6468540ce5159b92b39e03af538c60eb98",
-   "via": "extension",
-   "blob": "64b0763e37c4957c9eb23c89976dc881b61ac8a0"
+   "blob": "64b0763e37c4957c9eb23c89976dc881b61ac8a0",
+   "via": "extension"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument/STLExample.CustomInstrument.seq",
    "bytes": 13432,
    "sha256": "0d66cd33e10a12e0bf9e76d1ff6a52e7f5c34c974c17298c9ccf833ed46c4bb8",
-   "via": "extension",
-   "blob": "d98f270626851b95b50b5e5749391a6d1c693680"
+   "blob": "d98f270626851b95b50b5e5749391a6d1c693680",
+   "via": "extension"
   },
   {
    "path": "Examples/source/Sequence/MultiplexedConnection/STLExample.MultiplexedConnection.seq",
    "bytes": 11512,
    "sha256": "9d1fd5a82a30b5cd41b81bfde37caffdf3bafb8e6a7555a535468eeb891089d4",
-   "via": "extension",
-   "blob": "20662d9cd8ee7bba7ff34ddea7718963918cdd63"
+   "blob": "20662d9cd8ee7bba7ff34ddea7718963918cdd63",
+   "via": "extension"
   },
   {
    "path": "Examples/source/Sequence/SMUGangPinGroup/STLExample.SMUGangPinGroup.seq",
    "bytes": 15535,
    "sha256": "53e9b583ed9866cde523c9ff28146e085a8d85fb137dd35ae8439b1576f729a7",
-   "via": "extension",
-   "blob": "4ca7e7c6b4c6aacb2ccaf8bac20b2730c0512f52"
+   "blob": "4ca7e7c6b4c6aacb2ccaf8bac20b2730c0512f52",
+   "via": "extension"
   },
   {
    "path": "Examples/source/Sequence/SMUHardwareLevelSequence/STLExample.SMUHardwareLevelSequence.seq",
    "bytes": 14174,
    "sha256": "989b7d50371665c9ddd7a8207e6e8bdc4d652d49f85f7eb08d4213d016e4c640",
-   "via": "extension",
-   "blob": "8d74ad24f4ba2907fe57001beb43e3d72910880d"
+   "blob": "8d74ad24f4ba2907fe57001beb43e3d72910880d",
+   "via": "extension"
   },
   {
    "path": "Examples/source/Sequence/SMUMergePinGroup/STLExample.SMUMergePinGroup.seq",
    "bytes": 15821,
    "sha256": "22325689a5d7ba41c81e0923278c44d3c1e07e9b4e1aa7fea602f54241dc5efd",
-   "via": "extension",
-   "blob": "ec51214aaec5320055663fc441719331a3e07668"
+   "blob": "ec51214aaec5320055663fc441719331a3e07668",
+   "via": "extension"
+  },
+  {
+   "path": "Examples/source/Sequence/TMU/STLExample.TMU.seq",
+   "bytes": 15905,
+   "sha256": "53aa33a896a403d6b41ea0c978397a7b54769e9c1c9919942597f13e0181028e",
+   "blob": "8bed5032f6e78cbd658bffda25e9aae72989f7ef",
+   "via": "extension"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Accelerometer.STSSoftware24.5Compatible.seq",
    "bytes": 19503,
    "sha256": "c3b2a18354798c83f5946797cbea85d739a5c01b6bf9998c4acbccc1801c9ae7",
-   "via": "extension",
-   "blob": "ff17ec5125bcd901cf204404c2b95e32479f83c4"
+   "blob": "ff17ec5125bcd901cf204404c2b95e32479f83c4",
+   "via": "extension"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Accelerometer.seq",
    "bytes": 19590,
    "sha256": "31cc79a024e48eecf51fe8aec463639cea1f2c4fbe0fa8bcb73810d5aec9819e",
-   "via": "extension",
-   "blob": "47ebd31328924f4ae39c5677a49df7e8ac87cd1f"
+   "blob": "47ebd31328924f4ae39c5677a49df7e8ac87cd1f",
+   "via": "extension"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/TestProgramDefinition.ini",
    "bytes": 477,
    "sha256": "9ba767e0bbcbd69270dda329d10b3061815ac4387742d8872fbe9705c1650f9f",
-   "via": "extension",
-   "blob": "8587a0e77c980add5785dca580be14ea372ac172"
+   "blob": "8587a0e77c980add5785dca580be14ea372ac172",
+   "via": "extension"
   },
   {
    "path": ".github/CODEOWNERS",
-   "bytes": 41,
-   "sha256": "1773f8eade94a5a840f6b228fadd02c03840d39e222b4b55fef18535088d9c2f",
-   "via": "tree",
-   "blob": "ba10833e3e9da59e1a9d09c1224c5065620c25e5"
+   "bytes": 42,
+   "sha256": "62136731c780178bcb13d6ea2748cff24fdd84c3b7ff41e68fd9d84150cde0db",
+   "blob": "b39a52d90299ca068fa30cba41efd72d7d011310",
+   "via": "tree"
   },
   {
    "path": ".github/ISSUE_TEMPLATE/bug_report.md",
    "bytes": 919,
    "sha256": "92a02ab394d00e53d936c4a0a80b33d7f171b6a0ff3cacc8b76b6263d429fb26",
-   "via": "tree",
-   "blob": "205f34c620575ef939f8a756d22d538b0844c616"
+   "blob": "205f34c620575ef939f8a756d22d538b0844c616",
+   "via": "tree"
   },
   {
    "path": ".github/ISSUE_TEMPLATE/feature_request.md",
    "bytes": 642,
    "sha256": "1c07a2d4f27951f48538383b4a1190e99c5e26714b656a25ddf22797d42720e0",
-   "via": "tree",
-   "blob": "526e211690227f89b4f1b3eef0cdb4dcbdea3e36"
+   "blob": "526e211690227f89b4f1b3eef0cdb4dcbdea3e36",
+   "via": "tree"
   },
   {
    "path": ".github/ISSUE_TEMPLATE/support_request.md",
    "bytes": 1133,
    "sha256": "f1125bbccfb32735c9892c40b5b53517b45d96c646da2c37e797579cb56f7bd8",
-   "via": "tree",
-   "blob": "34fae63c8607f880bc9d270f308b3fd7c0861032"
+   "blob": "34fae63c8607f880bc9d270f308b3fd7c0861032",
+   "via": "tree"
   },
   {
    "path": ".github/PULL_REQUEST_TEMPLATE.md",
    "bytes": 352,
    "sha256": "0139209365b5c76e6c9126a902a4f4280708f8bdf686d37685a3fa503f3b0907",
-   "via": "tree",
-   "blob": "2eaebac540771d5bece7dc66bd4669722e701b67"
+   "blob": "2eaebac540771d5bece7dc66bd4669722e701b67",
+   "via": "tree"
   },
   {
    "path": ".github/workflows/auto-comment-closed-wi.yml",
    "bytes": 6267,
    "sha256": "a682200c9b66ccf228cdf0b6df09ee1a4f13dce7640225952877699320eecf51",
-   "via": "tree",
-   "blob": "9abdacf7b3b8e51ae3f05a17cf32c399277c34ac"
+   "blob": "9abdacf7b3b8e51ae3f05a17cf32c399277c34ac",
+   "via": "tree"
   },
   {
    "path": ".github/workflows/auto-comment-fixed-issues.yml",
    "bytes": 3122,
    "sha256": "1cd4f5affbfcb81c4762e435de2e4ec0db2634ae992cb13fc6c52f27e5be5689",
-   "via": "tree",
-   "blob": "e48527471c7873a1fc18bc857666e8e31a44a2e5"
+   "blob": "e48527471c7873a1fc18bc857666e8e31a44a2e5",
+   "via": "tree"
   },
   {
    "path": ".github/workflows/ci.yml",
    "bytes": 3324,
    "sha256": "1469c50f21c60d76c1fa0f08372dc1c2358c24452d201ae820242be7f17edf6a",
-   "via": "tree",
-   "blob": "a9fae66002eebbdce202e96baf0b0957d466e5e2"
+   "blob": "a9fae66002eebbdce202e96baf0b0957d466e5e2",
+   "via": "tree"
   },
   {
    "path": ".github/workflows/deploy-gh-pages.yml",
    "bytes": 6271,
    "sha256": "7a69efa52072d6c61ca4846c9f7d258e759f8765f0dee4d031bee06d1e65285e",
-   "via": "tree",
-   "blob": "f8d26799e68c02a987bcebd92fc807dd706f1395"
+   "blob": "f8d26799e68c02a987bcebd92fc807dd706f1395",
+   "via": "tree"
   },
   {
    "path": ".github/workflows/draft-release-notes.yml",
    "bytes": 7634,
    "sha256": "0613b87225140bd730c0f8beee3ae8bf82468c735f58d32e754f47d3628bd61b",
-   "via": "tree",
-   "blob": "a4be0eb11488d88c81677d611c541985139c5669"
+   "blob": "a4be0eb11488d88c81677d611c541985139c5669",
+   "via": "tree"
   },
   {
    "path": ".github/workflows/gh-issues-to-azdo.yml",
    "bytes": 11223,
    "sha256": "5271c7f4574271a718c3bcf0caaa973d7f650e6b22603b157522cf83c58d477d",
-   "via": "tree",
-   "blob": "3a21dee1f7ba94c0bb14ed8052b107bb49ce315c"
+   "blob": "3a21dee1f7ba94c0bb14ed8052b107bb49ce315c",
+   "via": "tree"
   },
   {
    "path": ".github/workflows/gh-pages-deploy.yml",
    "bytes": 1406,
    "sha256": "06c49ec13e8adcca440860e36c3e251a9179a37d5bbd9af8bfcbe6cde6c2310d",
-   "via": "tree",
-   "blob": "3166408ef0cc48dc3dc3afedafcd23761bead894"
+   "blob": "3166408ef0cc48dc3dc3afedafcd23761bead894",
+   "via": "tree"
   },
   {
    "path": ".github/workflows/pr-build.yml",
    "bytes": 4490,
    "sha256": "acb9704c3e4af3dbb83b2e1d5c014c5d1d965464437e7a4fd7662fd437b69256",
-   "via": "tree",
-   "blob": "54dc02bd180890605a77b94fd27c590dc534a52f"
+   "blob": "54dc02bd180890605a77b94fd27c590dc534a52f",
+   "via": "tree"
   },
   {
    "path": ".github/workflows/pr-intake.yml",
    "bytes": 14777,
    "sha256": "4b925b50d0117ea1a74089b769e0c8233b93879942f8ea25f1ad6928d46f0441",
-   "via": "tree",
-   "blob": "1faa439bb694645b7597a0ea67170aaf85e76c48"
+   "blob": "1faa439bb694645b7597a0ea67170aaf85e76c48",
+   "via": "tree"
   },
   {
    "path": ".github/workflows/pr-test.yml",
    "bytes": 4399,
    "sha256": "7689f935b70b900652832710b728a57cf777f6e4931fa5903506c5424b32ac74",
-   "via": "tree",
-   "blob": "268f542aa468c778a8a7488e2db3ded23b4d62a5"
+   "blob": "268f542aa468c778a8a7488e2db3ded23b4d62a5",
+   "via": "tree"
   },
   {
    "path": ".gitignore",
    "bytes": 7319,
    "sha256": "b4a245535b1b3fe83e9120a95505a7388944c806b2a0f51cd1b4d973f0d48b42",
-   "via": "tree",
-   "blob": "d0d6a86a3399417ec7362c5b925c399eb3ecc0e2"
+   "blob": "d0d6a86a3399417ec7362c5b925c399eb3ecc0e2",
+   "via": "tree"
   },
   {
    "path": "CHANGELOG.md",
    "bytes": 51334,
    "sha256": "72ce237aa63b0744d731a63ca5e5d5ec6a7f328d9427d2a04d8ce5e47a1da0eb",
-   "via": "tree",
-   "blob": "0b796d9648730f069a89bd8f98e1c438c50ae205"
+   "blob": "0b796d9648730f069a89bd8f98e1c438c50ae205",
+   "via": "tree"
   },
   {
    "path": "CONTRIBUTING.md",
    "bytes": 4469,
    "sha256": "a5fa477665e3d551184e827da35fdcfe0977bf46c3f6c7ee5259ef058707d7c1",
-   "via": "tree",
-   "blob": "4a23ae56030edcc5e77b1f250f8422ed8af1a1d9"
+   "blob": "4a23ae56030edcc5e77b1f250f8422ed8af1a1d9",
+   "via": "tree"
   },
   {
    "path": "CodeAnalysisDictionary.xml",
    "bytes": 1183,
    "sha256": "17a2408fb9eefd9ec3d0d33a653703ba62df218c06dd3f75cb72745ab060717c",
-   "via": "tree",
-   "blob": "839c27bb29e4d4b284010fec727aebccb8092de6"
+   "blob": "839c27bb29e4d4b284010fec727aebccb8092de6",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/DataAbstraction/PinSiteDataExamples.cs",
-   "bytes": 19705,
-   "sha256": "543e7ec1688e40f0918c42fbaae6887138265a94c45d01893e07ac7a45923feb",
-   "via": "tree",
-   "blob": "8e01e314484aaf05a90979380fdcb2b739796c76"
+   "bytes": 47928,
+   "sha256": "969b95a3035add1eba57171c8509bf2f15cb170f99fcb0c4e713841a8470ff85",
+   "blob": "5c7e752268f3eacb34af85fafb7f4d1a22c9b017",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/DataAbstraction/SharingDataBetweenCodeModules.cs",
    "bytes": 1992,
    "sha256": "84ad2c363cb261872444b5c5965138de62eb11a697ef6fc88e69ca0c31df36c0",
-   "via": "tree",
-   "blob": "93a1716ff241ba2a69b8384a4460a189ec28676a"
+   "blob": "93a1716ff241ba2a69b8384a4460a189ec28676a",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/DataAbstraction/SiteDataExamples.cs",
-   "bytes": 11061,
-   "sha256": "3876923c4c9262778ca8b78635c44c529353bbf96581dee68183406437aa87df",
-   "via": "tree",
-   "blob": "8bcb475f21dc1e3b0e4c9fdf3fce7100ccf23836"
+   "bytes": 18613,
+   "sha256": "53f03013a6f4b610edc20810c2dda63e76b3a1bdc0905f4000cf704621ad1660",
+   "blob": "1aa9f3e1983134f66156bd68ae42036b7fea78e9",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/GlobalSuppressions.cs",
    "bytes": 1216,
    "sha256": "0089e83a167156ada66bd3d6e18f75cf65819057a2816f3cbba648b21634ed61",
-   "via": "tree",
-   "blob": "962dde607b2635b2c779f9e8d18fcf04fef44620"
+   "blob": "962dde607b2635b2c779f9e8d18fcf04fef44620",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/InstrumentAbstraction/AnalogOutputDAQmx.cs",
    "bytes": 5501,
    "sha256": "a2ef8245adc3a2020d794b3e344b5c6d5c246e576c2d6619ba7c4cc08aa3598f",
-   "via": "tree",
-   "blob": "211da0bcb1c5edd169af696a208b003eaa32f8a1"
+   "blob": "211da0bcb1c5edd169af696a208b003eaa32f8a1",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/InstrumentAbstraction/BurstPattern.cs",
    "bytes": 4964,
    "sha256": "4c8694735ef37e570fb5cf4422dafedb679a4b9ccba7c2f860740947d6475dbb",
-   "via": "tree",
-   "blob": "ba09a540c49508042546db28a1525271cfb0deef"
+   "blob": "ba09a540c49508042546db28a1525271cfb0deef",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/InstrumentAbstraction/ConfigureSMUAdvancedSequencesAndInitiate.cs",
    "bytes": 9243,
    "sha256": "8955a137520dfe19af610350454be9c70d57bda67a5e1d5befe9700816f3bcb6",
-   "via": "tree",
-   "blob": "e4ab4f899de5ea3ba84042e835b9304f381d52bf"
+   "blob": "e4ab4f899de5ea3ba84042e835b9304f381d52bf",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/InstrumentAbstraction/ForceVoltagePPMU.cs",
    "bytes": 7931,
    "sha256": "7d0ea06cfdd1e0451812166aab52c877073d7125c3810eb521f46ef4590791e1",
-   "via": "tree",
-   "blob": "a94d69f145b0a1a9b0a657912ea975eb8ceb60f1"
+   "blob": "a94d69f145b0a1a9b0a657912ea975eb8ceb60f1",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/InstrumentAbstraction/ForceVoltageSMU.cs",
    "bytes": 7180,
    "sha256": "59ad401f10d9f54602e2de3791f5127690b2bfdd8b163db59e15ccbb64a0a353",
-   "via": "tree",
-   "blob": "f24df5efcdee9dddb249bceff79be56ce14ceaf7"
+   "blob": "f24df5efcdee9dddb249bceff79be56ce14ceaf7",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/InstrumentAbstraction/ForceVoltageSequence.cs",
-   "bytes": 6414,
-   "sha256": "1bc7e21c3066e1e555b6179381c39329a882325713fbc1af72d068e140209fd5",
-   "via": "tree",
-   "blob": "32b35365b91c37c5ccfd69a3c6997cf5759cb5e0"
+   "bytes": 6426,
+   "sha256": "6f24dce2747873e1bc2ba6be855b2a531f3bf83e217d33a6261498643231cc8f",
+   "blob": "1f7df9690ed1a84a626f98e0d41a6fb340ce29b4",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/InstrumentAbstraction/GenerateStandardWaveformFGen.cs",
+   "bytes": 7645,
+   "sha256": "a2518e259bc56ed3f626f331be25a1a13a0ac75d4e4aae375cdd54d70b65cdb4",
+   "blob": "5af265b98c1654fe5c98bb33efb85eee6bb361a4",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/InstrumentAbstraction/InitializeAndClose.cs",
    "bytes": 4881,
    "sha256": "8ceb8d99156177a678c41f6a822b32d91f65c36514b4ab955534086ac621702f",
-   "via": "tree",
-   "blob": "ee0d8d72d4afa49a12126e91b08c682380cdc2c4"
+   "blob": "ee0d8d72d4afa49a12126e91b08c682380cdc2c4",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/InstrumentAbstraction/MeasureCurrentPPMU.cs",
    "bytes": 3685,
    "sha256": "3056e793955454c08fe270dc057e399a4a0ca211d38f8dc6aec194ab0f4f3ea2",
-   "via": "tree",
-   "blob": "f57e3faf8bf90d6c63fce24a00052f558cce5348"
+   "blob": "f57e3faf8bf90d6c63fce24a00052f558cce5348",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/InstrumentAbstraction/MeasureCurrentSMU.cs",
    "bytes": 3675,
    "sha256": "52c212a8b117283149d0bfdd592a69def9b97f342ba3cd03200c8a21890a27d1",
-   "via": "tree",
-   "blob": "c6f1be2e5aa9021ef11cabb00eb217fb7a3ec527"
+   "blob": "c6f1be2e5aa9021ef11cabb00eb217fb7a3ec527",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/InstrumentAbstraction/MeasureDMM.cs",
    "bytes": 10677,
    "sha256": "43350123b732043624ace60dd70897a51160b4d7bc89b7f1052534900b4f2be1",
-   "via": "tree",
-   "blob": "3025f4f0a7554be5923b6e6ea49e7aab4343cfb5"
+   "blob": "3025f4f0a7554be5923b6e6ea49e7aab4343cfb5",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/InstrumentAbstraction/MeasureDutyCycleTMU.cs",
+   "bytes": 5940,
+   "sha256": "acde8ddcb0fd846694e7ccf2dbd34eb587f328665311ee9b5d740d582b43e945",
+   "blob": "91849cad890d568daa22d90b64faffa476d98720",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/InstrumentAbstraction/MeasureFallTimeTMU.cs",
+   "bytes": 4346,
+   "sha256": "97f8d9cf08c75a901a595c0bcdae4e20bed7661e89d4f149ed4ae92c9d1656f1",
+   "blob": "e4d0e2997740b0ab3a5bc04180c6582db156c345",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/InstrumentAbstraction/MeasurePeriodTMU.cs",
-   "bytes": 3992,
-   "sha256": "7e3362fe5a353987c8a77be4e69b4981c8473797112da6827df59511fba3172c",
-   "via": "tree",
-   "blob": "a51bdf4e91e7af231456376e0d565f2e0f90bdc8"
+   "bytes": 4349,
+   "sha256": "976cb831a9efcb3757ad4e2ca8840962abb75999f3b096d3e6890cb6b1eedff7",
+   "blob": "b6e9c8cec1ff4cc5c4401536002fe712cd207803",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/InstrumentAbstraction/MeasurePulseWidthTMU.cs",
+   "bytes": 4621,
+   "sha256": "b3f333c4556442b80758485b99f96c2f4cd26f88ce4240ecbf1646f13af6f1de",
+   "blob": "7dd2e8398591079c979c0a71003f8c4b00bf399a",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/InstrumentAbstraction/MeasureRiseTimeTMU.cs",
+   "bytes": 4344,
+   "sha256": "050acc6a25334ca8fb1de91f2a70654fab8976050121a07191f3b6e0c5627ec4",
+   "blob": "7f8a76c299393b59777ccebd01c668678d2f5e58",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/CodeSnippets/InstrumentAbstraction/MeasureSkewTMU.cs",
+   "bytes": 5689,
+   "sha256": "5e8902c781284919e9f56dd250101ffe7fb9e7e733334892663c96d0842ef57b",
+   "blob": "c5abddbca9a0c893e976974bdb9a7348481bc693",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/InstrumentAbstraction/MeasureVoltageMixed.cs",
    "bytes": 4058,
    "sha256": "f18de502bb94112c67931c33c431ae3d60b07ef3cdbe59e7e6db2a194e63331d",
-   "via": "tree",
-   "blob": "b3c1f6d8ba527e490b03ca7a505545a8c13c4a62"
+   "blob": "b3c1f6d8ba527e490b03ca7a505545a8c13c4a62",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/PatternTriggeredInstrumentControl/GenerateTrigger.digipatsrc",
    "bytes": 348,
    "sha256": "a7098ce22e9dfe89ad1d8729c2bfe09820f8961a0dd8d95724b3630f567ac86a",
-   "via": "tree",
-   "blob": "d180cf13f4b7f74b716e3c9cf0a666e24b00f387"
+   "blob": "d180cf13f4b7f74b716e3c9cf0a666e24b00f387",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/PatternTriggeredInstrumentControl/PatternTriggeredDmmMeasurement.cs",
    "bytes": 9661,
    "sha256": "d28e46d8f9dc8c9040720d6bb0efaa3a2dc3fefc1450d8842b8ac0985f722f80",
-   "via": "tree",
-   "blob": "70ae0c3853ef566bdd1a6f4d497ee427907d7891"
+   "blob": "70ae0c3853ef566bdd1a6f4d497ee427907d7891",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/PatternTriggeredInstrumentControl/PatternTriggeredSmuMeasurement.cs",
    "bytes": 4105,
    "sha256": "88b7f84ead44c243c50acf7908f50416fb4b86d7c41181459b8fe38f8e932c3e",
-   "via": "tree",
-   "blob": "a1ed9c1eb714c481b9281cf1564e3fae5e825cc7"
+   "blob": "a1ed9c1eb714c481b9281cf1564e3fae5e825cc7",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/PublishingExamples.cs",
    "bytes": 2646,
    "sha256": "fabb9e7d21dd90f9cf2b5c83b7e9fbb638bf1691fc6bcfe924650a8916c3490d",
-   "via": "tree",
-   "blob": "a08401d279cb30d9101bb99eab50b2673ed5dbd3"
+   "blob": "a08401d279cb30d9101bb99eab50b2673ed5dbd3",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/README.md",
    "bytes": 767,
    "sha256": "a6766d99f561732ea54e93ad2de344397bcba91881694c9ab7db1a97b48c8ac4",
-   "via": "tree",
-   "blob": "bdbad9f99e99bf2b4464589809a48440fc5193e5"
+   "blob": "bdbad9f99e99bf2b4464589809a48440fc5193e5",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/STLExample.CodeSnippets.csproj",
-   "bytes": 3770,
-   "sha256": "b316cbc002539cf9014db300761e748a1c33fe5af639ae2463c15b0d75b5e6e8",
-   "via": "tree",
-   "blob": "e0898698e3dc43e09bdb793ff568e6da8d958ad2"
+   "bytes": 4063,
+   "sha256": "5cc2e37452e036034308827c3f15f46a007cb930cce4e49758139c4ab4d65d77",
+   "blob": "f2bca71982411e8824b060151e8d7210b04fc8fc",
+   "via": "tree"
   },
   {
    "path": "Examples/source/CodeSnippets/WorkflowExamples.cs",
    "bytes": 8540,
    "sha256": "cb7191fc09c0fe53c19d72f5af9a42f7355d4c8215ee5b983147fe51f7d6f82c",
-   "via": "tree",
-   "blob": "83959f78fbaaec8e888403a7a71a74e3f47b7230"
+   "blob": "83959f78fbaaec8e888403a7a71a74e3f47b7230",
+   "via": "tree"
   },
   {
    "path": "Examples/source/README.md",
    "bytes": 2951,
    "sha256": "2d5b9f942e31c62f1ef43416c185652b7450c4b854134609e13183fdd841af96",
-   "via": "tree",
-   "blob": "5cb1fee6a0f1c195944bfb69b6ca5f0a377cf83b"
+   "blob": "5cb1fee6a0f1c195944bfb69b6ca5f0a377cf83b",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Common/Utilities.cs",
    "bytes": 1748,
    "sha256": "44bbb5df89afe4532a9c75b1270fd7f2b046c7ddb839689422df38ae5ea44d0b",
-   "via": "tree",
-   "blob": "61c667e96d61cef30c6ed064423c9132f6d05d5a"
+   "blob": "61c667e96d61cef30c6ed064423c9132f6d05d5a",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/RSeries7822RDriverAPI.dll",
    "bytes": 167936,
    "sha256": "9cd5012b808692a0015a9811a7a23739f5d781bb555608c04222240b95897222",
-   "via": "tree",
-   "blob": "4cf28b903458d8fd92b414abdd6eef61070384ad"
+   "blob": "4cf28b903458d8fd92b414abdd6eef61070384ad",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/Imports/RSeries7822RDriver/RSeries7822RDriverAPI.h",
    "bytes": 988,
    "sha256": "14d419e7a1e517cacd0173e404a602b4c5fb20245364e659e7d0f13260f513f7",
-   "via": "tree",
-   "blob": "9182d82286dfc73c6b748f25431de210f3d56fcb"
+   "blob": "9182d82286dfc73c6b748f25431de210f3d56fcb",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/RSeries7822RCustomInstrument/HighLevelDriverOperations.cs",
    "bytes": 3556,
    "sha256": "59f7d18d0feb822dd7314f1c3b2e5ade69eca9059843e3f27929d1c9724fe3ba",
-   "via": "tree",
-   "blob": "e08135fb87ebf23c4e0a34be52cf179903b203ff"
+   "blob": "e08135fb87ebf23c4e0a34be52cf179903b203ff",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/RSeries7822RCustomInstrument/InvalidPinMapDefinitionException.cs",
    "bytes": 1759,
    "sha256": "16e40eb83e7453bf07ac873c90d36c5ee473103b85a5db0f82e9c6ed64f09942",
-   "via": "tree",
-   "blob": "bf4348ed88f472ca7ab778ab349268bf4e2928c0"
+   "blob": "bf4348ed88f472ca7ab778ab349268bf4e2928c0",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/RSeries7822RCustomInstrument/RSeries7822R.cs",
    "bytes": 15858,
    "sha256": "fa330ca175f63637f3847c8685dce498320fd551586f8f5e550f50ab448389a6",
-   "via": "tree",
-   "blob": "206379fb77e388fc46b1e328b9f1e20790c64bd4"
+   "blob": "206379fb77e388fc46b1e328b9f1e20790c64bd4",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/RSeries7822RCustomInstrument/RSeries7822RDriverAPI.cs",
    "bytes": 2041,
    "sha256": "a0163aad9edaf906b33b1d3a97c7e46e4f497c6ab2de28e6d995d57904054744",
-   "via": "tree",
-   "blob": "8b1f678db099a012d68c121d3683c4457146adff"
+   "blob": "8b1f678db099a012d68c121d3683c4457146adff",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/RSeries7822RCustomInstrument/RSeries7822RDriverAPIException.cs",
    "bytes": 1788,
    "sha256": "1a9e1fce5628b06c981d6c637e78ad431c999a95bb6c4c810da4b7f535b813cc",
-   "via": "tree",
-   "blob": "5c51c63bfa33732a1458ecea1d8751895ce66516"
+   "blob": "5c51c63bfa33732a1458ecea1d8751895ce66516",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/RSeries7822RCustomInstrument/RSeries7822RFactory.cs",
    "bytes": 3929,
    "sha256": "84492f8d362c0e12d643deef8e5a541c71a86d2afc5bf60a7977054f86ae8ba7",
-   "via": "tree",
-   "blob": "033b62f06453e104a15cfc626414cfcbfc762b39"
+   "blob": "033b62f06453e104a15cfc626414cfcbfc762b39",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/RSeries7822RCustomInstrument/Types.cs",
    "bytes": 2878,
    "sha256": "b43d8adc78794a8804f1070e45c42b3a88cca07db6bf422fee6813060aba149b",
-   "via": "tree",
-   "blob": "e6ba0b86d373315d718cfabe8c9907b70e47f8a9"
+   "blob": "e6ba0b86d373315d718cfabe8c9907b70e47f8a9",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/STLExample.CustomInstrument.RSeries.csproj",
    "bytes": 2466,
    "sha256": "b8bba65f7f78a15a6a8db1a3f924ad30c87427a633f1df02d74153bf222332ca",
-   "via": "tree",
-   "blob": "ef077b2f3423188cfe2810b9240cdafe54474e45"
+   "blob": "ef077b2f3423188cfe2810b9240cdafe54474e45",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/STLExample.CustomInstrument.RSeries.sln",
    "bytes": 1150,
    "sha256": "2d6d142fb02fdf501480266a226ef85f8ae5957ab2a964f315185a8b8d54cb0f",
-   "via": "tree",
-   "blob": "0e544c67c22849b728fd5e5e8b76af848989ae58"
+   "blob": "0e544c67c22849b728fd5e5e8b76af848989ae58",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/SetupAndCleanupSteps.cs",
    "bytes": 2969,
    "sha256": "9bd1714b6ea38b24254d662f0bd576c8ffc856f828ee4549fef94de5eb027b98",
-   "via": "tree",
-   "blob": "e7d5eb19d72502d66f224b7e7005893a5ed9f9c7"
+   "blob": "e7d5eb19d72502d66f224b7e7005893a5ed9f9c7",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/Code Modules/TestStep.cs",
    "bytes": 10016,
    "sha256": "fc955001f198a66ab1e328789e3ffbdaa8fc7db51860827483257d02e32af771",
-   "via": "tree",
-   "blob": "7d7b03b51ece5453b256a18b4a4f5da702ae417f"
+   "blob": "7d7b03b51ece5453b256a18b4a4f5da702ae417f",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/README.md",
    "bytes": 8102,
    "sha256": "918e67e7cb5b717c336fc4edcd77dd1d3a9333ead5e4af272be2c303c6e607ec",
-   "via": "tree",
-   "blob": "4f17c5df54a9026227a43a990986e034318c0eba"
+   "blob": "4f17c5df54a9026227a43a990986e034318c0eba",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument.RSeries/STLExample.CustomInstrument.RSeries.pinmap",
    "bytes": 13544,
    "sha256": "408858af9a651cd5f7d6041dcef1848ed69a85303df25f7a620918f3b4c3531e",
-   "via": "tree",
-   "blob": "1c1ad533930eeb03e446230d58136a46f29e582d"
+   "blob": "1c1ad533930eeb03e446230d58136a46f29e582d",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument/Code Modules/Imports/MyCustomInstrumentDriverAPI/MyCustomInstrumentDriverAPI.dll",
    "bytes": 5632,
    "sha256": "ae391a61cf1e99ab19d25ca20b8054d939798f7480288cf9974b637bbf0ab778",
-   "via": "tree",
-   "blob": "09f137fccefe9364a1a0c72b477e9565c39f5589"
+   "blob": "09f137fccefe9364a1a0c72b477e9565c39f5589",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument/Code Modules/Imports/MyCustomInstrumentDriverAPI/MyCustomInstrumentDriverAPI.xml",
    "bytes": 2790,
    "sha256": "fb0e28cb72c3a0e327727a7f641f7e82817b90b9787a14f3e1149fa1937dabc7",
-   "via": "tree",
-   "blob": "fd0d9bc01ad5ca804e49515366ca19cd87f9b139"
+   "blob": "fd0d9bc01ad5ca804e49515366ca19cd87f9b139",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument/Code Modules/Imports/MyCustomInstrumentDriverAPI/source/CustomInstrumentDriver.cs",
    "bytes": 3067,
    "sha256": "518f1e270c850d5ffc6534a74b9e885e019afc3a09aa680c96b977ad83a878c6",
-   "via": "tree",
-   "blob": "de93de836aaa9bcdb1c34606da239526f032c679"
+   "blob": "de93de836aaa9bcdb1c34606da239526f032c679",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument/Code Modules/Imports/MyCustomInstrumentDriverAPI/source/MyCustomInstrumentDriverAPI.csproj",
    "bytes": 1225,
    "sha256": "25f3c4a8a3daa297e6ad2d39576ccaf21b6b6be5a26e69ab51ba455f51c42bd5",
-   "via": "tree",
-   "blob": "88ac60c958dc4498f9522edfe9be3eae81f59e9d"
+   "blob": "88ac60c958dc4498f9522edfe9be3eae81f59e9d",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument/Code Modules/Imports/MyCustomInstrumentDriverAPI/source/SimulatedInstrument.cs",
    "bytes": 1032,
    "sha256": "6fa26d9e82966f5bdec443482967f5b3c58ece21ce2284f6fb8096a8e3fb564e",
-   "via": "tree",
-   "blob": "ea90f8339f6c59e28942c0e55afc4499ba95b76a"
+   "blob": "ea90f8339f6c59e28942c0e55afc4499ba95b76a",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument/Code Modules/Imports/MyCustomInstrumentDriverAPI/source/Simulation.cs",
    "bytes": 2248,
    "sha256": "05c2308addde7ba29695818f098e1624a7a8b8af5fa4ff0c8bb0105c28ac31d8",
-   "via": "tree",
-   "blob": "e892d2749254ba28c31f682ffd94ec2ff9921425"
+   "blob": "e892d2749254ba28c31f682ffd94ec2ff9921425",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument/Code Modules/MyCustomInstrument/HighLevelDriverOperations.cs",
    "bytes": 4949,
    "sha256": "29f1c6b5797521cbee4a78e9091ad4f20af1739039b7719d824ef6127f078629",
-   "via": "tree",
-   "blob": "fedc131cc0e2a372057ff91912d9d10dd66d5ab3"
+   "blob": "fedc131cc0e2a372057ff91912d9d10dd66d5ab3",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument/Code Modules/MyCustomInstrument/InvalidCustomInstrumentPinMapDefinitionException.cs",
    "bytes": 1869,
    "sha256": "4a75c50bc5b9ed249402c71d9bf4ec12ecbc84a41db1bccd8fcf28666b5aa0e4",
-   "via": "tree",
-   "blob": "ba5d9246400cbc146491d460b935c0abbec65bba"
+   "blob": "ba5d9246400cbc146491d460b935c0abbec65bba",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument/Code Modules/MyCustomInstrument/MyCustomInstrument.cs",
    "bytes": 3902,
    "sha256": "2451703c8939838c14afc591f5cc56328035470f8c79dd13ae3dc5c39891e420",
-   "via": "tree",
-   "blob": "ee35a28788b325a07097a1a6464668c1dbce8f17"
+   "blob": "ee35a28788b325a07097a1a6464668c1dbce8f17",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument/Code Modules/MyCustomInstrument/MyCustomInstrumentFactory.cs",
    "bytes": 6030,
    "sha256": "20560b78615ee2704ddaf0393c98e21448c4df99828b2920f6daf1660e1e40e8",
-   "via": "tree",
-   "blob": "f39f0f1bf79d54479ecd48aecc5177dd0522bfa8"
+   "blob": "f39f0f1bf79d54479ecd48aecc5177dd0522bfa8",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument/Code Modules/STLExample.CustomInstrument.csproj",
    "bytes": 2110,
    "sha256": "90ef3340a2490204859ae7cc31685f43825c02e6c22d73075eb35f9e18628ae0",
-   "via": "tree",
-   "blob": "2f28fda2ff5a6e28290b90fa3f67668736f5ad66"
+   "blob": "2f28fda2ff5a6e28290b90fa3f67668736f5ad66",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument/Code Modules/STLExample.CustomInstrument.sln",
    "bytes": 1134,
    "sha256": "ef6cef9c015f7dc7e2a81002b99d8987b7ca68732515396695754ae1b06f591d",
-   "via": "tree",
-   "blob": "c8d1ce480c80945f5119afbc18f48541a94f6fb9"
+   "blob": "c8d1ce480c80945f5119afbc18f48541a94f6fb9",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument/Code Modules/SetupAndCleanupSteps.cs",
    "bytes": 3881,
    "sha256": "a495f256f5ad252073bd573c45a5cf3ebe7db153928f4a47f3e081055d30edb6",
-   "via": "tree",
-   "blob": "7bc335f1b68fb34181755a3494ad2a569433797f"
+   "blob": "7bc335f1b68fb34181755a3494ad2a569433797f",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument/Code Modules/TestStep.cs",
    "bytes": 3451,
    "sha256": "d3b7770488fe06b880ceead648d46559f026eab630eb25d301eab4118fdb5aff",
-   "via": "tree",
-   "blob": "d6b35a6eb2ae30288522e87d66ed17160eac0d12"
+   "blob": "d6b35a6eb2ae30288522e87d66ed17160eac0d12",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument/README.md",
    "bytes": 2955,
    "sha256": "1dad5624e7afc9b8bfcdab12c2b8e8c2f2556f2409ce068fc0a94faf3d142b0f",
-   "via": "tree",
-   "blob": "ad8bdd85f541057c5a1c34d1d297144d11fd7d59"
+   "blob": "ad8bdd85f541057c5a1c34d1d297144d11fd7d59",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/CustomInstrument/STLExample.CustomInstrument.pinmap",
    "bytes": 3318,
    "sha256": "c14bae35994cb5c2cd30b6822a19ab6c9e5b35e83a7c2d60c38e0375f662a5df",
-   "via": "tree",
-   "blob": "8a6d61dc8dc84ea957df774e09135f9fadaa5502"
+   "blob": "8a6d61dc8dc84ea957df774e09135f9fadaa5502",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/MultiplexedConnection/Code Modules/STLExample.MultiplexedConnection.csproj",
    "bytes": 2176,
    "sha256": "c9d5a70a2bcfbe4b7cb55237e198148d70534fa53793314bb85384626ac5892f",
-   "via": "tree",
-   "blob": "122b09402e6728a90172a40244aefce1a93074a3"
+   "blob": "122b09402e6728a90172a40244aefce1a93074a3",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/MultiplexedConnection/Code Modules/STLExample.MultiplexedConnection.sln",
    "bytes": 1715,
    "sha256": "6f8157549afc48aba03dfb2945711a5f648879c490475eeee69c060e90a2e9a9",
-   "via": "tree",
-   "blob": "95c8ffcb32cc8e22c8a905b890eb259856178536"
+   "blob": "95c8ffcb32cc8e22c8a905b890eb259856178536",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/MultiplexedConnection/Code Modules/SetupAndCleanupSteps/SetupAndCleanupSteps.cs",
    "bytes": 3269,
    "sha256": "2fc95b3c5fa453bdb352810b5115e6b3e3d231d5469d37474881733a3b8b336e",
-   "via": "tree",
-   "blob": "8bd5b103078483466171b8802308f7beeb28bb53"
+   "blob": "8bd5b103078483466171b8802308f7beeb28bb53",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/MultiplexedConnection/Code Modules/TestSteps/TestStep.cs",
    "bytes": 3368,
    "sha256": "f4e52b08281a4f60b7434359472f74f765e571145f53b2a8f04263f9458e50f9",
-   "via": "tree",
-   "blob": "985611e8d9929e6890f38dac169f67cfbcb5faaa"
+   "blob": "985611e8d9929e6890f38dac169f67cfbcb5faaa",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/MultiplexedConnection/README.md",
    "bytes": 5776,
    "sha256": "bac5acecd66882d3580291154b58770072507961314a1f190154bd851cf6f4e4",
-   "via": "tree",
-   "blob": "7ff06528c71de64d3308d0b23788449e84483d72"
+   "blob": "7ff06528c71de64d3308d0b23788449e84483d72",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/MultiplexedConnection/STLExample.MultiplexedConnection.offlinecfg",
    "bytes": 511,
    "sha256": "7e4cb360720b45f2ee9ea649a91fac5000954bf5ef46033a2fe8d0f85faf64d4",
-   "via": "tree",
-   "blob": "fa1925ad4da2fe7dbb909a10f766e5901f52bf66"
+   "blob": "fa1925ad4da2fe7dbb909a10f766e5901f52bf66",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/MultiplexedConnection/STLExample.MultiplexedConnection.pinmap",
    "bytes": 3382,
    "sha256": "aa6b64a97b74fda87a103548c43b420fd7505aee1b7b4eadfdf9181de8dc2919",
-   "via": "tree",
-   "blob": "3660cbfef56dbecbf52d27191fa3650e8aa0ef74"
+   "blob": "3660cbfef56dbecbf52d27191fa3650e8aa0ef74",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/README.md",
    "bytes": 1029,
    "sha256": "01806e68445550a5c999e3b392db858b5294415f59fb645e756b2751d1fd9ae5",
-   "via": "tree",
-   "blob": "c3aa068527a71b5080171b740eb920ad32b76d0d"
+   "blob": "c3aa068527a71b5080171b740eb920ad32b76d0d",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUGangPinGroup/Code Modules/STLExample.SMUGangPinGroup.csproj",
    "bytes": 1993,
    "sha256": "e37aef851953b3f9273b5ddfc32712518c6ba54148541c3edeca68a44b4ab0b9",
-   "via": "tree",
-   "blob": "c5ab47410cf7d7acad54a3126fb7c9e666a66311"
+   "blob": "c5ab47410cf7d7acad54a3126fb7c9e666a66311",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUGangPinGroup/Code Modules/STLExample.SMUGangPinGroup.sln",
    "bytes": 1706,
    "sha256": "c0c468011af1471ab68cac5b8d4cda0bb801f35568a0df9659cac13667aee978",
-   "via": "tree",
-   "blob": "8d90d9609ae4b2131db1cf48cf0a46df27a07cae"
+   "blob": "8d90d9609ae4b2131db1cf48cf0a46df27a07cae",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUGangPinGroup/Code Modules/TestSteps/SMUForceVoltageMeasureCurrent.cs",
    "bytes": 3917,
    "sha256": "ecc45ecdc18c480b13516ed654336cee6229338ccc2c2c9289c2d754a957c80e",
-   "via": "tree",
-   "blob": "a361b89c79ff65a38a97def43cd22e1e80e6800c"
+   "blob": "a361b89c79ff65a38a97def43cd22e1e80e6800c",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUGangPinGroup/Code Modules/TestSteps/SMUGangPinGroup.cs",
    "bytes": 3616,
    "sha256": "0e430ed71e77fca1a800af281d33c45a55a7c994bfa620f53a16e80742444073",
-   "via": "tree",
-   "blob": "7997c8b705e91f15997cc671f7aed287b0cd1cbc"
+   "blob": "7997c8b705e91f15997cc671f7aed287b0cd1cbc",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUGangPinGroup/Code Modules/TestSteps/SMUGangPinGroupFIMVThenUngang.cs",
    "bytes": 5341,
    "sha256": "efb0bd882f62545f4dfdbcc78a5c11e0d0d4801d0f7c155180d2b13f7206da11",
-   "via": "tree",
-   "blob": "ee796ed275ef5c8f061444db5e839bfa2ee554c5"
+   "blob": "ee796ed275ef5c8f061444db5e839bfa2ee554c5",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUGangPinGroup/Code Modules/TestSteps/SMUPowerDownAndUngangPinGroup.cs",
    "bytes": 3567,
    "sha256": "fc8fb65a5402249e954459bd29d38da56f67d5a93fe9c9488c7e4d3f4d1e2bb5",
-   "via": "tree",
-   "blob": "5fdb63471aab7bffbe8728a616c4d17b8f798513"
+   "blob": "5fdb63471aab7bffbe8728a616c4d17b8f798513",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUGangPinGroup/README.md",
    "bytes": 6334,
    "sha256": "ef1211bb26a4e962eeec66b70194e7de1db8bd50b62c83928094568ce552e754",
-   "via": "tree",
-   "blob": "7afa9daa753c5f6c3b290e9ce3cd715f13732b84"
+   "blob": "7afa9daa753c5f6c3b290e9ce3cd715f13732b84",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUGangPinGroup/STLExample.SMUGangPinGroup.offlinecfg",
    "bytes": 1644,
    "sha256": "0d7455cc229fade0bd1f6e87ab728261a8df01d2225b519620b8cb7160da6860",
-   "via": "tree",
-   "blob": "9d5591bbd996ced06ffab0142d8805b54029dc17"
+   "blob": "9d5591bbd996ced06ffab0142d8805b54029dc17",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUGangPinGroup/STLExample.SMUGangPinGroup.pinmap",
    "bytes": 4892,
    "sha256": "3a167fb250d1e70f50497daffd4ad7049b865d26f66798a2b4b2b327f8614610",
-   "via": "tree",
-   "blob": "e9d5b536383e563dfe5cd7a5962489418b47314d"
+   "blob": "e9d5b536383e563dfe5cd7a5962489418b47314d",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUHardwareLevelSequence/Code Modules/STLExample.SMUHardwareLevelSequence.csproj",
    "bytes": 2082,
    "sha256": "2fea6d2cc81ed9c53537cafa4d6cf0a44e0023ff519177e9de8792daa19d4237",
-   "via": "tree",
-   "blob": "16dafdd68e51430ca0efd657373591d8a74741f2"
+   "blob": "16dafdd68e51430ca0efd657373591d8a74741f2",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUHardwareLevelSequence/Code Modules/STLExample.SMUHardwareLevelSequence.sln",
    "bytes": 1725,
    "sha256": "fa98014fd9b533b5dd0a1c5227fe6a2dd28dafcf0eeaf79518bb1c16ca674fb3",
-   "via": "tree",
-   "blob": "193c363867998c900e4860a293a1d8b2e81944a9"
+   "blob": "193c363867998c900e4860a293a1d8b2e81944a9",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUHardwareLevelSequence/Code Modules/TestSteps/ConfigureSMUAdvancedSequence.cs",
    "bytes": 3457,
    "sha256": "9432b7f8139fa66940e3b56099a1bb5fc56e63fc48a071514926130fa43f88a8",
-   "via": "tree",
-   "blob": "a6ac5d206d83b6b35a05018ec2b0cbefe48584c4"
+   "blob": "a6ac5d206d83b6b35a05018ec2b0cbefe48584c4",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUHardwareLevelSequence/Code Modules/TestSteps/ConfigureVoltageRampInitiateAndMeasureCurrent.cs",
    "bytes": 4511,
    "sha256": "99912e95b0fb766422a9a59b8f179bdd5c3beef5973b6bf8a326d2825b877e5a",
-   "via": "tree",
-   "blob": "31f5c8370870a81047b542d2897741c08774fd42"
+   "blob": "31f5c8370870a81047b542d2897741c08774fd42",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUHardwareLevelSequence/Code Modules/TestSteps/ForceSynchronizedVoltageRamp.cs",
-   "bytes": 2253,
-   "sha256": "5fa30a1652af2e85a7a340b2736970dfd64614446a11506ae58a5600e7f41f53",
-   "via": "tree",
-   "blob": "b0c2ad07acbcce49dee1afd1e83f26710b386923"
+   "bytes": 2259,
+   "sha256": "012190802da6aea1635f805a53753482a212e668724d64fb7d7ab4cc61ca2055",
+   "blob": "ecd9067136d4ba884a2068fa45a8e2915c716007",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUHardwareLevelSequence/Code Modules/TestSteps/ForceVoltageRamp.cs",
-   "bytes": 1847,
-   "sha256": "19960d74685f5501bf8a79a305169a54f1caf95dd8e69116d45078e5e1367ad8",
-   "via": "tree",
-   "blob": "54dc37ba15e2977b24f8ca1b578a83bdee14de49"
+   "bytes": 1853,
+   "sha256": "b3c304e97aedf454b03616f312d8a041083740bfb7dd663f8094b7421573c8b2",
+   "blob": "80d132c5320450a12f97b2faa39e95fc25f66467",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUHardwareLevelSequence/Code Modules/TestSteps/InitiateSMUAdvancedSequence.cs",
    "bytes": 1771,
    "sha256": "827eba504a37a1bac81021f5dea07abb8abbf2866505be97fd5a75bf033ce329",
-   "via": "tree",
-   "blob": "5bcd8ec8df4adca990d05d1e545e2f32077b609a"
+   "blob": "5bcd8ec8df4adca990d05d1e545e2f32077b609a",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUHardwareLevelSequence/README.md",
    "bytes": 7907,
    "sha256": "1892bb724397a894721feadc1e776ee24c35c78cf0c7805e393bfb46b50bab85",
-   "via": "tree",
-   "blob": "db21913dea7f2323b9f3b14105ff337fda7971d7"
+   "blob": "db21913dea7f2323b9f3b14105ff337fda7971d7",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUHardwareLevelSequence/STLExample.SMUHardwareLevelSequence.offlinecfg",
    "bytes": 411,
    "sha256": "691c177cf69b1a1074be3f5387002b9a650dd66306a907ad71be9d92df882931",
-   "via": "tree",
-   "blob": "e0156cf96cfd771872e1bcfe70ed99536cb1ea42"
+   "blob": "e0156cf96cfd771872e1bcfe70ed99536cb1ea42",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUHardwareLevelSequence/STLExample.SMUHardwareLevelSequence.pinmap",
    "bytes": 924,
    "sha256": "7440f337626741660def9382c4d096a91e23a533608e20be6eb04de8c34b51b2",
-   "via": "tree",
-   "blob": "80eb1f940a2d79701f10711dd7721585dea9556a"
+   "blob": "80eb1f940a2d79701f10711dd7721585dea9556a",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUMergePinGroup/Code Modules/STLExample.SMUMergePinGroup.csproj",
    "bytes": 1995,
    "sha256": "d9fbb1e6199b405bf37d36a869e26ba2161744418ff333daab5f89dca5f5f667",
-   "via": "tree",
-   "blob": "6fda5576b0fb2b5d0e7b7fdcfd0ece98690f8c4f"
+   "blob": "6fda5576b0fb2b5d0e7b7fdcfd0ece98690f8c4f",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUMergePinGroup/Code Modules/STLExample.SMUMergePinGroup.sln",
    "bytes": 1709,
    "sha256": "bfeca63b3da187947a4d9445ae26a5c79913f15c42fde193bd3c3e78be4c8f16",
-   "via": "tree",
-   "blob": "232dd987a0aa9452678117c7f70db8afffd85b10"
+   "blob": "232dd987a0aa9452678117c7f70db8afffd85b10",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUMergePinGroup/Code Modules/TestSteps/SMUForceVoltageMeasureCurrent.cs",
    "bytes": 2890,
    "sha256": "b152a8affe7e74e6a12f7ef94f4e83d8237b260c2653b8d04f7b64e142a31a0c",
-   "via": "tree",
-   "blob": "d7c4c19f622fe9b662621c5b5f0a057ee9d5363a"
+   "blob": "d7c4c19f622fe9b662621c5b5f0a057ee9d5363a",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUMergePinGroup/Code Modules/TestSteps/SMUMergePinGroup.cs",
    "bytes": 3746,
    "sha256": "6e8b035b4b4fc2774c36ead001931454467e65a1d36ccde8d1d182c5f4ea48e7",
-   "via": "tree",
-   "blob": "2655e71cd12298a553e125beb64f432f29488ef2"
+   "blob": "2655e71cd12298a553e125beb64f432f29488ef2",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUMergePinGroup/Code Modules/TestSteps/SMUMergePinGroupFIMVThenUnmerge.cs",
    "bytes": 5399,
    "sha256": "79bc95edf5f1cf4fe68bea4b88ef1f0673d47dfb7a4dd8e832dff212fd03b9cb",
-   "via": "tree",
-   "blob": "6d81841af62bafda5c463cb002cac6a2e9f1036b"
+   "blob": "6d81841af62bafda5c463cb002cac6a2e9f1036b",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUMergePinGroup/Code Modules/TestSteps/SMUPowerDownAndUnmergePinGroup.cs",
    "bytes": 3638,
    "sha256": "dc825340b73b63eb08bdfe2309287b403766a900f1f2814bc889278237fba35a",
-   "via": "tree",
-   "blob": "6fb5e3d58ae54687263a310f9dd0e72b26f7b8e4"
+   "blob": "6fb5e3d58ae54687263a310f9dd0e72b26f7b8e4",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUMergePinGroup/README.md",
    "bytes": 6492,
    "sha256": "caf507cba9204ed8d4e3f0dae1702d295c8921eb5f4c2e9755583f12ed8d6aff",
-   "via": "tree",
-   "blob": "0b9352ec41dd3be5cfd6ca6696c8bfb287dbac76"
+   "blob": "0b9352ec41dd3be5cfd6ca6696c8bfb287dbac76",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUMergePinGroup/STLExample.SMUMergePinGroup.offlinecfg",
    "bytes": 662,
    "sha256": "4d2777c2f20f03a284c5dd89f1d339dc063806127a45a8ae8b24e250322bf9af",
-   "via": "tree",
-   "blob": "5a83efee405e0895d2f9966aea99d86cba4f75be"
+   "blob": "5a83efee405e0895d2f9966aea99d86cba4f75be",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Sequence/SMUMergePinGroup/STLExample.SMUMergePinGroup.pinmap",
    "bytes": 2713,
    "sha256": "8eb16cfb7cd747410807c94ba878b07f0c4b42769a9f7d39a04751010aa8cbb1",
-   "via": "tree",
-   "blob": "cc2cd20f4934ad590c4ef1379dfccd44c53c6078"
+   "blob": "cc2cd20f4934ad590c4ef1379dfccd44c53c6078",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/TMU/Code Modules/STLExample.TMU.csproj",
+   "bytes": 2040,
+   "sha256": "647d6e826b99e2c1a49e363f6041659524ca8f5a3f2f0612d72881a279fcbcfd",
+   "blob": "616b100729ae5ce6cfe8fcee18c70ef328d7f1e4",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/TMU/Code Modules/STLExample.TMU.sln",
+   "bytes": 1690,
+   "sha256": "6feaabc4e59583ba2d56e983d0a8dd051bd279377c8935c9bf113342939f3cd1",
+   "blob": "9311e617ea8e8b6f1733ea2a53fb3f1f68c65060",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/TMU/Code Modules/TestSteps/MeasureDutyCycleTMU.cs",
+   "bytes": 6140,
+   "sha256": "3ba50e2f13caf28fce962fa7a00dafe14571724467832dd93f0d5346f99f95b1",
+   "blob": "1b65b95cb8b0c8cf49f542a2cdcba55d819e59e8",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/TMU/Code Modules/TestSteps/MeasureFallTime.cs",
+   "bytes": 4684,
+   "sha256": "d53bd32e2a8480aa1124ea516a550b69e15a366b0dba6bba9d988766f6f2805e",
+   "blob": "b53a6b43188521c0324d3ba55a69832a52b1df9e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/TMU/Code Modules/TestSteps/MeasurePeriodTMU.cs",
+   "bytes": 4720,
+   "sha256": "77a4ca128d3ed5512838f8b3f260f77ac484d08bfc5cbffd5d6fe664d193beea",
+   "blob": "61adfec64d0d975f3ad0410d50d14cd024b16941",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/TMU/Code Modules/TestSteps/MeasurePulseWidthTMU.cs",
+   "bytes": 4845,
+   "sha256": "41b0d9d2f1a9a574b3c441f6e4b89c94d30b6d0a2e7f281e236abd6f1f117a22",
+   "blob": "73999ecba12a12444c9c5896bdaa54d56866bf78",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/TMU/Code Modules/TestSteps/MeasureRiseTimeTMU.cs",
+   "bytes": 4393,
+   "sha256": "616590d72877277b2bf003cdfde879f2286544e3bbabc06b100824f585acd78d",
+   "blob": "d3aa6df5a896c6057caa0068c4fe91f0500d0b14",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/TMU/Code Modules/TestSteps/MeasureSkewTMU.cs",
+   "bytes": 5745,
+   "sha256": "67440369cf7cd659be3d8649af9df0f428993fb74c7a3248fdf8c4fecc7504dc",
+   "blob": "82fc2d069b04165e4d65a6668a3307f0a2d94806",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/TMU/README.md",
+   "bytes": 9295,
+   "sha256": "144069221be75b52b04b579366bb4bc0f2be66d65b4a525988d4700074eeaca0",
+   "blob": "a67c640048ac74bdc7fc95a5486a57564a0f005f",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/TMU/STLExample.TMU.offlinecfg",
+   "bytes": 411,
+   "sha256": "2f97b09b36f7d41b3843382bd6044a8a2292f30f9585442d40fc9c5876f8e559",
+   "blob": "0f966a622c63c8946e482e85303db33010ec8cf0",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/TMU/Supporting Materials/Digital/Levels/STLExample.TMU.digilevels",
+   "bytes": 635,
+   "sha256": "39807d2276f5f0da8c62f328a979175639f4b2530852890e6362eba985f11b80",
+   "blob": "07357dc3804854dcc3e9ee76216f43e083eb7bb0",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/TMU/Supporting Materials/Digital/Timing/STLExample.TMU.digitiming",
+   "bytes": 1212,
+   "sha256": "89a24150c1424e96169f65a9ea5a97e62086fe0959d88854a4563af801039f6e",
+   "blob": "591a2d878653454c68a540dd820eec6d7676a11c",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/TMU/Supporting Materials/Pin Maps/STLExample.TMU.pinmap",
+   "bytes": 774,
+   "sha256": "1cca52052b7f7556818339f663b31eb9932a4327538c894f2474683de2510ea0",
+   "blob": "f7f53bd43ecb5071916683ff326631b62d5ddf95",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/source/Sequence/TMU/Supporting Materials/STLExample.TMU.digiproj",
+   "bytes": 3109,
+   "sha256": "86a2a1830aef3e8a0c444eb534360d6e8b643788d44f364fec1c3ff39ce440e3",
+   "blob": "c709f2b410106700dcefd9484addb75ffed1ad9a",
+   "via": "tree"
   },
   {
    "path": "Examples/source/Standalone/README.md",
    "bytes": 646,
    "sha256": "c35992c234e9691707c7d93b0281f513cfb07c0eb9a8a783f5830965ce20f987",
-   "via": "tree",
-   "blob": "f379ba65d06b63b68d25e9162745784fae9ae58b"
+   "blob": "f379ba65d06b63b68d25e9162745784fae9ae58b",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/Accelerometer.csproj",
    "bytes": 5292,
    "sha256": "cd93652140ec7c5115e9dd1dc53513048fbfba530be498c1d685ee1fe0f05541",
-   "via": "tree",
-   "blob": "8f445d4bed8431aa8cd3c54ae3fd89b5afaa3e55"
+   "blob": "8f445d4bed8431aa8cd3c54ae3fd89b5afaa3e55",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/Accelerometer.sln",
    "bytes": 1106,
    "sha256": "73e6165ae199a79b8756dae44a42fd1fe1e12bda6eb030454b2d373f6386dd2f",
-   "via": "tree",
-   "blob": "cb882f64f1273170f8987ea65bddf5d247abfe9f"
+   "blob": "cb882f64f1273170f8987ea65bddf5d247abfe9f",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/Common/Constants.cs",
    "bytes": 882,
    "sha256": "6c14541f4cde54f69e1bacbd730c3bb14a36840a225af475796e9d4df8375f86",
-   "via": "tree",
-   "blob": "307d2b6fc18570c7210fa1ca6226b64cb29c1000"
+   "blob": "307d2b6fc18570c7210fa1ca6226b64cb29c1000",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/Common/SimulatedTemperatureController.cs",
    "bytes": 2137,
    "sha256": "081b871fd85c83a60181dfb0fae2e56ee752624a18cc50f2eda1588fd0107cff",
-   "via": "tree",
-   "blob": "dcee355d1fdf777623e5195a44209ee7b1596012"
+   "blob": "dcee355d1fdf777623e5195a44209ee7b1596012",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/GlobalSuppressions.cs",
    "bytes": 7667,
    "sha256": "208e36591cc9b8a2c1a2314357e2e87d9b6f54ee731c0216b4b9593b2bdad76d",
-   "via": "tree",
-   "blob": "2218617fff5a913b73c9810bfea2ef36eb80641b"
+   "blob": "2218617fff5a913b73c9810bfea2ef36eb80641b",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/NuGet.config",
    "bytes": 1417,
    "sha256": "b5ab2b6e9da68e02897ae3da25b00ba2561486b8865e2fdcb6795f5e21e7d530",
-   "via": "tree",
-   "blob": "542c0b0307dcbbe4c6b91080d13d1c9ca9a784cc"
+   "blob": "542c0b0307dcbbe4c6b91080d13d1c9ca9a784cc",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/BurstPattern.cs",
    "bytes": 1452,
    "sha256": "05f8f19a8e83445266618455ece1d7c76e90fc9e07cdd46e267727e9d12db540",
-   "via": "tree",
-   "blob": "2676df189bf64e02133df070f10a2ffea654da07"
+   "blob": "2676df189bf64e02133df070f10a2ffea654da07",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/CheckPartNumberRegisterWithMultipleVccValues.cs",
    "bytes": 2602,
    "sha256": "63dbec49eaa61573befee499fd4521cc9c6d8a7c73a8bacdf2918060c62eadcc",
-   "via": "tree",
-   "blob": "a2cfa7bec0fb356e401ca5244592e2188d63c74a"
+   "blob": "a2cfa7bec0fb356e401ca5244592e2188d63c74a",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/ConfigureTemperatureController.cs",
    "bytes": 1547,
    "sha256": "5cb53fc4b9e4a4dd57aaf2074bdaae6a57f1bb3d2f7f3201a0943ff2f21e090f",
-   "via": "tree",
-   "blob": "bf9f77e979c7967c677dbd84b07cc6e74288e77c"
+   "blob": "bf9f77e979c7967c677dbd84b07cc6e74288e77c",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/ConnectVRefPin.cs",
    "bytes": 1588,
    "sha256": "5faa1f93ef3fc5e60098a96e258c9519e6294c1bf1f578ca5e4e116a6cb2361f",
-   "via": "tree",
-   "blob": "b6f63b7a089777fb14ee7fdc55bb915bc219a5a5"
+   "blob": "b6f63b7a089777fb14ee7fdc55bb915bc219a5a5",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/DisableInstrumentOutputs.cs",
    "bytes": 1967,
    "sha256": "0fb3a7936b3bbe64a3fcbe59a25c505bc63f68d82446173dd2ea130900e62200",
-   "via": "tree",
-   "blob": "3269b8a309b2490d533eb1fc36847e467de5f73f"
+   "blob": "3269b8a309b2490d533eb1fc36847e467de5f73f",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/MeasureVref.cs",
    "bytes": 3006,
    "sha256": "29e8cb788c4b4d17d547ddfa040ce2778a17d03d45b73636cdee3fbc16dffa59",
-   "via": "tree",
-   "blob": "1922fc513582179e92ec83fb256d4ae93a3a71bb"
+   "blob": "1922fc513582179e92ec83fb256d4ae93a3a71bb",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/PowerToggle.cs",
    "bytes": 1689,
    "sha256": "72cf0aca042a1aa28c8abad09215af044401b736df0edc9dce48c95c6282f351",
-   "via": "tree",
-   "blob": "44c76787fb75e8c674dd3466a9cbe368ee7fbb97"
+   "blob": "44c76787fb75e8c674dd3466a9cbe368ee7fbb97",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/ResetAndCloseTemperatureController.cs",
    "bytes": 1602,
    "sha256": "2edbfdd9e612751753a37ec690973a9abf164fa4076fa1954302db51b4da8fd7",
-   "via": "tree",
-   "blob": "f4ca0480a3d6fc5f892671f56d484731d69c3563"
+   "blob": "f4ca0480a3d6fc5f892671f56d484731d69c3563",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/ResetDUTAndSetMode.cs",
    "bytes": 2504,
    "sha256": "9d2e696b571a7a39eb2db42b667d0c0c282372537c62bca5b5ece65e2419224f",
-   "via": "tree",
-   "blob": "87867efbbb9f75e8f31c78014f2ae0c0ae05689f"
+   "blob": "87867efbbb9f75e8f31c78014f2ae0c0ae05689f",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/ResetPowerSupplyToVccTypical.cs",
    "bytes": 1755,
    "sha256": "9a5653bed0337377bbf8bc8df8aa0165161c0012c6bee4cff151447f0627d25f",
-   "via": "tree",
-   "blob": "e4978013a7d420c831c8b5a26fb5fb9cac34a460"
+   "blob": "e4978013a7d420c831c8b5a26fb5fb9cac34a460",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/SetupNIScopeForVref.cs",
    "bytes": 2072,
    "sha256": "1f4aeb403262c830d148f3ae569157aa16b7cbc6c46562e08f37ee9c3b132d87",
-   "via": "tree",
-   "blob": "e3a5cf3f908d2e11874d4d405739b153c4ee2c3f"
+   "blob": "e3a5cf3f908d2e11874d4d405739b153c4ee2c3f",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/SetupVcc.cs",
    "bytes": 3130,
    "sha256": "9bf6d5e32aa88014619dbcab9da4c7d302fc98003660c6d8ee659b954560cbd9",
-   "via": "tree",
-   "blob": "b52d833a947d142ba3f2bb829e5a72c089c69353"
+   "blob": "b52d833a947d142ba3f2bb829e5a72c089c69353",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/TemplateTestStep.cs",
    "bytes": 1763,
    "sha256": "026ae3baa695911df0699a04c4c4c42ae21f8123834b9430dfb0d0199d7aba31",
-   "via": "tree",
-   "blob": "f048476c93b54ba218eb6c81dab015de2bebe937"
+   "blob": "f048476c93b54ba218eb6c81dab015de2bebe937",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/TestContinuity.cs",
    "bytes": 5757,
    "sha256": "062e4e31cb40a99a18e799bb62fc12e8fe99fa2bd4edf446b418886056e5b60a",
-   "via": "tree",
-   "blob": "43dba1bbee1567e0749fec13fcc72456123fb0b1"
+   "blob": "43dba1bbee1567e0749fec13fcc72456123fb0b1",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/TestIdlePowerConsumption.cs",
    "bytes": 1496,
    "sha256": "149bf7856d60d6c6288084a0be0842c3202bc76d2bc5d4ff2c41e045f6c69285",
-   "via": "tree",
-   "blob": "4100f8c98b8b5b2cdb0325f4d5054ec984becef6"
+   "blob": "4100f8c98b8b5b2cdb0325f4d5054ec984becef6",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/TestLeakage.cs",
    "bytes": 3345,
    "sha256": "e32203d11bbff839d9e098bf02735449bc0322edf8eeb24796e6c11f6cc6ae6e",
-   "via": "tree",
-   "blob": "0987e9a8665e696c0623fd6a7d95784c7bec3df8"
+   "blob": "0987e9a8665e696c0623fd6a7d95784c7bec3df8",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/TrimVrefValue.cs",
    "bytes": 3934,
    "sha256": "c5c7b39aa2d19567eed964d80e156a931ca7a32fae87c552d3ff85db0e41fc62",
-   "via": "tree",
-   "blob": "aa1f91783596cd26642e197b156696d33160510e"
+   "blob": "aa1f91783596cd26642e197b156696d33160510e",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/TurnOnPowerToDUT.cs",
    "bytes": 1810,
    "sha256": "7668b6cb6ee9d36e93c6a45bf57a63d2f2a94b69ae8ba73f33bd47ec8f6fa61f",
-   "via": "tree",
-   "blob": "aa2b99912b56d5acbecf61f1e17591c2bba82b0f"
+   "blob": "aa2b99912b56d5acbecf61f1e17591c2bba82b0f",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/TestSteps/WaitForTemperature.cs",
    "bytes": 1872,
    "sha256": "fccb65c7bdbd510dfc6cb7909248924c1b7c0e94340017f661d08d4a9f4a121a",
-   "via": "tree",
-   "blob": "39416cbbddb734c40eabd9e35317ee5bd1cd0525"
+   "blob": "39416cbbddb734c40eabd9e35317ee5bd1cd0525",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/bin/Accelerometer.dll",
    "bytes": 18944,
    "sha256": "316ea570ac93e68ae3a9534f179cc973c968dc3a3d46a6eb97a3e22e96bf631a",
-   "via": "tree",
-   "blob": "1c0c28e444a6fc710f4e1fe42a1e69a669ba9d61"
+   "blob": "1c0c28e444a6fc710f4e1fe42a1e69a669ba9d61",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/bin/Accelerometer.xml",
    "bytes": 21375,
    "sha256": "e2459688b74e6133ea99ca686b5de703fa0fc4bd9a4bccd35ae52d3c74b83549",
-   "via": "tree",
-   "blob": "6ed980c2808029c3b68a714be18c444632d05018"
+   "blob": "6ed980c2808029c3b68a714be18c444632d05018",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/bin/NationalInstruments.SemiconductorTestLibrary.Abstractions.dll",
    "bytes": 138808,
    "sha256": "61a00d9df2965fdf1332d104f19eace9139ee9d2bc51c942144b17e7a97bdd94",
-   "via": "tree",
-   "blob": "68f442ba7c83c68769dc4ffbe969406058641aca"
+   "blob": "68f442ba7c83c68769dc4ffbe969406058641aca",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/bin/NationalInstruments.SemiconductorTestLibrary.Extensions.dll",
    "bytes": 136248,
    "sha256": "5d7804e136f9d8cb4659597dae6aff97ef91174fc90dac9e4f6a75f2308b304d",
-   "via": "tree",
-   "blob": "484c937808cc82579b645ee708ba17b79c798236"
+   "blob": "484c937808cc82579b645ee708ba17b79c798236",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Code Modules/packages/NationalInstruments.SemiconductorTestLibrary.25.0.0.nupkg",
    "bytes": 226188,
    "sha256": "d401811950f38fc90e0485f1be230e1ee775f9b47f6bb2642afd469b97b794fc",
-   "via": "tree",
-   "blob": "f21aec0c8b76215b43206226ca014c5e354207c1"
+   "blob": "f21aec0c8b76215b43206226ca014c5e354207c1",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Limits/Production Limits.txt",
    "bytes": 1816,
    "sha256": "43cd31590fe0b68fd5700b085b14ae2552a40d4c91a213149211b75b2054dbae",
-   "via": "tree",
-   "blob": "6828a99525644d9ea23bd18837ecdbc7d9e6ef63"
+   "blob": "6828a99525644d9ea23bd18837ecdbc7d9e6ef63",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Limits/Quality Limits (Hot).txt",
    "bytes": 1809,
    "sha256": "c5c28483936613d9ddf1536b28639a4dac3754a228b6d49202c1e26885f7e570",
-   "via": "tree",
-   "blob": "5fd80c5c15875e101c48fb7fe5e55b3cbd55e2ed"
+   "blob": "5fd80c5c15875e101c48fb7fe5e55b3cbd55e2ed",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Limits/Quality Limits.txt",
    "bytes": 1824,
    "sha256": "591748afe3e432a813f43fe34b6b6c7ad6afa81b9ddd735ea636892cb827bd36",
-   "via": "tree",
-   "blob": "61c81f03bdf3f412acd50994d297279727d3a1d7"
+   "blob": "61c81f03bdf3f412acd50994d297279727d3a1d7",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/README.md",
    "bytes": 11262,
    "sha256": "e09ea6a6165f3cfe604fc83d41161057ea65acd969f5afe4b473e9d8f9be2337",
-   "via": "tree",
-   "blob": "620e76cc04bc9464c10a08513f706db4a0bc45e5"
+   "blob": "620e76cc04bc9464c10a08513f706db4a0bc45e5",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Accelerometer.digiproj",
    "bytes": 4491,
    "sha256": "50cd8f447f3e5820ebef9c923326cd4b27b1a56861305c28c2819d2d8be70ac6",
-   "via": "tree",
-   "blob": "3841b41cb790919a9cdb48952e6103683277e20e"
+   "blob": "3841b41cb790919a9cdb48952e6103683277e20e",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Bin Definitions/Accelerometer.bins",
    "bytes": 1177,
    "sha256": "ffb9b60c1a6d04add51aeecc7827c92f2bef712911ded7546b5dc7e812279b35",
-   "via": "tree",
-   "blob": "c6762d55f777dfe60f46c5b932eb964eb2018acf"
+   "blob": "c6762d55f777dfe60f46c5b932eb964eb2018acf",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Digital/Capture Waveforms/Get Vref Value Waveform.digicapture",
    "bytes": 859,
    "sha256": "81ffabe30373c6f73a2444e0020d98ee95b27ff40d3998660fa19f8a247a3559",
-   "via": "tree",
-   "blob": "4669db033aefdf39e0cc9c22c96c3cae95d25017"
+   "blob": "4669db033aefdf39e0cc9c22c96c3cae95d25017",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Digital/Compiled Patterns/SPI - Read Part Number.digipat",
    "bytes": 4491,
    "sha256": "42f2b35a3f001d5d41864f8ecd42622cec1e4c7522642cd51311e90b52ec5b34",
-   "via": "tree",
-   "blob": "2ca66f3a239acf3958b5f0d24f1fbe345f74736c"
+   "blob": "2ca66f3a239acf3958b5f0d24f1fbe345f74736c",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Digital/Compiled Patterns/SPI - Set Test Mode.digipat",
    "bytes": 8476,
    "sha256": "ce4efea646ee1a4315e2ae0b0889b33ece3b94a16488e636d34a7e3bed72720a",
-   "via": "tree",
-   "blob": "377515f41b1fcc8996bc2ab121008792ebc80e59"
+   "blob": "377515f41b1fcc8996bc2ab121008792ebc80e59",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Digital/Compiled Patterns/SPI - Set Vref Value.digipat",
    "bytes": 5206,
    "sha256": "3a85fe8a33c4b7bbbf754b62bcbb528c8b523e74ca77e879cace8a1b78a6533e",
-   "via": "tree",
-   "blob": "a2e526664ce3f6069e76da53bcce6a50133f005b"
+   "blob": "a2e526664ce3f6069e76da53bcce6a50133f005b",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Digital/Levels/Accelerometer.digilevels",
    "bytes": 1358,
    "sha256": "eb0d50aff0dc897ffba594b902f49772ec414639eba022e27500502af20b04e0",
-   "via": "tree",
-   "blob": "c08854bc6db9736c618e2de638c48213f4638baa"
+   "blob": "c08854bc6db9736c618e2de638c48213f4638baa",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Digital/Source Waveforms/Set Vref Value Waveform.tdms",
    "bytes": 970,
    "sha256": "4f010bebe7bf477ea17722d4061feba6a17937e524e8f6a17ef504fc7a9d651e",
-   "via": "tree",
-   "blob": "6b8e4a2eec1bc9906dd15ba15ebbc629208db442"
+   "blob": "6b8e4a2eec1bc9906dd15ba15ebbc629208db442",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Digital/Timing/Accelerometer.digitiming",
    "bytes": 2648,
    "sha256": "d53878b56c51aef40b987e4320e79e3c5edd338bf392e4e8d292404a6b86d07a",
-   "via": "tree",
-   "blob": "09869bcb11f1a8e42a6c09d02e6d5077c284bc30"
+   "blob": "09869bcb11f1a8e42a6c09d02e6d5077c284bc30",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Offline Mode Configurations/Accelerometer.offlinecfg",
    "bytes": 739,
    "sha256": "ce79581eb5103c9e061f9fdea31c6af22c15e00d755539ee6ea0dc2fcdc09aa5",
-   "via": "tree",
-   "blob": "865fb63eb88fe6befef5b14e4fe251f68c4a88ab"
+   "blob": "865fb63eb88fe6befef5b14e4fe251f68c4a88ab",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Pin Maps/Accelerometer.pinmap",
    "bytes": 7233,
    "sha256": "829b05ee0e8215241bdfa9ae15fae04cb169c81e02b6f2b78c95eefdf34e0e71",
-   "via": "tree",
-   "blob": "849e84e70e5bf9b9d3a49542fa3cc6813b3a1f0d"
+   "blob": "849e84e70e5bf9b9d3a49542fa3cc6813b3a1f0d",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/Accelerometer/Supporting Materials/Specifications/Accelerometer.specs",
    "bytes": 2279,
    "sha256": "c17d214e8eb889c10306061455d94ec11f3367a4d60fa1d2715bbbbbc465cc4c",
-   "via": "tree",
-   "blob": "5c1af4b4be8e76d7369b210d0ce5ea941062b707"
+   "blob": "5c1af4b4be8e76d7369b210d0ce5ea941062b707",
+   "via": "tree"
   },
   {
    "path": "Examples/source/TestPrograms/README.md",
    "bytes": 445,
    "sha256": "242f5e8b61fd500e1c218027768118f53d543034ee4d2b8f1d6bdd01b405fc8f",
-   "via": "tree",
-   "blob": "65a83c57e262175a3b8cf90d020a25da106e3b9e"
+   "blob": "65a83c57e262175a3b8cf90d020a25da106e3b9e",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/tests/DataAbstractionTests/PinSiteDataExamplesTests.cs",
+   "bytes": 2481,
+   "sha256": "5e8834ce7d31e4933e33dd2a64e37f8b96bf48ad60ae430d1e2c5e878939be5f",
+   "blob": "672f365730819eee072324675fdd32159c76239f",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/tests/DataAbstractionTests/SiteDataExamplesTests.cs",
+   "bytes": 1225,
+   "sha256": "c52ff60f2b9988614e268955818bc399f1522d9b154444aa704cb0ae34385af9",
+   "blob": "10bf0aab7489175eed04cde235f6987bac4770cb",
+   "via": "tree"
   },
   {
    "path": "Examples/tests/GlobalSuppressions.cs",
    "bytes": 599,
    "sha256": "882c62f01b380377d85f58c005086c090ee35819abac98e7027c32a1d653f5ed",
-   "via": "tree",
-   "blob": "8f2a52d29bc4a18e33ec6b2d417627a8b80e7937"
+   "blob": "8f2a52d29bc4a18e33ec6b2d417627a8b80e7937",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/tests/Integration/GenerateStandardWaveformFGenTests.cs",
+   "bytes": 2028,
+   "sha256": "5f7ab707660da34b557752fdb4e8fa95d084ce75a0c8b58856ae5627213c5dea",
+   "blob": "9ef485b3dccee6f15e1ed09450bc819cbb749bb4",
+   "via": "tree"
   },
   {
    "path": "Examples/tests/Integration/InstrumentAbstractionTests.cs",
    "bytes": 2516,
    "sha256": "26ff41a12254b3df3c91a2b5c5a36f97a50bddda5a0d4b45c380cda02b0d3c47",
-   "via": "tree",
-   "blob": "03c4f826e659cd3a1c2a72e94452b1918958b306"
+   "blob": "03c4f826e659cd3a1c2a72e94452b1918958b306",
+   "via": "tree"
   },
   {
-   "path": "Examples/tests/Integration/MeasurePeriodTMUTests.cs",
-   "bytes": 1092,
-   "sha256": "aa18b68ae15be773abeae8cdab75688f1d546ea532edc3fc2dad2ab8a5fb5e3b",
-   "via": "tree",
-   "blob": "99e3dadb32d120795a354b4a271b45cd49481d7e"
+   "path": "Examples/tests/Integration/MeasureExamplesTMUTests.cs",
+   "bytes": 5451,
+   "sha256": "59f83f5e9772e4f13314ee5dc430765a59d07e20006c8080a9bb6f50a00b9a7f",
+   "blob": "878aaa5d875d9e3dbc90021488ec53985de51b3e",
+   "via": "tree"
   },
   {
    "path": "Examples/tests/Integration/PatternTriggeredInstrumentControl.cs",
    "bytes": 2807,
    "sha256": "4ede2ac3e0dac32f4a3f61d5ca9a8d349c7c68fe82d41909288cee922907231d",
-   "via": "tree",
-   "blob": "6b3c4f7111f35597b6b0b9363b79d12dfb643d15"
+   "blob": "6b3c4f7111f35597b6b0b9363b79d12dfb643d15",
+   "via": "tree"
   },
   {
    "path": "Examples/tests/Properties/AssemblyInfo.cs",
    "bytes": 1398,
    "sha256": "53a4f0e52b6893e90f1f2b31df69c0e1af3ca008c3d735a0162c6c33cbe724df",
-   "via": "tree",
-   "blob": "ba26cb5ee1fdaaf3b0bd9df25233ded64075e16b"
+   "blob": "ba26cb5ee1fdaaf3b0bd9df25233ded64075e16b",
+   "via": "tree"
   },
   {
    "path": "Examples/tests/Tests.SemiconductorTestLibrary.Examples.csproj",
    "bytes": 3193,
    "sha256": "aa0d827552228f68050561a8917e6aa76562656cb9a285cb921a95756e6c4290",
-   "via": "tree",
-   "blob": "3652736956aa9a70c06a5a396b93420c6bdc20a7"
+   "blob": "3652736956aa9a70c06a5a396b93420c6bdc20a7",
+   "via": "tree"
+  },
+  {
+   "path": "Examples/tests/ValidationTests/ExamplesHintPathTests.cs",
+   "bytes": 2358,
+   "sha256": "6dfae409d1575efacd350372bc3122f8f7bf8e80fdf7bc197d0744d03a79bc58",
+   "blob": "efd7178367f5c15bfe28929df336ab90eab99400",
+   "via": "tree"
   },
   {
    "path": "LICENSE.txt",
    "bytes": 1071,
    "sha256": "aec0d06ce4db329f3bd53ca76527d3b98b2924777d596c470bdd49c6838b8663",
-   "via": "tree",
-   "blob": "9fe44f27d5743e8fc4b91caa062b4c0890a1b520"
+   "blob": "9fe44f27d5743e8fc4b91caa062b4c0890a1b520",
+   "via": "tree"
   },
   {
    "path": "README.md",
    "bytes": 3102,
    "sha256": "414d3f875323ab29f094054eb794f25fab7453a57a4d530768decbd96523d072",
-   "via": "tree",
-   "blob": "4f3379d9d81c5a3263cee172bbca7333bc199ab3"
+   "blob": "4f3379d9d81c5a3263cee172bbca7333bc199ab3",
+   "via": "tree"
   },
   {
    "path": "SECURITY.md",
    "bytes": 1311,
    "sha256": "a49dcd1f205fc87ca643e533a92089833113be136fa8dbba2b62136a43ce1847",
-   "via": "tree",
-   "blob": "72801ca5a442007ea05be85bd02618ffe8daef8e"
+   "blob": "72801ca5a442007ea05be85bd02618ffe8daef8e",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Abstractions/NationalInstruments.SemiconductorTestLibrary.Abstractions.dll",
-   "bytes": 235264,
-   "sha256": "9bceb80f24b3f859faf4dd8d88890bd406c87bd873ddc6b390881d0a6d835bd9",
-   "via": "tree",
-   "blob": "a4bbd5e268e382aa76f0030afa7c604fb66739c8"
+   "bytes": 257792,
+   "sha256": "877b3b7bd0794af0ab8a5ebc00294998da0c344ab1cfa4b30d158aab66e8a4f3",
+   "blob": "b71cbb4be1a495d095fb9f7216f55ab1b25688e3",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Abstractions/NationalInstruments.SemiconductorTestLibrary.Abstractions.xml",
-   "bytes": 481141,
-   "sha256": "44363292361305457e2e9ebee7ac0fbd338ba66c83ce8da18d3ba43bfa147441",
-   "via": "tree",
-   "blob": "ecf00e47aff1f974f60a793c0da6f25abc77137c"
+   "bytes": 662062,
+   "sha256": "edaeeae4dc171ffd1514ba1aade37bd321996160316fc228fffc9a18703ccd83",
+   "blob": "2fc9871c6d9de3faea35b88cc350f2da2da0965a",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/Common/HelperMethods.cs",
    "bytes": 9322,
    "sha256": "fb462404537662e1b00ca744a37c3bd743333f49274da10e98f3c4ec0ba1a9bd",
-   "via": "tree",
-   "blob": "852815d92d13a0f7a2b0119670bea162b40da6d2"
+   "blob": "852815d92d13a0f7a2b0119670bea162b40da6d2",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/Common/Types.cs",
    "bytes": 386,
    "sha256": "f92486ea016f26cbeac0fa08c1daa51d1f0e9a1eca9947bf04dd330bb2aaa685",
-   "via": "tree",
-   "blob": "f7fbb3a2cc18da08fc49998b0880b459f1c8134e"
+   "blob": "f7fbb3a2cc18da08fc49998b0880b459f1c8134e",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/GlobalSuppressions.cs",
    "bytes": 1166,
    "sha256": "756dc319db281a6fc4fb474caaa129b3190518f03919ea26e20e11de2ece7b81",
-   "via": "tree",
-   "blob": "fdd3415c656383c850774bc19e2575589d7adfc3"
+   "blob": "fdd3415c656383c850774bc19e2575589d7adfc3",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DAQmx/AnalogInput.cs",
    "bytes": 3982,
    "sha256": "8c53fb00dcf695e21c4217308e6f24bb17240d5621505c7c3fb0cea0ab9a9d38",
-   "via": "tree",
-   "blob": "2e9cf5f4c0a731d46eaa763eac5125c329753565"
+   "blob": "2e9cf5f4c0a731d46eaa763eac5125c329753565",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DAQmx/AnalogOutput.cs",
    "bytes": 5486,
    "sha256": "ee2677c5d302ddca3984b51b7b41cee51ae4e099e17272eb718b549f5d2a3698",
-   "via": "tree",
-   "blob": "0a9c850e611dba4a56525dfb9173949954a89761"
+   "blob": "0a9c850e611dba4a56525dfb9173949954a89761",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DAQmx/AnalogOutputFunctionGeneration.cs",
    "bytes": 5984,
    "sha256": "b63ef7cdab088598c79eeae898d5019627b2c0b9da65d161bd772fa85ab1f5b8",
-   "via": "tree",
-   "blob": "b1eeb60ab29885445f2118c77ddf67ec0e176521"
+   "blob": "b1eeb60ab29885445f2118c77ddf67ec0e176521",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DAQmx/Configure.cs",
    "bytes": 7540,
    "sha256": "2b8303ccd3c839be156d8cad39abf76df965e3b0b02e4241a81a339862e6a799",
-   "via": "tree",
-   "blob": "1502f73f11112196b3ad1954963d60ffc98b64cd"
+   "blob": "1502f73f11112196b3ad1954963d60ffc98b64cd",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DAQmx/DigitalInput.cs",
    "bytes": 5155,
    "sha256": "ce195152ffe1d8cb983769fc97b0657414da8b747d79a81182aa1391970aeb94",
-   "via": "tree",
-   "blob": "f9d9372e8582028c2a1c23859a96af79ee69226a"
+   "blob": "f9d9372e8582028c2a1c23859a96af79ee69226a",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DAQmx/DigitalOutput.cs",
    "bytes": 5580,
    "sha256": "9078b73a3e4b139e28cc12087d332ce44573b157b6f2e7ce63257668f7daade5",
-   "via": "tree",
-   "blob": "e08cbfecdec996ac4ede4b10e9a14a1796c513cf"
+   "blob": "e08cbfecdec996ac4ede4b10e9a14a1796c513cf",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DAQmx/TaskControl.cs",
    "bytes": 6753,
    "sha256": "bd705237f1f660e9fee9bfad42bbb27523ee0518189ffb730f3cc75d9163fb4f",
-   "via": "tree",
-   "blob": "5e3cfa52e0698c67a80f43c988d4f3baf906147e"
+   "blob": "5e3cfa52e0698c67a80f43c988d4f3baf906147e",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DAQmx/TriggersAndEvents.cs",
    "bytes": 4476,
    "sha256": "b1673cc5a1d5da43cc04747032f2fca2638c6f4ad0076763988c7f728b397ab9",
-   "via": "tree",
-   "blob": "f9fec3233d6f27dd4ea1805a01df8c30d44d554e"
+   "blob": "f9fec3233d6f27dd4ea1805a01df8c30d44d554e",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DAQmx/Types.cs",
    "bytes": 6322,
    "sha256": "9a92df957cbfdc6e346d9f8b1dba76a901af1674f19d4feca7fcb703f5ca75f3",
-   "via": "tree",
-   "blob": "43a711ba8702705586ee9c47592b7fcb01852482"
+   "blob": "43a711ba8702705586ee9c47592b7fcb01852482",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DAQmx/Utilities.cs",
    "bytes": 1268,
    "sha256": "634aa7fb81feb6caca866d2eb2bcf83bc039aa4723b3ea7d3a6d62afca309e3e",
-   "via": "tree",
-   "blob": "e5b228cd502bcad005165727e73918e23a0b439c"
+   "blob": "e5b228cd502bcad005165727e73918e23a0b439c",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DCPower/Control.cs",
-   "bytes": 6234,
-   "sha256": "12cd81758b2498923dd0a72e917ffa7dbd10a3af5665011b2dcc7ba644fd296f",
-   "via": "tree",
-   "blob": "c86bd589f6f65bb5dd5c305146fe51b0579ec27f"
+   "bytes": 7703,
+   "sha256": "0fb70f1bbeaaa3e19aa68471bc1575fa0965790f5a5ff3564c600e45ab16e8f8",
+   "blob": "6e0196d8137d826e6dd9ed83f630c4d339854475",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DCPower/Measure.cs",
-   "bytes": 43534,
-   "sha256": "215cf3ac0c74a5b50395b6d0d3f34fff4b5617b7e2d772fce1eb3c268a5d0933",
-   "via": "tree",
-   "blob": "e67d554c7555e72890abd376918aa413a2adb809"
+   "bytes": 71972,
+   "sha256": "a86ef01d6ae25d74dac233b4c8dc7303a9b28db99c63a8295e1bbd86af0504b9",
+   "blob": "774db368be111f8db7a0bba49774359a9c7e8e50",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DCPower/Source.Obsolete.cs",
+   "bytes": 49446,
+   "sha256": "471fbf7fd31002535871a190760d13c968a0d52639dabbd706ff71aea347f40c",
+   "blob": "7ee69b6017b75aa9f986618c75ee20028189ac50",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DCPower/Source.cs",
-   "bytes": 184821,
-   "sha256": "a6b0d96aed3d7aefd3f69329c06853ce630d49f696021b5f061bca2976b84c58",
-   "via": "tree",
-   "blob": "350dc21b07ae3edcf62c57ae432c1cc47f0258a3"
+   "bytes": 231202,
+   "sha256": "b1d16a5ef008c5e156cb64b9445c436320e970fa5debaa11f726852e31255f68",
+   "blob": "f7a8017bffb7aaba64e125e0c571a1411c0b5597",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DCPower/TriggersAndEvents.cs",
    "bytes": 19485,
    "sha256": "876beeb2a61c03415ccba1cccaaec3d06ed43d206eacb36fb17c37ee00063af0",
-   "via": "tree",
-   "blob": "0869dbfd3236dcd3a17d416aefdc93b8b870882f"
+   "blob": "0869dbfd3236dcd3a17d416aefdc93b8b870882f",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DMM/Measurement.cs",
    "bytes": 6595,
    "sha256": "3ceaefae93ce5e95059316aed3349bef8657a92b4dc2c70cbb3284d8a9fc0c5d",
-   "via": "tree",
-   "blob": "284e329c726a08d6fc125fcbd22a2491805916bf"
+   "blob": "284e329c726a08d6fc125fcbd22a2491805916bf",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/DMM/PropertiesConfiguration.cs",
    "bytes": 9640,
    "sha256": "767c9c1da3e4dd8b51db336b4d7dc92fafeaefbf677eced0c3c4281912dac2a6",
-   "via": "tree",
-   "blob": "54e5f4288ae2b5c3a16a55fab4469f25c1e70c89"
+   "blob": "54e5f4288ae2b5c3a16a55fab4469f25c1e70c89",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Digital/FrequencyCounter.cs",
    "bytes": 1753,
    "sha256": "3e341535b9e69bb4c377449ba2b024bc2e5f4846ad1e71e23dcf46c30340b602",
-   "via": "tree",
-   "blob": "987cf27350ba618fc5bb50e6dc9c4726d41873be"
+   "blob": "987cf27350ba618fc5bb50e6dc9c4726d41873be",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Digital/HistoryRAM.cs",
    "bytes": 15585,
    "sha256": "9f9855ab0bd9af35766b93176f36d5a938a9a55b62f490c01419f6506e52558c",
-   "via": "tree",
-   "blob": "1174f48aa97aa7c4fce30f603b0158ab7800cf8c"
+   "blob": "1174f48aa97aa7c4fce30f603b0158ab7800cf8c",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Digital/LevelsAndTiming.cs",
-   "bytes": 44292,
-   "sha256": "b14cb0947dc11a5dabd07a3a72114e770e6da08c2652ef864a91df7be23fe309",
-   "via": "tree",
-   "blob": "a6fa2b4369c719e709d912b9abb68a34d9a00662"
+   "bytes": 47967,
+   "sha256": "883395f87813c0a35493ab8f6c90d082e25cfa9e3bdd1cace44f46c91567199d",
+   "blob": "b74b8185d6a4a873ae08276096aff52fa8feb58f",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Digital/PPMU.cs",
    "bytes": 32580,
    "sha256": "fe9e904473db657b924ba613d5ba431b41a78bc90dce5fa788dc1792dc3f395b",
-   "via": "tree",
-   "blob": "bf6aae5e91f87a820b2ae321903fd87210349d16"
+   "blob": "bf6aae5e91f87a820b2ae321903fd87210349d16",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Digital/Pattern.cs",
-   "bytes": 7453,
-   "sha256": "e5bffd295fe6e1b6fd88cfc6e3bbf8c4e20783a8e8e4098e7244f32333b6e7eb",
-   "via": "tree",
-   "blob": "83387e64fd9e5616b1dcb7c45ef0e1b65ccc5c77"
+   "bytes": 12348,
+   "sha256": "ff8591e1875077856a747cada42e638264faeb6064dc8b26d63c1d39b9a1377c",
+   "blob": "0db99ed45bd1142dca68310db5319e8977c63d9b",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Digital/SequencerFlagsAndRegisters.cs",
    "bytes": 7422,
    "sha256": "044f553bf834b1e904f1ed60538c942a465dd90ff99ff4f945ed5251d733f77a",
-   "via": "tree",
-   "blob": "efb197b2f5f00b241ac52b354083999dd964203b"
+   "blob": "efb197b2f5f00b241ac52b354083999dd964203b",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Digital/SourceAndCapture.cs",
    "bytes": 14225,
    "sha256": "61e82b9af6ecfb3530b26e3cd4d0c01dd1af499074c6f76e9c84280cd4bfa50b",
-   "via": "tree",
-   "blob": "25f8734890b36c65a3cab96a0a8b6997f59b80e0"
+   "blob": "25f8734890b36c65a3cab96a0a8b6997f59b80e0",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Digital/StaticState.cs",
    "bytes": 3246,
    "sha256": "9157173e3756b612698262b3864d44eb5fc7fc8428a42a6b8c69d6cf8fec52ca",
-   "via": "tree",
-   "blob": "0b2688017f38b1bb0a91821ce01aa069389405ef"
+   "blob": "0b2688017f38b1bb0a91821ce01aa069389405ef",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Digital/TMU/TmuExtensions.cs",
-   "bytes": 35584,
-   "sha256": "087edae227a4b00a0c183d912ef9ed56feb0e00bf2fb0248de2a2f2bd971d120",
-   "via": "tree",
-   "blob": "7d5888aa2c2fc785301a63784f6ea3e29f7cd50a"
+   "bytes": 139270,
+   "sha256": "89e373ee2a9644dfb728c8364ff244b5e4e51f270a37c1928e6c69e3c22e8310",
+   "blob": "4c38b31260b45d340b0d160495c0d417d0495c2b",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Digital/TriggersAndEvents.cs",
    "bytes": 9292,
    "sha256": "4371af7f9ecebf1cda2ef3339897fe8ff3e87c4610567e7ab5067bfdc9f3392d",
-   "via": "tree",
-   "blob": "fb9289dd5288fbf25609bfde97415af9921e6f59"
+   "blob": "fb9289dd5288fbf25609bfde97415af9921e6f59",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/FGen/Clock.cs",
+   "bytes": 6801,
+   "sha256": "3490c7d5c6640b28f09ca8cc7ecb6ead1d768b2ae305f4409b55a66dc5ff6a6e",
+   "blob": "9595f676a5022aca0aa32d3268b094d2c0c70857",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/FGen/CommonUtils.cs",
+   "bytes": 556,
+   "sha256": "0aeee7d0cae0e9f83bed812209909937d333a3ffa751b82aa86d9337d71de0b8",
+   "blob": "9f80c2c9ab6943d2cacb4011ff7ce1c46aa380ac",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/FGen/Control.cs",
+   "bytes": 6137,
+   "sha256": "51f3ae7cff3d22d73dd44f3f71f4b81293e817fbed7cf8051033b0e6854caf62",
+   "blob": "a64f2b3cabe7100e9932956d64df85e74b67c425",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/FGen/Output.cs",
+   "bytes": 3787,
+   "sha256": "0a411b39ef9e27dd5ee37b64b04a1498b9f081eab9052dc8934b2d86447b32ec",
+   "blob": "bacc3ac6c73ba957838057081134d240806b3298",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/FGen/StandardWaveformGeneration.cs",
+   "bytes": 5440,
+   "sha256": "e3c2f2378c0e59c21a220ce16c4df475091204baf9255164443fb05717a8fd90",
+   "blob": "06fec59c12bf1021e8000edcdbdc6ee376654834",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/FGen/TriggersAndEvents.cs",
+   "bytes": 8396,
+   "sha256": "eb8c00745e467b99cd8cb3f337a6705b5c354d603d676b9146cbbab2206b060c",
+   "blob": "87708a0a559f2e38594f43bd3402755784586fca",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/FGen/Types.cs",
+   "bytes": 2483,
+   "sha256": "c2ed3eac47866f604198155d62e1fe247791f45e03158073b7c58dd0e0ac587d",
+   "blob": "2bd69f5f8270848de102c2da04196fe2665bf953",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/FGen/Utilities.cs",
+   "bytes": 1543,
+   "sha256": "67d992555aa4b22e1592a9b3a7a04543c45b3b1e0b0dfe309100f0668a1d88c4",
+   "blob": "288a6d6ad6fad3e694dfe855a4126e7747bf6c66",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Relay/Control.cs",
    "bytes": 4023,
    "sha256": "953d80f659c023e04c16490309ae3b29f9b06abae814f651636f78001b9edea8",
-   "via": "tree",
-   "blob": "0fd26edb33d6f28698dca20a68ebad3461c0f455"
+   "blob": "0fd26edb33d6f28698dca20a68ebad3461c0f455",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Scope/Acquire.cs",
+   "bytes": 3153,
+   "sha256": "dc0e090a2e45c5d0673140dade47fdf333e4047ee75dee7ad22d3f495d44fd78",
+   "blob": "f14ad58ef78e6f971d2189c46f5273a18405fdf5",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Scope/Configure.cs",
+   "bytes": 7312,
+   "sha256": "e3d9b2198556f79e01211ac60c4961b0e8a91ede332599d4cdf600f69c1d20a6",
+   "blob": "4355bfee5f3b7627ba8da2d7c96e01df619110a3",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Scope/Control.cs",
+   "bytes": 3059,
+   "sha256": "efcbedd1f85bca7f154523f65a4b7fb27f0602d821b4d5d3e51f3bb727fe95dd",
+   "blob": "d6a3de97aeccace086f34cf559065d10ca2e5b18",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Scope/Timing.cs",
+   "bytes": 3678,
+   "sha256": "2631eff7cf1e3466dbe4c2c96d216b2f261bf63045592dc1cb5c15fef7365abc",
+   "blob": "286d4df602019ff03fa08eb8e432e93d6d0c6d9a",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/source/InstrumentAbstraction/Scope/Trigger.cs",
+   "bytes": 6963,
+   "sha256": "a636dadbc9e4721f35f9789c563e8dd4d4b58ac0fc4ef3fad49d48a85fb2c5a8",
+   "blob": "fa4a1c3f2a446e10fa2a9d10530ba2844907753c",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/Properties/AssemblyInfo.cs",
    "bytes": 1937,
    "sha256": "0f2807eafce9a692eeb04f7cc4afb60be6fd3be98fd78ccf210fa5dc9a1f0192",
-   "via": "tree",
-   "blob": "487d3c6dc0a5f1934d1eb7d86abd6bc470f26af0"
+   "blob": "487d3c6dc0a5f1934d1eb7d86abd6bc470f26af0",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/ResourceStrings.Designer.cs",
-   "bytes": 11518,
-   "sha256": "a8e694d3e1831b71cc50afdef24333ffb745635e92314c6c8c02abeed6c18e2c",
-   "via": "tree",
-   "blob": "a82f0c00fe68c3b084b15d72b4acb18d8f7d30b3"
+   "bytes": 20347,
+   "sha256": "b8bae265ad9d711460739c562efe0b4d4372a690c0a569db1703693b811fef59",
+   "blob": "46d1ea5930435ca39ef0543cf5d621a4b085c2db",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/ResourceStrings.resx",
-   "bytes": 9927,
-   "sha256": "b1bf955297ba8a3a2a5669410dd0edee6f85b5438b1ddc51e0e404c84314efbb",
-   "via": "tree",
-   "blob": "af4bc515f482057777644cecb5e2892f28463af7"
+   "bytes": 13950,
+   "sha256": "073a24af80f9c2a57b22d85ac0591c54c7c78de9dfa2c68e8c2b9381b806649c",
+   "blob": "15871c65be80959c9c025bdbda3bf43b06b1d562",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/source/SemiconductorTestLibrary.Extensions.csproj",
-   "bytes": 2977,
-   "sha256": "ff088e2b4478090a215ce3deab5fed60300f7859848bbc48b393b75513f227a1",
-   "via": "tree",
-   "blob": "95e4f3cc5cb29443175e61f71cd26735d70ed4b4"
+   "bytes": 3261,
+   "sha256": "f1ec7dad9983c16a678a2941b64f12bdec6902a3edd0f1414ce5c69016143e15",
+   "blob": "59c33c496a4770a2fcc79b43b45c54167bb49ec6",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Common/HelperMethodsTests.cs",
    "bytes": 6313,
    "sha256": "a5aa14a781343bae511db4ddf3aa1b15312845893a2d9db4b75d95c800e8a617",
-   "via": "tree",
-   "blob": "754c98d14da0bfc185e994e47aaeff6bd8cf5bc7"
+   "blob": "754c98d14da0bfc185e994e47aaeff6bd8cf5bc7",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/GlobalSuppressions.cs",
    "bytes": 975,
    "sha256": "fcf9634afeaea3cbb1c51388ac133a846712b517ca98505369dc944cad9e90c6",
-   "via": "tree",
-   "blob": "d3c74e2dac0f8f25621c0a50a10a11a06d7b3a23"
+   "blob": "d3c74e2dac0f8f25621c0a50a10a11a06d7b3a23",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Properties/AssemblyInfo.cs",
    "bytes": 1400,
    "sha256": "d96b8306035edabe61ed3bb5ffd8960ff508ea00a99a80f76be9b8d70efb669b",
-   "via": "tree",
-   "blob": "d8abce0ed78de84b42a0477b8c55959905f7649d"
+   "blob": "d8abce0ed78de84b42a0477b8c55959905f7649d",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Tests.SemiconductorTestLibrary.Extensions.csproj",
-   "bytes": 3555,
-   "sha256": "4cff236c03801c711e36bc8b7ced3adc478bcdfd645b235d3f9253674efb8920",
-   "via": "tree",
-   "blob": "da61a46bd113fb9aaa37d5b19f3548d70c879f4e"
+   "bytes": 3969,
+   "sha256": "c31384df8eb6b93eed9677b4d641a87162fde952b967f07590d994b81e99bbe6",
+   "blob": "c942bd20147a300f6a6810dc185f46e1da1471a7",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DAQmx/AnalogInputTests.cs",
    "bytes": 13286,
    "sha256": "6fcf5e7bf895d2093d60a3dc6d521c85c27945e0bf5aafee8bbc1ef00e8acfe2",
-   "via": "tree",
-   "blob": "d04c9db2a63119be9408aee7dec469e64f66c6ba"
+   "blob": "d04c9db2a63119be9408aee7dec469e64f66c6ba",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DAQmx/AnalogOutputFunctionGenerationTests.cs",
    "bytes": 2660,
    "sha256": "2337c7f7ce16b18ffd05847f769adce4dffb49c6e9536b603739944250aed057",
-   "via": "tree",
-   "blob": "6322152c0e63ea9ef41cb6f5aeb31e4b2beb3699"
+   "blob": "6322152c0e63ea9ef41cb6f5aeb31e4b2beb3699",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DAQmx/AnalogOutputTests.cs",
    "bytes": 7114,
    "sha256": "bbc07961f5d4e4c9667d3ad61c1dfa7e22bbf56e853e72928cfd587b49ebd2af",
-   "via": "tree",
-   "blob": "c790e3cb3a352a14319c887e0d8f71a6e65490cb"
+   "blob": "c790e3cb3a352a14319c887e0d8f71a6e65490cb",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DAQmx/ConfigureTests.cs",
    "bytes": 5182,
    "sha256": "9499f656bbe3dc1b8925b4db193499d49e5a2cc49f2ff200df65a3f43759554b",
-   "via": "tree",
-   "blob": "703b6ee9cc8168c1296c24068935bf08d872b81b"
+   "blob": "703b6ee9cc8168c1296c24068935bf08d872b81b",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DAQmx/DigitalInputTests.cs",
    "bytes": 4138,
    "sha256": "2e1feb7fb09fe74007a5405c94802346b12a606a5cab506a1a9a48225c9fce84",
-   "via": "tree",
-   "blob": "745eeea37003bfbbc8f232b0c8aeefa8f75f4955"
+   "blob": "745eeea37003bfbbc8f232b0c8aeefa8f75f4955",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DAQmx/DigitalOutputTests.cs",
    "bytes": 3947,
    "sha256": "e337d53f37d0f0fbc150774b29df97a0b8d0a763b5c8fa616e0e47a42eb82029",
-   "via": "tree",
-   "blob": "b1303639a40f5bf6ecc09882eeb63b0e2acaf65f"
+   "blob": "b1303639a40f5bf6ecc09882eeb63b0e2acaf65f",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DAQmx/TriggersAndEventsTests.cs",
    "bytes": 5224,
    "sha256": "5880b4a608bbfd26bdbb8ec17dfc88c2f7e374470f4715d1475f4781ed4632d8",
-   "via": "tree",
-   "blob": "0e42d05b458edfd7f931cb75758de827039661bb"
+   "blob": "0e42d05b458edfd7f931cb75758de827039661bb",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DCPower/ControlTests.cs",
    "bytes": 11570,
    "sha256": "d6eb55d23985071aba831ccdbdb67fcb53a90760b4d837c50a7651853a61307e",
-   "via": "tree",
-   "blob": "3ce1298fd3a60de82f24df3e998583537c4a4059"
+   "blob": "3ce1298fd3a60de82f24df3e998583537c4a4059",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DCPower/MeasureTests.cs",
-   "bytes": 65297,
-   "sha256": "cd20f22fd8089e69e4e27b31639beabfed90dc7402054d89db27c4cd5c5b11cb",
-   "via": "tree",
-   "blob": "ff747d8a51233ff1a7e0ce8facd4cb053d27b9c8"
+   "bytes": 133564,
+   "sha256": "0dd9a3081fce915766b0d4196fdbec48d95b6cecd9f65487bb9441206b47e14f",
+   "blob": "b58f8ede2b0f03dd4bcd4a94bfb10efe3675d26e",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DCPower/SourceTests.cs",
-   "bytes": 311563,
-   "sha256": "668306d3e22774fb88a6f07c1bcfc5270a5fae5bbde09800ed84ed4cd37c210b",
-   "via": "tree",
-   "blob": "bd492223e2c9956600489d8da5a3d2d7659cf61e"
+   "bytes": 578139,
+   "sha256": "2bc05650e09b5de45b5b12ca9bf9f61afd2b11a35e0aa20b310b4b8ffdf7eb8a",
+   "blob": "d212c41a9ca4a6cafbf41521ef24fcf2ea7f739e",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DCPower/TriggersAndEventsTests.cs",
    "bytes": 33619,
    "sha256": "27e9f50ddf39ef870dc849389fe699e61eb14a830fe2aeb7621db44df37ff267",
-   "via": "tree",
-   "blob": "a510b0e226a58242aec5ab21f21efae793b29f27"
+   "blob": "a510b0e226a58242aec5ab21f21efae793b29f27",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DMM/MeasurementTests.cs",
    "bytes": 4736,
    "sha256": "6ad9fad03525ee9cde426cbecae850f8713469204688bd821e84c256475a1a1a",
-   "via": "tree",
-   "blob": "7dacdf6dade08135e787e0e7dd7892c5e945a850"
+   "blob": "7dacdf6dade08135e787e0e7dd7892c5e945a850",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/DMM/PropertiesConfigurationTests.cs",
    "bytes": 11031,
    "sha256": "f77f24ed895aadd601dc35bb4130c535d62131429e2a08d6674e3b886859ace5",
-   "via": "tree",
-   "blob": "b6d3317ed93dfc1683c1d9ac6fcfbbd694a1dd0e"
+   "blob": "b6d3317ed93dfc1683c1d9ac6fcfbbd694a1dd0e",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Digital/FrequencyCounterTests.cs",
    "bytes": 2038,
    "sha256": "f2837e76c7e2c5b2070ebecfad65c696e466721c1c9f9fcc80cec9d482568b09",
-   "via": "tree",
-   "blob": "85378a7ab2f7c18ccc64e99c457d0fcf75b702c8"
+   "blob": "85378a7ab2f7c18ccc64e99c457d0fcf75b702c8",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Digital/HistoryRAMTests.cs",
    "bytes": 5095,
    "sha256": "02d16fc48517e40de0af9758cdb9fdccc90497737734155f466c80242365c89b",
-   "via": "tree",
-   "blob": "29868ddf5735fd1c095a113f2c75321fc4e85755"
+   "blob": "29868ddf5735fd1c095a113f2c75321fc4e85755",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Digital/LevelsAndTimingTests.cs",
-   "bytes": 92209,
-   "sha256": "88e34c8e69769e7e7ca840c1078a2ec58e3bf78c23787b169fb7bb07f73472b1",
-   "via": "tree",
-   "blob": "1c293938714f5b1478c74652d548875b1b81c816"
+   "bytes": 108080,
+   "sha256": "e448eef97eee63a3962b428b35c75a4a9ea74d6d360c1fe58d0fb76fadfaae2a",
+   "blob": "5f00b97bd275e88f374f1b2acdbe8a96816612d3",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Digital/PPMUTests.cs",
    "bytes": 51739,
    "sha256": "c85cb076418c1d9e755904f8e10175757901ad01b6a8243ecf99a18e5369fe97",
-   "via": "tree",
-   "blob": "5c8181fbe0b5b24a713271f249b5f260b7ce3457"
+   "blob": "5c8181fbe0b5b24a713271f249b5f260b7ce3457",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Digital/PatternTests.cs",
-   "bytes": 12068,
-   "sha256": "ebaf9d08f2cdb771729ccd74abaf1cbf3c475119a97c3d9d1ad8c50f5976989e",
-   "via": "tree",
-   "blob": "13a9613b42e9a7c612192bd148d3e22e0b73ed52"
+   "bytes": 19420,
+   "sha256": "b5bfe1c0fac0f3c11dd34f8f8f9fc78b528a2457bf6481bc2bbc4a2418b6f944",
+   "blob": "8766197201b2994d1cc42edad47fa242f17d738d",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Digital/SequencerFlagsAndRegistersTests.cs",
    "bytes": 5524,
    "sha256": "467ddecb9c1f5975d2c7004c3ddd14721dbbf706c0281baa7c90021f26409f13",
-   "via": "tree",
-   "blob": "2b8247b5999b74e591901bb6d9626ed5b12eb242"
+   "blob": "2b8247b5999b74e591901bb6d9626ed5b12eb242",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Digital/SourceAndCaptureTests.cs",
    "bytes": 13633,
    "sha256": "7e23d7534ea2c3f955db4a04ef3bed2389f394411eb70f27c253674bebfdca29",
-   "via": "tree",
-   "blob": "251ca288168f2fa54d3f22c5e7d9db1cacbc4c7d"
+   "blob": "251ca288168f2fa54d3f22c5e7d9db1cacbc4c7d",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Digital/StaticStateTests.cs",
    "bytes": 5826,
    "sha256": "b0826df73aeee20996af66cb2ae50bf6b46e5ed21f25873e752054a99a23b90a",
-   "via": "tree",
-   "blob": "e2826e17f510b114f3cb464576a1901222bc858b"
+   "blob": "e2826e17f510b114f3cb464576a1901222bc858b",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Digital/TMU/TmuExtensionsTests.cs",
-   "bytes": 10082,
-   "sha256": "705e11e2c93497342cfa16664a902e4941e8b232609523f5e3d7370ee384c5b0",
-   "via": "tree",
-   "blob": "ff40c880915e22d523d83ad033ae00d9d6d0d6d7"
+   "bytes": 69861,
+   "sha256": "015d4642cfb723692db78f89e0b07b31741f3c497efb4474c04d55293bfa204d",
+   "blob": "df8232967de12496c9323590ed6ef4d32abf2be2",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Digital/TriggersAndEventsTests.cs",
    "bytes": 18798,
    "sha256": "56a2e76a696b19f6fb6b14137ac0d08a8c39ba43d4dafea81154725a13fd2384",
-   "via": "tree",
-   "blob": "8e9641db59313a206c1e74fecb5ac82881d3abfd"
+   "blob": "8e9641db59313a206c1e74fecb5ac82881d3abfd",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/FGen/ClockTests.cs",
+   "bytes": 15832,
+   "sha256": "1c53011a8a5866786b7b86b7480f0e50c9bd5d7206428ef19c03dde3940fc23c",
+   "blob": "788b7567854bed864cdc299f43bec27361e1022a",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/FGen/ControlTests.cs",
+   "bytes": 15865,
+   "sha256": "ea1cb6fb9f0cd887b6ec8d6d5c8bc198b8ef77b6892febd6240dd5037416647f",
+   "blob": "bfdcde6613c2ad998c38eaf9d429833658cf300d",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/FGen/OutputTests.cs",
+   "bytes": 9361,
+   "sha256": "a299d66a8ee880cc75e54f2a049ef3b945194d0e968c6c435d4ebc34f5c1dbf0",
+   "blob": "23c46a1522b174e94611797f50fac76a6166e50b",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/FGen/StandardWaveformGenerationTests.cs",
+   "bytes": 16830,
+   "sha256": "c9e36337e85b15704ab01bf2086bf9ac401a36b4caf09fc4c41c3706738246c9",
+   "blob": "eaeb319b6ce389cf52b6caf7a9100e4cb8d7b162",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/FGen/TriggersAndEventsTests.cs",
+   "bytes": 20884,
+   "sha256": "34f87a0631d12c46efdb72b8bf77c6b7cb407654316ddd7dd99ae997fbd74f1e",
+   "blob": "c1adef74a24105b3f3d974b0b3433d12a3914caa",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/FGen/UtilitiesTests.cs",
+   "bytes": 6196,
+   "sha256": "1a609c3247366f10d0e6842201b5fc1088a02b5d9207a45ea88de06255042c60",
+   "blob": "de4e7273bc1a976c2b5f8ce8f6fbea843748a69e",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Relay/ControlTests.cs",
    "bytes": 2404,
    "sha256": "c4b4fe2072ac00349a768a08679368c35f2d146ea78dd98d08bb63eb5a9887ea",
-   "via": "tree",
-   "blob": "0cde08cafe10114d7e2c3864156d4dad664ac11f"
+   "blob": "0cde08cafe10114d7e2c3864156d4dad664ac11f",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Scope/AcquireTests.cs",
+   "bytes": 7624,
+   "sha256": "b566f1fb5e2fe40b4c00d29ee73d01da2f349640e478b2e69731fdaf02e3c6ae",
+   "blob": "bcbf6b06c080dba83049892965cd37c278b707a3",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Scope/ConfigureTests.cs",
+   "bytes": 21551,
+   "sha256": "4a2c40b78863ebb2add305951bd1eeacda73e403508e208511b8496ab1f87cf0",
+   "blob": "91fa04651f2ab590a733db0775a429018832fdf2",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Scope/ControlTests.cs",
+   "bytes": 3242,
+   "sha256": "59566a9f998065143933419904ad373cbbb4003c1f3a4a204b4e5f3ffca63930",
+   "blob": "5b0b6a978d76f7c9d942a39ecf963b82dd152178",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Scope/TimingTests.cs",
+   "bytes": 11470,
+   "sha256": "8dc8a5a4f9312bc3c62da692fb34e2a343ccd4916f4c52c7e57a31107fad026a",
+   "blob": "be19274f6bf60c2da23f2e010471f4329d79806c",
+   "via": "tree"
+  },
+  {
+   "path": "SemiconductorTestLibrary.Extensions/tests/Unit/InstrumentAbstraction/Scope/TriggerTests.cs",
+   "bytes": 12428,
+   "sha256": "6c3cc53b49352f7a18a0a86ecf2991cef49d47e35883c8ed3c5206ca1dfb2d14",
+   "blob": "491db8ac125ee2177f436b702217920e3d99dd61",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.Extensions/tests/Utilities/Utilities.cs",
-   "bytes": 2150,
-   "sha256": "2fa8e7af2ea70c689c271db54cfb8c68e1f54c4c342acba3a4fd7102fc897af9",
-   "via": "tree",
-   "blob": "b16acd5a08947bf769bf6aadde8addaa68b4d2eb"
+   "bytes": 3849,
+   "sha256": "9b47374d67bc70e9557d5df5e2bd43be830a6482bdd8d97d9cd2dc5376acb88e",
+   "blob": "268e6a0e6258a55ecf81707cbf218076597b5498",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/AcquireAnalogInputWaveforms.cs",
    "bytes": 2651,
    "sha256": "7e79775cec0fc8d471e31f392500406b2867ff1b44ea569a96662d35bfe38686",
-   "via": "tree",
-   "blob": "f7a367a7072ff9faba1c1c52637927c9ff4fa3e1"
+   "blob": "f7a367a7072ff9faba1c1c52637927c9ff4fa3e1",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/BurstPattern.cs",
    "bytes": 1682,
    "sha256": "000e33591f8e3efd6b9069c0ee3e6a0d5f5a3ef95cba49007993f7aa224dbd59",
-   "via": "tree",
-   "blob": "0d2ca0ade1c28f588bcf2b328db14e1e7e925fbc"
+   "blob": "0d2ca0ade1c28f588bcf2b328db14e1e7e925fbc",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/CleanupInstrumentation.cs",
    "bytes": 8185,
    "sha256": "dd5d80dd030690b47dd5c7376d2b9babadc180448ce3174179d63a8c12071c16",
-   "via": "tree",
-   "blob": "11e1b96f47eb523f7d5d7c5f6d142d78b8bd3f44"
+   "blob": "11e1b96f47eb523f7d5d7c5f6d142d78b8bd3f44",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/ContinuityTest.cs",
-   "bytes": 13287,
-   "sha256": "10e911aa5889f65fb3c87386011fd2ef92afdd9c79397ea30d17b6e1393a8ff0",
-   "via": "tree",
-   "blob": "fddfade054897be3d89ca5bafa2fd15981f57f29"
+   "bytes": 12766,
+   "sha256": "10cfc5f323bddd286275d58ace5c92192ac5face56227814d5af185ccd2003a7",
+   "blob": "3f35908722dac662b825f3ca7d4390d2d03c57d5",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/DutPowerDown.cs",
    "bytes": 11252,
    "sha256": "4d9f54e139530bf20879d16f7387fa1cc3b4c9a5dadbb43fb5b8203d00fe9787",
-   "via": "tree",
-   "blob": "cd05b98922987584e621fa8c4498edada6332d98"
+   "blob": "cd05b98922987584e621fa8c4498edada6332d98",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/DutPowerUp.cs",
    "bytes": 7853,
    "sha256": "c99d9073d831701c241fb02412d1cf02f9c0c5ace60c22516cfc1fb45a10bd3a",
-   "via": "tree",
-   "blob": "c3f0e67ab0019818e2671f4711fc4b3b7b946743"
+   "blob": "c3f0e67ab0019818e2671f4711fc4b3b7b946743",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/ForceCurrentMeasureVoltage.cs",
    "bytes": 5314,
    "sha256": "9544de698a231c3b66a51babd27510b7bacca2d618174312244e9a3ea8da676e",
-   "via": "tree",
-   "blob": "38cbbb6b3f08868cc0fa9363ab8ff8eba852d0f8"
+   "blob": "38cbbb6b3f08868cc0fa9363ab8ff8eba852d0f8",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/ForceDcCurrent.cs",
    "bytes": 3966,
    "sha256": "af886cd82c4b2da0d001c51f6837748e0827d8d1d329d81cf3ca503bcd717a2a",
-   "via": "tree",
-   "blob": "a7e31d7cd504073c2410ce9ec9633639d1a0038b"
+   "blob": "a7e31d7cd504073c2410ce9ec9633639d1a0038b",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/ForceDcVoltage.cs",
    "bytes": 3156,
    "sha256": "1f461ac0673e9cb1ef98448f8e58b38a82a96009adc0c3980d20c1cb82430e9a",
-   "via": "tree",
-   "blob": "9182bfee8df0b5887e7e721773a61aac07a4162e"
+   "blob": "9182bfee8df0b5887e7e721773a61aac07a4162e",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/ForceVoltageMeasureCurrent.cs",
    "bytes": 4373,
    "sha256": "8053f94c50176c0f1853b23360aa0e670520070a078ad3a148aa8ca17cde15fa",
-   "via": "tree",
-   "blob": "0cd73180330ce12ac6d4d64555e76c73a9b6492b"
+   "blob": "0cd73180330ce12ac6d4d64555e76c73a9b6492b",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/GlobalSuppressions.cs",
    "bytes": 614,
    "sha256": "e3fab26a41fe0965d293e562112777b463aa8c8327f899e8817f6e7fbd5a3cb1",
-   "via": "tree",
-   "blob": "ae56537c951d5d641d3c0e8e400efcc1080d89bc"
+   "blob": "ae56537c951d5d641d3c0e8e400efcc1080d89bc",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/LeakageTest.cs",
    "bytes": 8746,
    "sha256": "f23dcffe846d2aec6aa073d0212ccd6a9c9e7480e2d4cffeae4201be13080214",
-   "via": "tree",
-   "blob": "577dd4ed2cf7ed133dbf58ecf7376ccd0ae902a2"
+   "blob": "577dd4ed2cf7ed133dbf58ecf7376ccd0ae902a2",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/Properties/AssemblyInfo.cs",
    "bytes": 1752,
    "sha256": "be39041bbbfcb197ee1c06e6920b9e148a89f4a64710ae0f4063473a8eb23c14",
-   "via": "tree",
-   "blob": "aefe3fcf859b39ddf230ea6353ffcf266fdc8ee5"
+   "blob": "aefe3fcf859b39ddf230ea6353ffcf266fdc8ee5",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/ResetInstrumentation.cs",
    "bytes": 6411,
    "sha256": "1b46231e877d93f0fcd1639d2c84c7bd9ac7cb281d8e5edcbf300f64f07fc573",
-   "via": "tree",
-   "blob": "8898dd239338d795bf7fcfd7878764edd0f3f21f"
+   "blob": "8898dd239338d795bf7fcfd7878764edd0f3f21f",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/ResourceStrings.Designer.cs",
    "bytes": 3596,
    "sha256": "a55c6bc765fc106d290964c1ad3168fff9f071e814998ee4933f3ed42bb1ddee",
-   "via": "tree",
-   "blob": "6f4827c6731f6cf7a8e6b24ca977f6d029cab263"
+   "blob": "6f4827c6731f6cf7a8e6b24ca977f6d029cab263",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/ResourceStrings.resx",
    "bytes": 5976,
    "sha256": "2efe3910bd0c9f359ee8e3c386cd1d3d822574184bef717c4d5133891c2efdd0",
-   "via": "tree",
-   "blob": "5699a27d7ad6c56490a433561892fb301fc2b895"
+   "blob": "5699a27d7ad6c56490a433561892fb301fc2b895",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/SemiconductorTestLibrary.TestStandSteps.csproj",
    "bytes": 2874,
-   "sha256": "055fd66775403e2ecc95dee5ef909a87393fee041aa07664d9950c2f187ba5d1",
-   "via": "tree",
-   "blob": "36215a133b219fa0d79cad9f068088392b660155"
+   "sha256": "8ed72976c6dde4121f80c1e6dd8cc91911c34ecc4b95b062b674f3e3d87454d4",
+   "blob": "8d41d82006be6cbefbc83a8084ff18418dbea89a",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNIDAQmxAIVoltageTask.cs",
    "bytes": 1844,
    "sha256": "022b40b4be909ed8b030a7fd93865bcec65ef19d7eb482862f8688d117726d27",
-   "via": "tree",
-   "blob": "04104b64f02fdcadfe85bbbb696d6cda84eac47d"
+   "blob": "04104b64f02fdcadfe85bbbb696d6cda84eac47d",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNIDAQmxAOFGenVoltageTask.cs",
    "bytes": 2294,
    "sha256": "058ad4534f350cdb7a3099c3aa216716bd3de627b9be648adc94baec6d6bdb8c",
-   "via": "tree",
-   "blob": "696b58afb8feb062ddc9056fc01a01001b023dcd"
+   "blob": "696b58afb8feb062ddc9056fc01a01001b023dcd",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNIDAQmxAOVoltageTask.cs",
    "bytes": 1850,
    "sha256": "35c8c3c87d2e0557a5ef818c7958105770cb547c7ca333fc84fd8ebf18eea9cd",
-   "via": "tree",
-   "blob": "38a8a0f677c325d43605da89c4b3e8391a090c71"
+   "blob": "38a8a0f677c325d43605da89c4b3e8391a090c71",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNIDAQmxDITask.cs",
    "bytes": 1569,
    "sha256": "61ee13538483c27a22033c93ca08824ae6bd360e4dd718a63f4697d2017b3305",
-   "via": "tree",
-   "blob": "61fb820029421ac71e9d53a57fc6560759c58c74"
+   "blob": "61fb820029421ac71e9d53a57fc6560759c58c74",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNIDAQmxDOTask.cs",
    "bytes": 1571,
    "sha256": "babe23b8e120d87d1077fe0f1ba01e32eefa01ee5371240f74b638b5b9ac1cbe",
-   "via": "tree",
-   "blob": "c3e1718e5f005e7b4a428546e30a5ee7dc001972"
+   "blob": "c3e1718e5f005e7b4a428546e30a5ee7dc001972",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNIDCPowerInstrumentation.cs",
    "bytes": 4434,
    "sha256": "0a4580def40cf3e12a1e91aaaa1606a68ff1d236ad2bce58d9006274233341e5",
-   "via": "tree",
-   "blob": "a10934056e5dc6e36bcf7c8923d439d0eab69e14"
+   "blob": "a10934056e5dc6e36bcf7c8923d439d0eab69e14",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNIDMMInstrumentation.cs",
    "bytes": 5156,
    "sha256": "8eed18487a93f4861276d370908bfe162ff4519905a134645876f6be80861511",
-   "via": "tree",
-   "blob": "61983eab9605a24179733ad608e4cc39c7cc8713"
+   "blob": "61983eab9605a24179733ad608e4cc39c7cc8713",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNIDigitalPatternInstrumentation.cs",
    "bytes": 5496,
    "sha256": "1c0bd1eb44c0382a341fc37e264a12491fbd7e66e2d30a8643a2a16f065022d2",
-   "via": "tree",
-   "blob": "c13030f2f2bd58abb0b92f3bb1af2e35a3dd1920"
+   "blob": "c13030f2f2bd58abb0b92f3bb1af2e35a3dd1920",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNIFGenInstrumentation.cs",
    "bytes": 1235,
    "sha256": "a3800415ddc8959abee2bba61c6d37a223c6d3e3ef2905e2b8b0769a6e25d4eb",
-   "via": "tree",
-   "blob": "60d3780477b3c104b9ecf432d09765c5212ea797"
+   "blob": "60d3780477b3c104b9ecf432d09765c5212ea797",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNIRelayModules.cs",
    "bytes": 2362,
    "sha256": "d1e1114bddad1e5ab241b066365e541f86f237ac8d3ca9b2a29498b0e2b74735",
-   "via": "tree",
-   "blob": "07274998715bba6fc7a9f7b77b12dea973747d5a"
+   "blob": "07274998715bba6fc7a9f7b77b12dea973747d5a",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNIScopeInstrumentation.cs",
    "bytes": 1198,
    "sha256": "fc5e13f1c7acd1b43cc4eee2e0e4592c98338bc34a94c86f05fb3bb2257338db",
-   "via": "tree",
-   "blob": "7a4396f19cb5c16fe1978712d2b1e5ed57955a5f"
+   "blob": "7a4396f19cb5c16fe1978712d2b1e5ed57955a5f",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/SetupNISyncInstrumentation.cs",
    "bytes": 1239,
    "sha256": "cbd35c55a5e46478dedcc01f2e5270551cc5cb72bc8b01430deb057f4a60ad52",
-   "via": "tree",
-   "blob": "9d8501bec0bd2274cda1975a0abf38c101649857"
+   "blob": "9d8501bec0bd2274cda1975a0abf38c101649857",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/source/Shared.cs",
    "bytes": 2028,
    "sha256": "ead6cbe1f6a3f79e3754392f3ff9ff17ec9e08f7180b92de3cbdf035a56c1f5b",
-   "via": "tree",
-   "blob": "c9fff30c817020f9b4606f598bf467d1e75cd0ec"
+   "blob": "c9fff30c817020f9b4606f598bf467d1e75cd0ec",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/tests/GlobalSuppressions.cs",
    "bytes": 464,
    "sha256": "859064f0566e90a5123b18290e1f43ce7f326ca34798621caea20be34f1a8fa2",
-   "via": "tree",
-   "blob": "2d4d2c02ccb080aef1ee76ae4da98a9ababa28bf"
+   "blob": "2d4d2c02ccb080aef1ee76ae4da98a9ababa28bf",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/tests/Integration/AcquireAnalogInputWaveformsTests.cs",
    "bytes": 3257,
    "sha256": "9c5ce54bc5cb01713052a7a1bb00043f201274dbb62b56b5b290472976aa0cf1",
-   "via": "tree",
-   "blob": "baa16c27f4ae64b7536934591b5a83b7bba9d1ff"
+   "blob": "baa16c27f4ae64b7536934591b5a83b7bba9d1ff",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/tests/Integration/BurstPatternTests.cs",
    "bytes": 2434,
    "sha256": "4f9c7df96ee75f296e96fa8f6e1f9db0c4b4ee0b282b953bdecf2d71b4317509",
-   "via": "tree",
-   "blob": "bc45edbb76437bdbc3b9d4de7232ba554bb527bd"
+   "blob": "bc45edbb76437bdbc3b9d4de7232ba554bb527bd",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/tests/Integration/ContinuityTestTests.cs",
    "bytes": 2815,
    "sha256": "2efcf0990ba8d4f7882c310597de16d1c7932f5deee29136606f6002b39288a9",
-   "via": "tree",
-   "blob": "c1d14909abb501dad77833d2be3562997877f0fe"
+   "blob": "c1d14909abb501dad77833d2be3562997877f0fe",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/tests/Integration/DutPowerDownTests.cs",
    "bytes": 2404,
    "sha256": "7f0c66c2b62812e63d1409ff374c8c612639a1ebcb66a1edd813527994d55317",
-   "via": "tree",
-   "blob": "4c0b786f85679bf432bd01046800af5ae8446770"
+   "blob": "4c0b786f85679bf432bd01046800af5ae8446770",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/tests/Integration/ForceCurrentMeasureVoltageTests.cs",
    "bytes": 17334,
    "sha256": "986b09bbc68a46e473a095f8f30eee21b325ec3b1d79dda9f9144685ff2a6a8b",
-   "via": "tree",
-   "blob": "2d1483c4f1471c5a75d2a1c119d72acc6b6bcdfb"
+   "blob": "2d1483c4f1471c5a75d2a1c119d72acc6b6bcdfb",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/tests/Integration/ForceDcCurrentTests.cs",
    "bytes": 7278,
    "sha256": "36d9b12aed1af0c39fbe6615374ff248589ccec27c66450475bdd12e8603d3e3",
-   "via": "tree",
-   "blob": "e0721127fefb207a9785583519edadd0292ce067"
+   "blob": "e0721127fefb207a9785583519edadd0292ce067",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/tests/Integration/ForceVoltageMeasureCurrentTests.cs",
    "bytes": 3348,
    "sha256": "ade21d0588978c8950fb3816f382d5ebb1d43d072d621269142ff1ccc5fd0294",
-   "via": "tree",
-   "blob": "a874be2dd746e49b49f59bab3df307eaf04db90c"
+   "blob": "a874be2dd746e49b49f59bab3df307eaf04db90c",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/tests/Integration/LeakageTestTests.cs",
    "bytes": 5526,
    "sha256": "3148c05ebd500846ac8b3475d3d74e68d9b530af3daa8600611fefe6d9e9a07b",
-   "via": "tree",
-   "blob": "2a06e7fbee5e19ab66d775a0c3029a18a7928d0f"
+   "blob": "2a06e7fbee5e19ab66d775a0c3029a18a7928d0f",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/tests/Properties/AssemblyInfo.cs",
    "bytes": 1404,
    "sha256": "b18aff37724bdd513d52397f5267ce48e6313945b6afa275150959ad5e571b40",
-   "via": "tree",
-   "blob": "e8b645454e9130d8a66192f4c4efea595fd95ec0"
+   "blob": "e8b645454e9130d8a66192f4c4efea595fd95ec0",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/tests/SignatureCheck/CommonStepsSignatureTests.cs",
    "bytes": 14378,
    "sha256": "05be1063c0497f82eb1b577d0aba23136a49e4998e854f392496639979db6236",
-   "via": "tree",
-   "blob": "5827f471baf02e939103a3eadfb3d36b05ddf4e3"
+   "blob": "5827f471baf02e939103a3eadfb3d36b05ddf4e3",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/tests/SignatureCheck/SetupAndCleanupStepsSignatureTests.cs",
    "bytes": 24783,
    "sha256": "e9c16cb71d25f27f2a98d86dac04e540919ce24268b9a13e412f0440bc893dd3",
-   "via": "tree",
-   "blob": "2494666024c462a1caa0da334591b7264c67df4f"
+   "blob": "2494666024c462a1caa0da334591b7264c67df4f",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/tests/Tests.SemiconductorTestLibrary.TestStandSteps.csproj",
    "bytes": 3160,
    "sha256": "af5eb12ad2e22e3200454189953029ed769cc14b674aa64b86ffc8b7a3f10e97",
-   "via": "tree",
-   "blob": "3f5fff348a1d2fc673a4f1cfb5e65aeea37feb50"
+   "blob": "3f5fff348a1d2fc673a4f1cfb5e65aeea37feb50",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.TestStandSteps/tests/Utilities/Utilities.cs",
    "bytes": 4676,
    "sha256": "d840072a641e8610a9be48ce731670487a9950621f07065a571f4b40171e6258",
-   "via": "tree",
-   "blob": "2aa00fb587e502a8d61c1bca57f21ffb057b778e"
+   "blob": "2aa00fb587e502a8d61c1bca57f21ffb057b778e",
+   "via": "tree"
   },
   {
    "path": "SemiconductorTestLibrary.sln",
    "bytes": 4560,
    "sha256": "544ffe875c42f68c9c7180ddced90cfe76cf5edd9b0a035c23a9c6bad2dd84ed",
-   "via": "tree",
-   "blob": "02bbd9ade1fd7722a03c2f24f09a3a30ab819585"
+   "blob": "02bbd9ade1fd7722a03c2f24f09a3a30ab819585",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Digital/Capture Waveforms/New_Waveform.digicapture",
    "bytes": 800,
    "sha256": "8c9653c02ac7aab45201773a044209be7542a44eb94686ae4e2452f5a86e0945",
-   "via": "tree",
-   "blob": "34a0eccdde9698851afa97afe340529046288dac"
+   "blob": "34a0eccdde9698851afa97afe340529046288dac",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Digital/Compiled Patterns/CaptureWaveform.digipat",
    "bytes": 4777,
    "sha256": "f617629b398ae768d136956154ff1d0d99e6e0042dad5c34f7c5209905cdd21e",
-   "via": "tree",
-   "blob": "c9ad9d50ed68250d4e980ae40efa8131651368f1"
+   "blob": "c9ad9d50ed68250d4e980ae40efa8131651368f1",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Digital/Compiled Patterns/GenerateTrigger.digipat",
    "bytes": 4805,
    "sha256": "5d7af8ebd3026ebecec2d66000f986ead716079a29e755e11229e0e4300b17fe",
-   "via": "tree",
-   "blob": "3c06ce62dcacf924624515e014b150e532b37c05"
+   "blob": "3c06ce62dcacf924624515e014b150e532b37c05",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Digital/Compiled Patterns/KeepAlivePattern.digipat",
    "bytes": 3993,
    "sha256": "c66572fb514a874f055fcdc6489a9850ecc23c87b7503ad1a2a971911bcced9c",
-   "via": "tree",
-   "blob": "515d201edc6fb714e0d6cd73b180a1a933c4fa47"
+   "blob": "515d201edc6fb714e0d6cd73b180a1a933c4fa47",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Digital/Compiled Patterns/LongRunningPattern.digipat",
    "bytes": 4627,
    "sha256": "26fbbb49763e6f33749e2fb46046e6ac3c97bfa20b8dbe597c294cebe138e379",
-   "via": "tree",
-   "blob": "52d705e347018becd3cc85be98cf60f6c8cd7f04"
+   "blob": "52d705e347018becd3cc85be98cf60f6c8cd7f04",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Digital/Compiled Patterns/StartKeepAlive.digipat",
    "bytes": 4089,
    "sha256": "c28ca32b532cca3d280718bec4d5ff4aaf489470989512dd5af94929e16ed812",
-   "via": "tree",
-   "blob": "33b462265c5329a86725ba273d0b382f512fc6d4"
+   "blob": "33b462265c5329a86725ba273d0b382f512fc6d4",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Digital/Compiled Patterns/TX_50_Duty_Cycle.digipat",
    "bytes": 4363,
    "sha256": "a1fb4d516a660c6c76d10001d4396c3ad4ea1d9ba435c097e96eda53b037364f",
-   "via": "tree",
-   "blob": "b95b9db89f2f8082800a4c5e28286b580232b45d"
+   "blob": "b95b9db89f2f8082800a4c5e28286b580232b45d",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Digital/Compiled Patterns/TX_RF.digipat",
    "bytes": 4119,
    "sha256": "30f326dabe7917ea82bdb0e33cf91ca3b46dc5ac62e9fb22440345743a5a9b3f",
-   "via": "tree",
-   "blob": "6c43aa8039e4e1e784c23162a200523e2102aae6"
+   "blob": "6c43aa8039e4e1e784c23162a200523e2102aae6",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Digital/Compiled Patterns/Write_LTE_HB_FDD.digipat",
    "bytes": 5763,
    "sha256": "ebff0d6bc33818e840d191d36ddb8fa085b6c9b693e02315031d40b3da64b5d2",
-   "via": "tree",
-   "blob": "54e0615a7ce57a132f83762ab8ee84fd75bc091e"
+   "blob": "54e0615a7ce57a132f83762ab8ee84fd75bc091e",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Digital/Compiled Patterns/Write_NR_HB_FDD.digipat",
    "bytes": 6371,
    "sha256": "8a621a46f75172b0504b90edd34fc2fc11dc46c8b6366c8d285257c535a7cee3",
-   "via": "tree",
-   "blob": "456d9b005e6a05d302c201d3816982686721fb3f"
+   "blob": "456d9b005e6a05d302c201d3816982686721fb3f",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Digital/Levels/Levels_MixedSignal.digilevels",
    "bytes": 1402,
    "sha256": "31a2aaf36c669b52d649d9f1c61b1d0bcb87a7c951a8ee11008097e8ae19fb1f",
-   "via": "tree",
-   "blob": "716d4652f14a52e7b07d51bbad5e4bdd82da8d8f"
+   "blob": "716d4652f14a52e7b07d51bbad5e4bdd82da8d8f",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Digital/Levels/Levels_TMU.digilevels",
    "bytes": 1247,
    "sha256": "6f2c5db80659794944fec304573070756c6f70b8a542e344a7d67f72758399da",
-   "via": "tree",
-   "blob": "511f7999c0740d81ce3e91ec50538ba65221f9ce"
+   "blob": "511f7999c0740d81ce3e91ec50538ba65221f9ce",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Digital/Timing/Timing_MixedSignal.digitiming",
    "bytes": 1238,
    "sha256": "8f16c0ab3fa72a8ff8ced8640d660f7309aaa09011dc60818a4c18cddf60722c",
-   "via": "tree",
-   "blob": "5180d332282f62a89ed99e021c971cdc57ce0dbd"
+   "blob": "5180d332282f62a89ed99e021c971cdc57ce0dbd",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Digital/Timing/Timing_TMU.digitiming",
    "bytes": 1213,
    "sha256": "222ac8d95250976f5bbb5e7dfeb9f7617911ab2d6115db109e3ad2e2c0a91e86",
-   "via": "tree",
-   "blob": "9d903bdaaa20222afca23e50487e47ad2c8ea5c2"
+   "blob": "9d903bdaaa20222afca23e50487e47ad2c8ea5c2",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/DigitalPinWithThreeIndividualSitesAndTwoPins.digiproj",
    "bytes": 2665,
    "sha256": "d41767436c423eb288098eb1f90a14cf713f83239f8a3676e57b5fb85a3b46b4",
-   "via": "tree",
-   "blob": "2ce4fb41bebb4c75ca3fec5bcdb8cff396d44afd"
+   "blob": "2ce4fb41bebb4c75ca3fec5bcdb8cff396d44afd",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Mixed Signal Tests.digiproj",
    "bytes": 4229,
    "sha256": "4baa54e8a5f11818cdfd3a8051a083e163499dfff5fdc0fff82076b8e5dea941",
-   "via": "tree",
-   "blob": "d8302c25b8b010faa709f187481492dc531a94af"
+   "blob": "d8302c25b8b010faa709f187481492dc531a94af",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/NIDigitalTMUTest.digiproj",
    "bytes": 2979,
    "sha256": "99c27d4151f57edea8d60cd5ab877371c3575983cf3ab1cf6cbe57481b212b17",
-   "via": "tree",
-   "blob": "bc3269faf85e8a3ecddb27f9cdcb981dae1f8451"
+   "blob": "bc3269faf85e8a3ecddb27f9cdcb981dae1f8451",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Offline Config/MixedSignal.offlinecfg",
-   "bytes": 9049,
-   "sha256": "e42681aaac6ec988a4972347844bc3c797364308f1d38acc792fb4f629a72d3b",
-   "via": "tree",
-   "blob": "4169f47ba66133e96b3ab203c2b49fd601280d2d"
+   "bytes": 9314,
+   "sha256": "8f2b9001b3f2e83201098fa32c7a3fccdf45259bf6ac7e47ed4e7dfec117a0f6",
+   "blob": "d75e754915ef07a80df17d34a2ffcb1cf320b007",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/OneDeviceWorksForOnePinOnTwoSites.digiproj",
    "bytes": 4934,
    "sha256": "ec733c77608ef12fd2610a8ef4a674c5447abcaf062acc0798af0ef67d5a5314",
-   "via": "tree",
-   "blob": "54026e3063059da05c7265c12554074eb48c7493"
+   "blob": "54026e3063059da05c7265c12554074eb48c7493",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/PatternTriggeredInstrumentControl.digiproj",
    "bytes": 3802,
    "sha256": "fd682493618ac43e3ea5c8640e7fbf61f0a9985cef966a4606f23687842d7552",
-   "via": "tree",
-   "blob": "97d2eb92f91471872cd393eac64898f285239d38"
+   "blob": "97d2eb92f91471872cd393eac64898f285239d38",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/CascadedPinGroupTest_SessionPerChannel.pinmap",
    "bytes": 2208,
    "sha256": "c11dae4a921fd2e36c13fe9574483198461a4f92d869cf4ed88599fd4edb9e2c",
-   "via": "tree",
-   "blob": "dee0ea1908f150929a1569d92a0fdb64d39353ba"
+   "blob": "dee0ea1908f150929a1569d92a0fdb64d39353ba",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/CascadedPinGroupTest_SessionPerChannelGroupOfMultipleInstruments.pinmap",
    "bytes": 1834,
    "sha256": "e8ce4be6ee6e05976b0488b89dff20ffa3d887d1656dea9561e95b7e563c45cb",
-   "via": "tree",
-   "blob": "a3ff57226706283b3398ba325c4bd8a3df53726d"
+   "blob": "a3ff57226706283b3398ba325c4bd8a3df53726d",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/CascadedPinGroupTest_SessionPerInstrument.pinmap",
    "bytes": 1838,
    "sha256": "7bf821da81b7df7c64e4101e4b3a338d8f183a79e095d2463f4a116c53f9f1a0",
-   "via": "tree",
-   "blob": "68175efc278940cc1324aa4467e71fd72182ab3d"
+   "blob": "68175efc278940cc1324aa4467e71fd72182ab3d",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/CascadedPinGroupTest_Site0SessionPerChannel_Site1SessionPerInstrument.pinmap",
    "bytes": 2042,
    "sha256": "29406eb8aa8f1357bf89d4f64fb05615450e0af5b3e48727e2a943aa8ed90ff2",
-   "via": "tree",
-   "blob": "54a218b27c2a0320e867b823449646a608e7ffcc"
+   "blob": "54a218b27c2a0320e867b823449646a608e7ffcc",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/CustomInstrumentsSharedPin.pinmap",
    "bytes": 3998,
    "sha256": "c2979a6cc33d05ecdb7be91698ffbfb72c2824bdbeab991ba51c2fab3a7a8f11",
-   "via": "tree",
-   "blob": "1c43b7b898b38855c93440ddd760e15eed6f74ff"
+   "blob": "1c43b7b898b38855c93440ddd760e15eed6f74ff",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/DAQmxChannelListOrderTests.pinmap",
    "bytes": 2766,
    "sha256": "c826b6795871e28f2d526cb6b7ed94f9c00e12d2761c72bcb1ee37fc85f29ace",
-   "via": "tree",
-   "blob": "6c3e43a2e321e7b6817bc63ec9c477659e237441"
+   "blob": "6c3e43a2e321e7b6817bc63ec9c477659e237441",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/DAQmxMultiChannelTests.pinmap",
    "bytes": 1114,
    "sha256": "9d7a73c22d668285c6b544f8afbff74820fad12753add7b76e76fb02af1c2bc9",
-   "via": "tree",
-   "blob": "bc02fb573628a8e3b413714b4cc893e722118595"
+   "blob": "bc02fb573628a8e3b413714b4cc893e722118595",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/DAQmxSharedChannelAOandAOFGenTasks.pinmap",
+   "bytes": 1530,
+   "sha256": "7d59a57f99d351e191d9351148adf68e1b204f5f56b4dd8d6ffe941eaeb3153a",
+   "blob": "eed44bcad50c6ddc9b4acb7c7d0998ab1f84e9f5",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/DAQmxSharedPin.pinmap",
    "bytes": 2450,
    "sha256": "ba834cd766e6e1e65940c4dec6e6b1f22ad1e609c279b3ca94aead49b03e8574",
-   "via": "tree",
-   "blob": "5c47e6db88bbbad0dae8189858001352920508ea"
+   "blob": "5c47e6db88bbbad0dae8189858001352920508ea",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/DAQmxSingleChannelTests.pinmap",
    "bytes": 2346,
    "sha256": "a036e28c0ac0e1fcc9a19eaaa49b256d133f96bbf4f3dbd0dc33f8eca017596f",
-   "via": "tree",
-   "blob": "4067a99a82212f95e24a0727f5fd312da2e98b2a"
+   "blob": "4067a99a82212f95e24a0727f5fd312da2e98b2a",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/DAQmxTests.pinmap",
    "bytes": 3242,
    "sha256": "88eefccf167b98c28f90d6172f754437f9948556a82dbe056c0e7c331574a576",
-   "via": "tree",
-   "blob": "a51e9d703c85f6141e4b491b66eddf33784830f0"
+   "blob": "a51e9d703c85f6141e4b491b66eddf33784830f0",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/DMMTests.pinmap",
    "bytes": 805,
    "sha256": "6813a09f863e7a4f010aee60d717131968ca16cdcbf8c1257e1de341af94d582",
-   "via": "tree",
-   "blob": "03d070fe02f0eb5bbb4057c517c791f0ab484caf"
+   "blob": "03d070fe02f0eb5bbb4057c517c791f0ab484caf",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/DMMTestsWith4081.pinmap",
    "bytes": 1302,
    "sha256": "6bfb031aead63e2b4ff715d5f33b31df3ff6e51116b4974364ee3f30c3477d9d",
-   "via": "tree",
-   "blob": "8e8d9e7797a0ccac94b2d6c912af8b279f6581cb"
+   "blob": "8e8d9e7797a0ccac94b2d6c912af8b279f6581cb",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/DifferentModelScopeDevicesInOneGroup.pinmap",
    "bytes": 742,
    "sha256": "60a662c053be7d7f05f2039027d506389209d2f1b91efa7fdb5b98a0e764d7cd",
-   "via": "tree",
-   "blob": "da1c3cde5041474516fdbbe62c5a28e36c4bb199"
+   "blob": "da1c3cde5041474516fdbbe62c5a28e36c4bb199",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/DifferentSMUDevices.pinmap",
    "bytes": 3968,
    "sha256": "879fd2fd030dd65ae0b5a1b17167dcaaeee967c7d012c858ac0d8ebc7c56e14a",
-   "via": "tree",
-   "blob": "ceeaeb54ef4e8172f241b9fdea10646d38002d20"
+   "blob": "ceeaeb54ef4e8172f241b9fdea10646d38002d20",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/DifferentSMUDevicesForEachSiteSeperateChannelGroupPerCh.pinmap",
    "bytes": 5120,
    "sha256": "5e23baf5a649c4610c5d18d1fab603e1b04257a917e9aadd3b68c0d8c1b5de7b",
-   "via": "tree",
-   "blob": "b6a6679554faf3fe5ad9072e502546a702401da3"
+   "blob": "b6a6679554faf3fe5ad9072e502546a702401da3",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/DifferentSMUDevicesForEachSiteSeperateChannelGroupPerInstr.pinmap",
    "bytes": 4121,
    "sha256": "56779652b33ee7041ab7d7a34a2dc20d989dedfaa4d029b613bbb4bc31d40e72",
-   "via": "tree",
-   "blob": "9f5129ba770b2db3944894cd3fdbe86b5b74f9a5"
+   "blob": "9f5129ba770b2db3944894cd3fdbe86b5b74f9a5",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/DifferentSMUDevicesForEachSiteSharedChannelGroup.pinmap",
    "bytes": 3935,
    "sha256": "b5bc94c721b84d1f11502cb740e4a613c3d9241b090a2e6aa199f2deeae0b545",
-   "via": "tree",
-   "blob": "116f458ab384a6019e51c6695b224afefe8c4e23"
+   "blob": "116f458ab384a6019e51c6695b224afefe8c4e23",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/DifferentSMUDevicesOfSameModelSharedChannelGroup.pinmap",
    "bytes": 1364,
    "sha256": "4005aea484bd354753bcfb81513f604256b0cbdcb9050beb12e2295ce16be6e2",
-   "via": "tree",
-   "blob": "de8fee46a66dd1010a733ba6d04e00a1052eca83"
+   "blob": "de8fee46a66dd1010a733ba6d04e00a1052eca83",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/DifferentSMUDevicesWithChannelGroup.pinmap",
    "bytes": 2673,
    "sha256": "0bb43cf2f01e94f4cf35ba2c5bcb6722b5f1146ab7921bb493b4296ebe5e6c10",
-   "via": "tree",
-   "blob": "80a08c631c8be5b15e7175ec9b9dfc4a5389870d"
+   "blob": "80a08c631c8be5b15e7175ec9b9dfc4a5389870d",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/DigitalPinWithThreeIndividualSitesAndTwoPins.pinmap",
    "bytes": 1202,
    "sha256": "e2b159e89fa0a9e0a938da41fa6be4bdba28a1bb3538e04bf1b83e62d8c69805",
-   "via": "tree",
-   "blob": "10e8d2e22947f0c089fbe0a474e9d7e64ce069fb"
+   "blob": "10e8d2e22947f0c089fbe0a474e9d7e64ce069fb",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/FgenSingleInstrumentPerPin.pinmap",
+   "bytes": 1606,
+   "sha256": "c59c81c5af2715d47be8d2e489d723539f63b4b5f2ebcf89a049393bf6f6d9b4",
+   "blob": "8b899d8b55f4fa1ee2f1577dd827c596958a5321",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/FgenSingleInstrumentPerPinPerSite.pinmap",
+   "bytes": 1228,
+   "sha256": "046e12233bcfb92702c7702707380646a46edc9a5e5222898caab908ddd0cfef",
+   "blob": "bad06ff410c01576a0bfd2cb5ba8e92d8d61fb6e",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/FgenSingleInstrumentPerPin_SharedPin.pinmap",
+   "bytes": 1282,
+   "sha256": "acaaaa8a9bd1d1c3ad05568add8571f44735bb9b6eccbec032115b06412ff3f2",
+   "blob": "466d3218edcd3b77fc6eab0295f9685851124b05",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/FgenSingleInstrumentPerSite.pinmap",
+   "bytes": 1817,
+   "sha256": "451e65e3b5ea873ed362596f930d52a9ebcb5e430b11434fd984ecde4d7b8c80",
+   "blob": "45f496ff95af6120dfdfc83ce973bdc898f9f67e",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/FgenSingleInstrumentSharedAcrossPinsAndSites.pinmap",
+   "bytes": 1817,
+   "sha256": "b3513af6abffae782b32db2bafe8452c48bd17b3994565bc7ebc6fe52dfc29b1",
+   "blob": "9f1ea29f6171884a344629ebc5eb0be8cedea8e7",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/FgenSingleInstrumentSharedAcrossPins_SharedPin.pinmap",
+   "bytes": 1493,
+   "sha256": "e2f9266641bf3c48f293aed8fc19fef059eb23310b7741daef705821be6f5098",
+   "blob": "a4ffa92b991305379118c44bfd7e4a74d6260e11",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/FgenTests.pinmap",
-   "bytes": 1712,
-   "sha256": "8de95c48996852b49dd65dc080e965049cf40231f89bb05301668fbec3cd915f",
-   "via": "tree",
-   "blob": "75aef0e73ae239e189d8af6c2c8dbc67d78d0f2a"
+   "bytes": 1811,
+   "sha256": "0a661e294c36b4891d8efc7395c669985f975a75b5e280cf9f992d0a86e055e1",
+   "blob": "e4d94379463c0fb59c04aa115e16d7e46d24b9e2",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/Fgen_SingleBothAndNoChannel_Used.pinmap",
+   "bytes": 1228,
+   "sha256": "63f146f3b3d2a0bc4149a320b3e7dd3291cd843f6221150ae83535010ffc9db2",
+   "blob": "5dc0c6ea2884b70eab8830f1b8c7660113af9e2b",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/Ganged_4137.pinmap",
    "bytes": 2689,
    "sha256": "3cde687a32442c55a696861a290d7c6d34e62abbe4c3556a0530cb8432f475a3",
-   "via": "tree",
-   "blob": "8c11c4aa5967e332118f2060b01395c2c8b2ac8b"
+   "blob": "8c11c4aa5967e332118f2060b01395c2c8b2ac8b",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/Ganged_4137_4139.pinmap",
    "bytes": 2689,
    "sha256": "ecf6111f882405afe63c5e7840e9b376b47e1767677708f82c2325907195f19b",
-   "via": "tree",
-   "blob": "e1fba002939ae68f47abb799cd77a8029ae52cf4"
+   "blob": "e1fba002939ae68f47abb799cd77a8029ae52cf4",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/Ganged_4137_4163.pinmap",
    "bytes": 2253,
    "sha256": "b7ed1f04a15b39983b089bee1e41df24f5260b6bc89c1d11a5696a04836a6aa8",
-   "via": "tree",
-   "blob": "49d693fff0994e17b2ad16153cb64069a782139b"
+   "blob": "49d693fff0994e17b2ad16153cb64069a782139b",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/Ganged_4139.pinmap",
    "bytes": 1747,
    "sha256": "2c2b65599df2e5ce5a7f32b0d4cad75649ba022aa3fb3d69c14b5eedaa678371",
-   "via": "tree",
-   "blob": "e56c3d99f1fb0cb2cfecb2b81a9d172be809a81b"
+   "blob": "e56c3d99f1fb0cb2cfecb2b81a9d172be809a81b",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/Ganged_4139_4147.pinmap",
    "bytes": 2252,
    "sha256": "031007ffcddad8d388a98753aadc8765cfd852f99c10f9ebe41c16ae6c4dab41",
-   "via": "tree",
-   "blob": "9aefa3b2608c8de5c2d6141fc04c18eb3ad0a79a"
+   "blob": "9aefa3b2608c8de5c2d6141fc04c18eb3ad0a79a",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/Ganged_4139_4162.pinmap",
    "bytes": 2253,
    "sha256": "e1945113d0e4f64dcc8a5b11d4d717afd2c9b2132e6d646aef7ba83b57d32aad",
-   "via": "tree",
-   "blob": "a2eaeb6e9447fc4f28a761a4af357c2d1b89594e"
+   "blob": "a2eaeb6e9447fc4f28a761a4af357c2d1b89594e",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/Ganged_4147.pinmap",
    "bytes": 1814,
    "sha256": "baf408e352b001ced70012ccbb6ad12bb773b30ee52027c8db58c843e08d98d8",
-   "via": "tree",
-   "blob": "4eb4523338bebc19c48e3626994557c2c645c4e4"
+   "blob": "4eb4523338bebc19c48e3626994557c2c645c4e4",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/Ganged_4147_4162.pinmap",
    "bytes": 1815,
    "sha256": "bb22be99842696d3797f1f337a30fb29e06bc872e5ee05350483eb43509f73fc",
-   "via": "tree",
-   "blob": "f1d98764098b03a1d53a0e597b7e03b2f6ddb296"
+   "blob": "f1d98764098b03a1d53a0e597b7e03b2f6ddb296",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/Ganged_4147_4163.pinmap",
    "bytes": 1815,
    "sha256": "e54f85e157de0b1581c03971c31e762de38045fdb9f45bbfcc491c8b2d0c9e9f",
-   "via": "tree",
-   "blob": "9408db84746aeaf2b2fb90006a82037c9bc3cd99"
+   "blob": "9408db84746aeaf2b2fb90006a82037c9bc3cd99",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/Ganged_4151.pinmap",
    "bytes": 2689,
    "sha256": "ac05870037008b2aca002de16819820f3f604eb594b4953704da3d6a2fac1ea2",
-   "via": "tree",
-   "blob": "ab9c747740e48b10d5e136ba0394ed45d1dc12d5"
+   "blob": "ab9c747740e48b10d5e136ba0394ed45d1dc12d5",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/Ganged_4162_4163.pinmap",
    "bytes": 1816,
    "sha256": "7d7a3d7d3deb9c960bdac7152a7d613f12ee32f7eb097c96bb469f08253e6f87",
-   "via": "tree",
-   "blob": "90ec4510750be4523afccc196ca069aee86b7dae"
+   "blob": "90ec4510750be4523afccc196ca069aee86b7dae",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/MergedPinGroupTest_InvalidConnectionForMergeConfiguration.pinmap",
    "bytes": 2860,
    "sha256": "509f25ffef96d44aa352c8efbf5fb27a2b38a13d003c80d4fb1db301264eb267",
-   "via": "tree",
-   "blob": "2213382e4384ff88cdca0b5597b90df04851e243"
+   "blob": "2213382e4384ff88cdca0b5597b90df04851e243",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/MergedPinGroupTest_SessionPerChannel.pinmap",
    "bytes": 2381,
    "sha256": "701e31d905a1abefce499e6437829fd13d410fb58377fdc8605147be02d0029c",
-   "via": "tree",
-   "blob": "15d54319c8e09459cea15bdc21a1d3b3084a97bb"
+   "blob": "15d54319c8e09459cea15bdc21a1d3b3084a97bb",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/MergedPinGroupTest_SessionPerChannelGroupOfMultipleInstruments.pinmap",
    "bytes": 2007,
    "sha256": "b2c230847c05256d4298fae210394b6d7a4191a394e754e65fc88029bb98bb4f",
-   "via": "tree",
-   "blob": "daa79fbb9a9d9dcedfb7fdd8959488022d4e1957"
+   "blob": "daa79fbb9a9d9dcedfb7fdd8959488022d4e1957",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/MergedPinGroupTest_SessionPerInstrument.pinmap",
    "bytes": 2011,
    "sha256": "b2cf033455ad05aff7e21be8d0c6becb8e1be1240d7c138cd45f11918e3cbe38",
-   "via": "tree",
-   "blob": "723c929ddb5bd0f5da80b1a20e0e691aea5b7852"
+   "blob": "723c929ddb5bd0f5da80b1a20e0e691aea5b7852",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/MergedPinGroupTest_Site0SessionPerChannel_Site1SessionPerInstrument.pinmap",
    "bytes": 2215,
    "sha256": "e2f84e3c024fd3e965bf3fd9dd9c52cf62504bbd22b1937804bf16d8f89a1686",
-   "via": "tree",
-   "blob": "4d1a68b38610affc7044a4391aee144bd33439a2"
+   "blob": "4d1a68b38610affc7044a4391aee144bd33439a2",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/Merged_4147.pinmap",
    "bytes": 1289,
    "sha256": "d6da97bfa1f3497879fe0742ed30068683b6729540d62afba50da9dff2655f84",
-   "via": "tree",
-   "blob": "1c0d5242fd1e1343ee288e3a0adebdeaea3f764d"
+   "blob": "1c0d5242fd1e1343ee288e3a0adebdeaea3f764d",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/Merged_4162.pinmap",
    "bytes": 2008,
    "sha256": "d1764bf19f1bcd5f4d9ce9d961da34c407111ae42283e524b733033499cf6b02",
-   "via": "tree",
-   "blob": "7415e96312b1140c06e6bea253df9485c5e56f63"
+   "blob": "7415e96312b1140c06e6bea253df9485c5e56f63",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/Merged_4163.pinmap",
    "bytes": 3812,
    "sha256": "74cb388454a03bce35a173bc4e4ff8434e4949e599fb5c884ea267611ab77636",
-   "via": "tree",
-   "blob": "157b177403f6627594eabeb6e3ec5ac1d9def2c8"
+   "blob": "157b177403f6627594eabeb6e3ec5ac1d9def2c8",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/Mixed Signal Tests Common Session.pinmap",
    "bytes": 3613,
    "sha256": "e3cb571bd5bc4c219e23684644ba77d75f5e03bdd5117b9190aa1391b26eac07",
-   "via": "tree",
-   "blob": "aab16535534db4ff7c8f44bc6a7a81fa94a5be37"
+   "blob": "aab16535534db4ff7c8f44bc6a7a81fa94a5be37",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/Mixed Signal Tests Without SMU Channel Group.pinmap",
    "bytes": 3395,
    "sha256": "15df44eadf22f798b57f9e1ba52e93d0086b93c5e3bdbe26c557a67035777796",
-   "via": "tree",
-   "blob": "dc6afa047c88180813599eee7a048f496e546070"
+   "blob": "dc6afa047c88180813599eee7a048f496e546070",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/Mixed Signal Tests.pinmap",
    "bytes": 3987,
    "sha256": "9410ead456deb67c2f8bddd8df2adfbc161ac6b257381b223bf72533810ec2c1",
-   "via": "tree",
-   "blob": "6ea462b8ba96ce5fea63b33dba489a5442edb0bc"
+   "blob": "6ea462b8ba96ce5fea63b33dba489a5442edb0bc",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/MultipleSMUDevices.pinmap",
    "bytes": 4034,
    "sha256": "eab7acda57ac794289c6e50a3732ef4233ed0984912210219004d8c4fdd10a8f",
-   "via": "tree",
-   "blob": "bfbae0e225efb6fa885961ad8e5739ee97bf185e"
+   "blob": "bfbae0e225efb6fa885961ad8e5739ee97bf185e",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/NIDigitalTMUTest.pinmap",
    "bytes": 1108,
    "sha256": "bad09ba2e20ec02e97e83d7d1d10657c0d81230201abc1b5e6ef76cc06a14a5d",
-   "via": "tree",
-   "blob": "4980713c7237769913a8dadaf7718a3042f697db"
+   "blob": "4980713c7237769913a8dadaf7718a3042f697db",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/OneDeviceWorksForOnePinOnTwoSites.pinmap",
    "bytes": 3007,
    "sha256": "da1a3bf1a574ba5d2aa09919fcefa921c660251a87a0816bce5248beab3b5d11",
-   "via": "tree",
-   "blob": "03ef103525b748085814270b6186731b8641612d"
+   "blob": "03ef103525b748085814270b6186731b8641612d",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/PatternTriggeredInstrumentControl.pinmap",
    "bytes": 1942,
    "sha256": "f5b3498ca3833f16aca50a4e03f6b53ec4f2b99ecc78f8a6866d1fec5acafdbc",
-   "via": "tree",
-   "blob": "ff09fd494fe6afe504a47b0b903496c8a4c55862"
+   "blob": "ff09fd494fe6afe504a47b0b903496c8a4c55862",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/PowerSupplyDevices.pinmap",
    "bytes": 3191,
    "sha256": "2cf58b9207ac2e446682b19baac6916e1dbec7afc4de42dfa9a9fd689baee8f6",
-   "via": "tree",
-   "blob": "30e938ddbad254ef88c997cfd7a828c2298fa3c2"
+   "blob": "30e938ddbad254ef88c997cfd7a828c2298fa3c2",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/RelayTests.pinmap",
    "bytes": 1492,
    "sha256": "167064c61358803c5167ce4f3a0f8208e4be4fa260095d591ae7240053a2c456",
-   "via": "tree",
-   "blob": "fc8ce77858293b3d24a47a3be078bb0a6041f282"
+   "blob": "fc8ce77858293b3d24a47a3be078bb0a6041f282",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/SMUGangPinGroup_SessionPerChannel.pinmap",
    "bytes": 2944,
    "sha256": "355bbc8881fce11ff70716a96de8717d1c3fbb4b0da7234980b0db7da5b4bab6",
-   "via": "tree",
-   "blob": "09c79f21f14298dfe99166ecdd4fb626b4732ddb"
+   "blob": "09c79f21f14298dfe99166ecdd4fb626b4732ddb",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/SMUGangPinGroup_SessionPerInstrument.pinmap",
+   "bytes": 2646,
+   "sha256": "7f3f8c94752a0736e5d4b1a4b904f1d84e13616d473f4506f1b6a96fbb930aab",
+   "blob": "35169e811940efe98a4635eb3ac199b08743e1bd",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/SMUGangPinGroup_SingleSessionForAllInstruments.pinmap",
+   "bytes": 2574,
+   "sha256": "8cd29b6ceeb038e9853a52846b0c12166e3a76037519dc49cc9c75f6467b18d1",
+   "blob": "27d1adcfdd3fa9e521617dbaecea43541e234053",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/SMUGangPinGroup_UnsupportedSMUSessionPerChannel.pinmap",
    "bytes": 1470,
    "sha256": "526ed1bb39d1a8ff5dbfa02307b8f88d854ac79a382f59d3dd2f5dca637ed880",
-   "via": "tree",
-   "blob": "574b781a760dabf3108ebbb528d5b68545a2f1e1"
+   "blob": "574b781a760dabf3108ebbb528d5b68545a2f1e1",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/SMUsSupportingPulsing.pinmap",
    "bytes": 2585,
    "sha256": "50fe3f02c90e5e4b831dddb53d1b4221810513c8777002f8fc4f4b04c86799cf",
-   "via": "tree",
-   "blob": "5dd6cd6853285121371bfda17bb37b2891954063"
+   "blob": "5dd6cd6853285121371bfda17bb37b2891954063",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/ScopeDevicesFromDifferentChassisInOneGroup.pinmap",
    "bytes": 1172,
    "sha256": "eb8b5064d18651fa9b81e32a17cd686b04269d60788c4bcfddbee05c8d2b6e55",
-   "via": "tree",
-   "blob": "ad798ae73fb835893cf6da994a9db35905a8676a"
+   "blob": "ad798ae73fb835893cf6da994a9db35905a8676a",
+   "via": "tree"
+  },
+  {
+   "path": "TestAssets/Supporting Materials/Pin Maps/ScopeExtensionsTests.pinmap",
+   "bytes": 2583,
+   "sha256": "5b1143505b5c73302aa84914b65c011cbb5e1e06d6a84995b38afd707e12a9e2",
+   "blob": "b85c00c3b6479e381d372c6b0a04ab92735aa0f2",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/ScopeTests.pinmap",
    "bytes": 1510,
    "sha256": "6ee24ad8f6344e18ad602407c05cf7a9030d52f57a3223fdd7efa9bc5a6e0e6b",
-   "via": "tree",
-   "blob": "e19c7f81dc7208a1245c32b89cb889c2eee7b56b"
+   "blob": "e19c7f81dc7208a1245c32b89cb889c2eee7b56b",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/Session per Channel Group With Multiple Instrument Type Ids.pinmap",
    "bytes": 2703,
    "sha256": "069dd59814d4261ae5caa942f40e01517e325b70549cfab377656321275793ab",
-   "via": "tree",
-   "blob": "eca7d62538a7353fdfaa94ad187e2326c190956b"
+   "blob": "eca7d62538a7353fdfaa94ad187e2326c190956b",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/Session per Channel Group.pinmap",
    "bytes": 2701,
    "sha256": "57585eb6c861c961902cf5b414a294ace268c0c22a118543c1b728881cd011b7",
-   "via": "tree",
-   "blob": "224a2b8eaaa8fed81ff8316df49b7156ef163a50"
+   "blob": "224a2b8eaaa8fed81ff8316df49b7156ef163a50",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/Session per Channel.pinmap",
    "bytes": 2487,
    "sha256": "67d4fcd863e0a1091b67ad4e2fc88092c4816c723fd16f8d351799582a139c79",
-   "via": "tree",
-   "blob": "dd598d749e821801fa60b8ef98091dd75ae22095"
+   "blob": "dd598d749e821801fa60b8ef98091dd75ae22095",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/Session per Instrument.pinmap",
    "bytes": 2545,
    "sha256": "895dfa0c17e642fcbd6d1c14d2af62379fcfa28d787232cff16242c86d32708c",
-   "via": "tree",
-   "blob": "e88d327aa99abb9fff9941c0278aa5a56c940fb6"
+   "blob": "e88d327aa99abb9fff9941c0278aa5a56c940fb6",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/SharedPinTests.pinmap",
-   "bytes": 4976,
-   "sha256": "fec90ea1cfd2ed3a284e81e79f929a11237d8f5a80855f250b92f32ab189e796",
-   "via": "tree",
-   "blob": "01c7d4ecf219f57217d757c9ce57c655e9d8c08f"
+   "bytes": 5043,
+   "sha256": "26f648419dcef63d04e5dd01b6f6c665e5dbba2f5bf06937974d1a59268fba3e",
+   "blob": "8a9ce140efe85336ff4165ea2bfd5d022c1baeed",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/SharedPinTests_MultiSite.pinmap",
    "bytes": 1311,
    "sha256": "c5e0a1af0f1cf26f4d396681ea6524e2bbf7fcf103e047389378964d32906924",
-   "via": "tree",
-   "blob": "eb81c091bd2b3a8b570a7dc131cb748eabe161a4"
+   "blob": "eb81c091bd2b3a8b570a7dc131cb748eabe161a4",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/SharedPins_DAQmx_Analog.pinmap",
    "bytes": 1197,
    "sha256": "6887af4a95be19143ad2018c03c95645534c292111564f7ce0234b6168fda03c",
-   "via": "tree",
-   "blob": "ee84aeaceb01b40f71cbdca50f5d8003328d4063"
+   "blob": "ee84aeaceb01b40f71cbdca50f5d8003328d4063",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/SharedPins_DAQmx_Digital.pinmap",
    "bytes": 881,
    "sha256": "d6f946c76bf5cd5ab9ca52b1f63093ac950f3b52bd699cb2c0d6cc0add63db67",
-   "via": "tree",
-   "blob": "0416a127f0d2c8d1cfa0ae9193e0a810605d2add"
+   "blob": "0416a127f0d2c8d1cfa0ae9193e0a810605d2add",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/SharedPins_Digital_DMM.pinmap",
    "bytes": 918,
    "sha256": "89a5b834779dc9c88ff8c866cfe879c2b898d61d058527466fde5846be0f2c1b",
-   "via": "tree",
-   "blob": "13c112af62a371ba3198a04df6b4a39755678986"
+   "blob": "13c112af62a371ba3198a04df6b4a39755678986",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/SharedPins_InvalidGang.pinmap",
    "bytes": 2659,
    "sha256": "f4c3fd5adf66390b830031e40907acb7d5583bc51487cfb4edec7756426f1979",
-   "via": "tree",
-   "blob": "fcfc98f609b14ae2a1bdc3a8fe9abe2b00e1fb13"
+   "blob": "fcfc98f609b14ae2a1bdc3a8fe9abe2b00e1fb13",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/SharedPins_SMU4137.pinmap",
    "bytes": 2757,
    "sha256": "93c05f388c8140bbaf4e23424580482faf5a9d0b48cc1b2aec2da50ceb23bbf0",
-   "via": "tree",
-   "blob": "a5346edc8c7a7179a9fa42dd26e75e2f6180163d"
+   "blob": "a5346edc8c7a7179a9fa42dd26e75e2f6180163d",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/SharedPins_SMU4139.pinmap",
    "bytes": 1782,
    "sha256": "f0f50bf1238a06415ea18976bc46b27d0c600c524bad0d686e48235f676f7ad4",
-   "via": "tree",
-   "blob": "819f1f37439b16f22f43ca4ec1dcca348a823f63"
+   "blob": "819f1f37439b16f22f43ca4ec1dcca348a823f63",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/SharedPins_SMU4162.pinmap",
    "bytes": 1345,
    "sha256": "15702b3c4079e5d0cc63b1232e3eaaa06c5bfa4fee5e7f08d8ce4559b3d1f743",
-   "via": "tree",
-   "blob": "9194cafd4f93510e2b0be5852d091f92118bc541"
+   "blob": "9194cafd4f93510e2b0be5852d091f92118bc541",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/SharedPins_SMU4163.pinmap",
    "bytes": 1344,
    "sha256": "5c9b7236a482e55dec2318c55bca794588a68b4fb2b93e06c94439d349939a89",
-   "via": "tree",
-   "blob": "a3376792b81a10a732c91f45e6fb00a57b01f922"
+   "blob": "a3376792b81a10a732c91f45e6fb00a57b01f922",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/SyncTests.pinmap",
    "bytes": 892,
    "sha256": "82237486ba74dfb33e9f1d69109306878441c6d9546dc2b6896cd408ab56df16",
-   "via": "tree",
-   "blob": "133b6474e1339c15aa912743ece44b56b4072d5a"
+   "blob": "133b6474e1339c15aa912743ece44b56b4072d5a",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Pin Maps/TwoDevicesWorkForTwoSitesSeparately.pinmap",
    "bytes": 3209,
    "sha256": "7966b161775a2a0b4fef313a392594e4836023496edfe5c1c0eded0f1ce71169",
-   "via": "tree",
-   "blob": "15cf967fd7006ca0264d51769fb93910057fc139"
+   "blob": "15cf967fd7006ca0264d51769fb93910057fc139",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/ReadMe.md",
    "bytes": 473,
    "sha256": "e235a8bf62f9a199b9732aa8be3cc27d8548ea620e09773e779bcb4b3abb3fcc",
-   "via": "tree",
-   "blob": "ec1cb5fe41935234662929497e142e43735bb9f9"
+   "blob": "ec1cb5fe41935234662929497e142e43735bb9f9",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/SharedPinTests.digiproj",
    "bytes": 4993,
    "sha256": "651e5e25a31c220c3017f0c6b89b1988d01c2c684772641fe6621e2490d0e6c4",
-   "via": "tree",
-   "blob": "c61807ebd447bf59f9371db85c030cd2bdaf87b8"
+   "blob": "c61807ebd447bf59f9371db85c030cd2bdaf87b8",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/Specifications/Specifications_MixedSignal.specs",
    "bytes": 801,
    "sha256": "581e42d2681dc2c6b12eb6e0459c7f04a0a11ff394f7fc03e0b4a12c471affb1",
-   "via": "tree",
-   "blob": "6de48a1753cd2dfcccfdab4f9dc94f1eff5cc198"
+   "blob": "6de48a1753cd2dfcccfdab4f9dc94f1eff5cc198",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Supporting Materials/TwoDevicesWorkForTwoSitesSeparately.digiproj",
    "bytes": 4763,
    "sha256": "3571d9e1b4496a86f8e852bc09182a15b448fa05377a159124441813a1c16a93",
-   "via": "tree",
-   "blob": "c112434af3dc26030ba2e9f80368c331da0ca2a1"
+   "blob": "c112434af3dc26030ba2e9f80368c331da0ca2a1",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Tests.SemiconductorTestLibrary.Utilities/GlobalSuppressions.cs",
    "bytes": 723,
    "sha256": "1270df8686201ef2f7900460d7470c21d01e8f71ed9e1c53e040a6d31260c13f",
-   "via": "tree",
-   "blob": "c2792c6a0e802ad2c10f25af69c727fb6e71ee39"
+   "blob": "c2792c6a0e802ad2c10f25af69c727fb6e71ee39",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Tests.SemiconductorTestLibrary.Utilities/InstrumentAbstraction/FgenTests.cs",
    "bytes": 1236,
    "sha256": "3e923e0e60ae5f5ece6b570f940cf26368a66938cc57377d17595646441e7780",
-   "via": "tree",
-   "blob": "938a6b024601b00055bad52a972993a4d08a822c"
+   "blob": "938a6b024601b00055bad52a972993a4d08a822c",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Tests.SemiconductorTestLibrary.Utilities/InstrumentAbstraction/ScopeTests.cs",
    "bytes": 1238,
    "sha256": "ed7f39fdad08c5a963e2c5cc54d225610a932f664a01b791674b3b50bfb34874",
-   "via": "tree",
-   "blob": "0d3300467bfd68dabeb9038869dc5bed38ce87fb"
+   "blob": "0d3300467bfd68dabeb9038869dc5bed38ce87fb",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Tests.SemiconductorTestLibrary.Utilities/InstrumentAbstraction/SyncTests.cs",
    "bytes": 1236,
    "sha256": "d0a7501a420096c029433882860299428ecede8de46ade5f8e03f9328672e1b8",
-   "via": "tree",
-   "blob": "e081a393610b592cfcc02c9b3bbe164331806c11"
+   "blob": "e081a393610b592cfcc02c9b3bbe164331806c11",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Tests.SemiconductorTestLibrary.Utilities/PathManagement.cs",
    "bytes": 1827,
    "sha256": "0d9ea942c2e704d30b7993411cd529ffafebfd8bbccefe524fe95e517b48b27e",
-   "via": "tree",
-   "blob": "a8e4dca8b01bb896e2ea1b01ec8c7712e2fa7ebc"
+   "blob": "a8e4dca8b01bb896e2ea1b01ec8c7712e2fa7ebc",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Tests.SemiconductorTestLibrary.Utilities/Properties/AssemblyInfo.cs",
    "bytes": 1362,
    "sha256": "25faf5571432a603d984b67a1fa6042befe700345fb79677524a174002252f3b",
-   "via": "tree",
-   "blob": "327702ce169ae837e1408d07e6105127a682f146"
+   "blob": "327702ce169ae837e1408d07e6105127a682f146",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Tests.SemiconductorTestLibrary.Utilities/TSMContext.cs",
    "bytes": 1527,
    "sha256": "625f051b9c4bf299cfe19e376612dea7a7d17b744acdf654bf8b323e6df1f788",
-   "via": "tree",
-   "blob": "65e9706834efd3581cb4e4ee79e9d5cae4a73f27"
+   "blob": "65e9706834efd3581cb4e4ee79e9d5cae4a73f27",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Tests.SemiconductorTestLibrary.Utilities/TestFilters.cs",
    "bytes": 362,
    "sha256": "fa6a2441cd23e23a9d95ffbedbfe052d150a0aaa8aae33539216ebc0997b8737",
-   "via": "tree",
-   "blob": "a5787b1000bceaf90d3ba7185aabacab8b8e0771"
+   "blob": "a5787b1000bceaf90d3ba7185aabacab8b8e0771",
+   "via": "tree"
   },
   {
    "path": "TestAssets/Tests.SemiconductorTestLibrary.Utilities/Tests.SemiconductorTestLibrary.Utilities.csproj",
    "bytes": 1575,
    "sha256": "0c878d24b8299e9fdabcc72a4c78b6b9d3da7488527efe44b42b8267bf8390f9",
-   "via": "tree",
-   "blob": "1b0ba628cf738b361e24edf50eec33662a2c694d"
+   "blob": "1b0ba628cf738b361e24edf50eec33662a2c694d",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/AddingUsingDirectives.md",
    "bytes": 1564,
    "sha256": "61005d7ee0d08d9dac28b8b4b851ec2baa76bf602b66535d2c6dfa9383d5cfb1",
-   "via": "tree",
-   "blob": "aea2c327531a3d0d819857c533a766e49de382e3"
+   "blob": "aea2c327531a3d0d819857c533a766e49de382e3",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/CommonUtilityMethods.md",
    "bytes": 1198,
    "sha256": "0022776d25392deba3df60dfcbe81f33c4acf6c9489ede8c7f1b64184ce12143",
-   "via": "tree",
-   "blob": "872272481aa00fe9a83626ef673c108ea7a2f3a0"
+   "blob": "872272481aa00fe9a83626ef673c108ea7a2f3a0",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/ConfiguringInstrumentSessions.md",
    "bytes": 4936,
    "sha256": "d4e0e7ac3cfcf59afebe997052222a2585dfe957712cf502252b6fb54dbec952",
-   "via": "tree",
-   "blob": "492628f2d474cd7eaf08c1b2c6475fb78448f2ab"
+   "blob": "492628f2d474cd7eaf08c1b2c6475fb78448f2ab",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/CustomInstrumentSupport.md",
    "bytes": 18844,
    "sha256": "dc491f039607fa1ffd88b4cbbacf738a0701558cf2f7447f8d307ac14e27b709",
-   "via": "tree",
-   "blob": "16730ab0eff3d8652e72b14a6802d6b50d76908a"
+   "blob": "16730ab0eff3d8652e72b14a6802d6b50d76908a",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/DataAbstraction.md",
    "bytes": 3812,
    "sha256": "7b18e69dee1604c648a428ad0801cbef41ca8d374d7ef5e9dc6cfd649a04fabb",
-   "via": "tree",
-   "blob": "18bcab4ef61924b2363af1016baf0c9e77a602fc"
+   "blob": "18bcab4ef61924b2363af1016baf0c9e77a602fc",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/ExceptionHandling.md",
    "bytes": 2347,
    "sha256": "80146bcc3e049e05dccb065870401f62c15f16335a1c1514f8cc4af24ef2ddbd",
-   "via": "tree",
-   "blob": "ca5f318b9bd37d22da1e2776b6c9e10187f00a9f"
+   "blob": "ca5f318b9bd37d22da1e2776b6c9e10187f00a9f",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/InstrumentAbstraction.md",
    "bytes": 12797,
    "sha256": "db7cce5b89e890527cb0259a48a1c225876605b6fb288285ef5dccfd1543c375",
-   "via": "tree",
-   "blob": "178a5e69f31b5b95dc8806eee4ae2835eb1d0d44"
+   "blob": "178a5e69f31b5b95dc8806eee4ae2835eb1d0d44",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/LocatingExamples.md",
    "bytes": 3931,
    "sha256": "0d07bd325beea9e639ba070cdfcc3bb4a2aa99ce8e7630cb92c2b2d3192e3669",
-   "via": "tree",
-   "blob": "845a159df6530d021d2c0362cbd093ea741c2a9a"
+   "blob": "845a159df6530d021d2c0362cbd093ea741c2a9a",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/MathOperations/ExceptionConditionsForMathOperations.md",
    "bytes": 2191,
    "sha256": "f05d86a1b37208d4c4caea642b93f565cb3f3ad2e14de9cbb30f90b116e8a95a",
-   "via": "tree",
-   "blob": "f410e9dde4d98e5e1c6f1f70d9617ac61917d918"
+   "blob": "f410e9dde4d98e5e1c6f1f70d9617ac61917d918",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/MathOperations/MathOperationsWithPinSiteData.md",
    "bytes": 19670,
    "sha256": "6f5b85e43e289dde6ca6dbbcc4dfb8e99c7eddf0f7ed0a6de6c09deef29158e1",
-   "via": "tree",
-   "blob": "fc9475ffd99fd83847a346cb4517ff3cfb6448f7"
+   "blob": "fc9475ffd99fd83847a346cb4517ff3cfb6448f7",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/MathOperations/MathOperationsWithSiteData.md",
    "bytes": 16203,
    "sha256": "31fb53eff03e5accb3ce1034951025c94acd9a4d09e0e6ce9c8e742d02939a2e",
-   "via": "tree",
-   "blob": "38e24b9decee6297cda1adac37a098d5f182c41c"
+   "blob": "38e24b9decee6297cda1adac37a098d5f182c41c",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/NuGetPackageManagementForSTSProjects.md",
    "bytes": 9926,
    "sha256": "5246f070d0abedde9684116787edbb16c417965eee3d33a6c1503fd0571b7187",
-   "via": "tree",
-   "blob": "80072fb2af34cb3a7a8aa7ca9a5665ebe7c99a85"
+   "blob": "80072fb2af34cb3a7a8aa7ca9a5665ebe7c99a85",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/Overview.md",
    "bytes": 5244,
    "sha256": "24f1fb062872e0efe03e546f7920d6eea5e21e5b678d0941b871aef1a0eacef4",
-   "via": "tree",
-   "blob": "78984ecf78939499f7928f0c6b3c4323f904e24e"
+   "blob": "78984ecf78939499f7928f0c6b3c4323f904e24e",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/PublishingResults.md",
    "bytes": 937,
    "sha256": "7cb45bfd4b770ea9f3024c14c610c040a6a07907724570e86e21337d3e8c0484",
-   "via": "tree",
-   "blob": "36edc15440922b8b5687c9e0dca2f7bc8a395339"
+   "blob": "36edc15440922b8b5687c9e0dca2f7bc8a395339",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/SMUGangPinGroup.md",
    "bytes": 15139,
    "sha256": "70d7efca80520035d66f9c7bf0367c0c4edf79a75138787c76baa9896566e40c",
-   "via": "tree",
-   "blob": "f1e028648d90e58c93b42313ed67c2b6b6f166f9"
+   "blob": "f1e028648d90e58c93b42313ed67c2b6b6f166f9",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/SMUMergePinGroup.md",
    "bytes": 10408,
    "sha256": "9ac797858683f999eaf73a119f3bff06562cce4cbc7cc4acc6d9c2ed732ee85c",
-   "via": "tree",
-   "blob": "0f964f5e253d78537e8a49dd4497d97f47d8eeb1"
+   "blob": "0f964f5e253d78537e8a49dd4497d97f47d8eeb1",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/SupportedInstrumentTypes.md",
    "bytes": 2621,
    "sha256": "8859567fe0e2174bee1b4839748018ad9e97713fcd9f61f31b033f1c1c378a6d",
-   "via": "tree",
-   "blob": "8bb60b520febbf89790061aa8e69dfc12be592de"
+   "blob": "8bb60b520febbf89790061aa8e69dfc12be592de",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/UsingTestStandSteps.md",
    "bytes": 4437,
    "sha256": "5261958d2519f402fb524da31fe4aa5f20433173ee2a69dc5687397b75c13661",
-   "via": "tree",
-   "blob": "f69be9e7295031e03154783f93038d40c525ffdc"
+   "blob": "f69be9e7295031e03154783f93038d40c525ffdc",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/WorkingWithMultiplexedConnections.md",
    "bytes": 14174,
    "sha256": "da16784ea26b299193da3e5e33e66c0bef033a0b890d490f9d4bcfe854474eed",
-   "via": "tree",
-   "blob": "b873a3c5ec4d732519736c92165a2cf35687d1de"
+   "blob": "b873a3c5ec4d732519736c92165a2cf35687d1de",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/WritingTestCode.md",
    "bytes": 2994,
    "sha256": "f1bcbc7a01f76a9fbe57a028642a2003bfae16a69e588892b81ffd0f4e82a91a",
-   "via": "tree",
-   "blob": "ac90f59411b4e68553e7b0ec9b5805f14646c186"
+   "blob": "ac90f59411b4e68553e7b0ec9b5805f14646c186",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/advanced/BestPracticesForWritingExtensionMethodsInSTL.md",
-   "bytes": 28652,
-   "sha256": "855db8288b96e93e4dcdc865c1e7429602f803e7861827fc70080c6b8d8b0aff",
-   "via": "tree",
-   "blob": "38a224f45fc60861008fde28b65005f6e5faa7a7"
+   "bytes": 28679,
+   "sha256": "3585c31b68323fdea3d3d28561b12bded1f2cf80a816e1285a3bd0d69ff77426",
+   "blob": "940e3c58d84732a15e676eab2e02791128abdcf8",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/advanced/ConcurrentCodeExecution.md",
    "bytes": 2387,
    "sha256": "6d13f638f3a6396cca4c90e3dfca811a87f8a06fbfa59ed55d664736171ec990",
-   "via": "tree",
-   "blob": "57a967f3f593fa272aee99883da4f1630054b81f"
+   "blob": "57a967f3f593fa272aee99883da4f1630054b81f",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/advanced/CustomizingTestStandSteps.md",
    "bytes": 2389,
    "sha256": "2e37eee0f764cacc1770113c6c208c91c8cf31a7319d73c0118926dadaf1c025",
-   "via": "tree",
-   "blob": "097b83061b0de26072bff5168c2251ac32673e1e"
+   "blob": "097b83061b0de26072bff5168c2251ac32673e1e",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/advanced/ExtendingTheSemiconductorTestLibrary.md",
    "bytes": 3756,
    "sha256": "a8176bac8fe3f4e01ebf0430c6d850ea983008e90c2ed99097f3984a58c1f3bd",
-   "via": "tree",
-   "blob": "d065418fc1f84e72938f3ed2d0978d840ea8c919"
+   "blob": "d065418fc1f84e72938f3ed2d0978d840ea8c919",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/advanced/MakingLowLevelDriverCalls.md",
    "bytes": 2482,
    "sha256": "136fcae4223e79acfd5d220cd4fab99383d09d239f6f209222161802b9ed70ec",
-   "via": "tree",
-   "blob": "129bf70066cd2c735edca94ec8b7b92dd7a4ed74"
+   "blob": "129bf70066cd2c735edca94ec8b7b92dd7a4ed74",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/advanced/ParallelizationMethods.md",
    "bytes": 1214,
    "sha256": "e0966da0930ea59455c5b1b0d4dfa1c397847f08fa6989fb0f3e95492f97940f",
-   "via": "tree",
-   "blob": "13a2bf6a0dc0b5ba666ba7a537232f03584b3704"
+   "blob": "13a2bf6a0dc0b5ba666ba7a537232f03584b3704",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/advanced/SharingPinSiteDataBetweenCodeModules.md",
    "bytes": 5130,
    "sha256": "8ef98b23a11b1489d9112a11bfecc1468ae2da016941d79ec89f5c446cbdb777",
-   "via": "tree",
-   "blob": "328da226d97811fd52e182276e6b176945a4f7a6"
+   "blob": "328da226d97811fd52e182276e6b176945a4f7a6",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/advanced/UsingMeasurementStudioAnalysisLibraryWithPinSiteData.md",
    "bytes": 7291,
    "sha256": "83f92f4f8084b242cb84a071e183bc69b43ec2cbec19a512e04e5293b16e5a07",
-   "via": "tree",
-   "blob": "46b471623b184a2465017a9b3c32c4e0fc269972"
+   "blob": "46b471623b184a2465017a9b3c32c4e0fc269972",
+   "via": "tree"
   },
   {
    "path": "docs/UserGuide/toc.yml",
    "bytes": 2595,
    "sha256": "a48f7f0b1920d14b9cdc969be681446ebb56b56aab67786ea456a62463da89ae",
-   "via": "tree",
-   "blob": "ae358b2ab8d960c8b144a1ef97681b5500d7bc5b"
+   "blob": "ae358b2ab8d960c8b144a1ef97681b5500d7bc5b",
+   "via": "tree"
   },
   {
    "path": "docs/docfx.json",
    "bytes": 1686,
    "sha256": "aa0a7ee38cac37be407842507e436910c0713082ef69fb615e1edc80cbebdcd4",
-   "via": "tree",
-   "blob": "42b920ba4fb97c85488030e5c1fb79836c356990"
+   "blob": "42b920ba4fb97c85488030e5c1fb79836c356990",
+   "via": "tree"
   },
   {
    "path": "docs/images/CustomInstrument/Cleanup.png",
    "bytes": 122347,
    "sha256": "022b1813189c44bb7efe6c0847f1c24ad5340109094072bcb3b127f2028adbe5",
-   "via": "tree",
-   "blob": "e65f870c68a17a00bba429ad7a7749e7bdc93198"
+   "blob": "e65f870c68a17a00bba429ad7a7749e7bdc93198",
+   "via": "tree"
   },
   {
    "path": "docs/images/CustomInstrument/DriverOperation.png",
    "bytes": 51204,
    "sha256": "8f7672010e117cb89a4074d3c83d3109263fd66b2c429a7f7eba0d66bf2d8be8",
-   "via": "tree",
-   "blob": "de496c4463e1d926cf66d37c8fe1d8f98586edd3"
+   "blob": "de496c4463e1d926cf66d37c8fe1d8f98586edd3",
+   "via": "tree"
   },
   {
    "path": "docs/images/CustomInstrument/PinmapEditor.png",
    "bytes": 50408,
    "sha256": "bcf99d40202251f5a05c7cc5c7fcda17a0b1968361f10d959bf0a5149ab624d4",
-   "via": "tree",
-   "blob": "564444e2cf1dea92f250c807bca29d0b0b58cec4"
+   "blob": "564444e2cf1dea92f250c807bca29d0b0b58cec4",
+   "via": "tree"
   },
   {
    "path": "docs/images/CustomInstrument/Setup.png",
    "bytes": 132815,
    "sha256": "77bf8284edbf9170eff8f261b951ac81e2ba3b71d3bae82ebf01e067ec53bd6e",
-   "via": "tree",
-   "blob": "c9f27be1aa222e7856031d4d773fd1a4d622934c"
+   "blob": "c9f27be1aa222e7856031d4d773fd1a4d622934c",
+   "via": "tree"
   },
   {
    "path": "docs/images/CustomizingTestStandSteps-1.png",
    "bytes": 224250,
    "sha256": "64b83439fef8903f40b2e4d782be3dd6f64cb69c17ed57fc69d71dcb129a833d",
-   "via": "tree",
-   "blob": "c9713c7bc88044326904ea2dffee34dbff911d4f"
+   "blob": "c9713c7bc88044326904ea2dffee34dbff911d4f",
+   "via": "tree"
   },
   {
    "path": "docs/images/ExampleOfDebuggingPinSiteDataInVisualStudio.png",
    "bytes": 916424,
    "sha256": "dd8bf24507d20708a570ced0951b0a8c5a6542072b48bc9e1dd397a8d217296f",
-   "via": "tree",
-   "blob": "ef5a039d4011c9ef363c64e9eb3ea6c923c1eb0b"
+   "blob": "ef5a039d4011c9ef363c64e9eb3ea6c923c1eb0b",
+   "via": "tree"
   },
   {
    "path": "docs/images/ExampleOfDebuggingSiteDataInVisualStudio.png",
    "bytes": 497374,
    "sha256": "9cded934adc9e7474a1a065897b3ee802f578f48974b3dd805df62786953af98",
-   "via": "tree",
-   "blob": "c7d20619a84f934ddb39adc3662add3430a0b4db"
+   "blob": "c7d20619a84f934ddb39adc3662add3430a0b4db",
+   "via": "tree"
   },
   {
    "path": "docs/images/SMUGangPinGroup/MeasureAndPublishMethodCall.png",
    "bytes": 283588,
    "sha256": "c6602a2491c6df4afa5a884ad4ddd3543cc7f82fa40d7cedfa4784a7a9501b78",
-   "via": "tree",
-   "blob": "2eeb0eee57a0be545e54058dfafb9c005b7c3f7e"
+   "blob": "2eeb0eee57a0be545e54058dfafb9c005b7c3f7e",
+   "via": "tree"
   },
   {
    "path": "docs/images/SMUGangPinGroup/PinSiteData.png",
    "bytes": 313432,
    "sha256": "ea0df4cef43e4d901b649a5f0d53f440ba98763c1d6de8486366c4ff5e4dbf31",
-   "via": "tree",
-   "blob": "1bce825cd38ccfa8a6a327fb3b45f39299f26f2c"
+   "blob": "1bce825cd38ccfa8a6a327fb3b45f39299f26f2c",
+   "via": "tree"
   },
   {
    "path": "docs/images/SMUGangPinGroup/SMUGangPinGroupSetup.png",
    "bytes": 65361,
    "sha256": "58a630847e0e889d7478da81e67698fa1ef1db476525133b669058a904b7c830",
-   "via": "tree",
-   "blob": "72ec4e8e119dd2895a592762c1fe379681f6015e"
+   "blob": "72ec4e8e119dd2895a592762c1fe379681f6015e",
+   "via": "tree"
   },
   {
    "path": "docs/images/SMUGangPinGroup/TestsTabLeaderPinEdittime.png",
    "bytes": 105638,
    "sha256": "8d7b90bccb932cfdb39d5cd2730611a7c8a043382df1a3af32a6b546c5000c68",
-   "via": "tree",
-   "blob": "9c3275ceafde8e150eafd79985962f3336e76df9"
+   "blob": "9c3275ceafde8e150eafd79985962f3336e76df9",
+   "via": "tree"
   },
   {
    "path": "docs/images/SMUGangPinGroup/TestsTabLeaderPinRuntime.png",
    "bytes": 519770,
    "sha256": "b6eadc6c397d38d50df0a126fd052bcd36ca77fbe9c6ef91137e94652ba63d97",
-   "via": "tree",
-   "blob": "1d63fc2bb59b9479cc201b89d70482d0e74d4887"
+   "blob": "1d63fc2bb59b9479cc201b89d70482d0e74d4887",
+   "via": "tree"
   },
   {
    "path": "docs/images/SMUGangPinGroup/TestsTabNoPinEdittime.png",
    "bytes": 86503,
    "sha256": "7f8f9a64ab23fe74dde62fde24cc27fec49b4d0b1f76782ad7d0c892fbdac227",
-   "via": "tree",
-   "blob": "eeb2210a88d43f664721a570dece09e059c30f9d"
+   "blob": "eeb2210a88d43f664721a570dece09e059c30f9d",
+   "via": "tree"
   },
   {
    "path": "docs/images/SMUMergePinGroup/MeasureAndPublishMethodCall.png",
    "bytes": 354126,
    "sha256": "5131e9789631f63615210692bddccc21bd37350d8277076f6ab5a689aa71c8c0",
-   "via": "tree",
-   "blob": "1c36849310cad537c6dfe0e5a268cc4f2625fe35"
+   "blob": "1c36849310cad537c6dfe0e5a268cc4f2625fe35",
+   "via": "tree"
   },
   {
    "path": "docs/images/SMUMergePinGroup/PinSiteData.png",
    "bytes": 356288,
    "sha256": "f3fa6744f64d4633c7a6e03209f7a888aac9210711a3ff1c37aa3394c22ef8aa",
-   "via": "tree",
-   "blob": "f1620b18f0ba245e470f85040d1528093df3a6d8"
+   "blob": "f1620b18f0ba245e470f85040d1528093df3a6d8",
+   "via": "tree"
   },
   {
    "path": "docs/images/SMUMergePinGroup/SMUMergePinGroupSetup.png",
    "bytes": 61428,
    "sha256": "248860085bb54b216471c5d097b0f8867c1bc7ba5304c05b39c85a2770bbd5d4",
-   "via": "tree",
-   "blob": "47f34df9633f7cf22e52fe387fa41ee3af8b6098"
+   "blob": "47f34df9633f7cf22e52fe387fa41ee3af8b6098",
+   "via": "tree"
   },
   {
    "path": "docs/images/SMUMergePinGroup/TestsTabNoPinEdittime.png",
    "bytes": 55511,
    "sha256": "9af9e58a774008206f511f029de63bf4a3299dbdfaf5450ad2b01d143dcb1ecf",
-   "via": "tree",
-   "blob": "7c2f25785f5dc3abb15cc947b8d6c0e263c7e99d"
+   "blob": "7c2f25785f5dc3abb15cc947b8d6c0e263c7e99d",
+   "via": "tree"
   },
   {
    "path": "docs/images/SMUMergePinGroup/TestsTabPrimaryPinEdittime.png",
    "bytes": 88849,
    "sha256": "41b866dcfacbf2d9d5dc56d6fcd3d87c0a49c60b4e4852fb7ee07ca46d5f5129",
-   "via": "tree",
-   "blob": "41c31693dd0c9d52370acb45960a078a63d8df2b"
+   "blob": "41c31693dd0c9d52370acb45960a078a63d8df2b",
+   "via": "tree"
   },
   {
    "path": "docs/images/SMUMergePinGroup/TestsTabPrimaryPinRuntime.png",
    "bytes": 102832,
    "sha256": "1ffbcbb6c2b7e1059d77a130a47909dd94ccf2b36e391b5c0b4c4fb3f999b71e",
-   "via": "tree",
-   "blob": "edf047c36316070f4528de5bb88a7232a02166c1"
+   "blob": "edf047c36316070f4528de5bb88a7232a02166c1",
+   "via": "tree"
   },
   {
    "path": "docs/images/favicon.ico",
    "bytes": 1108,
    "sha256": "a9ab5a82e5ab69bd3f6b7662ac2691415a9d07399f141143204a4cd00b00f31a",
-   "via": "tree",
-   "blob": "e3b0e4594fc756002d38ea03b25f39f38bbc9299"
+   "blob": "e3b0e4594fc756002d38ea03b25f39f38bbc9299",
+   "via": "tree"
   },
   {
    "path": "docs/images/logo.png",
    "bytes": 5100,
    "sha256": "3c8537adf5e9ec4e564c8454bcc1f2810e74a7b5565979f95c83a85331096618",
-   "via": "tree",
-   "blob": "92ab94f5a0d95a7a7285bfec8f632d9a2cbb2ee3"
+   "blob": "92ab94f5a0d95a7a7285bfec8f632d9a2cbb2ee3",
+   "via": "tree"
   },
   {
    "path": "docs/index.md",
    "bytes": 2206,
    "sha256": "7f7f68f6856e3c4033438e5ed7e089a773633768fb2cfa6da591a995e4d65713",
-   "via": "tree",
-   "blob": "c7f3c8745a73885bc9b488f20787c19dcfc94d60"
+   "blob": "c7f3c8745a73885bc9b488f20787c19dcfc94d60",
+   "via": "tree"
   },
   {
    "path": "docs/toc.yml",
    "bytes": 166,
    "sha256": "99e4f6a047c819a843c130a3415d247e0239bb131dedb6dc8219f9c3bd0c3a0c",
-   "via": "tree",
-   "blob": "a8ff7fbc93e14a6e8203bbdb92c54b2e07605831"
+   "blob": "a8ff7fbc93e14a6e8203bbdb92c54b2e07605831",
+   "via": "tree"
   },
   {
    "path": "nuget.config",
    "bytes": 351,
    "sha256": "ea4f8e8f247ff054755a3a800b8978594c36330076e06cd46134c8ffb98a58d6",
-   "via": "tree",
-   "blob": "013c2d1aea4b0245e4d91ccac0f706c4a8f0d7c0"
+   "blob": "013c2d1aea4b0245e4d91ccac0f706c4a8f0d7c0",
+   "via": "tree"
   },
   {
-   "path": "packages/NationalInstruments.SemiconductorTestLibrary.Analyzers.1.0.0.nupkg",
-   "bytes": 12142,
-   "sha256": "83f93601afca81e7346d67dd44703d1c6dc7d29a17fb30f70bbe996b15af0edb",
-   "via": "tree",
-   "blob": "446b936bdb5701a6c62278085c630f3a34c87238"
+   "path": "packages/NationalInstruments.SemiconductorTestLibrary.Analyzers.1.1.0.nupkg",
+   "bytes": 19697,
+   "sha256": "19fa3e184f204f74ed3d83e5929ebf3d26d9e17f5c9325c72a21f29c96bd1e5a",
+   "blob": "6d9585b818eceaa7e30f7e4f92b18c5c46c39c88",
+   "via": "tree"
   }
  ],
  "skipped": [],
  "external": [
+  "/<vilib>/Utility/error.llb/Error Cluster From Error Code.vi",
+  "/<vilib>/express/express execution control/TimeDelayBlock.llb/subTimeDelay.vi",
   "<vilib>\\FPGAPlugInAG\\Dynamic\\niLvFpga_Close_Dynamic.vi",
   "<vilib>\\Utility\\error.llb\\Error Cluster From Error Code.vi",
   "<vilib>\\eio\\EIONode\\EIONode.xnode",

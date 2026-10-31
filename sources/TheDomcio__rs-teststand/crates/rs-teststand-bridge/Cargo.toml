@@ -1,0 +1,66 @@
+[package]
+name = "rs-teststand-bridge"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Serve the National Instruments TestStand™ Engine to other processes, over any transport"
+documentation = "https://docs.rs/rs-teststand-bridge"
+repository.workspace = true
+rust-version.workspace = true
+keywords = ["teststand", "ipc", "bridge", "test-automation", "ni"]
+categories = ["api-bindings", "network-programming", "os::windows-apis"]
+readme = "README.md"
+
+# An addition to the binding, not part of it. `rs-teststand` stays free of an
+# async runtime and an RPC stack; a caller that only drives the engine in-process
+# pays for none of this.
+[package.metadata.docs.rs]
+# This crate wraps a Windows COM API and does not build for Linux, which is what
+# docs.rs targets by default. Point it at Windows so the documentation builds.
+default-target = "x86_64-pc-windows-msvc"
+# `default-target` is built as well as these, so it is not repeated here.
+targets = ["i686-pc-windows-msvc"]
+all-features = true
+
+[dependencies]
+rs-teststand = { path = "../rs-teststand", version = "0.14.1" }
+# The message pump: a background thread owning apartment-bound objects has to
+# service its own queue, and that is this crate's job rather than the binding's.
+rs-teststand-sys = { path = "../rs-teststand-sys", version = "0.14.1" }
+# A COM reference cannot leave the process, so a message's object payload has to
+# become data before it crosses. That conversion belongs here, not in every
+# caller that needs it.
+rs-teststand-serde = { path = "../rs-teststand-serde", version = "0.14.1" }
+serde_json = "1"
+thiserror = "2.0.18"
+# Only the synchronisation primitives. The runtime, sockets and I/O left with
+# the websocket transport, so a caller using the line transport pulls none of it.
+tokio = { version = "1", features = ["sync"] }
+# WebSocket, for the front ends that already speak it: a browser panel, or an
+# instrument toolkit. tokio-tungstenite is the tokio binding of tungstenite,
+# which is the crate the ecosystem builds on.
+tonic = { version = "0.14", optional = true }
+prost = { version = "0.14", optional = true }
+serde = { version = "1", features = ["derive"] }
+
+[features]
+default = []
+# TODO: the gRPC transport is not written. This feature pulls tonic and prost
+# and adds no code, so enabling it changes nothing. Kept as the marker for that
+# work rather than deleted, so the intent is not lost. See TODO.md.
+grpc = ["dep:tonic", "dep:prost"]
+# Kept for compatibility. The wire types are always serde-derived now, because
+# the line transport serializes them; enabling this changes nothing.
+serde = []
+# Enables tests that instantiate the live TestStand(TM) Engine.
+live-engine = ["rs-teststand/live-engine"]
+
+[dev-dependencies]
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "time", "net"] }
+# A real client, to prove the server speaks the protocol rather than merely
+# compiling against it.
+tokio-tungstenite = "0.28"
+
+[lints]
+workspace = true
